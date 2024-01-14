@@ -77,6 +77,7 @@ class Political (models.Model):
 class Votes (models.Model):
     quantity = models.IntegerField()
     political = models.ForeignKey(Political, on_delete=models.CASCADE)
+    
     description = models.CharField(max_length=200)
     section = models.ForeignKey(Section, on_delete=models.CASCADE)
     

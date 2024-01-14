@@ -117,38 +117,6 @@ def locals_update():
       section_array_created.append(response_json)
       
   print(section_array_created.__len__(), " secoes criadas")
-  
+  return county_array_created
 
-    # print("\n\nInserindo votos\n")
-    
-    # for votes in votes_array:
-    #     political = next((obj for obj in politics_array_created 
-    #                             if str.lower(obj["political_scriptId"]) == str.lower(votes["political_id"]))
-    #                            , None)
-    #     zone = next((obj for obj in electoral_zones_array_created
-    #                             if int(obj["identifier"]) == votes["zone_id"])
-    #                            , None)  
-        
-    #     if political is not None:
-    #         votes["political"] = political["id"]
-    #     else:
-    #         print(votes.__str__())
-    #         print("Political not found")
-    #         break
-        
-    #     if zone is not None:
-    #         votes["zone"] = zone["id"]
-    #     else:
-    #         print("Zone not found")
-    #         break
-        
-    #     response = requests.post(URL + "votes/", data=votes)
-    #     response_json = response.json()
-    #     votes_array_created.append(response_json)
-    
-    # print(votes_array_created.__len__(), "votos criados")
-    
-    
-    
-    # print("\n\nInserindo bairros\n")
   

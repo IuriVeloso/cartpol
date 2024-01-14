@@ -3,11 +3,12 @@ import datetime
 import requests
 from cartpol_app.scripts.base_info import base_info
 from cartpol_app.scripts.locals_update import locals_update
+from cartpol_app.scripts.politics_update import post_politics
 from cartpol_app.scripts.helpers import contains_duplicates_political, contains_duplicates_political_party
 
 URL = "http://127.0.0.1:8000/cartpol/"
 
-INDEX_CARGO = 18
+INDEX_CARGO = 17
 INDEX_ZONA = 15
 INDEX_NAME = 20
 INDEX_FULL_NAME = 20
@@ -17,13 +18,14 @@ INDEX_POLITICAL_PARTY_FULL_NAME = 0
 INDEX_VOTES = 21
 INDEX_ELECTION_CODE = 6
 INDEX_ROUND = 5
+INDEX_COUNTY = 14
 CD_CARGO = {
     "prefeito": 11,
     "vereador": 13
 } 
 
-
 def post_counties():
+
     politics_array = []
     political_party_array = []
     votes_array = []
@@ -36,17 +38,6 @@ def post_counties():
         next(reader)
 
         for row in reader:
-            name = row[14]
-            political_dict = {
-                "election": 1, 
-                "name": row[INDEX_NAME], 
-                "full_name": row[INDEX_FULL_NAME], 
-                "political_party": row[INDEX_POLITICAL_PARTY], 
-                "political_type": row[INDEX_CARGO],
-                "county_name": name,
-                "political_id": row[INDEX_CANDIDATE_ID],
-                }
-            
             votes_dict = {
                 "quantity": row[INDEX_VOTES],
                 "description": row[INDEX_VOTES] + " votos para " + row[INDEX_NAME],
@@ -54,35 +45,13 @@ def post_counties():
                 "political_id": row[INDEX_CANDIDATE_ID],
                 "section_id": int(row[INDEX_ZONA])
             }
-
                 
-            if int(political_dict["political_type"]) == CD_CARGO["prefeito"] and row[INDEX_ELECTION_CODE] == "426" and row[INDEX_ROUND] == "1":
+            if int(row[INDEX_CARGO]) == CD_CARGO["prefeito"] and row[INDEX_ELECTION_CODE] == "426" and row[INDEX_ROUND] == "1":
+                votes_array.append(votes_dict)
+                    
+            if int(row[INDEX_CARGO]) == CD_CARGO["vereador"] and row[INDEX_ELECTION_CODE] == "426" and row[INDEX_ROUND] == "1":
                 votes_array.append(votes_dict)
 
-                if contains_duplicates_political(political_dict, politics_array):
-                    politics_array.append(political_dict)
-                    
-                if contains_duplicates_political_party(political_dict, political_party_array):
-                    political_party_dict = {
-                        "name": row[INDEX_POLITICAL_PARTY], 
-                        "full_name": row[INDEX_POLITICAL_PARTY_FULL_NAME], 
-                        "active": True
-                        }
-                    political_party_array.append(political_party_dict)
-                    
-            if int(political_dict["political_type"]) == CD_CARGO["vereador"] and row[INDEX_ELECTION_CODE] == "426" and row[INDEX_ROUND] == "1":
-                votes_array.append(votes_dict)
-
-                if contains_duplicates_political(political_dict, politics_array):
-                    politics_array.append(political_dict)
-                    
-                if contains_duplicates_political_party(political_dict, political_party_array):
-                    political_party_dict = {
-                        "name": row[INDEX_POLITICAL_PARTY], 
-                        "full_name": row[INDEX_POLITICAL_PARTY_FULL_NAME], 
-                        "active": True
-                        }
-                    political_party_array.append(political_party_dict)
     
     print("Terminando de selecionar candidatos\n\n")
     print(politics_array.__len__())
@@ -96,53 +65,41 @@ def post_counties():
     print(votes_array.__len__())
     print("\n\n")
         
-    county_array_created = []
-    politics_array_created = []
-    political_party_array_created = []
     votes_array_created = []
 
     
-    print("\n\nInserindo partidos\n")
-    
-    for political_party in political_party_array:
-        
-        response = requests.post(URL + "political-party/", data=political_party)
-        response_json = response.json()
-        political_party_array_created.append(response_json)
-        
-    print(political_party_array_created.__len__(), "partidos criados")
-        
-        
-    print("\n\nInserindo politicos\n")    
-    for politics in politics_array:
-        political_party = next((obj for obj in political_party_array_created 
-                                if obj["name"] == politics["political_party"])
-                               , None)
-        
-        county = next((obj for obj in county_array_created
-                       if obj["name"] == politics["county_name"]), None)
-        
-        if political_party is not None:
-            politics["political_party"] = political_party["id"]
-        else:
-            print("Political party not found")
-            break
-        
-        if politics["political_type"] == CD_CARGO["prefeito"]:
-            politics["political_type"] = 1
-        else:
-            politics["political_type"] = 2
-        politics["election"] = 1
-        politics["region"] = "city"
-        politics["region_id"] = county["id"]
-        
-        
-        response = requests.post(URL + "political/", data=politics)
-        response_json = response.json()
-        response_json["political_scriptId"] = politics["political_id"]
-        politics_array_created.append(response_json)
-    
-    print(politics_array_created.__len__(), "politicos criados")
+    # print("\n\nInserindo votos\n")
+
+    # for votes in votes_array:
+    # political = next((obj for obj in politics_array_created 
+    # if str.lower(obj["political_scriptId"]) == str.lower(votes["political_id"]))
+    # , None)
+    # zone = next((obj for obj in electoral_zones_array_created
+    # if int(obj["identifier"]) == votes["zone_id"])
+    # , None)  
+
+    # if political is not None:
+    # votes["political"] = political["id"]
+    # else:
+    # print(votes.__str__())
+    # print("Political not found")
+    # break
+
+    # if zone is not None:
+    # votes["zone"] = zone["id"]
+    # else:
+    # print("Zone not found")
+    # break
+
+    # response = requests.post(URL + "votes/", data=votes)
+    # response_json = response.json()
+    # votes_array_created.append(response_json)
+
+    # print(votes_array_created.__len__(), "votos criados")
+
+
+
+    # print("\n\nInserindo bairros\n")
     
 
 
@@ -156,11 +113,13 @@ print("\nFinished base info\n")
 
 print("\nStarted updating localization information\n")
                     
-locals_update()
+county_array_created = locals_update()
 
 print("\nFinished updating localization\n")
 
-# print("\nStarted creating politicals and votes\n")
+print("\nStarted creating politicals\n")
+
+post_politics(county_array_created=county_array_created)
 
 # post_counties()
 
