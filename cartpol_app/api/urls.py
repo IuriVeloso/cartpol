@@ -1,6 +1,6 @@
 from django.contrib import admin
 from django.urls import path
-from cartpol_app.api.views import StateAV, CountyAV, NeighborhoodAV, ElectoralZoneAV, PoliticalTypeAV, ElectionAV, PoliticalPartyAV, PoliticalAV, VotesAV, ElectionResultsAV
+from cartpol_app.api.views import StateAV, CountyAV, NeighborhoodAV, ElectoralZoneAV, PoliticalTypeAV, ElectionAV, PoliticalPartyAV, PoliticalAV, VotesAV, ElectionResultsAV, SectionAV
 
 urlpatterns = [
     path('state/', StateAV.as_view(), name="state-crud"),
@@ -12,5 +12,6 @@ urlpatterns = [
     path('political-party/', PoliticalPartyAV.as_view(), name="political-party-crud"),
     path('political/', PoliticalAV.as_view(), name="political-crud"),
     path('votes/', VotesAV.as_view(), name="votes-crud"),
+    path('section/', SectionAV.as_view(), name="section-crud"),
     path('results/<int:city>/<int:cargo>/<int:year>/', ElectionResultsAV.as_view(), name="election-results")
 ]

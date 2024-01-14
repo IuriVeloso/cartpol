@@ -12,6 +12,8 @@ Para resetar a database:
 
 python manage.py flush
 
+Ao resetar a database, é necessario tambem dar os comandos de `makemigrations` and `migrate`
+
 //
 Rio de Janeiro - 14
 Nova Iguaçu - 18
