@@ -2,8 +2,8 @@ from rest_framework import status
 from rest_framework.response import Response
 from rest_framework.views import APIView
 
-from cartpol_app.models import State, County, Neighborhood, ElectoralZone, PoliticalType, PoliticalParty, Election, Political, Votes
-from cartpol_app.api.serializers import StateSerializer, CountySerializer, NeighborhoodSerializer, ElectoralZoneSerializer, PoliticalTypeSerializer, PoliticalPartySerializer, ElectionSerializer, PoliticalSerializer, VotesSerializer, VotesResultSerializer
+from cartpol_app.models import State, County, Neighborhood, ElectoralZone, PoliticalType, PoliticalParty, Election, Political, Votes, Section
+from cartpol_app.api.serializers import StateSerializer, CountySerializer, NeighborhoodSerializer, ElectoralZoneSerializer, PoliticalTypeSerializer, PoliticalPartySerializer, ElectionSerializer, PoliticalSerializer, VotesSerializer, VotesResultSerializer, SectionSerializer
 
 class StateAV(APIView):
     def get(self, request):
@@ -121,6 +121,19 @@ class VotesAV(APIView):
             votes_serializer.save()
             return Response(votes_serializer.data, status=status.HTTP_201_CREATED)
         return Response(votes_serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
+class SectionAV(APIView):
+    def get(self, request):
+        sections = Section.objects.all()
+        section_serializer = SectionSerializer(sections, many=True)
+        return Response(section_serializer.data, status=status.HTTP_200_OK)
+    
+    def post(self, request):
+        section_serializer = SectionSerializer(data=request.data)
+        if section_serializer.is_valid():
+            section_serializer.save()
+            return Response(section_serializer.data, status=status.HTTP_201_CREATED)
+        return Response(section_serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
 class ElectionResultsAV(APIView):
     def get(self, request, city, cargo, year):

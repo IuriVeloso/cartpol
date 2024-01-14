@@ -1,5 +1,5 @@
 from rest_framework import serializers;
-from cartpol_app.models import State, County, Neighborhood, ElectoralZone, PoliticalType, PoliticalParty, Election, Political, Votes;
+from cartpol_app.models import State, County, Neighborhood, ElectoralZone, PoliticalType, PoliticalParty, Election, Political, Votes, Section
 
 class StateSerializer(serializers.ModelSerializer):
     class Meta:
@@ -51,6 +51,11 @@ class VotesSerializer(serializers.ModelSerializer):
     class Meta:
         model = Votes
         fields = '__all__'
+        
+class SectionSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Section
+        fields = '__all__' 
         
 class VotesResultSerializer(serializers.ModelSerializer):
     percentage = serializers.FloatField()
