@@ -9,6 +9,7 @@ INDEX_ADDRESS = 4
 INDEX_ZONA = 0
 INDEX_BAIRRO = 3
 INDEX_MUNICIPIO = 2
+INDEX_LOCAL_ID = 6
 
 def locals_update():
   print("Começando a selecionar locais de votacao, bairros e secao")
@@ -28,7 +29,8 @@ def locals_update():
         "cep": row[INDEX_CEP],
         "address": row[INDEX_ADDRESS],
         "electoral_zone": int(row[INDEX_ZONA]),
-        "neighborhood": row[INDEX_BAIRRO]
+        "neighborhood": row[INDEX_BAIRRO],
+        "script_id": row[INDEX_LOCAL_ID],
       }
       
       electoral_zones_dict = {"identifier": int(row[INDEX_ZONA]), "state": 1}
@@ -114,9 +116,10 @@ def locals_update():
       
       response = requests.post(URL + "section/", data=section)
       response_json = response.json()
+      response_json["section_script_id"] = section["script_id"]
       section_array_created.append(response_json)
       
   print(section_array_created.__len__(), " secoes criadas")
-  return county_array_created
+  return county_array_created, section_array_created
 
   

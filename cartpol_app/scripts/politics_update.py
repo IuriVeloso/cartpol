@@ -17,6 +17,8 @@ INDEX_POLITICAL_PARTY_FULL_NAME = 30
 INDEX_ELECTION_CODE = 6
 INDEX_ROUND = 5
 INDEX_COUNTY = 14
+INDEX_COUNTY_ID = 13
+INDEX_POLITICAL_NUMBER = 19
 
 def post_politics(county_array_created):
 	politics_array = []
@@ -39,22 +41,29 @@ def post_politics(county_array_created):
 				"political_type": row[INDEX_CARGO],
 				"county_name": row[INDEX_COUNTY],
 				"political_id": row[INDEX_CANDIDATE_ID],
+				"political_script_id": row[INDEX_POLITICAL_NUMBER],
+				"county_id": row[INDEX_COUNTY_ID],
 				}
+   
+			# Removendo votos nulos e restringindo a 5 municipios principais do RJ
+			if row[INDEX_CANDIDATE_ID] in ['95', '96'] or row[INDEX_COUNTY_ID] not in ['60011']:
+				continue
 			
 				
-			if int(political_dict["political_type"]) == CD_CARGO["prefeito"] and row[INDEX_ELECTION_CODE] == "426" and row[INDEX_ROUND] == "1":
-				if contains_duplicates_political(political_dict, politics_array):
-					politics_array.append(political_dict)
+			# if int(political_dict["political_type"]) == CD_CARGO["prefeito"] and row[INDEX_ELECTION_CODE] == "426" and row[INDEX_ROUND] == "1":
+			# 	if contains_duplicates_political(political_dict, politics_array):
+			# 		politics_array.append(political_dict)
 					
-				if contains_duplicates_political_party(political_dict, political_party_array):
-					political_party_dict = {
-						"name": row[INDEX_POLITICAL_PARTY], 
-						"full_name": row[INDEX_POLITICAL_PARTY_FULL_NAME], 
-						"active": True
-						}
-					political_party_array.append(political_party_dict)
-					
+			# 	if contains_duplicates_political_party(political_dict, political_party_array):
+			# 		political_party_dict = {
+			# 			"name": row[INDEX_POLITICAL_PARTY], 
+			# 			"full_name": row[INDEX_POLITICAL_PARTY_FULL_NAME], 
+			# 			"active": True
+			# 			}
+			# 		political_party_array.append(political_party_dict)
 			if int(political_dict["political_type"]) == CD_CARGO["vereador"] and row[INDEX_ELECTION_CODE] == "426" and row[INDEX_ROUND] == "1":
+				if political_dict["political_id"].__len__() < 4 :
+					continue
 				if contains_duplicates_political(political_dict, politics_array):
 					politics_array.append(political_dict)
 
@@ -68,11 +77,8 @@ def post_politics(county_array_created):
 
 	print("Terminando de selecionar candidatos\n\n")
 	print(politics_array.__len__())
-	print("\n\n")
-
-	print("Terminando de selecionar partidos\n\n")
+	print("\nTerminando de selecionar partidos\n\n")
 	print(political_party_array.__len__())
-	print("\n\n")
 
 	politics_array_created = []
 	political_party_array_created = []
@@ -113,7 +119,10 @@ def post_politics(county_array_created):
 		
 		response = requests.post(URL + "political/", data=politics)
 		response_json = response.json()
-		response_json["political_scriptId"] = politics["political_id"]
+		response_json["political_script_id"] = politics["political_script_id"]
+		response_json["county_id"] = politics["county_id"]
 		politics_array_created.append(response_json)
 
 	print(politics_array_created.__len__(), "politicos criados")
+ 
+	return politics_array_created
