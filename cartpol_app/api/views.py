@@ -43,6 +43,19 @@ class NeighborhoodAV(APIView):
             neighborhood_serializer.save()
             return Response(neighborhood_serializer.data, status=status.HTTP_201_CREATED)
         return Response(neighborhood_serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
+class CountysNeighborhoodAV(APIView):
+    def get(self, request, city):
+        neighborhoods = Neighborhood.objects.all().filter(county_id=int(city))
+        neighborhood_serializer = NeighborhoodSerializer(neighborhoods, many=True)
+        return Response(neighborhood_serializer.data, status=status.HTTP_200_OK)
+    
+    def post(self, request):
+        neighborhood_serializer = NeighborhoodSerializer(data=request.data)
+        if neighborhood_serializer.is_valid():
+            neighborhood_serializer.save()
+            return Response(neighborhood_serializer.data, status=status.HTTP_201_CREATED)
+        return Response(neighborhood_serializer.errors, status=status.HTTP_400_BAD_REQUEST)
     
 class ElectoralZoneAV(APIView):
     def get(self, request):
@@ -114,6 +127,35 @@ class VotesAV(APIView):
         votes = Votes.objects.all()
         votes_serializer = VotesSerializer(votes, many=True)
         return Response(votes_serializer.data, status=status.HTTP_200_OK)
+    
+    def post(self, request):
+        votes_serializer = VotesSerializer(data=request.data)
+        if votes_serializer.is_valid():
+            votes_serializer.save()
+            return Response(votes_serializer.data, status=status.HTTP_201_CREATED)
+        return Response(votes_serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+    
+class PoliticalVotesAV(APIView):
+    def get(self, request, political_id):
+        votes = Votes.objects.filter(political_id=int(political_id))
+        votes_by_neighborhood = []
+        neighborhood_votes_id = []
+        
+        for vote in votes:
+            if vote.section.neighborhood.name in neighborhood_votes_id:
+                data_serialized = VotesSerializer(vote).data
+                for index, item in enumerate(votes_by_neighborhood):
+                    if item["neighborhood"] == vote.section.neighborhood.name:
+                        break
+
+                votes_by_neighborhood[index]["total_votes"] += + data_serialized["quantity"]
+                
+            else:
+                neighborhood_votes_id.append(vote.section.neighborhood.name)
+                data_serialized = VotesSerializer(vote).data
+                votes_by_neighborhood.append({'total_votes': data_serialized["quantity"], 'neighborhood': vote.section.neighborhood.name})
+                        
+        return Response(votes_by_neighborhood, status=status.HTTP_200_OK)
     
     def post(self, request):
         votes_serializer = VotesSerializer(data=request.data)
