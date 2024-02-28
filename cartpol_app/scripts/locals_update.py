@@ -29,6 +29,7 @@ def locals_update():
         "cep": row[INDEX_CEP],
         "address": row[INDEX_ADDRESS],
         "electoral_zone": int(row[INDEX_ZONA]),
+        "electoral_zone_script_id": int(row[INDEX_ZONA]),
         "neighborhood": row[INDEX_BAIRRO],
         "script_id": row[INDEX_LOCAL_ID],
       }
@@ -117,6 +118,7 @@ def locals_update():
       response = requests.post(URL + "section/", data=section)
       response_json = response.json()
       response_json["section_script_id"] = section["script_id"]
+      response_json["electoral_zone"] = section["electoral_zone_script_id"]
       section_array_created.append(response_json)
       
   print(section_array_created.__len__(), " secoes criadas")
