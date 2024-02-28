@@ -21,3 +21,4 @@ virtualenv==20.25.0
 #wheel @ file:///AppleInternal/Library/BuildRoots/9dd5efe2-7fad-11ee-b588-aa530c46a9ea/Library/Caches/com.apple.xbs/Sources/python3/wheel-0.37.0-py2.py3-none-any.whl
 gunicorn>=21.2,<22.0
 dj-database-url>=2.0,<3.0
+djangorestframework==3.14.0
