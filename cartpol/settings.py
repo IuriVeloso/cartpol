@@ -34,7 +34,8 @@ if IS_HEROKU_APP:
     ALLOWED_HOSTS = ["*"]
 else:
     ALLOWED_HOSTS = []
-
+PORT = os.getenv("PORT", default="8000")
+# SECURITY WARNING: don't run with debug turned on in production!
 
 # Application definition
 
