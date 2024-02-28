@@ -13,6 +13,7 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 from pathlib import Path
 import os
 import dj_database_url
+import django_heroku
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -24,20 +25,21 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = "django-insecure-$r3x*^t2p1t1tii222ce1gx@vt_b6)#-ai#=5n%&tq_d9en+9i"
 
-IS_HEROKU_APP = "DYNO" in os.environ and not "CI" in os.environ
+# IS_HEROKU_APP = "DYNO" in os.environ and not "CI" in os.environ
 
-# SECURITY WARNING: don't run with debug turned on in production!
-if not IS_HEROKU_APP:
-    DEBUG = True
+# # SECURITY WARNING: don't run with debug turned on in production!
+# if not IS_HEROKU_APP:
+#     DEBUG = True
 
-if IS_HEROKU_APP:
-    ALLOWED_HOSTS = ["*"]
-else:
-    ALLOWED_HOSTS = []
-PORT = os.getenv("PORT", default="8000")
-# SECURITY WARNING: don't run with debug turned on in production!
+# if IS_HEROKU_APP:
+#     ALLOWED_HOSTS = ["*"]
+# else:
+#     ALLOWED_HOSTS = []
+# PORT = os.getenv("PORT", default="8000")
+# # SECURITY WARNING: don't run with debug turned on in production!
 
 # Application definition
+django_heroku.settings(locals())
 
 INSTALLED_APPS = [
     "django.contrib.admin",
