@@ -2,15 +2,15 @@ Para rodar, usar:
 
 source ../menv/bin/activate
 
-python manage.py runserver     
+python3 manage.py runserver
 
 Para atualizar as dependencias, usar:
 
-python -m pip install --upgrade pip
+python3 -m pip install --upgrade pip
 
 Para resetar a database:
 
-python manage.py flush
+python3 manage.py flush
 
 Ao resetar a database, é necessario tambem dar os comandos de `makemigrations` and `migrate`
 

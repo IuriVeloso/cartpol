@@ -46,21 +46,21 @@ def post_politics(county_array_created):
 				}
    
 			# Removendo votos nulos e restringindo a 5 municipios principais do RJ
-			if row[INDEX_CANDIDATE_ID] in ['95', '96'] or row[INDEX_COUNTY_ID] not in ['60011']:
+			if row[INDEX_CANDIDATE_ID] in ['95', '96']:
 				continue
 			
 				
-			# if int(political_dict["political_type"]) == CD_CARGO["prefeito"] and row[INDEX_ELECTION_CODE] == "426" and row[INDEX_ROUND] == "1":
-			# 	if contains_duplicates_political(political_dict, politics_array):
-			# 		politics_array.append(political_dict)
+			if int(political_dict["political_type"]) == CD_CARGO["prefeito"] and row[INDEX_ELECTION_CODE] == "426" and row[INDEX_ROUND] == "1":
+				if contains_duplicates_political(political_dict, politics_array):
+					politics_array.append(political_dict)
 					
-			# 	if contains_duplicates_political_party(political_dict, political_party_array):
-			# 		political_party_dict = {
-			# 			"name": row[INDEX_POLITICAL_PARTY], 
-			# 			"full_name": row[INDEX_POLITICAL_PARTY_FULL_NAME], 
-			# 			"active": True
-			# 			}
-			# 		political_party_array.append(political_party_dict)
+				if contains_duplicates_political_party(political_dict, political_party_array):
+					political_party_dict = {
+						"name": row[INDEX_POLITICAL_PARTY], 
+						"full_name": row[INDEX_POLITICAL_PARTY_FULL_NAME], 
+						"active": True
+						}
+					political_party_array.append(political_party_dict)
 			if int(political_dict["political_type"]) == CD_CARGO["vereador"] and row[INDEX_ELECTION_CODE] == "426" and row[INDEX_ROUND] == "1":
 				if political_dict["political_id"].__len__() < 4 :
 					continue
