@@ -15,6 +15,7 @@ import os
 import dj_database_url
 import django_heroku
 
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -31,10 +32,9 @@ IS_HEROKU_APP = "DYNO" in os.environ and not "CI" in os.environ
 if not IS_HEROKU_APP:
     DEBUG = True
 
-if IS_HEROKU_APP:
-    ALLOWED_HOSTS = ["*"]
-else:
+if not IS_HEROKU_APP:
     ALLOWED_HOSTS = []
+
 PORT = os.getenv("PORT", default="8000")
 # # SECURITY WARNING: don't run with debug turned on in production!
 
@@ -59,7 +59,6 @@ MIDDLEWARE = [
     "django.contrib.auth.middleware.AuthenticationMiddleware",
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
-    "whitenoise.middleware.WhiteNoiseMiddleware"
 ]
 
 ROOT_URLCONF = "cartpol.urls"
@@ -87,20 +86,7 @@ django_heroku.settings(locals())
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
-if IS_HEROKU_APP:
-    # In production on Heroku the database configuration is derived from the `DATABASE_URL`
-    # environment variable by the dj-database-url package. `DATABASE_URL` will be set
-    # automatically by Heroku when a database addon is attached to your Heroku app. See:
-    # https://devcenter.heroku.com/articles/provisioning-heroku-postgres
-    # https://github.com/jazzband/dj-database-url
-    DATABASES = {
-        "default": dj_database_url.config(
-            conn_max_age=600,
-            conn_health_checks=True,
-            ssl_require=True,
-        ),
-    }
-else:
+if not IS_HEROKU_APP:
     # When running locally in development or in CI, a sqlite database file will be used instead
     # to simplify initial setup. Longer term it's recommended to use Postgres locally too.
     DATABASES = {
@@ -147,7 +133,6 @@ USE_TZ = True
 
 STATIC_ROOT = BASE_DIR / "staticfiles"
 STATIC_URL = "static/"
-STATICFILES_STORAGE = "whitenoise.storage.CompressedStaticFilesStorage"
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
