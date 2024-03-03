@@ -25,21 +25,20 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = "django-insecure-$r3x*^t2p1t1tii222ce1gx@vt_b6)#-ai#=5n%&tq_d9en+9i"
 
-# IS_HEROKU_APP = "DYNO" in os.environ and not "CI" in os.environ
+IS_HEROKU_APP = "DYNO" in os.environ and not "CI" in os.environ
 
 # # SECURITY WARNING: don't run with debug turned on in production!
-# if not IS_HEROKU_APP:
-#     DEBUG = True
+if not IS_HEROKU_APP:
+    DEBUG = True
 
-# if IS_HEROKU_APP:
-#     ALLOWED_HOSTS = ["*"]
-# else:
-#     ALLOWED_HOSTS = []
-# PORT = os.getenv("PORT", default="8000")
+if IS_HEROKU_APP:
+    ALLOWED_HOSTS = ["*"]
+else:
+    ALLOWED_HOSTS = []
+PORT = os.getenv("PORT", default="8000")
 # # SECURITY WARNING: don't run with debug turned on in production!
 
 # Application definition
-django_heroku.settings(locals())
 
 INSTALLED_APPS = [
     "django.contrib.admin",
@@ -82,6 +81,7 @@ TEMPLATES = [
 
 WSGI_APPLICATION = "cartpol.wsgi.application"
 
+django_heroku.settings(locals())
 
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
