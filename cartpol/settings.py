@@ -32,8 +32,7 @@ IS_HEROKU_APP = "DYNO" in os.environ and not "CI" in os.environ
 if not IS_HEROKU_APP:
     DEBUG = True
 
-if not IS_HEROKU_APP:
-    ALLOWED_HOSTS = []
+ALLOWED_HOSTS = []
 
 PORT = os.getenv("PORT", default="8000")
 # # SECURITY WARNING: don't run with debug turned on in production!
@@ -85,15 +84,14 @@ WSGI_APPLICATION = "cartpol.wsgi.application"
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
-if not IS_HEROKU_APP:
-    # When running locally in development or in CI, a sqlite database file will be used instead
-    # to simplify initial setup. Longer term it's recommended to use Postgres locally too.
-    DATABASES = {
-        "default": {
-            "ENGINE": "django.db.backends.sqlite3",
-            "NAME": BASE_DIR / "db.sqlite3",
-        }
+# When running locally in development or in CI, a sqlite database file will be used instead
+# to simplify initial setup. Longer term it's recommended to use Postgres locally too.
+DATABASES = {
+    "default": {
+        "ENGINE": "django.db.backends.sqlite3",
+        "NAME": BASE_DIR / "db.sqlite3",
     }
+}
 
 
 # Password validation
