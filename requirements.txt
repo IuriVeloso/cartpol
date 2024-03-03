@@ -1,4 +1,4 @@
-altgraph @ file:///AppleInternal/Library/BuildRoots/9dd5efe2-7fad-11ee-b588-aa530c46a9ea/Library/Caches/com.apple.xbs/Sources/python3/altgraph-0.17.2-py2.py3-none-any.whl
+#altgraph @ file:///AppleInternal/Library/BuildRoots/9dd5efe2-7fad-11ee-b588-aa530c46a9ea/Library/Caches/com.apple.xbs/Sources/python3/altgraph-0.17.2-py2.py3-none-any.whl
 asgiref==3.7.2
 boto3==1.34.37
 botocore==1.34.37
@@ -13,13 +13,13 @@ django-heroku==0.3.1
 djangorestframework==3.14.0
 enum34==1.1.10
 filelock==3.13.1
-future @ file:///AppleInternal/Library/BuildRoots/9dd5efe2-7fad-11ee-b588-aa530c46a9ea/Library/Caches/com.apple.xbs/Sources/python3/future-0.18.2-py3-none-any.whl
+#future @ file:///AppleInternal/Library/BuildRoots/9dd5efe2-7fad-11ee-b588-aa530c46a9ea/Library/Caches/com.apple.xbs/Sources/python3/future-0.18.2-py3-none-any.whl
 gunicorn==21.2.0
 idna==2.10
 importlib-metadata==7.0.1
 ipaddress==1.0.23
 jmespath==1.0.1
-macholib @ file:///AppleInternal/Library/BuildRoots/9dd5efe2-7fad-11ee-b588-aa530c46a9ea/Library/Caches/com.apple.xbs/Sources/python3/macholib-1.15.2-py2.py3-none-any.whl
+#macholib @ file:///AppleInternal/Library/BuildRoots/9dd5efe2-7fad-11ee-b588-aa530c46a9ea/Library/Caches/com.apple.xbs/Sources/python3/macholib-1.15.2-py2.py3-none-any.whl
 Markdown==3.5.1
 packaging==23.2
 platformdirs==4.1.0
