@@ -61,6 +61,8 @@ MIDDLEWARE = [
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
 ]
 
+django_heroku.settings(locals())
+
 ROOT_URLCONF = "cartpol.urls"
 
 TEMPLATES = [
@@ -80,8 +82,6 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = "cartpol.wsgi.application"
-
-django_heroku.settings(locals())
 
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
