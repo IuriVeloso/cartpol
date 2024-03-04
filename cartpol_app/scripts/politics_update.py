@@ -1,7 +1,7 @@
 import csv, requests
 from cartpol_app.scripts.helpers import contains_duplicates_political, contains_duplicates_political_party
 
-URL = "http://127.0.0.1:8000/cartpol/"
+URL = "https://cartpol-e2d96a7ee3e9.herokuapp.com/cartpol/"
 
 CD_CARGO = {
     "prefeito": 11,
