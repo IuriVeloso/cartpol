@@ -1,8 +1,6 @@
 import csv, requests
 from cartpol_app.scripts.helpers import contains_duplicates_electoral_zone, contains_duplicates_neighborhood, contains_duplicates_county
 
-URL = "http://127.0.0.1:8000/cartpol/"
-
 INDEX_SECAO = 8
 INDEX_CEP = 5
 INDEX_ADDRESS = 4
@@ -11,7 +9,7 @@ INDEX_BAIRRO = 3
 INDEX_MUNICIPIO = 2
 INDEX_LOCAL_ID = 6
 
-def locals_update():
+def locals_update(url):
   print("Começando a selecionar locais de votacao, bairros e secao")
 
   with open('data/local_de_votacao_RJ.csv', 'r', encoding='latin-1') as f:
@@ -59,7 +57,7 @@ def locals_update():
   print("\nInserindo municipios\n")
 
   for county in county_array:
-      response = requests.post(URL + "county/", data=county)
+      response = requests.post(url + "county/", data=county)
       response_json = response.json()
       county_array_created.append(response_json)
       
@@ -70,7 +68,7 @@ def locals_update():
 
   for electoral_zone in electoral_zones_array:
 
-      response = requests.post(URL + "electoral-zone/", data=electoral_zone)
+      response = requests.post(url + "electoral-zone/", data=electoral_zone)
       response_json = response.json()
       electoral_zones_array_created.append(response_json)
       
@@ -89,7 +87,7 @@ def locals_update():
           print("County not found")
           break
       
-      response = requests.post(URL + "neighborhood/", data=neighborhood)
+      response = requests.post(url + "neighborhood/", data=neighborhood)
       response_json = response.json()
       neighborhood_array_created.append(response_json)
   print(neighborhood_array_created.__len__(), "bairros criados")
@@ -115,7 +113,7 @@ def locals_update():
       section["electoral_zone"] = electoral_zone["id"]
       section["neighborhood"] = neighborhood["id"]
       
-      response = requests.post(URL + "section/", data=section)
+      response = requests.post(url + "section/", data=section)
       response_json = response.json()
       response_json["section_script_id"] = section["script_id"]
       response_json["electoral_zone"] = section["electoral_zone_script_id"]

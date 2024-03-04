@@ -81,6 +81,8 @@ TEMPLATES = [
 
 WSGI_APPLICATION = "cartpol.wsgi.application"
 
+
+
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
@@ -88,11 +90,14 @@ WSGI_APPLICATION = "cartpol.wsgi.application"
 # to simplify initial setup. Longer term it's recommended to use Postgres locally too.
 DATABASES = {
     "default": {
-        "ENGINE": "django.db.backends.sqlite3",
-        "NAME": BASE_DIR / "db.sqlite3",
+        "ENGINE": "django.db.backends.postgresql_psycopg2",
+        "NAME": "cartpol_db_name",
+        "USER" : "cartpol_prod",
+        "PASSWORD" : "iuri300498",
+        "HOST" : "localhost",
+        "PORT" : "5432",
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators

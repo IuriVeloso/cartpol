@@ -1,7 +1,5 @@
 import requests, csv
 
-URL = "http://127.0.0.1:8000/cartpol/"
-
 INDEX_CARGO = 17
 INDEX_SECTION_ID = 22
 INDEX_NAME = 20
@@ -17,7 +15,7 @@ CD_CARGO = {
     "vereador": 13
 } 
 
-def post_votes(politics_array_created, section_array_created):
+def post_votes(url, politics_array_created, section_array_created):
     votes_array = []
     
     with open('data/votacao_secao_2020_RJ.csv', 'r', encoding='latin-1') as f:
@@ -79,7 +77,7 @@ def post_votes(politics_array_created, section_array_created):
             errors += 1
             continue
     
-        response = requests.post(URL + "votes/", data=votes)
+        response = requests.post(url + "votes/", data=votes)
         response_json = response.json()
         votes_array_created.append(response_json)
         
