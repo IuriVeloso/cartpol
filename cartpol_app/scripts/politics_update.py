@@ -1,8 +1,6 @@
 import csv, requests
 from cartpol_app.scripts.helpers import contains_duplicates_political, contains_duplicates_political_party
 
-URL = "https://cartpol-e2d96a7ee3e9.herokuapp.com/cartpol/"
-
 CD_CARGO = {
     "prefeito": 11,
     "vereador": 13
@@ -20,7 +18,7 @@ INDEX_COUNTY = 14
 INDEX_COUNTY_ID = 13
 INDEX_POLITICAL_NUMBER = 19
 
-def post_politics(county_array_created):
+def post_politics(url, county_array_created):
 	politics_array = []
 	political_party_array = []    
 
@@ -87,7 +85,7 @@ def post_politics(county_array_created):
 
 	for political_party in political_party_array:
 		
-		response = requests.post(URL + "political-party/", data=political_party)
+		response = requests.post(url + "political-party/", data=political_party)
 		response_json = response.json()
 		political_party_array_created.append(response_json)
 		
@@ -117,7 +115,7 @@ def post_politics(county_array_created):
 		politics["region_id"] = county["id"]
 		
 		
-		response = requests.post(URL + "political/", data=politics)
+		response = requests.post(url + "political/", data=politics)
 		response_json = response.json()
 		response_json["political_script_id"] = politics["political_script_id"]
 		response_json["county_id"] = politics["county_id"]

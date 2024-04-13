@@ -1,3 +1,5 @@
+from django.db.models import Sum
+
 from rest_framework import status
 from rest_framework.response import Response
 from rest_framework.views import APIView
@@ -150,24 +152,47 @@ class SectionAV(APIView):
     
 class PoliticalVotesAV(APIView):
     def get(self, request, political_id):
-        votes = Votes.objects.filter(political_id=int(political_id))
+        county_id = 1
+        candidates_votes = Votes.objects.filter(political_id=int(political_id))
+        total_votes = Votes.objects.filter(political_id=int(political_id)).aggregate(Sum('quantity'))
+        total_county_votes = Votes.objects.filter(section__neighborhood__county_id=county_id).aggregate(Sum('quantity'))
+        total_neighborhoods_votes = Votes.objects.values('section__neighborhood').annotate(total=Sum('quantity'))
+
+        
         votes_by_neighborhood = []
         neighborhood_votes_id = []
         
-        for vote in votes:
-            if vote.section.neighborhood.name in neighborhood_votes_id:
-                data_serialized = VotesSerializer(vote).data
+        total_candidates_votes = total_votes.get("quantity__sum")
+        total_county_votes = total_county_votes.get("quantity__sum")
+        
+        for vote in candidates_votes:
+            data_serialized = VotesSerializer(vote).data
+            quantity_votes = data_serialized["quantity"]
+            total_neighborhood_votes = total_neighborhoods_votes.get(section__neighborhood=vote.section.neighborhood.id)['total']
+            
+            if vote.section.neighborhood.id in neighborhood_votes_id:
                 for index, item in enumerate(votes_by_neighborhood):
                     if item["neighborhood"] == vote.section.neighborhood.name:
                         break
 
-                votes_by_neighborhood[index]["total_votes"] += + data_serialized["quantity"]
+                votes_by_neighborhood[index]["total_votes"] += quantity_votes
+                total_percentage_votes = votes_by_neighborhood[index]["total_votes"] * 100.0
+                votes_by_neighborhood[index]["concentration"] = round(total_percentage_votes / total_candidates_votes, 2)
+                votes_by_neighborhood[index]["dispersion"] = round(total_percentage_votes / total_county_votes, 2)
+                votes_by_neighborhood[index]["dominance"] = round(total_percentage_votes / total_neighborhood_votes, 2)
                 
             else:
-                neighborhood_votes_id.append(vote.section.neighborhood.name)
-                data_serialized = VotesSerializer(vote).data
-                votes_by_neighborhood.append({'total_votes': data_serialized["quantity"], 'neighborhood': vote.section.neighborhood.name})
-                        
+                neighborhood_votes_id.append(vote.section.neighborhood.id)
+                votes_by_neighborhood.append({
+                    'total_votes': quantity_votes, 
+                    'neighborhood': vote.section.neighborhood.name, 
+                    'dispersion': round(quantity_votes  * 100.0 / total_county_votes, 2),
+                    'concentration': round(quantity_votes * 100.0 / total_candidates_votes, 2),
+                    'dominance':  round(quantity_votes * 100.0 / total_neighborhood_votes, 2)
+                })
+                  
+        
+              
         return Response(votes_by_neighborhood, status=status.HTTP_200_OK)
     
 class PoliticalPartiesVotesAV(APIView):
@@ -210,7 +235,6 @@ class ElectionResultsAV(APIView):
             else:
                 zone_votes_id.append(vote.zone.identifier)
                 data_serialized = VotesSerializer(vote).data
-                print(data_serialized)
                 votes_by_zone[vote.zone.identifier] = {'data': [], 'total_votes': 0}
                 votes_by_zone[vote.zone.identifier]["data"] = [data_serialized]
                 votes_by_zone[vote.zone.identifier]["total_votes"] = data_serialized["quantity"]
