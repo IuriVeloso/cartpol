@@ -4,7 +4,8 @@ def base_info(url):
     election = {'year': 2020, 'round': 1, 'code': 426}
     politicalTypePrefeito = {'name': "Prefeito", 'description': "Deve representar o município nas suas relações jurídicas, políticas e administrativas, além de sancionar, promulgar e publicar as leis"}
     politicalTypeVereador = {'name': "Vereador", 'description': "Cabe elaborar as leis municipais e fiscalizar a atuação do Executivo – no caso, o prefeito. São os vereadores que propõem, discutem e aprovam as leis a serem aplicadas no município"}
-    state = {'name': 'RJ', 'full_name': 'Rio de Janeiro'}
+    #state = {'name': 'RJ', 'full_name': 'Rio de Janeiro'}
+    state = {'name': 'SP', 'full_name': 'São Paulo'}
     
     response = requests.post(url + "political-type/", data=politicalTypePrefeito)
     response_json = response.json()

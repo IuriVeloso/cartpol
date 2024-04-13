@@ -1,18 +1,41 @@
-import csv, requests
+import csv, requests, re
 from cartpol_app.scripts.helpers import contains_duplicates_electoral_zone, contains_duplicates_neighborhood, contains_duplicates_county
 
-INDEX_SECAO = 8
-INDEX_CEP = 5
-INDEX_ADDRESS = 4
-INDEX_ZONA = 0
-INDEX_BAIRRO = 3
-INDEX_MUNICIPIO = 2
-INDEX_LOCAL_ID = 6
+INDEX_SECAO = "INDEX_SECAO"
+INDEX_CEP="INDEX_CEP"
+INDEX_ADDRESS="INDEX_ADDRESS"
+INDEX_ZONA="INDEX_ZONA"
+INDEX_BAIRRO="INDEX_BAIRRO"
+INDEX_MUNICIPIO = "INDEX_MUNICIPIO"
+INDEX_LOCAL_ID="INDEX_LOCAL_ID"
+
+INDEX_RJ = {
+  "INDEX_SECAO": 8,
+  "INDEX_CEP": 5,
+  "INDEX_ADDRESS": 4,
+  "INDEX_ZONA": 0,
+  "INDEX_BAIRRO": 3,
+  "INDEX_MUNICIPIO": 2,
+  "INDEX_LOCAL_ID": 6
+}
+
+INDEX_SP = {
+  "INDEX_SECAO": 5,
+  "INDEX_CEP": 1,
+  "INDEX_ADDRESS": 4,
+  "INDEX_ZONA": 1,
+  "INDEX_BAIRRO": 0,
+  "INDEX_MUNICIPIO": 2,
+  "INDEX_LOCAL_ID": 2
+}
 
 def locals_update(url):
   print("Começando a selecionar locais de votacao, bairros e secao")
+  
+  INDEX_MNCP = INDEX_SP
 
-  with open('data/local_de_votacao_RJ.csv', 'r', encoding='latin-1') as f:
+  #with open('data/local_de_votacao_RJ.csv', 'r', encoding='latin-1') as f:
+  with open('data/local_de_votacao_SP.csv', 'r', encoding='utf-8') as f:
     section_array = []
     neighborhood_array = []
     electoral_zones_array = []
@@ -22,21 +45,34 @@ def locals_update(url):
     next(reader)
       
     for row in reader:
-      section_dict = {
-        "identifier": row[INDEX_SECAO],
-        "cep": row[INDEX_CEP],
-        "address": row[INDEX_ADDRESS],
-        "electoral_zone": int(row[INDEX_ZONA]),
-        "electoral_zone_script_id": int(row[INDEX_ZONA]),
-        "neighborhood": row[INDEX_BAIRRO],
-        "script_id": row[INDEX_LOCAL_ID],
-      }
-      
-      electoral_zones_dict = {"identifier": int(row[INDEX_ZONA]), "state": 1}
-      county_dict = {"name": row[INDEX_MUNICIPIO], "state": 1}
-      neighborhood_dict = {"name": row[INDEX_BAIRRO], "county_id": 2, "county_name": row[INDEX_MUNICIPIO]}
+      electoral_zones_dict = {"identifier": int(row[INDEX_MNCP[INDEX_ZONA]]), "state": 1}
+      county_dict = {"name": "São Paulo", "state": 1}
+      neighborhood_dict = {"name": str(row[INDEX_MNCP[INDEX_BAIRRO]]), "county_id": 2, "county_name": "São Paulo"}
 
-      section_array.append(section_dict)
+      sections_id = row[INDEX_MNCP[INDEX_SECAO]].split(";")
+      sections = []
+      for item in sections_id:
+          matches = re.findall(r'\b\d+(?:(?=ª)|\b)', item)
+          print(matches, sections_id)
+          if(len(matches) == 0):
+            continue
+          if (len(matches) == 1):
+              sections.append(int(matches[0]))
+          else:
+              for i in range(int(matches[0]), int(matches[1]) + 1):
+                  sections.append(i)    
+
+      for section_id in sections:
+        section_dict = {
+          "identifier": section_id,
+          "cep": row[INDEX_MNCP[INDEX_CEP]],
+          "address": row[INDEX_MNCP[INDEX_ADDRESS]],
+          "electoral_zone": int(row[INDEX_MNCP[INDEX_ZONA]]),
+          "electoral_zone_script_id": int(row[INDEX_MNCP[INDEX_ZONA]]),
+          "neighborhood": str(row[INDEX_MNCP[INDEX_BAIRRO]]),
+          "script_id": section_id,
+        }
+        section_array.append(section_dict)
 
       if contains_duplicates_neighborhood(neighborhood_dict, neighborhood_array):
         neighborhood_array.append(neighborhood_dict)
@@ -92,7 +128,7 @@ def locals_update(url):
       neighborhood_array_created.append(response_json)
   print(neighborhood_array_created.__len__(), "bairros criados")
   
-  print("\n\nBairros finalizados. Inserindo secoes\n")
+  print("\nBairros finalizados. Inserindo secoes\n")
 
   for section in section_array:
       electoral_zone = next((obj for obj in electoral_zones_array_created 

@@ -1,7 +1,8 @@
 import requests, csv
 
 INDEX_CARGO = 17
-INDEX_SECTION_ID = 22
+#INDEX_SECTION_ID = 22
+INDEX_SECTION_ID = 16
 INDEX_NAME = 20
 INDEX_FULL_NAME = 20
 INDEX_CANDIDATE_ID = 19
@@ -18,7 +19,7 @@ CD_CARGO = {
 def post_votes(url, politics_array_created, section_array_created):
     votes_array = []
     
-    with open('data/votacao_secao_2020_RJ.csv', 'r', encoding='latin-1') as f:
+    with open('data/votacao_secao_2020_SP.csv', 'r', encoding='latin-1') as f:
         print("Começando a selecionar votos")
         
         reader = csv.reader(f, delimiter=';', strict=True)
@@ -26,6 +27,10 @@ def post_votes(url, politics_array_created, section_array_created):
         next(reader)
 
         for row in reader:
+            political_id = row[INDEX_CANDIDATE_ID]
+            county_id = row[INDEX_COUNTY_ID]
+            if county_id not in ['71072'] or political_id not in ['50700']:
+                continue
             votes_dict = {
                 "quantity": row[INDEX_VOTES],
                 "description": row[INDEX_VOTES] + " votos para " + row[INDEX_NAME],
@@ -35,10 +40,11 @@ def post_votes(url, politics_array_created, section_array_created):
                 "zone_id": row[INDEX_ZONE_ID],
             }
                 
-            if int(row[INDEX_CARGO]) == CD_CARGO["prefeito"] and row[INDEX_ELECTION_CODE] == "426" and row[INDEX_ROUND] == "1":
-                votes_array.append(votes_dict)
+            # if int(row[INDEX_CARGO]) == CD_CARGO["prefeito"] and row[INDEX_ELECTION_CODE] == "426" and row[INDEX_ROUND] == "1":
+            #     votes_array.append(votes_dict)
                     
             if int(row[INDEX_CARGO]) == CD_CARGO["vereador"] and row[INDEX_ELECTION_CODE] == "426" and row[INDEX_ROUND] == "1" and len(row[INDEX_CANDIDATE_ID]) > 3:
+                print(votes_dict)
                 votes_array.append(votes_dict)
 
     
@@ -58,8 +64,9 @@ def post_votes(url, politics_array_created, section_array_created):
         , None)
     
         section = next((obj for obj in section_array_created
-            if int(obj["section_script_id"]) == votes["section_id"] and obj["electoral_zone"] == int(votes["zone_id"]))
-            , None)  
+            if int(obj["section_script_id"]) == votes["section_id"] 
+                and obj["electoral_zone"] == int(votes["zone_id"]))
+            , None) 
 
         if political is not None:
             votes["political"] = political["id"]

@@ -23,7 +23,7 @@ class County (models.Model):
         return self.name
     
 class Neighborhood (models.Model):
-    name = models.CharField(max_length=40)
+    name = models.CharField(max_length=100)
     county = models.ForeignKey(County, on_delete=models.CASCADE)
     def __str__(self):
         return self.name

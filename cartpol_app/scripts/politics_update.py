@@ -1,7 +1,7 @@
 import csv, requests
 from cartpol_app.scripts.helpers import contains_duplicates_political, contains_duplicates_political_party
 
-URL = "https://cartpol-e2d96a7ee3e9.herokuapp.com/cartpol/"
+URL = "http://localhost:8000/cartpol/"
 
 CD_CARGO = {
     "prefeito": 11,
@@ -25,7 +25,7 @@ def post_politics(county_array_created):
 	political_party_array = []    
 
 
-	with open('data/votacao_candidato_munzona_2020_RJ.csv', 'r', encoding='latin-1') as f:
+	with open('data/votacao_candidato_munzona_2020_SP.csv', 'r', encoding='latin-1') as f:
 		print("Começando a selecionar partidos e candidatos")
 		
 		reader = csv.reader(f, delimiter=';', strict=True)
@@ -33,6 +33,10 @@ def post_politics(county_array_created):
 		next(reader)
 
 		for row in reader:
+      		# Removendo votos nulos e restringindo a SP
+			if row[INDEX_CANDIDATE_ID] in ['95', '96'] or row[INDEX_COUNTY_ID] not in ['71072']:
+				continue
+
 			political_dict = {
 				"election": 1, 
 				"name": row[INDEX_NAME], 
@@ -44,23 +48,18 @@ def post_politics(county_array_created):
 				"political_script_id": row[INDEX_POLITICAL_NUMBER],
 				"county_id": row[INDEX_COUNTY_ID],
 				}
-   
-			# Removendo votos nulos e restringindo a 5 municipios principais do RJ
-			if row[INDEX_CANDIDATE_ID] in ['95', '96']:
-				continue
-			
 				
-			if int(political_dict["political_type"]) == CD_CARGO["prefeito"] and row[INDEX_ELECTION_CODE] == "426" and row[INDEX_ROUND] == "1":
-				if contains_duplicates_political(political_dict, politics_array):
-					politics_array.append(political_dict)
+			# if int(political_dict["political_type"]) == CD_CARGO["prefeito"] and row[INDEX_ELECTION_CODE] == "426" and row[INDEX_ROUND] == "1":
+			# 	if contains_duplicates_political(political_dict, politics_array):
+			# 		politics_array.append(political_dict)
 					
-				if contains_duplicates_political_party(political_dict, political_party_array):
-					political_party_dict = {
-						"name": row[INDEX_POLITICAL_PARTY], 
-						"full_name": row[INDEX_POLITICAL_PARTY_FULL_NAME], 
-						"active": True
-						}
-					political_party_array.append(political_party_dict)
+			# 	if contains_duplicates_political_party(political_dict, political_party_array):
+			# 		political_party_dict = {
+			# 			"name": row[INDEX_POLITICAL_PARTY], 
+			# 			"full_name": row[INDEX_POLITICAL_PARTY_FULL_NAME], 
+			# 			"active": True
+			# 			}
+			# 		political_party_array.append(political_party_dict)
 			if int(political_dict["political_type"]) == CD_CARGO["vereador"] and row[INDEX_ELECTION_CODE] == "426" and row[INDEX_ROUND] == "1":
 				if political_dict["political_id"].__len__() < 4 :
 					continue
@@ -100,7 +99,7 @@ def post_politics(county_array_created):
 								, None)
 		
 		county = next((obj for obj in county_array_created
-						if obj["name"] == politics["county_name"]), None)
+						if str.lower(obj["name"]) == str.lower(politics["county_name"])), None)
 		
 		if political_party is not None:
 			politics["political_party"] = political_party["id"]
