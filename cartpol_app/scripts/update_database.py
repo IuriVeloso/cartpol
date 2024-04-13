@@ -5,7 +5,7 @@ from cartpol_app.scripts.locals_update import locals_update
 from cartpol_app.scripts.politics_update import post_politics
 from cartpol_app.scripts.votes_update import post_votes
 
-env = sys.argv[1]
+env = "local"
 
 if env == 'prod':
     URL = "https://cartpol-e2d96a7ee3e9.herokuapp.com/cartpol/"
@@ -15,7 +15,7 @@ else:
 startTime = datetime.datetime.now()
 print("\nStarted script running\n")
                     
-base_info()
+base_info(url=URL)
 
 print("\nFinished base_info()\n")
 
