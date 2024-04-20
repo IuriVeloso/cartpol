@@ -30,8 +30,6 @@ print("\nFinished locals_update()\n")
 
 print("\nStarted post_politics()\n")
 
-print(section_array_created[-1])
-
 politics_array_created = post_politics(url=URL, county_array_created=county_array_created)
 
 print("\nFinished post_politics()\n")

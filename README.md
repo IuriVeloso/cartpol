@@ -1,6 +1,6 @@
 Para rodar, usar:
 
-source ../menv/bin/activate
+source ./menv/bin/activate
 
 python3 manage.py runserver
 
@@ -13,6 +13,12 @@ Para resetar a database:
 python3 manage.py flush
 
 Ao resetar a database, é necessario tambem dar os comandos de `makemigrations` and `migrate`
+
+#Subindo a plataforma
+
+git push heroku main
+
+Checar o link: https://devcenter.heroku.com/articles/git#deploy-your-code
 
 //
 Rio de Janeiro - 14
