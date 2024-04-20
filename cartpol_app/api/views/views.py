@@ -152,8 +152,9 @@ class SectionAV(APIView):
     
 class PoliticalVotesAV(APIView):
     def get(self, request, political_id):
-        #FIXME - Remove this county id and use the value from the route
-        county_id = 1
+        #FIXME - Remove this county id and use the value from the route (Also update docs)
+        political = Political.objects.get(id=political_id)
+        county_id = political.region_id
         total_candidate_votes = Votes.objects\
             .filter(political_id=int(political_id))\
             .values('section__neighborhood', 'section__neighborhood__name')\
