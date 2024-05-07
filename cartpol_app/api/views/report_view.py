@@ -35,7 +35,7 @@ class GenerateReportView(APIView):
             section__neighborhood_name = vote['section__neighborhood__name']
             total_neighborhood_votes = total_neighborhoods_votes.get(section__neighborhood=section__neighborhood)['total']
             votes_by_neighborhood.append({
-                    'neighborhood': section__neighborhood_name, 
+                    'neighborhood': section__neighborhood_name,
                     'total_votes': total_value, 
                     'dispersion': round(total_value  * 100.0 / total_county_votes, 2),
                     'concentration': round(total_value * 100.0 / total_candidates_votes, 2),

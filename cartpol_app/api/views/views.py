@@ -153,22 +153,18 @@ class SectionAV(APIView):
 class PoliticalVotesAV(APIView):
     def get(self, request, political_id):
         #FIXME - Remove this county id and use the value from the route (Also update docs)
-        political = Political.objects.get(id=political_id)
-        county_id = political.region_id
         total_candidate_votes = Votes.objects\
             .filter(political_id=int(political_id))\
             .values('section__neighborhood', 'section__neighborhood__name')\
             .annotate(total_votes=Sum('quantity'))
         
         total_votes = Votes.objects.filter(political_id=int(political_id)).aggregate(Sum('quantity'))
-        total_county_votes = Votes.objects.filter(section__neighborhood__county_id=county_id).aggregate(Sum('quantity'))
         total_neighborhoods_votes = Votes.objects.values('section__neighborhood').annotate(total=Sum('quantity'))
 
+        total_political_votes = total_votes.get("quantity__sum")
+
         votes_by_neighborhood = []
-        
-        total_candidates_votes = total_votes.get("quantity__sum")
-        total_county_votes = total_county_votes.get("quantity__sum")
-            
+                    
         for vote in total_candidate_votes:
             total_value = vote['total_votes']
             section__neighborhood = vote['section__neighborhood']
@@ -177,9 +173,8 @@ class PoliticalVotesAV(APIView):
             votes_by_neighborhood.append({
                     'total_votes': total_value, 
                     'neighborhood': section__neighborhood_name, 
-                    'dispersion': round(total_value  * 100.0 / total_county_votes, 2),
-                    'concentration': round(total_value * 100.0 / total_candidates_votes, 2),
-                    'dominance':  round(total_value * 100.0 / total_neighborhood_votes, 2)
+                    'dispersion': round(total_value  * 100.0 / total_political_votes, 2),
+                    'concentration': round(total_value * 100.0 / total_neighborhood_votes, 2),
                 })
               
         return Response(votes_by_neighborhood, status=status.HTTP_200_OK)
@@ -195,13 +190,11 @@ class PoliticalPartiesVotesAV(APIView):
         total_votes = Votes.objects.filter(political__political_party__id=int(political_party_id),
                                      political__region_id=int(city_id))\
                                     .aggregate(Sum('quantity'))
-        total_county_votes = Votes.objects.filter(section__neighborhood__county_id=city_id).aggregate(Sum('quantity'))
         total_neighborhoods_votes = Votes.objects.values('section__neighborhood').annotate(total=Sum('quantity'))
 
         votes_by_neighborhood = []
         
         total_political_parties_votes = total_votes.get("quantity__sum")
-        total_county_votes = total_county_votes.get("quantity__sum")
             
         for vote in total_political_party_votes:
             total_value = vote['total_votes']
@@ -211,9 +204,8 @@ class PoliticalPartiesVotesAV(APIView):
             votes_by_neighborhood.append({
                     'total_votes': total_value, 
                     'neighborhood': section__neighborhood_name, 
-                    'dispersion': round(total_value  * 100.0 / total_county_votes, 2),
-                    'concentration': round(total_value * 100.0 / total_political_parties_votes, 2),
-                    'dominance':  round(total_value * 100.0 / total_neighborhood_votes, 2)
+                    'dispersion': round(total_value  * 100.0 / total_political_parties_votes, 2),
+                    'concentration': round(total_value * 100.0 / total_neighborhood_votes, 2),
                 })
                         
         return Response(votes_by_neighborhood, status=status.HTTP_200_OK)
