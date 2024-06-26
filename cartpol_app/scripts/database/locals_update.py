@@ -1,40 +1,58 @@
 import csv, requests
-from cartpol_app.scripts.helpers import contains_duplicates_electoral_zone, contains_duplicates_neighborhood, contains_duplicates_county
+from cartpol_app.scripts.database.helpers import contains_duplicates_electoral_zone, contains_duplicates_neighborhood, contains_duplicates_county, contains_duplicates_state
 
-INDEX_SECAO = 8
+INDEX_SECTION_ID = 6
+INDEX_ZONE_ID = 7
+INDEX_LOCAL_ID = 11
+INDEX_ADDRESS = 3
+INDEX_STATE = 2
 INDEX_CEP = 5
-INDEX_ADDRESS = 4
-INDEX_ZONA = 0
-INDEX_BAIRRO = 3
-INDEX_MUNICIPIO = 2
-INDEX_LOCAL_ID = 6
+INDEX_BAIRRO = 4
+INDEX_MUNICIPIO = 0
+INDEX_MUNICIPIO_ID = 1
+CD_CARGO = {
+    "prefeito": 11,
+    "vereador": 13
+} 
+
+CD_STATE = {
+    "RJ": "Rio de Janeiro",
+    "MG": "Minas Gerais",
+    "SP": "São Paulo",
+    "ES": "Espírito Santo",
+} 
 
 def locals_update(url):
   print("Começando a selecionar locais de votacao, bairros e secao")
 
-  with open('data/local_de_votacao_RJ.csv', 'r', encoding='latin-1') as f:
+  with open('data/local_votacao_tratado_BR_2.csv', 'r', encoding='utf-8') as f:
     section_array = []
     neighborhood_array = []
     electoral_zones_array = []
-    county_array = []        
+    county_array = []
+    state_array = []     
       
     reader = csv.reader(f, delimiter=';', strict=True)
     next(reader)
       
     for row in reader:
+      if row[INDEX_STATE] not in CD_STATE:
+        continue
+        
       section_dict = {
-        "identifier": row[INDEX_SECAO],
+        "identifier": row[INDEX_SECTION_ID],
         "cep": row[INDEX_CEP],
         "address": row[INDEX_ADDRESS],
-        "electoral_zone": int(row[INDEX_ZONA]),
-        "electoral_zone_script_id": int(row[INDEX_ZONA]),
-        "neighborhood": row[INDEX_BAIRRO],
+        "electoral_zone": int(row[INDEX_ZONE_ID]),
+        "electoral_zone_script_id": int(row[INDEX_ZONE_ID]),
+        "neighborhood": row[INDEX_BAIRRO].strip(),
         "script_id": row[INDEX_LOCAL_ID],
       }
       
-      electoral_zones_dict = {"identifier": int(row[INDEX_ZONA]), "state": 1}
-      county_dict = {"name": row[INDEX_MUNICIPIO], "state": 1}
-      neighborhood_dict = {"name": row[INDEX_BAIRRO], "county_id": 2, "county_name": row[INDEX_MUNICIPIO]}
+      state_dict = {"name": row[INDEX_STATE], "full_name": CD_STATE[row[INDEX_STATE]]}
+      electoral_zones_dict = {"identifier": int(row[INDEX_ZONE_ID]), "state": row[INDEX_STATE], "county": row[INDEX_MUNICIPIO]}
+      county_dict = {"name": row[INDEX_MUNICIPIO], "state": row[INDEX_STATE]}
+      neighborhood_dict = {"name": row[INDEX_BAIRRO].strip(), "county_id": row[INDEX_MUNICIPIO_ID], "county_name": row[INDEX_MUNICIPIO]}
 
       section_array.append(section_dict)
 
@@ -46,17 +64,38 @@ def locals_update(url):
 
       if contains_duplicates_electoral_zone(electoral_zones_dict, electoral_zones_array):
         electoral_zones_array.append(electoral_zones_dict)
+        
+      if contains_duplicates_state(state_dict, state_array):
+        state_array.append(state_dict)
 
   print("\nTerminando de selecionar entidades de local, começando a atualizar a base...\n")
 
+  state_array_created = []
   county_array_created = []
   neighborhood_array_created=[]
   electoral_zones_array_created = []
   section_array_created = []
 
+  print("\nInserindo estados\n")
+  
+  for state in state_array:
+      response = requests.post(url + "state/", data=state)
+      response_json = response.json()
+      state_array_created.append(response_json)
+  
   print("\nInserindo municipios\n")
 
   for county in county_array:
+      state = next(
+          (obj for obj in state_array_created if str.lower(obj["name"]) == str.lower(county["state"])),
+          None
+      )
+      if state is not None:
+          county["state"] = state["id"]
+      else:
+          print("State not found")
+          break
+    
       response = requests.post(url + "county/", data=county)
       response_json = response.json()
       county_array_created.append(response_json)
@@ -67,7 +106,15 @@ def locals_update(url):
   print("\nMunicipios finalizados. Inserindo zonas eleitorais\n")
 
   for electoral_zone in electoral_zones_array:
-
+      state = next(
+          (obj for obj in state_array_created if str.lower(obj["name"]) == str.lower(electoral_zone["state"])),
+          None
+      )
+      if state is not None:
+          electoral_zone["state"] = state["id"]
+      else:
+          print("State not found")
+          break
       response = requests.post(url + "electoral-zone/", data=electoral_zone)
       response_json = response.json()
       electoral_zones_array_created.append(response_json)
@@ -90,7 +137,7 @@ def locals_update(url):
       response = requests.post(url + "neighborhood/", data=neighborhood)
       response_json = response.json()
       neighborhood_array_created.append(response_json)
-  print(neighborhood_array_created.__len__(), "bairros criados")
+  print(neighborhood_array_created.__len__(), " bairros criados")
   
   print("\n\nBairros finalizados. Inserindo secoes\n")
 
@@ -107,19 +154,18 @@ def locals_update(url):
           break
         
       if neighborhood is None:
-          print("Neighborhood not found")
+          print("Neighborhood not found " + section["neighborhood"])
           break
       
       section["electoral_zone"] = electoral_zone["id"]
       section["neighborhood"] = neighborhood["id"]
-      
       response = requests.post(url + "section/", data=section)
       response_json = response.json()
-      response_json["section_script_id"] = section["script_id"]
+      response_json["section_script_id"] = section["electoral_zone"] + '-' + section["script_id"] + '-' + section["address"]
       response_json["electoral_zone"] = section["electoral_zone_script_id"]
       section_array_created.append(response_json)
       
-  print(section_array_created.__len__(), " secoes criadas")
+  print(str(section_array_created.__len__()), "secoes criadas\n")
   return county_array_created, section_array_created
 
   

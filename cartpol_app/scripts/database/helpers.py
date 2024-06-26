@@ -17,7 +17,17 @@ def contains_duplicates_county(county_dict, county_array):
 def contains_duplicates_electoral_zone(electoral_zone, electoral_zone_array):
     result = True
     for electoral_zone_obj in electoral_zone_array:
-        if electoral_zone["identifier"] == electoral_zone_obj["identifier"]:
+        if electoral_zone["identifier"] == electoral_zone_obj["identifier"]\
+            and electoral_zone["state"] == electoral_zone_obj["state"]\
+            and electoral_zone["county"] == electoral_zone_obj["county"]:
+            result = False
+            break
+    return result
+
+def contains_duplicates_state(state, state_array):
+    result = True
+    for state_obj in state_array:
+        if state["name"] == state_obj["name"]:
             result = False
             break
     return result
@@ -25,7 +35,7 @@ def contains_duplicates_electoral_zone(electoral_zone, electoral_zone_array):
 def contains_duplicates_political(political, political_array):
     result = True
     for political_obj in political_array:
-        if political["political_id"] == political_obj["political_id"]:
+        if political["political_id"] == political_obj["political_id"] and political["county_id"] == political_obj["county_id"]:
             result = False
             break
     return result
