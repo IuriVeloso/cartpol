@@ -42,7 +42,7 @@ def locals_update(url):
       section_dict = {
         "identifier": row[INDEX_SECTION_ID],
         "cep": row[INDEX_CEP],
-        "address": row[INDEX_ADDRESS],
+        "address": str(row[INDEX_ADDRESS]).strip(),
         "electoral_zone": int(row[INDEX_ZONE_ID]),
         "electoral_zone_script_id": int(row[INDEX_ZONE_ID]),
         "neighborhood": row[INDEX_BAIRRO].strip(),
@@ -83,61 +83,63 @@ def locals_update(url):
       response_json = response.json()
       state_array_created.append(response_json)
   
+  for state in state_array_created:
+    def apply_state_id(x):
+        if str.lower(x["state"]) == str.lower(state["name"]):
+            x["state"] = state["id"]
+        return x
+      
+    county_array_completed = list(map(apply_state_id,county_array))
+    electoral_zones_array_completed = list(map(apply_state_id,electoral_zones_array))
+
+    
   print("\nInserindo municipios\n")
 
-  for county in county_array:
-      state = next(
-          (obj for obj in state_array_created if str.lower(obj["name"]) == str.lower(county["state"])),
-          None
-      )
-      if state is not None:
-          county["state"] = state["id"]
-      else:
-          print("State not found")
-          break
-    
+  for county in county_array_completed:
       response = requests.post(url + "county/", data=county)
       response_json = response.json()
       county_array_created.append(response_json)
       
   print(county_array_created.__len__(), "municipios criados")
-
+      
 
   print("\nMunicipios finalizados. Inserindo zonas eleitorais\n")
 
-  for electoral_zone in electoral_zones_array:
-      state = next(
-          (obj for obj in state_array_created if str.lower(obj["name"]) == str.lower(electoral_zone["state"])),
-          None
-      )
-      if state is not None:
-          electoral_zone["state"] = state["id"]
-      else:
-          print("State not found")
-          break
+  for electoral_zone in electoral_zones_array_completed:
       response = requests.post(url + "electoral-zone/", data=electoral_zone)
       response_json = response.json()
       electoral_zones_array_created.append(response_json)
       
   print(electoral_zones_array_created.__len__(), "zonas eleitorais criadas")
+  
+  for county in county_array_created:
+    def apply_county_id(x):
+        if str.lower(x["county_name"]) == str.lower(county["name"]):
+            x["state"] = county["id"]
+        return x
+    neighborhood_array = list(map(apply_county_id,neighborhood_array))
 
   print("\nZ.E. finalizadas. Inserindo bairros\n")
 
   for neighborhood in neighborhood_array:
-      county = next(
-          (obj for obj in county_array_created if str.lower(obj["name"]) == str.lower(neighborhood["county_name"])),
-          None
-      )
-      if county is not None:
-          neighborhood["county"] = county["id"]
-      else:
-          print("County not found")
-          break
-      
       response = requests.post(url + "neighborhood/", data=neighborhood)
       response_json = response.json()
       neighborhood_array_created.append(response_json)
   print(neighborhood_array_created.__len__(), " bairros criados")
+  
+  for electoral_zone in electoral_zones_array_created:
+    def apply_county_id(x):
+        if str.lower(x["county_name"]) == str.lower(electoral_zone["name"]):
+            x["state"] = electoral_zone["id"]
+        return x
+    section_array = list(map(apply_county_id,section_array))
+    
+  for county in county_array_created:
+    def apply_county_id(x):
+        if str.lower(x["county_name"]) == str.lower(county["name"]):
+            x["state"] = state["id"]
+        return x
+    section_array = list(map(apply_county_id,section_array))
   
   print("\n\nBairros finalizados. Inserindo secoes\n")
 
@@ -161,7 +163,8 @@ def locals_update(url):
       section["neighborhood"] = neighborhood["id"]
       response = requests.post(url + "section/", data=section)
       response_json = response.json()
-      response_json["section_script_id"] = section["electoral_zone"] + '-' + section["script_id"] + '-' + section["address"]
+      response_json["section_script_id"] = electoral_zone["identifier"] + '-' + section["identifier"] + '-' + str(section["address"]).strip()
+      print(response_json['section_script_id'])
       response_json["electoral_zone"] = section["electoral_zone_script_id"]
       section_array_created.append(response_json)
       

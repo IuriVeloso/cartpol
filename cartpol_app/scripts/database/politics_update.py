@@ -41,7 +41,7 @@ def post_politics(url, county_array_created):
 				"full_name": row[INDEX_FULL_NAME], 
 				"political_party": row[INDEX_POLITICAL_PARTY], 
 				"political_type": row[INDEX_CARGO],
-				"county_name": row[INDEX_COUNTY],
+				"county_name": row[INDEX_COUNTY].strip(),
 				"political_id": row[INDEX_CANDIDATE_ID],
 				"political_script_id": row[INDEX_POLITICAL_NUMBER],
 				"county_id": row[INDEX_COUNTY_ID],
