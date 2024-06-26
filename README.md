@@ -20,6 +20,10 @@ git push heroku main
 
 Checar o link: https://devcenter.heroku.com/articles/git#deploy-your-code
 
+Comando para converter de latin-1 para utf-8
+
+iconv -f latin1 -t utf8 source_file.txt > target_file.txt
+
 //
 Rio de Janeiro - 14
 Nova Iguaçu - 18

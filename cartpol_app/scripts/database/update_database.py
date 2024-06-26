@@ -1,9 +1,9 @@
 import datetime
 import sys
-from cartpol_app.scripts.base_info import base_info
-from cartpol_app.scripts.locals_update import locals_update
-from cartpol_app.scripts.politics_update import post_politics
-from cartpol_app.scripts.votes_update import post_votes
+from cartpol_app.scripts.database.base_info import base_info
+from cartpol_app.scripts.database.locals_update import locals_update
+from cartpol_app.scripts.database.politics_update import post_politics
+from cartpol_app.scripts.database.votes_update import post_votes
 
 env = "local"
 
@@ -38,8 +38,8 @@ print("\nStarted post_counties()\n")
 
 post_votes(url=URL, politics_array_created=politics_array_created, section_array_created=section_array_created)
 
-print("\nFinished post_counties()\n")
+# print("\nFinished post_counties()\n")
 
 print(f"\nFinished script running\nTotal time: {datetime.datetime.now() - startTime}\n")
 
-#python3 manage.py shell < cartpol_app/scripts/update_database.py
+#python3 manage.py shell < cartpol_app/scripts/database/update_database.py

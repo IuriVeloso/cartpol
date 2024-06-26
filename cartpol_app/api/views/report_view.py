@@ -37,14 +37,14 @@ class GenerateReportView(APIView):
             votes_by_neighborhood.append({
                     'neighborhood': section__neighborhood_name,
                     'total_votes': total_value, 
-                    'dispersion': round(total_value  * 100.0 / total_county_votes, 2),
-                    'concentration': round(total_value * 100.0 / total_candidates_votes, 2),
+                    'rcan_uesp': round(total_value  * 100.0 / total_county_votes, 2),
+                    'ruesp_can': round(total_value * 100.0 / total_candidates_votes, 2),
                     'dominance':  round(total_value * 100.0 / total_neighborhood_votes, 2)
                 })
         
         data_adapted = []
         for vote in votes_by_neighborhood:
-            data_adapted.append([vote['neighborhood'], vote['total_votes'], vote['dispersion'], vote['concentration'], vote['dominance']])
+            data_adapted.append([vote['neighborhood'], vote['total_votes'], vote['rcan_uesp'], vote['ruesp_can'], vote['dominance']])
         
         path='/Users/iuri.felix/TCC/cartpol/reports_generated/report' + str(political_id) + '.pdf'
 

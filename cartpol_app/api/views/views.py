@@ -35,7 +35,7 @@ class CountyAV(APIView):
     
 class NeighborhoodAV(APIView):
     def get(self, request):
-        neighborhoods = Neighborhood.objects.all()
+        neighborhoods = Neighborhood.objects.all().filter(county_id="11")
         neighborhood_serializer = NeighborhoodSerializer(neighborhoods, many=True)
         return Response(neighborhood_serializer.data, status=status.HTTP_200_OK)
     
@@ -158,6 +158,11 @@ class PoliticalVotesAV(APIView):
             .values('section__neighborhood', 'section__neighborhood__name')\
             .annotate(total_votes=Sum('quantity'))
         
+        political = Political.objects.get(id=int(political_id))
+        
+        print(total_candidate_votes.__len__())
+        print(political)
+        
         total_votes = Votes.objects.filter(political_id=int(political_id)).aggregate(Sum('quantity'))
         total_neighborhoods_votes = Votes.objects.values('section__neighborhood').annotate(total=Sum('quantity'))
 
@@ -173,8 +178,8 @@ class PoliticalVotesAV(APIView):
             votes_by_neighborhood.append({
                     'total_votes': total_value, 
                     'neighborhood': section__neighborhood_name, 
-                    'dispersion': round(total_value  * 100.0 / total_political_votes, 2),
-                    'concentration': round(total_value * 100.0 / total_neighborhood_votes, 2),
+                    'ruesp_can': round(total_value / total_political_votes, 6),
+                    'rcan_uesp': round(total_value / total_neighborhood_votes, 6),
                 })
               
         return Response(votes_by_neighborhood, status=status.HTTP_200_OK)
@@ -204,8 +209,8 @@ class PoliticalPartiesVotesAV(APIView):
             votes_by_neighborhood.append({
                     'total_votes': total_value, 
                     'neighborhood': section__neighborhood_name, 
-                    'dispersion': round(total_value  * 100.0 / total_political_parties_votes, 2),
-                    'concentration': round(total_value * 100.0 / total_neighborhood_votes, 2),
+                    'ruesp_can': round(total_value / total_political_parties_votes, 2),
+                    'rcan_uesp': round(total_value / total_neighborhood_votes, 2),
                 })
                         
         return Response(votes_by_neighborhood, status=status.HTTP_200_OK)
@@ -236,7 +241,7 @@ class ElectionResultsAV(APIView):
             votes_by_zone[zone_in]["data"].sort(key=lambda x: x['quantity'], reverse=True)
             total_votes = votes_by_zone[zone_in]["total_votes"]
             for obj in votes_by_zone[zone_in]["data"]:
-                obj['percentage'] = round(obj['quantity'] * 100.0 / total_votes, 2)
+                obj['percentage'] = round(obj['quantity'] / total_votes, 2)
             
             votes_by_zone[zone_in]["data"] = votes_by_zone[zone_in]["data"][:5]
                         

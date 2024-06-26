@@ -1,7 +1,7 @@
 import requests, csv
 
 INDEX_CARGO = 17
-INDEX_SECTION_ID = 22
+INDEX_SECTION_ID = 24
 INDEX_NAME = 20
 INDEX_FULL_NAME = 20
 INDEX_CANDIDATE_ID = 19
@@ -10,6 +10,7 @@ INDEX_ELECTION_CODE = 6
 INDEX_ROUND = 5
 INDEX_COUNTY_ID = 13
 INDEX_ZONE_ID = 15
+INDEX_ADDRESS = 25
 CD_CARGO = {
     "prefeito": 11,
     "vereador": 13
@@ -30,7 +31,7 @@ def post_votes(url, politics_array_created, section_array_created):
                 "quantity": row[INDEX_VOTES],
                 "description": row[INDEX_VOTES] + " votos para " + row[INDEX_NAME],
                 "political_id": row[INDEX_CANDIDATE_ID],
-                "section_id": int(row[INDEX_SECTION_ID]),
+                "section_id": str(row[INDEX_ZONE_ID]) + '-' + str(row[INDEX_SECTION_ID]) + '-' + str(row[INDEX_ADDRESS]),
                 "county_id": row[INDEX_COUNTY_ID],
                 "zone_id": row[INDEX_ZONE_ID],
             }
@@ -47,18 +48,21 @@ def post_votes(url, politics_array_created, section_array_created):
 
     votes_array_created = []
     errors = 0
+    votes_index = 0
     print("\n\nInserindo votos\n")
 
     for votes in votes_array:
         if(votes["political_id"] in ['95', '96']):
             continue
+        votes_index += 1
         political = next((obj for obj in politics_array_created 
             if (str.lower(obj["political_script_id"]) == str.lower(votes["political_id"]) 
                 and obj["county_id"] == votes["county_id"]))
         , None)
     
         section = next((obj for obj in section_array_created
-            if int(obj["section_script_id"]) == votes["section_id"] and obj["electoral_zone"] == int(votes["zone_id"]))
+            if str.lower(obj["section_script_id"]).replace(" ", "") == str.lower(votes["section_id"]).replace(" ", "") 
+            and obj["electoral_zone"] == int(votes["zone_id"]))
             , None)  
 
         if political is not None:
@@ -75,8 +79,11 @@ def post_votes(url, politics_array_created, section_array_created):
             print(votes.__str__())
             print("Section not found")
             errors += 1
-            continue
-    
+            break
+        
+        if votes_index % 20000 == 0:
+            print(f'{round(votes_index/votes_array.__len__(), 2)}% politicos inseridos')
+        
         response = requests.post(url + "votes/", data=votes)
         response_json = response.json()
         votes_array_created.append(response_json)
