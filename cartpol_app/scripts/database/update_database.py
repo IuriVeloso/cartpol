@@ -1,5 +1,4 @@
 import datetime
-import sys
 from cartpol_app.scripts.database.base_info import base_info
 from cartpol_app.scripts.database.locals_update import locals_update
 from cartpol_app.scripts.database.politics_update import post_politics

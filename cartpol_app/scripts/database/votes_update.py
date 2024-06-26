@@ -31,7 +31,7 @@ def post_votes(url, politics_array_created, section_array_created):
                 "quantity": row[INDEX_VOTES],
                 "description": row[INDEX_VOTES] + " votos para " + row[INDEX_NAME],
                 "political_id": row[INDEX_CANDIDATE_ID],
-                "section_id": str(row[INDEX_ZONE_ID]) + '-' + str(row[INDEX_SECTION_ID]) + '-' + str(row[INDEX_ADDRESS]),
+                "section_id": str(row[INDEX_ZONE_ID]) + '-' + str(row[INDEX_SECTION_ID]) + '-' + str(row[INDEX_ADDRESS]).strip(),
                 "county_id": row[INDEX_COUNTY_ID],
                 "zone_id": row[INDEX_ZONE_ID],
             }
