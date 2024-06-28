@@ -85,7 +85,7 @@ def locals_update(url):
   
   for state in state_array_created:
     def apply_state_id(x):
-        if str.lower(x["state"]) == str.lower(state["name"]):
+        if isinstance(x["state"], str) and str.lower(x["state"]) == str.lower(state["name"]):
             x["state"] = state["id"]
         return x
       
@@ -110,38 +110,38 @@ def locals_update(url):
       response_json = response.json()
       electoral_zones_array_created.append(response_json)
       
-  print(electoral_zones_array_created.__len__(), "zonas eleitorais criadas")
+  print(electoral_zones_array_created.__len__(), "zonas eleitorais criadas. Selecionando bairros")
   
   for county in county_array_created:
     def apply_county_id(x):
-        if str.lower(x["county_name"]) == str.lower(county["name"]):
-            x["state"] = county["id"]
+        if isinstance(x["county_name"], str) and str.lower(x["county_name"]) == str.lower(county["name"]):
+            x["county"] = county["id"]
         return x
     neighborhood_array = list(map(apply_county_id,neighborhood_array))
 
-  print("\nZ.E. finalizadas. Inserindo bairros\n")
+  print("\nInserindo bairros.\n")
 
   for neighborhood in neighborhood_array:
       response = requests.post(url + "neighborhood/", data=neighborhood)
       response_json = response.json()
       neighborhood_array_created.append(response_json)
-  print(neighborhood_array_created.__len__(), " bairros criados")
+  print(neighborhood_array_created.__len__(), " bairros criados. Selecionando secoes\n")
   
   for electoral_zone in electoral_zones_array_created:
     def apply_electoral_zone_id(x):
-        if str.lower(x["county_name"]) == str.lower(electoral_zone["name"]):
+        if isinstance(x["electoral_zone"], str) and str.lower(x["electoral_zone"]) == str.lower(electoral_zone["name"]):
             x["electoral_zone"] = electoral_zone["id"]
         return x
     section_array_v2 = list(map(apply_electoral_zone_id,section_array))
     
   for neighborhood in neighborhood_array_created:
     def apply_neighborhood_id(x):
-        if str.lower(x["neighborhood"]) == str.lower(neighborhood["name"]):
+        if isinstance(x["neighborhood"], str) and str.lower(x["neighborhood"]) == str.lower(neighborhood["name"]):
             x["neighborhood"] = neighborhood["id"]
         return x
     section_array_completed = list(map(apply_neighborhood_id,section_array_v2))
   
-  print("\n\nBairros finalizados. Inserindo secoes\n")
+  print("\n\nInserindo secoes\n")
 
   for section in section_array_completed:
       response = requests.post(url + "section/", data=section)

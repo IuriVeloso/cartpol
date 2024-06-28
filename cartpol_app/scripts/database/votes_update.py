@@ -49,38 +49,27 @@ def post_votes(url, politics_array_created, section_array_created):
     votes_array_created = []
     errors = 0
     votes_index = 0
+    
+    for political in politics_array_created:
+        def apply_political_id(votes):
+            if str.lower(political["political_script_id"]) == str.lower(votes["political_id"]):
+                votes["political"] = political["id"]
+            return votes
+        votes_array = list(map(apply_political_id, votes_array))
+    
     print("\n\nInserindo votos\n")
+    
+    for section in section_array_created:
+        def apply_section_id(votes):
+            if str.lower(section["section_script_id"]).replace(" ", "") == str.lower(votes["section_id"]).replace(" ", "") and section["electoral_zone"] == int(votes["zone_id"]):
+                votes["section"] = section["id"]
+            return votes
+        votes_array = list(map(apply_section_id, votes_array))
 
     for votes in votes_array:
         if(votes["political_id"] in ['95', '96']):
             continue
         votes_index += 1
-        political = next((obj for obj in politics_array_created 
-            if (str.lower(obj["political_script_id"]) == str.lower(votes["political_id"]) 
-                and obj["county_id"] == votes["county_id"]))
-        , None)
-    
-        section = next((obj for obj in section_array_created
-            if str.lower(obj["section_script_id"]).replace(" ", "") == str.lower(votes["section_id"]).replace(" ", "") 
-            and obj["electoral_zone"] == int(votes["zone_id"]))
-            , None)  
-
-        if political is not None:
-            votes["political"] = political["id"]
-        else:
-            print(votes.__str__())
-            print("Political not found")
-            errors += 1
-            continue
-
-        if section is not None:
-            votes["section"] = section["id"]
-        else:
-            print(votes.__str__())
-            print("Section not found")
-            errors += 1
-            break
-        
         if votes_index % 20000 == 0:
             print(f'{round(votes_index/votes_array.__len__(), 2)}% politicos inseridos')
         
