@@ -67,7 +67,7 @@ def post_politics(url, county_array_created):
 				if contains_duplicates_political_party(political_dict, political_party_array):
 					political_party_dict = {
 						"name": row[INDEX_POLITICAL_PARTY],
-						"full_name": row[INDEX_POLITICAL_PARTY_FULL_NAME],
+						"full_name": row[INDEX_POLITICAL_PARTY_FULL_NAME],				
 						"active": True
 					}
 					political_party_array.append(political_party_dict)
@@ -92,29 +92,25 @@ def post_politics(url, county_array_created):
 	print("\n\nPartidos finalizados. Inserindo politicos\n")
 
 	politics_index = 0
+ 
+	for political_party in political_party_array_created:
+		def apply_political_party_id(x):
+			if isinstance(x["political_party"], str) and x["political_party"] == political_party["name"]:
+				x["political_party"] = political_party["id"]
+			return x
+		
+		politics_array = list(map(apply_political_party_id, politics_array))
+  
+	for county in county_array_created:
+		def apply_county_id(x):
+			if isinstance(x["county_name"], str) and str.lower(x["county_name"]).replace(" ", "") == str.lower(county["name"]).replace(" ", ""):
+				x["region_id"] = county["id"]
+			return x
+		
+		politics_array = list(map(apply_county_id, politics_array))
 
 	for politics in politics_array:
-		political_party = next((obj for obj in political_party_array_created 
-								if obj["name"] == politics["political_party"])
-								, None)
 		politics_index += 1
-		county = next((obj for obj in county_array_created
-						if str.lower(obj["name"]).replace(" ", "") == str.lower(politics["county_name"]).replace(" ", "")), None)
-		
-		if political_party is not None:
-			politics["political_party"] = political_party["id"]
-		else:
-			print("Political party not found")
-			print(politics)
-			break
-		
-		if county is not None:
-			politics["region_id"] = county["id"]
-		else:
-			print("County not found", politics["county_name"])
-			print(politics)
-			break
-
 		if politics_index % 20000 == 0:
 			print(f'{round(politics_index/politics_array.__len__(), 2)}% politicos inseridos')
 		

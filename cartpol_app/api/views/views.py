@@ -35,7 +35,7 @@ class CountyAV(APIView):
     
 class NeighborhoodAV(APIView):
     def get(self, request):
-        neighborhoods = Neighborhood.objects.all().filter(county_id="11")
+        neighborhoods = Neighborhood.objects.all()
         neighborhood_serializer = NeighborhoodSerializer(neighborhoods, many=True)
         return Response(neighborhood_serializer.data, status=status.HTTP_200_OK)
     

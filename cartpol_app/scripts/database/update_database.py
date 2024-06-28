@@ -22,6 +22,9 @@ print("\nStarted locals_update()\n")
                     
 local_results = locals_update(url=URL)
 
+timeFinishedLocalResults = datetime.datetime.now()
+print(f"\nFinished locals_update\nTotal time: {timeFinishedLocalResults - startTime}\n")
+
 county_array_created = local_results[0]
 section_array_created = local_results[1]
 
@@ -31,11 +34,15 @@ print("\nStarted post_politics()\n")
 
 politics_array_created = post_politics(url=URL, county_array_created=county_array_created)
 
-print("\nFinished post_politics()\n")
+timeFinishedPostPolitics = datetime.datetime.now()
+print(f"\nFinished post_politics\nTotal time: {timeFinishedPostPolitics - timeFinishedLocalResults}\n")
 
-print("\nStarted post_counties()\n")
+print("\nStarted post_votes()\n")
 
 post_votes(url=URL, politics_array_created=politics_array_created, section_array_created=section_array_created)
+
+timeFinishedPostVotes = datetime.datetime.now()
+print(f"\nFinished post_votes\nTotal time: {timeFinishedPostVotes - timeFinishedPostPolitics}\n")
 
 # print("\nFinished post_counties()\n")
 
