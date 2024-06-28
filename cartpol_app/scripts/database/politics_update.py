@@ -112,7 +112,7 @@ def post_politics(url, county_array_created):
 	for politics in politics_array:
 		politics_index += 1
 		if politics_index % 20000 == 0:
-			print(f'{round(politics_index/politics_array.__len__(), 2)}% politicos inseridos')
+			print(f'{round(politics_index*100/politics_array.__len__(), 2)}% politicos inseridos')
 		
 		if politics["political_type"] == CD_CARGO["prefeito"]:
 			politics["political_type"] = 1
