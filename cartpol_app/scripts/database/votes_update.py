@@ -43,7 +43,7 @@ def post_votes(url, politics_array_created, section_array_created):
                 votes_array.append(votes_dict)
 
     
-    print("Terminando de selecionar votos\n\n")
+    print("Terminando de selecionar votos\n")
     print(votes_array.__len__())
 
     votes_array_created = []
@@ -56,15 +56,15 @@ def post_votes(url, politics_array_created, section_array_created):
                 votes["political"] = political["id"]
             return votes
         votes_array = list(map(apply_political_id, votes_array))
-    
-    print("\n\nInserindo votos\n")
-    
+        
     for section in section_array_created:
         def apply_section_id(votes):
             if str.lower(section["section_script_id"]).replace(" ", "") == str.lower(votes["section_id"]).replace(" ", "") and section["electoral_zone"] == int(votes["zone_id"]):
                 votes["section"] = section["id"]
             return votes
         votes_array = list(map(apply_section_id, votes_array))
+        
+    print("\n\nInserindo votos\n")
 
     for votes in votes_array:
         if(votes["political_id"] in ['95', '96']):
