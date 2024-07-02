@@ -14,6 +14,12 @@ python3 manage.py flush
 
 Ao resetar a database, é necessario tambem dar os comandos de `makemigrations` and `migrate`
 
+#Setup do programa
+
+E necessario instalar o postgresql antes
+
+pip install -r ./requirements.txt 
+
 #Subindo a plataforma
 
 git push heroku main
