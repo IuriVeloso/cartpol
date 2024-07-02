@@ -12,7 +12,7 @@ else:
     URL = "http://localhost:8000/cartpol/"
 
 startTime = datetime.datetime.now()
-print("\nStarted script running\n")
+print(f"\nStarted script running at {startTime}\n")
                     
 base_info(url=URL)
 

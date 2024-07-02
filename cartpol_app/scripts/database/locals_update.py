@@ -146,7 +146,7 @@ def locals_update(url):
   for section in section_array_completed:
       response = requests.post(url + "section/", data=section)
       response_json = response.json()
-      response_json["section_script_id"] = electoral_zone["identifier"] + '-' + section["identifier"] + '-' + str(section["address"]).strip()
+      response_json["section_script_id"] = str.lower(electoral_zone["identifier"] + '-' + section["identifier"] + '-' + str(section["address"])).replace(" ", "")
       response_json["electoral_zone"] = section["electoral_zone_script_id"]
       section_array_created.append(response_json)
       
