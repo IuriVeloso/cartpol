@@ -31,7 +31,7 @@ def post_votes(url, politics_array_created, section_array_created):
                 "quantity": row[INDEX_VOTES],
                 "description": row[INDEX_VOTES] + " votos para " + row[INDEX_NAME],
                 "political_id": row[INDEX_CANDIDATE_ID],
-                "section_id": str(row[INDEX_ZONE_ID]) + '-' + str(row[INDEX_SECTION_ID]) + '-' + str(row[INDEX_ADDRESS]).strip(),
+                "section_id": str.lower(str(row[INDEX_ZONE_ID]) + '-' + str(row[INDEX_SECTION_ID]) + '-' + str(row[INDEX_ADDRESS])).replace(" ",""),
                 "county_id": row[INDEX_COUNTY_ID],
                 "zone_id": row[INDEX_ZONE_ID],
             }
@@ -52,14 +52,16 @@ def post_votes(url, politics_array_created, section_array_created):
     
     for political in politics_array_created:
         def apply_political_id(votes):
-            if str.lower(political["political_script_id"]) == str.lower(votes["political_id"]):
+            if "political" not in votes and str.lower(political["political_script_id"]) == str.lower(votes["political_id"]):
                 votes["political"] = political["id"]
             return votes
         votes_array = list(map(apply_political_id, votes_array))
         
+    print("Politicos estimados. Estimando secoes\n")
+        
     for section in section_array_created:
         def apply_section_id(votes):
-            if str.lower(section["section_script_id"]).replace(" ", "") == str.lower(votes["section_id"]).replace(" ", "") and section["electoral_zone"] == int(votes["zone_id"]):
+            if "section" not in votes and (section["section_script_id"]) == (votes["section_id"]):
                 votes["section"] = section["id"]
             return votes
         votes_array = list(map(apply_section_id, votes_array))
