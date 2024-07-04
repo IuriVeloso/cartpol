@@ -1,4 +1,4 @@
-#!/Users/iurifelix/TCC/menv/bin/python
+#!/home/iurivfelix/TCC/cartpol/menv/bin/python3
 # -*- coding: utf-8 -*-
 import re
 import sys

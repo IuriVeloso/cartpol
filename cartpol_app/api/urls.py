@@ -4,8 +4,8 @@ from cartpol_app.api.views.views import StateAV, CountyAV, NeighborhoodAV, Elect
 from cartpol_app.api.views.report_view import GenerateReportView
 
 urlpatterns = [
-    path('state/', StateAV.as_view(), name="state-crud"),
-    path('county/', CountyAV.as_view(), name="county-crud"),
+    path('state', StateAV.as_view(), name="state-crud"),
+    path('county', CountyAV.as_view(), name="county-crud"),
     path('neighborhood/', NeighborhoodAV.as_view(), name="neighborhood-crud"),
     path('neighborhood/<int:city>', CountysNeighborhoodAV.as_view(), name="neighborhood-crud"),
     path('electoral-zone/', ElectoralZoneAV.as_view(), name="electoral-zone-crud"),
