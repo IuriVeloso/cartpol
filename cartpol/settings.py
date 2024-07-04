@@ -12,8 +12,8 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 
 from pathlib import Path
 import os
-import dj_database_url
-import django_heroku
+import dj_database_url  # type: ignore
+import django_heroku  # type: ignore
 
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -82,7 +82,6 @@ TEMPLATES = [
 WSGI_APPLICATION = "cartpol.wsgi.application"
 
 
-
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
@@ -92,10 +91,10 @@ DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.postgresql_psycopg2",
         "NAME": "cartpol_db_name",
-        "USER" : "cartpol_prod",
-        "PASSWORD" : "iuri300498",
-        "HOST" : "localhost",
-        "PORT" : "5432",
+        "USER": "cartpol_prod",
+        "PASSWORD": "iuri300498",
+        "HOST": "localhost",
+        "PORT": "5432",
     }
 }
 
