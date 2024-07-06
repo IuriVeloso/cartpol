@@ -36,11 +36,10 @@ class CountyAV(APIView):
         counties = County.objects.all()
         should_search_county = request.query_params.get('name', False)
         should_search_state = request.query_params.get('state', False)
-
         if should_search_state:
-            counties.filter(state__name=should_search_state)
+            counties = counties.filter(state__name=should_search_state)
         if should_search_county:
-            counties.filter(name=should_search_county)
+            counties = counties.filter(name=should_search_county)
 
         county_serializer = CountySerializer(
             counties, many=True)
