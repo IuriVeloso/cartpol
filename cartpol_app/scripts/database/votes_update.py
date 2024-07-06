@@ -22,7 +22,7 @@ CD_CARGO = {
 def post_votes(url, politics_array_created, section_array_created):
     votes_array = []
 
-    with open('data/votacao_secao_2020_RJ.csv', 'r', encoding='latin-1') as f:
+    with open('data/votacao_secao_2020_RJ.csv', 'r', encoding='utf-8') as f:
         print("Começando a selecionar votos")
 
         reader = csv.reader(f, delimiter=';', strict=True)

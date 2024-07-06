@@ -24,7 +24,7 @@ INDEX_STATE = 10
 INDEX_POLITICAL_NUMBER = 19
 
 
-def post_politics(url, county_array_created):
+def post_politics(url):
     politics_array = []
     political_party_array = []
 
@@ -32,6 +32,7 @@ def post_politics(url, county_array_created):
         print("Começando a selecionar partidos e candidatos")
 
         reader = csv.reader(f, delimiter=';', strict=True)
+        county = [{"name": 0}]
 
         next(reader)
 
@@ -52,8 +53,12 @@ def post_politics(url, county_array_created):
                 "region": 'city'
             }
 
-            political_dict["region_id"] = next((county["id"] for county in county_array_created if (
-                political_dict["county_name"]) == str.lower(county["name"]).replace(" ", "")), None)
+            if len(county) != 0 and county[0]["name"] != row[INDEX_COUNTY] or len(county) == 0:
+                county = requests.get(
+                    f"{url}county?state={row[INDEX_STATE]}&name={row[INDEX_COUNTY]}").json()
+
+            if len(county) != 0:
+                political_dict["region_id"] = county[0]["id"]
 
             if int(political_dict["political_type"]) == CD_CARGO["prefeito"]:
                 political_dict["political_type"] = 1
