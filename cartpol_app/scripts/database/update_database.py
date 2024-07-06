@@ -16,7 +16,7 @@ print("\nFinished base_info()\n")
 
 print("\nStarted locals_update()\n")
 
-# section_array_created = locals_update(url=URL)
+section_array_created = locals_update(url=URL)
 
 section = []
 
