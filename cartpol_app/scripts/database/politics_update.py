@@ -49,7 +49,6 @@ def post_politics(url):
                 "county_name": str.lower(row[INDEX_COUNTY]).replace(" ", ""),
                 "political_id": row[INDEX_CANDIDATE_ID],
                 "political_script_id": row[INDEX_POLITICAL_NUMBER],
-                "county_id": row[INDEX_COUNTY_ID],
                 "region": 'city'
             }
 
@@ -124,10 +123,10 @@ def post_politics(url):
                 f'{round(politics_index*100/politics_array.__len__(), 2)}% politicos inseridos')
 
         response = requests.post(url + "political/", data=politics)
-        response_json = response.json()
-        response_json["political_script_id"] = politics["political_script_id"]
-        response_json["county_id"] = politics["county_id"]
-        politics_array_created.append(response_json)
+        if response.status_code == 201:
+            response_json = response.json()
+            response_json["political_script_id"] = politics["political_script_id"]
+            politics_array_created.append(response_json)
 
     print(politics_array_created.__len__(), "politicos criados")
 
