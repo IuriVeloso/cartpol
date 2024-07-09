@@ -146,6 +146,14 @@ class ElectionAV(APIView):
 class PoliticalAV(APIView):
     def get(self, request):
         politicals = Political.objects.all()
+        
+        should_search_political_code = request.query_params.get('political_code', False)
+        should_search_full_name = request.query_params.get('full_name', False)
+        if should_search_full_name:
+            politicals = politicals.filter(full_name=should_search_full_name)
+        if should_search_political_code:
+            politicals = politicals.filter(political_code=should_search_political_code)
+        
         political_serializer = PoliticalSerializer(politicals, many=True)
         return Response(political_serializer.data, status=status.HTTP_200_OK)
 
@@ -174,6 +182,17 @@ class VotesAV(APIView):
 class SectionAV(APIView):
     def get(self, request):
         sections = Section.objects.all()
+        
+        should_search_county = request.query_params.get('county', False)
+        should_search_electoral_zone = request.query_params.get('electoral_zone', False)
+        should_search_identifier = request.query_params.get('identifier', False)
+        if should_search_county:
+            sections = sections.filter(neighborhood__county__name=should_search_county)
+        if should_search_electoral_zone:
+            sections = sections.filter(electoral_zone__identifier=should_search_electoral_zone)
+        if should_search_identifier:
+            sections = sections.filter(identifier=should_search_identifier)
+        
         section_serializer = SectionSerializer(sections, many=True)
         return Response(section_serializer.data, status=status.HTTP_200_OK)
 

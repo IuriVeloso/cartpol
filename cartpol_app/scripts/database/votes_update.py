@@ -11,6 +11,7 @@ INDEX_VOTES = 21
 INDEX_ELECTION_CODE = 6
 INDEX_ROUND = 5
 INDEX_COUNTY_ID = 13
+INDEX_COUNTY_NAME = 14
 INDEX_ZONE_ID = 15
 INDEX_ADDRESS = 25
 CD_CARGO = {
@@ -19,7 +20,7 @@ CD_CARGO = {
 }
 
 
-def post_votes(url, politics_array_created, section_array_created):
+def post_votes(url):
     votes_array = []
 
     with open('data/votacao_secao_2020_RJ.csv', 'r', encoding='utf-8') as f:
@@ -27,6 +28,9 @@ def post_votes(url, politics_array_created, section_array_created):
 
         reader = csv.reader(f, delimiter=';', strict=True)
         errors = 0
+        
+        political = []
+        section = []
 
         next(reader)
 
@@ -40,11 +44,6 @@ def post_votes(url, politics_array_created, section_array_created):
                 "description": row[INDEX_VOTES] + " votos para "
                 + row[INDEX_NAME],
                 "political_id": row[INDEX_CANDIDATE_ID],
-                "section_id": str.lower(str(row[INDEX_ZONE_ID])
-                                        + '-' +
-                                        str(row[INDEX_SECTION_ID]) + '-'
-                                        + str(row[INDEX_ADDRESS]))
-                .replace(" ", ""),
                 "county_id": row[INDEX_COUNTY_ID],
                 "zone_id": row[INDEX_ZONE_ID],
             }
@@ -57,17 +56,28 @@ def post_votes(url, politics_array_created, section_array_created):
                      and row[INDEX_ELECTION_CODE] == "426"
                      and row[INDEX_ROUND] == "1"
                      and len(row[INDEX_CANDIDATE_ID]) > 3)):
-                votes_dict["political"] = next((political["id"] for political
-                                                in politics_array_created
-                                                if str.lower(
-                    political["political_script_id"]) ==
-                    votes_dict["political_id"]), None)
+                
+                
+                if len(political) != 0 and political[0]["political_code"] != row[INDEX_CANDIDATE_ID] or len(political) == 0:
+                    political = requests.get(
+                        f"{url}political/?political_code={row[INDEX_CANDIDATE_ID]}&full_name={row[INDEX_NAME]}").json()
 
-                votes_dict["section"] = next((section["id"] for section
-                                              in section_array_created
-                                              if section["section_script_id"]
-                                              == votes_dict["section_id"]),
-                                             None)
+                if len(political) != 0:
+                    votes_dict["political"] = political[0]["id"]
+                else:
+                    votes_dict["political"] = None
+                    
+                if len(section) != 0 and section[0]["identifier"] != row[INDEX_SECTION_ID] and section[0]["address"] != row[INDEX_ADDRESS] or len(section) == 0:
+                    section = requests.get(
+                        f"{url}section/?identifier={row[INDEX_SECTION_ID]}&electoral_zone={row[INDEX_ZONE_ID]}&county={row[INDEX_COUNTY_NAME]}").json()
+
+                if len(section) != 0:
+                    votes_dict["section"] = section[0]["id"]
+                else:
+                    votes_dict["section"] = None
+                    print("Erro na secao e foda")
+                    print(votes_dict)
+                    raise Exception("Na traaaave!!!") 
 
                 if (votes_dict["political"] is None or
                         votes_dict["section"] is None):

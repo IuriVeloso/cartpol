@@ -7,44 +7,66 @@ from cartpol_app.scripts.database.votes_update import post_votes
 
 URL = "http://localhost:8000/cartpol/"
 
+print("c(default): completo")
+print("b: base_info")
+print("l: localidades")
+print("p: politicos")
+print("v: votos")
+
+try:
+    shouldRun = input("Escolha uma opcao: ")
+except:
+    shouldRun = 'c'
+
+shouldRunAll = shouldRun == None or shouldRun == 'c'
+shouldRunBase = shouldRunAll or shouldRun == 'b'
+shouldRunLocals = shouldRunAll or shouldRun == 'l'
+shouldRunPolitics = shouldRunAll or shouldRun == 'p'
+shouldRunVotes = shouldRunAll or shouldRun == 'v'
+
 startTime = datetime.datetime.now()
 print(f"\nStarted script running at {startTime}\n")
 
-base_info(url=URL)
+if shouldRunBase:
+    base_info(url=URL)
 
-print("\nFinished base_info()\n")
+    print("\nFinished base_info()\n")
 
-print("\nStarted locals_update()\n")
+if shouldRunLocals:
+    print("\nStarted locals_update()\n")
 
-section_array_created = locals_update(url=URL)
+    locals_update(url=URL)
 
-section = []
+    section = []
 
-timeFinishedLocalResults = datetime.datetime.now()
-print(
-    f"\nFinished locals_update\nTotal time: \
-    {timeFinishedLocalResults - startTime}\n")
+    timeFinishedLocalResults = datetime.datetime.now()
+    print(
+        f"\nFinished locals_update\nTotal time: \
+        {timeFinishedLocalResults - startTime}\n")
 
-print("\nStarted post_politics()\n")
+if shouldRunPolitics:
+    timeStartedPostPolitics = datetime.datetime.now()
+    
+    print("\nStarted post_politics()\n")
 
-politics_array_created = post_politics(url=URL)
+    post_politics(url=URL)
 
-timeFinishedPostPolitics = datetime.datetime.now()
-print(
-    f"\nFinished post_politics\nTotal time: \
-        {timeFinishedPostPolitics - timeFinishedLocalResults}\n")
+    timeFinishedPostPolitics = datetime.datetime.now()
+    print(
+        f"\nFinished post_politics\nTotal time: \
+            {timeFinishedPostPolitics - timeStartedPostPolitics}\n")
 
-print("\nStarted post_votes()\n")
+if shouldRunVotes:
+    timeStartedPostVotes = datetime.datetime.now()
+    
+    print("\nStarted post_votes()\n")
 
-post_votes(url=URL, politics_array_created=politics_array_created,
-           section_array_created=section_array_created)
+    post_votes(url=URL)
 
-timeFinishedPostVotes = datetime.datetime.now()
-print(
-    f"\nFinished post_votes\nTotal time: \
-        {timeFinishedPostVotes - timeFinishedPostPolitics}\n")
-
-# print("\nFinished post_counties()\n")
+    timeFinishedPostVotes = datetime.datetime.now()
+    print(
+        f"\nFinished post_votes\nTotal time: \
+            {timeFinishedPostVotes - timeStartedPostVotes}\n")
 
 print(
     f"\nFinished script running\nTotal time: \
