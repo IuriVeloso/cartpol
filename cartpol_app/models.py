@@ -70,6 +70,7 @@ class Political (models.Model):
     election = models.ForeignKey(Election, on_delete=models.CASCADE)
     region = models.CharField(max_length=50, validators=[validate_list])
     region_id=models.IntegerField()
+    political_code = models.IntegerField()
     
     def __str__(self):
         return self.name
