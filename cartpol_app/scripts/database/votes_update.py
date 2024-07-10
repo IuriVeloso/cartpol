@@ -2,6 +2,8 @@ import csv
 
 import requests
 
+import functools
+
 INDEX_CARGO = 17
 INDEX_SECTION_ID = 16
 INDEX_NAME = 20
@@ -19,6 +21,20 @@ CD_CARGO = {
     "vereador": 13
 }
 
+@functools.lru_cache(maxsize=8192)
+def request_section(string):
+    resp = requests.get(string).json()
+    if len(resp) > 0:
+        return resp[0]["id"]
+    return None
+
+@functools.lru_cache(maxsize=8192)
+def request_political(string):
+    resp = requests.get(string).json()
+    if len(resp) > 0:
+        return resp[0]["id"]
+    return None
+
 
 def post_votes(url):
     votes_array = []
@@ -28,64 +44,55 @@ def post_votes(url):
 
         reader = csv.reader(f, delimiter=';', strict=True)
         errors = 0
-        
-        political = []
-        section = []
 
         next(reader)
 
         for row in reader:
 
-            if row[INDEX_CANDIDATE_ID] in ['95', '96']:
+            if row[INDEX_CANDIDATE_ID] in ['95', '96'] or row[INDEX_ROUND] != "1" or row[INDEX_ELECTION_CODE] != '426':
                 continue
 
+            votes, name, candidate_id, county_id, county_name , zone_id, section_id, cargo = row[INDEX_VOTES], row[INDEX_NAME], row[INDEX_CANDIDATE_ID], row[INDEX_COUNTY_ID], row[INDEX_COUNTY_NAME], row[INDEX_ZONE_ID], row[INDEX_SECTION_ID], row[INDEX_CARGO]
+
             votes_dict = {
-                "quantity": row[INDEX_VOTES],
-                "description": row[INDEX_VOTES] + " votos para "
-                + row[INDEX_NAME],
-                "political_id": row[INDEX_CANDIDATE_ID],
-                "county_id": row[INDEX_COUNTY_ID],
-                "zone_id": row[INDEX_ZONE_ID],
+                "quantity": votes,
+                "description": " ".join([votes, "votos para", name]),
+                "political_id": candidate_id,
+                "county_id": county_id,
+                "zone_id": zone_id,
             }
 
-            if ((int(row[INDEX_CARGO]) == CD_CARGO["prefeito"]
-                 and row[INDEX_ELECTION_CODE] == "426"
-                 and row[INDEX_ROUND] == "1")
+            if ((int(cargo) == CD_CARGO["prefeito"])
                 or
-                    (int(row[INDEX_CARGO]) == CD_CARGO["vereador"]
-                     and row[INDEX_ELECTION_CODE] == "426"
-                     and row[INDEX_ROUND] == "1"
-                     and len(row[INDEX_CANDIDATE_ID]) > 3)):
+                (int(cargo) == CD_CARGO["vereador"]
+                    and len(row[INDEX_CANDIDATE_ID]) > 3)):
                 
-                
-                if len(political) != 0 and political[0]["political_code"] != row[INDEX_CANDIDATE_ID] or len(political) == 0:
-                    political = requests.get(
-                        f"{url}political/?political_code={row[INDEX_CANDIDATE_ID]}&full_name={row[INDEX_NAME]}").json()
+                political = request_political(
+                    f"{url}political/?political_code={candidate_id}&full_name={name}")
 
-                if len(political) != 0:
-                    votes_dict["political"] = political[0]["id"]
+                if political is not None:
+                    votes_dict["political"] = political
                 else:
                     votes_dict["political"] = None
-                    
-                if len(section) != 0 and section[0]["identifier"] != row[INDEX_SECTION_ID] and section[0]["address"] != row[INDEX_ADDRESS] or len(section) == 0:
-                    section = requests.get(
-                        f"{url}section/?identifier={row[INDEX_SECTION_ID]}&electoral_zone={row[INDEX_ZONE_ID]}&county={row[INDEX_COUNTY_NAME]}").json()
-
-                if len(section) != 0:
-                    votes_dict["section"] = section[0]["id"]
-                else:
-                    votes_dict["section"] = None
-                    print("Erro na secao e foda")
-                    print(votes_dict)
-                    raise Exception("Na traaaave!!!") 
-
-                if (votes_dict["political"] is None or
-                        votes_dict["section"] is None):
                     print("Erro nos votos")
                     print(votes_dict)
                     errors += 1
                     continue
+                    
+                section = request_section(
+                    f"{url}section/?identifier={section_id}&electoral_zone={zone_id}&county={county_name}")
+
+                if section is not None:
+                    votes_dict["section"] = section
+                else:
+                    print("Erro na secao e foda")
+                    print(votes_dict)
+                    raise Exception("Na traaaave!!!") 
+                    
                 votes_array.append(votes_dict)
+
+    request_political.cache_clear()
+    request_section.cache_clear()
 
     print("Terminando de selecionar votos\n")
     print(votes_array.__len__())
@@ -97,9 +104,9 @@ def post_votes(url):
 
     for votes in votes_array:
         votes_index += 1
-        if votes_index % 20000 == 0:
+        if votes_index % 50000 == 0:
             print(
-                f'{round(votes_index/votes_array.__len__(), 2)}% politicos inseridos')
+                f'{round(votes_index*100/votes_array.__len__(), 2)}% votos criados')
 
         response = requests.post(url + "votes/", data=votes)
         response_json = response.json()

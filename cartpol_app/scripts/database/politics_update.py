@@ -1,5 +1,7 @@
 import csv
 
+import functools
+
 import requests
 
 from cartpol_app.scripts.database.helpers import (
@@ -23,6 +25,12 @@ INDEX_COUNTY_ID = 13
 INDEX_STATE = 10
 INDEX_POLITICAL_NUMBER = 19
 
+@functools.lru_cache(maxsize=2048)
+def request_county(string):
+    resp = requests.get(string).json()
+    if len(resp) > 0:
+        return resp[0]["id"]
+    return None
 
 def post_politics(url):
     politics_array = []
@@ -32,8 +40,6 @@ def post_politics(url):
         print("Começando a selecionar partidos e candidatos")
 
         reader = csv.reader(f, delimiter=';', strict=True)
-        county = [{"name": 0}]
-
         next(reader)
 
         for row in reader:
@@ -45,46 +51,32 @@ def post_politics(url):
                 "name": row[INDEX_NAME],
                 "full_name": row[INDEX_FULL_NAME],
                 "political_party": row[INDEX_POLITICAL_PARTY],
-                "political_type": row[INDEX_CARGO],
+                "political_type": int(row[INDEX_CARGO]),
                 "political_id": row[INDEX_CANDIDATE_ID],
                 "political_code": row[INDEX_POLITICAL_NUMBER],
                 "county_id": row[INDEX_COUNTY_ID],
                 "region": 'city'
             }
 
-            if len(county) != 0 and county[0]["name"] != row[INDEX_COUNTY] or len(county) == 0:
-                county = requests.get(
-                    f"{url}county?state={row[INDEX_STATE]}&name={row[INDEX_COUNTY]}").json()
+            county = request_county(f"{url}county?state={row[INDEX_STATE]}&name={row[INDEX_COUNTY]}")
 
-            if len(county) != 0:
-                political_dict["region_id"] = county[0]["id"]
+            if county is not None:
+                political_dict["region_id"] = county
 
-            if int(political_dict["political_type"]) == CD_CARGO["prefeito"]:
-                political_dict["political_type"] = 1
+            if int(political_dict["political_type"]) == CD_CARGO["prefeito"] or (int(political_dict["political_type"]) == CD_CARGO["vereador"] and len(political_dict["political_id"]) > 4):
+                political_dict["political_type"] = 1 if political_dict["political_type"] == CD_CARGO["prefeito"] else 2
                 if contains_duplicates_political(political_dict, politics_array):
                     politics_array.append(political_dict)
 
-                if contains_duplicates_political_party(political_dict, political_party_array):
+                if contains_duplicates_political_party(political_dict["political_party"], political_party_array):
                     political_party_dict = {
                         "name": row[INDEX_POLITICAL_PARTY],
                         "full_name": row[INDEX_POLITICAL_PARTY_FULL_NAME],
                         "active": True
                     }
                     political_party_array.append(political_party_dict)
-            if int(political_dict["political_type"]) == CD_CARGO["vereador"]:
-                political_dict["political_type"] = 2
-                if political_dict["political_id"].__len__() < 4:
-                    continue
-                if contains_duplicates_political(political_dict, politics_array):
-                    politics_array.append(political_dict)
 
-                if contains_duplicates_political_party(political_dict, political_party_array):
-                    political_party_dict = {
-                        "name": row[INDEX_POLITICAL_PARTY],
-                        "full_name": row[INDEX_POLITICAL_PARTY_FULL_NAME],
-                        "active": True
-                    }
-                    political_party_array.append(political_party_dict)
+    request_county.cache_clear()
 
     print("Terminando de selecionar candidatos\n\n")
     print(politics_array.__len__())
