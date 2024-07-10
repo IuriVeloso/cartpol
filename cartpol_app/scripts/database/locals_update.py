@@ -1,5 +1,4 @@
 import csv
-
 import requests
 
 from cartpol_app.scripts.database.helpers import (
@@ -44,44 +43,46 @@ def locals_update(url):
         for row in reader:
             if row[INDEX_STATE] not in CD_STATE:
                 continue
+            
+            state, county, zone_id, neighborhood = row[INDEX_STATE], row[INDEX_MUNICIPIO], int(row[INDEX_ZONE_ID]), row[INDEX_BAIRRO].strip()
 
             section_dict = {
                 "identifier": row[INDEX_SECTION_ID],
                 "cep": row[INDEX_CEP],
                 "address": str(row[INDEX_ADDRESS]).strip(),
-                "electoral_zone": int(row[INDEX_ZONE_ID]),
-                "electoral_zone_script_id": int(row[INDEX_ZONE_ID]),
-                "neighborhood": row[INDEX_BAIRRO].strip(),
-                "county_name": row[INDEX_MUNICIPIO],
+                "electoral_zone": zone_id,
+                "electoral_zone_script_id": zone_id,
+                "neighborhood": neighborhood,
+                "county_name": county,
                 "script_id": row[INDEX_LOCAL_ID],
             }
 
-            state_dict = {"name": row[INDEX_STATE],
-                          "full_name": CD_STATE[row[INDEX_STATE]]}
+            state_dict = {"name": state,
+                          "full_name": CD_STATE[state]}
             electoral_zones_dict = {
-                "identifier": int(row[INDEX_ZONE_ID]),
-                "state": row[INDEX_STATE],
-                "county": row[INDEX_MUNICIPIO]}
+                "identifier": zone_id,
+                "state": state,
+                "county":county}
             county_dict = {
-                "name": row[INDEX_MUNICIPIO], "state": row[INDEX_STATE]}
+                "name":county, "state": state}
             neighborhood_dict = {
-                "name": row[INDEX_BAIRRO].strip(),
+                "name": neighborhood,
                 "county_id": row[INDEX_MUNICIPIO_ID],
-                "county_name": row[INDEX_MUNICIPIO]}
+                "county_name":county}
 
             section_array.append(section_dict)
+            
+            if contains_duplicates_state(state, state_array):
+                state_array.append(state_dict)
 
-            if contains_duplicates_neighborhood(neighborhood_dict, neighborhood_array):
+            if contains_duplicates_neighborhood(neighborhood, county, neighborhood_array):
                 neighborhood_array.append(neighborhood_dict)
 
-            if contains_duplicates_county(county_dict, county_array):
+            if contains_duplicates_county(county, county_array):
                 county_array.append(county_dict)
 
-            if contains_duplicates_electoral_zone(electoral_zones_dict, electoral_zones_array):
+            if contains_duplicates_electoral_zone(zone_id, state, county, electoral_zones_array):
                 electoral_zones_array.append(electoral_zones_dict)
-
-            if contains_duplicates_state(state_dict, state_array):
-                state_array.append(state_dict)
 
     print("\nTerminando de selecionar entidades de local, começando a \
         atualizar a base...\n")
@@ -151,18 +152,20 @@ def locals_update(url):
     sections_craeated = 0
 
     for section in section_array:
+        neighborhood_name, electoral_zone_id, county = str.lower(section["neighborhood"]), str(section["electoral_zone"]), section["county_name"]
+        
         neighborhood = next((obj["id"] for obj in neighborhood_array_created
-                             if (str.lower(obj["name"]) == str.lower(section["neighborhood"])) and (obj["county_name"] == section["county_name"])), None)
+                             if (str.lower(obj["name"]) == neighborhood_name) and (obj["county_name"] == county)), None)
 
         electoral_zone = next((obj["id"] for obj in electoral_zones_array_created
-                             if (str(section["electoral_zone"]) == obj["identifier"]) and (section["county_name"] == obj["county"])), None)
+                             if (electoral_zone_id == obj["identifier"]) and (section["county_name"] == obj["county"])), None)
 
         if neighborhood is None:
             print("Neighborhood not found " + section["neighborhood"])
             break
         
         if electoral_zone is None:
-            print("ZE not found " + str(section["electoral_zone"]))
+            print("ZE not found " + electoral_zone)
             break
         
 

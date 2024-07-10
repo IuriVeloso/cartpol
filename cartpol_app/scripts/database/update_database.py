@@ -16,7 +16,7 @@ print("v: votos")
 try:
     shouldRun = input("Escolha uma opcao: ")
 except:
-    shouldRun = 'c'
+    shouldRun = 'v'
 
 shouldRunAll = shouldRun == None or shouldRun == 'c'
 shouldRunBase = shouldRunAll or shouldRun == 'b'
