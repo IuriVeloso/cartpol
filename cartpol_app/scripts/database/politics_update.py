@@ -1,6 +1,6 @@
 import csv
-
 import functools
+from itertools import batched
 
 import requests
 
@@ -25,12 +25,25 @@ INDEX_COUNTY_ID = 13
 INDEX_STATE = 10
 INDEX_POLITICAL_NUMBER = 19
 
+
 @functools.lru_cache(maxsize=2048)
 def request_county(string):
     resp = requests.get(string).json()
     if len(resp) > 0:
         return resp[0]["id"]
     return None
+
+
+@functools.lru_cache(maxsize=64)
+def request_political_party(string):
+    resp = requests.get(string).json()
+    if len(resp) > 0:
+        return resp[0]["id"]
+    return None
+
+
+headers = {'Content-Type': 'application/json', 'Accept': 'application/json'}
+
 
 def post_politics(url):
     politics_array = []
@@ -58,7 +71,8 @@ def post_politics(url):
                 "region": 'city'
             }
 
-            county = request_county(f"{url}county?state={row[INDEX_STATE]}&name={row[INDEX_COUNTY]}")
+            county = request_county(f"{url}county?state={
+                                    row[INDEX_STATE]}&name={row[INDEX_COUNTY]}")
 
             if county is not None:
                 political_dict["region_id"] = county
@@ -95,30 +109,44 @@ def post_politics(url):
         response_json = response.json()
         political_party_array_created.append(response_json)
 
-    print(political_party_array_created.__len__(), "partidos criados")
-    print("\n\nPartidos finalizados. Inserindo politicos\n")
-
-    politics_index = 0
-
-    for political_party in political_party_array_created:
-        def apply_political_party_id(x):
-            if isinstance(x["political_party"], str) and x["political_party"] == political_party["name"]:
-                x["political_party"] = political_party["id"]
-            return x
-
-        politics_array = list(map(apply_political_party_id, politics_array))
-
-    politics_created_index = 0
+    print(len(political_party_array_created), "partidos criados")
 
     for politics in politics_array:
+        political_party_id = request_political_party(
+            f"{url}political-party?name=" + politics["political_party"])
+
+        if political_party_id is not None:
+            politics["political_party"] = political_party_id
+        else:
+            print("PoliticalPartyNotFound")
+            print(political_party)
+            raise Exception("PoliticalPartyNotFound")
+    request_political_party.cache_clear()
+
+    politics_index = 0
+    politics_created_index = 0
+
+    print("\n\nPartidos finalizados. Inserindo politicos\n")
+
+    for politics in batched(politics_array, 10):
         politics_index += 1
         if politics_index % 20000 == 0:
             print(
                 f'{round(politics_index*100/len(politics_array), 2)}% politicos inseridos')
-
-        response = requests.post(url + "political/", data=politics)
+        list_politics = list(politics)
+        response = requests.post(
+            f"{url}political/", json=list_politics, headers=headers)
         if response.status_code == 201:
-            politics_created_index +=1
+            politics_created_index += 10
+        else:
+            print(response.json())
+            for individual_batch in list_politics:
+                response = requests.post(
+                    f"{url}political/", data=individual_batch, headers=headers)
+                if response.status_code == 201:
+                    politics_created_index += 1
+                else:
+                    print(response.json())
 
     print(politics_created_index, " politicos criados")
 

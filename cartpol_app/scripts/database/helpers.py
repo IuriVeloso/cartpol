@@ -6,23 +6,26 @@ def contains_duplicates_neighborhood(neighborhood_name, neighborhood_county, nei
             break
     return result
 
-def contains_duplicates_county(county_name, county_array):
+
+def contains_duplicates_county(county_name, county_state, county_array):
     result = True
     for county_object in county_array:
-        if county_object["name"] == county_name:
+        if county_object["name"] == county_name and county_object["state"] == county_state:
             result = False
             break
     return result
+
 
 def contains_duplicates_electoral_zone(electoral_zone_identifier, electoral_zone_state, electoral_zone_county, electoral_zone_array):
     result = True
     for electoral_zone_obj in electoral_zone_array:
         if electoral_zone_identifier == electoral_zone_obj["identifier"]\
-            and electoral_zone_state == electoral_zone_obj["state"]\
-            and electoral_zone_county == electoral_zone_obj["county"]:
+                and electoral_zone_state == electoral_zone_obj["state"]\
+                and electoral_zone_county == electoral_zone_obj["county"]:
             result = False
             break
     return result
+
 
 def contains_duplicates_state(state_name, state_array):
     result = True
@@ -32,6 +35,7 @@ def contains_duplicates_state(state_name, state_array):
             break
     return result
 
+
 def contains_duplicates_political(political, political_array):
     result = True
     for political_obj in political_array:
@@ -39,6 +43,7 @@ def contains_duplicates_political(political, political_array):
             result = False
             break
     return result
+
 
 def contains_duplicates_political_party(political_party_name, political_party_array):
     result = True

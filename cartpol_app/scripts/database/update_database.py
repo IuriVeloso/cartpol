@@ -13,10 +13,14 @@ print("l: localidades")
 print("p: politicos")
 print("v: votos")
 
+timeTotalLocalResults = None
+timeTotalPostPolitics = None
+timeTotalPostVotes = None
+
 try:
     shouldRun = input("Escolha uma opcao: ")
 except:
-    shouldRun = 'v'
+    shouldRun = 'c'
 
 shouldRunAll = shouldRun == None or shouldRun == 'c'
 shouldRunBase = shouldRunAll or shouldRun == 'b'
@@ -37,39 +41,46 @@ if shouldRunLocals:
 
     locals_update(url=URL)
 
-    section = []
-
-    timeFinishedLocalResults = datetime.datetime.now()
+    timeTotalLocalResults = datetime.datetime.now() - startTime
     print(
         f"\nFinished locals_update\nTotal time: \
-        {timeFinishedLocalResults - startTime}\n")
+        {timeTotalLocalResults}\n")
 
 if shouldRunPolitics:
     timeStartedPostPolitics = datetime.datetime.now()
-    
+
     print("\nStarted post_politics()\n")
 
     post_politics(url=URL)
 
-    timeFinishedPostPolitics = datetime.datetime.now()
+    timeTotalPostPolitics = datetime.datetime.now() - timeStartedPostPolitics
     print(
         f"\nFinished post_politics\nTotal time: \
-            {timeFinishedPostPolitics - timeStartedPostPolitics}\n")
+            {timeTotalPostPolitics}\n")
 
 if shouldRunVotes:
     timeStartedPostVotes = datetime.datetime.now()
-    
+
     print("\nStarted post_votes()\n")
 
     post_votes(url=URL)
 
-    timeFinishedPostVotes = datetime.datetime.now()
+    timeTotalPostVotes = datetime.datetime.now() - timeStartedPostVotes
     print(
         f"\nFinished post_votes\nTotal time: \
-            {timeFinishedPostVotes - timeStartedPostVotes}\n")
+            {timeTotalPostVotes}\n")
 
 print(
     f"\nFinished script running\nTotal time: \
         {datetime.datetime.now() - startTime}\n")
+
+if timeTotalLocalResults is not None:
+    print(f"\nlocals_update: {timeTotalLocalResults}")
+
+if timeTotalPostPolitics is not None:
+    print(f"\npolitics_update: {timeTotalPostPolitics}")
+
+if timeTotalPostVotes is not None:
+    print(f"\npost_votes: {timeTotalPostVotes}")
 
 # python3 manage.py shell < cartpol_app/scripts/database/update_database.py
