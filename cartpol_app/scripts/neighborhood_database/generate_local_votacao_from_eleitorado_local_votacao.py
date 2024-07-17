@@ -1,28 +1,27 @@
 import csv
 import datetime
-import time
+import functools
 
 import googlemaps
 import pandas as pd
-import requests
 
-gmaps = googlemaps.Client(key='AIzaSyAD_X42uNy1HKjuwrQXQa2YqoC6niGtdf8')
+gmaps = googlemaps.Client(key='AIzaSyDP-G83wGvDRkxX0-d4g5lSXHWNC2D5BxA')
 
 viacep = "https://viacep.com.br/ws/"
 
 # eleitorado_local_votacao_2020
-# INDEX_TURNO = 5
-# INDEX_ADDRESS = 18
-# INDEX_LOCAL_VOTACAO = 15
-# INDEX_MUNICIPIO = 7
-# INDEX_MUNICIPIO_NOME = 8
-# INDEX_SG_ESTADO = 6
-# INDEX_SECTION_ID = 10
-# INDEX_ZONE_ID = 9
-# INDEX_BAIRRO = 19
-# INDEX_CEP = 20
-# INDEX_LATITUDE = 22
-# INDEX_LONGITUDE = 23
+INDEX_TURNO = 5
+INDEX_ADDRESS = 18
+INDEX_LOCAL_VOTACAO = 15
+INDEX_MUNICIPIO = 7
+INDEX_MUNICIPIO_NOME = 8
+INDEX_SG_ESTADO = 6
+INDEX_SECTION_ID = 10
+INDEX_ZONE_ID = 9
+INDEX_BAIRRO = 19
+INDEX_CEP = 20
+INDEX_LATITUDE = 22
+INDEX_LONGITUDE = 23
 
 # votacao_secao_2020_RJ
 # INDEX_ADDRESS = 25
@@ -33,13 +32,42 @@ viacep = "https://viacep.com.br/ws/"
 # INDEX_ZONE_ID = 15
 
 
+@functools.lru_cache(8192)
+def find_in_maps(search_by_address, administrative_area):
+    return gmaps.geocode(search_by_address, components={
+        "country": "BR", "administrative_area": administrative_area}, region="BR")
+
+
+df_2020 = pd.read_csv('data/local_votacao_BRASIL_2020.csv', delimiter=';')
+df_2022 = pd.read_csv('data/local_votacao_BRASIL_2022.csv', delimiter=';')
+df_2018 = pd.read_csv('data/local_votacao_BRASIL_2018.csv', delimiter=';')
+
+
+@functools.lru_cache(8192)
+def find_in_local_votacao(local_votacao, municipio_id):
+    result = df_2020[(df_2020["local_votacao"] == local_votacao)
+                     & (df_2020["municipio_id"] == municipio_id)]
+
+    if not result.empty:
+        return result
+
+    result = df_2022[(df_2022["local_votacao"] == local_votacao)
+                     & (df_2022["municipio_id"] == municipio_id)]
+    if not result.empty:
+        return result
+
+    result = df_2018[(df_2018["local_votacao"] == local_votacao)
+                     & (df_2018["municipio_id"] == municipio_id)]
+
+    return result
+
+
 def index(input_file, output_file):
     with open(input_file, 'r', encoding='latin-1') as f:
         reader = csv.reader(f, delimiter=';', strict=False)
         next(reader)
 
         local_votacao_obj = {}
-
         replicated_rows = []
         section_index = 0
 
@@ -58,6 +86,7 @@ def index(input_file, output_file):
             cep = row[INDEX_CEP]
             latitude = row[INDEX_LATITUDE]
             longitude = row[INDEX_LONGITUDE]
+            distrito = bairro
             full_search_address = local_votacao + ", " + bairro + ", " + municipio
 
             informacao_completa = latitude != "-1" and longitude != "-1" and bairro != "-1"
@@ -68,9 +97,8 @@ def index(input_file, output_file):
                 informacao_completa = True
 
             if not informacao_completa:
-                df = pd.read_csv(
-                    "data/local_votacao_tratado_BR.csv", delimiter=';')
-                result = df[df["local_votacao"] == local_votacao]
+                result = find_in_local_votacao(
+                    local_votacao, int(municipio_id))
                 if not result.empty:
                     latitude = result["latitude"].values[0]
                     longitude = result["longitude"].values[0]
@@ -78,8 +106,8 @@ def index(input_file, output_file):
 
             if not informacao_completa:
                 try:
-                    geocode_result = gmaps.geocode(full_search_address, components={
-                                                   "country": "BR", "administrative_area": administrative_area}, region="BR")
+                    geocode_result = find_in_maps(
+                        full_search_address, administrative_area)
                 except Exception as e:
                     print(f'Erro ao buscar o endereço {
                           full_search_address}: {e}')
@@ -91,8 +119,8 @@ def index(input_file, output_file):
                 else:
                     search_by_address = address + ", " + bairro + ", " + municipio
                     try:
-                        geocode_result = gmaps.geocode(search_by_address, components={
-                                                       "country": "BR", "administrative_area": administrative_area}, region="BR")
+                        geocode_result = find_in_maps(
+                            search_by_address, administrative_area)
                     except Exception as e:
                         geocode_result = []
                         print(f'Erro ao buscar o endereço {
@@ -116,20 +144,23 @@ def index(input_file, output_file):
                 print(f"Section {section_index} processed")
 
             replicated_rows.append([municipio, municipio_id, administrative_area, address, bairro,
-                                   cep, section, zone, latitude, longitude, informacao_completa, local_votacao])
+                                   cep, section, zone, latitude, longitude, informacao_completa, local_votacao, distrito])
+
+        find_in_local_votacao.cache_clear()
+        find_in_maps.cache_clear()
 
     with open(output_file, 'w', encoding='utf-8', newline='') as csv_output:
         writer = csv.writer(csv_output, delimiter=';')
         writer.writerow(['municipio', 'municipio_id', 'UF', 'address', 'bairro', 'cep',
-                        'seção', 'zona', 'latitude', 'longitude', 'informacao_completa', 'local_votacao'])
+                        'seção', 'zona', 'latitude', 'longitude', 'informacao_completa', 'local_votacao', 'subdistrito'])
         writer.writerows(replicated_rows)
 
 
-input_file = 'data/eleitorado_local_votacao_2020.csv'
-output_file = 'data/local_votacao_tratado_BR_2.csv'
+input_file = 'data/eleitorado_local_votacao_2016.csv'
+output_file = 'data/local_votacao_BRASIL_2016.csv'
 
 startTime = datetime.datetime.now()
-print("\nStarted script running\n")
+print("\nStarted script running at\n" + str(startTime))
 
 index(input_file, output_file)
 
