@@ -1,12 +1,11 @@
 import csv
 import datetime
 import functools
-import time
 
 import googlemaps
 import pandas as pd
 
-gmaps = googlemaps.Client(key='AIzaSyAD_X42uNy1HKjuwrQXQa2YqoC6niGtdf8')
+gmaps = googlemaps.Client(key='AIzaSyDP-G83wGvDRkxX0-d4g5lSXHWNC2D5BxA')
 
 viacep = "https://viacep.com.br/ws/"
 
@@ -33,45 +32,44 @@ INDEX_MUNICIPIO_NOME = 14
 INDEX_SG_ESTADO = 10
 INDEX_SECTION_ID = 16
 INDEX_ZONE_ID = 15
+INDEX_TURNO = 5
 
 
-@functools.lru_cache(1024)
+@functools.lru_cache(8192)
 def find_in_maps(search_by_address, administrative_area):
     return gmaps.geocode(search_by_address, components={
         "country": "BR", "administrative_area": administrative_area}, region="BR")
 
 
-def search_already_done(zone, section, address, found_address):
-    key = str.lower(zone+'-'+section+'-'+address).replace(" ", "")
-    result = False
-    for each_address in found_address:
-        if each_address == key:
-            result = True
-            break
-    return result
+df = pd.read_csv('data/local_votacao_BRASIL_2016.csv', delimiter=';')
+
+
+@functools.lru_cache(8192)
+def find_in_local_votacao(local_votacao, municipio_id):
+    result = df[(df["local_votacao"] == local_votacao)
+                & (df["municipio_id"] == municipio_id)]
+    return (not result.empty)
 
 
 def index(input_section_file, output_file):
-
-    df = pd.read_csv("data/local_votacao_BRASIL.csv", delimiter=';')
-
     with open(input_section_file, 'r', encoding='utf-8') as f:
         reader = csv.reader(f, delimiter=';', strict=False)
         next(reader)
 
         replicated_rows = []
-        found_keys = []
+        found_keys = {}
+        section_index = 0
 
         for row in reader:
+            section_index += 1
             local_votacao = row[INDEX_LOCAL_VOTACAO]
-            municipio_id = int(row[INDEX_MUNICIPIO])
+            municipio_id = row[INDEX_MUNICIPIO]
             address = row[INDEX_ADDRESS]
             section = row[INDEX_SECTION_ID]
             zone = row[INDEX_ZONE_ID]
-            result = df[(df["local_votacao"] == local_votacao)
-                        & (df["municipio_id"] == municipio_id)]
+            key = (zone+section+address)
 
-            if not result.empty or search_already_done(zone, section, address, found_keys):
+            if (find_in_local_votacao(local_votacao, int(municipio_id))) or (key in found_keys):
                 continue
 
             municipio = row[INDEX_MUNICIPIO_NOME]
@@ -80,7 +78,6 @@ def index(input_section_file, output_file):
             bairro = ''
             cep = ''
             subdistrito = ''
-            key = str.lower(zone+'-'+section+'-'+address).replace(" ", "")
 
             search_by_address = local_votacao + ", " + municipio
 
@@ -92,7 +89,6 @@ def index(input_section_file, output_file):
                 print(f'Erro ao buscar o endereço {search_by_address}: {e}')
 
             if geocode_result and len(geocode_result) > 0:
-                print(geocode_result)
                 geocode_result = geocode_result[0]
 
                 for address_component in geocode_result['address_components']:
@@ -100,6 +96,7 @@ def index(input_section_file, output_file):
                         cep = address_component["long_name"]
                     if 'sublocality_level_1' in address_component["types"]:
                         bairro = address_component["long_name"]
+                        subdistrito = bairro
 
                 latitude = geocode_result['geometry']['location']['lat']
                 longitude = geocode_result['geometry']['location']['lng']
@@ -109,26 +106,29 @@ def index(input_section_file, output_file):
                 print("Não foi possível encontrar o endereço "
                       + search_by_address)
 
-            found_keys.append(key)
+            if section_index % 50000 == 0:
+                print(f"{section_index} sections finished")
+            found_keys[key] = True
             replicated_rows.append([municipio, municipio_id, administrative_area, address, bairro, cep,
                                    section, zone, latitude, longitude, informacao_completa, local_votacao, subdistrito])
 
         find_in_maps.cache_clear()
+        find_in_local_votacao.cache_clear()
     with open(output_file, 'a', encoding='utf-8', newline='') as csv_output:
         writer = csv.writer(csv_output, delimiter=';')
         for row in replicated_rows:
             writer.writerow(row)
 
 
-input_section_file = 'data/derivado_votacao_secao_BH_RJ_SP_VIT.csv'
-output_file = 'data/local_votacao_BRASIL.csv'
+input_section_file = 'data/derivado_votacao_secao_2016_BH_RJ_SP_VIT.csv'
+output_file = 'data/local_votacao_BRASIL_2016.csv'
 
 startTime = datetime.datetime.now()
-print("\nStarted script running\n")
+print("\nStarted script running at\n" + str(startTime))
 
 index(input_section_file, output_file)
 
 print(f"\nFinished script running\nTotal time: \
       {datetime.datetime.now() - startTime}\n")
 
-# python3 manage.py shell < cartpol_app/scripts/neighborhood_database/add_votacao_secao_to_file.py
+# python3 manage.py shell < cartpol_app/scripts/neighborhood_database/add_votacao_secao_to_local_votacao.py
