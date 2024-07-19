@@ -85,7 +85,7 @@ def post_votes(url):
                     continue
 
                 section = request_section(
-                    f"{url}section?identifier={section_id}&electoral_zone={zone_id}&county={county_name}")
+                    f"{url}section?identifier={section_id}&electoral_zone={zone_id}&county_tse_id={county_id}")
 
                 if section is not None:
                     votes_dict["section"] = section
