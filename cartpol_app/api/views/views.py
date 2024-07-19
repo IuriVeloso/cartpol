@@ -38,10 +38,13 @@ class CountyAV(APIView):
         counties = County.objects.all()
         should_search_county = request.query_params.get('name', False)
         should_search_state = request.query_params.get('state', False)
+        should_search_tse_id = request.query_params.get('state', False)
         if should_search_state:
             counties = counties.filter(state__name=should_search_state)
         if should_search_county:
             counties = counties.filter(name=should_search_county)
+        if should_search_tse_id:
+            counties = counties.filter(tse_id=should_search_tse_id)
 
         county_serializer = CountySerializer(
             counties, many=True)
@@ -217,6 +220,8 @@ class SectionAV(APIView):
         sections = Section.objects.all()
 
         should_search_county = request.query_params.get('county', False)
+        should_search_county_tse_id = request.query_params.get(
+            'county_tse_id', False)
         should_search_electoral_zone = request.query_params.get(
             'electoral_zone', False)
         should_search_identifier = request.query_params.get(
@@ -229,6 +234,8 @@ class SectionAV(APIView):
                 electoral_zone__identifier=should_search_electoral_zone)
         if should_search_identifier:
             sections = sections.filter(identifier=should_search_identifier)
+        if should_search_county_tse_id:
+            sections = sections.filter(identifier=should_search_county_tse_id)
 
         section_serializer = SectionSerializer(sections, many=True)
         return Response(section_serializer.data, status=status.HTTP_200_OK)

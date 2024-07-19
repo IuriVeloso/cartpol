@@ -7,12 +7,11 @@ def contains_duplicates_neighborhood(neighborhood_name, neighborhood_county, nei
     return result
 
 
-def contains_duplicates_county(county_name, county_state, county_array):
+def contains_duplicates_county(county_tse_id, county_array):
     result = True
     for county_object in county_array:
-        if county_object["name"] == county_name and county_object["state"] == county_state:
-            result = False
-            break
+        if county_object["tse_id"] == county_tse_id
+        break
     return result
 
 

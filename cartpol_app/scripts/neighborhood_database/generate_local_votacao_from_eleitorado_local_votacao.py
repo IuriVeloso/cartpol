@@ -72,7 +72,7 @@ def index(input_file, output_file):
         section_index = 0
 
         for row in reader:
-            if row[INDEX_TURNO] == 2:
+            if row[INDEX_TURNO] == '2':
                 continue
             section_index += 1
             address = row[INDEX_ADDRESS]

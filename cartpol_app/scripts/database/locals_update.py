@@ -78,8 +78,8 @@ def locals_update(url):
             if row[INDEX_STATE] not in CD_STATE:
                 continue
 
-            state, county, zone_id, neighborhood = row[INDEX_STATE], row[
-                INDEX_MUNICIPIO], row[INDEX_ZONE_ID], row[INDEX_BAIRRO].strip()
+            state, county, zone_id, neighborhood, tse_id = row[INDEX_STATE], row[
+                INDEX_MUNICIPIO], row[INDEX_ZONE_ID], row[INDEX_BAIRRO].strip(), row[INDEX_MUNICIPIO_ID]
 
             section_dict = {
                 "identifier": row[INDEX_SECTION_ID],
@@ -98,10 +98,10 @@ def locals_update(url):
                 "state": state,
                 "county": county}
             county_dict = {
-                "name": county, "state": state}
+                "name": county, "state": state, "tse_id": tse_id}
             neighborhood_dict = {
                 "name": neighborhood,
-                "county_id": row[INDEX_MUNICIPIO_ID],
+                "county_id": tse_id,
                 "county_name": county,
                 "state": state}
 
@@ -113,7 +113,7 @@ def locals_update(url):
             if contains_duplicates_neighborhood(neighborhood, county, neighborhood_array):
                 neighborhood_array.append(neighborhood_dict)
 
-            if contains_duplicates_county(county, state, county_array):
+            if contains_duplicates_county(county, county_array):
                 county_array.append(county_dict)
 
             if contains_duplicates_electoral_zone(zone_id, state, county, electoral_zones_array):
