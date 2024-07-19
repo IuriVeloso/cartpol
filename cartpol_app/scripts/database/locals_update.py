@@ -113,7 +113,7 @@ def locals_update(url):
             if contains_duplicates_neighborhood(neighborhood, county, neighborhood_array):
                 neighborhood_array.append(neighborhood_dict)
 
-            if contains_duplicates_county(county, county_array):
+            if contains_duplicates_county(tse_id, county_array):
                 county_array.append(county_dict)
 
             if contains_duplicates_electoral_zone(zone_id, state, county, electoral_zones_array):
