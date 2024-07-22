@@ -57,8 +57,8 @@ def post_votes(url):
             if row[INDEX_CANDIDATE_ID] in ['95', '96'] or row[INDEX_ROUND] != "1" or row[INDEX_ELECTION_CODE] != '426':
                 continue
 
-            votes, name, candidate_id, county_id, county_name, zone_id, section_id, cargo = row[INDEX_VOTES], row[INDEX_NAME], row[
-                INDEX_CANDIDATE_ID], row[INDEX_COUNTY_ID], row[INDEX_COUNTY_NAME], row[INDEX_ZONE_ID], row[INDEX_SECTION_ID], row[INDEX_CARGO]
+            votes, name, candidate_id, county_id, zone_id, section_id, cargo = row[INDEX_VOTES], row[INDEX_NAME], row[
+                INDEX_CANDIDATE_ID], row[INDEX_COUNTY_ID], row[INDEX_ZONE_ID], row[INDEX_SECTION_ID], row[INDEX_CARGO]
 
             votes_dict = {
                 "quantity": votes,
