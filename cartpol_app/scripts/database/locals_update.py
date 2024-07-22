@@ -156,8 +156,8 @@ def locals_update(url):
     print("\nMunicipios finalizados. Inserindo zonas eleitorais\n")
 
     for electoral_zone in electoral_zones_array:
-        search_url = f"{url}county?name={electoral_zone['county']}".join(
-            f"&state={electoral_zone['state']}")
+        search_url = (f"{url}county?name={electoral_zone['county']}" +
+                      f"&state={electoral_zone['state']}")
         county_id = request_county(search_url)
 
         if state_id is not None:
