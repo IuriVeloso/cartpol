@@ -235,7 +235,8 @@ class SectionAV(APIView):
         if should_search_identifier:
             sections = sections.filter(identifier=should_search_identifier)
         if should_search_county_tse_id:
-            sections = sections.filter(identifier=should_search_county_tse_id)
+            sections = sections.filter(
+                neighborhood__county__tse_id=should_search_county_tse_id)
 
         section_serializer = SectionSerializer(sections, many=True)
         return Response(section_serializer.data, status=status.HTTP_200_OK)

@@ -1,5 +1,6 @@
 import csv
 import functools
+from itertools import batched
 
 import requests
 
@@ -27,6 +28,8 @@ CD_STATE = {
     "SP": "São Paulo",
     "ES": "Espírito Santo",
 }
+
+headers = {'Content-Type': 'application/json', 'Accept': 'application/json'}
 
 
 @functools.lru_cache(maxsize=2048)
@@ -222,10 +225,11 @@ def locals_update(url):
 
     print("\n\nInserindo secoes\n")
 
-    for section in section_array:
-        response = requests.post(url + "section/", data=section)
+    for section in batched(section_array, 10):
+        response = requests.post(
+            url + "section/", json=list(section), headers=headers)
         if response.status_code == 201:
-            sections_created += 1
+            sections_created += 10
         else:
             print(section)
             print(response.json())

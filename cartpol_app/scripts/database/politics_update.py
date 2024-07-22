@@ -71,8 +71,8 @@ def post_politics(url):
                 "region": 'city'
             }
 
-            county = request_county(f"{url}county?state={
-                                    row[INDEX_STATE]}&name={row[INDEX_COUNTY]}")
+            county = request_county(f"{url}county?state={row[INDEX_STATE]}&tse_id={
+                                    row[INDEX_COUNTY_ID]}")
 
             if county is not None:
                 political_dict["region_id"] = county
