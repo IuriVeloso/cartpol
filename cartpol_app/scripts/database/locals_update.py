@@ -91,6 +91,7 @@ def locals_update(url):
                 "electoral_zone": zone_id,
                 "neighborhood": neighborhood,
                 "county_name": county,
+                "county_id": tse_id,
                 "script_id": row[INDEX_LOCAL_ID],
             }
 
@@ -99,6 +100,7 @@ def locals_update(url):
             electoral_zones_dict = {
                 "identifier": zone_id,
                 "state": state,
+                "county_id": tse_id,
                 "county": county}
             county_dict = {
                 "name": county, "state": state, "tse_id": tse_id}
@@ -113,13 +115,13 @@ def locals_update(url):
             if contains_duplicates_state(state, state_array):
                 state_array.append(state_dict)
 
-            if contains_duplicates_neighborhood(neighborhood, county, neighborhood_array):
+            if contains_duplicates_neighborhood(neighborhood, tse_id, neighborhood_array):
                 neighborhood_array.append(neighborhood_dict)
 
             if contains_duplicates_county(tse_id, county_array):
                 county_array.append(county_dict)
 
-            if contains_duplicates_electoral_zone(zone_id, state, county, electoral_zones_array):
+            if contains_duplicates_electoral_zone(zone_id, state, tse_id, electoral_zones_array):
                 electoral_zones_array.append(electoral_zones_dict)
 
     print("\nTerminando de selecionar entidades de local, começando a \
@@ -159,8 +161,8 @@ def locals_update(url):
     print("\nMunicipios finalizados. Inserindo zonas eleitorais\n")
 
     for electoral_zone in electoral_zones_array:
-        search_url = (f"{url}county?name={electoral_zone['county']}" +
-                      f"&state={electoral_zone['state']}")
+        search_url = (f"{url}county?state={electoral_zone['state']}" +
+                      f"&tse_id={electoral_zone['county_id']}")
         county_id = request_county(search_url)
 
         if state_id is not None:
@@ -180,8 +182,8 @@ def locals_update(url):
     for neighborhood in neighborhood_array:
         county_id = request_county(f"{url}county?state="
                                    + neighborhood["state"]
-                                   + "&name="
-                                   + neighborhood["county_name"])
+                                   + "&tse_id="
+                                   + neighborhood["county_id"])
 
         if county_id is not None:
             neighborhood["county"] = county_id
@@ -203,13 +205,13 @@ def locals_update(url):
     sections_created = 0
 
     for section in section_array:
-        neighborhood_id = request_neighborhood(f"{url}neighborhood?county="
-                                               + section["county_name"]
+        neighborhood_id = request_neighborhood(f"{url}neighborhood?county_tse_id="
+                                               + section["county_id"]
                                                + "&name="
                                                + section["neighborhood"])
 
-        electoral_zone_id = request_electoral_zone(f"{url}electoral-zone?county="
-                                                   + section["county_name"]
+        electoral_zone_id = request_electoral_zone(f"{url}electoral-zone?county_tse_id="
+                                                   + section["county_id"]
                                                    + "&identifier="
                                                    + section["electoral_zone"])
 

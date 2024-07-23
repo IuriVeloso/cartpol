@@ -6,7 +6,7 @@ from tempfile import NamedTemporaryFile
 
 import pandas as pd
 
-filename = 'data/local_votacao_BRASIL_2018_2.csv'
+filename = 'data/local_votacao_BRASIL_2022.csv'
 tempfile = NamedTemporaryFile(mode='w', delete=False)
 
 fields = ['municipio', 'municipio_id', 'UF', 'address', 'bairro', 'cep', 'seção',

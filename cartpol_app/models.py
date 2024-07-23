@@ -23,7 +23,7 @@ class State (models.Model):
 class County (models.Model):
     name = models.CharField(max_length=40)
     state = models.ForeignKey(State, on_delete=models.CASCADE)
-    tse_id = models.IntegerField(max_length=6)
+    tse_id = models.IntegerField()
 
     def __str__(self):
         return self.name
