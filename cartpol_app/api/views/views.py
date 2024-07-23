@@ -63,12 +63,18 @@ class NeighborhoodAV(APIView):
         neighborhoods = Neighborhood.objects.all()
         should_search_neighborhood = request.query_params.get('name', False)
         should_search_county = request.query_params.get('county', False)
+        should_search_county_tse_id = request.query_params.get(
+            'county_tse_id', False)
+
         if should_search_neighborhood:
             neighborhoods = neighborhoods.filter(
                 name=should_search_neighborhood)
         if should_search_county:
             neighborhoods = neighborhoods.filter(
                 county__name=should_search_county)
+        if should_search_county_tse_id:
+            neighborhoods = neighborhoods.filter(
+                county__tse_id=should_search_county_tse_id)
 
         neighborhood_serializer = NeighborhoodSerializer(
             neighborhoods, many=True)
@@ -104,6 +110,8 @@ class ElectoralZoneAV(APIView):
         should_search_electoral_zone = request.query_params.get(
             'identifier', False)
         should_search_county = request.query_params.get('county', False)
+        should_search_county_tse_id = request.query_params.get(
+            'county_tse_id', False)
 
         if should_search_electoral_zone:
             electoral_zones = electoral_zones.filter(
@@ -111,6 +119,9 @@ class ElectoralZoneAV(APIView):
         if should_search_county:
             electoral_zones = electoral_zones.filter(
                 county__name=should_search_county)
+        if should_search_county_tse_id:
+            electoral_zones = electoral_zones.filter(
+                county__tse_id=should_search_county_tse_id)
 
         electoral_zone_serializer = ElectoralZoneSerializer(
             electoral_zones, many=True)
