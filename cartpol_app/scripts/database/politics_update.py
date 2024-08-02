@@ -57,8 +57,9 @@ def post_politics(url):
 
         for row in reader:
             # Removendo votos nulos e restringindo ao sudeste
-            if row[INDEX_CANDIDATE_ID] in ['95', '96'] or row[INDEX_STATE] not in ['RJ', 'MG', 'SP', 'ES'] or row[INDEX_ROUND] != '1' or row[INDEX_ELECTION_CODE] != '426':
+            if row[INDEX_CANDIDATE_ID] in ['95', '96'] or row[INDEX_ROUND] != '1' or row[INDEX_ELECTION_CODE] != '426':
                 continue
+
             political_dict = {
                 "election": 1,
                 "name": row[INDEX_NAME],

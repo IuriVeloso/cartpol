@@ -38,9 +38,12 @@ class CountyAV(APIView):
         counties = County.objects.all()
         should_search_county = request.query_params.get('name', False)
         should_search_state = request.query_params.get('state', False)
+        should_search_state_id = request.query_params.get('state_id', False)
         should_search_tse_id = request.query_params.get('tse_id', False)
         if should_search_state:
             counties = counties.filter(state__name=should_search_state)
+        if should_search_state_id:
+            counties = counties.filter(state__id=should_search_state_id)
         if should_search_county:
             counties = counties.filter(name=should_search_county)
         if should_search_tse_id:
@@ -193,11 +196,15 @@ class PoliticalAV(APIView):
         should_search_political_code = request.query_params.get(
             'political_code', False)
         should_search_full_name = request.query_params.get('full_name', False)
+        should_search_county_id = request.query_params.get('county_id', False)
         if should_search_full_name:
             politicals = politicals.filter(full_name=should_search_full_name)
         if should_search_political_code:
             politicals = politicals.filter(
                 political_code=should_search_political_code)
+        if should_search_county_id:
+            politicals = politicals.filter(
+                region_id=int(should_search_county_id))
 
         political_serializer = PoliticalSerializer(politicals, many=True)
         return Response(political_serializer.data, status=status.HTTP_200_OK)

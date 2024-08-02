@@ -54,7 +54,7 @@ def post_votes(url):
 
         for row in reader:
 
-            if row[INDEX_CANDIDATE_ID] in ['95', '96'] or row[INDEX_ROUND] != "1" or row[INDEX_ELECTION_CODE] != '426':
+            if row[INDEX_CANDIDATE_ID] in ['95', '96'] or row[INDEX_ROUND] != '1' or row[INDEX_ELECTION_CODE] != '426':
                 continue
 
             votes, name, candidate_id, county_id, zone_id, section_id, cargo = row[INDEX_VOTES], row[INDEX_NAME], row[
