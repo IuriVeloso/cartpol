@@ -22,13 +22,6 @@ CD_CARGO = {
     "vereador": 13
 }
 
-CD_STATE = {
-    "RJ": "Rio de Janeiro",
-    "MG": "Minas Gerais",
-    "SP": "São Paulo",
-    "ES": "Espírito Santo",
-}
-
 headers = {'Content-Type': 'application/json', 'Accept': 'application/json'}
 
 
@@ -78,8 +71,6 @@ def locals_update(url):
         next(reader)
 
         for row in reader:
-            if row[INDEX_STATE] not in CD_STATE:
-                continue
 
             state, county, zone_id, neighborhood, tse_id = row[INDEX_STATE], row[
                 INDEX_MUNICIPIO], row[INDEX_ZONE_ID], row[INDEX_BAIRRO].strip(), row[INDEX_MUNICIPIO_ID]
