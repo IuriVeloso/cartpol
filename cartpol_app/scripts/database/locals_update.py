@@ -22,6 +22,36 @@ CD_CARGO = {
     "vereador": 13
 }
 
+CD_STATE = {
+    "AC": "Acre",
+    "AL": "Alagoas",
+    "AP": "Amapá",
+    "AM": "Amazonas",
+    "BA": "Bahia",
+    "CE": "Ceará",
+    "DF": "Distrito Federal",
+    "GO": "Goiás",
+    "MA": "Maranhão",
+    "MT": "Mato Grosso",
+    "MS": "Mato Grosso do Sul",
+    "PA": "Pará",
+    "PB": "Paraíba",
+    "PR": "Paraná",
+    "PE": "Pernambuco",
+    "PI": "Piauí",
+    "RN": "Rio Grande do Norte",
+    "RS": "Rio Grande do Sul",
+    "RO": "Rondônia",
+    "RR": "Roraima",
+    "SC": "Santa Catarina",
+    "SE": "Sergipe",
+    "TO": "Tocantins",
+    "RJ": "Rio de Janeiro",
+    "MG": "Minas Gerais",
+    "SP": "São Paulo",
+    "ES": "Espírito Santo",
+}
+
 headers = {'Content-Type': 'application/json', 'Accept': 'application/json'}
 
 
