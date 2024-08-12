@@ -1,5 +1,7 @@
 from django.db.models import Sum
+from django.shortcuts import get_object_or_404
 from rest_framework import status
+from rest_framework.parsers import JSONParser
 from rest_framework.response import Response
 from rest_framework.views import APIView
 
@@ -234,8 +236,11 @@ class VotesAV(APIView):
 
 
 class SectionAV(APIView):
-    def get(self, request):
+    def get(self, request, section_id=None):
         sections = Section.objects.all()
+
+        if bool(section_id):
+            sections = sections.filter(pk=section_id)
 
         should_search_county = request.query_params.get('county', False)
         should_search_county_tse_id = request.query_params.get(
@@ -267,6 +272,14 @@ class SectionAV(APIView):
             return Response(section_serializer.data, status=status.HTTP_201_CREATED)
         return Response(section_serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
+    def put(self, request, section_id):
+        section = get_object_or_404(Section, pk=section_id)
+        section_data = JSONParser().parse(request)
+        section_serializar = SectionSerializer(section, data=section_data)
+        if section_serializar.is_valid():
+            section_serializar.save()
+            return Response(section_serializar.data, status=status.HTTP_200_OK)
+
 
 class PoliticalVotesAV(APIView):
     def get(self, request, political_id):
@@ -276,16 +289,12 @@ class PoliticalVotesAV(APIView):
             .values('section__neighborhood', 'section__neighborhood__name')\
             .annotate(total_votes=Sum('quantity'))
 
-        political = Political.objects.get(id=int(political_id))
-
         total_votes = Votes.objects.filter(
             political_id=int(political_id)).aggregate(Sum('quantity'))
         total_neighborhoods_votes = Votes.objects.values(
             'section__neighborhood').annotate(total=Sum('quantity'))
 
         total_political_votes = total_votes.get("quantity__sum")
-
-        print(political, total_political_votes)
 
         votes_by_neighborhood = []
 

@@ -32,6 +32,7 @@ class County (models.Model):
 class Neighborhood (models.Model):
     name = models.CharField(max_length=100)
     county = models.ForeignKey(County, on_delete=models.CASCADE)
+    subdistrito = models.CharField(max_length=100)
 
     def __str__(self):
         return self.name
@@ -51,6 +52,7 @@ class Section (models.Model):
     address = models.CharField(max_length=100, default='')
     electoral_zone = models.ForeignKey(ElectoralZone, on_delete=models.CASCADE)
     neighborhood = models.ForeignKey(Neighborhood, on_delete=models.CASCADE)
+    map_neighborhood = models.CharField(max_length=100, default='', blank=True)
 
     def __str__(self):
         return self.identifier
