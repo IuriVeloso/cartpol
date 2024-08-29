@@ -17,45 +17,39 @@ headers = {'Content-Type': 'application/json', 'Accept': 'application/json'}
 def request_section(string):
     resp = requests.get(string).json()
     if len(resp) > 0:
-        return resp[0]["id"]
+        return resp[0]
     return None
 
 
 def update_map_neighborhood(url):
     with open('data/2020_map_neighbor.csv', 'r', encoding='utf-8') as f:
-        reader = csv.reader(f, delimiter=';', strict=True)
+        reader = csv.reader(f, delimiter=',', strict=True)
         next(reader)
 
         for row in reader:
 
             county, zone_id, neighborhood, section = row[INDEX_MUNICIPIO], row[INDEX_ZONE_ID], row[INDEX_BAIRRO].strip(
-            ), row[INDEX_SECTION_ID]
+            ), str(row[INDEX_SECTION_ID])
 
-            section_dict = {
-                "identifier": section,
-                "address": str(row[INDEX_ADDRESS]).strip(),
-                "electoral_zone": zone_id,
-                "neighborhood": neighborhood,
-                "county_name": county,
-                "script_id": row[INDEX_LOCAL_ID],
-            }
-
-            section = request_section(
+            section_json = request_section(
                 f"{url}section/?identifier={section}&electoral_zone={zone_id}&county={county}")
 
-            if section is not None:
-                section_dict["section"] = section
-            else:
+            if section_json is None:
                 print("Erro na secao e foda")
-                print(section_dict)
+                print(county, zone_id, neighborhood, section)
                 raise Exception("Na traaaave!!!")
 
-            r = requests.put(
-                url + "section/" + section,
-                json={"map_neighborhood": county},
-                headers=headers)
+            data = {
+                "electoral_zone": section_json["electoral_zone"],
+                "neighborhood": section_json["neighborhood"],
+                "identifier": section_json["identifier"],
+                "map_neighborhood": neighborhood
+            }
 
-            print(r.status_code)
+            requests.put(
+                url + "section/" + str(section_json["id"]),
+                json=data,
+                headers=headers)
 
     print("\nTerminando de selecionar entidades de local, começando a \
         atualizar a base...\n")

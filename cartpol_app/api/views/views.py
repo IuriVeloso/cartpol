@@ -20,7 +20,7 @@ from cartpol_app.models import (County, Election, ElectoralZone, Neighborhood,
 
 class StateAV(APIView):
     def get(self, request):
-        states = State.objects.all()
+        states = State.objects.all().order_by('name')
         should_search_state = request.query_params.get('name', False)
         if should_search_state:
             states = states.filter(name=should_search_state)
@@ -37,7 +37,7 @@ class StateAV(APIView):
 
 class CountyAV(APIView):
     def get(self, request):
-        counties = County.objects.all()
+        counties = County.objects.all().order_by('name')
         should_search_county = request.query_params.get('name', False)
         should_search_state = request.query_params.get('state', False)
         should_search_state_id = request.query_params.get('state_id', False)
@@ -142,7 +142,14 @@ class ElectoralZoneAV(APIView):
 
 class PoliticalTypeAV(APIView):
     def get(self, request):
-        political_types = PoliticalType.objects.all()
+        political_types = PoliticalType.objects.all().order_by('name')
+
+        should_search_election = request.query_params.get(
+            'election', False)
+        if should_search_election:
+            political_types = political_types.filter(
+                election=should_search_election)
+
         political_type_serializer = PoliticalTypeSerializer(
             political_types, many=True)
         return Response(political_type_serializer.data, status=status.HTTP_200_OK)
@@ -179,7 +186,7 @@ class PoliticalPartyAV(APIView):
 
 class ElectionAV(APIView):
     def get(self, request):
-        elections = Election.objects.all()
+        elections = Election.objects.all().order_by('year')
         election_serializer = ElectionSerializer(elections, many=True)
         return Response(election_serializer.data, status=status.HTTP_200_OK)
 
@@ -193,12 +200,15 @@ class ElectionAV(APIView):
 
 class PoliticalAV(APIView):
     def get(self, request):
-        politicals = Political.objects.all()
+        politicals = Political.objects.all().order_by('name')
 
         should_search_political_code = request.query_params.get(
             'political_code', False)
         should_search_full_name = request.query_params.get('full_name', False)
         should_search_county_id = request.query_params.get('county_id', False)
+        should_search_year = request.query_params.get('year', False)
+        should_search_political_type = request.query_params.get(
+            'political_type', False)
         if should_search_full_name:
             politicals = politicals.filter(full_name=should_search_full_name)
         if should_search_political_code:
@@ -207,6 +217,12 @@ class PoliticalAV(APIView):
         if should_search_county_id:
             politicals = politicals.filter(
                 region_id=int(should_search_county_id))
+        if should_search_year:
+            politicals = politicals.filter(
+                election__year=int(should_search_year))
+        if should_search_political_type:
+            politicals = politicals.filter(
+                political_type=int(should_search_political_type))
 
         political_serializer = PoliticalSerializer(politicals, many=True)
         return Response(political_serializer.data, status=status.HTTP_200_OK)
@@ -272,46 +288,86 @@ class SectionAV(APIView):
             return Response(section_serializer.data, status=status.HTTP_201_CREATED)
         return Response(section_serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
-    def put(self, request, section_id):
+    def put(self, request, section_id=None):
         section = get_object_or_404(Section, pk=section_id)
         section_data = JSONParser().parse(request)
-        section_serializar = SectionSerializer(section, data=section_data)
-        if section_serializar.is_valid():
-            section_serializar.save()
-            return Response(section_serializar.data, status=status.HTTP_200_OK)
+        section_serializer = SectionSerializer(section, data=section_data)
+        if section_serializer.is_valid():
+            section_serializer.save()
+            return Response(section_serializer.data, status=status.HTTP_200_OK)
+        return Response(section_serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
 
 class PoliticalVotesAV(APIView):
     def get(self, request, political_id):
         # FIXME - Remove this county id and use the value from the route (Also update docs)
+
+        political = get_object_or_404(Political, pk=political_id)
+
         total_candidate_votes = Votes.objects\
             .filter(political_id=int(political_id))\
-            .values('section__neighborhood', 'section__neighborhood__name')\
+            .values('section__map_neighborhood')\
             .annotate(total_votes=Sum('quantity'))
 
         total_votes = Votes.objects.filter(
             political_id=int(political_id)).aggregate(Sum('quantity'))
-        total_neighborhoods_votes = Votes.objects.values(
-            'section__neighborhood').annotate(total=Sum('quantity'))
+
+        total_neighborhoods_votes = Votes.objects \
+            .filter(political__political_type=political.political_type,
+                    political__election=political.election,
+                    political__region_id=political.region_id) \
+            .values('section__map_neighborhood') \
+            .annotate(total=Sum('quantity'))
+
+        total_neighborhoods_votes_dict = {
+            item['section__map_neighborhood']: item['total'] for item in total_neighborhoods_votes}
+
+        total_place_votes = sum(item['total']
+                                for item in total_neighborhoods_votes)
 
         total_political_votes = total_votes.get("quantity__sum")
 
         votes_by_neighborhood = []
 
+        min_ruesp_can = 1.0
+        max_ruesp_can = 0.0
+        min_rcan_uesp = 1.0
+        max_rcan_uesp = 0.0
+
         for vote in total_candidate_votes:
             total_value = vote['total_votes']
-            section__neighborhood = vote['section__neighborhood']
-            section__neighborhood_name = vote['section__neighborhood__name']
-            total_neighborhood_votes = total_neighborhoods_votes.get(
-                section__neighborhood=section__neighborhood)['total']
+            section__neighborhood_name = vote['section__map_neighborhood']
+            total_neighborhood_votes = total_neighborhoods_votes_dict[section__neighborhood_name]
+
+            ruesp_can = round(total_value / total_political_votes, 6)
+            rcan_uesp = round(total_value / total_neighborhood_votes, 6)
+            ruesp = round(total_neighborhood_votes / total_place_votes, 6)
+
+            if ruesp_can >= max_ruesp_can:
+                max_ruesp_can = ruesp_can
+            if ruesp_can <= min_ruesp_can:
+                min_ruesp_can = ruesp_can
+
+            if rcan_uesp >= max_rcan_uesp:
+                max_rcan_uesp = rcan_uesp
+            if rcan_uesp <= min_rcan_uesp:
+                min_rcan_uesp = rcan_uesp
+
             votes_by_neighborhood.append({
                 'total_votes': total_value,
                 'neighborhood': section__neighborhood_name,
-                'ruesp_can': round(total_value / total_political_votes, 6),
-                'rcan_uesp': round(total_value / total_neighborhood_votes, 6),
+                'ruesp_can': ruesp_can,
+                'rcan_uesp': rcan_uesp,
+                'ruesp': ruesp
             })
 
-        return Response(votes_by_neighborhood, status=status.HTTP_200_OK)
+        return Response({
+            "min_ruesp_can": min_ruesp_can,
+            "max_ruesp_can": max_ruesp_can,
+            "min_rcan_uesp": min_rcan_uesp,
+            "max_rcan_uesp": max_rcan_uesp,
+            "votes_by_neighborhood": votes_by_neighborhood
+        }, status=status.HTTP_200_OK)
 
 
 class PoliticalPartiesVotesAV(APIView):

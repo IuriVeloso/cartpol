@@ -1,4 +1,3 @@
-from django.contrib import admin
 from django.urls import path
 
 from cartpol_app.api.views.report_view import GenerateReportView
@@ -19,11 +18,12 @@ urlpatterns = [
     path('electoral-zone/', ElectoralZoneAV.as_view(), name="electoral-zone-crud"),
     path('political-type/', PoliticalTypeAV.as_view(), name="political-type-crud"),
     path('election/', ElectionAV.as_view(), name="election-crud"),
-    path('political-party/', PoliticalPartyAV.as_view(),
+    path('political-party/<int:year>', PoliticalPartyAV.as_view(),
          name="political-party-crud"),
-    path('political/', PoliticalAV.as_view(), name="political-crud"),
+    path('political/',
+         PoliticalAV.as_view(), name="political-crud"),
     path('votes/', VotesAV.as_view(), name="votes-crud"),
-    path('section/<int:city>', SectionAV.as_view(), name="section-crud"),
+    path('section/<int:section_id>', SectionAV.as_view(), name="section-crud"),
     path('section/', SectionAV.as_view(), name="section-crud"),
     path('political-votes/<int:political_id>',
          PoliticalVotesAV.as_view(), name="votes-politicals-crud"),
