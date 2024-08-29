@@ -32,7 +32,6 @@ class County (models.Model):
 class Neighborhood (models.Model):
     name = models.CharField(max_length=100)
     county = models.ForeignKey(County, on_delete=models.CASCADE)
-    subdistrito = models.CharField(max_length=100)
 
     def __str__(self):
         return self.name
@@ -58,14 +57,6 @@ class Section (models.Model):
         return self.identifier
 
 
-class PoliticalType (models.Model):
-    name = models.CharField(max_length=40)
-    description = models.CharField(max_length=200)
-
-    def __str__(self):
-        return self.name
-
-
 class PoliticalParty (models.Model):
     name = models.CharField(max_length=40)
     full_name = models.CharField(max_length=200)
@@ -79,6 +70,15 @@ class Election (models.Model):
     year = models.IntegerField()
     round = models.IntegerField()
     code = models.IntegerField()
+
+
+class PoliticalType (models.Model):
+    name = models.CharField(max_length=40)
+    description = models.CharField(max_length=200)
+    election = models.ForeignKey(Election, on_delete=models.CASCADE)
+
+    def __str__(self):
+        return self.name
 
 
 class Political (models.Model):
