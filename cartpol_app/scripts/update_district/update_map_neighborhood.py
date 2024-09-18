@@ -5,9 +5,9 @@ import requests
 
 INDEX_SECTION_ID = 2
 INDEX_ZONE_ID = 1
-INDEX_LOCAL_ID = 3
-INDEX_ADDRESS = 4
-INDEX_BAIRRO = 5
+# INDEX_LOCAL_ID = 3
+# INDEX_ADDRESS = 4
+INDEX_BAIRRO = 4
 INDEX_MUNICIPIO = 0
 
 headers = {'Content-Type': 'application/json', 'Accept': 'application/json'}
@@ -22,7 +22,7 @@ def request_section(string):
 
 
 def update_map_neighborhood(url):
-    with open('data/2020_map_neighbor.csv', 'r', encoding='utf-8') as f:
+    with open('data/TOP20UNIC.csv', 'r', encoding='utf-8') as f:
         reader = csv.reader(f, delimiter=',', strict=True)
         next(reader)
 

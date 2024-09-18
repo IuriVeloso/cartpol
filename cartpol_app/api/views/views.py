@@ -366,6 +366,7 @@ class PoliticalVotesAV(APIView):
             "max_ruesp_can": max_ruesp_can,
             "min_rcan_uesp": min_rcan_uesp,
             "max_rcan_uesp": max_rcan_uesp,
+            "total_political_votes": total_political_votes,
             "votes_by_neighborhood": votes_by_neighborhood
         }, status=status.HTTP_200_OK)
 

@@ -18,6 +18,8 @@ urlpatterns = [
     path('electoral-zone/', ElectoralZoneAV.as_view(), name="electoral-zone-crud"),
     path('political-type/', PoliticalTypeAV.as_view(), name="political-type-crud"),
     path('election/', ElectionAV.as_view(), name="election-crud"),
+    path('political-party/', PoliticalPartyAV.as_view(),
+         name="political-party-crud"),
     path('political-party/<int:year>', PoliticalPartyAV.as_view(),
          name="political-party-crud"),
     path('political/',

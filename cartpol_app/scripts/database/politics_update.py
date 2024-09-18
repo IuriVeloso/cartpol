@@ -42,6 +42,11 @@ def request_political_party(string):
     return None
 
 
+# DEZ_PRINCIPAIS_MUN = ['38490', '13897', '25313', '02550',
+#                       '04278', '71072', '41238', '60011', '75353', '88013']
+
+DEZ_PRINCIPAIS_MUN = ['04278']
+
 headers = {'Content-Type': 'application/json', 'Accept': 'application/json'}
 
 
@@ -57,7 +62,7 @@ def post_politics(url):
 
         for row in reader:
             # Removendo votos nulos e restringindo ao sudeste
-            if row[INDEX_CANDIDATE_ID] in ['95', '96'] or row[INDEX_ROUND] != '1' or row[INDEX_ELECTION_CODE] != '426':
+            if row[INDEX_CANDIDATE_ID] in ['95', '96'] or row[INDEX_ROUND] != '1' or row[INDEX_ELECTION_CODE] != '426' or row[INDEX_COUNTY_ID] not in DEZ_PRINCIPAIS_MUN:
                 continue
 
             political_dict = {
