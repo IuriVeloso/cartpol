@@ -17,6 +17,7 @@ INDEX_CEP = 5
 INDEX_BAIRRO = 4
 INDEX_MUNICIPIO = 0
 INDEX_MUNICIPIO_ID = 1
+INDEX_SUBDISTRITO = 12
 CD_CARGO = {
     "prefeito": 11,
     "vereador": 13
@@ -53,6 +54,9 @@ CD_STATE = {
 }
 
 headers = {'Content-Type': 'application/json', 'Accept': 'application/json'}
+
+DEZ_PRINCIPAIS_MUN = ['38490', '13897', '25313', '2550',
+                      '4278', '71072', '41238', '60011', '75353', '88013']
 
 
 @functools.lru_cache(maxsize=2048)
@@ -101,9 +105,10 @@ def locals_update(url):
         next(reader)
 
         for row in reader:
-
-            state, county, zone_id, neighborhood, tse_id = row[INDEX_STATE], row[
-                INDEX_MUNICIPIO], row[INDEX_ZONE_ID], row[INDEX_BAIRRO].strip(), row[INDEX_MUNICIPIO_ID]
+            if row[INDEX_MUNICIPIO_ID] not in DEZ_PRINCIPAIS_MUN:
+                continue
+            state, county, zone_id, neighborhood, tse_id, subdistrict = row[INDEX_STATE], row[
+                INDEX_MUNICIPIO], row[INDEX_ZONE_ID], row[INDEX_BAIRRO].strip(), row[INDEX_MUNICIPIO_ID], row[INDEX_SUBDISTRITO]
 
             section_dict = {
                 "identifier": row[INDEX_SECTION_ID],
@@ -114,6 +119,7 @@ def locals_update(url):
                 "county_name": county,
                 "county_id": tse_id,
                 "script_id": row[INDEX_LOCAL_ID],
+                "map_neighborhood": subdistrict
             }
 
             state_dict = {"name": state,

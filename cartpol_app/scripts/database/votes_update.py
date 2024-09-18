@@ -37,6 +37,11 @@ def request_political(string):
         return resp[0]["id"]
     return None
 
+# DEZ_PRINCIPAIS_MUN = ['38490', '13897', '25313', '02550',
+#                       '04278', '71072', '41238', '60011', '75353', '88013']
+
+
+DEZ_PRINCIPAIS_MUN = ['4278']
 
 headers = {'Content-Type': 'application/json', 'Accept': 'application/json'}
 
@@ -54,7 +59,7 @@ def post_votes(url):
 
         for row in reader:
 
-            if row[INDEX_CANDIDATE_ID] in ['95', '96'] or row[INDEX_ROUND] != '1' or row[INDEX_ELECTION_CODE] != '426':
+            if row[INDEX_CANDIDATE_ID] in ['95', '96'] or row[INDEX_ROUND] != '1' or row[INDEX_ELECTION_CODE] != '426' or row[INDEX_COUNTY_ID] not in DEZ_PRINCIPAIS_MUN:
                 continue
 
             votes, name, candidate_id, county_id, zone_id, section_id, cargo = row[INDEX_VOTES], row[INDEX_NAME], row[
