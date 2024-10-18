@@ -3,12 +3,13 @@ import functools
 
 import requests
 
-INDEX_SECTION_ID = 2
-INDEX_ZONE_ID = 1
-# INDEX_LOCAL_ID = 3
+INDEX_SECTION_ID = 3
+INDEX_ZONE_ID = 2
+INDEX_LOCAL_ID = 4
 # INDEX_ADDRESS = 4
-INDEX_BAIRRO = 4
+INDEX_BAIRRO = 6
 INDEX_MUNICIPIO = 0
+INDEX_MUNICPIO_ID = 1
 
 headers = {'Content-Type': 'application/json', 'Accept': 'application/json'}
 
@@ -21,18 +22,24 @@ def request_section(string):
     return None
 
 
+YEAR = 2022
+
+
 def update_map_neighborhood(url):
-    with open('data/TOP20UNIC.csv', 'r', encoding='utf-8') as f:
-        reader = csv.reader(f, delimiter=',', strict=True)
+    with open(f"data/8cidades2020.csv", 'r', encoding='utf-8') as f:
+        reader = csv.reader(f, delimiter=';', strict=True)
         next(reader)
 
         for row in reader:
 
-            county, zone_id, neighborhood, section = row[INDEX_MUNICIPIO], row[INDEX_ZONE_ID], row[INDEX_BAIRRO].strip(
-            ), str(row[INDEX_SECTION_ID])
+            county, zone_id, neighborhood, section, county_id = row[INDEX_MUNICIPIO], row[INDEX_ZONE_ID], row[INDEX_BAIRRO].strip(
+            ), str(row[INDEX_SECTION_ID]), row[INDEX_MUNICPIO_ID]
+
+            if county == 'BRASÍLIA':
+                continue
 
             section_json = request_section(
-                f"{url}section/?identifier={section}&electoral_zone={zone_id}&county={county}")
+                f"{url}section/?identifier={section}&electoral_zone={zone_id}&county_tse_id={county_id}&year={YEAR}")
 
             if section_json is None:
                 print("Erro na secao e foda")
@@ -40,14 +47,11 @@ def update_map_neighborhood(url):
                 raise Exception("Na traaaave!!!")
 
             data = {
-                "electoral_zone": section_json["electoral_zone"],
-                "neighborhood": section_json["neighborhood"],
-                "identifier": section_json["identifier"],
                 "map_neighborhood": neighborhood
             }
 
             requests.put(
-                url + "section/" + str(section_json["id"]),
+                url + "neighborhood/" + str(section_json["neighborhood"]),
                 json=data,
                 headers=headers)
 

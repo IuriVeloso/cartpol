@@ -35,7 +35,7 @@ INDEX_LONGITUDE = 23
 @functools.lru_cache(8192)
 def find_in_maps(search_by_address, administrative_area):
     return gmaps.geocode(search_by_address, components={
-        "country": "BR", "administrative_area": administrative_area}, region="BR")
+        "country": "BR", "administrative_area": administrative_area})
 
 
 df_2020 = pd.read_csv('data/local_votacao_BRASIL_2020.csv', delimiter=';')
@@ -45,14 +45,14 @@ df_2018 = pd.read_csv('data/local_votacao_BRASIL_2018.csv', delimiter=';')
 
 @functools.lru_cache(8192)
 def find_in_local_votacao(local_votacao, municipio_id):
-    result = df_2020[(df_2020["local_votacao"] == local_votacao)
-                     & (df_2020["municipio_id"] == municipio_id)]
-
+    result = df_2022[(df_2022["local_votacao"] == local_votacao)
+                     & (df_2022["municipio_id"] == municipio_id)]
     if not result.empty:
         return result
 
-    result = df_2022[(df_2022["local_votacao"] == local_votacao)
-                     & (df_2022["municipio_id"] == municipio_id)]
+    result = df_2020[(df_2020["local_votacao"] == local_votacao)
+                     & (df_2020["municipio_id"] == municipio_id)]
+
     if not result.empty:
         return result
 
@@ -63,7 +63,7 @@ def find_in_local_votacao(local_votacao, municipio_id):
 
 
 def index(input_file, output_file):
-    with open(input_file, 'r', encoding='latin-1') as f:
+    with open(input_file, 'r', encoding='utf-8') as f:
         reader = csv.reader(f, delimiter=';', strict=False)
         next(reader)
 
@@ -74,6 +74,7 @@ def index(input_file, output_file):
         for row in reader:
             if row[INDEX_TURNO] == '2':
                 continue
+
             section_index += 1
             address = row[INDEX_ADDRESS]
             local_votacao = row[INDEX_LOCAL_VOTACAO]
@@ -95,7 +96,6 @@ def index(input_file, output_file):
                 latitude = local_votacao_obj[full_search_address]["latitude"]
                 longitude = local_votacao_obj[full_search_address]["longitude"]
                 informacao_completa = True
-
             if not informacao_completa:
                 result = find_in_local_votacao(
                     local_votacao, int(municipio_id))
@@ -103,12 +103,12 @@ def index(input_file, output_file):
                     latitude = result["latitude"].values[0]
                     longitude = result["longitude"].values[0]
                     informacao_completa = True
-
             if not informacao_completa:
                 try:
                     geocode_result = find_in_maps(
                         full_search_address, administrative_area)
                 except Exception as e:
+                    geocode_result = False
                     print(f'Erro ao buscar o endereço {
                           full_search_address}: {e}')
 
@@ -139,7 +139,6 @@ def index(input_file, output_file):
             local_votacao_obj[full_search_address] = {}
             local_votacao_obj[full_search_address]["latitude"] = latitude
             local_votacao_obj[full_search_address]["longitude"] = longitude
-
             if section_index % 50000 == 0:
                 print(f"Section {section_index} processed")
 
@@ -156,8 +155,8 @@ def index(input_file, output_file):
         writer.writerows(replicated_rows)
 
 
-input_file = 'data/eleitorado_local_votacao_2016.csv'
-output_file = 'data/local_votacao_BRASIL_2016.csv'
+input_file = 'data/eleitorado_local_votacao_2024.csv'
+output_file = 'data/local_votacao_BRASIL_2024.csv'
 
 startTime = datetime.datetime.now()
 print("\nStarted script running at\n" + str(startTime))
@@ -167,4 +166,4 @@ index(input_file, output_file)
 print(f"\nFinished script running\nTotal time: {
       datetime.datetime.now() - startTime}\n")
 
-# python3 manage.py shell < cartpol_app/scripts/neighborhood_database/index.py
+# python3 manage.py shell < cartpol_app/scripts/neighborhood_database/generate_local_votacao_from_eleitorado_local_votacao.py
