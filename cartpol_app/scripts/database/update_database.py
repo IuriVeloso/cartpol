@@ -29,9 +29,11 @@ shouldRunPolitics = shouldRunAll or shouldRun == 'p'
 shouldRunVotes = shouldRunAll or shouldRun == 'v'
 
 startTime = datetime.datetime.now()
+year = 2024
+firstRun = False
 print(f"\nStarted script running at {startTime}\n")
 
-if shouldRunBase:
+if shouldRunBase & firstRun:
     base_info(url=URL)
 
     print("\nFinished base_info()\n")
@@ -39,7 +41,7 @@ if shouldRunBase:
 if shouldRunLocals:
     print("\nStarted locals_update()\n")
 
-    locals_update(url=URL)
+    locals_update(url=URL, year=year, firstRun=firstRun)
 
     timeTotalLocalResults = datetime.datetime.now() - startTime
     print(
@@ -51,7 +53,7 @@ if shouldRunPolitics:
 
     print("\nStarted post_politics()\n")
 
-    post_politics(url=URL)
+    post_politics(url=URL, year=year)
 
     timeTotalPostPolitics = datetime.datetime.now() - timeStartedPostPolitics
     print(
@@ -63,7 +65,7 @@ if shouldRunVotes:
 
     print("\nStarted post_votes()\n")
 
-    post_votes(url=URL)
+    post_votes(url=URL, year=year)
 
     timeTotalPostVotes = datetime.datetime.now() - timeStartedPostVotes
     print(
@@ -84,3 +86,28 @@ if timeTotalPostVotes is not None:
     print(f"\npost_votes: {timeTotalPostVotes}")
 
 # python3 manage.py shell < cartpol_app/scripts/database/update_database.py
+
+
+# # -*- coding: utf-8 -*-
+# """
+# Spyder Editor
+
+# This is a temporary script file.
+# """
+
+# from geobr import read_neighborhood
+# import matplotlib.pyplot as plt
+
+# print("Iniciou")
+
+# bairros = read_neighborhood(year=2010)
+
+# # filtered_bairros = bairros[bairros["name_muni"] == "Fortaleza"]
+
+# # filtered_bairros.to_file('fortaleza.shp', driver='ESRI Shapefile', crs='EPSG:4326',engine='fiona')
+
+# # filtered_bairros.plot()
+
+# # plt.show()
+
+# print("Terminou")

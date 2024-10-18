@@ -73,7 +73,7 @@ class NeighborhoodAV(APIView):
 
         if should_search_neighborhood:
             neighborhoods = neighborhoods.filter(
-                name=should_search_neighborhood)
+                name__unaccent=should_search_neighborhood)
         if should_search_county:
             neighborhoods = neighborhoods.filter(
                 county__name=should_search_county)
@@ -92,6 +92,16 @@ class NeighborhoodAV(APIView):
             neighborhood_serializer.save()
             return Response(neighborhood_serializer.data, status=status.HTTP_201_CREATED)
         return Response(neighborhood_serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
+    def put(self, request, neighborhood_id=None):
+        section = get_object_or_404(Neighborhood, pk=neighborhood_id)
+        section_data = JSONParser().parse(request)
+        section_serializer = NeighborhoodSerializer(section)
+
+        section_serializer.update(
+            instance=section, validated_data=section_data)
+
+        return Response(section_serializer.data, status=status.HTTP_200_OK)
 
 
 class CountysNeighborhoodAV(APIView):
@@ -114,6 +124,8 @@ class ElectoralZoneAV(APIView):
         electoral_zones = ElectoralZone.objects.all()
         should_search_electoral_zone = request.query_params.get(
             'identifier', False)
+        should_search_year = request.query_params.get(
+            'year', False)
         should_search_county = request.query_params.get('county', False)
         should_search_county_tse_id = request.query_params.get(
             'county_tse_id', False)
@@ -127,6 +139,9 @@ class ElectoralZoneAV(APIView):
         if should_search_county_tse_id:
             electoral_zones = electoral_zones.filter(
                 county__tse_id=should_search_county_tse_id)
+        if should_search_year:
+            electoral_zones = electoral_zones.filter(
+                year=should_search_year)
 
         electoral_zone_serializer = ElectoralZoneSerializer(
             electoral_zones, many=True)
@@ -265,6 +280,8 @@ class SectionAV(APIView):
             'electoral_zone', False)
         should_search_identifier = request.query_params.get(
             'identifier', False)
+        should_search_year = request.query_params.get(
+            'year', False)
         if should_search_county:
             sections = sections.filter(
                 neighborhood__county__name=should_search_county)
@@ -276,6 +293,9 @@ class SectionAV(APIView):
         if should_search_county_tse_id:
             sections = sections.filter(
                 neighborhood__county__tse_id=should_search_county_tse_id)
+        if should_search_year:
+            sections = sections.filter(
+                electoral_zone__year=should_search_year)
 
         section_serializer = SectionSerializer(sections, many=True)
         return Response(section_serializer.data, status=status.HTTP_200_OK)
@@ -306,7 +326,7 @@ class PoliticalVotesAV(APIView):
 
         total_candidate_votes = Votes.objects\
             .filter(political_id=int(political_id))\
-            .values('section__map_neighborhood')\
+            .values('section__neighborhood__map_neighborhood')\
             .annotate(total_votes=Sum('quantity'))
 
         total_votes = Votes.objects.filter(
@@ -316,11 +336,11 @@ class PoliticalVotesAV(APIView):
             .filter(political__political_type=political.political_type,
                     political__election=political.election,
                     political__region_id=political.region_id) \
-            .values('section__map_neighborhood') \
+            .values('section__neighborhood__map_neighborhood') \
             .annotate(total=Sum('quantity'))
 
         total_neighborhoods_votes_dict = {
-            item['section__map_neighborhood']: item['total'] for item in total_neighborhoods_votes}
+            item['section__neighborhood__map_neighborhood']: item['total'] for item in total_neighborhoods_votes}
 
         total_place_votes = sum(item['total']
                                 for item in total_neighborhoods_votes)
@@ -336,7 +356,7 @@ class PoliticalVotesAV(APIView):
 
         for vote in total_candidate_votes:
             total_value = vote['total_votes']
-            section__neighborhood_name = vote['section__map_neighborhood']
+            section__neighborhood_name = vote['section__neighborhood__map_neighborhood']
             total_neighborhood_votes = total_neighborhoods_votes_dict[section__neighborhood_name]
 
             ruesp_can = round(total_value / total_political_votes, 6)

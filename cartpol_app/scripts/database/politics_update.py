@@ -7,10 +7,7 @@ import requests
 from cartpol_app.scripts.database.helpers import (
     contains_duplicates_political, contains_duplicates_political_party)
 
-CD_CARGO = {
-    "prefeito": 11,
-    "vereador": 13
-}
+CD_CARGO = [11, 13, 6, 7, 5]
 
 INDEX_CARGO = 16
 INDEX_NAME = 21
@@ -42,38 +39,73 @@ def request_political_party(string):
     return None
 
 
-# DEZ_PRINCIPAIS_MUN = ['38490', '13897', '25313', '02550',
-#                       '04278', '71072', '41238', '60011', '75353', '88013']
+DEZ_PRINCIPAIS_MUN = ['38490', '13897', '25313',
+                      '02550', '71072', '41238', '60011', '75353', '88013']
 
-DEZ_PRINCIPAIS_MUN = ['04278']
+ELETION_CODE = ['220', '426', '546', '297', '619']
 
 headers = {'Content-Type': 'application/json', 'Accept': 'application/json'}
 
+ELECTION_ID = {
+    '2016': {
+        'id': 4,
+        '11': 9,
+        '13': 10
+    },
+    '2018': {
+        'id': 3,
+        '6': 7,
+        '7': 6,
+        '5': 8
+    },
+    '2020': {
+        'id': 2,
+        '11': 4,
+        '13': 5
+    },
+    '2022': {
+        'id': 1,
+        '6': 2,
+        '7': 1,
+        '5': 3
+    },
+    '2024': {
+        'id': 5,
+        '11': 11,
+        '13': 12,
+    }
 
-def post_politics(url):
+}
+
+
+def post_politics(url, year):
+
     politics_array = []
     political_party_array = []
 
-    with open('data/votacao_candidato_munzona_2020_BRASIL.csv', 'r', encoding='latin-1') as f:
+    with open(f'data/votacao_candidato_munzona_{year}_BRASIL.csv', 'r', encoding='utf-8') as f:
         print("Começando a selecionar partidos e candidatos")
 
         reader = csv.reader(f, delimiter=';', strict=True)
         next(reader)
 
         for row in reader:
-            # Removendo votos nulos e restringindo ao sudeste
-            if row[INDEX_CANDIDATE_ID] in ['95', '96'] or row[INDEX_ROUND] != '1' or row[INDEX_ELECTION_CODE] != '426' or row[INDEX_COUNTY_ID] not in DEZ_PRINCIPAIS_MUN:
+            # Removendo votos nulos
+            if row[INDEX_STATE] != 'RJ':
+                continue
+            if row[INDEX_CANDIDATE_ID] in ['95', '96'] or row[INDEX_ROUND] != '1' or row[INDEX_ELECTION_CODE] not in ELETION_CODE:
                 continue
 
             political_dict = {
-                "election": 1,
-                "name": row[INDEX_NAME],
-                "full_name": row[INDEX_FULL_NAME],
+                "election": ELECTION_ID[str(year)]["id"],
+                "name": row[INDEX_NAME].strip(),
+                "full_name": row[INDEX_FULL_NAME].strip(),
                 "political_party": row[INDEX_POLITICAL_PARTY],
                 "political_type": int(row[INDEX_CARGO]),
                 "political_id": row[INDEX_CANDIDATE_ID],
                 "political_code": row[INDEX_POLITICAL_NUMBER],
                 "county_id": row[INDEX_COUNTY_ID],
+                "year": year,
                 "region": 'city'
             }
 
@@ -83,8 +115,9 @@ def post_politics(url):
             if county is not None:
                 political_dict["region_id"] = county
 
-            if int(political_dict["political_type"]) == CD_CARGO["prefeito"] or (int(political_dict["political_type"]) == CD_CARGO["vereador"] and len(political_dict["political_id"]) > 4):
-                political_dict["political_type"] = 1 if political_dict["political_type"] == CD_CARGO["prefeito"] else 2
+            if int(political_dict["political_type"]) in CD_CARGO and len(political_dict["political_id"]) > 2:
+                political_dict["political_type"] = ELECTION_ID[str(
+                    year)][row[INDEX_CARGO]]
                 if contains_duplicates_political(political_dict, politics_array):
                     politics_array.append(political_dict)
 

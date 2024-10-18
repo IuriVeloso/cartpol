@@ -5,22 +5,22 @@ def base_info(url):
     elections = [{'year': 2022, 'round': 1, 'code': 426},
                  {'year': 2020, 'round': 1, 'code': 426},
                  {'year': 2018, 'round': 1, 'code': 426},
-                 {'year': 2016, 'round': 1, 'code': 426}]
+                 {'year': 2016, 'round': 1, 'code': 220}]
 
     politicalTypesByElection = [
         {
             'name': "Deputado Estadual",
-            'description': "Atua como representante da população no Legislativo estadual. É eleito para um mandato de quatro anos e atua nas Assembleias Legislativas, instituições presentes em todos os estados brasileiros. Tem como função legislar e fiscalizar o Executivo estadual.",
+            'description': "Atua como representante da população no Legislativo estadual.",
             'election': 1,
         },
         {
             'name': "Deputado Federal",
-            'description': "Atua no Legislativo e tem como papel ser o representante da população na Câmara dos Deputados. O Brasil possui 513 deputados atualmente, distribuídos entre os 26 estados e o Distrito Federal. São eleitos para um mandato de quatro anos, com possibilidade de reeleição de maneira indefinida.",
+            'description': "Atua no Legislativo e tem como papel ser o representante da população na Câmara dos Deputados.",
             'election': 1,
         },
         {
             'name': "Senador",
-            'description': "Atuam no Senado Federal, casa que faz parte do Congresso Nacional, sendo considerada a Câmara Alta. Os senadores têm funções importantes e, como parte do Legislativo, atuam como legisladores e fiscalizadores, e também podem julgar e autorizar nomeações do presidente.",
+            'description': "Atuam no Senado Federal, casa que faz parte do Congresso Nacional, sendo considerada a Câmara Alta.",
             'election': 1,
         },
         {

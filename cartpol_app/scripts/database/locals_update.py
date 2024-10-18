@@ -55,8 +55,8 @@ CD_STATE = {
 
 headers = {'Content-Type': 'application/json', 'Accept': 'application/json'}
 
-DEZ_PRINCIPAIS_MUN = ['38490', '13897', '25313', '2550',
-                      '4278', '71072', '41238', '60011', '75353', '88013']
+DEZ_PRINCIPAIS_MUN = ['38490', '13897', '25313', '02550',
+                      '2550', '71072', '41238', '60011', '75353', '88013']
 
 
 @functools.lru_cache(maxsize=2048)
@@ -91,10 +91,10 @@ def request_state(string):
     return None
 
 
-def locals_update(url):
+def locals_update(url, year, firstRun):
     print("Começando a selecionar locais de votacao, bairros e secao")
 
-    with open('data/local_votacao_BRASIL_2020.csv', 'r', encoding='utf-8') as f:
+    with open(f'data/local_votacao_BRASIL_{year}.csv', 'r', encoding='utf-8') as f:
         section_array = []
         neighborhood_array = []
         electoral_zones_array = []
@@ -105,7 +105,7 @@ def locals_update(url):
         next(reader)
 
         for row in reader:
-            if row[INDEX_MUNICIPIO_ID] not in DEZ_PRINCIPAIS_MUN:
+            if row[INDEX_MUNICIPIO_ID] != '60011':
                 continue
             state, county, zone_id, neighborhood, tse_id, subdistrict = row[INDEX_STATE], row[
                 INDEX_MUNICIPIO], row[INDEX_ZONE_ID], row[INDEX_BAIRRO].strip(), row[INDEX_MUNICIPIO_ID], row[INDEX_SUBDISTRITO]
@@ -119,7 +119,6 @@ def locals_update(url):
                 "county_name": county,
                 "county_id": tse_id,
                 "script_id": row[INDEX_LOCAL_ID],
-                "map_neighborhood": subdistrict
             }
 
             state_dict = {"name": state,
@@ -128,7 +127,9 @@ def locals_update(url):
                 "identifier": zone_id,
                 "state": state,
                 "county_id": tse_id,
-                "county": county}
+                "county": county,
+                "year": year
+            }
             county_dict = {
                 "name": county, "state": state, "tse_id": tse_id}
             neighborhood_dict = {
@@ -139,18 +140,23 @@ def locals_update(url):
 
             section_array.append(section_dict)
 
-            if contains_duplicates_state(state, state_array):
+            neighborhood_id = request_neighborhood(f"{url}neighborhood?county_tse_id="
+                                                   + tse_id
+                                                   + "&name="
+                                                   + neighborhood)
+
+            if firstRun and contains_duplicates_state(state, state_array):
                 state_array.append(state_dict)
 
-            if contains_duplicates_neighborhood(neighborhood, tse_id, neighborhood_array):
+            if neighborhood_id is None and contains_duplicates_neighborhood(neighborhood, tse_id, neighborhood_array):
                 neighborhood_array.append(neighborhood_dict)
 
-            if contains_duplicates_county(tse_id, county_array):
+            if firstRun and contains_duplicates_county(tse_id, county_array):
                 county_array.append(county_dict)
 
             if contains_duplicates_electoral_zone(zone_id, state, tse_id, electoral_zones_array):
                 electoral_zones_array.append(electoral_zones_dict)
-
+    request_neighborhood.cache_clear()
     print("\nTerminando de selecionar entidades de local, começando a \
         atualizar a base...\n")
 
@@ -192,7 +198,7 @@ def locals_update(url):
                       f"&tse_id={electoral_zone['county_id']}")
         county_id = request_county(search_url)
 
-        if state_id is not None:
+        if county_id is not None:
             electoral_zone["county"] = county_id
         else:
             print("CountyNotFound")
@@ -240,7 +246,9 @@ def locals_update(url):
         electoral_zone_id = request_electoral_zone(f"{url}electoral-zone?county_tse_id="
                                                    + section["county_id"]
                                                    + "&identifier="
-                                                   + section["electoral_zone"])
+                                                   + section["electoral_zone"]
+                                                   + "&year="
+                                                   + str(year))
 
         if neighborhood_id is not None and electoral_zone_id is not None:
             section["neighborhood"] = neighborhood_id

@@ -41,7 +41,7 @@ def find_in_maps(search_by_address, administrative_area):
         "country": "BR", "administrative_area": administrative_area}, region="BR")
 
 
-df = pd.read_csv('data/local_votacao_BRASIL_2016.csv', delimiter=';')
+df = pd.read_csv('data/local_votacao_BRASIL_2024.csv', delimiter=';')
 
 
 @functools.lru_cache(8192)
@@ -120,8 +120,8 @@ def index(input_section_file, output_file):
             writer.writerow(row)
 
 
-input_section_file = 'data/derivado_votacao_secao_2016_BH_RJ_SP_VIT.csv'
-output_file = 'data/local_votacao_BRASIL_2016.csv'
+input_section_file = 'data/votacao_secao_2024_RJ.csv'
+output_file = 'data/local_votacao_BRASIL_2024.csv'
 
 startTime = datetime.datetime.now()
 print("\nStarted script running at\n" + str(startTime))

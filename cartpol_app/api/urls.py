@@ -12,8 +12,11 @@ from cartpol_app.api.views.views import (CountyAV, CountysNeighborhoodAV,
 urlpatterns = [
     path('state', StateAV.as_view(), name="state-crud"),
     path('county', CountyAV.as_view(), name="county-crud"),
-    path('neighborhood/', NeighborhoodAV.as_view(), name="neighborhood-crud"),
-    path('neighborhood/<int:city>',
+    path('neighborhood/', NeighborhoodAV.as_view(), name="neighborhood-cr"),
+    path('neighborhood/<int:neighborhood_id>',
+         NeighborhoodAV.as_view(), name="neighborhood-ud"),
+
+    path('neighborhood/city/<int:city>',
          CountysNeighborhoodAV.as_view(), name="neighborhood-crud"),
     path('electoral-zone/', ElectoralZoneAV.as_view(), name="electoral-zone-crud"),
     path('political-type/', PoliticalTypeAV.as_view(), name="political-type-crud"),
