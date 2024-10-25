@@ -67,6 +67,8 @@ CORS_ORIGIN_WHITELIST = [
     'http://localhost:3001',
     'http://192.168.0.16:3000',
     'https://cartpol-de4ebf8415a8.herokuapp.com',
+    'https://cartpol.lappcom.com.br',
+    'https://www.lappcom.com.br'
 ]
 
 ROOT_URLCONF = "cartpol.urls"
