@@ -4,8 +4,11 @@ import functools
 
 import googlemaps
 import pandas as pd
+import os
 
-gmaps = googlemaps.Client(key='AIzaSyAJfYi1laLCWF7ZiFj5xDGuUGcBfMZAZDU')
+GMAPS_KEY = os.getenv("GMAPS_KEY", default="abc")
+
+gmaps = googlemaps.Client(key=GMAPS_KEY)
 
 viacep = "https://viacep.com.br/ws/"
 

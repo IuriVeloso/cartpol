@@ -23,8 +23,6 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
-# SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = "django-insecure-$r3x*^t2p1t1tii222ce1gx@vt_b6)#-ai#=5n%&tq_d9en+9i"
 
 IS_HEROKU_APP = "DYNO" in os.environ and not "CI" in os.environ
 
@@ -35,7 +33,9 @@ if not IS_HEROKU_APP:
 ALLOWED_HOSTS = []
 
 PORT = os.getenv("PORT", default="8000")
-# # SECURITY WARNING: don't run with debug turned on in production!
+SECRET_KEY = os.getenv("SECRET_KEY", default="ABC")
+DB_PASSWORD = os.getenv("DB_PASSWORD", default="ABC")
+
 
 # Application definition
 
@@ -103,7 +103,7 @@ DATABASES = {
         "ENGINE": "django.db.backends.postgresql_psycopg2",
         "NAME": "cartpol_db_name",
         "USER": "cartpol_prod",
-        "PASSWORD": "iuri300498",
+        "PASSWORD": DB_PASSWORD,
         "HOST": "localhost",
         "PORT": "5432",
     }

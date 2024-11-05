@@ -5,8 +5,11 @@ import shutil
 from tempfile import NamedTemporaryFile
 
 import googlemaps
+import os
 
-gmaps = googlemaps.Client(key='AIzaSyDP-G83wGvDRkxX0-d4g5lSXHWNC2D5BxA')
+GMAPS_KEY = os.getenv("GMAPS_KEY", default="abc")
+
+gmaps = googlemaps.Client(key=GMAPS_KEY)
 
 filename = 'data/local_votacao_BRASIL_2016.csv'
 tempfile = NamedTemporaryFile(mode='w', delete=False)
