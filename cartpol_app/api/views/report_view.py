@@ -1,14 +1,13 @@
+from cartpol_app.scripts.report.run_report import run_report
+from cartpol_app.models import Political, Votes
 from wsgiref.util import FileWrapper
-
+from django.template.loader import render_to_string
 from django.db.models import Sum
 from django.http import HttpResponse
-from django.shortcuts import get_object_or_404
-from rest_framework import status
-from rest_framework.response import Response
+from django.shortcuts import get_object_or_404, render
 from rest_framework.views import APIView
-
-from cartpol_app.models import Political, Votes
-from cartpol_app.scripts.report.run_report import run_report
+from weasyprint import HTML, CSS
+from weasyprint.text.fonts import FontConfiguration
 
 
 class GenerateReportView(APIView):
@@ -67,4 +66,23 @@ class GenerateReportView(APIView):
         run_report(data_adapted, path, political.name,
                    str(political.political_code), True)
         report = open(path, 'rb')
+        return HttpResponse(FileWrapper(report), content_type='application/pdf')
+
+    def get(self, request, cargo, year, political_id):
+        font_config = FontConfiguration()
+        context = {"name": "Candidato Fantasma", "year": 2022,
+                   "partido": "PPP", "political_type": "Deputado Estadual"}
+
+        pdf_html = render_to_string(
+            './reports/pages/index.html', context=context)
+
+        html = HTML(string=pdf_html)
+        css = CSS(filename='./cartpol_app/api/templates/css/index.css',
+                  font_config=font_config)
+        path = './reports_generated/example.pdf'
+
+        html.write_pdf(path, stylesheets=[css],
+                       font_config=font_config)
+        report = open(path, 'rb')
+        # return render(request, './reports/pages/index.html', context=context)
         return HttpResponse(FileWrapper(report), content_type='application/pdf')

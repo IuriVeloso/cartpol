@@ -5,7 +5,7 @@ import functools
 import googlemaps
 import pandas as pd
 
-gmaps = googlemaps.Client(key='AIzaSyDP-G83wGvDRkxX0-d4g5lSXHWNC2D5BxA')
+gmaps = googlemaps.Client(key='AIzaSyAJfYi1laLCWF7ZiFj5xDGuUGcBfMZAZDU')
 
 viacep = "https://viacep.com.br/ws/"
 
@@ -39,8 +39,8 @@ def find_in_maps(search_by_address, administrative_area):
 
 
 df_2020 = pd.read_csv('data/local_votacao_BRASIL_2020.csv', delimiter=';')
-df_2022 = pd.read_csv('data/local_votacao_BRASIL_2022.csv', delimiter=';')
-df_2018 = pd.read_csv('data/local_votacao_BRASIL_2018.csv', delimiter=';')
+df_2022 = pd.read_csv('data/local_votacao_BRASIL_2024.csv', delimiter=';')
+df_2018 = pd.read_csv('data/local_votacao_BRASIL_2016.csv', delimiter=';')
 
 
 @functools.lru_cache(8192)
@@ -155,8 +155,8 @@ def index(input_file, output_file):
         writer.writerows(replicated_rows)
 
 
-input_file = 'data/eleitorado_local_votacao_2024.csv'
-output_file = 'data/local_votacao_BRASIL_2024.csv'
+input_file = 'data/eleitorado_local_votacao_2018.csv'
+output_file = 'data/local_votacao_BRASIL_2018.csv'
 
 startTime = datetime.datetime.now()
 print("\nStarted script running at\n" + str(startTime))

@@ -1,0 +1,42 @@
+@page { size: A4; margin: 0cm }
+@font-face {
+	font-family: Inter;
+	src: url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+}
+
+body {
+	margin: 0;	
+}
+
+h1,h2,h3,span,p,div { 
+	font-family: Inter, sans-serif;
+}
+
+.page {
+	width: 100%;
+	height: 100%;
+	height: 297mm;
+	background: #023A6E;
+}
+
+.center {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.report-front-page {
+	background: #EEEEEE;
+	width: 100%;
+	height: 188mm;
+	padding: 0 13px;
+}
+
+.report-title {
+	font-size: 16mm;
+}
+
+.report-subtitle {
+	font-size: 10mm;
+	font-weight: 400;
+}

@@ -16,7 +16,7 @@ Ao resetar a database, é necessario tambem dar os comandos de `makemigrations` 
 
 #Setup do programa
 
-E necessario instalar o postgresql antes
+E necessario instalar o postgresql antes e criar um usuario apropriado para rodar o banco de dados
 
 pip install -r ./requirements.txt 
 
