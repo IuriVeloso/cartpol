@@ -14,15 +14,48 @@
 				<h2 class="report-subtitle">{{ name }} ({{ partido}})</h2>
 				<p/>
 				<h2 class="report-subtitle">{{political_type}} - {{year}}</h2>
+				<div class="container right">
+					<img class="image" alt="CartPol" src="{% static "static/cartpol-logo-transp.png" %}">
+				</div>
 			</div>
 		</div>
 		<div class="page container center">
-			<div class="report-front-page">
-				<h1 class="report-title">Relatório de Candidatura</h1>
+			<div class="report-glossary">
+				<h1 class="report-title-2">Entenda os indicadores utilizados neste relatório!</h1>
 				<p/>
-				<h2 class="report-subtitle">{{ name }} ({{ partido}})</h2>
+				<h2 class="report-subtitle-2">&#x2022; %CAND </h2>
 				<p/>
-				<h2 class="report-subtitle">{{political_type}} - {{year}}</h2>
+				<span class="report-text">&emsp;Este indicador é a porcentagem de votos que um candidato recebeu em cada território (bairro, município ou estado) em relação ao seu total de votos. Em nossa plataforma é chamado de <i>% do candidato</i>, e sua fórmula é:</span>
+				<div class="equation center report-text">
+					%CAND =
+					 <div class="fraction">
+					 <span class="fup">quantidade de votos do candidato no território</span>
+					 <span class="bar">/</span>
+					 <span class="fdn">quantidade de votos totais do candidato</span>
+					 </div>
+				</div>
+				<h2 class="report-subtitle-2">&#x2022; %BAIRRO </h2>
+				<p/>
+				<span class="report-text">&emsp;Este indicador é a porcentagem de votos que um candidato recebeu em cada território (bairro, município ou estado) em relação ao total de votos daquele território. Em nossa plataforma é chamado de <i>% do território</i>, e sua fórmula é:</span>
+				<div class="equation center report-text">
+					%BAIRRO =
+					 <div class="fraction">
+					 <span class="fup">quantidade de votos do candidato no território</span>
+					 <span class="bar">/</span>
+					 <span class="fdn">quantidade de votos totais do território</span>
+					 </div>
+				</div>
+				<h2 class="report-subtitle-2">&#x2022; REL.BAIRRO</h2>
+				<p/>
+				<span class="report-text">&emsp;Este indicador é a porcentagem de votos totais de um bairro  em relação ao total de votos do município. Em nossa plataforma é chamado de <i>% do bairro na cidade</i>, e sua fórmula é:</span>
+				<div class="equation center report-text">
+					REL.BAIRRO =
+					 <div class="fraction">
+					 <span class="fup">quantidade total de votos no bairro</span>
+					 <span class="bar">/</span>
+					 <span class="fdn">quantidade total de votos no município</span>
+					 </div>
+				</div>
 			</div>
 		</div>
 	</body>

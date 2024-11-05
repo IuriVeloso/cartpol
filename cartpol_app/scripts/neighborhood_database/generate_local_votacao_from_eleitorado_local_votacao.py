@@ -5,6 +5,9 @@ import functools
 import googlemaps
 import pandas as pd
 import os
+from dotenv import load_dotenv
+
+load_dotenv()
 
 GMAPS_KEY = os.getenv("GMAPS_KEY", default="abc")
 

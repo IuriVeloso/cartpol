@@ -6,6 +6,9 @@ from tempfile import NamedTemporaryFile
 
 import googlemaps
 import os
+from dotenv import load_dotenv
+
+load_dotenv()
 
 GMAPS_KEY = os.getenv("GMAPS_KEY", default="abc")
 

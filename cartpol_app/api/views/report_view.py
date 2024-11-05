@@ -76,7 +76,7 @@ class GenerateReportView(APIView):
         pdf_html = render_to_string(
             './reports/pages/index.html', context=context)
 
-        html = HTML(string=pdf_html)
+        html = HTML(string=pdf_html, base_url=request.build_absolute_uri())
         css = CSS(filename='./cartpol_app/api/templates/css/index.css',
                   font_config=font_config)
         path = './reports_generated/example.pdf'

@@ -15,6 +15,10 @@ from pathlib import Path
 
 import dj_database_url  # type: ignore
 import django_heroku  # type: ignore
+from dotenv import load_dotenv
+
+load_dotenv()
+
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -33,8 +37,8 @@ if not IS_HEROKU_APP:
 ALLOWED_HOSTS = []
 
 PORT = os.getenv("PORT", default="8000")
-SECRET_KEY = os.getenv("SECRET_KEY", default="ABC")
-DB_PASSWORD = os.getenv("DB_PASSWORD", default="ABC")
+SECRET_KEY = os.getenv("SECRET_KEY", default="ABCD")
+DB_PASSWORD = os.getenv("DB_PASSWORD", default="ABCD")
 
 
 # Application definition
@@ -103,7 +107,7 @@ DATABASES = {
         "ENGINE": "django.db.backends.postgresql_psycopg2",
         "NAME": "cartpol_db_name",
         "USER": "cartpol_prod",
-        "PASSWORD": DB_PASSWORD,
+        "PASSWORD": "iuri300498",
         "HOST": "localhost",
         "PORT": "5432",
     }
@@ -143,13 +147,13 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
-STATIC_URL = "cartpol_app/api/templates/"
+STATIC_URL = BASE_DIR / 'cartpol_app/api/templates/'
 
 STATICFILES_DIRS = [
     BASE_DIR / 'cartpol_app/api/templates/',
 ]
 
-STATIC_ROOT = BASE_DIR / 'cartpol_app/api/templates/'
+STATIC_ROOT = BASE_DIR / 'staticfiles/'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
