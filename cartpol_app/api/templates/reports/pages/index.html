@@ -4,15 +4,18 @@
 		{% load static %}
 
         <title>Relatório Cartpol - {{ name }}</title>
+		{% comment %} <link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet"> {% endcomment %}
 		<link rel="stylesheet" href="{% static "css/index.css" %}" class="css">
     </head>
 	<body>
 		<div class="page container center">
 			<div class="report-front-page">
 				<h1 class="report-title">Relatório de Candidatura</h1>
-				<p/>
+				<br/>
 				<h2 class="report-subtitle">{{ name }} ({{ partido}})</h2>
-				<p/>
+				<br/>
 				<h2 class="report-subtitle">{{political_type}} - {{year}}</h2>
 				<div class="container right">
 					<img class="image" alt="CartPol" src="{% static "static/cartpol-logo-transp.png" %}">
@@ -21,22 +24,22 @@
 		</div>
 		<div class="page container center">
 			<div class="report-glossary">
-				<h1 class="report-title-2">Entenda os indicadores utilizados neste relatório!</h1>
-				<p/>
-				<h2 class="report-subtitle-2">&#x2022; %CAND </h2>
-				<p/>
-				<span class="report-text">&emsp;Este indicador é a porcentagem de votos que um candidato recebeu em cada território (bairro, município ou estado) em relação ao seu total de votos. Em nossa plataforma é chamado de <i>% do candidato</i>, e sua fórmula é:</span>
+				<h1 class="report-title-2"><br/>Entenda os indicadores utilizados neste relatório!</h1>
+				<h2 class="report-subtitle-2"><br/>&#x2022; %CAND</h2>
+				<br/>
+				<p class="report-text">&emsp;Este indicador é a porcentagem de votos que um candidato recebeu em cada território (bairro, município ou estado) em relação ao seu total de votos. Em nossa plataforma é chamado de <i>% do candidato</i>, e sua fórmula é:</p>
 				<div class="equation center report-text">
 					%CAND =
 					 <div class="fraction">
-					 <span class="fup">quantidade de votos do candidato no território</span>
-					 <span class="bar">/</span>
-					 <span class="fdn">quantidade de votos totais do candidato</span>
+						<span class="fup">quantidade de votos do candidato no território</span>
+						<span class="bar">/</span>
+						<span class="fdn">quantidade de votos totais do candidato</span>
 					 </div>
 				</div>
+				<br/>
 				<h2 class="report-subtitle-2">&#x2022; %BAIRRO </h2>
-				<p/>
-				<span class="report-text">&emsp;Este indicador é a porcentagem de votos que um candidato recebeu em cada território (bairro, município ou estado) em relação ao total de votos daquele território. Em nossa plataforma é chamado de <i>% do território</i>, e sua fórmula é:</span>
+				<br/>
+				<p class="report-text">&emsp;Este indicador é a porcentagem de votos que um candidato recebeu em cada território (bairro, município ou estado) em relação ao total de votos daquele território. Em nossa plataforma é chamado de <i>% do território</i>, e sua fórmula é:</p>
 				<div class="equation center report-text">
 					%BAIRRO =
 					 <div class="fraction">
@@ -45,9 +48,10 @@
 					 <span class="fdn">quantidade de votos totais do território</span>
 					 </div>
 				</div>
+				<br/>
 				<h2 class="report-subtitle-2">&#x2022; REL.BAIRRO</h2>
-				<p/>
-				<span class="report-text">&emsp;Este indicador é a porcentagem de votos totais de um bairro  em relação ao total de votos do município. Em nossa plataforma é chamado de <i>% do bairro na cidade</i>, e sua fórmula é:</span>
+				<br/>
+				<p class="report-text">&emsp;Este indicador é a porcentagem de votos totais de um bairro  em relação ao total de votos do município. Em nossa plataforma é chamado de <i>% do bairro na cidade</i>, e sua fórmula é:</p>
 				<div class="equation center report-text">
 					REL.BAIRRO =
 					 <div class="fraction">
@@ -56,6 +60,62 @@
 					 <span class="fdn">quantidade total de votos no município</span>
 					 </div>
 				</div>
+			</div>
+		</div>
+		<div class="page container center">
+			<div class="report-table">
+				<h1 class="report-title-2"><br/>Percentual de votos do candidato em cada bairro - 15 maiores</h1>
+				<br/>
+				<table class="report-text">
+					<tr>
+						<th class="first-column">
+							BAIRRO
+						</th>
+						<th>
+							%CAND.
+						</th>
+						<th>
+							%BAIRRO
+						</th>
+						<th>
+							REL.BAIRRO
+						</th>
+					</tr>
+					<tr>
+						<div class="report-row">
+							<td class="first-column">
+								Campo Grande
+							</td>
+							<td>
+								10.12%
+							</td>
+							<td>
+								3.15%
+							</td>
+							<td>
+								1.47% (1º)
+							</td>
+						</div>
+					</tr>
+					<tr>
+						<div class="report-row">
+							<td class="first-column">
+								Campo Grande
+							</td>
+							<td>
+								10.12%
+							</td>
+							<td>
+								3.15%
+							</td>
+							<td>
+								1.47% (1º)
+							</td>
+						</div>
+					</tr>
+
+
+				</table>
 			</div>
 		</div>
 	</body>
