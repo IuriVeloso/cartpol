@@ -22,12 +22,12 @@ def request_section(string):
     return None
 
 
-YEAR = 2022
+YEAR = 2018
 
 
 def update_map_neighborhood(url):
-    with open(f"data/8cidades2020.csv", 'r', encoding='utf-8') as f:
-        reader = csv.reader(f, delimiter=';', strict=True)
+    with open(f"data/RJESTD{YEAR}.xlsx - Sheet1.csv", 'r', encoding='utf-8') as f:
+        reader = csv.reader(f, delimiter=',', strict=True)
         next(reader)
 
         for row in reader:
@@ -35,13 +35,13 @@ def update_map_neighborhood(url):
             county, zone_id, neighborhood, section, county_id = row[INDEX_MUNICIPIO], row[INDEX_ZONE_ID], row[INDEX_BAIRRO].strip(
             ), str(row[INDEX_SECTION_ID]), row[INDEX_MUNICPIO_ID]
 
-            if county == 'BRASÍLIA':
+            if county == 'DUQUE DE CAXIAS' or county == '':
                 continue
 
             section_json = request_section(
                 f"{url}section/?identifier={section}&electoral_zone={zone_id}&county_tse_id={county_id}&year={YEAR}")
 
-            if section_json is None:
+            if section_json is None and isinstance(county_id, str):
                 print("Erro na secao e foda")
                 print(county, zone_id, neighborhood, section)
                 raise Exception("Na traaaave!!!")
