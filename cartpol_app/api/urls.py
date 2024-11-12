@@ -37,6 +37,6 @@ urlpatterns = [
     path('results/<int:city>/<int:cargo>/<int:year>/',
          ElectionResultsAV.as_view(), name="election-results"),
 
-    path('report/political-votes/<int:cargo>/<int:year>/<int:political_id>',
+    path('report/political-votes/<int:year>/<int:political_id>',
          GenerateReportView.as_view(), name="generate-report-politicals-crud"),
 ]

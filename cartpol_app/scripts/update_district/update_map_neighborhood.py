@@ -22,7 +22,7 @@ def request_section(string):
     return None
 
 
-YEAR = 2018
+YEAR = 2022
 
 
 def update_map_neighborhood(url):

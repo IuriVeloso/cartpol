@@ -3,7 +3,7 @@
 	<head>
 		{% load static %}
 
-        <title>Relatório Cartpol - {{ name }}</title>
+        <title>{{ filename }}</title>
 		{% comment %} <link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet"> {% endcomment %}
@@ -26,8 +26,8 @@
 			<div class="report-glossary">
 				<h1 class="report-title-2"><br/>Entenda os indicadores utilizados neste relatório!</h1>
 				<h2 class="report-subtitle-2"><br/>&#x2022; %CAND</h2>
-				<br/>
-				<p class="report-text">&emsp;Este indicador é a porcentagem de votos que um candidato recebeu em cada território (bairro, município ou estado) em relação ao seu total de votos. Em nossa plataforma é chamado de <i>% do candidato</i>, e sua fórmula é:</p>
+				<br class="small-margin"/>
+				<p class="report-text">&emsp;Este indicador é a porcentagem de votos que um candidato recebeu em cada território (bairro, município ou estado) em relação ao seu próprio total de votos. Em nossa plataforma é chamado de <i>% do candidato</i>, e sua fórmula é:</p>
 				<div class="equation center report-text">
 					%CAND =
 					 <div class="fraction">
@@ -38,7 +38,7 @@
 				</div>
 				<br/>
 				<h2 class="report-subtitle-2">&#x2022; %BAIRRO </h2>
-				<br/>
+				<br class="small-margin"/>
 				<p class="report-text">&emsp;Este indicador é a porcentagem de votos que um candidato recebeu em cada território (bairro, município ou estado) em relação ao total de votos daquele território. Em nossa plataforma é chamado de <i>% do território</i>, e sua fórmula é:</p>
 				<div class="equation center report-text">
 					%BAIRRO =
@@ -50,8 +50,8 @@
 				</div>
 				<br/>
 				<h2 class="report-subtitle-2">&#x2022; REL.BAIRRO</h2>
-				<br/>
-				<p class="report-text">&emsp;Este indicador é a porcentagem de votos totais de um bairro  em relação ao total de votos do município. Em nossa plataforma é chamado de <i>% do bairro na cidade</i>, e sua fórmula é:</p>
+				<br class="small-margin"/>
+				<p class="report-text">&emsp;Este indicador é a porcentagem de votos totais de um bairro em relação ao total de votos do município. Ele também é acompanhado do ordinal entre parênteses que representa a posição relativa que aquele território ocupa no ranking de REL.BAIRRO em relação aos seus territórios vizinhos. Em nossa plataforma é chamado de <i>% do bairro na cidade</i>, e sua fórmula é:</p>
 				<div class="equation center report-text">
 					REL.BAIRRO =
 					 <div class="fraction">
@@ -72,7 +72,7 @@
 							BAIRRO
 						</th>
 						<th>
-							%CAND.
+							%CAND. <img class="icon" alt="order" src="{% static "static/order_icon.svg" %}">
 						</th>
 						<th>
 							%BAIRRO
@@ -81,40 +81,61 @@
 							REL.BAIRRO
 						</th>
 					</tr>
-					<tr>
-						<div class="report-row">
+					{% for neighborhood in top15ruesp_can %}
+						<tr>
 							<td class="first-column">
-								Campo Grande
+								{{neighborhood.neighborhood}}
 							</td>
 							<td>
-								10.12%
+								{{neighborhood.ruesp_can }}%
 							</td>
 							<td>
-								3.15%
+								{{neighborhood.rcan_uesp}}%
 							</td>
 							<td>
-								1.47% (1º)
+								{{neighborhood.ruesp}}% ({{neighborhood.ruesp_position}}º)
 							</td>
-						</div>
-					</tr>
+						</tr>
+					{% endfor %}
+				</table>
+			</div>
+		</div>
+		<div class="page container center">
+			<div class="report-table">
+				<h1 class="report-title-2"><br/>Percentual de votos do bairro que 
+					foram para o candidato - 15 maiores</h1>
+				<br/>
+				<table class="report-text">
 					<tr>
-						<div class="report-row">
-							<td class="first-column">
-								Campo Grande
-							</td>
-							<td>
-								10.12%
-							</td>
-							<td>
-								3.15%
-							</td>
-							<td>
-								1.47% (1º)
-							</td>
-						</div>
+						<th class="first-column">
+							BAIRRO
+						</th>
+						<th>
+							%BAIRRO <img class="icon" alt="order" src="{% static "static/order_icon.svg" %}">
+						</th>
+						<th>
+							%CAND.
+						</th>
+						<th>
+							REL.BAIRRO
+						</th>
 					</tr>
-
-
+					{% for neighborhood in top15rcan_uesp %}
+						<tr>
+							<td class="first-column">
+								{{neighborhood.neighborhood}}
+							</td>
+							<td>
+								{{neighborhood.rcan_uesp}}%
+							</td>
+							<td>
+								{{neighborhood.ruesp_can}}%
+							</td>
+							<td>
+								{{neighborhood.ruesp}}% ({{neighborhood.ruesp_position}}º)
+							</td>
+						</tr>
+					{% endfor %}
 				</table>
 			</div>
 		</div>
