@@ -1,4 +1,4 @@
-from django.urls import path
+from django.urls import path, include
 
 from cartpol_app.api.views.report_view import GenerateReportView
 from cartpol_app.api.views.views import (CountyAV, CountysNeighborhoodAV,
@@ -8,6 +8,9 @@ from cartpol_app.api.views.views import (CountyAV, CountysNeighborhoodAV,
                                          PoliticalPartyAV, PoliticalTypeAV,
                                          PoliticalVotesAV, SectionAV, StateAV,
                                          VotesAV)
+from debug_toolbar.toolbar import debug_toolbar_urls
+import debug_toolbar
+
 
 urlpatterns = [
     path('state', StateAV.as_view(), name="state-crud"),
@@ -39,4 +42,5 @@ urlpatterns = [
 
     path('report/political-votes/<int:year>/<int:political_id>',
          GenerateReportView.as_view(), name="generate-report-politicals-crud"),
-]
+    path('__debug__/', include(debug_toolbar.urls)),
+] + debug_toolbar_urls()

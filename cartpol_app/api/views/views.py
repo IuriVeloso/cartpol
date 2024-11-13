@@ -320,19 +320,18 @@ class SectionAV(APIView):
 
 class PoliticalVotesAV(APIView):
     def get(self, request, political_id):
-        # FIXME - Remove this county id and use the value from the route (Also update docs)
-
         political = get_object_or_404(Political, pk=political_id)
 
-        total_candidate_votes = Votes.objects\
-            .filter(political_id=int(political_id))\
+        votes_queryset = Votes.objects.filter(political_id=int(political_id))
+
+        total_candidate_votes = votes_queryset \
             .values('section__neighborhood__map_neighborhood')\
             .annotate(total_votes=Sum('quantity'))
 
-        total_votes = Votes.objects.filter(
-            political_id=int(political_id)).aggregate(Sum('quantity'))
+        total_votes = votes_queryset.aggregate(total=Sum('quantity'))['total']
 
         total_neighborhoods_votes = Votes.objects \
+            .select_related('political', 'section__neighborhood') \
             .filter(political__political_type=political.political_type,
                     political__election=political.election,
                     political__region_id=political.region_id) \
@@ -342,40 +341,28 @@ class PoliticalVotesAV(APIView):
         total_neighborhoods_votes_dict = {
             item['section__neighborhood__map_neighborhood']: item['total'] for item in total_neighborhoods_votes}
 
-        total_place_votes = sum(item['total']
-                                for item in total_neighborhoods_votes)
-
-        total_political_votes = total_votes.get("quantity__sum")
+        total_place_votes = sum(total_neighborhoods_votes_dict.values())
 
         votes_by_neighborhood = []
 
-        min_ruesp_can = 1.0
-        max_ruesp_can = 0.0
-        min_rcan_uesp = 1.0
-        max_rcan_uesp = 0.0
+        min_ruesp_can, max_ruesp_can = 1.0, 0.0
+        min_rcan_uesp, max_rcan_uesp = 1.0, 0.0
 
         for vote in total_candidate_votes:
             total_value = vote['total_votes']
-            section__neighborhood_name = vote['section__neighborhood__map_neighborhood']
-            total_neighborhood_votes = total_neighborhoods_votes_dict[section__neighborhood_name]
+            neighborhood_name = vote['section__neighborhood__map_neighborhood']
+            total_neighborhood_votes = total_neighborhoods_votes_dict[neighborhood_name]
 
-            ruesp_can = round(total_value / total_political_votes, 6)
+            ruesp_can = round(total_value / total_votes, 6)
             rcan_uesp = round(total_value / total_neighborhood_votes, 6)
             ruesp = round(total_neighborhood_votes / total_place_votes, 6)
 
-            if ruesp_can >= max_ruesp_can:
-                max_ruesp_can = ruesp_can
-            if ruesp_can <= min_ruesp_can:
-                min_ruesp_can = ruesp_can
-
-            if rcan_uesp >= max_rcan_uesp:
-                max_rcan_uesp = rcan_uesp
-            if rcan_uesp <= min_rcan_uesp:
-                min_rcan_uesp = rcan_uesp
+            min_ruesp_can, max_ruesp_can = min(min_ruesp_can, ruesp_can), max(max_ruesp_can, ruesp_can)
+            min_rcan_uesp, max_rcan_uesp = min(min_rcan_uesp, rcan_uesp), max(max_rcan_uesp, rcan_uesp)
 
             votes_by_neighborhood.append({
                 'total_votes': total_value,
-                'neighborhood': section__neighborhood_name,
+                'neighborhood': neighborhood_name,
                 'ruesp_can': ruesp_can,
                 'rcan_uesp': rcan_uesp,
                 'ruesp': ruesp
@@ -386,7 +373,7 @@ class PoliticalVotesAV(APIView):
             "max_ruesp_can": max_ruesp_can,
             "min_rcan_uesp": min_rcan_uesp,
             "max_rcan_uesp": max_rcan_uesp,
-            "total_political_votes": total_political_votes,
+            "total_political_votes": total_votes,
             "votes_by_neighborhood": votes_by_neighborhood
         }, status=status.HTTP_200_OK)
 

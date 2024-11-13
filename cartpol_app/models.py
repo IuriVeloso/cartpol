@@ -105,3 +105,8 @@ class Votes (models.Model):
 
     def __votes__(self):
         return self.quantity
+    
+    class Meta:
+        indexes = [
+            models.Index(fields=['political_id', 'section_id'])
+        ]
