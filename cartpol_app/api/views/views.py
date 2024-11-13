@@ -16,6 +16,7 @@ from cartpol_app.api.serializers import (CountySerializer, ElectionSerializer,
 from cartpol_app.models import (County, Election, ElectoralZone, Neighborhood,
                                 Political, PoliticalParty, PoliticalType,
                                 Section, State, Votes)
+from collections import defaultdict
 
 
 class StateAV(APIView):
@@ -331,12 +332,17 @@ class PoliticalVotesAV(APIView):
         total_votes = votes_queryset.aggregate(total=Sum('quantity'))['total']
 
         total_neighborhoods_votes = Votes.objects \
-            .select_related('political', 'section__neighborhood') \
+            .select_related('section__neighborhood') \
             .filter(political__political_type=political.political_type,
                     political__election=political.election,
                     political__region_id=political.region_id) \
             .values('section__neighborhood__map_neighborhood') \
             .annotate(total=Sum('quantity'))
+
+        # total_neighborhoods_votes_dict = defaultdict(int)
+        # for vote in total_neighborhoods_votes:
+        #     neighborhood = vote.section.neighborhood.map_neighborhood
+        #     total_neighborhoods_votes_dict[neighborhood] += vote.total
 
         total_neighborhoods_votes_dict = {
             item['section__neighborhood__map_neighborhood']: item['total'] for item in total_neighborhoods_votes}
