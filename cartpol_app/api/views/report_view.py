@@ -96,8 +96,6 @@ class GenerateReportView(APIView):
                 'order': i+1} for i, item in enumerate(total_neighborhoods_votes)
             }
         
-        print(total_neighborhoods_votes_dict)
-
         total_place_votes = sum(item['total']
                                 for item in total_neighborhoods_votes)
 
@@ -138,17 +136,27 @@ class GenerateReportView(APIView):
                    "top15rcan_uesp": top15rcan_uesp,
                    "top15ruesp_can": top15ruesp_can}
 
+        print('oi1')
+
         pdf_html = render_to_string(
             './reports/pages/index.html', context=context)
+
+        print('oi2')
 
         html = HTML(string=pdf_html, base_url=request.build_absolute_uri())
         css = CSS(filename='./cartpol_app/api/templates/css/index.css',
                   font_config=font_config)
         path = './reports_generated/example.pdf'
 
+        print('oi3')
+
+
         html.write_pdf(path, stylesheets=[css],
                        font_config=font_config)
         report = open(path, 'rb')
+        
+        print('oi4')
+
         # return render(request, './reports/pages/index.html', context=context)
         return HttpResponse(FileWrapper(report), headers={
             "Content-Type": "application/pdf",

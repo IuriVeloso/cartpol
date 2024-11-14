@@ -95,11 +95,7 @@ class Political (models.Model):
 
     def __str__(self):
         return self.name
-    
-    class Meta:
-        indexes = [
-            models.Index(fields=['political_type_id', 'region_id', 'election_id'])
-        ]
+
 
 
 class Votes (models.Model):
@@ -111,7 +107,4 @@ class Votes (models.Model):
     def __votes__(self):
         return self.quantity
     
-    class Meta:
-        indexes = [
-            models.Index(fields=['political_id', 'section_id'])
-        ]
+

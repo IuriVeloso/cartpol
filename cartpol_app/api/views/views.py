@@ -339,11 +339,6 @@ class PoliticalVotesAV(APIView):
             .values('section__neighborhood__map_neighborhood') \
             .annotate(total=Sum('quantity'))
 
-        # total_neighborhoods_votes_dict = defaultdict(int)
-        # for vote in total_neighborhoods_votes:
-        #     neighborhood = vote.section.neighborhood.map_neighborhood
-        #     total_neighborhoods_votes_dict[neighborhood] += vote.total
-
         total_neighborhoods_votes_dict = {
             item['section__neighborhood__map_neighborhood']: item['total'] for item in total_neighborhoods_votes}
 
