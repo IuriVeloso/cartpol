@@ -39,7 +39,7 @@ def contains_duplicates_state(state_name, state_array):
 def contains_duplicates_political(political, political_array):
     result = True
     for political_obj in political_array:
-        if political["political_id"] == political_obj["political_id"] and political["county_id"] == political_obj["county_id"]:
+        if political["political_id"] == political_obj["political_id"]:
             result = False
             break
     return result

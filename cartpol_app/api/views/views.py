@@ -1,10 +1,9 @@
-from django.db.models import Sum
+from django.db.models import Sum, Q
 from django.shortcuts import get_object_or_404
 from rest_framework import status
 from rest_framework.parsers import JSONParser
 from rest_framework.response import Response
 from rest_framework.views import APIView
-
 from cartpol_app.api.serializers import (CountySerializer, ElectionSerializer,
                                          ElectoralZoneSerializer,
                                          NeighborhoodSerializer,
@@ -16,7 +15,6 @@ from cartpol_app.api.serializers import (CountySerializer, ElectionSerializer,
 from cartpol_app.models import (County, Election, ElectoralZone, Neighborhood,
                                 Political, PoliticalParty, PoliticalType,
                                 Section, State, Votes)
-from collections import defaultdict
 
 
 class StateAV(APIView):
@@ -222,6 +220,7 @@ class PoliticalAV(APIView):
             'political_code', False)
         should_search_full_name = request.query_params.get('full_name', False)
         should_search_county_id = request.query_params.get('county_id', False)
+        should_search_state_id = request.query_params.get('state_id', False)
         should_search_year = request.query_params.get('year', False)
         should_search_political_type = request.query_params.get(
             'political_type', False)
@@ -231,8 +230,15 @@ class PoliticalAV(APIView):
             politicals = politicals.filter(
                 political_code=should_search_political_code)
         if should_search_county_id:
+            county = get_object_or_404(County, pk=should_search_county_id)
             politicals = politicals.filter(
-                region_id=int(should_search_county_id))
+                Q(region_id=int(county.id))
+                | Q(region='federal')
+                | (Q(region='state') & Q(region_id=county.state_id)))
+        if should_search_state_id:
+            politicals = politicals.filter(
+                Q(region='federal')
+                | (Q(region='state') & Q(should_search_state_id)))
         if should_search_year:
             politicals = politicals.filter(
                 election__year=int(should_search_year))
@@ -324,6 +330,16 @@ class PoliticalVotesAV(APIView):
         political = get_object_or_404(Political, pk=political_id)
 
         votes_queryset = Votes.objects.filter(political_id=int(political_id))
+        
+        should_search_county_id = request.query_params.get('county_id', False)
+        
+        region_id = political.id
+        
+        if should_search_county_id:
+            votes_queryset = votes_queryset.filter(
+                section__neighborhood__county=should_search_county_id)
+            region_id = should_search_county_id
+            
 
         total_candidate_votes = votes_queryset \
             .values('section__neighborhood__map_neighborhood')\
@@ -335,7 +351,7 @@ class PoliticalVotesAV(APIView):
             .select_related('section__neighborhood') \
             .filter(political__political_type=political.political_type,
                     political__election=political.election,
-                    political__region_id=political.region_id) \
+                    section__neighborhood__county=region_id) \
             .values('section__neighborhood__map_neighborhood') \
             .annotate(total=Sum('quantity'))
 
@@ -353,6 +369,9 @@ class PoliticalVotesAV(APIView):
             total_value = vote['total_votes']
             neighborhood_name = vote['section__neighborhood__map_neighborhood']
             total_neighborhood_votes = total_neighborhoods_votes_dict[neighborhood_name]
+            
+            if neighborhood_name == 'Guaratiba':
+                print(vote, total_value, total_neighborhood_votes)
 
             ruesp_can = round(total_value / total_votes, 6)
             rcan_uesp = round(total_value / total_neighborhood_votes, 6)

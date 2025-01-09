@@ -7,7 +7,9 @@ import requests
 from cartpol_app.scripts.database.helpers import (
     contains_duplicates_political, contains_duplicates_political_party)
 
-CD_CARGO = [11, 13, 6, 7, 5]
+CD_CARGO = [11, 13, 6, 7, 5, 1, 3]
+
+#candidato_mun_zona
 
 INDEX_CARGO = 16
 INDEX_NAME = 21
@@ -56,7 +58,9 @@ ELECTION_ID = {
         'id': 3,
         '6': 7,
         '7': 6,
-        '5': 8
+        '5': 8,
+        '1': 13,
+        '3': 16,
     },
     '2020': {
         'id': 2,
@@ -67,7 +71,9 @@ ELECTION_ID = {
         'id': 1,
         '6': 2,
         '7': 1,
-        '5': 3
+        '5': 3,
+        '1': 14,
+        '3': 15,
     },
     '2024': {
         'id': 5,
@@ -83,17 +89,17 @@ def post_politics(url, year):
     politics_array = []
     political_party_array = []
 
-    with open(f'data/votacao_candidato_munzona_{year}_BRASIL.csv', 'r', encoding='utf-8') as f:
+    with open(f'data/votacao_candidato_munzona_GOV_{year}.csv', 'r', encoding='utf-8') as f:
         print("Começando a selecionar partidos e candidatos")
 
-        reader = csv.reader(f, delimiter=';', strict=True)
+        reader = csv.reader(f, delimiter=',', strict=True)
         next(reader)
 
         for row in reader:
             # Removendo votos nulos
-            if row[INDEX_STATE] != 'RJ':
+            if row[INDEX_CARGO] != '3':
                 continue
-            if row[INDEX_CANDIDATE_ID] in ['95', '96'] or row[INDEX_ROUND] != '1' or row[INDEX_ELECTION_CODE] not in ELETION_CODE:
+            if row[INDEX_CANDIDATE_ID] in ['95', '96'] or row[INDEX_ROUND] != '1':
                 continue
 
             political_dict = {
@@ -106,7 +112,7 @@ def post_politics(url, year):
                 "political_code": row[INDEX_POLITICAL_NUMBER],
                 "county_id": row[INDEX_COUNTY_ID],
                 "year": year,
-                "region": 'city'
+                "region": 'state'
             }
 
             county = request_county(f"{url}county?state={row[INDEX_STATE]}&tse_id={
@@ -114,8 +120,10 @@ def post_politics(url, year):
 
             if county is not None:
                 political_dict["region_id"] = county
+            else:
+                continue
 
-            if int(political_dict["political_type"]) in CD_CARGO and len(political_dict["political_id"]) > 2:
+            if int(political_dict["political_type"]) in CD_CARGO:
                 political_dict["political_type"] = ELECTION_ID[str(
                     year)][row[INDEX_CARGO]]
                 if contains_duplicates_political(political_dict, politics_array):

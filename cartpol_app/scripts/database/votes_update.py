@@ -18,7 +18,7 @@ INDEX_ZONE_ID = 15
 INDEX_ADDRESS = 25
 INDEX_STATE = 10
 
-CD_CARGO = [11, 13, 6, 7, 5]
+CD_CARGO = [11, 13, 6, 7, 5, 1, 3]
 
 
 @functools.lru_cache(maxsize=8192)
@@ -55,18 +55,18 @@ headers = {'Content-Type': 'application/json', 'Accept': 'application/json'}
 def post_votes(url, year):
     votes_array = []
 
-    with open(f'data/votacao_secao_{year}_10_CAPITAIS.csv', 'r', encoding='utf-8') as f:
+    with open(f'data/votacao_secao_GOV_{year}.csv', 'r', encoding='utf-8') as f:
         print("Começando a selecionar votos")
 
-        reader = csv.reader(f, delimiter=';', strict=True)
+        reader = csv.reader(f, delimiter=',', strict=True)
         errors = 0
 
         next(reader)
 
         for row in reader:
-            if row[INDEX_STATE] != 'RJ':
+            if row[INDEX_CARGO] != '3':
                 continue
-            if row[INDEX_CANDIDATE_ID] in ['95', '96'] or row[INDEX_ROUND] != '1' or row[INDEX_ELECTION_CODE] not in ELETION_CODE:
+            if row[INDEX_CANDIDATE_ID] in ['95', '96'] or row[INDEX_ROUND] != '1':
                 continue
 
             votes, name, candidate_id, county_id, zone_id, section_id, cargo = row[INDEX_VOTES], row[INDEX_NAME].strip(), row[
@@ -99,9 +99,7 @@ def post_votes(url, year):
                 if section is not None:
                     votes_dict["section"] = section
                 else:
-                    print("Erro na secao e foda")
-                    print(votes_dict)
-                    raise Exception("Na traaaave!!!")
+                    continue
 
                 votes_array.append(votes_dict)
 
