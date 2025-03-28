@@ -1,4 +1,5 @@
-from django.db.models import Sum, Q
+from django.db.models import Sum, Q, OuterRef, Subquery
+
 from django.shortcuts import get_object_or_404
 from rest_framework import status
 from rest_framework.parsers import JSONParser
@@ -333,8 +334,8 @@ class PoliticalVotesAV(APIView):
         
         should_search_county_id = request.query_params.get('county_id', False)
         
-        region_id = political.id
-        
+        region_id = political.region_id
+
         if should_search_county_id:
             votes_queryset = votes_queryset.filter(
                 section__neighborhood__county=should_search_county_id)
@@ -346,18 +347,28 @@ class PoliticalVotesAV(APIView):
             .annotate(total_votes=Sum('quantity'))
 
         total_votes = votes_queryset.aggregate(total=Sum('quantity'))['total']
+        
+        
+        political_filter = Political.objects.filter(
+            political_type=political.political_type,
+            election=political.election
+        ).values('id')
+
+        neighborhood_filter = Neighborhood.objects.filter(
+            county=region_id
+        ).values('id')
 
         total_neighborhoods_votes = Votes.objects \
-            .select_related('section__neighborhood') \
-            .filter(political__political_type=political.political_type,
-                    political__election=political.election,
-                    section__neighborhood__county=region_id) \
+            .filter(
+                political_id__in=Subquery(political_filter),
+                section__neighborhood_id__in=Subquery(neighborhood_filter)
+            ) \
             .values('section__neighborhood__map_neighborhood') \
             .annotate(total=Sum('quantity'))
-
+        
         total_neighborhoods_votes_dict = {
             item['section__neighborhood__map_neighborhood']: item['total'] for item in total_neighborhoods_votes}
-
+        
         total_place_votes = sum(total_neighborhoods_votes_dict.values())
 
         votes_by_neighborhood = []
@@ -369,9 +380,6 @@ class PoliticalVotesAV(APIView):
             total_value = vote['total_votes']
             neighborhood_name = vote['section__neighborhood__map_neighborhood']
             total_neighborhood_votes = total_neighborhoods_votes_dict[neighborhood_name]
-            
-            if neighborhood_name == 'Guaratiba':
-                print(vote, total_value, total_neighborhood_votes)
 
             ruesp_can = round(total_value / total_votes, 6)
             rcan_uesp = round(total_value / total_neighborhood_votes, 6)

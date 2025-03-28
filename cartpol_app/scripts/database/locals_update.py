@@ -94,19 +94,17 @@ def request_state(string):
 def locals_update(url, year, firstRun):
     print("Começando a selecionar locais de votacao, bairros e secao")
 
-    with open(f'data/local_votacao_BRASIL_{year}.csv', 'r', encoding='utf-8') as f:
+    with open(f'data/local_votacao_SP_{year}.csv', 'r', encoding='utf-8') as f:
         section_array = []
         neighborhood_array = []
         electoral_zones_array = []
         county_array = []
         state_array = []
 
-        reader = csv.reader(f, delimiter=';', strict=True)
+        reader = csv.reader(f, delimiter=',', strict=True)
         next(reader)
 
         for row in reader:
-            if row[INDEX_MUNICIPIO_ID] != '60011':
-                continue
             state, county, zone_id, neighborhood, tse_id, subdistrict = row[INDEX_STATE], row[
                 INDEX_MUNICIPIO], row[INDEX_ZONE_ID], row[INDEX_BAIRRO].strip(), row[INDEX_MUNICIPIO_ID], row[INDEX_SUBDISTRITO]
 

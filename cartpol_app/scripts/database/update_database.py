@@ -20,7 +20,7 @@ timeTotalPostVotes = None
 try:
     shouldRun = input("Escolha uma opcao: ")
 except:
-    shouldRun = 'c'
+    shouldRun = 'v'
 
 shouldRunAll = shouldRun == None or shouldRun == 'c'
 shouldRunBase = shouldRunAll or shouldRun == 'b'
@@ -29,7 +29,7 @@ shouldRunPolitics = shouldRunAll or shouldRun == 'p'
 shouldRunVotes = shouldRunAll or shouldRun == 'v'
 
 startTime = datetime.datetime.now()
-year = 2022
+year = 2024
 firstRun = False
 print(f"\nStarted script running at {startTime}\n")
 
@@ -41,7 +41,7 @@ if shouldRunBase & firstRun:
 if shouldRunLocals:
     print("\nStarted locals_update()\n")
 
-    # locals_update(url=URL, year=year, firstRun=firstRun)
+    locals_update(url=URL, year=year, firstRun=firstRun)
 
     timeTotalLocalResults = datetime.datetime.now() - startTime
     print(

@@ -89,7 +89,7 @@ def post_politics(url, year):
     politics_array = []
     political_party_array = []
 
-    with open(f'data/votacao_candidato_munzona_GOV_{year}.csv', 'r', encoding='utf-8') as f:
+    with open(f'data/votacao_candidato_munzona_SP_{year}.csv', 'r', encoding='utf-8') as f:
         print("Começando a selecionar partidos e candidatos")
 
         reader = csv.reader(f, delimiter=',', strict=True)
@@ -97,8 +97,6 @@ def post_politics(url, year):
 
         for row in reader:
             # Removendo votos nulos
-            if row[INDEX_CARGO] != '3':
-                continue
             if row[INDEX_CANDIDATE_ID] in ['95', '96'] or row[INDEX_ROUND] != '1':
                 continue
 
@@ -112,7 +110,7 @@ def post_politics(url, year):
                 "political_code": row[INDEX_POLITICAL_NUMBER],
                 "county_id": row[INDEX_COUNTY_ID],
                 "year": year,
-                "region": 'state'
+                "region": 'city' if row[INDEX_CARGO] in ['13', '11']  else 'state'
             }
 
             county = request_county(f"{url}county?state={row[INDEX_STATE]}&tse_id={
