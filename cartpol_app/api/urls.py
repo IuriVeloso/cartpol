@@ -7,7 +7,7 @@ from cartpol_app.api.views.views import (CountyAV, CountysNeighborhoodAV,
                                          PoliticalAV, PoliticalPartiesVotesAV,
                                          PoliticalPartyAV, PoliticalTypeAV,
                                          PoliticalVotesAV, SectionAV, StateAV,
-                                         VotesAV)
+                                         VotesAV,  PoliticalStateVotesAV)
 from debug_toolbar.toolbar import debug_toolbar_urls
 
 
@@ -34,6 +34,8 @@ urlpatterns = [
     path('section/', SectionAV.as_view(), name="section-crud"),
     path('political-votes/<int:political_id>',
          PoliticalVotesAV.as_view(), name="votes-politicals-crud"),
+    path('political-votes/state/<int:political_id>',
+         PoliticalStateVotesAV.as_view(), name="votes-politicals-crud"),
     path('political-party-votes/<int:political_party_id>/<int:city_id>',
          PoliticalPartiesVotesAV.as_view(), name="votes-parties-crud"),
     path('results/<int:city>/<int:cargo>/<int:year>/',

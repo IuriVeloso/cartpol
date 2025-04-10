@@ -1,10 +1,10 @@
-from django.db.models import Sum, Q, OuterRef, Subquery
-
+from django.db.models import OuterRef, Q, Subquery, Sum
 from django.shortcuts import get_object_or_404
 from rest_framework import status
 from rest_framework.parsers import JSONParser
 from rest_framework.response import Response
 from rest_framework.views import APIView
+
 from cartpol_app.api.serializers import (CountySerializer, ElectionSerializer,
                                          ElectoralZoneSerializer,
                                          NeighborhoodSerializer,
@@ -224,7 +224,7 @@ class PoliticalAV(APIView):
         should_search_state_id = request.query_params.get('state_id', False)
         should_search_year = request.query_params.get('year', False)
         should_search_political_type = request.query_params.get(
-            'political_type', False)
+            'political_type_id', False)
         if should_search_full_name:
             politicals = politicals.filter(full_name=should_search_full_name)
         if should_search_political_code:
@@ -238,8 +238,10 @@ class PoliticalAV(APIView):
                 | (Q(region='state') & Q(region_id=county.state_id)))
         if should_search_state_id:
             politicals = politicals.filter(
-                Q(region='federal')
-                | (Q(region='state') & Q(should_search_state_id)))
+                (Q(region='federal')
+                 | (Q(region='state')
+                    & Q(region_id=should_search_state_id)))
+            )
         if should_search_year:
             politicals = politicals.filter(
                 election__year=int(should_search_year))
@@ -331,24 +333,22 @@ class PoliticalVotesAV(APIView):
         political = get_object_or_404(Political, pk=political_id)
 
         votes_queryset = Votes.objects.filter(political_id=int(political_id))
-        
+
         should_search_county_id = request.query_params.get('county_id', False)
-        
+
         region_id = political.region_id
 
         if should_search_county_id:
             votes_queryset = votes_queryset.filter(
                 section__neighborhood__county=should_search_county_id)
             region_id = should_search_county_id
-            
 
         total_candidate_votes = votes_queryset \
             .values('section__neighborhood__map_neighborhood')\
             .annotate(total_votes=Sum('quantity'))
 
         total_votes = votes_queryset.aggregate(total=Sum('quantity'))['total']
-        
-        
+
         political_filter = Political.objects.filter(
             political_type=political.political_type,
             election=political.election
@@ -365,10 +365,10 @@ class PoliticalVotesAV(APIView):
             ) \
             .values('section__neighborhood__map_neighborhood') \
             .annotate(total=Sum('quantity'))
-        
+
         total_neighborhoods_votes_dict = {
             item['section__neighborhood__map_neighborhood']: item['total'] for item in total_neighborhoods_votes}
-        
+
         total_place_votes = sum(total_neighborhoods_votes_dict.values())
 
         votes_by_neighborhood = []
@@ -385,8 +385,10 @@ class PoliticalVotesAV(APIView):
             rcan_uesp = round(total_value / total_neighborhood_votes, 6)
             ruesp = round(total_neighborhood_votes / total_place_votes, 6)
 
-            min_ruesp_can, max_ruesp_can = min(min_ruesp_can, ruesp_can), max(max_ruesp_can, ruesp_can)
-            min_rcan_uesp, max_rcan_uesp = min(min_rcan_uesp, rcan_uesp), max(max_rcan_uesp, rcan_uesp)
+            min_ruesp_can, max_ruesp_can = min(
+                min_ruesp_can, ruesp_can), max(max_ruesp_can, ruesp_can)
+            min_rcan_uesp, max_rcan_uesp = min(
+                min_rcan_uesp, rcan_uesp), max(max_rcan_uesp, rcan_uesp)
 
             votes_by_neighborhood.append({
                 'total_votes': total_value,
@@ -402,7 +404,88 @@ class PoliticalVotesAV(APIView):
             "min_rcan_uesp": min_rcan_uesp,
             "max_rcan_uesp": max_rcan_uesp,
             "total_political_votes": total_votes,
-            "votes_by_neighborhood": votes_by_neighborhood
+            "votes": votes_by_neighborhood
+        }, status=status.HTTP_200_OK)
+
+
+class PoliticalStateVotesAV(APIView):
+    def get(self, request, political_id):
+        political = get_object_or_404(Political, pk=political_id)
+
+        votes_queryset = Votes.objects.filter(political_id=int(political_id))
+
+        should_search_state_id = request.query_params.get('state_id', False)
+
+        region_id = should_search_state_id
+
+        if not should_search_state_id:
+            raise Exception("state_id is required")
+        
+        political_filter = Political.objects.filter(
+            political_type=political.political_type,
+            election=political.election
+        ).values('id')
+
+        county_filter = County.objects.filter(
+            state=region_id
+        ).values('id')
+
+        total_candidate_votes = votes_queryset \
+            .filter(section__neighborhood__county_id__in=Subquery(county_filter))\
+            .values('section__neighborhood__county__name',
+                    'section__neighborhood__county__tse_id') \
+            .annotate(total_votes=Sum('quantity'))
+
+        total_votes = votes_queryset.aggregate(total=Sum('quantity'))['total']
+
+        total_state_votes = Votes.objects \
+            .filter(
+                political_id__in=Subquery(political_filter),
+                section__neighborhood__county_id__in=Subquery(county_filter)
+            ) \
+            .values('section__neighborhood__county__name') \
+            .annotate(total=Sum('quantity'))
+
+        total_state_votes_dict = {
+            item['section__neighborhood__county__name']: item['total'] for item in total_state_votes}
+
+        total_place_votes = sum(total_state_votes_dict.values())
+
+        votes_by_state = []
+
+        min_ruesp_can, max_ruesp_can = 1.0, 0.0
+        min_rcan_uesp, max_rcan_uesp = 1.0, 0.0
+
+        for vote in total_candidate_votes:
+            total_value = vote['total_votes']
+            county_name = vote['section__neighborhood__county__name']
+            total_state_votes = total_state_votes_dict[county_name]
+
+            ruesp_can = round(total_value / total_votes, 6)
+            rcan_uesp = round(total_value / total_state_votes, 6)
+            ruesp = round(total_state_votes / total_place_votes, 6)
+
+            min_ruesp_can, max_ruesp_can = min(
+                min_ruesp_can, ruesp_can), max(max_ruesp_can, ruesp_can)
+            min_rcan_uesp, max_rcan_uesp = min(
+                min_rcan_uesp, rcan_uesp), max(max_rcan_uesp, rcan_uesp)
+
+            votes_by_state.append({
+                'total_votes': total_value,
+                'county': county_name,
+                'county_tse_id': vote['section__neighborhood__county__tse_id'],
+                'ruesp_can': ruesp_can,
+                'rcan_uesp': rcan_uesp,
+                'ruesp': ruesp
+            })
+
+        return Response({
+            "min_ruesp_can": min_ruesp_can,
+            "max_ruesp_can": max_ruesp_can,
+            "min_rcan_uesp": min_rcan_uesp,
+            "max_rcan_uesp": max_rcan_uesp,
+            "total_political_votes": total_votes,
+            "votes": votes_by_state
         }, status=status.HTTP_200_OK)
 
 

@@ -55,7 +55,7 @@ headers = {'Content-Type': 'application/json', 'Accept': 'application/json'}
 def post_votes(url, year):
     votes_array = []
 
-    with open(f'data/votacao_secao_SP_{year}_2.csv', 'r', encoding='utf-8') as f:
+    with open(f'data/votacao_secao_{year}_PR.csv', 'r', encoding='utf-8') as f:
         print("Começando a selecionar votos")
 
         reader = csv.reader(f, delimiter=',', strict=True)

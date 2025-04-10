@@ -20,7 +20,7 @@ timeTotalPostVotes = None
 try:
     shouldRun = input("Escolha uma opcao: ")
 except:
-    shouldRun = 'v'
+    shouldRun = 'c'
 
 shouldRunAll = shouldRun == None or shouldRun == 'c'
 shouldRunBase = shouldRunAll or shouldRun == 'b'
@@ -29,12 +29,12 @@ shouldRunPolitics = shouldRunAll or shouldRun == 'p'
 shouldRunVotes = shouldRunAll or shouldRun == 'v'
 
 startTime = datetime.datetime.now()
-year = 2024
+year = 2022
 firstRun = False
 print(f"\nStarted script running at {startTime}\n")
 
 if shouldRunBase & firstRun:
-    base_info(url=URL)
+    # base_info(url=URL)
 
     print("\nFinished base_info()\n")
 
@@ -53,7 +53,7 @@ if shouldRunPolitics:
 
     print("\nStarted post_politics()\n")
 
-    post_politics(url=URL, year=year)
+    # post_politics(url=URL, year=year)
 
     timeTotalPostPolitics = datetime.datetime.now() - timeStartedPostPolitics
     print(
@@ -86,3 +86,5 @@ if timeTotalPostVotes is not None:
     print(f"\npost_votes: {timeTotalPostVotes}")
 
 # python3 manage.py shell < cartpol_app/scripts/database/update_database.py
+
+# "GET /cartpol/section/?identifier=329&electoral_zone=267&county_tse_id=70971&year=2018 HTTP/1.1" 200 138
