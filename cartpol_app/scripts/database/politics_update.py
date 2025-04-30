@@ -25,7 +25,7 @@ INDEX_STATE = 10
 INDEX_POLITICAL_NUMBER = 19
 
 
-@functools.lru_cache(maxsize=2048)
+@functools.lru_cache(maxsize=512)
 def request_county(string):
     resp = requests.get(string).json()
     if len(resp) > 0:
@@ -35,6 +35,13 @@ def request_county(string):
 
 @functools.lru_cache(maxsize=64)
 def request_political_party(string):
+    resp = requests.get(string).json()
+    if len(resp) > 0:
+        return resp[0]["id"]
+    return None
+
+@functools.lru_cache(maxsize=16)
+def request_state(string):
     resp = requests.get(string).json()
     if len(resp) > 0:
         return resp[0]["id"]
@@ -89,7 +96,7 @@ def post_politics(url, year):
     politics_array = []
     political_party_array = []
 
-    with open(f'data/votacao_candidato_munzona_SP_{year}.csv', 'r', encoding='utf-8') as f:
+    with open(f'data/votacao_candidato_munzona_MG_{year}.csv', 'r', encoding='utf-8') as f:
         print("Começando a selecionar partidos e candidatos")
 
         reader = csv.reader(f, delimiter=',', strict=True)
@@ -110,16 +117,24 @@ def post_politics(url, year):
                 "political_code": row[INDEX_POLITICAL_NUMBER],
                 "county_id": row[INDEX_COUNTY_ID],
                 "year": year,
-                "region": 'city' if row[INDEX_CARGO] in ['13', '11']  else 'state'
+                "region": 'city' if row[INDEX_CARGO] in ['13', '11'] else 'state'
             }
 
-            county = request_county(f"{url}county?state={row[INDEX_STATE]}&tse_id={
-                                    row[INDEX_COUNTY_ID]}")
 
-            if county is not None:
-                political_dict["region_id"] = county
+            if political_dict["region"] == 'city':
+                county = request_county(f"{url}county?state={row[INDEX_STATE]}&tse_id={
+                                        row[INDEX_COUNTY_ID]}")
+
+                if county is not None:
+                    political_dict["region_id"] = county
+                else:
+                    continue
             else:
-                continue
+                state = request_state(f"{url}state?name={row[INDEX_STATE]}")
+                if state is not None:
+                    political_dict["region_id"] = state
+                else:
+                    continue
 
             if int(political_dict["political_type"]) in CD_CARGO:
                 political_dict["political_type"] = ELECTION_ID[str(

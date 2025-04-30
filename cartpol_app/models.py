@@ -107,4 +107,12 @@ class Votes (models.Model):
     def __votes__(self):
         return self.quantity
     
+class VotesInNeighborhood (models.Model):
+    quantity = models.IntegerField()
+    political = models.ForeignKey(Political, on_delete=models.CASCADE)
+    neighborhood = models.ForeignKey(Neighborhood, on_delete=models.CASCADE)
+
+    def __votes__(self):
+        return self.quantity
+    
 

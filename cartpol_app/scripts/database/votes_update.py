@@ -4,6 +4,13 @@ from itertools import batched
 
 import requests
 
+CARGO_CODE = {
+    'GOVERNADOR': 3,
+    'SENADOR': 5,
+    'PRESIDENTE': 1,
+}
+    
+
 INDEX_CARGO = 17
 INDEX_SECTION_ID = 16
 INDEX_NAME = 20
@@ -17,6 +24,7 @@ INDEX_COUNTY_NAME = 14
 INDEX_ZONE_ID = 15
 INDEX_ADDRESS = 25
 INDEX_STATE = 10
+INDEX_CD_TIPO_ELEICAO = 3
 
 CD_CARGO = [11, 13, 6, 7, 5, 1, 3]
 
@@ -55,16 +63,17 @@ headers = {'Content-Type': 'application/json', 'Accept': 'application/json'}
 def post_votes(url, year):
     votes_array = []
 
-    with open(f'data/votacao_secao_{year}_PR.csv', 'r', encoding='utf-8') as f:
+    with open(f'data/votacao_secao_{year}_MG.csv', 'r', encoding='utf-8') as f:
         print("Começando a selecionar votos")
 
         reader = csv.reader(f, delimiter=',', strict=True)
         errors = 0
+        allowed_code_len_2_cargo_ids = [CARGO_CODE['GOVERNADOR'], CARGO_CODE['PRESIDENTE']]
 
         next(reader)
 
         for row in reader:
-            if row[INDEX_CANDIDATE_ID] in ['95', '96'] or row[INDEX_ROUND] != '1':
+            if row[INDEX_CANDIDATE_ID] in ['95', '96'] or row[INDEX_CD_TIPO_ELEICAO] == '1' or row[INDEX_ROUND] != '1' or (len(row[INDEX_ELECTION_CODE]) == 2 and row[INDEX_CARGO] not in allowed_code_len_2_cargo_ids):
                 continue
 
             votes, name, candidate_id, county_id, zone_id, section_id, cargo = row[INDEX_VOTES], row[INDEX_NAME].strip(), row[
@@ -81,7 +90,7 @@ def post_votes(url, year):
             if ((int(cargo) in CD_CARGO and candidate_id not in ('96', '95'))):
 
                 political = request_political(
-                    f"{url}political?political_code={candidate_id}&full_name={name}&year={year}")
+                    f"{url}political/?political_code={candidate_id}&full_name={name}&year={year}")
 
                 if political is not None:
                     votes_dict["political"] = political
@@ -92,12 +101,15 @@ def post_votes(url, year):
                     continue
 
                 section = request_section(
-                    f"{url}section?identifier={section_id}&electoral_zone={zone_id}&county_tse_id={county_id}&year={year}")
+                    f"{url}section/?identifier={section_id}&electoral_zone={zone_id}&county_tse_id={county_id}&year={year}")
 
                 if section is not None:
                     votes_dict["section"] = section
                 else:
-                    continue
+                    print("Erro achando secao")
+                    print(votes_dict, f"\nSecao: {section_id}")
+                    raise Exception(
+                        "Erro achando secao")
 
                 votes_array.append(votes_dict)
 
@@ -127,11 +139,11 @@ def post_votes(url, year):
             print(response.json())
             for individual_batch in votes_list:
                 response = requests.post(
-                    f"{url}political/", data=individual_batch, headers=headers)
+                    f"{url}votes/", data=individual_batch, headers=headers)
                 if response.status_code == 201:
                     votes_created_index += 1
                 else:
-                    print(response.json())
+                    print(response.json(), individual_batch)
 
     print(votes_created_index, "votos criados")
     print("\nVotos finalizados\n")

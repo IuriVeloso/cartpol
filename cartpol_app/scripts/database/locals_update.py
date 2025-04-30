@@ -59,7 +59,7 @@ DEZ_PRINCIPAIS_MUN = ['38490', '13897', '25313', '02550',
                       '2550', '71072', '41238', '60011', '75353', '88013']
 
 
-@functools.lru_cache(maxsize=2048)
+@functools.lru_cache(maxsize=512)
 def request_county(string):
     resp = requests.get(string).json()
     if len(resp) > 0:
@@ -94,7 +94,7 @@ def request_state(string):
 def locals_update(url, year, firstRun):
     print("Começando a selecionar locais de votacao, bairros e secao")
 
-    with open(f'data/local_votacao_RJ_faltantes_{year}.csv', 'r', encoding='utf-8') as f:
+    with open(f'data/local_votacao_MG_{year}.csv', 'r', encoding='utf-8') as f:
         section_array = []
         neighborhood_array = []
         electoral_zones_array = []
@@ -142,6 +142,8 @@ def locals_update(url, year, firstRun):
                                                    + tse_id
                                                    + "&name="
                                                    + neighborhood)
+            
+            county_id = request_county(f"{url}county?tse_id={tse_id}")
 
             if firstRun and contains_duplicates_state(state, state_array):
                 state_array.append(state_dict)
@@ -149,7 +151,7 @@ def locals_update(url, year, firstRun):
             if neighborhood_id is None and contains_duplicates_neighborhood(neighborhood, tse_id, neighborhood_array):
                 neighborhood_array.append(neighborhood_dict)
 
-            if firstRun and contains_duplicates_county(tse_id, county_array):
+            if county_id is None and contains_duplicates_county(tse_id, county_array):
                 county_array.append(county_dict)
 
             if contains_duplicates_electoral_zone(zone_id, state, tse_id, electoral_zones_array):
