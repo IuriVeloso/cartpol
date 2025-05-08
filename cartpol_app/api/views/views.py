@@ -15,7 +15,7 @@ from cartpol_app.api.serializers import (CountySerializer, ElectionSerializer,
                                          VotesSerializer)
 from cartpol_app.models import (County, Election, ElectoralZone, Neighborhood,
                                 Political, PoliticalParty, PoliticalType,
-                                Section, State, Votes)
+                                Section, State, Votes, VotesInNeighborhood)
 
 
 class StateAV(APIView):
@@ -332,7 +332,7 @@ class PoliticalVotesAV(APIView):
     def get(self, request, political_id):
         political = get_object_or_404(Political, pk=political_id)
 
-        votes_queryset = Votes.objects.filter(political_id=int(political_id))
+        votes_queryset = VotesInNeighborhood.objects.filter(political_id=int(political_id))
 
         should_search_county_id = request.query_params.get('county_id', False)
 
@@ -340,11 +340,11 @@ class PoliticalVotesAV(APIView):
 
         if should_search_county_id:
             votes_queryset = votes_queryset.filter(
-                section__neighborhood__county=should_search_county_id)
+                neighborhood__county=should_search_county_id)
             region_id = should_search_county_id
 
         total_candidate_votes = votes_queryset \
-            .values('section__neighborhood__map_neighborhood')\
+            .values('neighborhood__map_neighborhood')\
             .annotate(total_votes=Sum('quantity'))
 
         total_votes = votes_queryset.aggregate(total=Sum('quantity'))['total']
@@ -358,16 +358,16 @@ class PoliticalVotesAV(APIView):
             county=region_id
         ).values('id')
 
-        total_neighborhoods_votes = Votes.objects \
+        total_neighborhoods_votes = VotesInNeighborhood.objects \
             .filter(
                 political_id__in=Subquery(political_filter),
-                section__neighborhood_id__in=Subquery(neighborhood_filter)
+                neighborhood_id__in=Subquery(neighborhood_filter)
             ) \
-            .values('section__neighborhood__map_neighborhood') \
+            .values('neighborhood__map_neighborhood') \
             .annotate(total=Sum('quantity'))
 
         total_neighborhoods_votes_dict = {
-            item['section__neighborhood__map_neighborhood']: item['total'] for item in total_neighborhoods_votes}
+            item['neighborhood__map_neighborhood']: item['total'] for item in total_neighborhoods_votes}
 
         total_place_votes = sum(total_neighborhoods_votes_dict.values())
 
@@ -378,7 +378,7 @@ class PoliticalVotesAV(APIView):
 
         for vote in total_candidate_votes:
             total_value = vote['total_votes']
-            neighborhood_name = vote['section__neighborhood__map_neighborhood']
+            neighborhood_name = vote['neighborhood__map_neighborhood']
             total_neighborhood_votes = total_neighborhoods_votes_dict[neighborhood_name]
 
             ruesp_can = round(total_value / total_votes, 6)
@@ -419,8 +419,8 @@ class PoliticalStateVotesAV(APIView):
         if not should_search_state_id:
             raise Exception("state_id is required")
         
-        votes_queryset = Votes.objects.filter(political_id=int(political_id),
-                                              section__neighborhood__county__state=region_id)
+        votes_queryset = VotesInNeighborhood.objects.filter(political_id=int(political_id),
+                                                neighborhood__county__state=region_id)
 
 
         county_filter = County.objects.filter(
@@ -432,21 +432,21 @@ class PoliticalStateVotesAV(APIView):
         ).values('id')
         
         total_candidate_votes_queryset = votes_queryset \
-            .values('section__neighborhood__county__name')\
+            .values('neighborhood__county__name')\
             .annotate(total_votes=Sum('quantity'))
 
         total_votes = votes_queryset.aggregate(total=Sum('quantity'))['total']
 
-        total_state_votes_queryset = Votes.objects \
+        total_state_votes_queryset = VotesInNeighborhood.objects \
             .filter(
-                section__neighborhood__county_id__in=Subquery(county_filter),
+                neighborhood__county_id__in=Subquery(county_filter),
                 political_id__in=Subquery(political_filter),
             ) \
-            .values('section__neighborhood__county__name') \
+            .values('neighborhood__county__name') \
             .annotate(total=Sum('quantity'))
 
         total_state_votes_dict = {
-            item['section__neighborhood__county__name']: item['total'] for item in total_state_votes_queryset}
+            item['neighborhood__county__name']: item['total'] for item in total_state_votes_queryset}
 
         total_place_votes = sum(total_state_votes_dict.values())
 
@@ -457,7 +457,7 @@ class PoliticalStateVotesAV(APIView):
 
         for vote in total_candidate_votes_queryset:
             total_value = vote['total_votes']
-            county_name = vote['section__neighborhood__county__name']
+            county_name = vote['neighborhood__county__name']
             total_state_votes = total_state_votes_dict[county_name]
 
             ruesp_can = round(total_value / total_votes, 6)

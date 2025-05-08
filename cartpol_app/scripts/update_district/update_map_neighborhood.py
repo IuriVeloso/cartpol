@@ -22,39 +22,53 @@ def request_section(string):
         return resp[0]
     return None
 
+@functools.lru_cache(maxsize=8192)
+def request_county(string):
+    resp = requests.get(string).json()
+    if len(resp) > 0:
+        return resp[0]["state"]
+    return None
 
-YEAR = 2024
+
+YEARS = [2016, 2018, 2020, 2022, 2024]
 
 
 def update_map_neighborhood(url):
-    with open(f"data/RIOINT{YEAR}.csv", 'r', encoding='utf-8') as f:
-        reader = csv.reader(f, delimiter=',', strict=True)
-        next(reader)
+    for year in YEARS:
+        print(f"\n\nAtualizando o ano {year}...\n")
+        with open(f"data/RIOINT{year}.csv", 'r', encoding='utf-8') as f:
+            reader = csv.reader(f, delimiter=',', strict=True)
+            next(reader)
 
-        for row in reader:
+            for row in reader:
 
-            county, zone_id, neighborhood, section, county_id, faltou = row[INDEX_MUNICIPIO], row[INDEX_ZONE_ID], row[INDEX_BAIRRO].strip(
-            ), str(row[INDEX_SECTION_ID]), row[INDEX_MUNICPIO_ID], row[INDEX_FALTOU]
+                county, zone_id, neighborhood, section, county_id, faltou = row[INDEX_MUNICIPIO], row[INDEX_ZONE_ID], row[INDEX_BAIRRO].strip(
+                ), str(row[INDEX_SECTION_ID]), row[INDEX_MUNICPIO_ID], row[INDEX_FALTOU]
 
-            if faltou == '1':
-                continue
+                if faltou == '1':
+                    continue
+                
+                county_has_id = request_county(
+                    f"{url}county?name={county}&tse_id={county_id}")
+                
+                if county_has_id != 1:
+                    continue
 
-            section_json = request_section(
-                f"{url}section/?identifier={section}&electoral_zone={zone_id}&county_tse_id={county_id}&year={YEAR}")
+                section_json = request_section(
+                    f"{url}section/?identifier={section}&electoral_zone={zone_id}&county_tse_id={county_id}&year={year}")
 
-            if section_json is None and isinstance(county_id, str):
-                print("\n\nErro na secao e foda")
-                print(county, zone_id, neighborhood, section, faltou)
-                continue
+                if section_json is None and isinstance(county_id, str):
+                    print("\n\nErro na secao e foda")
+                    print(county, zone_id, neighborhood, section, faltou)
+                    continue
 
-            data = {
-                "map_neighborhood": neighborhood
-            }
+                data = {
+                    "map_neighborhood": neighborhood
+                }
 
-            requests.put(
-                url + "neighborhood/" + str(section_json["neighborhood"]),
-                json=data,
-                headers=headers)
+                requests.put(
+                    url + "neighborhood/" + str(section_json["neighborhood"]),
+                    json=data,
+                    headers=headers)
 
-    print("\nTerminando de selecionar entidades de local, começando a \
-        atualizar a base...\n")
+        print("\nAno finalizado\n")

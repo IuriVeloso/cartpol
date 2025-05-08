@@ -47,6 +47,13 @@ def request_state(string):
         return resp[0]["id"]
     return None
 
+@functools.lru_cache(maxsize=8192)
+def request_political(string):
+    resp = requests.get(string).json()
+    if len(resp) > 0:
+        return resp[0]["id"]
+    return None
+
 
 DEZ_PRINCIPAIS_MUN = ['38490', '13897', '25313',
                       '02550', '71072', '41238', '60011', '75353', '88013']
@@ -76,8 +83,8 @@ ELECTION_ID = {
     },
     '2022': {
         'id': 1,
-        '6': 2,
-        '7': 1,
+        '6': 1,
+        '7': 2,
         '5': 3,
         '1': 14,
         '3': 15,
@@ -135,11 +142,15 @@ def post_politics(url, year):
                     political_dict["region_id"] = state
                 else:
                     continue
+                
+            political = request_political(
+                    f"{url}political/?political_code={row[INDEX_POLITICAL_NUMBER]}&full_name={row[INDEX_FULL_NAME].strip()}&year={year}")
 
             if int(political_dict["political_type"]) in CD_CARGO:
                 political_dict["political_type"] = ELECTION_ID[str(
                     year)][row[INDEX_CARGO]]
-                if contains_duplicates_political(political_dict, politics_array):
+                
+                if political is None and contains_duplicates_political(political_dict, politics_array):
                     politics_array.append(political_dict)
 
                 if contains_duplicates_political_party(political_dict["political_party"], political_party_array):
