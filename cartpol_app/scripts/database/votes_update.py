@@ -1,7 +1,7 @@
 import csv
 import functools
 from itertools import batched
-
+import re
 import requests
 
 CARGO_CODE = {
@@ -63,7 +63,7 @@ headers = {'Content-Type': 'application/json', 'Accept': 'application/json'}
 def post_votes(url, year):
     votes_array = []
 
-    with open(f'data/votacao_secao_{year}_MG.csv', 'r', encoding='utf-8') as f:
+    with open(f'data/votacao_secao_{year}_RSPRSC.csv', 'r', encoding='utf-8') as f:
         print("Começando a selecionar votos")
 
         reader = csv.reader(f, delimiter=',', strict=True)
@@ -73,7 +73,7 @@ def post_votes(url, year):
         next(reader)
 
         for row in reader:
-            if row[INDEX_CANDIDATE_ID] in ['95', '96'] or row[INDEX_CD_TIPO_ELEICAO] == '1' or row[INDEX_ROUND] != '1' or (len(row[INDEX_ELECTION_CODE]) == 2 and row[INDEX_CARGO] not in allowed_code_len_2_cargo_ids):
+            if row[INDEX_CANDIDATE_ID] in ['95', '96'] or row[INDEX_CD_TIPO_ELEICAO] == '1' or row[INDEX_ROUND] != '1' or (len(row[INDEX_ELECTION_CODE]) == 2 and row[INDEX_CARGO] not in allowed_code_len_2_cargo_ids) or row[INDEX_COUNTY_ID] == '85391':
                 continue
 
             votes, name, candidate_id, county_id, zone_id, section_id, cargo = row[INDEX_VOTES], row[INDEX_NAME].strip(), row[

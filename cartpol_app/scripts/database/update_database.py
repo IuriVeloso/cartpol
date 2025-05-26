@@ -29,7 +29,7 @@ shouldRunPolitics = shouldRunAll or shouldRun == 'p'
 shouldRunVotes = shouldRunAll or shouldRun == 'v'
 
 startTime = datetime.datetime.now()
-year = 2024
+year = 2020
 firstRun = False
 print(f"\nStarted script running at {startTime}\n")
 

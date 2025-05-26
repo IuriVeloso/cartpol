@@ -1,7 +1,7 @@
 import csv
 import functools
 from itertools import batched
-
+import re
 import requests
 
 from cartpol_app.scripts.database.helpers import (
@@ -103,7 +103,7 @@ def post_politics(url, year):
     politics_array = []
     political_party_array = []
 
-    with open(f'data/votacao_candidato_munzona_MG_{year}.csv', 'r', encoding='utf-8') as f:
+    with open(f'data/votacao_candidato_munzona_{year}_RSPRSC.csv', 'r', encoding='utf-8') as f:
         print("Começando a selecionar partidos e candidatos")
 
         reader = csv.reader(f, delimiter=',', strict=True)

@@ -1,12 +1,15 @@
-from django.db.models import Sum
-from cartpol_app.models import VotesInNeighborhood, Political, Neighborhood, Votes
+from django.db.models import Sum, Subquery, Q
+from cartpol_app.models import VotesInNeighborhood, Political, Neighborhood, Votes, County
 
 def populate_votes_in_neighborhood():
     # Primeiro deleta os registros existentes (opcional)
-    VotesInNeighborhood.objects.all().delete()
+    # VotesInNeighborhood.objects.all().delete()
     
     # Para cada Political
-    for politic in Political.objects.all():
+    county_list = County.objects.filter(id=1).values('id')
+    politics_list = Political.objects.filter(Q(region_id__in=Subquery(county_list)) & Q(election__id=5))
+                                            #  | (Q(region='state') & Q(region_id=10)))
+    for politic in politics_list:
         # Agrega votos por bairro usando as relações
         votes_data = (
             Votes.objects

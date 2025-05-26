@@ -94,7 +94,7 @@ def request_state(string):
 def locals_update(url, year, firstRun):
     print("Começando a selecionar locais de votacao, bairros e secao")
 
-    with open(f'data/local_votacao_MG_{year}.csv', 'r', encoding='utf-8') as f:
+    with open(f'data/local_votacao_{year}_RSPRSC.csv', 'r', encoding='utf-8') as f:
         section_array = []
         neighborhood_array = []
         electoral_zones_array = []
