@@ -1,44 +1,141 @@
-Para rodar, usar:
+# CartPol
 
+CartPol é uma plataforma para gerenciamento e análise de dados, utilizando Django e PostgreSQL. Este README contém instruções para configuração, execução, atualização de dependências, manipulação do banco de dados e deploy na Heroku.
+
+## Sumário
+
+- [Pré-requisitos](#pré-requisitos)
+- [Instalação](#instalação)
+- [Configuração do Banco de Dados](#configuração-do-banco-de-dados)
+- [Executando o Projeto](#executando-o-projeto)
+- [Atualizando Dependências](#atualizando-dependências)
+- [Resetando o Banco de Dados](#resetando-o-banco-de-dados)
+- [Deploy na Heroku](#deploy-na-heroku)
+- [Utilitários](#utilitários)
+- [Exportação e Importação de Dados](#exportação-e-importação-de-dados)
+- [Cidades](#cidades)
+
+---
+
+## Pré-requisitos
+
+- Python 3.x
+- PostgreSQL instalado e configurado
+- Git
+
+## Instalação
+
+Clone o repositório e instale as dependências:
+
+```bash
+git clone <url-do-repositorio>
+cd cartpol
+python3 -m venv menv
 source ./menv/bin/activate
+pip install -r requirements.txt
+```
 
+## Configuração do Banco de Dados
+
+1. **Instale o PostgreSQL** (caso ainda não tenha):
+
+   ```bash
+   sudo apt update
+   sudo apt install postgresql postgresql-contrib
+   ```
+
+2. **Acesse o terminal do PostgreSQL:**
+
+   ```bash
+   sudo -u postgres psql
+   ```
+
+3. **Crie o banco de dados e o usuário conforme o arquivo `settings.py`:**
+
+   ```sql
+   CREATE DATABASE cartpol_db_name;
+   CREATE USER cartpol_prod;
+   GRANT ALL PRIVILEGES ON DATABASE cartpol_db_name TO cartpol_prod;
+   ```
+
+   Para sair do terminal do PostgreSQL, digite:
+   ```
+   \q
+   ```
+
+4. **Configure as variáveis de ambiente conforme necessário** (caso queira sobrescrever valores do settings.py):
+
+   - `DB_PASSWORD`
+   - `SECRET_KEY`
+   - `PORT`
+
+   Você pode definir essas variáveis no seu terminal ou em um arquivo `.env`.
+
+---
+
+## Executando o Projeto
+
+Ative o ambiente virtual e rode o servidor de desenvolvimento:
+
+```bash
+source ./menv/bin/activate
 python3 manage.py runserver
 
-Para atualizar as dependencias, usar:
+```
 
+## Atualizando Dependências
+
+Para atualizar o pip:
+
+```bash
 python3 -m pip install --upgrade pip
+```
 
-Para resetar a database:
+Para instalar/atualizar dependências do projeto:
 
+```bash
+pip install -r requirements.txt
+```
+
+## Resetando o Banco de Dados
+
+Para limpar todos os dados do banco:
+
+```bash
 python3 manage.py flush
+```
 
-Ao resetar a database, é necessario tambem dar os comandos de `makemigrations` and `migrate`
+Após o flush, execute as migrações:
 
-#Setup do programa
+```bash
+python3 manage.py makemigrations
+python3 manage.py migrate
+```
 
-E necessario instalar o postgresql antes e criar um usuario apropriado para rodar o banco de dados
+## Deploy na Heroku
 
-pip install -r ./requirements.txt 
+Faça o push do código para a Heroku:
 
-#Subindo a plataforma
-
+```bash
 git push heroku main
+```
 
-Checar o link: https://devcenter.heroku.com/articles/git#deploy-your-code
+Mais informações: [Heroku Git Deploy](https://devcenter.heroku.com/articles/git#deploy-your-code)
 
-Comando para converter de latin-1 para utf-8
+
+<!--
+Comandos úteis para importação e exportação de dados:
+
+
+Converter arquivos de latin-1 para utf-8:
 
 iconv -f latin1 -t utf8 source_file.txt > target_file.txt
 
-Exportar dados do banco como Postgres
 
-pg_dump -Fc --no-acl --no-owner -h localhost -U cartpol_prod -d cartpol_db_name -f mydb.dump
+Exportar dados do banco PostgreSQL:
 
-heroku pg:backups:restore 'https://cartpol-database.s3.us-east-1.amazonaws.com/mydb.dump?response-content-disposition=inline&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEBMaCXVzLWVhc3QtMSJIMEYCIQCppDKTmt%2BMugf5He0BzutZS9Wx0wqq%2B8o8YzcHYheSHwIhAM6Gk9iNpGTLRYS36RFQCf9RjUgqvQBIog2Jb0RsR9hoKuQCCEwQARoMODcxNTg2NDA3OTM0IgyX1z3TM3oSgOa9nPwqwQI9hU6%2BQVI0APbS0%2FrspUMLBLPMo8GKumdCoBIjfWiTXu%2Bs5jtSNnD5ZUDxMEcLue%2F6UOFs25wSxdjaN88QPOt6rHKFBluY0MCQy75Ek%2B0bgjWbQ%2Bh3jQUtCpF%2B8OX6VAp%2BJcC0%2BQtXSw5lP3Wdn6TKJb%2Fpt2w9zbZHQw%2FRtOONBwZ64BFX%2BGw352DFGC7pO%2BODlhPe2%2BRbCPq18%2F7a%2B9IDGzE1mkI26d0d%2B0xv3OBHEMmfuODHjyu3FwpDWUeQrnEMpZEyN3qWS9dRGmg65hnY8%2BbKZdNIc8EWIDHmokAqwApJg0Cya%2BIIm7FJewZ2aPPgkl2Y0EcpdTBAeTESKaA6IYuvLUEszCMqK5mRm9cIhiH0fkxITUMikSrcIzAehbEotX70k2uhKV3MfmsMLwRWB7oKN7SvT4beG8yx2xkDfVAw7L6stwY6sgIdeN0fqdv5he9m59Sy3YbK9lsBZXQGMsRgw6PFMmaTrNSd2hbHV1bjZc2sJuxfyaVGfpUJ%2FC1gqPQjwiLkn316tEAdOC9akmiD4TDzlc5OLWnah2NKH%2FgM7Uii1nTMsRwJMA2upiatPVoQvJGC%2FmVa6fxoT9%2BrCE9da5ObrcImN9s4YKFfBf4TA2EqPmcfnxBk1A278nSbaSn6D%2FMF4MVkp89H1W6%2B7Daa32M0RsQedb2RqCAdS%2FVbcUTeROMaVLTsDPyYrjHztanryWbC2W%2F2t3ROOtFSwuu%2FpJ5djgcv7gd4KddYxtDsdwkgjzTNW1W4DMvkSK0KN0YJ7sTVRfIn88g8BkQqqgI0kPpqpR3uFNZIu0PLHt850Aq3%2B9JrVgoHJzT79WcuKt6Nl2HZideF%2FaE%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20240918T185229Z&X-Amz-SignedHeaders=host&X-Amz-Expires=10800&X-Amz-Credential=ASIA4V3UZEX7ASRAXHQ2%2F20240918%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=066437a2622d2cc4d45ccc0b2c265327644115ca394aede072a38ca502aebbc9' DATABASE_URL --app cartpol-api
+pg_dump -Fc --no-acl --no-owner -h localhost -U <usuario> -d <nome_do_banco> -f mydb.dump
 
-//
-Rio de Janeiro - 14
-Nova Iguaçu - 18
-Niterói - 5
-Caxias - 13
-São Gonçalo - 3
+heroku pg:backups:restore '{url}' DATABASE_URL --app cartpol-api
+
+-->
