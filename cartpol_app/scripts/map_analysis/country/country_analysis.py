@@ -13,11 +13,11 @@ total_cities_by_state = {
     'São Paulo': 645, 'Sergipe': 75, 'Tocantins': 139
 }
 
-shapefile = 'cartpol_app\scripts\map_analysis\country\BR_bairros_CD2022\BR_bairros_CD2022.shp'
+shapefile = 'cartpol_app\scripts\map_analysis\country\BR_bairros_CD2022.zip'
 print(f"Lendo o arquivo: {shapefile}...")
 
 try:
-    districts_gdf = gpd.read_file(shapefile)
+    districts_gdf = gpd.read_file(f"zip://{shapefile}")
     print("Arquivo lido com sucesso!")
 
     # Calcular quantas cidades por estado têm bairros cadastrados
