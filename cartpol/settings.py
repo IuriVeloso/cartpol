@@ -105,10 +105,10 @@ WSGI_APPLICATION = "cartpol.wsgi.application"
 # to simplify initial setup. Longer term it's recommended to use Postgres locally too.
 DATABASES = {
     "default": {
-        "ENGINE": "django.db.backends.postgresql_psycopg2",
+        "ENGINE": "django.db.backends.postgresql",
         "NAME": "cartpol_db_name",
-        "USER": "cartpol_prod",
-        "PASSWORD": "iuri300498",
+        "USER": "postgres",
+        "PASSWORD": "d30r04m88",
         "HOST": "localhost",
         "PORT": "5432",
     }
