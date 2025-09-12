@@ -19,6 +19,7 @@ numpy==2.0.0
 packaging==24.1
 pandas==2.2.2
 pillow==10.4.0
+psycopg2==2.9.9
 pycparser==2.22
 pydyf==0.11.0
 pyphen==0.15.0
