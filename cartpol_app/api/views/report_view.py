@@ -1,5 +1,5 @@
 from cartpol_app.scripts.report.run_report import run_report
-from cartpol_app.models import Political, Votes, County, Neighborhood
+from cartpol_app.models import Political, Votes, County, Neighborhood, VotesInNeighborhood
 from wsgiref.util import FileWrapper
 from django.template.loader import render_to_string
 from django.db.models import Sum, Subquery
@@ -15,23 +15,23 @@ class GenerateReportView(APIView):
         political = get_object_or_404(Political, pk=political_id)
         county_id = political.region_id
 
-        total_candidate_votes = Votes.objects\
+        total_candidate_votes = VotesInNeighborhood.objects\
             .filter(political_id=int(political_id))\
-            .values('section__neighborhood__name')\
+            .values('neighborhood__name')\
             .annotate(total_votes=Sum('quantity'))
 
-        total_votes = Votes.objects.filter(
+        total_votes = VotesInNeighborhood.objects.filter(
             political_id=int(political_id)).aggregate(Sum('quantity'))
 
-        total_neighborhoods_votes = Votes.objects \
+        total_neighborhoods_votes = VotesInNeighborhood.objects \
             .filter(political__political_type=political.political_type,
                     political__election=political.election,
                     political__region_id=political.region_id) \
-            .values('section__neighborhood__name') \
+            .values('neighborhood__name') \
             .annotate(total=Sum('quantity'))
 
         total_neighborhoods_votes_dict = {
-            item['section__neighborhood__name']: item['total'] for item in total_neighborhoods_votes}
+            item['neighborhood__name']: item['total'] for item in total_neighborhoods_votes}
 
         total_place_votes = sum(item['total']
                                 for item in total_neighborhoods_votes)
@@ -43,21 +43,21 @@ class GenerateReportView(APIView):
 
         for vote in total_candidate_votes:
             total_value = vote['total_votes']
-            section__neighborhood_name = vote['section__neighborhood__name']
-            total_neighborhood_votes = total_neighborhoods_votes_dict[section__neighborhood_name]
+            neighborhood_name = vote['neighborhood__name']
+            total_neighborhood_votes = total_neighborhoods_votes_dict[neighborhood_name]
 
             ruesp_can = round(total_value / total_political_votes, 6)
             rcan_uesp = round(total_value / total_neighborhood_votes, 6)
             ruesp = round(total_neighborhood_votes / total_place_votes, 6)
 
             votes_by_neighborhood.append({
-                'neighborhood': section__neighborhood_name,
+                'neighborhood': neighborhood_name,
                 'total_votes': total_value,
                 'rcan_uesp': rcan_uesp,
                 'ruesp_can': ruesp_can,
                 'ruesp':  ruesp
             })
-            data_adapted.append([section__neighborhood_name, total_value,
+            data_adapted.append([neighborhood_name, total_value,
                                 rcan_uesp, ruesp_can, ruesp])
 
         path = '/home/iurivfelix/TCC/cartpol/reports_generated/report' + \
@@ -88,51 +88,56 @@ class GenerateReportView(APIView):
             ).values('id')
         
         # Coletando queryset de votos por estado ou município
-                
         if should_search_state_id:
-            local_reference_name = 'section__neighborhood__county__name'
+            local_reference_name = 'neighborhood__county__name'
             county_filter = County.objects.filter(state=should_search_state_id).values('id')
 
-            total_place_votes_queryset = Votes.objects \
+            total_place_votes_queryset = VotesInNeighborhood.objects \
                 .filter(
                     political_id__in=Subquery(political_filter),
-                    section__neighborhood__county_id__in=Subquery(county_filter)
+                    neighborhood__county_id__in=Subquery(county_filter)
                 ) \
                 .values(local_reference_name) \
                 .annotate(total=Sum('quantity')) \
-                .order_by('-total')
-                
-            total_candidate_votes_queryset = Votes.objects \
+                .order_by('-total') 
+            print('parou aqui 1')
+
+            total_candidate_votes_queryset = VotesInNeighborhood.objects \
                 .filter(
                     political_id=political.id,
-                    section__neighborhood__county_id__in=Subquery(county_filter)
+                    neighborhood__county_id__in=Subquery(county_filter)
                 ) \
                 .values(local_reference_name) \
                 .annotate(total=Sum('quantity')) \
                 .order_by('-total')
+            print('parou aqui 2')
+
 
         if should_search_county_id:
-            local_reference_name = 'section__neighborhood__map_neighborhood'
+            local_reference_name = 'neighborhood__map_neighborhood'
             neighborhood_filter = Neighborhood.objects.filter(
                 county=should_search_county_id
             ).values('id')
             
-            total_place_votes_queryset = Votes.objects \
+            total_place_votes_queryset = VotesInNeighborhood.objects \
                 .filter(
                     political_id__in=Subquery(political_filter),
-                    section__neighborhood_id__in=Subquery(neighborhood_filter)
+                    neighborhood_id__in=Subquery(neighborhood_filter)
                 ) \
                 .values(local_reference_name) \
                 .annotate(total=Sum('quantity'))
+            print('parou aqui 3')
             
-            total_candidate_votes_queryset = Votes.objects\
+            total_candidate_votes_queryset = VotesInNeighborhood.objects\
                 .filter(
                     political_id=political.id,
-                    section__neighborhood_id__in=Subquery(neighborhood_filter)
+                    neighborhood_id__in=Subquery(neighborhood_filter)
                 ) \
                 .values(local_reference_name)\
                 .annotate(total=Sum('quantity'))\
                 .order_by('-total')
+            print('parou aqui 4')
+
                 
         # Calculando distribuição de votos por bairro ou municipio
         total_place_votes_dict = {
