@@ -100,7 +100,6 @@ class GenerateReportView(APIView):
                 .values(local_reference_name) \
                 .annotate(total=Sum('quantity')) \
                 .order_by('-total') 
-            print('parou aqui 1')
 
             total_candidate_votes_queryset = VotesInNeighborhood.objects \
                 .filter(
@@ -110,7 +109,6 @@ class GenerateReportView(APIView):
                 .values(local_reference_name) \
                 .annotate(total=Sum('quantity')) \
                 .order_by('-total')
-            print('parou aqui 2')
 
 
         if should_search_county_id:
@@ -126,7 +124,6 @@ class GenerateReportView(APIView):
                 ) \
                 .values(local_reference_name) \
                 .annotate(total=Sum('quantity'))
-            print('parou aqui 3')
             
             total_candidate_votes_queryset = VotesInNeighborhood.objects\
                 .filter(
@@ -136,7 +133,6 @@ class GenerateReportView(APIView):
                 .values(local_reference_name)\
                 .annotate(total=Sum('quantity'))\
                 .order_by('-total')
-            print('parou aqui 4')
 
                 
         # Calculando distribuição de votos por bairro ou municipio
