@@ -40,3 +40,5 @@ weasyprint==63.0
 webencodings==0.5.1
 whitenoise==6.7.0
 zopfli==0.2.3.post1
+geopandas>=0.14.0
+matplotlib>=3.8.0

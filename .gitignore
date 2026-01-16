@@ -32,6 +32,8 @@ media
 *.py[cod]
 *$py.class
 
+script_results/
+
 # Distribution / packaging
 .Python build/
 develop-eggs/
