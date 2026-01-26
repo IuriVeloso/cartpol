@@ -1,3 +1,5 @@
+import re
+from urllib.parse import quote
 from wsgiref.util import FileWrapper
 
 from django.db.models import Subquery, Sum
@@ -176,7 +178,8 @@ class GenerateReportView(APIView):
         # Gerando PDF
 
         font_config = FontConfiguration()
-        filename = f'Relatório Cartpol - {political.name}'
+        filename = (f'Relatorio Cartpol - {political.name} - {year} - '
+                    f'{political.political_type.name}')
 
         # Definindo termos dinâmicos baseados no contexto
         if should_search_state_id:
@@ -217,8 +220,16 @@ class GenerateReportView(APIView):
                        font_config=font_config)
         report = open(path, 'rb')
 
+        # Sanitizando o nome do arquivo removendo apenas caracteres inválidos
+        safe_filename = re.sub(r'[<>:"/\\|?*]', '', filename)
+        # Codificando para suportar caracteres acentuados (RFC 5987)
+        encoded_filename = quote(safe_filename.encode('utf-8'))
+
         # return render(request, './reports/pages/index.html', context=context)
         return HttpResponse(FileWrapper(report), headers={
             "Content-Type": "application/pdf",
-            "Content-Disposition": f'filename="{filename}.pdf"',
+            "Content-Disposition": (
+                f'attachment; filename="{safe_filename}.pdf"; '
+                f'filename*=UTF-8\'\'{encoded_filename}.pdf'
+            ),
         })
