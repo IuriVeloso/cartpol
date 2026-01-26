@@ -30,18 +30,17 @@ def request_county(string):
     return None
 
 
-YEARS = [2016, 2018, 2020, 2022, 2024]
+YEARS = [2016, 2020, 2024]
 
 
 def update_map_neighborhood(url):
     for year in YEARS:
         print(f"\n\nAtualizando o ano {year}...\n")
         with open(f"data/RIOINT{year}.csv", 'r', encoding='utf-8') as f:
-            reader = csv.reader(f, delimiter=',', strict=True)
+            reader = csv.reader(f, delimiter=';', strict=True)
             next(reader)
 
             for row in reader:
-
                 county, zone_id, neighborhood, section, county_id, faltou = row[INDEX_MUNICIPIO], row[INDEX_ZONE_ID], row[INDEX_BAIRRO].strip(
                 ), str(row[INDEX_SECTION_ID]), row[INDEX_MUNICPIO_ID], row[INDEX_FALTOU]
 
@@ -51,7 +50,7 @@ def update_map_neighborhood(url):
                 county_has_id = request_county(
                     f"{url}county?name={county}&tse_id={county_id}")
                 
-                if county_has_id != 1:
+                if county_has_id is None:
                     continue
 
                 section_json = request_section(

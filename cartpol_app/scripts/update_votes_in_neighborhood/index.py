@@ -1,14 +1,24 @@
-from django.db.models import Sum, Subquery, Q
-from cartpol_app.models import VotesInNeighborhood, Political, Neighborhood, Votes, County
+from django.db.models import Q, Subquery, Sum
+
+from cartpol_app.models import County, Political, Votes, VotesInNeighborhood
+
 
 def populate_votes_in_neighborhood():
     # Primeiro deleta os registros existentes (opcional)
     # VotesInNeighborhood.objects.all().delete()
-    
+
     # Para cada Political
-    county_list = County.objects.filter(id=1).values('id')
-    politics_list = Political.objects.filter(Q(region_id__in=Subquery(county_list)) & Q(election__id=5))
-                                            #  | (Q(region='state') & Q(region_id=10)))
+    # Lista de IDs de counties permitidos
+    allowed_county_ids = [
+        746
+    ]
+    county_list = County.objects.filter(
+        id__in=allowed_county_ids
+    ).values('id')
+    politics_list = Political.objects.filter(
+        Q(region_id__in=Subquery(county_list)) & Q(election__in=[2, 4, 5])
+        #  | (Q(region='state') & Q(region_id=10)))
+    )
     for politic in politics_list:
         # Agrega votos por bairro usando as relações
         votes_data = (
@@ -20,7 +30,7 @@ def populate_votes_in_neighborhood():
             )
             .annotate(total=Sum('quantity'))
         )
-        
+
         # Cria os registros na tabela VotesInNeighborhood
         bulk_create_list = []
         for item in votes_data:
@@ -31,7 +41,7 @@ def populate_votes_in_neighborhood():
                     quantity=item['total']
                 )
             )
-        
+
         # Bulk create para performance
         if bulk_create_list:
             VotesInNeighborhood.objects.bulk_create(bulk_create_list)

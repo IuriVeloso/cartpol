@@ -91,26 +91,36 @@ def request_state(string):
     return None
 
 
-def locals_update(url, year, firstRun):
+def locals_update(url, year):
     print("Começando a selecionar locais de votacao, bairros e secao")
 
-    with open(f'data/local_votacao_{year}_RSPRSC.csv', 'r', encoding='utf-8') as f:
+    with open(f'data/local_votacao_{year}_RJ.csv', 'r', encoding='utf-8') as f:
         section_array = []
         neighborhood_array = []
         electoral_zones_array = []
-        county_array = []
-        state_array = []
 
-        reader = csv.reader(f, delimiter=',', strict=True)
+        reader = csv.reader(f, delimiter=';', strict=True)
         next(reader)
 
         for row in reader:
             state, county, zone_id, neighborhood, tse_id, subdistrict = row[INDEX_STATE], row[
                 INDEX_MUNICIPIO], row[INDEX_ZONE_ID], row[INDEX_BAIRRO].strip(), row[INDEX_MUNICIPIO_ID], row[INDEX_SUBDISTRITO]
 
+            neighborhood_id = request_neighborhood(f"{url}neighborhood?county_tse_id="
+                                                   + tse_id
+                                                   + "&name="
+                                                   + neighborhood)
+
+            county_id = request_county(f"{url}county?tse_id={tse_id}")
+
+            if county_id is None:
+                print("CountyNotFound")
+                print(f"tse_id: {tse_id}, county: {county}, state: {state}")
+                raise Exception("CountyNotFound")
+
             section_dict = {
                 "identifier": row[INDEX_SECTION_ID],
-                "cep": row[INDEX_CEP],
+                "cep": row[INDEX_CEP] or "00000-000",
                 "address": str(row[INDEX_ADDRESS]).strip(),
                 "electoral_zone": zone_id,
                 "neighborhood": neighborhood,
@@ -119,88 +129,40 @@ def locals_update(url, year, firstRun):
                 "script_id": row[INDEX_LOCAL_ID],
             }
 
-            state_dict = {"name": state,
-                          "full_name": CD_STATE[state]}
             electoral_zones_dict = {
                 "identifier": zone_id,
                 "state": state,
                 "county_id": tse_id,
-                "county": county,
+                "county": county_id,
                 "year": year
             }
-            county_dict = {
-                "name": county, "state": state, "tse_id": tse_id}
+
             neighborhood_dict = {
                 "name": neighborhood,
                 "county_id": tse_id,
                 "county_name": county,
+                "county": county_id,
                 "state": state}
 
             section_array.append(section_dict)
 
-            neighborhood_id = request_neighborhood(f"{url}neighborhood?county_tse_id="
-                                                   + tse_id
-                                                   + "&name="
-                                                   + neighborhood)
-            
-            county_id = request_county(f"{url}county?tse_id={tse_id}")
-
-            if firstRun and contains_duplicates_state(state, state_array):
-                state_array.append(state_dict)
-
             if neighborhood_id is None and contains_duplicates_neighborhood(neighborhood, tse_id, neighborhood_array):
                 neighborhood_array.append(neighborhood_dict)
 
-            if county_id is None and contains_duplicates_county(tse_id, county_array):
-                county_array.append(county_dict)
-
             if contains_duplicates_electoral_zone(zone_id, state, tse_id, electoral_zones_array):
                 electoral_zones_array.append(electoral_zones_dict)
+    
     request_neighborhood.cache_clear()
     print("\nTerminando de selecionar entidades de local, começando a \
         atualizar a base...\n")
 
-    state_array_created = []
-    county_array_created = []
     neighborhood_array_created = []
     electoral_zones_array_created = []
 
-    print("\nInserindo estados\n")
-
-    for state in state_array:
-        response = requests.post(url + "state", data=state)
-        response_json = response.json()
-        state_array_created.append(response_json)
-
-    print("\nInserindo municipios\n")
-
-    for county in county_array:
-        state_id = request_state(f"{url}state?name="
-                                 + county["state"])
-
-        if state_id is not None:
-            county["state"] = state_id
-        else:
-            print("StateNotFound")
-            print(county)
-            raise Exception("StateNotFound")
-        response = requests.post(url + "county", data=county)
-        response_json = response.json()
-        county_array_created.append(response_json)
-    request_state.cache_clear()
-
-    print(county_array_created.__len__(), "municipios criados")
-
-    print("\nMunicipios finalizados. Inserindo zonas eleitorais\n")
+    print("\nInserindo zonas eleitorais\n")
 
     for electoral_zone in electoral_zones_array:
-        search_url = (f"{url}county?state={electoral_zone['state']}" +
-                      f"&tse_id={electoral_zone['county_id']}")
-        county_id = request_county(search_url)
-
-        if county_id is not None:
-            electoral_zone["county"] = county_id
-        else:
+        if electoral_zone["county"] is None:
             print("CountyNotFound")
             print(electoral_zone)
             raise Exception("CountyNotFound")
@@ -213,14 +175,7 @@ def locals_update(url, year, firstRun):
           "zonas eleitorais criadas. Selecionando bairros")
 
     for neighborhood in neighborhood_array:
-        county_id = request_county(f"{url}county?state="
-                                   + neighborhood["state"]
-                                   + "&tse_id="
-                                   + neighborhood["county_id"])
-
-        if county_id is not None:
-            neighborhood["county"] = county_id
-        else:
+        if neighborhood["county"] is None:
             print("CountyNotFound")
             print(neighborhood)
             raise Exception("CountyNotFound")

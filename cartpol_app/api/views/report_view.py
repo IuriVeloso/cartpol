@@ -1,13 +1,16 @@
-from cartpol_app.scripts.report.run_report import run_report
-from cartpol_app.models import Political, Votes, County, Neighborhood, VotesInNeighborhood
 from wsgiref.util import FileWrapper
-from django.template.loader import render_to_string
-from django.db.models import Sum, Subquery
+
+from django.db.models import Subquery, Sum
 from django.http import HttpResponse
 from django.shortcuts import get_object_or_404, render
+from django.template.loader import render_to_string
 from rest_framework.views import APIView
-from weasyprint import HTML, CSS
+from weasyprint import CSS, HTML
 from weasyprint.text.fonts import FontConfiguration
+
+from cartpol_app.models import (County, Neighborhood, Political, Votes,
+                                VotesInNeighborhood)
+from cartpol_app.scripts.report.run_report import run_report
 
 
 class GenerateReportView(APIView):
@@ -69,28 +72,29 @@ class GenerateReportView(APIView):
         return HttpResponse(FileWrapper(report), content_type='application/pdf')
 
     def get(self, request, year, political_id):
-        
+
         # Inicando variáveis
         votes_by_neighborhood = []
         total_candidate_votes_queryset = []
         total_place_votes_queryset = []
-        
+
         local_reference_name = ''
-        
+
         should_search_state_id = request.query_params.get('state_id', False)
         should_search_county_id = request.query_params.get('county_id', False)
-                
+
         political = get_object_or_404(Political, pk=political_id)
-        
+
         political_filter = Political.objects.filter(
-                political_type=political.political_type,
-                election=political.election
-            ).values('id')
-        
+            political_type=political.political_type,
+            election=political.election
+        ).values('id')
+
         # Coletando queryset de votos por estado ou município
         if should_search_state_id:
             local_reference_name = 'neighborhood__county__name'
-            county_filter = County.objects.filter(state=should_search_state_id).values('id')
+            county_filter = County.objects.filter(
+                state=should_search_state_id).values('id')
 
             total_place_votes_queryset = VotesInNeighborhood.objects \
                 .filter(
@@ -99,7 +103,7 @@ class GenerateReportView(APIView):
                 ) \
                 .values(local_reference_name) \
                 .annotate(total=Sum('quantity')) \
-                .order_by('-total') 
+                .order_by('-total')
 
             total_candidate_votes_queryset = VotesInNeighborhood.objects \
                 .filter(
@@ -110,13 +114,12 @@ class GenerateReportView(APIView):
                 .annotate(total=Sum('quantity')) \
                 .order_by('-total')
 
-
         if should_search_county_id:
             local_reference_name = 'neighborhood__map_neighborhood'
             neighborhood_filter = Neighborhood.objects.filter(
                 county=should_search_county_id
             ).values('id')
-            
+
             total_place_votes_queryset = VotesInNeighborhood.objects \
                 .filter(
                     political_id__in=Subquery(political_filter),
@@ -124,7 +127,7 @@ class GenerateReportView(APIView):
                 ) \
                 .values(local_reference_name) \
                 .annotate(total=Sum('quantity'))
-            
+
             total_candidate_votes_queryset = VotesInNeighborhood.objects\
                 .filter(
                     political_id=political.id,
@@ -134,20 +137,19 @@ class GenerateReportView(APIView):
                 .annotate(total=Sum('quantity'))\
                 .order_by('-total')
 
-                
         # Calculando distribuição de votos por bairro ou municipio
         total_place_votes_dict = {
             item[local_reference_name]: {
                 'total': item['total'],
                 'order': index+1,
-                } for index, item in enumerate(total_place_votes_queryset)}
-        
+            } for index, item in enumerate(total_place_votes_queryset)}
+
         total_place_votes = sum(item['total']
                                 for item in total_place_votes_dict.values())
-        
+
         total_candidate_votes = total_candidate_votes_queryset\
             .aggregate(Sum('total'))['total__sum']
-       
+
         for vote in total_candidate_votes_queryset:
             total_value = vote['total']
             local_name = vote[local_reference_name]
@@ -165,39 +167,58 @@ class GenerateReportView(APIView):
                 'ruesp': round(ruesp*100, 2),
                 'ruesp_position': total_place_votes_dict[local_name]['order']
             })
-            
-        top15rcan_uesp = sorted(votes_by_neighborhood, key=lambda x: x['rcan_uesp'], reverse=True)[:15]
-        top15ruesp_can = sorted(votes_by_neighborhood, key=lambda x: x['ruesp_can'], reverse=True)[:15]
-                
+
+        top15rcan_uesp = sorted(votes_by_neighborhood,
+                                key=lambda x: x['rcan_uesp'], reverse=True)[:15]
+        top15ruesp_can = sorted(votes_by_neighborhood,
+                                key=lambda x: x['ruesp_can'], reverse=True)[:15]
+
         # Gerando PDF
-        
+
         font_config = FontConfiguration()
         filename = f'Relatório Cartpol - {political.name}'
-        
+
+        # Definindo termos dinâmicos baseados no contexto
+        if should_search_state_id:
+            territory_name = "município"
+            parent_territory_name = "estado"
+            territory_label = "MUNICÍPIO"
+        elif should_search_county_id:
+            territory_name = "bairro"
+            parent_territory_name = "município"
+            territory_label = "BAIRRO"
+        else:
+            # Fallback para o caso padrão (bairro)
+            territory_name = "bairro"
+            parent_territory_name = "município"
+            territory_label = "BAIRRO"
+
         context = {"name": political.name, "year": year,
                    "filename": filename,
                    "partido": political.political_party.name,
                    "political_type": political.political_type.name,
                    "top15rcan_uesp": top15rcan_uesp,
-                   "top15ruesp_can": top15ruesp_can}
+                   "top15ruesp_can": top15ruesp_can,
+                   "territory_name": territory_name,
+                   "parent_territory_name": parent_territory_name,
+                   "territory_label": territory_label}
 
         pdf_html = render_to_string(
             './reports/pages/index.html', context=context)
 
         html = HTML(string=pdf_html,
                     base_url=request.build_absolute_uri())
-        
+
         css = CSS(filename='./cartpol_app/api/templates/css/index.css',
                   font_config=font_config)
         path = './reports_generated/example.pdf'
 
-
         html.write_pdf(path, stylesheets=[css],
                        font_config=font_config)
         report = open(path, 'rb')
-        
+
         # return render(request, './reports/pages/index.html', context=context)
         return HttpResponse(FileWrapper(report), headers={
             "Content-Type": "application/pdf",
             "Content-Disposition": f'filename="{filename}.pdf"',
-            })
+        })

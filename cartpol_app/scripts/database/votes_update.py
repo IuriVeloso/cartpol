@@ -63,10 +63,10 @@ headers = {'Content-Type': 'application/json', 'Accept': 'application/json'}
 def post_votes(url, year):
     votes_array = []
 
-    with open(f'data/votacao_secao_{year}_RSPRSC.csv', 'r', encoding='utf-8') as f:
+    with open(f'data/votacao_secao_{year}_RJ.csv', 'r', encoding='utf-8') as f:
         print("Começando a selecionar votos")
 
-        reader = csv.reader(f, delimiter=',', strict=True)
+        reader = csv.reader(f, delimiter=';', strict=True)
         errors = 0
         allowed_code_len_2_cargo_ids = [CARGO_CODE['GOVERNADOR'], CARGO_CODE['PRESIDENTE']]
 

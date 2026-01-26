@@ -51,25 +51,25 @@
 				<br/>
 				<h2 class="report-subtitle-2">&#x2022; RUESP</h2>
 				<br class="small-margin"/>
-				<p class="report-text">&emsp;Este indicador é a porcentagem de votos totais de um bairro em relação ao total de votos do município. Ele também é acompanhado do ordinal entre parênteses que representa a posição relativa que aquele território ocupa no ranking de RUESP em relação aos seus territórios vizinhos. Em nossa plataforma é chamado de <i>% do bairro na cidade</i>, e sua fórmula é:</p>
+				<p class="report-text">&emsp;Este indicador é a porcentagem de votos totais de um {{ territory_name }} em relação ao total de votos do {{ parent_territory_name }}. Ele também é acompanhado do ordinal entre parênteses que representa a posição relativa que aquele território ocupa no ranking de RUESP em relação aos seus territórios vizinhos. Em nossa plataforma é chamado de <i>% do {{ territory_name }} no {{ parent_territory_name }}</i>, e sua fórmula é:</p>
 				<div class="equation center report-text">
 					RUESP =
 					 <div class="fraction">
-					 <span class="fup">quantidade total de votos no bairro</span>
+					 <span class="fup">quantidade total de votos no {{ territory_name }}</span>
 					 <span class="bar">/</span>
-					 <span class="fdn">quantidade total de votos no município</span>
+					 <span class="fdn">quantidade total de votos no {{ parent_territory_name }}</span>
 					 </div>
 				</div>
 			</div>
 		</div>
 		<div class="page container center">
 			<div class="report-table">
-				<h1 class="report-title-2"><br/>Percentual de votos do candidato em cada bairro - 15 maiores</h1>
+				<h1 class="report-title-2"><br/>Percentual de votos do candidato em cada {{ territory_name }} - 15 maiores</h1>
 				<br/>
 				<table class="report-text">
 					<tr>
 						<th class="first-column">
-							BAIRRO
+							{{ territory_label }}
 						</th>
 						<th>
 							RUESP_CAN. <img class="icon" alt="order" src="{% static "static/order_icon.svg" %}">
@@ -102,13 +102,13 @@
 		</div>
 		<div class="page container center">
 			<div class="report-table">
-				<h1 class="report-title-2"><br/>Percentual de votos do bairro que 
+				<h1 class="report-title-2"><br/>Percentual de votos do {{ territory_name }} que 
 					foram para o candidato - 15 maiores</h1>
 				<br/>
 				<table class="report-text">
 					<tr>
 						<th class="first-column">
-							BAIRRO
+							{{ territory_label }}
 						</th>
 						<th>
 							RCAN_UESP <img class="icon" alt="order" src="{% static "static/order_icon.svg" %}">

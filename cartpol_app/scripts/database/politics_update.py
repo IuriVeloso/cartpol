@@ -103,10 +103,10 @@ def post_politics(url, year):
     politics_array = []
     political_party_array = []
 
-    with open(f'data/votacao_candidato_munzona_{year}_RSPRSC.csv', 'r', encoding='utf-8') as f:
+    with open(f'data/votacao_candidato_munzona_{year}_RJ.csv', 'r', encoding='utf-8') as f:
         print("Começando a selecionar partidos e candidatos")
 
-        reader = csv.reader(f, delimiter=',', strict=True)
+        reader = csv.reader(f, delimiter=';', strict=True)
         next(reader)
 
         for row in reader:
