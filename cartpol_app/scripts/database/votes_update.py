@@ -60,10 +60,18 @@ ELETION_CODE = ['220', '426', '546', '297', '619']
 headers = {'Content-Type': 'application/json', 'Accept': 'application/json'}
 
 
-def post_votes(url, year):
+def post_votes(url, year, state='RJ'):
     votes_array = []
 
-    with open(f'data/votacao_secao_{year}_RJ.csv', 'r', encoding='utf-8') as f:
+    # Suporta tanto votacao_secao_2020_MG.csv quanto votacao_secao_MG_2024.csv
+    import os
+    candidates = [
+        f'data/votacao_secao_{year}_{state}.csv',
+        f'data/votacao_secao_{state}_{year}.csv',
+    ]
+    csv_path = next((p for p in candidates if os.path.exists(p)), candidates[0])
+
+    with open(csv_path, 'r', encoding='latin1') as f:
         print("Começando a selecionar votos")
 
         reader = csv.reader(f, delimiter=';', strict=True)

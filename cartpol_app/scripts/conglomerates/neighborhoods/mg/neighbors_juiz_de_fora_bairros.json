@@ -1,0 +1,592 @@
+{
+  "county": "Juiz de Fora",
+  "source_zip": "/home/iuri/TCC/cartpol-pwa/src/assets/maps/county/Juiz de Fora.zip",
+  "stats": {
+    "total_regions": 81,
+    "total_neighbors": 207,
+    "avg_neighbors": 5.111111111111111,
+    "max_neighbors": 15,
+    "min_neighbors": 1,
+    "isolated_regions": 0,
+    "region_most_neighbors": "Remonta",
+    "region_least_neighbors": "Floresta"
+  },
+  "neighbors": {
+    "Aeroporto": [
+      "Cascatinha",
+      "Novo Horizonte",
+      "Salvaterra",
+      "São Pedro",
+      "Teixeiras"
+    ],
+    "Represa": [
+      "Barreira do Triunfo",
+      "Remonta"
+    ],
+    "Centro": [
+      "Botanágua",
+      "Costa Carvalho",
+      "Granbery",
+      "Jardim Glória",
+      "Jardim Paineiras",
+      "Jardim Santa Helena",
+      "Manoel Honório",
+      "Mariano Procópio",
+      "Morro da Glória",
+      "Poço Rico",
+      "São Mateus",
+      "Vitorino Braga"
+    ],
+    "Cesário Alvim": [
+      "Botanágua",
+      "São Benedito",
+      "São Bernardo",
+      "Vitorino Braga"
+    ],
+    "Mundo Novo": [
+      "Alto dos Passos",
+      "Santa Cecília",
+      "Santa Luzia",
+      "São Mateus"
+    ],
+    "Mariano Procópio": [
+      "Centenário",
+      "Centro",
+      "Fábrica",
+      "Manoel Honório",
+      "Morro da Glória",
+      "Santa Catarina",
+      "Santa Terezinha",
+      "São Dimas",
+      "Vitorino Braga"
+    ],
+    "Centenário": [
+      "Manoel Honório",
+      "Mariano Procópio",
+      "Santa Terezinha"
+    ],
+    "Jardim Natal": [
+      "Barbosa Lage",
+      "Francisco Bernardino",
+      "Industrial",
+      "Jóckei Club"
+    ],
+    "Granbery": [
+      "Alto dos Passos",
+      "Bom Pastor",
+      "Centro",
+      "Ozanan",
+      "Poço Rico",
+      "São Mateus"
+    ],
+    "Morro do Imperador": [
+      "Borboleta",
+      "Dom Bosco",
+      "Jardim Glória",
+      "Jardim Paineiras",
+      "Jardim Santa Helena",
+      "Martelos",
+      "São Mateus",
+      "Vale do Ipê"
+    ],
+    "Ipiranga": [
+      "Santa Cecília",
+      "Santa Efigênia",
+      "Santa Luzia",
+      "São Geraldo",
+      "Teixeiras"
+    ],
+    "Bairu": [
+      "Bonfim",
+      "Manoel Honório",
+      "Progresso"
+    ],
+    "Santa Efigênia": [
+      "Ipiranga",
+      "Sagrado Coração de Jesus",
+      "Salvaterra",
+      "São Geraldo",
+      "Teixeiras"
+    ],
+    "Vila Ideal": [
+      "Bom Pastor",
+      "Graminha",
+      "Nossa Senhora de Lourdes",
+      "Santo Antônio do Paraibuna",
+      "Vila Olavo Costa"
+    ],
+    "Morro da Glória": [
+      "Centro",
+      "Fábrica",
+      "Jardim Glória",
+      "Jardim Santa Helena",
+      "Mariano Procópio",
+      "Santa Catarina"
+    ],
+    "Santa Rita de Cássia": [
+      "Bonfim",
+      "Linhares",
+      "Meggliolário",
+      "Progresso"
+    ],
+    "Bom Pastor": [
+      "Alto dos Passos",
+      "Boa Vista",
+      "Graminha",
+      "Granbery",
+      "Ozanan",
+      "Vila Ideal",
+      "Vila Olavo Costa"
+    ],
+    "São Bernardo": [
+      "Botanágua",
+      "Cesário Alvim",
+      "Costa Carvalho",
+      "Nossa Senhora de Lourdes",
+      "São Benedito"
+    ],
+    "Remonta": [
+      "Barbosa Lage",
+      "Barreira do Triunfo",
+      "Benfica",
+      "Cerâmica",
+      "Eldorado",
+      "Granjas Bethânia",
+      "Industrial",
+      "Jardim Bom Clima",
+      "Jóckei Club",
+      "Muçunge da Grama",
+      "Nova Era",
+      "Represa",
+      "Santa Cruz",
+      "São Dimas",
+      "Vale dos Bandeirantes"
+    ],
+    "Grajaú": [
+      "Linhares",
+      "Manoel Honório",
+      "Meggliolário",
+      "Vitorino Braga"
+    ],
+    "Santa Terezinha": [
+      "Centenário",
+      "Eldorado",
+      "Jardim Bom Clima",
+      "Manoel Honório",
+      "Mariano Procópio",
+      "Progresso",
+      "Vale dos Bandeirantes"
+    ],
+    "Barbosa Lage": [
+      "Jardim Natal",
+      "Jóckei Club",
+      "Nova Era",
+      "Remonta"
+    ],
+    "Industrial": [
+      "Cerâmica",
+      "Francisco Bernardino",
+      "Jardim Natal",
+      "Jóckei Club",
+      "Remonta"
+    ],
+    "Santa Luzia": [
+      "Alto dos Passos",
+      "Boa Vista",
+      "Bomba de Fogo",
+      "Graminha",
+      "Ipiranga",
+      "Mundo Novo",
+      "Santa Cecília",
+      "São Geraldo"
+    ],
+    "Botanágua": [
+      "Centro",
+      "Cesário Alvim",
+      "Costa Carvalho",
+      "Poço Rico",
+      "São Bernardo",
+      "Vitorino Braga"
+    ],
+    "Vale dos Bandeirantes": [
+      "Granjas Bethânia",
+      "Jardim Bom Clima",
+      "Muçunge da Grama",
+      "Progresso",
+      "Remonta",
+      "Santa Terezinha"
+    ],
+    "Alto dos Passos": [
+      "Boa Vista",
+      "Bom Pastor",
+      "Granbery",
+      "Mundo Novo",
+      "Santa Luzia",
+      "São Mateus"
+    ],
+    "Cerâmica": [
+      "Carlos Chagas",
+      "Esplanada",
+      "Francisco Bernardino",
+      "Fábrica",
+      "Industrial",
+      "Monte Castelo",
+      "Remonta",
+      "São Dimas"
+    ],
+    "Progresso": [
+      "Bairu",
+      "Bonfim",
+      "Linhares",
+      "Manoel Honório",
+      "Santa Rita de Cássia",
+      "Santa Terezinha",
+      "Vale dos Bandeirantes"
+    ],
+    "Dom Bosco": [
+      "Cascatinha",
+      "Morro do Imperador",
+      "São Mateus"
+    ],
+    "Nova Califórnia": [
+      "Cruzeiro de Santo Antônio",
+      "Novo Horizonte"
+    ],
+    "Francisco Bernardino": [
+      "Carlos Chagas",
+      "Cerâmica",
+      "Industrial",
+      "Jardim Natal"
+    ],
+    "Santa Cecília": [
+      "Ipiranga",
+      "Mundo Novo",
+      "Santa Luzia",
+      "São Mateus",
+      "Teixeiras"
+    ],
+    "São Mateus": [
+      "Alto dos Passos",
+      "Cascatinha",
+      "Centro",
+      "Dom Bosco",
+      "Granbery",
+      "Jardim Paineiras",
+      "Morro do Imperador",
+      "Mundo Novo",
+      "Santa Cecília",
+      "Teixeiras"
+    ],
+    "Graminha": [
+      "Barão do Retiro",
+      "Boa Vista",
+      "Bom Pastor",
+      "Bomba de Fogo",
+      "Santa Luzia",
+      "Santo Antônio do Paraibuna",
+      "São Geraldo",
+      "Vila Ideal"
+    ],
+    "Jardim Paineiras": [
+      "Centro",
+      "Jardim Santa Helena",
+      "Morro do Imperador",
+      "São Mateus"
+    ],
+    "Manoel Honório": [
+      "Bairu",
+      "Bonfim",
+      "Centenário",
+      "Centro",
+      "Grajaú",
+      "Mariano Procópio",
+      "Meggliolário",
+      "Progresso",
+      "Santa Terezinha",
+      "Vitorino Braga"
+    ],
+    "Monte Castelo": [
+      "Borboleta",
+      "Carlos Chagas",
+      "Cerâmica",
+      "Esplanada",
+      "Fábrica"
+    ],
+    "Vila Olavo Costa": [
+      "Bom Pastor",
+      "Nossa Senhora de Lourdes",
+      "Ozanan",
+      "Vila Furtado de Menezes",
+      "Vila Ideal"
+    ],
+    "Borboleta": [
+      "Fábrica",
+      "Martelos",
+      "Monte Castelo",
+      "Morro do Imperador",
+      "São Pedro",
+      "Vale do Ipê"
+    ],
+    "São Geraldo": [
+      "Graminha",
+      "Ipiranga",
+      "Sagrado Coração de Jesus",
+      "Santa Efigênia",
+      "Santa Luzia"
+    ],
+    "Ozanan": [
+      "Bom Pastor",
+      "Granbery",
+      "Poço Rico",
+      "Vila Furtado de Menezes",
+      "Vila Olavo Costa"
+    ],
+    "Santa Catarina": [
+      "Fábrica",
+      "Jardim Glória",
+      "Mariano Procópio",
+      "Morro da Glória",
+      "Vale do Ipê"
+    ],
+    "Bonfim": [
+      "Bairu",
+      "Manoel Honório",
+      "Meggliolário",
+      "Progresso",
+      "Santa Rita de Cássia"
+    ],
+    "Martelos": [
+      "Borboleta",
+      "Morro do Imperador",
+      "São Pedro"
+    ],
+    "Salvaterra": [
+      "Aeroporto",
+      "Novo Horizonte",
+      "Sagrado Coração de Jesus",
+      "Santa Efigênia",
+      "Teixeiras"
+    ],
+    "Fábrica": [
+      "Borboleta",
+      "Cerâmica",
+      "Esplanada",
+      "Mariano Procópio",
+      "Monte Castelo",
+      "Morro da Glória",
+      "Santa Catarina",
+      "São Dimas",
+      "Vale do Ipê"
+    ],
+    "Nova Era": [
+      "Barbosa Lage",
+      "Remonta",
+      "Santa Cruz"
+    ],
+    "Jardim Glória": [
+      "Centro",
+      "Jardim Santa Helena",
+      "Morro da Glória",
+      "Morro do Imperador",
+      "Santa Catarina",
+      "Vale do Ipê"
+    ],
+    "Linhares": [
+      "Grajaú",
+      "Meggliolário",
+      "Progresso",
+      "Santa Rita de Cássia",
+      "São Benedito",
+      "Vitorino Braga"
+    ],
+    "Jóckei Club": [
+      "Barbosa Lage",
+      "Industrial",
+      "Jardim Natal",
+      "Remonta"
+    ],
+    "Vale do Ipê": [
+      "Borboleta",
+      "Fábrica",
+      "Jardim Glória",
+      "Morro do Imperador",
+      "Santa Catarina"
+    ],
+    "São Pedro": [
+      "Aeroporto",
+      "Borboleta",
+      "Cruzeiro de Santo Antônio",
+      "Martelos",
+      "Novo Horizonte"
+    ],
+    "Vila Furtado de Menezes": [
+      "Nossa Senhora de Lourdes",
+      "Ozanan",
+      "Poço Rico",
+      "Vila Olavo Costa"
+    ],
+    "Muçunge da Grama": [
+      "Granjas Bethânia",
+      "Remonta",
+      "Vale dos Bandeirantes"
+    ],
+    "Sagrado Coração de Jesus": [
+      "Salvaterra",
+      "Santa Efigênia",
+      "São Geraldo"
+    ],
+    "Santo Antônio do Paraibuna": [
+      "Barão do Retiro",
+      "Graminha",
+      "Nossa Senhora de Lourdes",
+      "Vila Ideal"
+    ],
+    "Teixeiras": [
+      "Aeroporto",
+      "Cascatinha",
+      "Ipiranga",
+      "Salvaterra",
+      "Santa Cecília",
+      "Santa Efigênia",
+      "São Mateus"
+    ],
+    "Santa Cruz": [
+      "Benfica",
+      "Nova Era",
+      "Remonta"
+    ],
+    "Benfica": [
+      "Barreira do Triunfo",
+      "Remonta",
+      "Santa Cruz"
+    ],
+    "Cascatinha": [
+      "Aeroporto",
+      "Dom Bosco",
+      "São Mateus",
+      "Teixeiras"
+    ],
+    "Cruzeiro de Santo Antônio": [
+      "Nova Califórnia",
+      "Novo Horizonte",
+      "São Pedro"
+    ],
+    "Jardim Santa Helena": [
+      "Centro",
+      "Jardim Glória",
+      "Jardim Paineiras",
+      "Morro da Glória",
+      "Morro do Imperador"
+    ],
+    "Eldorado": [
+      "Jardim Bom Clima",
+      "Remonta",
+      "Santa Terezinha"
+    ],
+    "Carlos Chagas": [
+      "Cerâmica",
+      "Francisco Bernardino",
+      "Monte Castelo"
+    ],
+    "Costa Carvalho": [
+      "Botanágua",
+      "Centro",
+      "Nossa Senhora de Lourdes",
+      "Poço Rico",
+      "São Bernardo"
+    ],
+    "Novo Horizonte": [
+      "Aeroporto",
+      "Cruzeiro de Santo Antônio",
+      "Nova Califórnia",
+      "Salvaterra",
+      "São Pedro"
+    ],
+    "Floresta": [
+      "Barão do Retiro"
+    ],
+    "Jardim Bom Clima": [
+      "Eldorado",
+      "Remonta",
+      "Santa Terezinha",
+      "Vale dos Bandeirantes"
+    ],
+    "São Benedito": [
+      "Cesário Alvim",
+      "Linhares",
+      "São Bernardo",
+      "Vitorino Braga"
+    ],
+    "Nossa Senhora de Lourdes": [
+      "Costa Carvalho",
+      "Poço Rico",
+      "Santo Antônio do Paraibuna",
+      "São Bernardo",
+      "Vila Furtado de Menezes",
+      "Vila Ideal",
+      "Vila Olavo Costa"
+    ],
+    "Granjas Bethânia": [
+      "Muçunge da Grama",
+      "Remonta",
+      "Vale dos Bandeirantes"
+    ],
+    "Bomba de Fogo": [
+      "Graminha",
+      "Santa Luzia"
+    ],
+    "São Dimas": [
+      "Cerâmica",
+      "Fábrica",
+      "Mariano Procópio",
+      "Remonta"
+    ],
+    "Poço Rico": [
+      "Botanágua",
+      "Centro",
+      "Costa Carvalho",
+      "Granbery",
+      "Nossa Senhora de Lourdes",
+      "Ozanan",
+      "Vila Furtado de Menezes"
+    ],
+    "Vitorino Braga": [
+      "Botanágua",
+      "Centro",
+      "Cesário Alvim",
+      "Grajaú",
+      "Linhares",
+      "Manoel Honório",
+      "Mariano Procópio",
+      "São Benedito"
+    ],
+    "Meggliolário": [
+      "Bonfim",
+      "Grajaú",
+      "Linhares",
+      "Manoel Honório",
+      "Santa Rita de Cássia"
+    ],
+    "Barreira do Triunfo": [
+      "Benfica",
+      "Remonta",
+      "Represa"
+    ],
+    "Boa Vista": [
+      "Alto dos Passos",
+      "Bom Pastor",
+      "Graminha",
+      "Santa Luzia"
+    ],
+    "Esplanada": [
+      "Cerâmica",
+      "Fábrica",
+      "Monte Castelo"
+    ],
+    "Barão do Retiro": [
+      "Floresta",
+      "Graminha",
+      "Santo Antônio do Paraibuna"
+    ]
+  }
+}

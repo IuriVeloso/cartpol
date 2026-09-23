@@ -1,0 +1,26 @@
+﻿municipio,qe,political_id,candidato,full_name,partido,genero,total_votes,concentracao_final,interpretation,total_conglomerates,municipios_map_file,unmatched_in_csv
+BELFORD ROXO,9454.0,634746,MARKINHO GANDRA,MARCO AURELIO DE ALMEIDA GANDRA,UNIÃO,masculino,5193,0.6957,media_alta,1,neighbors_belford_roxo_bairros.json,False
+BELFORD ROXO,9454.0,634941,SIDNEY CANELLA,SIDNEY CORREIA,UNIÃO,masculino,4140,0.6868,media_alta,1,neighbors_belford_roxo_bairros.json,False
+BELFORD ROXO,9454.0,629344,JULIO PIU,JULIO CESAR LAURINDO DE LIMA,AGIR,masculino,4042,0.7474,media_alta,1,neighbors_belford_roxo_bairros.json,False
+BELFORD ROXO,9454.0,640883,TEIXEIRA DO CARVÃO,ALEXANDRO TEIXEIRA SILVA,REPUBLICANOS,masculino,3934,0.6957,media_alta,1,neighbors_belford_roxo_bairros.json,False
+BELFORD ROXO,9454.0,643506,HENRIQUE FAROFA,HENRIQUE REZENDE PINHEIRO,PL,masculino,3596,0.7552,alta,1,neighbors_belford_roxo_bairros.json,False
+BELFORD ROXO,9454.0,640519,ARMANDINHO PENÉLIS,ARMANDO ROSA PENÉLIS,REPUBLICANOS,masculino,3498,0.7045,media_alta,1,neighbors_belford_roxo_bairros.json,False
+BELFORD ROXO,9454.0,644095,VITOR DO GELO,JOÃO VITOR DA SILVA,PSD,masculino,3268,0.6957,media_alta,1,neighbors_belford_roxo_bairros.json,False
+BELFORD ROXO,9454.0,644184,NUNA DO WAGUINHO,ALVARO CARDOSO JUNIOR,PSD,masculino,3186,0.7309,media_alta,1,neighbors_belford_roxo_bairros.json,False
+BELFORD ROXO,9454.0,643420,RODRIGO COM A FORÇA DO POVO,RODRIGO FERREIRA FRASCO,PL,masculino,3180,0.7133,media_alta,1,neighbors_belford_roxo_bairros.json,False
+BELFORD ROXO,9454.0,640886,AMIGO BINHO,ROBSON DA SILVA SARMENTO,REPUBLICANOS,masculino,3080,0.452,media_baixa,3,neighbors_belford_roxo_bairros.json,False
+BELFORD ROXO,9454.0,634848,DUDU CANELLA,CARLOS EDUARDO DA SILVA,UNIÃO,masculino,3004,0.4849,media_baixa,2,neighbors_belford_roxo_bairros.json,False
+BELFORD ROXO,9454.0,640752,MATHEUS IGUAL A VOCÊ,MATHEUS RICARDO DA SILVA DE OLIVEIRA,REPUBLICANOS,masculino,2993,0.4461,media_baixa,4,neighbors_belford_roxo_bairros.json,False
+BELFORD ROXO,9454.0,634596,ANDRÉ FEIJÃO,ANDRÉ DE OLIVEIRA FERREIRA,PDT,masculino,2939,0.7133,media_alta,1,neighbors_belford_roxo_bairros.json,False
+BELFORD ROXO,9454.0,640640,MARCELO IRINEU,MARCELO IRINEU DA SILVA,REPUBLICANOS,masculino,2912,0.6681,media_alta,1,neighbors_belford_roxo_bairros.json,False
+BELFORD ROXO,9454.0,642609,FILIPPE JESUS,LUIS FILIPPE DE JESUS DA SILVA,PT,masculino,2905,0.6776,media_alta,1,neighbors_belford_roxo_bairros.json,False
+BELFORD ROXO,9454.0,632433,TELMINHO,TELMO COSTA DA SILVA,PP,masculino,2755,0.5768,media,2,neighbors_belford_roxo_bairros.json,False
+BELFORD ROXO,9454.0,632925,REGINA DO VALTINHO,REGINA FERNANDES VIEIRA DIAS,PSDB,feminino,2639,0.5303,media,2,neighbors_belford_roxo_bairros.json,False
+BELFORD ROXO,9454.0,630425,RODRIGO GOMES,RODRIGO FERREIRA GOMES,MDB,masculino,2606,0.7045,media_alta,1,neighbors_belford_roxo_bairros.json,False
+BELFORD ROXO,9454.0,640751,TUNINHO MEDEIROS,ANTÔNIO RUBEM MEDEIROS JUNIOR,REPUBLICANOS,masculino,2605,0.6582,media_alta,2,neighbors_belford_roxo_bairros.json,False
+BELFORD ROXO,9454.0,629345,DUDINO,EVERTTON MENESES DA SILVA,AGIR,masculino,2483,0.763,alta,1,neighbors_belford_roxo_bairros.json,False
+BELFORD ROXO,9454.0,633850,JUNINHO DO PICA PAU,JULIO CESAR PEREIRA DE OLIVEIRA,SOLIDARIEDADE,masculino,2483,0.4886,media_baixa,2,neighbors_belford_roxo_bairros.json,False
+BELFORD ROXO,9454.0,629581,ALEX ABENÇOADO,ALEXSANDRO PEREIRA DE SOUZA,AGIR,masculino,2458,0.722,media_alta,1,neighbors_belford_roxo_bairros.json,False
+BELFORD ROXO,9454.0,634843,ANGELO RAMOS ANJINHO,ANGELO LUIZ BAPTISTA RAMOS,UNIÃO,masculino,2452,0.5372,media,2,neighbors_belford_roxo_bairros.json,False
+BELFORD ROXO,9454.0,642608,IGO MENEZES,IGO ALENCAR DE MENEZES,PT,masculino,2401,0.722,media_alta,1,neighbors_belford_roxo_bairros.json,False
+BELFORD ROXO,9454.0,633016,RIBEIRO,LEMUEL RIBEIRO DE SOUZA,PSDB,masculino,1876,0.7552,alta,1,neighbors_belford_roxo_bairros.json,False

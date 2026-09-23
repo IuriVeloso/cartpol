@@ -1,0 +1,22 @@
+﻿municipio,qe,political_id,candidato,full_name,partido,genero,total_votes,concentracao_final,interpretation,total_conglomerates,municipios_map_file,unmatched_in_csv
+NITERÓI,11911.0,291413,ANDRIGO,JORGE ANDRIGO DIAS DE CARVALHO,PDT,masculino,4783,0.5274,media,2,neighbors_niteroi_bairros.json,False
+NITERÓI,11911.0,288727,PROFESSOR TULIO,TULIO RABELO DE ALBUQUERQUE MOTA,PSOL,masculino,4534,0.7133,media_alta,1,neighbors_niteroi_bairros.json,False
+NITERÓI,11911.0,296062,RENATO CARIELLO,RENATO FERREIRA DE OLIVEIRA CARIELLO,PDT,masculino,4458,0.4618,media_baixa,5,neighbors_niteroi_bairros.json,False
+NITERÓI,11911.0,301562,PAULO VELASCO,PAULO FERNANDO GONÇALVES VELASCO,AVANTE,masculino,4378,0.4425,media_baixa,3,neighbors_niteroi_bairros.json,False
+NITERÓI,11911.0,288730,BENNY BRIOLLY,BENNIO AUGUSTO ROSA DA SILVA SANTOS,PSOL,feminino,4367,0.5353,media,2,neighbors_niteroi_bairros.json,False
+NITERÓI,11911.0,296568,CAL,MILTON CARLOS DA SILVA LOPES,PP,masculino,4320,0.5767,media,4,neighbors_niteroi_bairros.json,False
+NITERÓI,11911.0,288560,VERONICA LIMA,VERONICA DOS SANTOS LIMA,PT,feminino,4220,0.5665,media,2,neighbors_niteroi_bairros.json,False
+NITERÓI,11911.0,299269,PAULO EDUARDO GOMES,PAULO EDUARDO GOMES,PSOL,masculino,3978,0.4813,media_baixa,2,neighbors_niteroi_bairros.json,False
+NITERÓI,11911.0,289747,LEANDRO PORTUGAL,LEANDRO PORTUGAL FRANZEN DE LIMA,PV,masculino,3838,0.6674,media_alta,2,neighbors_niteroi_bairros.json,False
+NITERÓI,11911.0,303885,GALLO,LUIZ CARLOS GALLO DE FREITAS,CIDADANIA,masculino,3597,0.5283,media,2,neighbors_niteroi_bairros.json,False
+NITERÓI,11911.0,288226,BETO DA PIPA,ROBERTO FERNANDES JALES,PL,masculino,3532,0.4679,media_baixa,4,neighbors_niteroi_bairros.json,False
+NITERÓI,11911.0,299734,FABIANO GONÇALVES,FABIANO GONÇALVES,CIDADANIA,masculino,3464,0.6868,media_alta,1,neighbors_niteroi_bairros.json,False
+NITERÓI,11911.0,296086,BINHO GUIMARÃES,ROBSON GUIMARÃES JOSÉ FILHO,PDT,masculino,2999,0.6776,media_alta,1,neighbors_niteroi_bairros.json,False
+NITERÓI,11911.0,295312,DR EMANUEL ROCHA,EMANUEL JORGE MENDES DA ROCHA,SOLIDARIEDADE,masculino,2956,0.4598,media_baixa,3,neighbors_niteroi_bairros.json,False
+NITERÓI,11911.0,296063,BOECHAT,CARLOS ROBERTO BOECHAT,PDT,masculino,2916,0.4513,media_baixa,4,neighbors_niteroi_bairros.json,False
+NITERÓI,11911.0,289640,LEONARDO GIORDANO,LEONARDO SOARES GIORDANO,PC do B,masculino,2676,0.5785,media,2,neighbors_niteroi_bairros.json,False
+NITERÓI,11911.0,308382,RODRIGO FARAH,RODRIGO FLACH FARAH,MDB,masculino,2632,0.6254,media_alta,2,neighbors_niteroi_bairros.json,False
+NITERÓI,11911.0,289452,DOUGLAS GOMES,DOUGLAS DE SOUZA GOMES,PTC,masculino,2416,0.5837,media,4,neighbors_niteroi_bairros.json,False
+NITERÓI,11911.0,291340,DANIEL MARQUES,DANIEL MARQUES FREDERICO,DEM,masculino,2411,0.4822,media_baixa,5,neighbors_niteroi_bairros.json,False
+NITERÓI,11911.0,288588,CASOTA,CARLOS OTAVIO DIAS VAZ,PSDB,masculino,1512,0.5458,media,3,neighbors_niteroi_bairros.json,False
+NITERÓI,11911.0,287923,FOLHA,JOSÉ ADRIANO VALLE DA COSTA,PSD,masculino,1362,0.6174,media,3,neighbors_niteroi_bairros.json,False

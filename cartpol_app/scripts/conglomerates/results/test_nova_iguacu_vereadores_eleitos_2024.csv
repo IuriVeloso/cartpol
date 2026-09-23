@@ -1,0 +1,24 @@
+﻿municipio,qe,political_id,candidato,full_name,partido,genero,total_votes,concentracao_final,interpretation,total_conglomerates,municipios_map_file,unmatched_in_csv
+NOVA IGUAÇU,18180.0,642820,VAGUINHO NEGUINHO,VAGNER MATEUS DOS SANTOS,PRD,masculino,13587,0.3909,media_baixa,5,neighbors_nova_iguacu_bairros.json,False
+NOVA IGUAÇU,18180.0,643099,MARCIO FONSECA,MARCIO LUIZ FONSECA LEAL,PRD,masculino,11571,0.652,media_alta,2,neighbors_nova_iguacu_bairros.json,False
+NOVA IGUAÇU,18180.0,633004,DR MANOEL BARRETO(MANOELZINHO),MANOEL BARRETO DE SOUZA OLIVEIRA LEITE,PL,masculino,11160,0.4893,media_baixa,2,neighbors_nova_iguacu_bairros.json,False
+NOVA IGUAÇU,18180.0,644857,ELTON CRISTO,ELTON CRISTO DA SILVA,PP,masculino,7770,0.5151,media,2,neighbors_nova_iguacu_bairros.json,False
+NOVA IGUAÇU,18180.0,644809,WESLEY LOPES,WESLEY AUGUSTO SOUZA LOPES,PSDB,masculino,7604,0.6532,media_alta,1,neighbors_nova_iguacu_bairros.json,False
+NOVA IGUAÇU,18180.0,644859,CLAUDINHO DA KOMBI,LUIS CLAUDIO MARQUES ROCHA,PP,masculino,7563,0.5151,media,2,neighbors_nova_iguacu_bairros.json,False
+NOVA IGUAÇU,18180.0,645211,CLAUDIO HAJA LUZ,CLAUDIO VALDEMIR DE OLIVEIRA MARQUES,REPUBLICANOS,masculino,6987,0.6509,media_alta,1,neighbors_nova_iguacu_bairros.json,False
+NOVA IGUAÇU,18180.0,644844,DOUTOR MARCIO GUERREIRO,MARCIO LUIS MARQUES GUIMARÃES,PP,masculino,6740,0.4375,media_baixa,2,neighbors_nova_iguacu_bairros.json,False
+NOVA IGUAÇU,18180.0,637941,DR ROBERTINHO,ROBERTO MACIEL REBOUÇAS,PDT,masculino,13070,0.5067,media,2,neighbors_nova_iguacu_bairros.json,False
+NOVA IGUAÇU,18180.0,636535,MANINHO DE CABUÇU,GERMANO SILVA DE OLIVEIRA,MDB,masculino,11774,0.3906,media_baixa,7,neighbors_nova_iguacu_bairros.json,False
+NOVA IGUAÇU,18180.0,640765,DOUGLAS NADAES,DOUGLAS NADAES CHAGAS DA SILVA,SOLIDARIEDADE,masculino,5832,0.4167,media_baixa,3,neighbors_nova_iguacu_bairros.json,False
+NOVA IGUAÇU,18180.0,637938,THADEU DO MARCOS FERNANDES,THADEU ALVES FERNANDES,PDT,masculino,11596,0.4477,media_baixa,4,neighbors_nova_iguacu_bairros.json,False
+NOVA IGUAÇU,18180.0,634384,MAURICIO MORAIS,MAURICIO MORAIS LOPES,PSD,masculino,5530,0.6552,media_alta,1,neighbors_nova_iguacu_bairros.json,False
+NOVA IGUAÇU,18180.0,644772,ALEXANDRE DA PADARIA,ALEXANDRE ROCHA DE AZEREDO,PSDB,masculino,5424,0.4899,media_baixa,2,neighbors_nova_iguacu_bairros.json,False
+NOVA IGUAÇU,18180.0,641120,ALCEMIR GOMES,ALCEMIR GOMES MOREIRA,SOLIDARIEDADE,masculino,5097,0.4086,media_baixa,5,neighbors_nova_iguacu_bairros.json,False
+NOVA IGUAÇU,18180.0,633152,IGOR PORTO,IGOR PORTO GAVAZZI,PL,masculino,4945,0.4734,media_baixa,3,neighbors_nova_iguacu_bairros.json,False
+NOVA IGUAÇU,18180.0,632921,BAIXINHO DA VAN,LEANDRO ALVES FERREIRA,PL,masculino,4933,0.4052,media_baixa,2,neighbors_nova_iguacu_bairros.json,False
+NOVA IGUAÇU,18180.0,644891,JEFERSON RAMOS,JEFERSON RAMOS DE OLIVEIRA,AVANTE,masculino,4726,0.4333,media_baixa,5,neighbors_nova_iguacu_bairros.json,False
+NOVA IGUAÇU,18180.0,645213,ROGÉRIO DO PNEU,ROGÉRIO TEIXEIRA,REPUBLICANOS,masculino,4611,0.6545,media_alta,1,neighbors_nova_iguacu_bairros.json,False
+NOVA IGUAÇU,18180.0,636493,JUAN SANTA CRUZ,JUAN PABLO SERRA DA SILVA,MDB,masculino,8914,0.4462,media_baixa,3,neighbors_nova_iguacu_bairros.json,False
+NOVA IGUAÇU,18180.0,640996,DANIELZINHO DA PADARIA,DANIEL EDUARDO DA SILVA JUNIOR,UNIÃO,masculino,4301,0.4817,media_baixa,2,neighbors_nova_iguacu_bairros.json,False
+NOVA IGUAÇU,18180.0,644879,CAMU,AGUINALDO BARBOZA PEIXOTO,AVANTE,masculino,3703,0.4529,media_baixa,4,neighbors_nova_iguacu_bairros.json,False
+NOVA IGUAÇU,18180.0,640766,MARCIO SIMPATIA,MARCIO CARLOS DE SOUZA,SOLIDARIEDADE,masculino,3670,0.5408,media,2,neighbors_nova_iguacu_bairros.json,False

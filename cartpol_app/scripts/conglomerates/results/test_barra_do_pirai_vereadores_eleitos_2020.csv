@@ -1,0 +1,12 @@
+﻿municipio,qe,political_id,candidato,full_name,partido,genero,total_votes,concentracao_final,interpretation,total_conglomerates,municipios_map_file,unmatched_in_csv
+BARRA DO PIRAÍ,4056.0,308177,ELVES,ELVES COSTA DOS SANTOS,CIDADANIA,masculino,1546,0.5332,media,4,neighbors_barra_do_pirai_bairros.json,False
+BARRA DO PIRAÍ,4056.0,305383,KÁTIA MIKI,KATIA CRISTINA MIKI DA SILVA,CIDADANIA,feminino,1507,0.528,media,6,neighbors_barra_do_pirai_bairros.json,False
+BARRA DO PIRAÍ,4056.0,301446,TOSTÃO,LUIZ ROBERTO COUTINHO,DEM,masculino,1437,0.5561,media,6,neighbors_barra_do_pirai_bairros.json,False
+BARRA DO PIRAÍ,4056.0,309521,PEDRINHO ADL,PEDRO FERNANDO DE SOUZA ALVES,REPUBLICANOS,masculino,1293,0.5133,media,5,neighbors_barra_do_pirai_bairros.json,False
+BARRA DO PIRAÍ,4056.0,302481,THIAGO SOARES,THIAGO FELIPE PONCIANO SOARES,PL,masculino,991,0.5327,media,9,neighbors_barra_do_pirai_bairros.json,False
+BARRA DO PIRAÍ,4056.0,309118,RAFAEL  COUTO,RAFAEL SANTOS COUTO,PL,masculino,967,0.5747,media,5,neighbors_barra_do_pirai_bairros.json,False
+BARRA DO PIRAÍ,4056.0,309522,JULIANO DA PADARIA,JULIANO BARBOSA DO REGO,REPUBLICANOS,masculino,835,0.5164,media,7,neighbors_barra_do_pirai_bairros.json,False
+BARRA DO PIRAÍ,4056.0,307894,BETO JABÁ,HUMBERTO RIBEIRO DA SILVA,PRTB,masculino,799,0.8284,alta,2,neighbors_barra_do_pirai_bairros.json,False
+BARRA DO PIRAÍ,4056.0,308257,PASTOR BRUM,JOSÉ LUIZ DE BRUM SABENÇA,DEM,masculino,791,0.5609,media,6,neighbors_barra_do_pirai_bairros.json,False
+BARRA DO PIRAÍ,4056.0,300510,ROSELI ENFERMEIRA,ROSELI BRAGA DE FIGUEIREDO,PATRIOTA,feminino,786,0.5784,media,5,neighbors_barra_do_pirai_bairros.json,False
+BARRA DO PIRAÍ,4056.0,309210,LUIZ CARLOS PAULISTA,LUIZ CARLOS GOMES,PATRIOTA,masculino,641,0.5054,media,5,neighbors_barra_do_pirai_bairros.json,False

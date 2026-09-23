@@ -1,0 +1,636 @@
+{
+  "county": "Angra dos Reis",
+  "source_zip": "/home/iuri/TCC/cartpol-pwa/src/assets/maps/county/Angra dos Reis.zip",
+  "stats": {
+    "total_regions": 112,
+    "total_neighbors": 198,
+    "avg_neighbors": 3.5357142857142856,
+    "max_neighbors": 13,
+    "min_neighbors": 1,
+    "isolated_regions": 0,
+    "region_most_neighbors": "Morro do Bulé",
+    "region_least_neighbors": "Caputera II"
+  },
+  "neighbors": {
+    "Praia do Jardim": [
+      "Marinas",
+      "Monte Castelo",
+      "Parque das Palmeiras",
+      "Praia da Chácara",
+      "Sapinhatuba I",
+      "Sapinhatuba III"
+    ],
+    "Portogalo": [
+      "Biscaia",
+      "Caetés",
+      "Maciéis",
+      "Paraíso"
+    ],
+    "Caputera II": [
+      "Morro do Moreno"
+    ],
+    "Jacuacanga": [
+      "Lambicada",
+      "Morro do Moreno",
+      "Praia do Machado",
+      "Vila da Petrobrás",
+      "Village Jacuacanga"
+    ],
+    "São Bento": [
+      "Centro",
+      "Colégio Naval",
+      "Morro do Abel"
+    ],
+    "Maciéis": [
+      "Biscaia",
+      "Ponta Leste",
+      "Portogalo",
+      "Terminal da Petrobrás"
+    ],
+    "Água Santa": [
+      "Vila da Petrobrás"
+    ],
+    "Praia da Chácara": [
+      "Balneário",
+      "Parque das Palmeiras",
+      "Praia do Jardim",
+      "Sapinhatuba I"
+    ],
+    "Cantagalo": [
+      "Cidade da Bíblia"
+    ],
+    "Camorim": [
+      "Camorim Pequeno",
+      "Praia do Machado"
+    ],
+    "Biscaia": [
+      "Maciéis",
+      "Paraíso",
+      "Ponta Leste",
+      "Portogalo"
+    ],
+    "Caputera I": [
+      "Morro do Moreno"
+    ],
+    "Monsuaba": [
+      "Paraíso",
+      "Vila da Petrobrás"
+    ],
+    "Morro do Perez": [
+      "Balneário",
+      "Morro da Fortaleza",
+      "Morro da Glória I",
+      "Morro do Bulé",
+      "Morro do Carmo",
+      "Morro do Tatu",
+      "Praia do Anil"
+    ],
+    "Morro da Glória II": [
+      "Balneário",
+      "Morro da Cruz",
+      "Morro da Glória I",
+      "Morro do Bulé",
+      "Parque das Palmeiras"
+    ],
+    "Tanguá": [
+      "Ponta da Ribeira",
+      "Vila Velha"
+    ],
+    "Garatucaia": [
+      "Caetés",
+      "Cidade da Bíblia"
+    ],
+    "Camorim Pequeno": [
+      "Camorim",
+      "Mombaça",
+      "Sapinhatuba III"
+    ],
+    "Caetés": [
+      "Garatucaia",
+      "Portogalo",
+      "Vila dos Pescadores"
+    ],
+    "Bonfim": [
+      "Colégio Naval",
+      "Ponta da Ribeira",
+      "Praia Grande",
+      "Retiro"
+    ],
+    "Balneário": [
+      "Morro da Glória I",
+      "Morro da Glória II",
+      "Morro do Perez",
+      "Morro do Tatu",
+      "Parque das Palmeiras",
+      "Praia da Chácara",
+      "Praia do Anil"
+    ],
+    "Terminal da Petrobrás": [
+      "Maciéis",
+      "Ponta Leste"
+    ],
+    "Praia do Machado": [
+      "Camorim",
+      "Jacuacanga",
+      "Lambicada"
+    ],
+    "Morro do Carmo": [
+      "Centro",
+      "Morro da Caixa D'água",
+      "Morro da Fortaleza",
+      "Morro do Bulé",
+      "Morro do Perez"
+    ],
+    "Mombaça": [
+      "Camorim Pequeno",
+      "Marinas",
+      "Sapinhatuba III"
+    ],
+    "Lambicada": [
+      "Jacuacanga",
+      "Morro do Moreno",
+      "Praia do Machado"
+    ],
+    "Morro do Moreno": [
+      "Caputera I",
+      "Caputera II",
+      "Jacuacanga",
+      "Lambicada",
+      "Vila da Petrobrás",
+      "Village Jacuacanga"
+    ],
+    "Praia Grande": [
+      "Bonfim",
+      "Ponta da Ribeira",
+      "Vila Velha"
+    ],
+    "Morro do Tatu": [
+      "Balneário",
+      "Morro do Perez",
+      "Praia do Anil"
+    ],
+    "Sapinhatuba I": [
+      "Areal",
+      "Campo Belo",
+      "Monte Castelo",
+      "Morro da Cruz",
+      "Parque das Palmeiras",
+      "Praia da Chácara",
+      "Praia do Jardim"
+    ],
+    "Praia do Anil": [
+      "Balneário",
+      "Centro",
+      "Morro da Fortaleza",
+      "Morro do Perez",
+      "Morro do Tatu"
+    ],
+    "Cidade da Bíblia": [
+      "Cantagalo",
+      "Garatucaia"
+    ],
+    "Parque das Palmeiras": [
+      "Balneário",
+      "Morro da Cruz",
+      "Morro da Glória II",
+      "Praia da Chácara",
+      "Praia do Jardim",
+      "Sapinhatuba I"
+    ],
+    "Morro da Carioca": [
+      "Centro",
+      "Morro do Abel",
+      "Morro do Bulé",
+      "Morro do Santo Antônio"
+    ],
+    "Morro da Glória I": [
+      "Balneário",
+      "Morro da Glória II",
+      "Morro do Bulé",
+      "Morro do Perez"
+    ],
+    "Vila Velha": [
+      "Ponta da Ribeira",
+      "Praia Grande",
+      "Tanguá"
+    ],
+    "Ponta Leste": [
+      "Biscaia",
+      "Maciéis",
+      "Terminal da Petrobrás"
+    ],
+    "Morro da Caixa D'água": [
+      "Centro",
+      "Morro do Bulé",
+      "Morro do Carmo",
+      "Morro do Santo Antônio"
+    ],
+    "Vila da Petrobrás": [
+      "Jacuacanga",
+      "Monsuaba",
+      "Morro do Moreno",
+      "Água Santa"
+    ],
+    "Colégio Naval": [
+      "Bonfim",
+      "Morro do Abel",
+      "Morro do Bulé",
+      "Ponta da Ribeira",
+      "Retiro",
+      "São Bento"
+    ],
+    "Morro do Abel": [
+      "Centro",
+      "Colégio Naval",
+      "Morro da Carioca",
+      "Morro do Bulé",
+      "São Bento"
+    ],
+    "Morro do Bulé": [
+      "Colégio Naval",
+      "Enseada",
+      "Morro da Caixa D'água",
+      "Morro da Carioca",
+      "Morro da Cruz",
+      "Morro da Glória I",
+      "Morro da Glória II",
+      "Morro do Abel",
+      "Morro do Carmo",
+      "Morro do Perez",
+      "Morro do Santo Antônio",
+      "Ponta do Sapê",
+      "Retiro"
+    ],
+    "Paraíso": [
+      "Biscaia",
+      "Monsuaba",
+      "Portogalo"
+    ],
+    "Marinas": [
+      "Mombaça",
+      "Praia do Jardim",
+      "Sapinhatuba III"
+    ],
+    "Morro da Fortaleza": [
+      "Centro",
+      "Morro do Carmo",
+      "Morro do Perez",
+      "Praia do Anil"
+    ],
+    "Sapinhatuba III": [
+      "Camorim Pequeno",
+      "Marinas",
+      "Mombaça",
+      "Monte Castelo",
+      "Praia do Jardim"
+    ],
+    "Monte Castelo": [
+      "Praia do Jardim",
+      "Sapinhatuba I",
+      "Sapinhatuba III"
+    ],
+    "Morro do Santo Antônio": [
+      "Centro",
+      "Morro da Caixa D'água",
+      "Morro da Carioca",
+      "Morro do Bulé"
+    ],
+    "Village Jacuacanga": [
+      "Jacuacanga",
+      "Morro do Moreno"
+    ],
+    "Vila dos Pescadores": [
+      "Caetés"
+    ],
+    "Centro": [
+      "Morro da Caixa D'água",
+      "Morro da Carioca",
+      "Morro da Fortaleza",
+      "Morro do Abel",
+      "Morro do Carmo",
+      "Morro do Santo Antônio",
+      "Praia do Anil",
+      "São Bento"
+    ],
+    "Lopes Mendes": [
+      "Ponta dos Castelhanos"
+    ],
+    "Enseada das Estrelas": [
+      "Guaxuma",
+      "Vila do Abraão"
+    ],
+    "Guaxuma": [
+      "Enseada das Estrelas",
+      "Freguesia de Santana"
+    ],
+    "Matariz": [
+      "Bananal",
+      "Enseada do Sítio Forte"
+    ],
+    "Enseada das Palmas": [
+      "Abraãozinho",
+      "Ponta dos Castelhanos"
+    ],
+    "Provetá": [
+      "Praia Vermelha da Ilha Grande"
+    ],
+    "Ponta dos Castelhanos": [
+      "Enseada das Palmas",
+      "Lopes Mendes"
+    ],
+    "Abraãozinho": [
+      "Enseada das Palmas",
+      "Vila do Abraão"
+    ],
+    "Praia Vermelha da Ilha Grande": [
+      "Araçatiba",
+      "Provetá"
+    ],
+    "Praia da Longa": [
+      "Araçatiba",
+      "Enseada do Sítio Forte"
+    ],
+    "Bananal": [
+      "Freguesia de Santana",
+      "Matariz"
+    ],
+    "Freguesia de Santana": [
+      "Bananal",
+      "Guaxuma"
+    ],
+    "Araçatiba": [
+      "Praia Vermelha da Ilha Grande",
+      "Praia da Longa"
+    ],
+    "Vila do Abraão": [
+      "Abraãozinho",
+      "Enseada das Estrelas"
+    ],
+    "Enseada do Sítio Forte": [
+      "Matariz",
+      "Praia da Longa"
+    ],
+    "Banqueta": [
+      "Areal",
+      "Nova Angra",
+      "Parque Belém"
+    ],
+    "Areal": [
+      "Banqueta",
+      "Campo Belo",
+      "Japuíba",
+      "Nova Angra",
+      "Sapinhatuba I"
+    ],
+    "Pontal": [
+      "Caieira",
+      "Gamboa do Belém",
+      "Ponta da Cruz",
+      "Ponta do Partido"
+    ],
+    "Morro da Cruz": [
+      "Campo Belo",
+      "Encruzo da Enseada",
+      "Enseada",
+      "Morro da Glória II",
+      "Morro do Bulé",
+      "Parque das Palmeiras",
+      "Sapinhatuba I"
+    ],
+    "Encruzo da Enseada": [
+      "Campo Belo",
+      "Enseada",
+      "Morro da Cruz",
+      "Vila Nova"
+    ],
+    "Usina Nuclear": [
+      "Piraquara",
+      "Praia Brava"
+    ],
+    "Parque Belém": [
+      "Banqueta",
+      "Divinéia",
+      "Gamboa do Belém",
+      "Japuíba",
+      "Nova Angra",
+      "Praia da Ribeira"
+    ],
+    "Nova Angra": [
+      "Areal",
+      "Banqueta",
+      "Campo Belo",
+      "Japuíba",
+      "Parque Belém"
+    ],
+    "Gamboa do Bracuí": [
+      "Grataú",
+      "Ilha do Jorge",
+      "Praia do Recife",
+      "Santa Rita do Bracuí"
+    ],
+    "Sertão de Itanema": [
+      "Ariró",
+      "Bracuí",
+      "Itanema",
+      "Reserva Indígena",
+      "Sertão do Bracuí"
+    ],
+    "Piraquara": [
+      "Porto Frade",
+      "Usina Nuclear"
+    ],
+    "Ponta da Cruz": [
+      "Caieira",
+      "Pontal"
+    ],
+    "Ilha do Jorge": [
+      "Bracuí",
+      "Gamboa do Bracuí",
+      "Praia do Recife",
+      "Santa Rita do Bracuí"
+    ],
+    "Ilha da Barra": [
+      "Ariró",
+      "Ponta do Partido"
+    ],
+    "Frade": [
+      "Grataú",
+      "Porto Frade"
+    ],
+    "Zungu": [
+      "Ariró",
+      "Serra D'Água"
+    ],
+    "Retiro": [
+      "Bonfim",
+      "Colégio Naval",
+      "Enseada",
+      "Morro do Bulé",
+      "Ponta da Ribeira",
+      "Ponta do Sapê"
+    ],
+    "Porto Frade": [
+      "Frade",
+      "Piraquara"
+    ],
+    "Reserva Indígena": [
+      "Sertão de Itanema",
+      "Sertão do Bracuí"
+    ],
+    "Praia do Recife": [
+      "Gamboa do Bracuí",
+      "Grataú",
+      "Ilha do Jorge"
+    ],
+    "Campo Belo": [
+      "Areal",
+      "Divinéia",
+      "Encruzo da Enseada",
+      "Japuíba",
+      "Morro da Cruz",
+      "Nova Angra",
+      "Sapinhatuba I",
+      "Vila Nova"
+    ],
+    "Santa Rita do Bracuí": [
+      "Bracuí",
+      "Gamboa do Bracuí",
+      "Ilha do Jorge",
+      "Sertão do Bracuí"
+    ],
+    "Sertão do Bracuí": [
+      "Bracuí",
+      "Reserva Indígena",
+      "Santa Rita do Bracuí",
+      "Sertão de Itanema"
+    ],
+    "Ariró": [
+      "Ilha da Barra",
+      "Ponta do Partido",
+      "Serra D'Água",
+      "Sertão de Itanema",
+      "Zungu"
+    ],
+    "Praia da Ribeira": [
+      "Divinéia",
+      "Gamboa do Belém",
+      "Parque Belém"
+    ],
+    "Gamboa do Belém": [
+      "Caieira",
+      "Parque Belém",
+      "Pontal",
+      "Praia da Ribeira"
+    ],
+    "Divinéia": [
+      "Campo Belo",
+      "Japuíba",
+      "Parque Belém",
+      "Praia da Ribeira",
+      "Vila Nova"
+    ],
+    "Enseada": [
+      "Encruzo da Enseada",
+      "Morro da Cruz",
+      "Morro do Bulé",
+      "Ponta do Sapê",
+      "Retiro"
+    ],
+    "Serra D'Água": [
+      "Ariró",
+      "Zungu"
+    ],
+    "Caieira": [
+      "Gamboa do Belém",
+      "Ponta da Cruz",
+      "Pontal"
+    ],
+    "Bracuí": [
+      "Ilha Comprida",
+      "Ilha do Jorge",
+      "Itanema",
+      "Santa Rita do Bracuí",
+      "Sertão de Itanema",
+      "Sertão do Bracuí"
+    ],
+    "Ponta do Partido": [
+      "Ariró",
+      "Ilha da Barra",
+      "Pontal"
+    ],
+    "Vila Nova": [
+      "Campo Belo",
+      "Divinéia",
+      "Encruzo da Enseada"
+    ],
+    "Ponta do Sapê": [
+      "Enseada",
+      "Morro do Bulé",
+      "Retiro"
+    ],
+    "Ilha Comprida": [
+      "Bracuí"
+    ],
+    "Japuíba": [
+      "Areal",
+      "Campo Belo",
+      "Divinéia",
+      "Nova Angra",
+      "Parque Belém"
+    ],
+    "Grataú": [
+      "Frade",
+      "Gamboa do Bracuí",
+      "Praia do Recife"
+    ],
+    "Ponta da Ribeira": [
+      "Bonfim",
+      "Colégio Naval",
+      "Praia Grande",
+      "Retiro",
+      "Tanguá",
+      "Vila Velha"
+    ],
+    "Itanema": [
+      "Bracuí",
+      "Sertão de Itanema"
+    ],
+    "Morro da Boa Vista": [
+      "Parque Mambucaba",
+      "Parque Perequê",
+      "Praia Brava",
+      "Vila Histórica de Mambucaba"
+    ],
+    "Praia Brava": [
+      "Morro da Boa Vista",
+      "Parque Mambucaba",
+      "Parque Perequê",
+      "Praia Vermelha",
+      "Usina Nuclear"
+    ],
+    "Vila Histórica de Mambucaba": [
+      "Morro da Boa Vista",
+      "Parque Perequê",
+      "Praia das Goiabas"
+    ],
+    "Parque Perequê": [
+      "Morro da Boa Vista",
+      "Parque Mambucaba",
+      "Praia Brava",
+      "Vila Histórica de Mambucaba"
+    ],
+    "Parque Mambucaba": [
+      "Morro da Boa Vista",
+      "Parque Perequê",
+      "Praia Brava"
+    ],
+    "Praia das Goiabas": [
+      "Praia Vermelha",
+      "Vila Histórica de Mambucaba"
+    ],
+    "Praia Vermelha": [
+      "Praia Brava",
+      "Praia das Goiabas"
+    ]
+  }
+}

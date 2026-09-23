@@ -1,0 +1,322 @@
+{
+  "county": "Macaé",
+  "source_zip": "/home/iuri/TCC/cartpol-pwa/src/assets/maps/county/Macaé.zip",
+  "stats": {
+    "total_regions": 43,
+    "total_neighbors": 110,
+    "avg_neighbors": 5.116279069767442,
+    "max_neighbors": 9,
+    "min_neighbors": 2,
+    "isolated_regions": 0,
+    "region_most_neighbors": "Barra de Macaé",
+    "region_least_neighbors": "Fronteira"
+  },
+  "neighbors": {
+    "Virgem Santa": [
+      "Ajuda de Cima",
+      "Aroeira",
+      "Barra de Macaé",
+      "Botafogo",
+      "Horto",
+      "Malvinas"
+    ],
+    "Costa do Sol": [
+      "Alto dos Cajueiros",
+      "Cajueiros",
+      "Imbetiba",
+      "Praia Campista",
+      "Sol Y Mar",
+      "Visconde de Araújo"
+    ],
+    "Barra de Macaé": [
+      "Ajuda de Baixo",
+      "Ajuda de Cima",
+      "Centro",
+      "Fronteira",
+      "Malvinas",
+      "Nova Esperança",
+      "Nova Holanda",
+      "Parque Aeroporto",
+      "Virgem Santa"
+    ],
+    "Vale Encantado": [
+      "Glória",
+      "Granja dos Cavaleiros",
+      "Horto",
+      "Lagoa"
+    ],
+    "Cabiúnas": [
+      "Ajuda de Cima",
+      "Engenho da Praia",
+      "Lagomar",
+      "Parque União",
+      "São José do Barreto"
+    ],
+    "Alto dos Cajueiros": [
+      "Cajueiros",
+      "Costa do Sol",
+      "Imbetiba"
+    ],
+    "Centro": [
+      "Aroeira",
+      "Barra de Macaé",
+      "Botafogo",
+      "Cajueiros",
+      "Imbetiba",
+      "Malvinas",
+      "Miramar",
+      "Visconde de Araújo"
+    ],
+    "Novo Cavaleiros": [
+      "Cavaleiros",
+      "Glória",
+      "Granja dos Cavaleiros",
+      "Praia do Pecado",
+      "São Marcos"
+    ],
+    "Fronteira": [
+      "Barra de Macaé",
+      "Parque Aeroporto"
+    ],
+    "Horto": [
+      "Aroeira",
+      "Botafogo",
+      "Glória",
+      "Imboassica",
+      "Jardim Santo Antônio",
+      "Jardim Vitória",
+      "Lagoa",
+      "Vale Encantado",
+      "Virgem Santa"
+    ],
+    "Glória": [
+      "Cancela Preta",
+      "Cavaleiros",
+      "Granja dos Cavaleiros",
+      "Horto",
+      "Jardim Santo Antônio",
+      "Jardim Vitória",
+      "Novo Cavaleiros",
+      "Vale Encantado"
+    ],
+    "Lagoa": [
+      "Granja dos Cavaleiros",
+      "Horto",
+      "Imboassica",
+      "Mirante da Lagoa",
+      "São Marcos",
+      "Vale Encantado"
+    ],
+    "Riviera Fluminense": [
+      "Cancela Preta",
+      "Novo Horizonte",
+      "Praia Campista",
+      "Sol Y Mar"
+    ],
+    "Cavaleiros": [
+      "Cancela Preta",
+      "Glória",
+      "Novo Cavaleiros",
+      "Praia Campista",
+      "Praia do Pecado"
+    ],
+    "Visconde de Araújo": [
+      "Cajueiros",
+      "Campo D' Oeste",
+      "Centro",
+      "Costa do Sol",
+      "Miramar",
+      "Sol Y Mar"
+    ],
+    "Aroeira": [
+      "Botafogo",
+      "Centro",
+      "Horto",
+      "Jardim Santo Antônio",
+      "Jardim Vitória",
+      "Miramar",
+      "Virgem Santa"
+    ],
+    "Ajuda de Cima": [
+      "Ajuda de Baixo",
+      "Barra de Macaé",
+      "Cabiúnas",
+      "Parque União",
+      "São José do Barreto",
+      "Virgem Santa"
+    ],
+    "Sol Y Mar": [
+      "Campo D' Oeste",
+      "Costa do Sol",
+      "Novo Horizonte",
+      "Praia Campista",
+      "Riviera Fluminense",
+      "Visconde de Araújo"
+    ],
+    "Imboassica": [
+      "Horto",
+      "Lagoa",
+      "Mirante da Lagoa"
+    ],
+    "São Marcos": [
+      "Granja dos Cavaleiros",
+      "Lagoa",
+      "Mirante da Lagoa",
+      "Novo Cavaleiros",
+      "Praia do Pecado"
+    ],
+    "Engenho da Praia": [
+      "Cabiúnas",
+      "Lagomar",
+      "São José do Barreto"
+    ],
+    "Lagomar": [
+      "Cabiúnas",
+      "Engenho da Praia",
+      "São José do Barreto"
+    ],
+    "Jardim Santo Antônio": [
+      "Aroeira",
+      "Glória",
+      "Horto",
+      "Jardim Vitória"
+    ],
+    "Nova Esperança": [
+      "Barra de Macaé",
+      "Malvinas",
+      "Nova Holanda"
+    ],
+    "São José do Barreto": [
+      "Ajuda de Cima",
+      "Cabiúnas",
+      "Engenho da Praia",
+      "Lagomar",
+      "Parque Atlântico",
+      "Parque União"
+    ],
+    "Malvinas": [
+      "Barra de Macaé",
+      "Botafogo",
+      "Centro",
+      "Nova Esperança",
+      "Virgem Santa"
+    ],
+    "Jardim Vitória": [
+      "Aroeira",
+      "Campo D' Oeste",
+      "Cancela Preta",
+      "Glória",
+      "Horto",
+      "Jardim Santo Antônio",
+      "Miramar"
+    ],
+    "Ajuda de Baixo": [
+      "Ajuda de Cima",
+      "Barra de Macaé",
+      "Parque Aeroporto",
+      "Parque Atlântico",
+      "Parque União"
+    ],
+    "Miramar": [
+      "Aroeira",
+      "Campo D' Oeste",
+      "Centro",
+      "Jardim Vitória",
+      "Visconde de Araújo"
+    ],
+    "Mirante da Lagoa": [
+      "Imboassica",
+      "Lagoa",
+      "Praia do Pecado",
+      "São Marcos"
+    ],
+    "Granja dos Cavaleiros": [
+      "Glória",
+      "Lagoa",
+      "Novo Cavaleiros",
+      "São Marcos",
+      "Vale Encantado"
+    ],
+    "Botafogo": [
+      "Aroeira",
+      "Centro",
+      "Horto",
+      "Malvinas",
+      "Virgem Santa"
+    ],
+    "Praia Campista": [
+      "Cancela Preta",
+      "Cavaleiros",
+      "Costa do Sol",
+      "Imbetiba",
+      "Riviera Fluminense",
+      "Sol Y Mar"
+    ],
+    "Imbetiba": [
+      "Alto dos Cajueiros",
+      "Cajueiros",
+      "Centro",
+      "Costa do Sol",
+      "Praia Campista"
+    ],
+    "Campo D' Oeste": [
+      "Cancela Preta",
+      "Jardim Vitória",
+      "Miramar",
+      "Novo Horizonte",
+      "Sol Y Mar",
+      "Visconde de Araújo"
+    ],
+    "Cancela Preta": [
+      "Campo D' Oeste",
+      "Cavaleiros",
+      "Glória",
+      "Jardim Vitória",
+      "Novo Horizonte",
+      "Praia Campista",
+      "Riviera Fluminense"
+    ],
+    "Parque Aeroporto": [
+      "Ajuda de Baixo",
+      "Barra de Macaé",
+      "Fronteira",
+      "Parque Atlântico"
+    ],
+    "Parque Atlântico": [
+      "Ajuda de Baixo",
+      "Parque Aeroporto",
+      "Parque União",
+      "São José do Barreto"
+    ],
+    "Praia do Pecado": [
+      "Cavaleiros",
+      "Mirante da Lagoa",
+      "Novo Cavaleiros",
+      "São Marcos"
+    ],
+    "Cajueiros": [
+      "Alto dos Cajueiros",
+      "Centro",
+      "Costa do Sol",
+      "Imbetiba",
+      "Visconde de Araújo"
+    ],
+    "Novo Horizonte": [
+      "Campo D' Oeste",
+      "Cancela Preta",
+      "Riviera Fluminense",
+      "Sol Y Mar"
+    ],
+    "Nova Holanda": [
+      "Barra de Macaé",
+      "Nova Esperança"
+    ],
+    "Parque União": [
+      "Ajuda de Baixo",
+      "Ajuda de Cima",
+      "Cabiúnas",
+      "Parque Atlântico",
+      "São José do Barreto"
+    ]
+  }
+}

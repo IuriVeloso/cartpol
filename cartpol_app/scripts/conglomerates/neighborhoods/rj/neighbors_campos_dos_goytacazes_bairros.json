@@ -1,0 +1,532 @@
+{
+  "county": "Campos dos Goytacazes",
+  "source_zip": "/home/iuri/TCC/cartpol-pwa/src/assets/maps/county/Campos dos Goytacazes.zip",
+  "stats": {
+    "total_regions": 78,
+    "total_neighbors": 180,
+    "avg_neighbors": 4.615384615384615,
+    "max_neighbors": 10,
+    "min_neighbors": 1,
+    "isolated_regions": 0,
+    "region_most_neighbors": "Parque Leopoldina",
+    "region_least_neighbors": "Parque Prazeres"
+  },
+  "neighbors": {
+    "da Penha": [
+      "Parque Bela Vista",
+      "Parque do Prado"
+    ],
+    "Parque Tarcísio Miranda": [
+      "Jardim Flamboyant II",
+      "Parque Fazenda Grande",
+      "Parque José do Patrocínio",
+      "Parque do Prado"
+    ],
+    "Parque Riachuelo": [
+      "Lapa",
+      "Parque Califórnia",
+      "Parque Oliveira Botelho"
+    ],
+    "Parque José do Patrocínio": [
+      "Jardim Flamboyant II",
+      "Parque Benta Pereira",
+      "Parque Jóckey Club",
+      "Parque Tarcísio Miranda",
+      "Parque Vista Alegre",
+      "Parque do Prado"
+    ],
+    "Jardim Carioca": [
+      "Parque Niterói",
+      "Parque Santo Antônio",
+      "Parque Vicente Gonçalves Dias"
+    ],
+    "Parque João Maria": [
+      "Ips",
+      "Parque Aurora",
+      "Parque Carlos de Lacerda",
+      "Parque Dr. Beda",
+      "Parque Fazenda Grande",
+      "Parque Fazendinha",
+      "Parque João Seixas"
+    ],
+    "Parque Turf Club": [
+      "Chácara João Ferreira",
+      "Jardim Flamboyant I",
+      "Parque Califórnia",
+      "Parque Fazenda Grande",
+      "Parque Fazendinha",
+      "Parque Oliveira Botelho",
+      "Parque Salo Brand"
+    ],
+    "Parque Tamandaré": [
+      "Jardim Maria de Queiroz",
+      "Parque Avenida Pelinca",
+      "Parque Conselheiro Tomaz Coelho",
+      "Parque Dom Bosco",
+      "Parque Leopoldina",
+      "Parque São Caetano"
+    ],
+    "Parque Bela Vista": [
+      "Parque do Prado",
+      "da Penha"
+    ],
+    "Parque Cidade Luz": [
+      "Parque Fundão",
+      "Parque Guarus",
+      "Parque São José"
+    ],
+    "Parque Pecuária": [
+      "Parque Corrientes",
+      "Parque Nova Brasília",
+      "Parque Quinze de Novembro",
+      "Parque São Clemente",
+      "Parque São Salvador"
+    ],
+    "Parque Nossa Senhora do Rosário": [
+      "Parque Alberto Torres",
+      "Parque Julião Nogueira",
+      "Parque Leopoldina",
+      "Parque São Salvador"
+    ],
+    "Vila Industrial": [
+      "Parque Eldorado",
+      "Parque São Silvestre"
+    ],
+    "Parque São Benedito": [
+      "Parque Dr. Beda",
+      "Parque Rui Barbosa"
+    ],
+    "Parque Julião Nogueira": [
+      "Parque Corrientes",
+      "Parque Leopoldina",
+      "Parque Nossa Senhora do Rosário",
+      "Parque Nova Brasília",
+      "Parque São Salvador"
+    ],
+    "Jardim Flamboyant II": [
+      "Jardim Flamboyant I",
+      "Parque Fazenda Grande",
+      "Parque José do Patrocínio",
+      "Parque Salo Brand",
+      "Parque Tarcísio Miranda"
+    ],
+    "Parque São Caetano": [
+      "Parque Dom Bosco",
+      "Parque Leopoldina",
+      "Parque Presidente Juscelino",
+      "Parque Santo Amaro",
+      "Parque Tamandaré"
+    ],
+    "Parque Quinze de Novembro": [
+      "Caju",
+      "Parque Conselheiro Tomaz Coelho",
+      "Parque Pecuária",
+      "Parque São Clemente",
+      "Sumaré"
+    ],
+    "Parque Conselheiro Tomaz Coelho": [
+      "Caju",
+      "Centro",
+      "Jardim Maria de Queiroz",
+      "Parque Alberto Torres",
+      "Parque Avenida Pelinca",
+      "Parque Leopoldina",
+      "Parque Quinze de Novembro",
+      "Parque Tamandaré",
+      "Sumaré"
+    ],
+    "Lapa": [
+      "Centro",
+      "Parque Oliveira Botelho",
+      "Parque Riachuelo"
+    ],
+    "Parque Bonsucesso": [
+      "Parque Bandeirantes",
+      "Parque Guarus",
+      "Parque Niterói",
+      "Parque Novo Mundo",
+      "Parque Presidente Vargas",
+      "Parque Santo Antônio",
+      "Parque São Mateus"
+    ],
+    "Jardim Flamboyant I": [
+      "Jardim Flamboyant II",
+      "Parque Fazenda Grande",
+      "Parque Salo Brand",
+      "Parque Turf Club"
+    ],
+    "Parque Carlos de Lacerda": [
+      "Parque Aurora",
+      "Parque João Maria",
+      "Parque João Seixas",
+      "Parque Rosário"
+    ],
+    "Parque Santo Antônio": [
+      "Jardim Carioca",
+      "Jardim Guarus",
+      "Parque Bonsucesso",
+      "Parque Guarus",
+      "Parque Niterói",
+      "Parque Vera Cruz"
+    ],
+    "Parque João Seixas": [
+      "Centro",
+      "Parque Carlos de Lacerda",
+      "Parque Fazendinha",
+      "Parque João Maria",
+      "Parque Rosário",
+      "Parque Santo Amaro"
+    ],
+    "Parque Bandeirantes": [
+      "Jardim Residencial Planície",
+      "Parque Bonsucesso",
+      "Parque Novo Mundo",
+      "Parque São Domingos"
+    ],
+    "Parque São Clemente": [
+      "Caju",
+      "Parque Alberto Torres",
+      "Parque Corrientes",
+      "Parque Pecuária",
+      "Parque Quinze de Novembro",
+      "Parque São Salvador",
+      "Sumaré"
+    ],
+    "Parque Leopoldina": [
+      "Jardim Maria de Queiroz",
+      "Parque Alberto Torres",
+      "Parque Conselheiro Tomaz Coelho",
+      "Parque Julião Nogueira",
+      "Parque Nossa Senhora do Rosário",
+      "Parque Presidente Juscelino",
+      "Parque São Caetano",
+      "Parque São Salvador",
+      "Parque Tamandaré",
+      "Parque dos Rodoviários"
+    ],
+    "Parque Fazendinha": [
+      "Centro",
+      "Chácara João Ferreira",
+      "Parque Fazenda Grande",
+      "Parque João Maria",
+      "Parque João Seixas",
+      "Parque Turf Club"
+    ],
+    "Parque Vera Cruz": [
+      "Jardim Guarus",
+      "Parque Fundão",
+      "Parque Santo Antônio"
+    ],
+    "Parque Niterói": [
+      "Jardim Carioca",
+      "Parque Alvorada",
+      "Parque Bonsucesso",
+      "Parque Presidente Vargas",
+      "Parque Santo Antônio",
+      "Parque Vicente Gonçalves Dias",
+      "Parque Zuza Mota"
+    ],
+    "Parque Santo Amaro": [
+      "Centro",
+      "Parque Aurora",
+      "Parque Avenida Pelinca",
+      "Parque Dom Bosco",
+      "Parque João Seixas",
+      "Parque Presidente Juscelino",
+      "Parque Rosário",
+      "Parque São Caetano",
+      "Parque dos Rodoviários"
+    ],
+    "Parque Vista Alegre": [
+      "Parque Benta Pereira",
+      "Parque José do Patrocínio"
+    ],
+    "Centro": [
+      "Chácara João Ferreira",
+      "Lapa",
+      "Parque Avenida Pelinca",
+      "Parque Conselheiro Tomaz Coelho",
+      "Parque Fazendinha",
+      "Parque João Seixas",
+      "Parque Oliveira Botelho",
+      "Parque Santo Amaro"
+    ],
+    "Parque Presidente Juscelino": [
+      "Parque Leopoldina",
+      "Parque Santo Amaro",
+      "Parque São Caetano",
+      "Parque dos Rodoviários"
+    ],
+    "Parque Guarus": [
+      "Jardim Guarus",
+      "Parque Bonsucesso",
+      "Parque Cidade Luz",
+      "Parque Fundão",
+      "Parque Santo Antônio",
+      "Parque São Mateus"
+    ],
+    "Horto": [
+      "Parque Califórnia",
+      "Parque Jóckey Club",
+      "Parque Salo Brand"
+    ],
+    "Parque Aurora": [
+      "Ips",
+      "Parque Carlos de Lacerda",
+      "Parque Dr. Beda",
+      "Parque João Maria",
+      "Parque Rosário",
+      "Parque Santo Amaro",
+      "Parque São Lino"
+    ],
+    "Parque São Domingos": [
+      "Jardim Residencial Planície",
+      "Parque Bandeirantes",
+      "Parque Novo Mundo",
+      "Parque Santa Rosa"
+    ],
+    "Ips": [
+      "Parque Aurora",
+      "Parque Dr. Beda",
+      "Parque João Maria",
+      "Parque São Lino"
+    ],
+    "Parque do Prado": [
+      "Parque Bela Vista",
+      "Parque José do Patrocínio",
+      "Parque Jóckey Club",
+      "Parque Tarcísio Miranda",
+      "da Penha"
+    ],
+    "Parque Dom Bosco": [
+      "Parque Avenida Pelinca",
+      "Parque Santo Amaro",
+      "Parque São Caetano",
+      "Parque Tamandaré"
+    ],
+    "Parque Jóckey Club": [
+      "Horto",
+      "Parque Benta Pereira",
+      "Parque José do Patrocínio",
+      "Parque do Prado"
+    ],
+    "Parque Novo Mundo": [
+      "Parque Bandeirantes",
+      "Parque Barão do Rio Branco",
+      "Parque Bonsucesso",
+      "Parque Presidente Vargas",
+      "Parque Santa Rosa",
+      "Parque São Domingos"
+    ],
+    "Parque São Mateus": [
+      "Parque Bonsucesso",
+      "Parque Eldorado",
+      "Parque Guarus"
+    ],
+    "Jardim Maria de Queiroz": [
+      "Parque Avenida Pelinca",
+      "Parque Conselheiro Tomaz Coelho",
+      "Parque Leopoldina",
+      "Parque Tamandaré"
+    ],
+    "Parque Eldorado": [
+      "Parque São Mateus",
+      "Parque São Silvestre",
+      "Vila Industrial"
+    ],
+    "Parque Rui Barbosa": [
+      "Parque Dr. Beda",
+      "Parque São Benedito",
+      "Parque São Lino"
+    ],
+    "Parque Oliveira Botelho": [
+      "Centro",
+      "Chácara João Ferreira",
+      "Lapa",
+      "Parque Califórnia",
+      "Parque Riachuelo",
+      "Parque Turf Club"
+    ],
+    "Parque São José": [
+      "Parque Cidade Luz",
+      "Parque Fundão"
+    ],
+    "Parque Salo Brand": [
+      "Horto",
+      "Jardim Flamboyant I",
+      "Jardim Flamboyant II",
+      "Parque Califórnia",
+      "Parque Turf Club"
+    ],
+    "Caju": [
+      "Parque Alberto Torres",
+      "Parque Conselheiro Tomaz Coelho",
+      "Parque Quinze de Novembro",
+      "Parque São Clemente",
+      "Parque São Salvador",
+      "Sumaré"
+    ],
+    "Parque Califórnia": [
+      "Horto",
+      "Parque Oliveira Botelho",
+      "Parque Riachuelo",
+      "Parque Salo Brand",
+      "Parque Turf Club"
+    ],
+    "Parque Alberto Torres": [
+      "Caju",
+      "Parque Conselheiro Tomaz Coelho",
+      "Parque Leopoldina",
+      "Parque Nossa Senhora do Rosário",
+      "Parque São Clemente",
+      "Parque São Salvador"
+    ],
+    "Parque Fazenda Grande": [
+      "Jardim Flamboyant I",
+      "Jardim Flamboyant II",
+      "Parque Dr. Beda",
+      "Parque Fazendinha",
+      "Parque João Maria",
+      "Parque Tarcísio Miranda",
+      "Parque Turf Club"
+    ],
+    "Parque Prazeres": [
+      "Parque Vicente Gonçalves Dias"
+    ],
+    "Parque Dr. Beda": [
+      "Ips",
+      "Parque Aurora",
+      "Parque Fazenda Grande",
+      "Parque João Maria",
+      "Parque Rui Barbosa",
+      "Parque São Benedito",
+      "Parque São Lino"
+    ],
+    "Chácara João Ferreira": [
+      "Centro",
+      "Parque Fazendinha",
+      "Parque Oliveira Botelho",
+      "Parque Turf Club"
+    ],
+    "Parque Alvorada": [
+      "Parque Barão do Rio Branco",
+      "Parque Niterói",
+      "Parque Vicente Gonçalves Dias",
+      "Parque Zuza Mota"
+    ],
+    "Parque Zuza Mota": [
+      "Parque Alvorada",
+      "Parque Barão do Rio Branco",
+      "Parque Niterói",
+      "Parque Presidente Vargas"
+    ],
+    "Parque Santa Rosa": [
+      "Jardim Residencial Planície",
+      "Parque Novo Mundo",
+      "Parque São Domingos"
+    ],
+    "Parque Benta Pereira": [
+      "Parque José do Patrocínio",
+      "Parque Jóckey Club",
+      "Parque Vista Alegre"
+    ],
+    "Parque Barão do Rio Branco": [
+      "Parque Alvorada",
+      "Parque Novo Mundo",
+      "Parque Presidente Vargas",
+      "Parque Zuza Mota"
+    ],
+    "Parque Esplanada": [
+      "Parque Nova Brasília"
+    ],
+    "Parque São Salvador": [
+      "Caju",
+      "Parque Alberto Torres",
+      "Parque Corrientes",
+      "Parque Julião Nogueira",
+      "Parque Leopoldina",
+      "Parque Nossa Senhora do Rosário",
+      "Parque Pecuária",
+      "Parque São Clemente"
+    ],
+    "Parque Corrientes": [
+      "Parque Julião Nogueira",
+      "Parque Nova Brasília",
+      "Parque Pecuária",
+      "Parque São Clemente",
+      "Parque São Salvador"
+    ],
+    "Parque Nova Brasília": [
+      "Parque Corrientes",
+      "Parque Esplanada",
+      "Parque Julião Nogueira",
+      "Parque Pecuária"
+    ],
+    "Parque Avenida Pelinca": [
+      "Centro",
+      "Jardim Maria de Queiroz",
+      "Parque Conselheiro Tomaz Coelho",
+      "Parque Dom Bosco",
+      "Parque Santo Amaro",
+      "Parque Tamandaré"
+    ],
+    "Parque São Lino": [
+      "Ips",
+      "Parque Aurora",
+      "Parque Dr. Beda",
+      "Parque Rui Barbosa"
+    ],
+    "Jardim Residencial Planície": [
+      "Parque Bandeirantes",
+      "Parque Santa Rosa",
+      "Parque São Domingos"
+    ],
+    "Parque São Silvestre": [
+      "Parque Eldorado",
+      "Vila Industrial"
+    ],
+    "Parque Rosário": [
+      "Parque Aurora",
+      "Parque Carlos de Lacerda",
+      "Parque João Seixas",
+      "Parque Santo Amaro"
+    ],
+    "Parque Fundão": [
+      "Jardim Guarus",
+      "Parque Cidade Luz",
+      "Parque Guarus",
+      "Parque São José",
+      "Parque Vera Cruz"
+    ],
+    "Parque Vicente Gonçalves Dias": [
+      "Jardim Carioca",
+      "Parque Alvorada",
+      "Parque Niterói",
+      "Parque Prazeres"
+    ],
+    "Sumaré": [
+      "Caju",
+      "Parque Conselheiro Tomaz Coelho",
+      "Parque Quinze de Novembro",
+      "Parque São Clemente"
+    ],
+    "Parque dos Rodoviários": [
+      "Parque Leopoldina",
+      "Parque Presidente Juscelino",
+      "Parque Santo Amaro"
+    ],
+    "Jardim Guarus": [
+      "Parque Fundão",
+      "Parque Guarus",
+      "Parque Santo Antônio",
+      "Parque Vera Cruz"
+    ],
+    "Parque Presidente Vargas": [
+      "Parque Barão do Rio Branco",
+      "Parque Bonsucesso",
+      "Parque Niterói",
+      "Parque Novo Mundo",
+      "Parque Zuza Mota"
+    ]
+  }
+}

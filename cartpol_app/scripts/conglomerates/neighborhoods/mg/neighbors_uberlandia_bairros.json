@@ -1,0 +1,570 @@
+{
+  "county": "Uberlândia",
+  "source_zip": "/home/iuri/TCC/cartpol-pwa/src/assets/maps/county/Uberlândia.zip",
+  "stats": {
+    "total_regions": 74,
+    "total_neighbors": 203,
+    "avg_neighbors": 5.486486486486487,
+    "max_neighbors": 12,
+    "min_neighbors": 1,
+    "isolated_regions": 0,
+    "region_most_neighbors": "Tabajaras",
+    "region_least_neighbors": "Morada do Sol"
+  },
+  "neighbors": {
+    "Carajás": [
+      "Jardim Inconfidência",
+      "Lagoinha",
+      "Pampulha",
+      "Santa Mônica"
+    ],
+    "Nova Uberlândia": [
+      "Cidade Jardim",
+      "Gávea",
+      "Jardim Holanda",
+      "Jardim das Palmeiras"
+    ],
+    "Presidente Roosevelt": [
+      "Bom Jesus",
+      "Brasil",
+      "Jardim Brasília",
+      "Maravilha",
+      "Marta Helena",
+      "Martins",
+      "Osvaldo Rezende",
+      "Pacaembú",
+      "Santa Rosa"
+    ],
+    "Nova Alvorada": [
+      "Alvorada",
+      "Novo Mundo",
+      "Santa Luzia",
+      "Segismundo Pereira"
+    ],
+    "Jaraguá": [
+      "Chácaras Tubalina e Quartel",
+      "Daniel Fonseca",
+      "Dona Zulmira",
+      "Jardim Patrícia",
+      "Planalto",
+      "Tabajaras",
+      "Tubalina"
+    ],
+    "Daniel Fonseca": [
+      "Dona Zulmira",
+      "Jaraguá",
+      "Jardim Brasília",
+      "Osvaldo Rezende",
+      "São José",
+      "Tabajaras",
+      "Taiaman",
+      "Tubalina"
+    ],
+    "Portal do Vale": [
+      "Grand Ville",
+      "Jardim Ipanema",
+      "Morumbi",
+      "Residencial Integração"
+    ],
+    "Novo Mundo": [
+      "Alvorada",
+      "Custódio Pereira",
+      "Grand Ville",
+      "Nova Alvorada",
+      "Residencial Integração",
+      "Segismundo Pereira",
+      "Tibery"
+    ],
+    "Guarani": [
+      "Distrito Industrial",
+      "Taiaman",
+      "Tocantins"
+    ],
+    "Jardim Ipanema": [
+      "Aclimação",
+      "Alto Umuarama",
+      "Custódio Pereira",
+      "Grand Ville",
+      "Morada dos Pássaros",
+      "Portal do Vale"
+    ],
+    "Mansour": [
+      "Chácaras Tubalina e Quartel",
+      "Jardim Europa",
+      "Luizote de Freitas"
+    ],
+    "Centro": [
+      "Bom Jesus",
+      "Cazeca",
+      "Fundinho",
+      "Lídice",
+      "Martins",
+      "Nossa Senhora Aparecida",
+      "Osvaldo Rezende",
+      "Tabajaras"
+    ],
+    "Alto Umuarama": [
+      "Aclimação",
+      "Custódio Pereira",
+      "Granja Marileusa",
+      "Jardim Ipanema",
+      "Umuarama"
+    ],
+    "Tubalina": [
+      "Cidade Jardim",
+      "Daniel Fonseca",
+      "Jaraguá",
+      "Jardim das Palmeiras",
+      "Patrimônio",
+      "Planalto",
+      "Tabajaras"
+    ],
+    "Custódio Pereira": [
+      "Alto Umuarama",
+      "Brasil",
+      "Grand Ville",
+      "Jardim Ipanema",
+      "Novo Mundo",
+      "Tibery",
+      "Umuarama"
+    ],
+    "Santa Luzia": [
+      "Granada",
+      "Nova Alvorada",
+      "Pampulha",
+      "Segismundo Pereira",
+      "São Jorge"
+    ],
+    "Jardim Inconfidência": [
+      "Carajás",
+      "Granada",
+      "Jardim Karaíba",
+      "Lagoinha",
+      "Pampulha",
+      "Vigilato Pereira"
+    ],
+    "Bom Jesus": [
+      "Brasil",
+      "Centro",
+      "Marta Helena",
+      "Martins",
+      "Nossa Senhora Aparecida",
+      "Presidente Roosevelt"
+    ],
+    "Tibery": [
+      "Brasil",
+      "Cazeca",
+      "Custódio Pereira",
+      "Grand Ville",
+      "Nossa Senhora Aparecida",
+      "Novo Mundo",
+      "Santa Mônica",
+      "Saraiva",
+      "Segismundo Pereira"
+    ],
+    "Lagoinha": [
+      "Carajás",
+      "Jardim Inconfidência",
+      "Santa Mônica",
+      "Saraiva",
+      "Vigilato Pereira"
+    ],
+    "Jardim Brasília": [
+      "Daniel Fonseca",
+      "Distrito Industrial",
+      "Maravilha",
+      "Osvaldo Rezende",
+      "Presidente Roosevelt",
+      "São José"
+    ],
+    "Cidade Jardim": [
+      "Gávea",
+      "Jardim das Palmeiras",
+      "Morada da Colina",
+      "Nova Uberlândia",
+      "Patrimônio",
+      "Tabajaras",
+      "Tubalina"
+    ],
+    "Nossa Senhora Aparecida": [
+      "Bom Jesus",
+      "Brasil",
+      "Cazeca",
+      "Centro",
+      "Saraiva",
+      "Tibery"
+    ],
+    "Maravilha": [
+      "Distrito Industrial",
+      "Jardim Brasília",
+      "Pacaembú",
+      "Presidente Roosevelt"
+    ],
+    "Luizote de Freitas": [
+      "Chácaras Tubalina e Quartel",
+      "Jardim Patrícia",
+      "Mansour"
+    ],
+    "Umuarama": [
+      "Alto Umuarama",
+      "Brasil",
+      "Custódio Pereira",
+      "Granja Marileusa",
+      "Marta Helena"
+    ],
+    "Alvorada": [
+      "Morumbi",
+      "Nova Alvorada",
+      "Novo Mundo",
+      "Residencial Integração"
+    ],
+    "Pampulha": [
+      "Carajás",
+      "Granada",
+      "Jardim Inconfidência",
+      "Santa Luzia",
+      "Santa Mônica",
+      "Segismundo Pereira"
+    ],
+    "Santa Rosa": [
+      "Distrito Industrial",
+      "Marta Helena",
+      "Nossa Senhora das Graças",
+      "Pacaembú",
+      "Presidente Roosevelt",
+      "Residencial Gramado"
+    ],
+    "Lídice": [
+      "Cazeca",
+      "Centro",
+      "Fundinho",
+      "Morada da Colina",
+      "Saraiva",
+      "Tabajaras",
+      "Vigilato Pereira"
+    ],
+    "Pacaembú": [
+      "Distrito Industrial",
+      "Maravilha",
+      "Presidente Roosevelt",
+      "Residencial Gramado",
+      "Santa Rosa"
+    ],
+    "Jardim Holanda": [
+      "Jardim Canaã",
+      "Jardim das Palmeiras",
+      "Nova Uberlândia",
+      "Panorama"
+    ],
+    "Shopping Park": [
+      "Gávea",
+      "Jardim Sul"
+    ],
+    "Granada": [
+      "Jardim Inconfidência",
+      "Jardim Karaíba",
+      "Jardim Sul",
+      "Laranjeiras",
+      "Pampulha",
+      "Santa Luzia",
+      "São Jorge"
+    ],
+    "Nossa Senhora das Graças": [
+      "Distrito Industrial",
+      "Marta Helena",
+      "Residencial Gramado",
+      "Santa Rosa"
+    ],
+    "Martins": [
+      "Bom Jesus",
+      "Centro",
+      "Osvaldo Rezende",
+      "Presidente Roosevelt",
+      "Tabajaras"
+    ],
+    "Gávea": [
+      "Cidade Jardim",
+      "Jardim Karaíba",
+      "Jardim Sul",
+      "Morada da Colina",
+      "Nova Uberlândia",
+      "Shopping Park"
+    ],
+    "Segismundo Pereira": [
+      "Nova Alvorada",
+      "Novo Mundo",
+      "Pampulha",
+      "Santa Luzia",
+      "Santa Mônica",
+      "Tibery"
+    ],
+    "Vigilato Pereira": [
+      "Jardim Inconfidência",
+      "Jardim Karaíba",
+      "Lagoinha",
+      "Lídice",
+      "Morada da Colina",
+      "Saraiva",
+      "Tabajaras"
+    ],
+    "Distrito Industrial": [
+      "Guarani",
+      "Jardim Brasília",
+      "Maravilha",
+      "Marta Helena",
+      "Minas Gerais",
+      "Nossa Senhora das Graças",
+      "Pacaembú",
+      "Residencial Gramado",
+      "Santa Rosa",
+      "São José",
+      "Taiaman"
+    ],
+    "Morada da Colina": [
+      "Cidade Jardim",
+      "Gávea",
+      "Jardim Karaíba",
+      "Lídice",
+      "Patrimônio",
+      "Tabajaras",
+      "Vigilato Pereira"
+    ],
+    "Tocantins": [
+      "Guarani",
+      "Jardim Patrícia",
+      "Morada do Sol",
+      "Taiaman"
+    ],
+    "Patrimônio": [
+      "Cidade Jardim",
+      "Morada da Colina",
+      "Tabajaras",
+      "Tubalina"
+    ],
+    "Jardim Sul": [
+      "Granada",
+      "Gávea",
+      "Jardim Karaíba",
+      "Laranjeiras",
+      "Shopping Park"
+    ],
+    "Minas Gerais": [
+      "Distrito Industrial",
+      "Granja Marileusa",
+      "Marta Helena"
+    ],
+    "Morada do Sol": [
+      "Tocantins"
+    ],
+    "Jardim das Palmeiras": [
+      "Chácaras Tubalina e Quartel",
+      "Cidade Jardim",
+      "Jardim Europa",
+      "Jardim Holanda",
+      "Nova Uberlândia",
+      "Panorama",
+      "Planalto",
+      "Tubalina"
+    ],
+    "Marta Helena": [
+      "Bom Jesus",
+      "Brasil",
+      "Distrito Industrial",
+      "Granja Marileusa",
+      "Minas Gerais",
+      "Nossa Senhora das Graças",
+      "Presidente Roosevelt",
+      "Santa Rosa",
+      "Umuarama"
+    ],
+    "São Jorge": [
+      "Granada",
+      "Laranjeiras",
+      "Santa Luzia"
+    ],
+    "Residencial Integração": [
+      "Alvorada",
+      "Grand Ville",
+      "Morumbi",
+      "Novo Mundo",
+      "Portal do Vale"
+    ],
+    "Saraiva": [
+      "Cazeca",
+      "Lagoinha",
+      "Lídice",
+      "Nossa Senhora Aparecida",
+      "Santa Mônica",
+      "Tibery",
+      "Vigilato Pereira"
+    ],
+    "Chácaras Tubalina e Quartel": [
+      "Dona Zulmira",
+      "Jaraguá",
+      "Jardim Europa",
+      "Jardim Patrícia",
+      "Jardim das Palmeiras",
+      "Luizote de Freitas",
+      "Mansour",
+      "Panorama",
+      "Planalto"
+    ],
+    "São José": [
+      "Daniel Fonseca",
+      "Distrito Industrial",
+      "Dona Zulmira",
+      "Jardim Brasília",
+      "Taiaman"
+    ],
+    "Morumbi": [
+      "Alvorada",
+      "Portal do Vale",
+      "Residencial Integração"
+    ],
+    "Grand Ville": [
+      "Custódio Pereira",
+      "Jardim Ipanema",
+      "Novo Mundo",
+      "Portal do Vale",
+      "Residencial Integração",
+      "Tibery"
+    ],
+    "Panorama": [
+      "Chácaras Tubalina e Quartel",
+      "Jardim Canaã",
+      "Jardim Europa",
+      "Jardim Holanda",
+      "Jardim das Palmeiras"
+    ],
+    "Taiaman": [
+      "Daniel Fonseca",
+      "Distrito Industrial",
+      "Dona Zulmira",
+      "Guarani",
+      "Jardim Patrícia",
+      "São José",
+      "Tocantins"
+    ],
+    "Brasil": [
+      "Bom Jesus",
+      "Custódio Pereira",
+      "Marta Helena",
+      "Nossa Senhora Aparecida",
+      "Presidente Roosevelt",
+      "Tibery",
+      "Umuarama"
+    ],
+    "Jardim Canaã": [
+      "Jardim Holanda",
+      "Panorama"
+    ],
+    "Planalto": [
+      "Chácaras Tubalina e Quartel",
+      "Jaraguá",
+      "Jardim das Palmeiras",
+      "Tubalina"
+    ],
+    "Cazeca": [
+      "Centro",
+      "Lídice",
+      "Nossa Senhora Aparecida",
+      "Saraiva",
+      "Tibery"
+    ],
+    "Tabajaras": [
+      "Centro",
+      "Cidade Jardim",
+      "Daniel Fonseca",
+      "Fundinho",
+      "Jaraguá",
+      "Lídice",
+      "Martins",
+      "Morada da Colina",
+      "Osvaldo Rezende",
+      "Patrimônio",
+      "Tubalina",
+      "Vigilato Pereira"
+    ],
+    "Aclimação": [
+      "Alto Umuarama",
+      "Granja Marileusa",
+      "Jardim Ipanema",
+      "Morada dos Pássaros"
+    ],
+    "Santa Mônica": [
+      "Carajás",
+      "Lagoinha",
+      "Pampulha",
+      "Saraiva",
+      "Segismundo Pereira",
+      "Tibery"
+    ],
+    "Dona Zulmira": [
+      "Chácaras Tubalina e Quartel",
+      "Daniel Fonseca",
+      "Jaraguá",
+      "Jardim Patrícia",
+      "São José",
+      "Taiaman"
+    ],
+    "Granja Marileusa": [
+      "Aclimação",
+      "Alto Umuarama",
+      "Marta Helena",
+      "Minas Gerais",
+      "Morada dos Pássaros",
+      "Umuarama"
+    ],
+    "Jardim Europa": [
+      "Chácaras Tubalina e Quartel",
+      "Jardim das Palmeiras",
+      "Mansour",
+      "Panorama"
+    ],
+    "Jardim Patrícia": [
+      "Chácaras Tubalina e Quartel",
+      "Dona Zulmira",
+      "Jaraguá",
+      "Luizote de Freitas",
+      "Taiaman",
+      "Tocantins"
+    ],
+    "Fundinho": [
+      "Centro",
+      "Lídice",
+      "Tabajaras"
+    ],
+    "Laranjeiras": [
+      "Granada",
+      "Jardim Sul",
+      "São Jorge"
+    ],
+    "Residencial Gramado": [
+      "Distrito Industrial",
+      "Nossa Senhora das Graças",
+      "Pacaembú",
+      "Santa Rosa"
+    ],
+    "Osvaldo Rezende": [
+      "Centro",
+      "Daniel Fonseca",
+      "Jardim Brasília",
+      "Martins",
+      "Presidente Roosevelt",
+      "Tabajaras"
+    ],
+    "Jardim Karaíba": [
+      "Granada",
+      "Gávea",
+      "Jardim Inconfidência",
+      "Jardim Sul",
+      "Morada da Colina",
+      "Vigilato Pereira"
+    ],
+    "Morada dos Pássaros": [
+      "Aclimação",
+      "Granja Marileusa",
+      "Jardim Ipanema"
+    ]
+  }
+}

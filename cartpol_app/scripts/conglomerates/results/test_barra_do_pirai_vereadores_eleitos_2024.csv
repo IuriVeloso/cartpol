@@ -1,0 +1,12 @@
+﻿municipio,qe,political_id,candidato,full_name,partido,genero,total_votes,concentracao_final,interpretation,total_conglomerates,municipios_map_file,unmatched_in_csv
+BARRA DO PIRAÍ,4199.0,644927,JEORDANE PERINO,JEORDANE DA SILVA GOMES PERINO,PP,masculino,1472,0.3912,media_baixa,10,neighbors_barra_do_pirai_bairros.json,False
+BARRA DO PIRAÍ,4199.0,636246,RAFAEL COUTO,RAFAEL SANTOS COUTO,MDB,masculino,2918,0.4588,media_baixa,9,neighbors_barra_do_pirai_bairros.json,False
+BARRA DO PIRAÍ,4199.0,642964,MACREI,MACREI JÚNIOR DE ANDRADE,AGIR,masculino,1221,0.521,media,4,neighbors_barra_do_pirai_bairros.json,False
+BARRA DO PIRAÍ,4199.0,641122,PEDRINHO ADL,PEDRO FERNANDO DE SOUZA ALVES,SOLIDARIEDADE,masculino,1137,0.4413,media_baixa,7,neighbors_barra_do_pirai_bairros.json,False
+BARRA DO PIRAÍ,4199.0,642727,THIAGO SOARES,THIAGO FELIPE PONCIANO SOARES,PRD,masculino,1110,0.5186,media,8,neighbors_barra_do_pirai_bairros.json,False
+BARRA DO PIRAÍ,4199.0,644907,ELVES,ELVES COSTA DOS SANTOS,CIDADANIA,masculino,1085,0.6263,media_alta,4,neighbors_barra_do_pirai_bairros.json,False
+BARRA DO PIRAÍ,4199.0,633154,LUIZ FELIPE LUDI,LUIZ FELIPPE DE PAULA PINTO,PL,masculino,970,0.4301,media_baixa,8,neighbors_barra_do_pirai_bairros.json,False
+BARRA DO PIRAÍ,4199.0,633157,JOÃO PAULO,JOÃO PAULO MARIANO NOVAES,PL,masculino,942,0.4732,media_baixa,8,neighbors_barra_do_pirai_bairros.json,False
+BARRA DO PIRAÍ,4199.0,642733,WANDERSON,WANDERSON LUIS BARBOSA LEMOS,PRD,masculino,908,0.5022,media,10,neighbors_barra_do_pirai_bairros.json,False
+BARRA DO PIRAÍ,4199.0,636249,LÚ MACIEL,LUCIANA DE OLIVEIRA MACIEL DE ALMEIDA,MDB,feminino,1792,0.4401,media_baixa,10,neighbors_barra_do_pirai_bairros.json,False
+BARRA DO PIRAÍ,4199.0,641124,JOSÉ MAURO MOTORISTA,JOSE MAURO DA SILVA NASCIMENTO,SOLIDARIEDADE,masculino,869,0.7124,media_alta,3,neighbors_barra_do_pirai_bairros.json,False

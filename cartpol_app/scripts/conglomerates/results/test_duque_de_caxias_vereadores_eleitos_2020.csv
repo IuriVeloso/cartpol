@@ -1,0 +1,30 @@
+﻿municipio,qe,political_id,candidato,full_name,partido,genero,total_votes,concentracao_final,interpretation,total_conglomerates,municipios_map_file,unmatched_in_csv
+DUQUE DE CAXIAS,15089.0,1992887,SERGINHO,SERGIO ALBERTO CORREA DA ROCHA,MDB,masculino,12077,0.5172,media,2,neighbors_duque_de_caxias_bairros.json,False
+DUQUE DE CAXIAS,15089.0,1992889,CARLINHOS DA BARREIRA,CARLOS AUGUSTO PEREIRA SODRÉ,MDB,masculino,10453,0.5215,media,2,neighbors_duque_de_caxias_bairros.json,False
+DUQUE DE CAXIAS,15089.0,1993044,MARCOS TAVARES,MARCOS PAULO BARBOSA TAVARES,AVANTE,masculino,7893,0.6636,media_alta,1,neighbors_duque_de_caxias_bairros.json,False
+DUQUE DE CAXIAS,15089.0,1992878,SANDRO LELIS,SANDRO RIBEIRO PEDROSA,MDB,masculino,7837,0.6552,media_alta,1,neighbors_duque_de_caxias_bairros.json,False
+DUQUE DE CAXIAS,15089.0,1994114,DELZA DE OLIVEIRA,DELZA OLIVEIRA SANT ANNA DE ALMEIDA,PATRIOTA,feminino,7642,0.5215,media,2,neighbors_duque_de_caxias_bairros.json,False
+DUQUE DE CAXIAS,15089.0,1992394,CELSO DO ALBA,CELSO LUIS PEREIRA DO NASCIMENTO,MDB,masculino,7516,0.4759,media_baixa,3,neighbors_duque_de_caxias_bairros.json,False
+DUQUE DE CAXIAS,15089.0,1992567,ARTHUR MONTEIRO,ARTHUR CARVALHO MONTEIRO,DEM,masculino,6209,0.4209,media_baixa,4,neighbors_duque_de_caxias_bairros.json,False
+DUQUE DE CAXIAS,15089.0,1992391,DANILO DO MERCADO,DANILO FRANCISCO DA SILVA,MDB,masculino,6079,0.549,media,3,neighbors_duque_de_caxias_bairros.json,False
+DUQUE DE CAXIAS,15089.0,1991960,EDUARDO MOREIRA,EDUARDO MOREIRA,PT,masculino,5339,0.5309,media,2,neighbors_duque_de_caxias_bairros.json,False
+DUQUE DE CAXIAS,15089.0,1992890,JUNIOR REIS,DIVAIR ALVES DE OLIVEIRA JUNIOR,MDB,masculino,5303,0.6552,media_alta,1,neighbors_duque_de_caxias_bairros.json,False
+DUQUE DE CAXIAS,15089.0,1992557,CLAUDIO THOMAZ,CLAUDIO DE OLIVEIRA THOMAZ,DEM,masculino,5304,0.4126,media_baixa,4,neighbors_duque_de_caxias_bairros.json,False
+DUQUE DE CAXIAS,15089.0,1995284,CHIQUINHO CAIPIRA,AILTON ABREU NASCIMENTO,DEM,masculino,5298,0.4472,media_baixa,3,neighbors_duque_de_caxias_bairros.json,False
+DUQUE DE CAXIAS,15089.0,1995475,ANDERSON LOPES,EDUARDO ANDERSON GOES LOPES,REPUBLICANOS,masculino,5080,0.6636,media_alta,1,neighbors_duque_de_caxias_bairros.json,False
+DUQUE DE CAXIAS,15089.0,1993836,CLOVINHO SEMPRE JUNTO,CLOVIS MORORO MAGALHAES,PATRIOTA,masculino,5048,0.8024,alta,1,neighbors_duque_de_caxias_bairros.json,False
+DUQUE DE CAXIAS,15089.0,1992677,VALDECY NUNES,VALDECY NUNES DA ROSA FILHO,PATRIOTA,masculino,4870,0.569,media,2,neighbors_duque_de_caxias_bairros.json,False
+DUQUE DE CAXIAS,15089.0,1992563,JUNIOR UIOS,CARLOS ALBERTO DE PAULA DIAS JUNIOR,DEM,masculino,4831,0.7944,alta,1,neighbors_duque_de_caxias_bairros.json,False
+DUQUE DE CAXIAS,15089.0,1994554,MARQUINHO DA PIPA,MARCOS PAULO CASAL BARBOSA,MDB,masculino,4161,0.4532,media_baixa,3,neighbors_duque_de_caxias_bairros.json,False
+DUQUE DE CAXIAS,15089.0,1996316,AQUICILEY FILHO ADÃO DO CAMPO,AQUICILEY SILVA DO CARMO,REPUBLICANOS,masculino,4106,0.61,media,4,neighbors_duque_de_caxias_bairros.json,False
+DUQUE DE CAXIAS,15089.0,1995481,LEIDE,MARIA LANDERLEIDE DE ASSIS DUARTE,REPUBLICANOS,feminino,3722,0.4723,media_baixa,3,neighbors_duque_de_caxias_bairros.json,False
+DUQUE DE CAXIAS,15089.0,1993184,VITINHO GRANDÃO,VICTOR HUGO LEONEL DA SILVA,SOLIDARIEDADE,masculino,3410,0.7865,alta,1,neighbors_duque_de_caxias_bairros.json,False
+DUQUE DE CAXIAS,15089.0,1993196,BOQUINHA,MARCUS VINICIUS DE MORAES GUIMARÃES,SOLIDARIEDADE,masculino,3339,0.5485,media,2,neighbors_duque_de_caxias_bairros.json,False
+DUQUE DE CAXIAS,15089.0,1993377,SANDRO DO SINDICATO,ALEXSANDRO SILVA FARIA,SOLIDARIEDADE,masculino,3247,0.7045,media_alta,1,neighbors_duque_de_caxias_bairros.json,False
+DUQUE DE CAXIAS,15089.0,1992067,ZEZINHO DO MINEIRÃO,JOSÉ MIGUEL DE MESQUITA FILHO,PSL,masculino,2914,0.5887,media,2,neighbors_duque_de_caxias_bairros.json,False
+DUQUE DE CAXIAS,15089.0,1991496,CATITI,MARCELO CARDOSO RODRIGUES,AVANTE,masculino,2893,0.5847,media,2,neighbors_duque_de_caxias_bairros.json,False
+DUQUE DE CAXIAS,15089.0,1995310,MOISES NEGUINHO,MOISES LUIZ GOMES,PMB,masculino,2788,0.5197,media,3,neighbors_duque_de_caxias_bairros.json,False
+DUQUE DE CAXIAS,15089.0,1993883,QUINZÉ,JOAQUIM JOSE QUINZE SANTOS ALEXANDRE,PL,masculino,2364,0.8024,alta,1,neighbors_duque_de_caxias_bairros.json,False
+DUQUE DE CAXIAS,15089.0,1997706,JACKSON WAGNER,JACKSON WAGNER DOS SANTOS BARBOSA,PSD,masculino,2348,0.5175,media,3,neighbors_duque_de_caxias_bairros.json,False
+DUQUE DE CAXIAS,15089.0,1994062,MICHEL VILA NOVA,MICHAEL ALEXANDRE GERVASIO,PSDB,masculino,2232,0.5007,media,4,neighbors_duque_de_caxias_bairros.json,False
+DUQUE DE CAXIAS,15089.0,1992061,DEISI DO SEU DINO,DEISIMAR QUARESMA RIBEIRO,PSL,feminino,1985,0.5747,media,3,neighbors_duque_de_caxias_bairros.json,False

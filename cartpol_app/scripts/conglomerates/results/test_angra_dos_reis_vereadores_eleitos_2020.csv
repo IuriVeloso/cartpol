@@ -1,0 +1,15 @@
+﻿municipio,qe,political_id,candidato,full_name,partido,genero,total_votes,concentracao_final,interpretation,total_conglomerates,municipios_map_file,unmatched_in_csv
+ANGRA DOS REIS,6273.0,302032,RUBINHO METALURGICO,RUBENS ROCHA DE ANDRADE,CIDADANIA,masculino,2615,0.4364,media_baixa,13,neighbors_angra_dos_reis_bairros.json,False
+ANGRA DOS REIS,6273.0,299387,HENRIQUE OBINA,JOCIMAR HENRIQUE,CIDADANIA,masculino,2336,0.429,media_baixa,12,neighbors_angra_dos_reis_bairros.json,False
+ANGRA DOS REIS,6273.0,303142,DUDU DO TURISMO,CARLOS EDUARDO DOS SANTOS MILER,PSD,masculino,1985,0.4918,media_baixa,17,neighbors_angra_dos_reis_bairros.json,False
+ANGRA DOS REIS,6273.0,300963,GAB GREG,GABRIELLA CARNEIRO OLIVEIRA,PP,masculino,1947,0.4772,media_baixa,15,neighbors_angra_dos_reis_bairros.json,False
+ANGRA DOS REIS,6273.0,298570,MARCOS COELHO,MARCOS AURELIO COELHO,PSC,masculino,1831,0.4241,media_baixa,13,neighbors_angra_dos_reis_bairros.json,False
+ANGRA DOS REIS,6273.0,305962,JORGE EDUARDO MASCOTE,JORGE EDUARDO DE BRITTO RABHA,PATRIOTA,masculino,1725,0.4624,media_baixa,15,neighbors_angra_dos_reis_bairros.json,False
+ANGRA DOS REIS,6273.0,296175,BRANCO,CIRDILEI JERONIMO,PSD,masculino,1499,0.4902,media_baixa,9,neighbors_angra_dos_reis_bairros.json,False
+ANGRA DOS REIS,6273.0,301234,TITI BRASIL,CRISTIANE BRASIL DA SILVA,MDB,masculino,1417,0.5073,media,13,neighbors_angra_dos_reis_bairros.json,False
+ANGRA DOS REIS,6273.0,302035,JORGINHO BRUM,JORGE BRUM CRISPIM DE CARVALHO,CIDADANIA,masculino,1364,0.5077,media,12,neighbors_angra_dos_reis_bairros.json,False
+ANGRA DOS REIS,6273.0,301232,JANE VEIGA,JANE ROSELI VEIGA,MDB,feminino,1343,0.5093,media,14,neighbors_angra_dos_reis_bairros.json,False
+ANGRA DOS REIS,6273.0,297357,HELINHO DO SINDICATO,HELIO SEVERINO DE AZEVEDO,PTC,masculino,1302,0.5125,media,14,neighbors_angra_dos_reis_bairros.json,False
+ANGRA DOS REIS,6273.0,300961,EDINHO RODRIGUES,EDSON CARLOS RODRIGUES,PP,masculino,1282,0.5181,media,15,neighbors_angra_dos_reis_bairros.json,False
+ANGRA DOS REIS,6273.0,296782,LUCIANA VALVERDE,LUCIANA FERREIRA DE OLIVEIRA VALVERDE,MDB,feminino,1251,0.4694,media_baixa,9,neighbors_angra_dos_reis_bairros.json,False
+ANGRA DOS REIS,6273.0,309354,CHARLES NEVES,CHARLES LINDBERG NEVES,PATRIOTA,masculino,1210,0.5173,media,10,neighbors_angra_dos_reis_bairros.json,False

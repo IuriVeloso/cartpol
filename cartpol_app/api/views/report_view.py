@@ -68,8 +68,14 @@ class GenerateReportView(APIView):
         path = '/home/iurivfelix/TCC/cartpol/reports_generated/report' + \
             str(political_id) + '.pdf'
 
-        run_report(data_adapted, path, political.name,
-                   str(political.political_code), True)
+        run_report(
+            data_adapted,
+            path,
+            political.name,
+            str(political.political_code),
+            True,
+            total_political_votes=total_political_votes or 0,
+        )
         report = open(path, 'rb')
         return HttpResponse(FileWrapper(report), content_type='application/pdf')
 
@@ -196,15 +202,23 @@ class GenerateReportView(APIView):
             parent_territory_name = "município"
             territory_label = "BAIRRO"
 
-        context = {"name": political.name, "year": year,
-                   "filename": filename,
-                   "partido": political.political_party.name,
-                   "political_type": political.political_type.name,
-                   "top15rcan_uesp": top15rcan_uesp,
-                   "top15ruesp_can": top15ruesp_can,
-                   "territory_name": territory_name,
-                   "parent_territory_name": parent_territory_name,
-                   "territory_label": territory_label}
+        total_political_votes = (
+            int(total_candidate_votes) if total_candidate_votes is not None else 0
+        )
+
+        context = {
+            "name": political.name,
+            "year": year,
+            "filename": filename,
+            "partido": political.political_party.name,
+            "political_type": political.political_type.name,
+            "top15rcan_uesp": top15rcan_uesp,
+            "top15ruesp_can": top15ruesp_can,
+            "territory_name": territory_name,
+            "parent_territory_name": parent_territory_name,
+            "territory_label": territory_label,
+            "total_political_votes": total_political_votes,
+        }
 
         pdf_html = render_to_string(
             './reports/pages/index.html', context=context)

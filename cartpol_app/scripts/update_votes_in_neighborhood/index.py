@@ -10,13 +10,13 @@ def populate_votes_in_neighborhood():
     # Para cada Political
     # Lista de IDs de counties permitidos
     allowed_county_ids = [
-        746
+        2, 13, 15, 20, 23, 30, 38, 41, 46, 47, 51, 74, 81, 17, 21, 12, 14, 22, 33, 40, 48, 56, 78, 80
     ]
     county_list = County.objects.filter(
         id__in=allowed_county_ids
     ).values('id')
     politics_list = Political.objects.filter(
-        Q(region_id__in=Subquery(county_list)) & Q(election__in=[2, 4, 5])
+        Q(region_id__in=Subquery(county_list)) & Q(election__in=[2])
         #  | (Q(region='state') & Q(region_id=10)))
     )
     for politic in politics_list:

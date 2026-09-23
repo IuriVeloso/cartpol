@@ -1,0 +1,894 @@
+{
+  "county": "Betim",
+  "source_zip": "/home/iuri/TCC/cartpol-pwa/src/assets/maps/county/Betim.zip",
+  "stats": {
+    "total_regions": 123,
+    "total_neighbors": 316,
+    "avg_neighbors": 5.138211382113822,
+    "max_neighbors": 14,
+    "min_neighbors": 1,
+    "isolated_regions": 0,
+    "region_most_neighbors": "São João",
+    "region_least_neighbors": "Riacho III"
+  },
+  "neighbors": {
+    "Laranjeiras": [
+      "Amarante",
+      "D. I. Paulo Camilo / Norte",
+      "Imbiruçu",
+      "Jardim Terezópolis",
+      "Nova Baden",
+      "Parque das Acácias",
+      "São Cristóvão",
+      "Vila Cristina / C.H. Celso A. Pedra"
+    ],
+    "D. I. Jardim Piemonte / Sul": [
+      "D. I. Jardim Piemonte / Norte",
+      "D. I. Paulo Camilo / Sul"
+    ],
+    "Chácara Várzea das Flores": [
+      "Chácaras São Sebastião",
+      "Itacolomi",
+      "Ponte Alta"
+    ],
+    "Monte Verde": [
+      "Arquipélago Verde",
+      "D.I. Bandeirinhas",
+      "Petrópolis",
+      "São João",
+      "Vila Alpina"
+    ],
+    "Pingo D'Água": [
+      "Aroeiras",
+      "Brasiléia",
+      "Cachoeira",
+      "Flores e Florestas",
+      "Parque Industrial de Betim"
+    ],
+    "Niterói": [
+      "C. H. Bueno Franco",
+      "Espírito Santo",
+      "Jardim Alterosas 2 Seção",
+      "Parque das Indústrias",
+      "Senhora de Fátima"
+    ],
+    "Residencial Montserrat": [
+      "Açude",
+      "Brodoski",
+      "Flores e Florestas",
+      "Quintas dos Godoy"
+    ],
+    "Centro": [
+      "Angola",
+      "Brasiléia",
+      "Chácara",
+      "Cidade Verde",
+      "Decamão",
+      "Filadélfia",
+      "Ingá Alto",
+      "Jardim Casa Branca",
+      "Jardim da Cidade"
+    ],
+    "Califórnia": [
+      "Gentileza",
+      "Santo Afonso"
+    ],
+    "Jardim Casa Branca": [
+      "Arquipélago Verde",
+      "Centro",
+      "Cidade Verde",
+      "Filadélfia",
+      "Petrópolis"
+    ],
+    "Alto das Flores": [
+      "Bom Retiro",
+      "C. H. Bueno Franco",
+      "C.H. Homéro Gil",
+      "Senhora das Graças",
+      "Vila das Flores"
+    ],
+    "Vila Boa Esperança": [
+      "Amazonas",
+      "Santo Antônio"
+    ],
+    "Filadélfia": [
+      "Centro",
+      "Chácara",
+      "Jardim Casa Branca",
+      "Petrópolis"
+    ],
+    "São Luiz": [
+      "Parque das Acácias",
+      "São Cristóvão",
+      "Vila Cristina / C.H. Celso A. Pedra"
+    ],
+    "Guarujá Mansões": [
+      "Açude",
+      "Cachoeira",
+      "Guarujá",
+      "Salomé",
+      "Santa Inês",
+      "Teixeirinha"
+    ],
+    "Cidade Verde": [
+      "Aroeiras",
+      "Arquipélago Verde",
+      "Brasiléia",
+      "Centro",
+      "D.I. Bandeirinhas",
+      "Jardim Casa Branca",
+      "Morada do Trevo"
+    ],
+    "Dom Bosco": [
+      "Betim Industrial",
+      "Jardim Alterosas 1 Seção",
+      "São João"
+    ],
+    "Citrolândia": [
+      "C. H. Dicalino Cabral",
+      "Fazenda Serrinha",
+      "Paquetá",
+      "Parque Ipiranga",
+      "Santa Izabel",
+      "São Jorge",
+      "São Marcos",
+      "São Salvador"
+    ],
+    "Morada do Trevo": [
+      "Brasiléia",
+      "Cidade Verde"
+    ],
+    "Marimbá": [
+      "Bodocó",
+      "Gentileza",
+      "Pimentas",
+      "Santo Afonso"
+    ],
+    "Parque Industrial de Betim": [
+      "Aroeiras",
+      "Casa Amarela",
+      "Charneca",
+      "Pingo D'Água"
+    ],
+    "Casa Amarela": [
+      "Aroeiras",
+      "Charneca",
+      "Fazenda Serrinha",
+      "Parque Industrial de Betim",
+      "Parque Ipiranga",
+      "São Salvador"
+    ],
+    "Quintas dos Godoy": [
+      "Açude",
+      "Bodocó",
+      "Brodoski",
+      "Residencial Montserrat",
+      "Saraiva"
+    ],
+    "Senhora das Graças": [
+      "Alto das Flores",
+      "Bom Retiro",
+      "C. H. Bueno Franco",
+      "Espírito Santo",
+      "Ingá"
+    ],
+    "Santa Izabel": [
+      "Citrolândia",
+      "Fazenda Serrinha"
+    ],
+    "Vila Cristina / C.H. Celso A. Pedra": [
+      "Amarante",
+      "Duque de Caxias",
+      "Jardim Alterosas 1 Seção",
+      "Laranjeiras",
+      "Parque das Acácias",
+      "São Luiz"
+    ],
+    "Açude": [
+      "Brodoski",
+      "Cachoeira",
+      "Flores e Florestas",
+      "Guarujá Mansões",
+      "Marmeleiros",
+      "Quintas dos Godoy",
+      "Residencial Montserrat",
+      "Saraiva",
+      "Teixeirinha"
+    ],
+    "C. H. José Gomes de Castro": [
+      "Cruzeiro",
+      "Presidente Kennedy",
+      "São João"
+    ],
+    "Riacho III": [
+      "D. I. Jardim Piemonte / Norte"
+    ],
+    "Teixeirinha": [
+      "Açude",
+      "Bom Repouso",
+      "Fazenda Liberatos",
+      "Guarujá Mansões",
+      "Novo Horizonte",
+      "Residencial Lagoa",
+      "Salomé",
+      "Santa Fé",
+      "Santa Lúcia",
+      "Saraiva"
+    ],
+    "Gentileza": [
+      "Bodocó",
+      "Califórnia",
+      "Fazenda Paraíso",
+      "Marimbá",
+      "Santo Afonso",
+      "Saraiva",
+      "Tapera"
+    ],
+    "C. H. Bueno Franco": [
+      "Alto das Flores",
+      "Espírito Santo",
+      "Niterói",
+      "Senhora das Graças",
+      "Senhora de Fátima",
+      "Vila das Flores"
+    ],
+    "Bom Retiro": [
+      "Alto das Flores",
+      "Bom Repouso",
+      "C.H. Homéro Gil",
+      "Fazenda Liberatos",
+      "Ingá",
+      "Novo Horizonte",
+      "Residencial Lagoa",
+      "Residencial Taquaril",
+      "Senhora das Graças"
+    ],
+    "São Marcos": [
+      "Charneca",
+      "Citrolândia",
+      "Paquetá"
+    ],
+    "Parque Ipiranga": [
+      "C. H. Dicalino Cabral",
+      "Casa Amarela",
+      "Citrolândia",
+      "Fazenda Serrinha",
+      "São Salvador"
+    ],
+    "Jardim Alterosas 1 Seção": [
+      "Amarante",
+      "Betim Industrial",
+      "Dom Bosco",
+      "Duque de Caxias",
+      "Jardim Alterosas 2 Seção",
+      "Nova Baden",
+      "Parque das Indústrias",
+      "São João",
+      "Vila Cristina / C.H. Celso A. Pedra"
+    ],
+    "Pimentas": [
+      "Bodocó",
+      "Marimbá",
+      "Santo Afonso",
+      "Vale Verde",
+      "Vianópolis"
+    ],
+    "C.H. Homéro Gil": [
+      "Alto das Flores",
+      "Bom Retiro",
+      "Ponte Alta",
+      "Vila das Flores"
+    ],
+    "Amazonas": [
+      "Alvorada",
+      "Capelinha",
+      "Imbiruçu",
+      "Renascer",
+      "Santo Antônio",
+      "Vila Boa Esperança"
+    ],
+    "C. H. Dicalino Cabral": [
+      "Citrolândia",
+      "Parque Ipiranga",
+      "São Salvador"
+    ],
+    "D. I. Paulo Camilo / Norte": [
+      "D. I. Paulo Camilo / Sul",
+      "Jardim Terezópolis",
+      "Laranjeiras",
+      "Nova Baden",
+      "Paulo Camilo"
+    ],
+    "São Salvador": [
+      "C. H. Dicalino Cabral",
+      "Casa Amarela",
+      "Charneca",
+      "Citrolândia",
+      "Parque Ipiranga",
+      "São Jorge"
+    ],
+    "Petrovale": [
+      "D. I. Paulo Camilo / Sul",
+      "Estância do Sereno PTB",
+      "Jardim Nazareno"
+    ],
+    "Decamão": [
+      "Angola",
+      "Brasiléia",
+      "Cachoeira",
+      "Centro",
+      "Guarujá",
+      "Santa Inês"
+    ],
+    "Tapera": [
+      "Fazenda Paraíso",
+      "Gentileza",
+      "Santo Afonso"
+    ],
+    "Vila das Flores": [
+      "Alto das Flores",
+      "C. H. Bueno Franco",
+      "C.H. Homéro Gil",
+      "Itacolomi",
+      "Ponte Alta",
+      "Senhora de Fátima",
+      "Vargem das Flores / C. H. Jalila C. Pedrosa"
+    ],
+    "Cruzeiro do Sul": [
+      "Duque de Caxias",
+      "Itacolomi",
+      "Jardim Alterosas 2 Seção",
+      "São José",
+      "Vargem das Flores / C. H. Jalila C. Pedrosa"
+    ],
+    "Estância do Sereno PTB": [
+      "Bandeirinhas",
+      "Campos Elíseos",
+      "Cruzeiro",
+      "D. I. Paulo Camilo / Sul",
+      "Estância do Sereno Sede",
+      "Jardim Nazareno",
+      "Petrovale",
+      "Vila Verde"
+    ],
+    "Cachoeira": [
+      "Açude",
+      "Brasiléia",
+      "Decamão",
+      "Flores e Florestas",
+      "Guarujá Mansões",
+      "Marmeleiros",
+      "Pingo D'Água",
+      "Santa Inês"
+    ],
+    "Charneca": [
+      "Casa Amarela",
+      "Paquetá",
+      "Parque Industrial de Betim",
+      "São Jorge",
+      "São Marcos",
+      "São Salvador"
+    ],
+    "Vargem das Flores / C. H. Jalila C. Pedrosa": [
+      "Cruzeiro do Sul",
+      "Itacolomi",
+      "Jardim Alterosas 2 Seção",
+      "Senhora de Fátima",
+      "Vila das Flores"
+    ],
+    "Espírito Santo": [
+      "C. H. Bueno Franco",
+      "Ingá",
+      "Jardim Brasília",
+      "Niterói",
+      "Parque das Indústrias",
+      "Senhora das Graças"
+    ],
+    "Senhora de Fátima": [
+      "C. H. Bueno Franco",
+      "Jardim Alterosas 2 Seção",
+      "Niterói",
+      "Vargem das Flores / C. H. Jalila C. Pedrosa",
+      "Vila das Flores"
+    ],
+    "Guanabara": [
+      "Campos Elíseos",
+      "D. I. Paulo Camilo / Sul",
+      "Paulo Camilo",
+      "Presidente Kennedy",
+      "Santa Cruz"
+    ],
+    "São José": [
+      "Chácaras São Sebastião",
+      "Cruzeiro do Sul",
+      "Duque de Caxias",
+      "Itacolomi"
+    ],
+    "Cruzeiro": [
+      "C. H. José Gomes de Castro",
+      "Campos Elíseos",
+      "Estância do Sereno PTB",
+      "Presidente Kennedy",
+      "São João",
+      "Vila Verde"
+    ],
+    "São Cristóvão": [
+      "Imbiruçu",
+      "Laranjeiras",
+      "Parque das Acácias",
+      "São Caetano",
+      "São Luiz"
+    ],
+    "Horto": [
+      "Angola",
+      "Ingá",
+      "Ingá Alto",
+      "Jardim da Cidade"
+    ],
+    "Saraiva": [
+      "Açude",
+      "Bodocó",
+      "Fazenda Liberatos",
+      "Fazenda Paraíso",
+      "Gentileza",
+      "Quintas dos Godoy",
+      "Teixeirinha"
+    ],
+    "Jardim da Cidade": [
+      "Angola",
+      "Centro",
+      "Horto",
+      "Ingá Alto"
+    ],
+    "Paquetá": [
+      "Charneca",
+      "Citrolândia",
+      "São Jorge",
+      "São Marcos"
+    ],
+    "Residencial Lagoa": [
+      "Bom Repouso",
+      "Bom Retiro",
+      "Fazenda Liberatos",
+      "Teixeirinha"
+    ],
+    "Duque de Caxias": [
+      "Cruzeiro do Sul",
+      "Jardim Alterosas 1 Seção",
+      "Jardim Alterosas 2 Seção",
+      "São José",
+      "Vila Cristina / C.H. Celso A. Pedra"
+    ],
+    "São Caetano": [
+      "Capelinha",
+      "Granja Verde",
+      "Imbiruçu",
+      "São Cristóvão",
+      "Vila Universal"
+    ],
+    "Estância do Sereno Sede": [
+      "Bandeirinhas",
+      "D.I. Bandeirinhas",
+      "Estância do Sereno PTB",
+      "São João",
+      "Vila Verde"
+    ],
+    "Imbiruçu": [
+      "Amazonas",
+      "Capelinha",
+      "Jardim Terezópolis",
+      "Laranjeiras",
+      "Santo Antônio",
+      "São Caetano",
+      "São Cristóvão"
+    ],
+    "Ingá Alto": [
+      "Centro",
+      "Chácara",
+      "Horto",
+      "Ingá",
+      "Jardim Brasília",
+      "Jardim da Cidade"
+    ],
+    "D. I. Paulo Camilo / Sul": [
+      "Campos Elíseos",
+      "D. I. Jardim Piemonte / Sul",
+      "D. I. Paulo Camilo / Norte",
+      "Estância do Sereno PTB",
+      "Guanabara",
+      "Jardim Nazareno",
+      "Jardim Terezópolis",
+      "Paulo Camilo",
+      "Petrovale",
+      "Santo Antônio"
+    ],
+    "Paulo Camilo": [
+      "D. I. Paulo Camilo / Norte",
+      "D. I. Paulo Camilo / Sul",
+      "Guanabara",
+      "Nova Baden",
+      "Santa Cruz"
+    ],
+    "Ponte Alta": [
+      "C.H. Homéro Gil",
+      "Chácara Várzea das Flores",
+      "Itacolomi",
+      "Vila das Flores"
+    ],
+    "Chácara": [
+      "Betim Industrial",
+      "Centro",
+      "Filadélfia",
+      "Ingá Alto",
+      "Jardim Brasília",
+      "Parque das Indústrias",
+      "Petrópolis"
+    ],
+    "Bom Repouso": [
+      "Bom Retiro",
+      "Novo Horizonte",
+      "Residencial Lagoa",
+      "Teixeirinha"
+    ],
+    "Vila Universal": [
+      "Capelinha",
+      "Granja Verde",
+      "São Caetano"
+    ],
+    "São Jorge": [
+      "Charneca",
+      "Citrolândia",
+      "Paquetá",
+      "São Salvador"
+    ],
+    "Residencial Taquaril": [
+      "Bom Retiro",
+      "Fazenda Liberatos"
+    ],
+    "Fazenda Paraíso": [
+      "Gentileza",
+      "Saraiva",
+      "Tapera"
+    ],
+    "D.I. Bandeirinhas": [
+      "Arquipélago Verde",
+      "Bandeirinhas",
+      "Cidade Verde",
+      "Estância do Sereno Sede",
+      "Monte Verde",
+      "São João"
+    ],
+    "Fazenda Serrinha": [
+      "Aroeiras",
+      "Bandeirinhas",
+      "Casa Amarela",
+      "Citrolândia",
+      "Parque Ipiranga",
+      "Santa Izabel"
+    ],
+    "Granja Verde": [
+      "Capelinha",
+      "São Caetano",
+      "Vila Universal"
+    ],
+    "Betim Industrial": [
+      "Chácara",
+      "Dom Bosco",
+      "Jardim Alterosas 1 Seção",
+      "Parque das Indústrias",
+      "Petrópolis",
+      "São João"
+    ],
+    "São João": [
+      "Betim Industrial",
+      "C. H. José Gomes de Castro",
+      "Cruzeiro",
+      "D.I. Bandeirinhas",
+      "Dom Bosco",
+      "Estância do Sereno Sede",
+      "Jardim Alterosas 1 Seção",
+      "Monte Verde",
+      "Nova Baden",
+      "Petrópolis",
+      "Presidente Kennedy",
+      "Santa Cruz",
+      "Vila Alpina",
+      "Vila Verde"
+    ],
+    "Capelinha": [
+      "Alvorada",
+      "Amazonas",
+      "Granja Verde",
+      "Imbiruçu",
+      "São Caetano",
+      "Vila Universal"
+    ],
+    "Flores e Florestas": [
+      "Açude",
+      "Bodocó",
+      "Brodoski",
+      "Cachoeira",
+      "Pingo D'Água",
+      "Residencial Montserrat",
+      "Vale Verde",
+      "Vianópolis"
+    ],
+    "Vale Verde": [
+      "Flores e Florestas",
+      "Pimentas",
+      "Vianópolis"
+    ],
+    "Jardim Terezópolis": [
+      "D. I. Paulo Camilo / Norte",
+      "D. I. Paulo Camilo / Sul",
+      "Imbiruçu",
+      "Laranjeiras",
+      "Santo Antônio"
+    ],
+    "Santa Lúcia": [
+      "Angola",
+      "Ingá",
+      "Novo Horizonte",
+      "Santa Fé",
+      "Teixeirinha"
+    ],
+    "Santa Cruz": [
+      "Guanabara",
+      "Nova Baden",
+      "Paulo Camilo",
+      "Presidente Kennedy",
+      "São João"
+    ],
+    "Arquipélago Verde": [
+      "Cidade Verde",
+      "D.I. Bandeirinhas",
+      "Jardim Casa Branca",
+      "Monte Verde",
+      "Petrópolis"
+    ],
+    "Amarante": [
+      "Jardim Alterosas 1 Seção",
+      "Laranjeiras",
+      "Nova Baden",
+      "Vila Cristina / C.H. Celso A. Pedra"
+    ],
+    "Bodocó": [
+      "Brodoski",
+      "Flores e Florestas",
+      "Gentileza",
+      "Marimbá",
+      "Pimentas",
+      "Quintas dos Godoy",
+      "Saraiva",
+      "Vianópolis"
+    ],
+    "Santo Antônio": [
+      "Amazonas",
+      "D. I. Paulo Camilo / Sul",
+      "Imbiruçu",
+      "Jardim Terezópolis",
+      "Vila Boa Esperança"
+    ],
+    "Presidente Kennedy": [
+      "C. H. José Gomes de Castro",
+      "Campos Elíseos",
+      "Cruzeiro",
+      "Guanabara",
+      "Santa Cruz",
+      "São João"
+    ],
+    "Jardim Alterosas 2 Seção": [
+      "Cruzeiro do Sul",
+      "Duque de Caxias",
+      "Jardim Alterosas 1 Seção",
+      "Niterói",
+      "Parque das Indústrias",
+      "Senhora de Fátima",
+      "Vargem das Flores / C. H. Jalila C. Pedrosa"
+    ],
+    "Salomé": [
+      "Angola",
+      "Guarujá",
+      "Guarujá Mansões",
+      "Santa Fé",
+      "Teixeirinha"
+    ],
+    "Santo Afonso": [
+      "Califórnia",
+      "Gentileza",
+      "Marimbá",
+      "Pimentas",
+      "Tapera"
+    ],
+    "Petrópolis": [
+      "Arquipélago Verde",
+      "Betim Industrial",
+      "Chácara",
+      "Filadélfia",
+      "Jardim Casa Branca",
+      "Monte Verde",
+      "São João",
+      "Vila Alpina"
+    ],
+    "Campos Elíseos": [
+      "Cruzeiro",
+      "D. I. Paulo Camilo / Sul",
+      "Estância do Sereno PTB",
+      "Guanabara",
+      "Presidente Kennedy"
+    ],
+    "Serra das Flores": [
+      "Chácaras São Sebastião"
+    ],
+    "Brodoski": [
+      "Açude",
+      "Bodocó",
+      "Flores e Florestas",
+      "Quintas dos Godoy",
+      "Residencial Montserrat"
+    ],
+    "D. I. Jardim Piemonte / Norte": [
+      "D. I. Jardim Piemonte / Sul",
+      "Riacho III"
+    ],
+    "Angola": [
+      "Centro",
+      "Decamão",
+      "Guarujá",
+      "Horto",
+      "Ingá",
+      "Jardim da Cidade",
+      "Salomé",
+      "Santa Fé",
+      "Santa Lúcia"
+    ],
+    "Parque das Acácias": [
+      "Laranjeiras",
+      "São Cristóvão",
+      "São Luiz",
+      "Vila Cristina / C.H. Celso A. Pedra"
+    ],
+    "Fazenda Liberatos": [
+      "Bom Retiro",
+      "Residencial Lagoa",
+      "Residencial Taquaril",
+      "Saraiva",
+      "Teixeirinha"
+    ],
+    "Santa Fé": [
+      "Angola",
+      "Salomé",
+      "Santa Lúcia",
+      "Teixeirinha"
+    ],
+    "Renascer": [
+      "Alvorada",
+      "Amazonas"
+    ],
+    "Nova Baden": [
+      "Amarante",
+      "D. I. Paulo Camilo / Norte",
+      "Jardim Alterosas 1 Seção",
+      "Laranjeiras",
+      "Paulo Camilo",
+      "Santa Cruz",
+      "São João"
+    ],
+    "Novo Horizonte": [
+      "Bom Repouso",
+      "Bom Retiro",
+      "Ingá",
+      "Santa Lúcia",
+      "Teixeirinha"
+    ],
+    "Santa Inês": [
+      "Cachoeira",
+      "Decamão",
+      "Guarujá",
+      "Guarujá Mansões"
+    ],
+    "Marmeleiros": [
+      "Açude",
+      "Cachoeira"
+    ],
+    "Aroeiras": [
+      "Brasiléia",
+      "Casa Amarela",
+      "Cidade Verde",
+      "Fazenda Serrinha",
+      "Parque Industrial de Betim",
+      "Pingo D'Água"
+    ],
+    "Vianópolis": [
+      "Bodocó",
+      "Flores e Florestas",
+      "Pimentas",
+      "Vale Verde"
+    ],
+    "Jardim Nazareno": [
+      "D. I. Paulo Camilo / Sul",
+      "Estância do Sereno PTB",
+      "Petrovale"
+    ],
+    "Brasiléia": [
+      "Aroeiras",
+      "Cachoeira",
+      "Centro",
+      "Cidade Verde",
+      "Decamão",
+      "Morada do Trevo",
+      "Pingo D'Água"
+    ],
+    "Alvorada": [
+      "Amazonas",
+      "Capelinha",
+      "Renascer"
+    ],
+    "Guarujá": [
+      "Angola",
+      "Decamão",
+      "Guarujá Mansões",
+      "Salomé",
+      "Santa Inês"
+    ],
+    "Vila Alpina": [
+      "Monte Verde",
+      "Petrópolis",
+      "São João"
+    ],
+    "Parque das Indústrias": [
+      "Betim Industrial",
+      "Chácara",
+      "Espírito Santo",
+      "Jardim Alterosas 1 Seção",
+      "Jardim Alterosas 2 Seção",
+      "Jardim Brasília",
+      "Niterói"
+    ],
+    "Ingá": [
+      "Angola",
+      "Bom Retiro",
+      "Espírito Santo",
+      "Horto",
+      "Ingá Alto",
+      "Jardim Brasília",
+      "Novo Horizonte",
+      "Santa Lúcia",
+      "Senhora das Graças"
+    ],
+    "Itacolomi": [
+      "Chácara Várzea das Flores",
+      "Chácaras São Sebastião",
+      "Cruzeiro do Sul",
+      "Ponte Alta",
+      "São José",
+      "Vargem das Flores / C. H. Jalila C. Pedrosa",
+      "Vila das Flores"
+    ],
+    "Bandeirinhas": [
+      "D.I. Bandeirinhas",
+      "Estância do Sereno PTB",
+      "Estância do Sereno Sede",
+      "Fazenda Serrinha"
+    ],
+    "Chácaras São Sebastião": [
+      "Chácara Várzea das Flores",
+      "Itacolomi",
+      "Serra das Flores",
+      "São José"
+    ],
+    "Jardim Brasília": [
+      "Chácara",
+      "Espírito Santo",
+      "Ingá",
+      "Ingá Alto",
+      "Parque das Indústrias"
+    ],
+    "Vila Verde": [
+      "Cruzeiro",
+      "Estância do Sereno PTB",
+      "Estância do Sereno Sede",
+      "São João"
+    ]
+  }
+}

@@ -1,0 +1,20 @@
+﻿municipio,qe,political_id,candidato,full_name,partido,genero,total_votes,concentracao_final,interpretation,total_conglomerates,municipios_map_file,unmatched_in_csv
+BARRA MANSA,4534.0,299513,FURLANI,LUIZ ANTONIO FURLANI FILHO,PSDB,masculino,2435,0.5043,media,7,neighbors_barra_mansa_bairros.json,False
+BARRA MANSA,4534.0,303968,MARQUINHO PITOMBEIRA,MARCOS ANDRÉ GONÇALVES PITOMBEIRA,DEM,masculino,1821,0.4493,media_baixa,5,neighbors_barra_mansa_bairros.json,False
+BARRA MANSA,4534.0,295948,RAYANE BRAGA,RAYANE BRAGA DA SILVA,PSL,feminino,1686,0.4261,media_baixa,7,neighbors_barra_mansa_bairros.json,False
+BARRA MANSA,4534.0,299397,DECO,DEMERSON SÉRGIO PRADO NOVAIS,PSC,masculino,1641,0.438,media_baixa,5,neighbors_barra_mansa_bairros.json,False
+BARRA MANSA,4534.0,298432,PAULO CHUCHU,PAULO AFONSO SALES MOREIRA DA SILVA,DEM,masculino,1569,0.4722,media_baixa,7,neighbors_barra_mansa_bairros.json,False
+BARRA MANSA,4534.0,287933,JEFFERSON MAMEDE,JEFFERSON ALESSANDRO GALDINO MAMEDE,PSC,masculino,1411,0.5121,media,5,neighbors_barra_mansa_bairros.json,False
+BARRA MANSA,4534.0,300113,PISSULA,VICENTE DE PAULA FERREIRA JUNIOR,PV,masculino,1391,0.42,media_baixa,5,neighbors_barra_mansa_bairros.json,False
+BARRA MANSA,4534.0,290284,PAULO DA GRÁFICA,PAULO CESAR FERREIRA,PSL,masculino,1367,0.5072,media,7,neighbors_barra_mansa_bairros.json,False
+BARRA MANSA,4534.0,296847,DANIEL MACIEL,DANIEL VOLPE MACIEL,PP,masculino,1336,0.455,media_baixa,7,neighbors_barra_mansa_bairros.json,False
+BARRA MANSA,4534.0,295298,PAULO SANDRO,PAULO SANDRO SOARES,DC,masculino,1263,0.4086,media_baixa,7,neighbors_barra_mansa_bairros.json,False
+BARRA MANSA,4534.0,296375,GUSTAVO GOMES,GUSTAVO DE ALMEIDA GOMES,REPUBLICANOS,masculino,1162,0.445,media_baixa,6,neighbors_barra_mansa_bairros.json,False
+BARRA MANSA,4534.0,298847,CASÉ,CARLOS JOSÉ RODRIGUES FIGUEIRA,PSL,masculino,1153,0.4622,media_baixa,6,neighbors_barra_mansa_bairros.json,False
+BARRA MANSA,4534.0,303649,CRISTINA MAGNO,CRISTINA DE FATIMA CARDOSO DOS SANTOS LOURES,PP,feminino,1109,0.4696,media_baixa,5,neighbors_barra_mansa_bairros.json,False
+BARRA MANSA,4534.0,304332,LUCIANA ALVES,LUCIANA DE OLIVEIRA ALVES,DC,feminino,1062,0.4375,media_baixa,7,neighbors_barra_mansa_bairros.json,False
+BARRA MANSA,4534.0,296861,MARCELL CASTRO,MARCELL PEREIRA NUNES CASTRO DE SOUZA,CIDADANIA,masculino,1054,0.5093,media,5,neighbors_barra_mansa_bairros.json,False
+BARRA MANSA,4534.0,300112,DR EDUARDO PIMENTEL,EDUARDO GONÇALVES PIMENTEL,PV,masculino,1051,0.5215,media,4,neighbors_barra_mansa_bairros.json,False
+BARRA MANSA,4534.0,299519,PAOLA DA PIZZARIA,PAOLA SAPEDE SILVÉRIO,PSDB,feminino,912,0.4573,media_baixa,6,neighbors_barra_mansa_bairros.json,False
+BARRA MANSA,4534.0,292099,PROFESSORA FERNANDA CARREIRO,FERNANDA CARREIRO ALVES,PT,feminino,839,0.5397,media,4,neighbors_barra_mansa_bairros.json,False
+BARRA MANSA,4534.0,293295,JOSÉ MARQUES,JOSÉ MARQUES,PSD,masculino,779,0.4722,media_baixa,9,neighbors_barra_mansa_bairros.json,False

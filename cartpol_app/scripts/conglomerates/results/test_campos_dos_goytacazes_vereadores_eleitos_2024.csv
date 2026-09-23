@@ -1,0 +1,26 @@
+﻿municipio,qe,political_id,candidato,full_name,partido,genero,total_votes,concentracao_final,interpretation,total_conglomerates,municipios_map_file,unmatched_in_csv
+CAMPOS DOS GOYTACAZES,11158.0,629466,KASSIANO TAVARES,KASSIANO JOSÉ TAVARES DE SOUZA,PP,masculino,5790,0.3963,media_baixa,13,neighbors_campos_dos_goytacazes_bairros.json,False
+CAMPOS DOS GOYTACAZES,11158.0,643120,THAMIRES RANGEL,THAMIRES DA SILVA LIMA,PMB,feminino,5483,0.4515,media_baixa,15,neighbors_campos_dos_goytacazes_bairros.json,False
+CAMPOS DOS GOYTACAZES,11158.0,633472,MARQUINHO BACELLAR,MARCOS DA SILVA BACELLAR,UNIÃO,masculino,5345,0.4128,media_baixa,14,neighbors_campos_dos_goytacazes_bairros.json,False
+CAMPOS DOS GOYTACAZES,11158.0,629349,PROFESSOR WAINER,WAINER TEIXEIRA DE CASTRO,PP,masculino,5148,0.4271,media_baixa,13,neighbors_campos_dos_goytacazes_bairros.json,False
+CAMPOS DOS GOYTACAZES,11158.0,629464,BRUNO PEZÃO,BRUNO FERNANDO SANTOS DE AZEVEDO,PP,masculino,4880,0.4298,media_baixa,15,neighbors_campos_dos_goytacazes_bairros.json,False
+CAMPOS DOS GOYTACAZES,11158.0,629351,FRED RANGEL,FREDERICO DE MATTOS RANGEL,PP,masculino,4666,0.4554,media_baixa,13,neighbors_campos_dos_goytacazes_bairros.json,False
+CAMPOS DOS GOYTACAZES,11158.0,634509,PAULO COTHÉ DA CORRENTE DO BEM,PAULO HENRIQUE AZEREDO RANGEL,MDB,masculino,4568,0.4181,media_baixa,15,neighbors_campos_dos_goytacazes_bairros.json,False
+CAMPOS DOS GOYTACAZES,11158.0,629355,FÁBIO RIBEIRO,FÁBIO AUGUSTO VIANA RIBEIRO,PP,masculino,4483,0.487,media_baixa,13,neighbors_campos_dos_goytacazes_bairros.json,False
+CAMPOS DOS GOYTACAZES,11158.0,631675,ROGÉRIO MATOSO,ROGERIO FERNANDES RIBEIRO GOMES,SOLIDARIEDADE,masculino,4325,0.4778,media_baixa,12,neighbors_campos_dos_goytacazes_bairros.json,False
+CAMPOS DOS GOYTACAZES,11158.0,629353,MARQUINHO DO TRANSPORTE,MARCOS ALCIDES SOUZA DA SILVA,PP,masculino,4232,0.4954,media_baixa,12,neighbors_campos_dos_goytacazes_bairros.json,False
+CAMPOS DOS GOYTACAZES,11158.0,634429,MAICON CRUZ,MAICON SILVA DA CRUZ,PSD,masculino,4136,0.4828,media_baixa,12,neighbors_campos_dos_goytacazes_bairros.json,False
+CAMPOS DOS GOYTACAZES,11158.0,633360,NILDO CARDOSO,NILDO NUNES CARDOSO,PL,masculino,4106,0.45,media_baixa,13,neighbors_campos_dos_goytacazes_bairros.json,False
+CAMPOS DOS GOYTACAZES,11158.0,629181,SUB JACKSON,JACKSON LUÍS JESUS DE SOUSA,PP,masculino,4088,0.4114,media_baixa,12,neighbors_campos_dos_goytacazes_bairros.json,False
+CAMPOS DOS GOYTACAZES,11158.0,638017,ANDERSON DE MATOS,ANDERSON DE MATOS RIBEIRO,REPUBLICANOS,masculino,8116,0.4606,media_baixa,10,neighbors_campos_dos_goytacazes_bairros.json,False
+CAMPOS DOS GOYTACAZES,11158.0,634510,SILVINHO MARTINS,SILVIO ROBERTO DE OLIVEIRA MARTINS,MDB,masculino,3904,0.4848,media_baixa,16,neighbors_campos_dos_goytacazes_bairros.json,False
+CAMPOS DOS GOYTACAZES,11158.0,633533,DANDINHO DE RIO PRETO,ANDERSON RANGEL BORGES,UNIÃO,masculino,3775,0.4339,media_baixa,15,neighbors_campos_dos_goytacazes_bairros.json,False
+CAMPOS DOS GOYTACAZES,11158.0,633391,DR ABDU NEME,ABDU NEME JORGE MAKHLUF NETO,PL,masculino,3712,0.4806,media_baixa,13,neighbors_campos_dos_goytacazes_bairros.json,False
+CAMPOS DOS GOYTACAZES,11158.0,633351,LEON GOMES,LEON GOMES CELESTINO,PDT,masculino,3712,0.4523,media_baixa,14,neighbors_campos_dos_goytacazes_bairros.json,False
+CAMPOS DOS GOYTACAZES,11158.0,638092,DUDU AZEVEDO,EDUARDO SILVA AZEVEDO,REPUBLICANOS,masculino,7322,0.4905,media_baixa,13,neighbors_campos_dos_goytacazes_bairros.json,False
+CAMPOS DOS GOYTACAZES,11158.0,631673,CIRO ROCHA,CIRO DA SILVA ROCHA,SOLIDARIEDADE,masculino,3578,0.4543,media_baixa,12,neighbors_campos_dos_goytacazes_bairros.json,False
+CAMPOS DOS GOYTACAZES,11158.0,633422,CABO ALONSIMAR,ALONSIMAR DE OLIVEIRA PESSANHA,PDT,masculino,3371,0.4655,media_baixa,13,neighbors_campos_dos_goytacazes_bairros.json,False
+CAMPOS DOS GOYTACAZES,11158.0,634565,MARCIONE DA FARMÁCIA,MARCIONE DA COSTA FAQUER,MDB,masculino,3157,0.408,media_baixa,11,neighbors_campos_dos_goytacazes_bairros.json,False
+CAMPOS DOS GOYTACAZES,11158.0,644040,JUNINHO VIRGILIO,NEILTON VIRGILIO DE SOUZA JUNIOR,PODE,masculino,3154,0.4327,media_baixa,11,neighbors_campos_dos_goytacazes_bairros.json,False
+CAMPOS DOS GOYTACAZES,11158.0,633421,DIEGO DIAS,DIEGO DIAS BATISTA,PDT,masculino,2977,0.449,media_baixa,14,neighbors_campos_dos_goytacazes_bairros.json,False
+CAMPOS DOS GOYTACAZES,11158.0,643936,PASTOR MARCOS ELIAS,MARCOS ELIAS ESCAFURA DA SILVA,PODE,masculino,2529,0.4524,media_baixa,14,neighbors_campos_dos_goytacazes_bairros.json,False

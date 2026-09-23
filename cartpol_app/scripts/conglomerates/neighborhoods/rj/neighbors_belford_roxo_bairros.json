@@ -1,0 +1,222 @@
+{
+  "county": "Belford Roxo",
+  "source_zip": "/home/iuri/TCC/cartpol-pwa/src/assets/maps/county/Belford Roxo.zip",
+  "stats": {
+    "total_regions": 30,
+    "total_neighbors": 73,
+    "avg_neighbors": 4.866666666666666,
+    "max_neighbors": 9,
+    "min_neighbors": 2,
+    "isolated_regions": 0,
+    "region_most_neighbors": "Pauline",
+    "region_least_neighbors": "Santo Antônio da Prata"
+  },
+  "neighbors": {
+    "Recantus": [
+      "Maringá",
+      "Nova Aurora",
+      "Santa Maria",
+      "Shangri-lá",
+      "São Vicente",
+      "Xavantes"
+    ],
+    "São Vicente": [
+      "Maringá",
+      "Pauline",
+      "Recantus",
+      "Santa Maria",
+      "Xavantes"
+    ],
+    "Piam": [
+      "Areia Branca",
+      "Centro",
+      "Heliópolis",
+      "Nova Piam",
+      "Santa Amélia",
+      "das Graças"
+    ],
+    "Santo Antônio da Prata": [
+      "Areia Branca",
+      "Centro"
+    ],
+    "Shangri-lá": [
+      "Itaipu",
+      "Nova Aurora",
+      "Recantus",
+      "São Francisco de Assis"
+    ],
+    "Bom Pastor": [
+      "Centro",
+      "Pauline",
+      "Redentor",
+      "Santa Amélia",
+      "das Graças"
+    ],
+    "São José": [
+      "Maringá",
+      "Parque dos Ferreiras",
+      "Pauline",
+      "Santa Tereza",
+      "Wona"
+    ],
+    "das Graças": [
+      "Bom Pastor",
+      "Centro",
+      "Piam",
+      "Santa Amélia"
+    ],
+    "Santa Amélia": [
+      "Barro Vermelho",
+      "Bom Pastor",
+      "Nova Piam",
+      "Pauline",
+      "Piam",
+      "das Graças"
+    ],
+    "Andrade Araújo": [
+      "Areia Branca",
+      "Heliópolis",
+      "Itaipu"
+    ],
+    "Lote XV": [
+      "Parque dos Ferreiras",
+      "Vale do Ipê",
+      "Wona"
+    ],
+    "Maringá": [
+      "Pauline",
+      "Recantus",
+      "São José",
+      "São Vicente",
+      "Vale do Ipê",
+      "Wona"
+    ],
+    "Barro Vermelho": [
+      "Nova Piam",
+      "Pauline",
+      "Santa Amélia",
+      "Santa Maria",
+      "São Bernardo"
+    ],
+    "Nova Piam": [
+      "Barro Vermelho",
+      "Heliópolis",
+      "Piam",
+      "Santa Amélia",
+      "São Bernardo",
+      "São Francisco de Assis",
+      "Xavantes"
+    ],
+    "São Bernardo": [
+      "Barro Vermelho",
+      "Nova Piam",
+      "Santa Maria",
+      "Xavantes"
+    ],
+    "Nova Aurora": [
+      "Recantus",
+      "Shangri-lá",
+      "São Francisco de Assis",
+      "Xavantes"
+    ],
+    "Itaipu": [
+      "Andrade Araújo",
+      "Heliópolis",
+      "Shangri-lá",
+      "São Francisco de Assis"
+    ],
+    "Heliópolis": [
+      "Andrade Araújo",
+      "Areia Branca",
+      "Itaipu",
+      "Nova Piam",
+      "Piam",
+      "São Francisco de Assis",
+      "Xavantes"
+    ],
+    "Vale do Ipê": [
+      "Lote XV",
+      "Maringá",
+      "Wona"
+    ],
+    "Xavantes": [
+      "Heliópolis",
+      "Nova Aurora",
+      "Nova Piam",
+      "Recantus",
+      "Santa Maria",
+      "São Bernardo",
+      "São Francisco de Assis",
+      "São Vicente"
+    ],
+    "Parque dos Ferreiras": [
+      "Lote XV",
+      "São José",
+      "Wona"
+    ],
+    "Wona": [
+      "Lote XV",
+      "Maringá",
+      "Parque dos Ferreiras",
+      "São José",
+      "Vale do Ipê"
+    ],
+    "São Francisco de Assis": [
+      "Heliópolis",
+      "Itaipu",
+      "Nova Aurora",
+      "Nova Piam",
+      "Shangri-lá",
+      "Xavantes"
+    ],
+    "Glaucia": [
+      "Redentor",
+      "Santa Tereza"
+    ],
+    "Redentor": [
+      "Bom Pastor",
+      "Glaucia",
+      "Pauline",
+      "Santa Tereza"
+    ],
+    "Santa Maria": [
+      "Barro Vermelho",
+      "Pauline",
+      "Recantus",
+      "São Bernardo",
+      "São Vicente",
+      "Xavantes"
+    ],
+    "Centro": [
+      "Areia Branca",
+      "Bom Pastor",
+      "Piam",
+      "Santo Antônio da Prata",
+      "das Graças"
+    ],
+    "Santa Tereza": [
+      "Glaucia",
+      "Pauline",
+      "Redentor",
+      "São José"
+    ],
+    "Pauline": [
+      "Barro Vermelho",
+      "Bom Pastor",
+      "Maringá",
+      "Redentor",
+      "Santa Amélia",
+      "Santa Maria",
+      "Santa Tereza",
+      "São José",
+      "São Vicente"
+    ],
+    "Areia Branca": [
+      "Andrade Araújo",
+      "Centro",
+      "Heliópolis",
+      "Piam",
+      "Santo Antônio da Prata"
+    ]
+  }
+}

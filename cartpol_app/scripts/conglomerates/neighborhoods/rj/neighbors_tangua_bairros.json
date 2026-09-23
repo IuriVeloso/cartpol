@@ -1,0 +1,66 @@
+{
+  "county": "Tanguá",
+  "source_zip": "/home/iuri/TCC/cartpol-pwa/src/assets/maps/county/Tanguá.zip",
+  "stats": {
+    "total_regions": 9,
+    "total_neighbors": 16,
+    "avg_neighbors": 3.5555555555555554,
+    "max_neighbors": 6,
+    "min_neighbors": 1,
+    "isolated_regions": 0,
+    "region_most_neighbors": "Centro",
+    "region_least_neighbors": "Duques"
+  },
+  "neighbors": {
+    "Centro": [
+      "Ampliação",
+      "Bandeirantes",
+      "Mangueiras",
+      "Mangueirinha",
+      "Pinhão",
+      "Vila Cortes"
+    ],
+    "Vila Cortes": [
+      "Ampliação",
+      "Bandeirantes",
+      "Centro"
+    ],
+    "Ampliação": [
+      "Bandeirantes",
+      "Centro",
+      "Mangueirinha",
+      "Minério",
+      "Vila Cortes"
+    ],
+    "Mangueiras": [
+      "Centro",
+      "Mangueirinha",
+      "Pinhão"
+    ],
+    "Minério": [
+      "Ampliação",
+      "Bandeirantes"
+    ],
+    "Pinhão": [
+      "Bandeirantes",
+      "Centro",
+      "Duques",
+      "Mangueiras"
+    ],
+    "Mangueirinha": [
+      "Ampliação",
+      "Centro",
+      "Mangueiras"
+    ],
+    "Duques": [
+      "Pinhão"
+    ],
+    "Bandeirantes": [
+      "Ampliação",
+      "Centro",
+      "Minério",
+      "Pinhão",
+      "Vila Cortes"
+    ]
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "county": "Nilópolis",
+  "source_zip": "/home/iuri/TCC/cartpol-pwa/src/assets/maps/county/Nilópolis.zip",
+  "stats": {
+    "total_regions": 15,
+    "total_neighbors": 31,
+    "avg_neighbors": 4.133333333333334,
+    "max_neighbors": 8,
+    "min_neighbors": 2,
+    "isolated_regions": 0,
+    "region_most_neighbors": "Centro",
+    "region_least_neighbors": "Nossa Senhora de Fátima"
+  },
+  "neighbors": {
+    "Santos Dumont": [
+      "Centro",
+      "Frigorífico",
+      "Manoel Reis",
+      "Nossa Senhora de Fátima"
+    ],
+    "Novo Horizonte": [
+      "Cabuís",
+      "Centro",
+      "Nova Cidade",
+      "Tropical"
+    ],
+    "Tropical": [
+      "Cabuís",
+      "Cabuís II",
+      "Centro",
+      "Centro de Olinda",
+      "Novo Horizonte",
+      "da Mina"
+    ],
+    "Nossa Senhora de Fátima": [
+      "Manoel Reis",
+      "Santos Dumont"
+    ],
+    "Cabuís": [
+      "Cabuís II",
+      "Novo Horizonte",
+      "Tropical",
+      "da Mina"
+    ],
+    "Manoel Reis": [
+      "Centro",
+      "Centro de Olinda",
+      "Manoel Reis II",
+      "Nossa Senhora de Fátima",
+      "Santos Dumont"
+    ],
+    "Frigorífico": [
+      "Centro",
+      "Nova Cidade",
+      "Santos Dumont"
+    ],
+    "Centro": [
+      "Centro de Olinda",
+      "Frigorífico",
+      "Manoel Reis",
+      "Manoel Reis II",
+      "Nova Cidade",
+      "Novo Horizonte",
+      "Santos Dumont",
+      "Tropical"
+    ],
+    "Nova Cidade": [
+      "Centro",
+      "Frigorífico",
+      "Novo Horizonte"
+    ],
+    "Manoel Reis II": [
+      "Cabral",
+      "Centro",
+      "Centro de Olinda",
+      "Manoel Reis"
+    ],
+    "Paiol": [
+      "Cabuís II",
+      "da Mina"
+    ],
+    "Cabuís II": [
+      "Cabuís",
+      "Paiol",
+      "Tropical",
+      "da Mina"
+    ],
+    "Centro de Olinda": [
+      "Cabral",
+      "Centro",
+      "Manoel Reis",
+      "Manoel Reis II",
+      "Tropical",
+      "da Mina"
+    ],
+    "da Mina": [
+      "Cabuís",
+      "Cabuís II",
+      "Centro de Olinda",
+      "Paiol",
+      "Tropical"
+    ],
+    "Cabral": [
+      "Centro de Olinda",
+      "Manoel Reis II"
+    ]
+  }
+}

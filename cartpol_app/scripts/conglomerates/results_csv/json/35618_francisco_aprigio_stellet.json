@@ -1,0 +1,189 @@
+{
+  "candidato": {
+    "nr": "35618",
+    "nome": "FRANCISCO APRIGIO STELLET"
+  },
+  "qe": 59154.0,
+  "total_votes": 541,
+  "neighborhoods_with_votes": 30,
+  "neighborhoods_after_filter": 1,
+  "classification": "P",
+  "conglomerates": [
+    {
+      "neighborhoods": [
+        "Santa Cruz"
+      ],
+      "size": 1,
+      "total_votes": 471,
+      "ruesp": 0.03595,
+      "ruesp_can": 0.87061,
+      "rcan_uesp": 0.004594,
+      "importance": "G",
+      "fuzzy_concentration": 0.9592,
+      "id": 1
+    }
+  ],
+  "lq_hc": {
+    "Cidade de Deus": {
+      "lq": 1.3309,
+      "hc": 0.99,
+      "ci": 4.107e-05
+    },
+    "Santa Cruz": {
+      "lq": 24.2174,
+      "hc": 451.55,
+      "ci": 0.03129819
+    },
+    "Campo Grande": {
+      "lq": 0.2743,
+      "hc": -23.81,
+      "ci": 0.00100878
+    },
+    "Taquara": {
+      "lq": 0.9756,
+      "hc": -0.27,
+      "ci": 0.00042375
+    },
+    "Cidade Nova": {
+      "lq": 0.5076,
+      "hc": -0.97,
+      "ci": 6.73e-06
+    },
+    "Pedra de Guaratiba": {
+      "lq": 1.2736,
+      "hc": 0.64,
+      "ci": 2.414e-05
+    },
+    "Tanque": {
+      "lq": 1.1267,
+      "hc": 0.45,
+      "ci": 4.852e-05
+    },
+    "Freguesia (Jacarepaguá)": {
+      "lq": 0.5024,
+      "hc": -2.97,
+      "ci": 6.12e-05
+    },
+    "Jacarepaguá": {
+      "lq": 0.2106,
+      "hc": -7.49,
+      "ci": 6.488e-05
+    },
+    "Senador Vasconcelos": {
+      "lq": 1.2534,
+      "hc": 0.61,
+      "ci": 2.453e-05
+    },
+    "Brás de Pina": {
+      "lq": 0.2738,
+      "hc": -2.65,
+      "ci": 1.248e-05
+    },
+    "Realengo": {
+      "lq": 0.3218,
+      "hc": -10.54,
+      "ci": 0.00026544
+    },
+    "Engenho de Dentro": {
+      "lq": 0.2131,
+      "hc": -3.69,
+      "ci": 1.604e-05
+    },
+    "Bento Ribeiro": {
+      "lq": 0.5738,
+      "hc": -1.49,
+      "ci": 2.382e-05
+    },
+    "Irajá": {
+      "lq": 0.0854,
+      "hc": -10.71,
+      "ci": 4e-05
+    },
+    "Rocha Miranda": {
+      "lq": 0.187,
+      "hc": -4.35,
+      "ci": 1.827e-05
+    },
+    "Senador Camará": {
+      "lq": 0.2725,
+      "hc": -5.34,
+      "ci": 5.014e-05
+    },
+    "Barra da Tijuca": {
+      "lq": 0.0808,
+      "hc": -11.38,
+      "ci": 4.229e-05
+    },
+    "Sepetiba": {
+      "lq": 0.4053,
+      "hc": -2.93,
+      "ci": 3.372e-05
+    },
+    "Bonsucesso": {
+      "lq": 0.2193,
+      "hc": -3.56,
+      "ci": 1.558e-05
+    },
+    "Inhaúma": {
+      "lq": 0.2332,
+      "hc": -3.29,
+      "ci": 1.465e-05
+    },
+    "Quintino Bocaiúva": {
+      "lq": 0.3238,
+      "hc": -2.09,
+      "ci": 1.055e-05
+    },
+    "Honório Gurgel": {
+      "lq": 0.435,
+      "hc": -1.3,
+      "ci": 7.85e-06
+    },
+    "Olaria": {
+      "lq": 0.5763,
+      "hc": -2.21,
+      "ci": 5.336e-05
+    },
+    "Cosmos": {
+      "lq": 0.3119,
+      "hc": -4.41,
+      "ci": 4.381e-05
+    },
+    "Bangu": {
+      "lq": 0.0481,
+      "hc": -19.8,
+      "ci": 7.107e-05
+    },
+    "Guaratiba": {
+      "lq": 0.1144,
+      "hc": -7.74,
+      "ci": 2.986e-05
+    },
+    "Curicica": {
+      "lq": 0.2746,
+      "hc": -2.64,
+      "ci": 1.244e-05
+    },
+    "Laranjeiras": {
+      "lq": 0.2427,
+      "hc": -3.12,
+      "ci": 1.408e-05
+    },
+    "Pavuna": {
+      "lq": 0.1424,
+      "hc": -6.02,
+      "ci": 2.399e-05
+    }
+  },
+  "lq_hc_summary": {
+    "lq_max": 24.2174,
+    "bairro_lq_max": "Santa Cruz",
+    "hc_total_positivo": 454.24,
+    "bairros_lq_acima_1": 5,
+    "ci_max": 0.03129819,
+    "bairro_ci_max": "Santa Cruz"
+  },
+  "concentracao_final": 0.9592,
+  "interpretation": "muito_alta",
+  "total_conglomerates": 1
+}

@@ -1,0 +1,822 @@
+{
+  "candidato": {
+    "nr": "27040",
+    "urna": "WILLIAN COELHO",
+    "full": "WILLIAN CARVALHO DOS SANTOS",
+    "partido": "DC"
+  },
+  "qe": 59154.0,
+  "total_votes": 18767,
+  "neighborhoods_with_votes": 136,
+  "neighborhoods_after_filter": 42,
+  "classification": "M",
+  "conglomerates": [
+    {
+      "neighborhoods": [
+        "Anil",
+        "Bangu",
+        "Barra da Tijuca",
+        "Barra de Guaratiba",
+        "Bento Ribeiro",
+        "Campo Grande",
+        "Colégio",
+        "Cosmos",
+        "Curicica",
+        "Deodoro",
+        "Freguesia (Jacarepaguá)",
+        "Guadalupe",
+        "Guaratiba",
+        "Inhoaíba",
+        "Irajá",
+        "Jacarepaguá",
+        "Madureira",
+        "Marechal Hermes",
+        "Oswaldo Cruz",
+        "Paciência",
+        "Padre Miguel",
+        "Pavuna",
+        "Pedra de Guaratiba",
+        "Praça Seca",
+        "Quintino Bocaiúva",
+        "Realengo",
+        "Recreio dos Bandeirantes",
+        "Rocha Miranda",
+        "Santa Cruz",
+        "Senador Camará",
+        "Senador Vasconcelos",
+        "Sepetiba",
+        "Tanque",
+        "Taquara",
+        "Vargem Grande",
+        "Vargem Pequena",
+        "Vila Valqueire"
+      ],
+      "size": 37,
+      "total_votes": 17997,
+      "ruesp": 0.479096,
+      "ruesp_can": 0.958971,
+      "rcan_uesp": 0.013172,
+      "importance": "G",
+      "fuzzy_concentration": 0.6538,
+      "id": 1
+    },
+    {
+      "neighborhoods": [
+        "Copacabana"
+      ],
+      "size": 1,
+      "total_votes": 27,
+      "ruesp": 0.021745,
+      "ruesp_can": 0.001439,
+      "rcan_uesp": 0.000435,
+      "importance": "G",
+      "fuzzy_concentration": 0.3584,
+      "id": 2
+    },
+    {
+      "neighborhoods": [
+        "Inhaúma"
+      ],
+      "size": 1,
+      "total_votes": 31,
+      "ruesp": 0.007926,
+      "ruesp_can": 0.001652,
+      "rcan_uesp": 0.001371,
+      "importance": "P",
+      "fuzzy_concentration": 0.3584,
+      "id": 3
+    },
+    {
+      "neighborhoods": [
+        "Tijuca"
+      ],
+      "size": 1,
+      "total_votes": 30,
+      "ruesp": 0.029275,
+      "ruesp_can": 0.001599,
+      "rcan_uesp": 0.000359,
+      "importance": "G",
+      "fuzzy_concentration": 0.3584,
+      "id": 4
+    },
+    {
+      "neighborhoods": [
+        "Galeão"
+      ],
+      "size": 1,
+      "total_votes": 27,
+      "ruesp": 0.004684,
+      "ruesp_can": 0.001439,
+      "rcan_uesp": 0.002021,
+      "importance": "P",
+      "fuzzy_concentration": 0.3584,
+      "id": 5
+    },
+    {
+      "neighborhoods": [
+        "Maré"
+      ],
+      "size": 1,
+      "total_votes": 22,
+      "ruesp": 0.012046,
+      "ruesp_can": 0.001172,
+      "rcan_uesp": 0.00064,
+      "importance": "P",
+      "fuzzy_concentration": 0.3584,
+      "id": 6
+    }
+  ],
+  "lq_hc": {
+    "Realengo": {
+      "lq": 0.2894,
+      "hc": -383.01,
+      "ci": 0.00023874
+    },
+    "Santa Cruz": {
+      "lq": 6.3824,
+      "hc": 3631.33,
+      "ci": 0.00824849
+    },
+    "Gamboa": {
+      "lq": 0.0332,
+      "hc": -29.15,
+      "ci": 9e-08
+    },
+    "Taquara": {
+      "lq": 0.2327,
+      "hc": -300.11,
+      "ci": 0.00010105
+    },
+    "Paciência": {
+      "lq": 2.2864,
+      "hc": 387.09,
+      "ci": 0.00058781
+    },
+    "Campo Grande": {
+      "lq": 0.5387,
+      "hc": -525.01,
+      "ci": 0.0019807
+    },
+    "Pedra de Guaratiba": {
+      "lq": 2.619,
+      "hc": 132.29,
+      "ci": 4.965e-05
+    },
+    "Penha Circular": {
+      "lq": 0.0744,
+      "hc": -174.13,
+      "ci": 7.48e-06
+    },
+    "Madureira": {
+      "lq": 1.3173,
+      "hc": 42.16,
+      "ci": 6.601e-05
+    },
+    "Guaratiba": {
+      "lq": 5.0398,
+      "hc": 1224.82,
+      "ci": 0.00131535
+    },
+    "Senador Vasconcelos": {
+      "lq": 0.4215,
+      "hc": -48.03,
+      "ci": 8.25e-06
+    },
+    "Méier": {
+      "lq": 0.0669,
+      "hc": -223.31,
+      "ci": 1.087e-05
+    },
+    "Jacarepaguá": {
+      "lq": 0.2399,
+      "hc": -250.36,
+      "ci": 7.388e-05
+    },
+    "Vargem Grande": {
+      "lq": 0.6916,
+      "hc": -13.82,
+      "ci": 3.95e-06
+    },
+    "Cidade de Deus": {
+      "lq": 0.0959,
+      "hc": -94.26,
+      "ci": 2.96e-06
+    },
+    "Bangu": {
+      "lq": 0.2259,
+      "hc": -558.61,
+      "ci": 0.00033396
+    },
+    "Recreio dos Bandeirantes": {
+      "lq": 0.4828,
+      "hc": -129.64,
+      "ci": 8.611e-05
+    },
+    "Olaria": {
+      "lq": 0.0886,
+      "hc": -164.59,
+      "ci": 8.2e-06
+    },
+    "Cascadura": {
+      "lq": 0.1717,
+      "hc": -86.84,
+      "ci": 5.36e-06
+    },
+    "Barra da Tijuca": {
+      "lq": 0.2632,
+      "hc": -316.37,
+      "ci": 0.00013776
+    },
+    "Irajá": {
+      "lq": 0.1773,
+      "hc": -334.09,
+      "ci": 8.302e-05
+    },
+    "Senador Camará": {
+      "lq": 0.22,
+      "hc": -198.56,
+      "ci": 4.048e-05
+    },
+    "Brás de Pina": {
+      "lq": 0.0631,
+      "hc": -118.68,
+      "ci": 2.88e-06
+    },
+    "Grajaú": {
+      "lq": 0.0238,
+      "hc": -123.03,
+      "ci": 1.07e-06
+    },
+    "Bento Ribeiro": {
+      "lq": 0.6534,
+      "hc": -41.91,
+      "ci": 2.712e-05
+    },
+    "Maracanã": {
+      "lq": 0.0607,
+      "hc": -77.43,
+      "ci": 1.17e-06
+    },
+    "Guadalupe": {
+      "lq": 0.1871,
+      "hc": -130.31,
+      "ci": 1.366e-05
+    },
+    "Praça Seca": {
+      "lq": 0.17,
+      "hc": -170.85,
+      "ci": 2.046e-05
+    },
+    "Jardim Sulacap": {
+      "lq": 0.5082,
+      "hc": -14.51,
+      "ci": 1.26e-06
+    },
+    "Bonsucesso": {
+      "lq": 0.0885,
+      "hc": -144.15,
+      "ci": 6.29e-06
+    },
+    "Inhoaíba": {
+      "lq": 0.5426,
+      "hc": -86.81,
+      "ci": 5.551e-05
+    },
+    "Galeão": {
+      "lq": 0.3072,
+      "hc": -60.9,
+      "ci": 6.74e-06
+    },
+    "Oswaldo Cruz": {
+      "lq": 0.9417,
+      "hc": -6.31,
+      "ci": 3.137e-05
+    },
+    "Cosmos": {
+      "lq": 0.6025,
+      "hc": -88.41,
+      "ci": 8.462e-05
+    },
+    "Jardim Guanabara": {
+      "lq": 0.1101,
+      "hc": -64.68,
+      "ci": 1.65e-06
+    },
+    "Cavalcanti": {
+      "lq": 0.233,
+      "hc": -46.09,
+      "ci": 2.39e-06
+    },
+    "Engenho Novo": {
+      "lq": 0.0957,
+      "hc": -103.89,
+      "ci": 3.59e-06
+    },
+    "Sepetiba": {
+      "lq": 47.0411,
+      "hc": 7880.83,
+      "ci": 0.00391327
+    },
+    "Quintino Bocaiúva": {
+      "lq": 0.2147,
+      "hc": -84.13,
+      "ci": 7e-06
+    },
+    "Rocha": {
+      "lq": 0.0658,
+      "hc": -85.22,
+      "ci": 1.55e-06
+    },
+    "Vila Kennedy": {
+      "lq": 0.1301,
+      "hc": -120.33,
+      "ci": 7.07e-06
+    },
+    "Rocha Miranda": {
+      "lq": 0.4043,
+      "hc": -110.5,
+      "ci": 3.95e-05
+    },
+    "Pavuna": {
+      "lq": 0.1149,
+      "hc": -215.6,
+      "ci": 1.937e-05
+    },
+    "Padre Miguel": {
+      "lq": 0.2367,
+      "hc": -132.2,
+      "ci": 2.016e-05
+    },
+    "Catete": {
+      "lq": 0.0694,
+      "hc": -80.45,
+      "ci": 1.47e-06
+    },
+    "Jardim América": {
+      "lq": 0.0084,
+      "hc": -118.45,
+      "ci": 3.4e-07
+    },
+    "Tijuca": {
+      "lq": 0.0546,
+      "hc": -519.41,
+      "ci": 4.68e-05
+    },
+    "Copacabana": {
+      "lq": 0.0662,
+      "hc": -381.09,
+      "ci": 3.128e-05
+    },
+    "Vila Isabel": {
+      "lq": 0.0262,
+      "hc": -185.85,
+      "ci": 2.71e-06
+    },
+    "Vidigal": {
+      "lq": 0.194,
+      "hc": -33.23,
+      "ci": 9.4e-07
+    },
+    "Turiaçu": {
+      "lq": 0.3725,
+      "hc": -30.33,
+      "ci": 2.47e-06
+    },
+    "Engenho da Rainha": {
+      "lq": 0.0989,
+      "hc": -72.86,
+      "ci": 1.84e-06
+    },
+    "Cachambi": {
+      "lq": 0.087,
+      "hc": -104.88,
+      "ci": 3.26e-06
+    },
+    "Maré": {
+      "lq": 0.0973,
+      "hc": -204.07,
+      "ci": 1.412e-05
+    },
+    "Marechal Hermes": {
+      "lq": 0.709,
+      "hc": -43.92,
+      "ci": 4.585e-05
+    },
+    "Freguesia (Jacarepaguá)": {
+      "lq": 0.2221,
+      "hc": -161.13,
+      "ci": 2.705e-05
+    },
+    "Engenho de Dentro": {
+      "lq": 0.0737,
+      "hc": -150.81,
+      "ci": 5.55e-06
+    },
+    "São Conrado": {
+      "lq": 0.0926,
+      "hc": -68.63,
+      "ci": 1.5e-06
+    },
+    "Deodoro": {
+      "lq": 0.4524,
+      "hc": -24.21,
+      "ci": 2.51e-06
+    },
+    "Itanhangá": {
+      "lq": 0.1544,
+      "hc": -93.07,
+      "ci": 5.31e-06
+    },
+    "Andaraí": {
+      "lq": 0.037,
+      "hc": -104.22,
+      "ci": 1.23e-06
+    },
+    "Anil": {
+      "lq": 0.2177,
+      "hc": -115.01,
+      "ci": 1.336e-05
+    },
+    "Barra de Guaratiba": {
+      "lq": 19.4022,
+      "hc": 395.51,
+      "ci": 2.545e-05
+    },
+    "Ramos": {
+      "lq": 0.0601,
+      "hc": -218.82,
+      "ci": 9.25e-06
+    },
+    "Honório Gurgel": {
+      "lq": 0.1755,
+      "hc": -65.75,
+      "ci": 3.17e-06
+    },
+    "Inhaúma": {
+      "lq": 0.2084,
+      "hc": -117.75,
+      "ci": 1.309e-05
+    },
+    "Vargem Pequena": {
+      "lq": 2.3949,
+      "hc": 66.98,
+      "ci": 1.568e-05
+    },
+    "Coelho Neto": {
+      "lq": 0.163,
+      "hc": -66.75,
+      "ci": 2.94e-06
+    },
+    "Magalhães Bastos": {
+      "lq": 0.1743,
+      "hc": -66.32,
+      "ci": 3.19e-06
+    },
+    "Vila da Penha": {
+      "lq": 0.078,
+      "hc": -94.61,
+      "ci": 2.33e-06
+    },
+    "Piedade": {
+      "lq": 0.0948,
+      "hc": -124.07,
+      "ci": 5.06e-06
+    },
+    "Ipanema": {
+      "lq": 0.0864,
+      "hc": -126.96,
+      "ci": 4.73e-06
+    },
+    "Rocinha": {
+      "lq": 0.107,
+      "hc": -75.11,
+      "ci": 2.15e-06
+    },
+    "Rio Comprido": {
+      "lq": 0.1061,
+      "hc": -109.57,
+      "ci": 4.52e-06
+    },
+    "Santíssimo": {
+      "lq": 0.1359,
+      "hc": -76.31,
+      "ci": 3.01e-06
+    },
+    "Curicica": {
+      "lq": 0.277,
+      "hc": -91.35,
+      "ci": 1.256e-05
+    },
+    "Portuguesa": {
+      "lq": 0.0459,
+      "hc": -83.19,
+      "ci": 9.9e-07
+    },
+    "Pechincha": {
+      "lq": 0.1195,
+      "hc": -95.75,
+      "ci": 4.01e-06
+    },
+    "Acari": {
+      "lq": 0.3269,
+      "hc": -14.41,
+      "ci": 4.3e-07
+    },
+    "Tanque": {
+      "lq": 0.1949,
+      "hc": -99.15,
+      "ci": 8.39e-06
+    },
+    "Colégio": {
+      "lq": 0.5437,
+      "hc": -29.37,
+      "ci": 6.4e-06
+    },
+    "Cidade Universitária": {
+      "lq": 0.1837,
+      "hc": -4.44,
+      "ci": 2e-08
+    },
+    "Centro": {
+      "lq": 0.0884,
+      "hc": -82.49,
+      "ci": 2.06e-06
+    },
+    "Tomás Coelho": {
+      "lq": 0.156,
+      "hc": -27.05,
+      "ci": 4.6e-07
+    },
+    "Gávea": {
+      "lq": 0.0697,
+      "hc": -93.39,
+      "ci": 2e-06
+    },
+    "Pilares": {
+      "lq": 0.0966,
+      "hc": -93.57,
+      "ci": 2.94e-06
+    },
+    "Botafogo": {
+      "lq": 0.0216,
+      "hc": -226.85,
+      "ci": 3.29e-06
+    },
+    "Costa Barros": {
+      "lq": 0.0705,
+      "hc": -65.89,
+      "ci": 1.01e-06
+    },
+    "Vila Valqueire": {
+      "lq": 0.2573,
+      "hc": -66.4,
+      "ci": 5.84e-06
+    },
+    "Bancários": {
+      "lq": 0.0177,
+      "hc": -55.41,
+      "ci": 1.6e-07
+    },
+    "Vaz Lobo": {
+      "lq": 0.2128,
+      "hc": -25.9,
+      "ci": 6.5e-07
+    },
+    "Del Castilho": {
+      "lq": 0.0663,
+      "hc": -56.32,
+      "ci": 6.9e-07
+    },
+    "Penha": {
+      "lq": 0.0433,
+      "hc": -243.01,
+      "ci": 7.93e-06
+    },
+    "Anchieta": {
+      "lq": 0.0819,
+      "hc": -100.9,
+      "ci": 2.81e-06
+    },
+    "Glória": {
+      "lq": 0.0798,
+      "hc": -57.66,
+      "ci": 8.9e-07
+    },
+    "Cordovil": {
+      "lq": 0.0434,
+      "hc": -132.3,
+      "ci": 2.36e-06
+    },
+    "Cidade Nova": {
+      "lq": 0.0439,
+      "hc": -65.35,
+      "ci": 5.8e-07
+    },
+    "Cocotá": {
+      "lq": 0.0696,
+      "hc": -53.5,
+      "ci": 6.5e-07
+    },
+    "Caju": {
+      "lq": 0.0501,
+      "hc": -56.93,
+      "ci": 5.1e-07
+    },
+    "Lapa": {
+      "lq": 0.1403,
+      "hc": -36.75,
+      "ci": 7.3e-07
+    },
+    "Parque Anchieta": {
+      "lq": 0.063,
+      "hc": -133.77,
+      "ci": 3.65e-06
+    },
+    "Flamengo": {
+      "lq": 0.0643,
+      "hc": -116.51,
+      "ci": 2.83e-06
+    },
+    "Gardênia Azul": {
+      "lq": 0.1905,
+      "hc": -17.0,
+      "ci": 2.4e-07
+    },
+    "Engenheiro Leal": {
+      "lq": 0.5716,
+      "hc": -9.74,
+      "ci": 8.4e-07
+    },
+    "Jardim Botânico": {
+      "lq": 0.1042,
+      "hc": -51.57,
+      "ci": 9.8e-07
+    },
+    "Vasco da Gama": {
+      "lq": 0.0339,
+      "hc": -56.97,
+      "ci": 3.3e-07
+    },
+    "Encantado": {
+      "lq": 0.0384,
+      "hc": -50.09,
+      "ci": 3e-07
+    },
+    "Jardim Carioca": {
+      "lq": 0.06,
+      "hc": -31.34,
+      "ci": 1.9e-07
+    },
+    "Parada de Lucas": {
+      "lq": 0.0731,
+      "hc": -25.36,
+      "ci": 1.6e-07
+    },
+    "Campinho": {
+      "lq": 0.1117,
+      "hc": -23.87,
+      "ci": 2.3e-07
+    },
+    "Leme": {
+      "lq": 0.0259,
+      "hc": -37.58,
+      "ci": 1.1e-07
+    },
+    "Laranjeiras": {
+      "lq": 0.063,
+      "hc": -133.94,
+      "ci": 3.65e-06
+    },
+    "Ricardo de Albuquerque": {
+      "lq": 0.061,
+      "hc": -61.6,
+      "ci": 7.5e-07
+    },
+    "Vigário Geral": {
+      "lq": 0.0302,
+      "hc": -64.28,
+      "ci": 3.8e-07
+    },
+    "Higienópolis": {
+      "lq": 0.0283,
+      "hc": -102.95,
+      "ci": 9e-07
+    },
+    "Ribeira": {
+      "lq": 0.049,
+      "hc": -19.41,
+      "ci": 6e-08
+    },
+    "Maria da Graça": {
+      "lq": 0.0458,
+      "hc": -41.65,
+      "ci": 2.5e-07
+    },
+    "Jacaré": {
+      "lq": 0.0173,
+      "hc": -56.9,
+      "ci": 1.6e-07
+    },
+    "Leblon": {
+      "lq": 0.0418,
+      "hc": -114.61,
+      "ci": 1.7e-06
+    },
+    "Moneró": {
+      "lq": 0.0534,
+      "hc": -35.44,
+      "ci": 2.1e-07
+    },
+    "Benfica": {
+      "lq": 0.0134,
+      "hc": -146.97,
+      "ci": 8.5e-07
+    },
+    "Zumbi": {
+      "lq": 0.0692,
+      "hc": -26.9,
+      "ci": 1.6e-07
+    },
+    "Vicente de Carvalho": {
+      "lq": 0.0629,
+      "hc": -29.8,
+      "ci": 1.8e-07
+    },
+    "Riachuelo": {
+      "lq": 0.1449,
+      "hc": -23.6,
+      "ci": 3.1e-07
+    },
+    "Vila Militar": {
+      "lq": 0.0651,
+      "hc": -14.37,
+      "ci": 4e-08
+    },
+    "Santa Teresa": {
+      "lq": 0.0232,
+      "hc": -84.11,
+      "ci": 4.9e-07
+    },
+    "Campo dos Afonsos": {
+      "lq": 0.1342,
+      "hc": -12.9,
+      "ci": 8e-08
+    },
+    "Lins de Vasconcelos": {
+      "lq": 0.0741,
+      "hc": -49.99,
+      "ci": 6.1e-07
+    },
+    "Cosme Velho": {
+      "lq": 0.0707,
+      "hc": -26.27,
+      "ci": 1.6e-07
+    },
+    "Freguesia (Ilha do Governador)": {
+      "lq": 0.0561,
+      "hc": -50.5,
+      "ci": 4.6e-07
+    },
+    "Água Santa": {
+      "lq": 0.0775,
+      "hc": -11.9,
+      "ci": 4e-08
+    },
+    "Alto da Boa Vista": {
+      "lq": 0.0705,
+      "hc": -39.58,
+      "ci": 3.6e-07
+    },
+    "São Cristóvão": {
+      "lq": 0.0137,
+      "hc": -72.08,
+      "ci": 2.1e-07
+    },
+    "Parque Colúmbia": {
+      "lq": 0.0416,
+      "hc": -46.12,
+      "ci": 2.7e-07
+    },
+    "Lagoa": {
+      "lq": 0.0113,
+      "hc": -87.33,
+      "ci": 2.5e-07
+    },
+    "Vila Kosmos": {
+      "lq": 0.0268,
+      "hc": -36.27,
+      "ci": 1.1e-07
+    }
+  },
+  "lq_hc_summary": {
+    "lq_max": 47.0411,
+    "bairro_lq_max": "Sepetiba",
+    "hc_total_positivo": 13761.01,
+    "bairros_lq_acima_1": 8,
+    "ci_max": 0.00824849,
+    "bairro_ci_max": "Santa Cruz"
+  },
+  "concentracao_final": 0.4076,
+  "interpretation": "media_baixa",
+  "total_conglomerates": 6
+}

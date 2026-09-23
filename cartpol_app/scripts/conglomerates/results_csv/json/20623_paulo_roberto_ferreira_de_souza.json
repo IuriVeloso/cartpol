@@ -1,0 +1,326 @@
+{
+  "candidato": {
+    "nr": "20623",
+    "nome": "PAULO ROBERTO FERREIRA DE SOUZA"
+  },
+  "qe": 59154.0,
+  "total_votes": 2876,
+  "neighborhoods_with_votes": 57,
+  "neighborhoods_after_filter": 3,
+  "classification": "P",
+  "conglomerates": [
+    {
+      "neighborhoods": [
+        "Campo Grande",
+        "Paciência",
+        "Santa Cruz"
+      ],
+      "size": 3,
+      "total_votes": 2736,
+      "ruesp": 0.112623,
+      "ruesp_can": 0.951321,
+      "rcan_uesp": 0.008519,
+      "importance": "G",
+      "fuzzy_concentration": 0.8776,
+      "id": 1
+    }
+  ],
+  "lq_hc": {
+    "Santa Cruz": {
+      "lq": 25.7081,
+      "hc": 2554.61,
+      "ci": 0.03322474
+    },
+    "Campo Grande": {
+      "lq": 0.1892,
+      "hc": -141.4,
+      "ci": 0.00069579
+    },
+    "Rocha Miranda": {
+      "lq": 0.1055,
+      "hc": -25.43,
+      "ci": 1.031e-05
+    },
+    "Cosmos": {
+      "lq": 0.4694,
+      "hc": -18.08,
+      "ci": 6.593e-05
+    },
+    "Engenho de Dentro": {
+      "lq": 0.0401,
+      "hc": -23.95,
+      "ci": 3.02e-06
+    },
+    "Inhoaíba": {
+      "lq": 0.3094,
+      "hc": -20.09,
+      "ci": 3.165e-05
+    },
+    "Anchieta": {
+      "lq": 0.0594,
+      "hc": -15.84,
+      "ci": 2.04e-06
+    },
+    "Paciência": {
+      "lq": 0.9758,
+      "hc": -1.11,
+      "ci": 0.00025088
+    },
+    "Padre Miguel": {
+      "lq": 0.1507,
+      "hc": -22.54,
+      "ci": 1.284e-05
+    },
+    "Senador Camará": {
+      "lq": 0.1282,
+      "hc": -34.01,
+      "ci": 2.358e-05
+    },
+    "Bonsucesso": {
+      "lq": 0.0413,
+      "hc": -23.24,
+      "ci": 2.93e-06
+    },
+    "Vila Kennedy": {
+      "lq": 0.1887,
+      "hc": -17.2,
+      "ci": 1.025e-05
+    },
+    "Todos os Santos": {
+      "lq": 0.2912,
+      "hc": -4.87,
+      "ci": 1.66e-06
+    },
+    "Guaratiba": {
+      "lq": 0.043,
+      "hc": -44.46,
+      "ci": 1.123e-05
+    },
+    "Portuguesa": {
+      "lq": 0.0748,
+      "hc": -12.36,
+      "ci": 1.62e-06
+    },
+    "Guadalupe": {
+      "lq": 0.1628,
+      "hc": -20.57,
+      "ci": 1.188e-05
+    },
+    "Deodoro": {
+      "lq": 0.5904,
+      "hc": -2.77,
+      "ci": 3.28e-06
+    },
+    "Andaraí": {
+      "lq": 0.1206,
+      "hc": -14.58,
+      "ci": 4.01e-06
+    },
+    "Tijuca": {
+      "lq": 0.0238,
+      "hc": -82.2,
+      "ci": 2.036e-05
+    },
+    "Pavuna": {
+      "lq": 0.0804,
+      "hc": -34.33,
+      "ci": 1.354e-05
+    },
+    "Madureira": {
+      "lq": 0.0982,
+      "hc": -18.36,
+      "ci": 4.92e-06
+    },
+    "Alto da Boa Vista": {
+      "lq": 0.1533,
+      "hc": -5.52,
+      "ci": 7.9e-07
+    },
+    "Bangu": {
+      "lq": 0.1085,
+      "hc": -98.58,
+      "ci": 0.00016043
+    },
+    "Méier": {
+      "lq": 0.0273,
+      "hc": -35.67,
+      "ci": 4.43e-06
+    },
+    "Pedra de Guaratiba": {
+      "lq": 0.3194,
+      "hc": -8.52,
+      "ci": 6.06e-06
+    },
+    "Ramos": {
+      "lq": 0.028,
+      "hc": -34.68,
+      "ci": 4.31e-06
+    },
+    "São Conrado": {
+      "lq": 0.1726,
+      "hc": -9.59,
+      "ci": 2.8e-06
+    },
+    "Copacabana": {
+      "lq": 0.016,
+      "hc": -61.54,
+      "ci": 7.56e-06
+    },
+    "Pechincha": {
+      "lq": 0.06,
+      "hc": -15.67,
+      "ci": 2.01e-06
+    },
+    "Irajá": {
+      "lq": 0.0964,
+      "hc": -56.23,
+      "ci": 4.514e-05
+    },
+    "Vidigal": {
+      "lq": 0.1583,
+      "hc": -5.32,
+      "ci": 7.6e-07
+    },
+    "Cidade de Deus": {
+      "lq": 0.1252,
+      "hc": -13.98,
+      "ci": 3.86e-06
+    },
+    "Grajaú": {
+      "lq": 0.1553,
+      "hc": -16.31,
+      "ci": 7e-06
+    },
+    "Realengo": {
+      "lq": 0.0242,
+      "hc": -80.6,
+      "ci": 1.997e-05
+    },
+    "Sepetiba": {
+      "lq": 0.4193,
+      "hc": -15.23,
+      "ci": 3.488e-05
+    },
+    "Gávea": {
+      "lq": 0.065,
+      "hc": -14.39,
+      "ci": 1.86e-06
+    },
+    "Penha Circular": {
+      "lq": 0.0347,
+      "hc": -27.83,
+      "ci": 3.49e-06
+    },
+    "Botafogo": {
+      "lq": 0.0281,
+      "hc": -34.53,
+      "ci": 4.3e-06
+    },
+    "Taquara": {
+      "lq": 0.0167,
+      "hc": -58.94,
+      "ci": 7.25e-06
+    },
+    "Bento Ribeiro": {
+      "lq": 0.1079,
+      "hc": -16.53,
+      "ci": 4.48e-06
+    },
+    "Cidade Nova": {
+      "lq": 0.1909,
+      "hc": -8.47,
+      "ci": 2.53e-06
+    },
+    "Marechal Hermes": {
+      "lq": 0.0432,
+      "hc": -22.13,
+      "ci": 2.8e-06
+    },
+    "Campo dos Afonsos": {
+      "lq": 0.438,
+      "hc": -1.28,
+      "ci": 2.8e-07
+    },
+    "Honório Gurgel": {
+      "lq": 0.0818,
+      "hc": -11.22,
+      "ci": 1.48e-06
+    },
+    "Anil": {
+      "lq": 0.0444,
+      "hc": -21.53,
+      "ci": 2.72e-06
+    },
+    "Jardim Botânico": {
+      "lq": 0.1134,
+      "hc": -7.82,
+      "ci": 1.07e-06
+    },
+    "Cordovil": {
+      "lq": 0.0472,
+      "hc": -20.19,
+      "ci": 2.56e-06
+    },
+    "Freguesia (Jacarepaguá)": {
+      "lq": 0.063,
+      "hc": -29.74,
+      "ci": 7.68e-06
+    },
+    "Centro": {
+      "lq": 0.0721,
+      "hc": -12.87,
+      "ci": 1.68e-06
+    },
+    "Freguesia (Ilha do Governador)": {
+      "lq": 0.122,
+      "hc": -7.2,
+      "ci": 9.9e-07
+    },
+    "Jacarepaguá": {
+      "lq": 0.0396,
+      "hc": -48.47,
+      "ci": 1.22e-05
+    },
+    "Inhaúma": {
+      "lq": 0.0439,
+      "hc": -21.8,
+      "ci": 2.76e-06
+    },
+    "Pilares": {
+      "lq": 0.063,
+      "hc": -14.87,
+      "ci": 1.92e-06
+    },
+    "Magalhães Bastos": {
+      "lq": 0.0812,
+      "hc": -11.31,
+      "ci": 1.49e-06
+    },
+    "Maria da Graça": {
+      "lq": 0.1495,
+      "hc": -5.69,
+      "ci": 8.1e-07
+    },
+    "Parque Anchieta": {
+      "lq": 0.0457,
+      "hc": -20.88,
+      "ci": 2.65e-06
+    },
+    "Piedade": {
+      "lq": 0.0476,
+      "hc": -20.01,
+      "ci": 2.54e-06
+    }
+  },
+  "lq_hc_summary": {
+    "lq_max": 25.7081,
+    "bairro_lq_max": "Santa Cruz",
+    "hc_total_positivo": 2554.61,
+    "bairros_lq_acima_1": 1,
+    "ci_max": 0.03322474,
+    "bairro_ci_max": "Santa Cruz"
+  },
+  "concentracao_final": 0.8776,
+  "interpretation": "muito_alta",
+  "total_conglomerates": 1
+}

@@ -1,0 +1,204 @@
+{
+  "county": "Japeri",
+  "source_zip": "/home/iuri/TCC/cartpol-pwa/src/assets/maps/county/Japeri.zip",
+  "stats": {
+    "total_regions": 30,
+    "total_neighbors": 64,
+    "avg_neighbors": 4.266666666666667,
+    "max_neighbors": 7,
+    "min_neighbors": 1,
+    "isolated_regions": 0,
+    "region_most_neighbors": "Centro de Engenheiro Pedreira",
+    "region_least_neighbors": "Beira-Rio"
+  },
+  "neighbors": {
+    "Lagoa do Sapo": [
+      "Centro de Japeri",
+      "Nova Belém",
+      "Virgem de Fátima"
+    ],
+    "São Cosme e São Damião": [
+      "Caramujos",
+      "Guandu",
+      "Marajoara",
+      "Mucajá"
+    ],
+    "Guandu": [
+      "Bananal",
+      "Marajoara",
+      "Mucajá",
+      "São Cosme e São Damião"
+    ],
+    "Beira-Rio": [
+      "Virgem de Fátima"
+    ],
+    "Cajuri": [
+      "Alecrim",
+      "Centro de Engenheiro Pedreira",
+      "Santa Amelia",
+      "dos Eucaliptos"
+    ],
+    "Aljezur": [
+      "Belo Horizonte",
+      "Delamare",
+      "Laranjal",
+      "Rio D'Ouro"
+    ],
+    "Santo Antônio": [
+      "Rio D'Ouro",
+      "Santa Amelia"
+    ],
+    "dos Eucaliptos": [
+      "Cajuri",
+      "Centro de Engenheiro Pedreira",
+      "Santa Amelia",
+      "Santa Inês",
+      "São Jorge"
+    ],
+    "Bananal": [
+      "Guandu",
+      "Mucajá",
+      "das Granjas"
+    ],
+    "Centro de Engenheiro Pedreira": [
+      "Alecrim",
+      "Cajuri",
+      "Caramujos",
+      "Mucajá",
+      "São Jorge",
+      "das Granjas",
+      "dos Eucaliptos"
+    ],
+    "Caramujos": [
+      "Alecrim",
+      "Centro de Engenheiro Pedreira",
+      "Mucajá",
+      "São Cosme e São Damião"
+    ],
+    "Esperança": [
+      "Rio D'Ouro"
+    ],
+    "Centro de Japeri": [
+      "Chacrinha",
+      "Lagoa do Sapo",
+      "Nova Belém",
+      "Proletário",
+      "Virgem de Fátima"
+    ],
+    "São Jorge": [
+      "Centro de Engenheiro Pedreira",
+      "Santa Inês",
+      "São Pedro",
+      "das Granjas",
+      "dos Eucaliptos"
+    ],
+    "Marajoara": [
+      "Guandu",
+      "São Cosme e São Damião"
+    ],
+    "Belo Horizonte": [
+      "Alecrim",
+      "Aljezur",
+      "Delamare",
+      "Rio D'Ouro"
+    ],
+    "Mucajá": [
+      "Bananal",
+      "Caramujos",
+      "Centro de Engenheiro Pedreira",
+      "Guandu",
+      "São Cosme e São Damião",
+      "das Granjas"
+    ],
+    "das Granjas": [
+      "Bananal",
+      "Centro de Engenheiro Pedreira",
+      "Fazenda Americana",
+      "Mucajá",
+      "Nova Belém",
+      "São Jorge",
+      "São Pedro"
+    ],
+    "São Pedro": [
+      "Fazenda Americana",
+      "Nova Belém",
+      "Santa Inês",
+      "São Jorge",
+      "das Granjas"
+    ],
+    "Fazenda Americana": [
+      "Chacrinha",
+      "Nova Belém",
+      "Proletário",
+      "São Pedro",
+      "das Granjas"
+    ],
+    "Chacrinha": [
+      "Centro de Japeri",
+      "Fazenda Americana",
+      "Nova Belém",
+      "Proletário"
+    ],
+    "Delamare": [
+      "Alecrim",
+      "Aljezur",
+      "Belo Horizonte"
+    ],
+    "Santa Inês": [
+      "Santa Amelia",
+      "São Jorge",
+      "São Pedro",
+      "dos Eucaliptos"
+    ],
+    "Santa Amelia": [
+      "Alecrim",
+      "Cajuri",
+      "Rio D'Ouro",
+      "Santa Inês",
+      "Santo Antônio",
+      "dos Eucaliptos"
+    ],
+    "Proletário": [
+      "Centro de Japeri",
+      "Chacrinha",
+      "Fazenda Americana",
+      "Virgem de Fátima"
+    ],
+    "Virgem de Fátima": [
+      "Beira-Rio",
+      "Centro de Japeri",
+      "Lagoa do Sapo",
+      "Proletário"
+    ],
+    "Alecrim": [
+      "Belo Horizonte",
+      "Cajuri",
+      "Caramujos",
+      "Centro de Engenheiro Pedreira",
+      "Delamare",
+      "Rio D'Ouro",
+      "Santa Amelia"
+    ],
+    "Laranjal": [
+      "Aljezur",
+      "Rio D'Ouro"
+    ],
+    "Rio D'Ouro": [
+      "Alecrim",
+      "Aljezur",
+      "Belo Horizonte",
+      "Esperança",
+      "Laranjal",
+      "Santa Amelia",
+      "Santo Antônio"
+    ],
+    "Nova Belém": [
+      "Centro de Japeri",
+      "Chacrinha",
+      "Fazenda Americana",
+      "Lagoa do Sapo",
+      "São Pedro",
+      "das Granjas"
+    ]
+  }
+}

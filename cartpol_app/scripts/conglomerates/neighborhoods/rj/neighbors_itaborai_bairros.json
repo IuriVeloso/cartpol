@@ -1,0 +1,516 @@
+{
+  "county": "Itaboraí",
+  "source_zip": "/home/iuri/TCC/cartpol-pwa/src/assets/maps/county/Itaboraí.zip",
+  "stats": {
+    "total_regions": 71,
+    "total_neighbors": 179,
+    "avg_neighbors": 5.042253521126761,
+    "max_neighbors": 10,
+    "min_neighbors": 1,
+    "isolated_regions": 0,
+    "region_most_neighbors": "Manilha",
+    "region_least_neighbors": "São José"
+  },
+  "neighbors": {
+    "Bela Vista": [
+      "Caluge",
+      "Retiro São Joaquim",
+      "Santo Expedito",
+      "Sapê",
+      "Três Pontes"
+    ],
+    "Engenho Velho": [
+      "Chácara Bela Vista",
+      "Esperança",
+      "Itaville",
+      "Quinta dos Colibris"
+    ],
+    "Colônia": [
+      "Esperança",
+      "Iguá",
+      "Itaville",
+      "Quissamã",
+      "Venda das Pedras"
+    ],
+    "Itaville": [
+      "Colônia",
+      "Engenho Velho",
+      "Esperança",
+      "Iguá",
+      "Picos"
+    ],
+    "Três Pontes": [
+      "Bela Vista",
+      "Granjas Cabuçu",
+      "Manilha",
+      "Retiro São Joaquim",
+      "Sapê",
+      "Vila Gabriela"
+    ],
+    "Nova Cidade": [
+      "Ampliação",
+      "Itaboraí",
+      "Jardim Imperial",
+      "Nancilândia",
+      "Quissamã",
+      "Venda das Pedras"
+    ],
+    "Joaquim de Oliveira": [
+      "City Areal",
+      "Itamarati",
+      "Jardim Ferma",
+      "Maravilha",
+      "Outeiro das Pedras",
+      "Retiro",
+      "Retiro São Joaquim",
+      "Santo Expedito",
+      "Vila Visconde"
+    ],
+    "City Areal": [
+      "Areal",
+      "Itamarati",
+      "Jardim Ferma",
+      "Joaquim de Oliveira",
+      "Maravilha",
+      "Nossa Senhora da Conceição",
+      "Porto das Caixas"
+    ],
+    "Vila Rica": [
+      "Areal",
+      "Esperança",
+      "Nancilândia",
+      "Nossa Senhora da Conceição",
+      "Venda das Pedras"
+    ],
+    "Santo Expedito": [
+      "Bela Vista",
+      "Caluge",
+      "Joaquim de Oliveira",
+      "Outeiro das Pedras",
+      "Retiro São Joaquim"
+    ],
+    "Quissamã": [
+      "Ampliação",
+      "Caluge",
+      "Calundu",
+      "Colônia",
+      "Iguá",
+      "Nova Cidade",
+      "Venda das Pedras"
+    ],
+    "Esperança": [
+      "Alto Jacu",
+      "Chácara Bela Vista",
+      "Colônia",
+      "Engenho Velho",
+      "Itaville",
+      "Quinta dos Colibris",
+      "Venda das Pedras",
+      "Vila Rica"
+    ],
+    "Sossego": [
+      "Areal",
+      "Itaboraí",
+      "Jardim Ferma",
+      "Jardim Imperial",
+      "Nancilândia",
+      "Retiro"
+    ],
+    "Jardim Ferma": [
+      "Areal",
+      "City Areal",
+      "Joaquim de Oliveira",
+      "Retiro",
+      "Sossego"
+    ],
+    "Iguá": [
+      "Calundu",
+      "Colônia",
+      "Itaville",
+      "Picos",
+      "Quissamã"
+    ],
+    "Venda das Pedras": [
+      "Colônia",
+      "Esperança",
+      "Jardim Imperial",
+      "Nancilândia",
+      "Nova Cidade",
+      "Quissamã",
+      "Vila Rica"
+    ],
+    "Nancilândia": [
+      "Areal",
+      "Jardim Imperial",
+      "Nova Cidade",
+      "Sossego",
+      "Venda das Pedras",
+      "Vila Rica"
+    ],
+    "Rio Várzea": [
+      "Ampliação",
+      "Itaboraí",
+      "Outeiro das Pedras",
+      "Retiro"
+    ],
+    "Picos": [
+      "Calundu",
+      "Iguá",
+      "Itaville",
+      "Perobas"
+    ],
+    "Jardim Imperial": [
+      "Itaboraí",
+      "Nancilândia",
+      "Nova Cidade",
+      "Sossego",
+      "Venda das Pedras"
+    ],
+    "Outeiro das Pedras": [
+      "Ampliação",
+      "Caluge",
+      "Joaquim de Oliveira",
+      "Retiro",
+      "Rio Várzea",
+      "Santo Expedito"
+    ],
+    "Itaboraí": [
+      "Ampliação",
+      "Jardim Imperial",
+      "Nova Cidade",
+      "Retiro",
+      "Rio Várzea",
+      "Sossego"
+    ],
+    "Calundu": [
+      "Ampliação",
+      "Caluge",
+      "Iguá",
+      "Perobas",
+      "Picos",
+      "Quissamã"
+    ],
+    "Sapê": [
+      "Badureco",
+      "Bela Vista",
+      "Caluge",
+      "Granjas Cabuçu",
+      "Recanto dos Magalhães",
+      "São Miguel",
+      "Três Pontes"
+    ],
+    "Retiro": [
+      "Itaboraí",
+      "Jardim Ferma",
+      "Joaquim de Oliveira",
+      "Outeiro das Pedras",
+      "Rio Várzea",
+      "Sossego"
+    ],
+    "Ampliação": [
+      "Caluge",
+      "Calundu",
+      "Itaboraí",
+      "Nova Cidade",
+      "Outeiro das Pedras",
+      "Quissamã",
+      "Rio Várzea"
+    ],
+    "Caluge": [
+      "Ampliação",
+      "Badureco",
+      "Bela Vista",
+      "Calundu",
+      "Outeiro das Pedras",
+      "Quissamã",
+      "Santo Expedito",
+      "Sapê"
+    ],
+    "Areal": [
+      "City Areal",
+      "Jardim Ferma",
+      "Nancilândia",
+      "Nossa Senhora da Conceição",
+      "Sossego",
+      "Vila Rica"
+    ],
+    "Retiro São Joaquim": [
+      "Bela Vista",
+      "Itamarati",
+      "Joaquim de Oliveira",
+      "Manilha",
+      "Morada do Sol II",
+      "Santo Expedito",
+      "Três Pontes",
+      "Vila Gabriela",
+      "Vila Visconde"
+    ],
+    "Badureco": [
+      "Caluge",
+      "Recanto dos Magalhães",
+      "Sapê",
+      "São Miguel"
+    ],
+    "São José": [
+      "Cabuçu"
+    ],
+    "São Sebastião": [
+      "Recanto dos Magalhães",
+      "Vila Verde"
+    ],
+    "Pitanga": [
+      "Cabuçu",
+      "Granjas Cabuçu",
+      "Recanto dos Magalhães",
+      "São Miguel"
+    ],
+    "Recanto dos Magalhães": [
+      "Badureco",
+      "Cabuçu",
+      "Pitanga",
+      "Sapê",
+      "São Miguel",
+      "São Sebastião",
+      "Vila Verde"
+    ],
+    "Vila Verde": [
+      "Cabuçu",
+      "Recanto dos Magalhães",
+      "São Sebastião"
+    ],
+    "Cabuçu": [
+      "Pitanga",
+      "Recanto dos Magalhães",
+      "São José",
+      "Vila Verde"
+    ],
+    "Gebara": [
+      "Aldeia da Prata",
+      "Jardim Itambi",
+      "Parque Aurora"
+    ],
+    "Grande Rio": [
+      "João Caetano",
+      "Morada do Sol I",
+      "Morada do Sol II",
+      "Vilage do Sol"
+    ],
+    "Morada do Sol II": [
+      "Grande Rio",
+      "Itamarati",
+      "Morada do Sol I",
+      "Retiro São Joaquim",
+      "Vila Gabriela",
+      "Vilage do Sol"
+    ],
+    "Morada do Sol I": [
+      "Grande Rio",
+      "Itambi",
+      "João Caetano",
+      "Morada do Sol II",
+      "Parque Aurora",
+      "Santo Antônio",
+      "Vila Gabriela"
+    ],
+    "Itambi": [
+      "Jardim Itambi",
+      "João Caetano",
+      "Morada do Sol I"
+    ],
+    "Parque Aurora": [
+      "Aldeia da Prata",
+      "Gebara",
+      "Jardim Itambi",
+      "João Caetano",
+      "Monte Verde",
+      "Morada do Sol I",
+      "Santo Antônio"
+    ],
+    "Jardim Itambi": [
+      "Gebara",
+      "Itambi",
+      "João Caetano",
+      "Parque Aurora"
+    ],
+    "João Caetano": [
+      "Grande Rio",
+      "Itambi",
+      "Jardim Itambi",
+      "Morada do Sol I",
+      "Parque Aurora"
+    ],
+    "Vila Brasil": [
+      "Apollo II",
+      "Manilha",
+      "Marambaia",
+      "Novo Horizonte"
+    ],
+    "Granjas Cabuçu": [
+      "Manilha",
+      "Marambaia",
+      "Novo Horizonte",
+      "Pitanga",
+      "Sapê",
+      "São Miguel",
+      "Três Pontes"
+    ],
+    "Vila Gabriela": [
+      "Manilha",
+      "Morada do Sol I",
+      "Morada do Sol II",
+      "Retiro São Joaquim",
+      "Santo Antônio",
+      "Três Pontes"
+    ],
+    "São Miguel": [
+      "Badureco",
+      "Granjas Cabuçu",
+      "Pitanga",
+      "Recanto dos Magalhães",
+      "Sapê"
+    ],
+    "Manilha": [
+      "Aldeia da Prata",
+      "Apollo II",
+      "Granjas Cabuçu",
+      "Monte Verde",
+      "Novo Horizonte",
+      "Retiro São Joaquim",
+      "Santo Antônio",
+      "Três Pontes",
+      "Vila Brasil",
+      "Vila Gabriela"
+    ],
+    "Marambaia": [
+      "Apollo II",
+      "Granjas Cabuçu",
+      "Novo Horizonte",
+      "Vila Brasil"
+    ],
+    "Santo Antônio": [
+      "Manilha",
+      "Monte Verde",
+      "Morada do Sol I",
+      "Parque Aurora",
+      "Vila Gabriela"
+    ],
+    "Monte Verde": [
+      "Aldeia da Prata",
+      "Manilha",
+      "Parque Aurora",
+      "Santo Antônio"
+    ],
+    "Novo Horizonte": [
+      "Granjas Cabuçu",
+      "Manilha",
+      "Marambaia",
+      "Vila Brasil"
+    ],
+    "Apollo II": [
+      "Aldeia da Prata",
+      "Manilha",
+      "Marambaia",
+      "Vila Brasil"
+    ],
+    "Aldeia da Prata": [
+      "Apollo II",
+      "Gebara",
+      "Manilha",
+      "Monte Verde",
+      "Parque Aurora"
+    ],
+    "Perobas": [
+      "Calundu",
+      "Picos"
+    ],
+    "Pachecos": [
+      "Granjas Mirassol"
+    ],
+    "Granjas Mirassol": [
+      "Pachecos"
+    ],
+    "Porto das Caixas": [
+      "City Areal",
+      "Itamarati",
+      "Maravilha",
+      "Nossa Senhora da Conceição"
+    ],
+    "Nossa Senhora da Conceição": [
+      "Areal",
+      "City Areal",
+      "Porto das Caixas",
+      "Vila Rica"
+    ],
+    "Alto Jacu": [
+      "Chácara Bela Vista",
+      "Esperança",
+      "Quinta dos Colibris",
+      "Sambaetiba"
+    ],
+    "Agro Brasil": [
+      "Parque Nova Friburgo",
+      "Sambaetiba"
+    ],
+    "Chácara Bela Vista": [
+      "Alto Jacu",
+      "Engenho Velho",
+      "Esperança",
+      "Quinta dos Colibris",
+      "Sambaetiba"
+    ],
+    "Sambaetiba": [
+      "Agro Brasil",
+      "Alto Jacu",
+      "Chácara Bela Vista",
+      "Parque Nova Friburgo"
+    ],
+    "Parque Nova Friburgo": [
+      "Agro Brasil",
+      "Sambaetiba"
+    ],
+    "Quinta dos Colibris": [
+      "Alto Jacu",
+      "Chácara Bela Vista",
+      "Engenho Velho",
+      "Esperança"
+    ],
+    "Visconde": [
+      "Itamarati",
+      "Maravilha",
+      "Vila Visconde",
+      "Vilage do Sol"
+    ],
+    "Vilage do Sol": [
+      "Grande Rio",
+      "Itamarati",
+      "Morada do Sol II",
+      "Vila Visconde",
+      "Visconde"
+    ],
+    "Vila Visconde": [
+      "Itamarati",
+      "Joaquim de Oliveira",
+      "Retiro São Joaquim",
+      "Vilage do Sol",
+      "Visconde"
+    ],
+    "Maravilha": [
+      "City Areal",
+      "Itamarati",
+      "Joaquim de Oliveira",
+      "Porto das Caixas",
+      "Visconde"
+    ],
+    "Itamarati": [
+      "City Areal",
+      "Joaquim de Oliveira",
+      "Maravilha",
+      "Morada do Sol II",
+      "Porto das Caixas",
+      "Retiro São Joaquim",
+      "Vila Visconde",
+      "Vilage do Sol",
+      "Visconde"
+    ]
+  }
+}

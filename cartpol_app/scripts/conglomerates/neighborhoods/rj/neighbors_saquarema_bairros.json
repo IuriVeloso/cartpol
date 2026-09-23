@@ -1,0 +1,288 @@
+{
+  "county": "Saquarema",
+  "source_zip": "/home/iuri/TCC/cartpol-pwa/src/assets/maps/county/Saquarema.zip",
+  "stats": {
+    "total_regions": 43,
+    "total_neighbors": 93,
+    "avg_neighbors": 4.325581395348837,
+    "max_neighbors": 11,
+    "min_neighbors": 1,
+    "isolated_regions": 0,
+    "region_most_neighbors": "Vilatur",
+    "region_least_neighbors": "Tingui"
+  },
+  "neighbors": {
+    "Ipitangas": [
+      "Bicuíba",
+      "Engenho Grande",
+      "Vilatur"
+    ],
+    "Leigos": [
+      "Guarani",
+      "Itaúna",
+      "Porto Novo",
+      "Porto da Roça I",
+      "Vilatur"
+    ],
+    "Vilatur": [
+      "Aterrado",
+      "Bicuíba",
+      "Bonsucesso",
+      "Caixa D'Água",
+      "Comum",
+      "Guarani",
+      "Ipitangas",
+      "Itaúna",
+      "Leigos",
+      "Raia",
+      "Água Branca"
+    ],
+    "Porto da Roça I": [
+      "Barreira",
+      "Guarani",
+      "Leigos",
+      "Porto Novo",
+      "Porto da Roça II"
+    ],
+    "Mombaça": [
+      "Basilea",
+      "Jardim",
+      "Morro dos Pregos"
+    ],
+    "Areal": [
+      "Boqueirão",
+      "Centro",
+      "Gravatá"
+    ],
+    "Centro": [
+      "Areal",
+      "Gravatá"
+    ],
+    "Barra Nova": [
+      "Coqueiral",
+      "Jaconé"
+    ],
+    "Gravatá": [
+      "Areal",
+      "Boqueirão",
+      "Centro"
+    ],
+    "Jardim": [
+      "Barreira",
+      "Madressilva",
+      "Mombaça",
+      "Morro dos Pregos"
+    ],
+    "Guarani": [
+      "Leigos",
+      "Porto da Roça I",
+      "Porto da Roça II",
+      "Raia",
+      "Vilatur"
+    ],
+    "Porto Novo": [
+      "Itaúna",
+      "Leigos",
+      "Porto da Roça I"
+    ],
+    "Boqueirão": [
+      "Areal",
+      "Coqueiral",
+      "Gravatá"
+    ],
+    "Coqueiral": [
+      "Barra Nova",
+      "Boqueirão"
+    ],
+    "Itaúna": [
+      "Leigos",
+      "Porto Novo",
+      "Vilatur"
+    ],
+    "Retiro": [
+      "Asfalto Velho",
+      "Bacaxá",
+      "Bonsucesso",
+      "Condado de Bacaxá",
+      "Madressilva",
+      "Rio da Areia",
+      "São Geraldo"
+    ],
+    "Barreira": [
+      "Bacaxá",
+      "Jardim",
+      "Madressilva",
+      "Parque Marina",
+      "Porto da Roça I",
+      "Porto da Roça II",
+      "São Geraldo",
+      "Verde Vale"
+    ],
+    "Caixa D'Água": [
+      "Asfalto Velho",
+      "Aterrado",
+      "Bonsucesso",
+      "Comum",
+      "Vilatur",
+      "de Fátima",
+      "Água Branca"
+    ],
+    "Alvorada": [
+      "Madressilva",
+      "Morro dos Pregos",
+      "Rio Seco"
+    ],
+    "Água Branca": [
+      "Bonsucesso",
+      "Caixa D'Água",
+      "Comum",
+      "Vilatur"
+    ],
+    "Rio da Areia": [
+      "Bonsucesso",
+      "Madressilva",
+      "Retiro",
+      "Rio Seco"
+    ],
+    "Verde Vale": [
+      "Bacaxá",
+      "Barreira",
+      "Porto da Roça II"
+    ],
+    "Raia": [
+      "Aterrado",
+      "Bacaxá",
+      "Guarani",
+      "Porto da Roça II",
+      "Vilatur",
+      "de Fátima"
+    ],
+    "Morro dos Pregos": [
+      "Alvorada",
+      "Jardim",
+      "Madressilva",
+      "Mombaça",
+      "Rio Seco"
+    ],
+    "Asfalto Velho": [
+      "Bonsucesso",
+      "Caixa D'Água",
+      "Condado de Bacaxá",
+      "Retiro",
+      "de Fátima"
+    ],
+    "Aterrado": [
+      "Caixa D'Água",
+      "Raia",
+      "Vilatur",
+      "de Fátima"
+    ],
+    "Parque Marina": [
+      "Barreira",
+      "Madressilva",
+      "São Geraldo"
+    ],
+    "São Geraldo": [
+      "Bacaxá",
+      "Barreira",
+      "Madressilva",
+      "Parque Marina",
+      "Retiro"
+    ],
+    "Porto da Roça II": [
+      "Bacaxá",
+      "Barreira",
+      "Guarani",
+      "Porto da Roça I",
+      "Raia",
+      "Verde Vale"
+    ],
+    "Engenho Grande": [
+      "Bicuíba",
+      "Ipitangas"
+    ],
+    "de Fátima": [
+      "Asfalto Velho",
+      "Aterrado",
+      "Bacaxá",
+      "Caixa D'Água",
+      "Condado de Bacaxá",
+      "Raia"
+    ],
+    "Bacaxá": [
+      "Barreira",
+      "Condado de Bacaxá",
+      "Porto da Roça II",
+      "Raia",
+      "Retiro",
+      "São Geraldo",
+      "Verde Vale",
+      "de Fátima"
+    ],
+    "Condado de Bacaxá": [
+      "Asfalto Velho",
+      "Bacaxá",
+      "Retiro",
+      "de Fátima"
+    ],
+    "Comum": [
+      "Caixa D'Água",
+      "Vilatur",
+      "Água Branca"
+    ],
+    "Bonsucesso": [
+      "Asfalto Velho",
+      "Bicuíba",
+      "Caixa D'Água",
+      "Retiro",
+      "Rio da Areia",
+      "Vilatur",
+      "Água Branca"
+    ],
+    "Rio Seco": [
+      "Alvorada",
+      "Madressilva",
+      "Morro dos Pregos",
+      "Rio da Areia"
+    ],
+    "Bicuíba": [
+      "Bonsucesso",
+      "Engenho Grande",
+      "Ipitangas",
+      "Vilatur"
+    ],
+    "Madressilva": [
+      "Alvorada",
+      "Barreira",
+      "Jardim",
+      "Morro dos Pregos",
+      "Parque Marina",
+      "Retiro",
+      "Rio Seco",
+      "Rio da Areia",
+      "São Geraldo"
+    ],
+    "Tingui": [
+      "Sampaio Correia"
+    ],
+    "Basilea": [
+      "Jaconé",
+      "Mombaça",
+      "Sampaio Correia",
+      "Serra de Mato Grosso"
+    ],
+    "Serra de Mato Grosso": [
+      "Basilea",
+      "Sampaio Correia"
+    ],
+    "Sampaio Correia": [
+      "Basilea",
+      "Serra de Mato Grosso",
+      "Tingui"
+    ],
+    "Jaconé": [
+      "Barra Nova",
+      "Basilea"
+    ]
+  }
+}

@@ -1,0 +1,3390 @@
+{
+  "neighbors": {
+    "Granja de Freitas": [
+      "Alto Vera Cruz",
+      "Casa Branca",
+      "Conjunto Taquaril",
+      "Taquaril"
+    ],
+    "Nova Esperança": [
+      "Aparecida",
+      "Aparecida Sétima Seção",
+      "Bom Jesus",
+      "Caiçaras",
+      "Santo André"
+    ],
+    "Vista Alegre": [
+      "Bairro das Indústrias I",
+      "Bairro das Indústrias II",
+      "Betânia",
+      "Cabana do Pai Tomás",
+      "Madre Gertrudes",
+      "Nova Cintra",
+      "Vila Madre Gertrudes I",
+      "Vila Madre Gertrudes V",
+      "Vila Vista Alegre"
+    ],
+    "Cidade Jardim Taquaril": [
+      "Baleia",
+      "Conjunto Taquaril",
+      "Pirineus",
+      "Taquaril"
+    ],
+    "João Alfredo": [
+      "Horto"
+    ],
+    "Graça": [
+      "Colégio Batista",
+      "Concórdia",
+      "Floresta",
+      "Nova Floresta",
+      "Sagrada Família",
+      "Silveira"
+    ],
+    "Comiteco": [
+      "Acaba Mundo",
+      "Anchieta",
+      "Cruzeiro",
+      "Mangabeiras",
+      "Serra",
+      "Sion"
+    ],
+    "Vila Sumaré": [
+      "Aparecida Sétima Seção",
+      "Caiçaras",
+      "Ermelinda",
+      "Sumaré"
+    ],
+    "Bom Jesus": [
+      "Aparecida",
+      "Nova Esperança",
+      "Santo André"
+    ],
+    "Ouro Preto": [
+      "Bandeirantes",
+      "Campus UFMG",
+      "Engenho Nogueira",
+      "Jardim Alvorada",
+      "Novo Ouro Preto",
+      "Paquetá",
+      "São Luíz",
+      "Vila Engenho Nogueira",
+      "Vila Jardim Alvorada"
+    ],
+    "Conjunto Taquaril": [
+      "Cidade Jardim Taquaril",
+      "Granja de Freitas",
+      "Taquaril"
+    ],
+    "São Geraldo": [
+      "Alto Vera Cruz",
+      "Boa Vista",
+      "Caetano Furquim",
+      "Casa Branca",
+      "Esplanada",
+      "Grota",
+      "Horto Florestal",
+      "Mariano de Abreu",
+      "Vera Cruz",
+      "Vila Boa Vista",
+      "Vila São Geraldo"
+    ],
+    "São Paulo": [
+      "Andiroba",
+      "Dom Joaquim",
+      "Eymard",
+      "Fernão Dias",
+      "Maria Virgínia",
+      "Palmares",
+      "Pirajá",
+      "São Gabriel",
+      "União",
+      "Vila São Paulo"
+    ],
+    "Manacás": [
+      "Alípio de Melo",
+      "Castelo",
+      "Jardim Alvorada",
+      "Jardim São José"
+    ],
+    "Vila Maloca": [
+      "Cachoeirinha",
+      "Nova Cachoeirinha",
+      "São Francisco"
+    ],
+    "Vila Paquetá": [
+      "Bandeirantes",
+      "Paquetá"
+    ],
+    "Vila Rica": [
+      "Aeroporto",
+      "Jaraguá"
+    ],
+    "União": [
+      "Cidade Nova",
+      "Dom Joaquim",
+      "Horto Florestal",
+      "Ipiranga",
+      "Palmares",
+      "Santa Inês",
+      "São Paulo",
+      "Vila de Sá"
+    ],
+    "Vila Bandeirantes": [
+      "Conjunto Santa Maria",
+      "Gutierrez",
+      "Leonina",
+      "Luxemburgo"
+    ],
+    "Baleia": [
+      "Cidade Jardim Taquaril",
+      "Fazendinha",
+      "Jonas Veiga",
+      "Mangabeiras",
+      "Marçola",
+      "Nossa Senhora de Fátima",
+      "Paraíso",
+      "Pirineus"
+    ],
+    "Alto dos Pinheiros": [
+      "Califórnia",
+      "Conjunto Califórnia I",
+      "João Pinheiro",
+      "Oeste",
+      "Santa Maria"
+    ],
+    "Anchieta": [
+      "Carmo",
+      "Comiteco",
+      "Cruzeiro",
+      "Sion"
+    ],
+    "Fernão Dias": [
+      "Dom Joaquim",
+      "Penha",
+      "Pirajá",
+      "São Marcos",
+      "São Paulo"
+    ],
+    "Boa Viagem": [
+      "Centro",
+      "Funcionários",
+      "Lourdes",
+      "Savassi"
+    ],
+    "Pirineus": [
+      "Baleia",
+      "Cidade Jardim Taquaril",
+      "Jonas Veiga",
+      "Taquaril"
+    ],
+    "Vila Ipiranga": [
+      "Ipiranga"
+    ],
+    "Minas Brasil": [
+      "Coração Eucarístico",
+      "Dom Bosco",
+      "Dom Cabral",
+      "Padre Eustáquio"
+    ],
+    "Nossa Senhora do Rosário": [
+      "Nossa Senhora da Aparecida",
+      "Nossa Senhora da Conceição",
+      "Novo São Lucas",
+      "Santana do Cafezal",
+      "Vila Novo São Lucas"
+    ],
+    "Madre Gertrudes": [
+      "Bairro das Indústrias I",
+      "Bairro das Indústrias II",
+      "Cabana do Pai Tomás",
+      "Camargos",
+      "Custodinha",
+      "Jardinópolis",
+      "Vila Madre Gertrudes I",
+      "Vila Madre Gertrudes II",
+      "Vila Madre Gertrudes III",
+      "Vila Madre Gertrudes V",
+      "Vista Alegre"
+    ],
+    "Vila do Pombal": [
+      "Concórdia",
+      "Renascença"
+    ],
+    "Cidade Nova": [
+      "Horto Florestal",
+      "Ipiranga",
+      "Sagrada Família",
+      "Silveira",
+      "União"
+    ],
+    "Santo André": [
+      "Aparecida",
+      "Bom Jesus",
+      "Bonfim",
+      "Caiçaras",
+      "Carlos Prates",
+      "Nova Esperança",
+      "Pedreira Prado Lopes",
+      "Senhor dos Passos"
+    ],
+    "João Pinheiro": [
+      "Alto dos Pinheiros",
+      "Califórnia",
+      "Conjunto Califórnia I",
+      "Coração Eucarístico",
+      "Delta",
+      "Dom Bosco",
+      "Dom Cabral",
+      "Oeste",
+      "Trinta e Um de Março"
+    ],
+    "Parque São José": [
+      "Cinquentenário",
+      "Estrela do Oriente",
+      "Havaí",
+      "Marajó",
+      "Palmeiras"
+    ],
+    "Confisco": [
+      "Bandeirantes",
+      "Itatiaia",
+      "Urca"
+    ],
+    "Conjunto Califórnia I": [
+      "Alto dos Pinheiros",
+      "Califórnia",
+      "Delta",
+      "Dom Bosco",
+      "João Pinheiro",
+      "Vila Califórnia"
+    ],
+    "Santa Terezinha": [
+      "Bandeirantes",
+      "Castelo",
+      "Conjunto Lagoa",
+      "Itatiaia",
+      "Paquetá",
+      "Serrano",
+      "Urca"
+    ],
+    "Vila Nova Cachoeirinha II": [
+      "Aparecida",
+      "Nova Cachoeirinha"
+    ],
+    "Alípio de Melo": [
+      "Castelo",
+      "Conjunto Celso Machado",
+      "Glória",
+      "Inconfidência",
+      "Jardim São José",
+      "Manacás",
+      "Serrano",
+      "São Salvador"
+    ],
+    "Conjunto Novo Dom Bosco": [
+      "Califórnia",
+      "Vila Califórnia",
+      "Álvaro Camargos"
+    ],
+    "Belvedere": [
+      "Mangabeiras",
+      "Olhos d'Água",
+      "Pilar",
+      "Santa Lúcia",
+      "Serra do Curral",
+      "Sion",
+      "Vila Santa Lúcia"
+    ],
+    "Carlos Prates": [
+      "Barro Preto",
+      "Bonfim",
+      "Caiçaras",
+      "Centro",
+      "Lagoinha",
+      "Padre Eustáquio",
+      "Prado",
+      "Santo André",
+      "São Francisco das Chagas"
+    ],
+    "Barão Homem de Melo IV": [
+      "Barão Homem de Melo I",
+      "Jardim América",
+      "Nova Granada"
+    ],
+    "Vila Paraíso": [
+      "Jonas Veiga",
+      "Paraíso",
+      "Pompéia"
+    ],
+    "Real I": [
+      "São Francisco"
+    ],
+    "Betânia": [
+      "Bairro Novo das Indústrias",
+      "Bairro das Indústrias I",
+      "Bairro das Indústrias II",
+      "Cinquentenário",
+      "Estrela do Oriente",
+      "Nova Cintra",
+      "Salgado Filho",
+      "Vila Vista Alegre",
+      "Vista Alegre"
+    ],
+    "Maravilha": [
+      "Camargos",
+      "Santa Maria"
+    ],
+    "São Bento": [
+      "Alpes",
+      "Conjunto Santa Maria",
+      "Estoril",
+      "Leonina",
+      "Luxemburgo",
+      "Santa Lúcia",
+      "Vila Paris"
+    ],
+    "São Tomáz": [
+      "Aeroporto",
+      "Itapoã",
+      "Jardim Atlântico",
+      "Planalto",
+      "São Bernardo",
+      "Vila Aeroporto"
+    ],
+    "Jardim São José": [
+      "Alípio de Melo",
+      "Inconfidência",
+      "Jardim Alvorada",
+      "Manacás",
+      "Padre Eustáquio"
+    ],
+    "Monsenhor Messias": [
+      "Caiçara-Adelaide",
+      "Caiçaras",
+      "Jardim Montanhês",
+      "Padre Eustáquio"
+    ],
+    "Novo Glória": [
+      "Califórnia",
+      "Conjunto Jardim Filadélfia",
+      "Coqueiros",
+      "Glória",
+      "Pindorama"
+    ],
+    "Santa Inês": [
+      "Boa Vista",
+      "Dom Joaquim",
+      "Horto Florestal",
+      "Nova Vista",
+      "Penha",
+      "São Marcos",
+      "União"
+    ],
+    "Vila São Francisco": [
+      "São Francisco"
+    ],
+    "Esplanada": [
+      "Horto",
+      "Horto Florestal",
+      "Pompéia",
+      "São Geraldo",
+      "Vera Cruz",
+      "Vila Nossa Senhora do Rosário",
+      "Vila Vera Cruz I"
+    ],
+    "Bonfim": [
+      "Carlos Prates",
+      "Lagoinha",
+      "Santo André",
+      "Senhor dos Passos"
+    ],
+    "Alto Barroca": [
+      "Barroca",
+      "Grajaú",
+      "Nova Granada",
+      "Nova Suíssa",
+      "Prado"
+    ],
+    "Vila da Amizade": [
+      "Calafate"
+    ],
+    "Santa Sofia": [
+      "Alpes",
+      "Jardim América",
+      "Leonina",
+      "Nova Granada",
+      "São Jorge III"
+    ],
+    "Aparecida Sétima Seção": [
+      "Aparecida",
+      "Caiçaras",
+      "Ermelinda",
+      "Nova Esperança",
+      "Vila Sumaré"
+    ],
+    "Santa Tereza": [
+      "Floresta",
+      "Horto",
+      "Paraíso",
+      "Pompéia",
+      "Santa Efigênia",
+      "São Vicente",
+      "Vila Dias",
+      "Vila Ponta Porã"
+    ],
+    "Pedreira Prado Lopes": [
+      "Aparecida",
+      "Santo André",
+      "Senhor dos Passos",
+      "São Cristóvão"
+    ],
+    "Engenho Nogueira": [
+      "Alto Caiçaras",
+      "Antena Montanhês",
+      "Caiçara-Adelaide",
+      "Caiçaras",
+      "Campus UFMG",
+      "Jardim Alvorada",
+      "Ouro Preto",
+      "Sumaré",
+      "Vila Engenho Nogueira",
+      "Vila Jardim Alvorada",
+      "Vila Jardim Montanhês"
+    ],
+    "Indaiá": [
+      "Campus UFMG",
+      "Liberdade",
+      "Santa Rosa",
+      "São Francisco",
+      "Universitário"
+    ],
+    "Serrano": [
+      "Alípio de Melo",
+      "Castelo",
+      "Conjunto Celso Machado",
+      "Glória",
+      "Santa Terezinha",
+      "Santo Antônio Barroquinha",
+      "São Salvador",
+      "Urca"
+    ],
+    "Conjunto Celso Machado": [
+      "Alípio de Melo",
+      "Castelo",
+      "Serrano"
+    ],
+    "Santa Efigênia": [
+      "Centro",
+      "Cônego Pinheiro",
+      "Fazendinha",
+      "Floresta",
+      "Funcionários",
+      "Novo São Lucas",
+      "Paraíso",
+      "Santa Tereza",
+      "São Lucas",
+      "Vila Novo São Lucas",
+      "Vila Ponta Porã"
+    ],
+    "Itatiaia": [
+      "Bandeirantes",
+      "Confisco",
+      "Santa Terezinha",
+      "Urca"
+    ],
+    "Vila Nova Gameleira I": [
+      "Jardinópolis",
+      "Nova Gameleira"
+    ],
+    "Grajaú": [
+      "Alto Barroca",
+      "Barroca",
+      "Gutierrez",
+      "Nova Granada",
+      "São Jorge I",
+      "São Jorge II"
+    ],
+    "Santo Antônio Barroquinha": [
+      "Serrano",
+      "São Salvador"
+    ],
+    "Nova Cintra": [
+      "Betânia",
+      "Cabana do Pai Tomás",
+      "Imbaúbas",
+      "Nova Gameleira",
+      "Salgado Filho",
+      "Vila Vista Alegre",
+      "Vista Alegre"
+    ],
+    "Conjunto São Francisco de Assis": [
+      "Trevo"
+    ],
+    "Estrela": [
+      "Santa Rita de Cássia",
+      "Santo Antônio",
+      "São Pedro",
+      "Vila Santa Lúcia"
+    ],
+    "Campus UFMG": [
+      "Caiçaras",
+      "Engenho Nogueira",
+      "Ermelinda",
+      "Indaiá",
+      "Liberdade",
+      "Ouro Preto",
+      "Sumaré",
+      "São Francisco",
+      "São José",
+      "São Luíz",
+      "Vila Santo Antônio"
+    ],
+    "Jardim Montanhês": [
+      "Caiçara-Adelaide",
+      "Jardim Alvorada",
+      "Monsenhor Messias",
+      "Padre Eustáquio"
+    ],
+    "Belém": [
+      "Pompéia",
+      "Saudade"
+    ],
+    "Paraíso": [
+      "Baleia",
+      "Cônego Pinheiro",
+      "Cônego Pinheiro A",
+      "Fazendinha",
+      "Jonas Veiga",
+      "Pompéia",
+      "Santa Efigênia",
+      "Santa Tereza",
+      "Vila Paraíso"
+    ],
+    "Novo São Lucas": [
+      "Nossa Senhora da Aparecida",
+      "Nossa Senhora do Rosário",
+      "Santa Efigênia",
+      "São Lucas",
+      "Vila Novo São Lucas"
+    ],
+    "Vila Nova Cachoeirinha IV": [
+      "Cachoeirinha",
+      "Santa Cruz"
+    ],
+    "Sport Club": [
+      "Camargos"
+    ],
+    "Conjunto Lagoa": [
+      "Bandeirantes",
+      "Paquetá",
+      "Santa Terezinha"
+    ],
+    "São Francisco das Chagas": [
+      "Carlos Prates"
+    ],
+    "São Jorge III": [
+      "Gutierrez",
+      "Leonina",
+      "Nova Granada",
+      "Santa Sofia",
+      "São Jorge I",
+      "São Jorge II",
+      "Vila Antena"
+    ],
+    "Suzana": [
+      "Dona Clara",
+      "Maria Virgínia",
+      "São Gabriel",
+      "Universitário",
+      "Vila Primeiro de Maio",
+      "Vila Suzana I",
+      "Vila Suzana II"
+    ],
+    "Oeste": [
+      "Alto dos Pinheiros",
+      "Califórnia",
+      "Camargos",
+      "Coração Eucarístico",
+      "Gameleira",
+      "Jardinópolis",
+      "João Pinheiro",
+      "Nova Gameleira",
+      "Santa Maria",
+      "Vila Nova Gameleira III",
+      "Vila Oeste"
+    ],
+    "Vila Nossa Senhora do Rosário": [
+      "Esplanada",
+      "Pompéia"
+    ],
+    "Silveira": [
+      "Cidade Nova",
+      "Graça",
+      "Ipiranga",
+      "Nova Floresta",
+      "Sagrada Família"
+    ],
+    "São Lucas": [
+      "Funcionários",
+      "Nossa Senhora da Aparecida",
+      "Nossa Senhora da Conceição",
+      "Novo São Lucas",
+      "Santa Efigênia",
+      "Serra"
+    ],
+    "Ermelinda": [
+      "Aparecida",
+      "Aparecida Sétima Seção",
+      "Campus UFMG",
+      "Nova Cachoeirinha",
+      "Sumaré",
+      "São Francisco",
+      "Vila Sumaré"
+    ],
+    "Palmeiras": [
+      "Bernadete",
+      "Bonsucesso",
+      "Buritis",
+      "Estrela do Oriente",
+      "Havaí",
+      "Parque São José",
+      "Vila Nova Paraíso"
+    ],
+    "Grota": [
+      "São Geraldo"
+    ],
+    "Vila Inestan": [
+      "Cachoeirinha",
+      "Maria Virgínia",
+      "Real II",
+      "Santa Cruz",
+      "São Francisco",
+      "Universitário"
+    ],
+    "Nossa Senhora de Fátima": [
+      "Baleia",
+      "Fazendinha",
+      "Marçola",
+      "Nossa Senhora da Conceição",
+      "Santana do Cafezal"
+    ],
+    "Cabana do Pai Tomás": [
+      "Jardinópolis",
+      "Madre Gertrudes",
+      "Nova Cintra",
+      "Nova Gameleira",
+      "Vila Madre Gertrudes I",
+      "Vista Alegre"
+    ],
+    "Penha": [
+      "Dom Joaquim",
+      "Fernão Dias",
+      "Santa Inês",
+      "São Marcos"
+    ],
+    "Prado": [
+      "Alto Barroca",
+      "Barro Preto",
+      "Barroca",
+      "Calafate",
+      "Carlos Prates",
+      "Gutierrez",
+      "Nova Suíssa",
+      "Padre Eustáquio",
+      "Santo Agostinho"
+    ],
+    "Vila São Geraldo": [
+      "São Geraldo"
+    ],
+    "Cidade Jardim": [
+      "Coração de Jesus",
+      "Gutierrez",
+      "Lourdes",
+      "Luxemburgo",
+      "Monte São José",
+      "Santo Agostinho",
+      "Santo Antônio"
+    ],
+    "Copacabana": [
+      "Céu Azul",
+      "Garças",
+      "Jardim Atlântico",
+      "Jardim Leblon",
+      "Lagoa da Pampulha",
+      "Santa Amélia",
+      "Santa Mônica",
+      "Universo",
+      "Vila Copacabana"
+    ],
+    "Barro Preto": [
+      "Carlos Prates",
+      "Centro",
+      "Gutierrez",
+      "Prado",
+      "Santo Agostinho"
+    ],
+    "Vila Havaí": [
+      "Havaí"
+    ],
+    "Jaraguá": [
+      "Aeroporto",
+      "Dona Clara",
+      "Liberdade",
+      "Santa Rosa",
+      "Vila Rica"
+    ],
+    "Dom Cabral": [
+      "Coração Eucarístico",
+      "Dom Bosco",
+      "João Pinheiro",
+      "Minas Brasil",
+      "Trinta e Um de Março",
+      "Vila PUC"
+    ],
+    "Vila Madre Gertrudes II": [
+      "Madre Gertrudes",
+      "Vila Madre Gertrudes I"
+    ],
+    "Ventosa": [
+      "Estoril",
+      "Havaí",
+      "Jardim América",
+      "Salgado Filho"
+    ],
+    "Guaratã": [
+      "Ambrosina",
+      "Gameleira",
+      "Nova Gameleira",
+      "Nova Suíssa",
+      "Salgado Filho"
+    ],
+    "Coração de Jesus": [
+      "Cidade Jardim",
+      "Luxemburgo",
+      "Monte São José",
+      "Santo Antônio",
+      "Vila Paris"
+    ],
+    "Coqueiros": [
+      "Glória",
+      "Novo Glória",
+      "Pindorama",
+      "São Salvador"
+    ],
+    "Camargos": [
+      "Califórnia",
+      "Jardinópolis",
+      "Madre Gertrudes",
+      "Maravilha",
+      "Oeste",
+      "Santa Maria",
+      "Sport Club",
+      "Vila Madre Gertrudes III",
+      "Virgínia"
+    ],
+    "São Cristóvão": [
+      "Aparecida",
+      "Cachoeirinha",
+      "Canadá",
+      "Concórdia",
+      "Lagoinha",
+      "Pedreira Prado Lopes",
+      "Senhor dos Passos"
+    ],
+    "Aeroporto": [
+      "Dona Clara",
+      "Jaraguá",
+      "Jardim Atlântico",
+      "Lagoa da Pampulha",
+      "Liberdade",
+      "São Bernardo",
+      "São José",
+      "São Luíz",
+      "São Tomáz",
+      "Vila Aeroporto",
+      "Vila Aeroporto Jaraguá",
+      "Vila Rica"
+    ],
+    "Urca": [
+      "Confisco",
+      "Itatiaia",
+      "Santa Terezinha",
+      "Serrano"
+    ],
+    "Vila PUC": [
+      "Coração Eucarístico",
+      "Dom Cabral"
+    ],
+    "Vila Nova Gameleira II": [
+      "Nova Gameleira"
+    ],
+    "Vila Oeste": [
+      "Oeste"
+    ],
+    "Eymard": [
+      "Maria Goretti",
+      "Pirajá",
+      "São Dimas",
+      "São Gabriel",
+      "São Paulo",
+      "Vila São Paulo"
+    ],
+    "Vila Jardim Alvorada": [
+      "Antena Montanhês",
+      "Engenho Nogueira",
+      "Jardim Alvorada",
+      "Ouro Preto",
+      "Paquetá"
+    ],
+    "Nova Vista": [
+      "Boa Vista",
+      "Santa Inês"
+    ],
+    "Caiçara-Adelaide": [
+      "Alto Caiçaras",
+      "Caiçaras",
+      "Engenho Nogueira",
+      "Jardim Alvorada",
+      "Jardim Montanhês",
+      "Monsenhor Messias"
+    ],
+    "Vila Vera Cruz II": [
+      "Saudade",
+      "Vera Cruz"
+    ],
+    "Nova Cachoeirinha": [
+      "Aparecida",
+      "Cachoeirinha",
+      "Ermelinda",
+      "São Francisco",
+      "Vila Maloca",
+      "Vila Nova Cachoeirinha I",
+      "Vila Nova Cachoeirinha II"
+    ],
+    "Mala e Cuia": [
+      "Sion"
+    ],
+    "São Jorge I": [
+      "Grajaú",
+      "Nova Granada",
+      "São Jorge II",
+      "São Jorge III"
+    ],
+    "Funcionários": [
+      "Boa Viagem",
+      "Centro",
+      "Cruzeiro",
+      "Santa Efigênia",
+      "Savassi",
+      "Serra",
+      "São Lucas"
+    ],
+    "Jardinópolis": [
+      "Cabana do Pai Tomás",
+      "Camargos",
+      "Madre Gertrudes",
+      "Nova Gameleira",
+      "Oeste",
+      "Vila Nova Gameleira I"
+    ],
+    "Vila Vista Alegre": [
+      "Bairro das Indústrias II",
+      "Betânia",
+      "Nova Cintra",
+      "Vista Alegre"
+    ],
+    "Pindorama": [
+      "Califórnia",
+      "Coqueiral",
+      "Coqueiros",
+      "Novo Glória"
+    ],
+    "Jardim Alvorada": [
+      "Antena Montanhês",
+      "Caiçara-Adelaide",
+      "Castelo",
+      "Engenho Nogueira",
+      "Jardim Montanhês",
+      "Jardim São José",
+      "Manacás",
+      "Ouro Preto",
+      "Padre Eustáquio",
+      "Paquetá",
+      "Vila Jardim Alvorada",
+      "Vila Jardim Montanhês"
+    ],
+    "Estrela do Oriente": [
+      "Bairro Novo das Indústrias",
+      "Betânia",
+      "Bonsucesso",
+      "Cinquentenário",
+      "Palmeiras",
+      "Parque São José"
+    ],
+    "Paquetá": [
+      "Bandeirantes",
+      "Castelo",
+      "Conjunto Lagoa",
+      "Jardim Alvorada",
+      "Ouro Preto",
+      "Santa Terezinha",
+      "Vila Jardim Alvorada",
+      "Vila Paquetá"
+    ],
+    "Centro": [
+      "Barro Preto",
+      "Boa Viagem",
+      "Carlos Prates",
+      "Colégio Batista",
+      "Floresta",
+      "Funcionários",
+      "Lagoinha",
+      "Lourdes",
+      "Santa Efigênia",
+      "Santo Agostinho"
+    ],
+    "Trinta e Um de Março": [
+      "Dom Bosco",
+      "Dom Cabral",
+      "João Pinheiro"
+    ],
+    "Vila Suzana I": [
+      "Dona Clara",
+      "Primeiro de Maio",
+      "Suzana",
+      "Vila Primeiro de Maio"
+    ],
+    "Alto Vera Cruz": [
+      "Casa Branca",
+      "Granja de Freitas",
+      "Jonas Veiga",
+      "São Geraldo",
+      "Taquaril",
+      "Vera Cruz"
+    ],
+    "Coração Eucarístico": [
+      "Calafate",
+      "Dom Cabral",
+      "Gameleira",
+      "João Pinheiro",
+      "Minas Brasil",
+      "Oeste",
+      "Padre Eustáquio",
+      "Vila PUC"
+    ],
+    "Boa Vista": [
+      "Horto Florestal",
+      "Mariano de Abreu",
+      "Nova Vista",
+      "Santa Inês",
+      "São Geraldo",
+      "Vila Boa Vista"
+    ],
+    "Conjunto Califórnia II": [
+      "Califórnia",
+      "Vila Califórnia"
+    ],
+    "Concórdia": [
+      "Cachoeirinha",
+      "Canadá",
+      "Colégio Batista",
+      "Floresta",
+      "Graça",
+      "Lagoinha",
+      "Nova Floresta",
+      "Renascença",
+      "São Cristóvão",
+      "Vila Tiradentes",
+      "Vila do Pombal"
+    ],
+    "Castelo": [
+      "Alípio de Melo",
+      "Conjunto Celso Machado",
+      "Jardim Alvorada",
+      "Manacás",
+      "Paquetá",
+      "Santa Terezinha",
+      "Serrano"
+    ],
+    "Sumaré": [
+      "Caiçaras",
+      "Campus UFMG",
+      "Engenho Nogueira",
+      "Ermelinda",
+      "São Francisco",
+      "Vila Sumaré"
+    ],
+    "Nova Pampulha": [
+      "Trevo"
+    ],
+    "Ipiranga": [
+      "Cidade Nova",
+      "Nova Floresta",
+      "Palmares",
+      "Renascença",
+      "Santa Cruz",
+      "Silveira",
+      "União",
+      "Vila Ipiranga"
+    ],
+    "Nova Granada": [
+      "Alto Barroca",
+      "Barão Homem de Melo I",
+      "Barão Homem de Melo IV",
+      "Grajaú",
+      "Jardim América",
+      "Nova Suíssa",
+      "Santa Sofia",
+      "São Jorge I",
+      "São Jorge III"
+    ],
+    "São Francisco": [
+      "Cachoeirinha",
+      "Campus UFMG",
+      "Ermelinda",
+      "Indaiá",
+      "Maria Virgínia",
+      "Nova Cachoeirinha",
+      "Real I",
+      "Real II",
+      "Sumaré",
+      "Universitário",
+      "Vila Inestan",
+      "Vila Maloca",
+      "Vila Santa Rosa",
+      "Vila São Francisco"
+    ],
+    "Vila Ponta Porã": [
+      "Santa Efigênia",
+      "Santa Tereza"
+    ],
+    "Vila Jardim Montanhês": [
+      "Antena Montanhês",
+      "Engenho Nogueira",
+      "Jardim Alvorada"
+    ],
+    "Vila Vera Cruz I": [
+      "Esplanada",
+      "Vera Cruz"
+    ],
+    "Marajó": [
+      "Cinquentenário",
+      "Havaí",
+      "Parque São José"
+    ],
+    "Vila Santa Rosa": [
+      "São Francisco"
+    ],
+    "Luxemburgo": [
+      "Cidade Jardim",
+      "Conjunto Santa Maria",
+      "Coração de Jesus",
+      "Gutierrez",
+      "Monte São José",
+      "São Bento",
+      "Vila Bandeirantes",
+      "Vila Paris"
+    ],
+    "Lagoa da Pampulha": [
+      "Aeroporto",
+      "Bandeirantes",
+      "Braúnas",
+      "Copacabana",
+      "Garças",
+      "Jardim Atlântico",
+      "São Luíz"
+    ],
+    "Imbaúbas": [
+      "Nova Cintra",
+      "Nova Gameleira"
+    ],
+    "Nossa Senhora da Conceição": [
+      "Marçola",
+      "Nossa Senhora da Aparecida",
+      "Nossa Senhora de Fátima",
+      "Nossa Senhora do Rosário",
+      "Santana do Cafezal",
+      "Serra",
+      "São Lucas"
+    ],
+    "Lorena": [
+      "Padre Eustáquio"
+    ],
+    "Dom Joaquim": [
+      "Fernão Dias",
+      "Penha",
+      "Santa Inês",
+      "São Paulo",
+      "União",
+      "Vila de Sá"
+    ],
+    "Caetano Furquim": [
+      "Casa Branca",
+      "São Geraldo"
+    ],
+    "Real II": [
+      "Cachoeirinha",
+      "São Francisco",
+      "Vila Inestan"
+    ],
+    "Alto Caiçaras": [
+      "Caiçara-Adelaide",
+      "Caiçaras",
+      "Engenho Nogueira"
+    ],
+    "Marçola": [
+      "Baleia",
+      "Mangabeiras",
+      "Nossa Senhora da Conceição",
+      "Nossa Senhora de Fátima",
+      "Serra"
+    ],
+    "Estoril": [
+      "Alpes",
+      "Buritis",
+      "Chácara Leonina",
+      "Havaí",
+      "Jardim América",
+      "Olhos d'Água",
+      "Pantanal",
+      "Santa Lúcia",
+      "São Bento",
+      "Ventosa"
+    ],
+    "Colégio Batista": [
+      "Centro",
+      "Concórdia",
+      "Floresta",
+      "Graça",
+      "Lagoinha"
+    ],
+    "Maria Virgínia": [
+      "Palmares",
+      "Santa Cruz",
+      "Suzana",
+      "São Francisco",
+      "São Gabriel",
+      "São Paulo",
+      "São Sebastião",
+      "Universitário",
+      "Vila Inestan"
+    ],
+    "Cônego Pinheiro A": [
+      "Paraíso"
+    ],
+    "Pompéia": [
+      "Belém",
+      "Esplanada",
+      "Horto",
+      "Jonas Veiga",
+      "Paraíso",
+      "Santa Tereza",
+      "Saudade",
+      "São Rafael",
+      "Vera Cruz",
+      "Vila Nossa Senhora do Rosário",
+      "Vila Paraíso"
+    ],
+    "Liberdade": [
+      "Aeroporto",
+      "Campus UFMG",
+      "Indaiá",
+      "Jaraguá",
+      "Santa Rosa",
+      "São José",
+      "Vila Santo Antônio"
+    ],
+    "Califórnia": [
+      "Alto dos Pinheiros",
+      "Camargos",
+      "Conjunto Califórnia I",
+      "Conjunto Califórnia II",
+      "Conjunto Jardim Filadélfia",
+      "Conjunto Novo Dom Bosco",
+      "João Pinheiro",
+      "Novo Glória",
+      "Oeste",
+      "Pindorama",
+      "Santa Maria",
+      "Vila Califórnia",
+      "Álvaro Camargos"
+    ],
+    "Vera Cruz": [
+      "Alto Vera Cruz",
+      "Esplanada",
+      "Jonas Veiga",
+      "Pompéia",
+      "Saudade",
+      "São Geraldo",
+      "Vila Vera Cruz I",
+      "Vila Vera Cruz II"
+    ],
+    "São Salvador": [
+      "Alípio de Melo",
+      "Coqueiros",
+      "Glória",
+      "Santo Antônio Barroquinha",
+      "Serrano"
+    ],
+    "Vila Suzana II": [
+      "Suzana"
+    ],
+    "Conjunto Santa Maria": [
+      "Leonina",
+      "Luxemburgo",
+      "São Bento",
+      "Vila Bandeirantes"
+    ],
+    "Vila Paris": [
+      "Coração de Jesus",
+      "Luxemburgo",
+      "Santa Lúcia",
+      "Santo Antônio",
+      "São Bento"
+    ],
+    "Vila São Paulo": [
+      "Andiroba",
+      "Eymard",
+      "São Gabriel",
+      "São Paulo"
+    ],
+    "Conjunto Jardim Filadélfia": [
+      "Califórnia",
+      "Glória",
+      "Novo Glória",
+      "Álvaro Camargos"
+    ],
+    "Delta": [
+      "Conjunto Califórnia I",
+      "Dom Bosco",
+      "João Pinheiro"
+    ],
+    "Pindura Saia": [
+      "Cruzeiro"
+    ],
+    "Palmares": [
+      "Ipiranga",
+      "Maria Virgínia",
+      "Santa Cruz",
+      "São Paulo",
+      "São Sebastião",
+      "União"
+    ],
+    "Leonina": [
+      "Alpes",
+      "Conjunto Santa Maria",
+      "Gutierrez",
+      "Santa Sofia",
+      "São Bento",
+      "São Jorge III",
+      "Vila Antena",
+      "Vila Bandeirantes"
+    ],
+    "Gutierrez": [
+      "Barro Preto",
+      "Barroca",
+      "Cidade Jardim",
+      "Grajaú",
+      "Leonina",
+      "Luxemburgo",
+      "Prado",
+      "Santo Agostinho",
+      "São Jorge II",
+      "São Jorge III",
+      "Vila Antena",
+      "Vila Bandeirantes"
+    ],
+    "Vila Aeroporto Jaraguá": [
+      "Aeroporto",
+      "São Luíz"
+    ],
+    "Saudade": [
+      "Belém",
+      "Jonas Veiga",
+      "Pompéia",
+      "Vera Cruz",
+      "Vila Vera Cruz II"
+    ],
+    "Santo Agostinho": [
+      "Barro Preto",
+      "Centro",
+      "Cidade Jardim",
+      "Gutierrez",
+      "Lourdes",
+      "Prado"
+    ],
+    "Nova Floresta": [
+      "Concórdia",
+      "Graça",
+      "Ipiranga",
+      "Renascença",
+      "Silveira"
+    ],
+    "Senhor dos Passos": [
+      "Bonfim",
+      "Lagoinha",
+      "Pedreira Prado Lopes",
+      "Santo André",
+      "São Cristóvão"
+    ],
+    "Nova Suíssa": [
+      "Alto Barroca",
+      "Ambrosina",
+      "Barão Homem de Melo I",
+      "Calafate",
+      "Gameleira",
+      "Guaratã",
+      "Jardim América",
+      "Nova Granada",
+      "Prado",
+      "Salgado Filho"
+    ],
+    "Ambrosina": [
+      "Guaratã",
+      "Nova Suíssa",
+      "Salgado Filho"
+    ],
+    "Taquaril": [
+      "Alto Vera Cruz",
+      "Cidade Jardim Taquaril",
+      "Conjunto Taquaril",
+      "Granja de Freitas",
+      "Jonas Veiga",
+      "Pirineus"
+    ],
+    "Glória": [
+      "Alípio de Melo",
+      "Conjunto Jardim Filadélfia",
+      "Coqueiros",
+      "Dom Bosco",
+      "Inconfidência",
+      "Novo Glória",
+      "Serrano",
+      "São Salvador",
+      "Álvaro Camargos"
+    ],
+    "Novo Ouro Preto": [
+      "Ouro Preto"
+    ],
+    "Jonas Veiga": [
+      "Alto Vera Cruz",
+      "Baleia",
+      "Paraíso",
+      "Pirineus",
+      "Pompéia",
+      "Saudade",
+      "Taquaril",
+      "Vera Cruz",
+      "Vila Paraíso"
+    ],
+    "Inconfidência": [
+      "Alípio de Melo",
+      "Dom Bosco",
+      "Glória",
+      "Jardim São José",
+      "Padre Eustáquio"
+    ],
+    "Lourdes": [
+      "Boa Viagem",
+      "Centro",
+      "Cidade Jardim",
+      "Santo Agostinho",
+      "Santo Antônio",
+      "Savassi"
+    ],
+    "São José": [
+      "Aeroporto",
+      "Campus UFMG",
+      "Liberdade",
+      "São Luíz"
+    ],
+    "Cachoeirinha": [
+      "Aparecida",
+      "Canadá",
+      "Concórdia",
+      "Nova Cachoeirinha",
+      "Real II",
+      "Renascença",
+      "Santa Cruz",
+      "São Cristóvão",
+      "São Francisco",
+      "Vila Inestan",
+      "Vila Maloca",
+      "Vila Nova Cachoeirinha IV",
+      "Vila da Paz"
+    ],
+    "Alpes": [
+      "Chácara Leonina",
+      "Estoril",
+      "Jardim América",
+      "Leonina",
+      "Pantanal",
+      "Santa Sofia",
+      "São Bento"
+    ],
+    "Fazendinha": [
+      "Baleia",
+      "Nossa Senhora de Fátima",
+      "Paraíso",
+      "Santa Efigênia",
+      "Santana do Cafezal",
+      "Vila Novo São Lucas"
+    ],
+    "Monte São José": [
+      "Cidade Jardim",
+      "Coração de Jesus",
+      "Luxemburgo"
+    ],
+    "Vila Califórnia": [
+      "Califórnia",
+      "Conjunto Califórnia I",
+      "Conjunto Califórnia II",
+      "Conjunto Novo Dom Bosco",
+      "Dom Bosco",
+      "Álvaro Camargos"
+    ],
+    "Xangri-lá": [
+      "Braúnas",
+      "Trevo"
+    ],
+    "Vila da Paz": [
+      "Cachoeirinha",
+      "Santa Cruz"
+    ],
+    "Bandeirantes": [
+      "Braúnas",
+      "Confisco",
+      "Conjunto Lagoa",
+      "Itatiaia",
+      "Lagoa da Pampulha",
+      "Ouro Preto",
+      "Paquetá",
+      "Santa Terezinha",
+      "São Luíz",
+      "Vila Paquetá"
+    ],
+    "São Vicente": [
+      "Santa Tereza"
+    ],
+    "Cônego Pinheiro": [
+      "Paraíso",
+      "Santa Efigênia"
+    ],
+    "Marmiteiros": [
+      "Padre Eustáquio"
+    ],
+    "Mariano de Abreu": [
+      "Boa Vista",
+      "Casa Branca",
+      "São Geraldo",
+      "Vila Boa Vista"
+    ],
+    "Caiçaras": [
+      "Alto Caiçaras",
+      "Aparecida Sétima Seção",
+      "Caiçara-Adelaide",
+      "Campus UFMG",
+      "Carlos Prates",
+      "Engenho Nogueira",
+      "Monsenhor Messias",
+      "Nova Esperança",
+      "Padre Eustáquio",
+      "Santo André",
+      "Sumaré",
+      "Vila Sumaré"
+    ],
+    "Vila Engenho Nogueira": [
+      "Engenho Nogueira",
+      "Ouro Preto"
+    ],
+    "Garças": [
+      "Braúnas",
+      "Copacabana",
+      "Céu Azul",
+      "Lagoa da Pampulha",
+      "Trevo"
+    ],
+    "Vila FUMEC": [
+      "Cruzeiro"
+    ],
+    "Santa Rosa": [
+      "Dona Clara",
+      "Indaiá",
+      "Jaraguá",
+      "Liberdade",
+      "Universitário"
+    ],
+    "Santana do Cafezal": [
+      "Fazendinha",
+      "Nossa Senhora da Conceição",
+      "Nossa Senhora de Fátima",
+      "Nossa Senhora do Rosário",
+      "Vila Novo São Lucas"
+    ],
+    "Vila Madre Gertrudes I": [
+      "Cabana do Pai Tomás",
+      "Madre Gertrudes",
+      "Vila Madre Gertrudes II",
+      "Vista Alegre"
+    ],
+    "Buritis": [
+      "Bernadete",
+      "Bonsucesso",
+      "Estoril",
+      "Havaí",
+      "Olhos d'Água",
+      "Palmeiras"
+    ],
+    "Antena Montanhês": [
+      "Engenho Nogueira",
+      "Jardim Alvorada",
+      "Vila Jardim Alvorada",
+      "Vila Jardim Montanhês"
+    ],
+    "Vila Santa Lúcia": [
+      "Belvedere",
+      "Estrela",
+      "Santa Lúcia",
+      "Santa Rita de Cássia",
+      "Santo Antônio",
+      "Sion"
+    ],
+    "Salgado Filho": [
+      "Ambrosina",
+      "Betânia",
+      "Cinquentenário",
+      "Guaratã",
+      "Havaí",
+      "Jardim América",
+      "Nova Cintra",
+      "Nova Gameleira",
+      "Nova Suíssa",
+      "Ventosa"
+    ],
+    "São Jorge II": [
+      "Grajaú",
+      "Gutierrez",
+      "São Jorge I",
+      "São Jorge III"
+    ],
+    "Horto": [
+      "Esplanada",
+      "Floresta",
+      "Horto Florestal",
+      "João Alfredo",
+      "Pompéia",
+      "Sagrada Família",
+      "Santa Tereza"
+    ],
+    "Coqueiral": [
+      "Pindorama"
+    ],
+    "Santa Isabel": [
+      "Cruzeiro",
+      "Serra"
+    ],
+    "Nossa Senhora da Aparecida": [
+      "Nossa Senhora da Conceição",
+      "Nossa Senhora do Rosário",
+      "Novo São Lucas",
+      "São Lucas"
+    ],
+    "Acaba Mundo": [
+      "Comiteco",
+      "Mangabeiras",
+      "Sion"
+    ],
+    "Barão Homem de Melo I": [
+      "Barão Homem de Melo IV",
+      "Jardim América",
+      "Nova Granada",
+      "Nova Suíssa"
+    ],
+    "Vila Nova Gameleira III": [
+      "Gameleira",
+      "Oeste"
+    ],
+    "Vila Calafate": [
+      "Calafate"
+    ],
+    "Barão Homem de Melo III": [
+      "Jardim América"
+    ],
+    "Horto Florestal": [
+      "Boa Vista",
+      "Cidade Nova",
+      "Esplanada",
+      "Horto",
+      "Sagrada Família",
+      "Santa Inês",
+      "São Geraldo",
+      "União"
+    ],
+    "Casa Branca": [
+      "Alto Vera Cruz",
+      "Caetano Furquim",
+      "Granja de Freitas",
+      "Mariano de Abreu",
+      "São Geraldo"
+    ],
+    "Havaí": [
+      "Buritis",
+      "Cinquentenário",
+      "Estoril",
+      "Jardim América",
+      "Marajó",
+      "Palmeiras",
+      "Parque São José",
+      "Salgado Filho",
+      "Ventosa",
+      "Vila Havaí"
+    ],
+    "Floresta": [
+      "Centro",
+      "Colégio Batista",
+      "Concórdia",
+      "Graça",
+      "Horto",
+      "Sagrada Família",
+      "Santa Efigênia",
+      "Santa Tereza"
+    ],
+    "Canadá": [
+      "Cachoeirinha",
+      "Concórdia",
+      "São Cristóvão"
+    ],
+    "Vila Boa Vista": [
+      "Boa Vista",
+      "Mariano de Abreu",
+      "São Geraldo"
+    ],
+    "Padre Eustáquio": [
+      "Caiçaras",
+      "Calafate",
+      "Carlos Prates",
+      "Coração Eucarístico",
+      "Dom Bosco",
+      "Inconfidência",
+      "Jardim Alvorada",
+      "Jardim Montanhês",
+      "Jardim São José",
+      "Lorena",
+      "Marmiteiros",
+      "Minas Brasil",
+      "Monsenhor Messias",
+      "Prado"
+    ],
+    "Serra": [
+      "Comiteco",
+      "Cruzeiro",
+      "Funcionários",
+      "Mangabeiras",
+      "Marçola",
+      "Nossa Senhora da Conceição",
+      "Santa Isabel",
+      "Savassi",
+      "São Lucas"
+    ],
+    "Calafate": [
+      "Coração Eucarístico",
+      "Gameleira",
+      "Nova Suíssa",
+      "Padre Eustáquio",
+      "Prado",
+      "Vila Calafate",
+      "Vila da Amizade"
+    ],
+    "Custodinha": [
+      "Madre Gertrudes"
+    ],
+    "Vila Novo São Lucas": [
+      "Fazendinha",
+      "Nossa Senhora do Rosário",
+      "Novo São Lucas",
+      "Santa Efigênia",
+      "Santana do Cafezal"
+    ],
+    "Vila Tiradentes": [
+      "Concórdia"
+    ],
+    "São Pedro": [
+      "Carmo",
+      "Estrela",
+      "Santa Rita de Cássia",
+      "Santo Antônio",
+      "Savassi",
+      "Sion"
+    ],
+    "Vila Aeroporto": [
+      "Aeroporto",
+      "São Bernardo",
+      "São Tomáz"
+    ],
+    "Olhos d'Água": [
+      "Belvedere",
+      "Bonsucesso",
+      "Buritis",
+      "Estoril",
+      "Pilar",
+      "Santa Lúcia"
+    ],
+    "São Luíz": [
+      "Aeroporto",
+      "Bandeirantes",
+      "Campus UFMG",
+      "Lagoa da Pampulha",
+      "Ouro Preto",
+      "São José",
+      "Vila Aeroporto Jaraguá"
+    ],
+    "São Sebastião": [
+      "Maria Virgínia",
+      "Palmares",
+      "Universitário"
+    ],
+    "Dom Bosco": [
+      "Conjunto Califórnia I",
+      "Delta",
+      "Dom Cabral",
+      "Glória",
+      "Inconfidência",
+      "João Pinheiro",
+      "Minas Brasil",
+      "Padre Eustáquio",
+      "Trinta e Um de Março",
+      "Vila Califórnia",
+      "Álvaro Camargos"
+    ],
+    "Aparecida": [
+      "Aparecida Sétima Seção",
+      "Bom Jesus",
+      "Cachoeirinha",
+      "Ermelinda",
+      "Nova Cachoeirinha",
+      "Nova Esperança",
+      "Pedreira Prado Lopes",
+      "Santo André",
+      "São Cristóvão",
+      "Vila Nova Cachoeirinha II"
+    ],
+    "Savassi": [
+      "Boa Viagem",
+      "Carmo",
+      "Cruzeiro",
+      "Funcionários",
+      "Lourdes",
+      "Santo Antônio",
+      "Serra",
+      "São Pedro"
+    ],
+    "São Rafael": [
+      "Pompéia"
+    ],
+    "Braúnas": [
+      "Bandeirantes",
+      "Garças",
+      "Lagoa da Pampulha",
+      "Trevo",
+      "Xangri-lá"
+    ],
+    "Santa Maria": [
+      "Alto dos Pinheiros",
+      "Califórnia",
+      "Camargos",
+      "Maravilha",
+      "Oeste"
+    ],
+    "Cruzeiro": [
+      "Anchieta",
+      "Carmo",
+      "Comiteco",
+      "Funcionários",
+      "Pindura Saia",
+      "Santa Isabel",
+      "Savassi",
+      "Serra",
+      "Vila FUMEC"
+    ],
+    "Universitário": [
+      "Dona Clara",
+      "Indaiá",
+      "Maria Virgínia",
+      "Santa Rosa",
+      "Suzana",
+      "São Francisco",
+      "São Sebastião",
+      "Vila Inestan"
+    ],
+    "Virgínia": [
+      "Camargos"
+    ],
+    "Vila Santo Antônio": [
+      "Campus UFMG",
+      "Liberdade"
+    ],
+    "Cinquentenário": [
+      "Betânia",
+      "Estrela do Oriente",
+      "Havaí",
+      "Marajó",
+      "Parque São José",
+      "Salgado Filho"
+    ],
+    "Carmo": [
+      "Anchieta",
+      "Cruzeiro",
+      "Savassi",
+      "Sion",
+      "São Pedro"
+    ],
+    "Renascença": [
+      "Cachoeirinha",
+      "Concórdia",
+      "Ipiranga",
+      "Nova Floresta",
+      "Santa Cruz",
+      "Vila do Pombal"
+    ],
+    "Lagoinha": [
+      "Bonfim",
+      "Carlos Prates",
+      "Centro",
+      "Colégio Batista",
+      "Concórdia",
+      "Senhor dos Passos",
+      "São Cristóvão"
+    ],
+    "Sion": [
+      "Acaba Mundo",
+      "Anchieta",
+      "Belvedere",
+      "Carmo",
+      "Comiteco",
+      "Mala e Cuia",
+      "Mangabeiras",
+      "Santa Rita de Cássia",
+      "São Pedro",
+      "Vila Santa Lúcia"
+    ],
+    "Vila Antena": [
+      "Gutierrez",
+      "Leonina",
+      "São Jorge III"
+    ],
+    "Gameleira": [
+      "Calafate",
+      "Coração Eucarístico",
+      "Guaratã",
+      "Nova Gameleira",
+      "Nova Suíssa",
+      "Oeste",
+      "Vila Nova Gameleira III"
+    ],
+    "Álvaro Camargos": [
+      "Califórnia",
+      "Conjunto Jardim Filadélfia",
+      "Conjunto Novo Dom Bosco",
+      "Dom Bosco",
+      "Glória",
+      "Vila Califórnia"
+    ],
+    "Vila Nova Paraíso": [
+      "Bonsucesso",
+      "Palmeiras"
+    ],
+    "Pantanal": [
+      "Alpes",
+      "Chácara Leonina",
+      "Estoril"
+    ],
+    "Nova Gameleira": [
+      "Cabana do Pai Tomás",
+      "Gameleira",
+      "Guaratã",
+      "Imbaúbas",
+      "Jardinópolis",
+      "Nova Cintra",
+      "Oeste",
+      "Salgado Filho",
+      "Vila Nova Gameleira I",
+      "Vila Nova Gameleira II"
+    ],
+    "Santa Lúcia": [
+      "Belvedere",
+      "Estoril",
+      "Olhos d'Água",
+      "Santo Antônio",
+      "São Bento",
+      "Vila Paris",
+      "Vila Santa Lúcia"
+    ],
+    "Chácara Leonina": [
+      "Alpes",
+      "Estoril",
+      "Pantanal"
+    ],
+    "Vila de Sá": [
+      "Dom Joaquim",
+      "União"
+    ],
+    "Santo Antônio": [
+      "Cidade Jardim",
+      "Coração de Jesus",
+      "Estrela",
+      "Lourdes",
+      "Santa Lúcia",
+      "Savassi",
+      "São Pedro",
+      "Vila Paris",
+      "Vila Santa Lúcia"
+    ],
+    "Céu Azul": [
+      "Copacabana",
+      "Garças",
+      "Jardim Leblon",
+      "Lagoa",
+      "Piratininga",
+      "Trevo",
+      "Vila Santa Monica 1ª Seção",
+      "Vila dos Anjos"
+    ],
+    "Vila Dias": [
+      "Santa Tereza"
+    ],
+    "Andiroba": [
+      "São Paulo",
+      "Vila São Paulo"
+    ],
+    "Dona Clara": [
+      "Aeroporto",
+      "Jaraguá",
+      "Primeiro de Maio",
+      "Santa Rosa",
+      "Suzana",
+      "São Bernardo",
+      "Universitário",
+      "Vila Suzana I"
+    ],
+    "Mangabeiras": [
+      "Acaba Mundo",
+      "Baleia",
+      "Belvedere",
+      "Comiteco",
+      "Marçola",
+      "Serra",
+      "Sion"
+    ],
+    "Trevo": [
+      "Braúnas",
+      "Conjunto São Francisco de Assis",
+      "Céu Azul",
+      "Garças",
+      "Nova Pampulha",
+      "Xangri-lá"
+    ],
+    "Bairro das Indústrias II": [
+      "Bairro das Indústrias I",
+      "Betânia",
+      "Madre Gertrudes",
+      "Vila Vista Alegre",
+      "Vista Alegre"
+    ],
+    "Jardim América": [
+      "Alpes",
+      "Barão Homem de Melo I",
+      "Barão Homem de Melo III",
+      "Barão Homem de Melo IV",
+      "Estoril",
+      "Havaí",
+      "Nova Granada",
+      "Nova Suíssa",
+      "Salgado Filho",
+      "Santa Sofia",
+      "Ventosa"
+    ],
+    "Sagrada Família": [
+      "Cidade Nova",
+      "Floresta",
+      "Graça",
+      "Horto",
+      "Horto Florestal",
+      "Silveira"
+    ],
+    "Vila Nova Cachoeirinha I": [
+      "Nova Cachoeirinha"
+    ],
+    "Barroca": [
+      "Alto Barroca",
+      "Grajaú",
+      "Gutierrez",
+      "Prado"
+    ],
+    "Santa Rita de Cássia": [
+      "Estrela",
+      "Sion",
+      "São Pedro",
+      "Vila Santa Lúcia"
+    ],
+    "Santa Cruz": [
+      "Cachoeirinha",
+      "Ipiranga",
+      "Maria Virgínia",
+      "Palmares",
+      "Renascença",
+      "Vila Inestan",
+      "Vila Nova Cachoeirinha IV",
+      "Vila da Paz"
+    ],
+    "Jardim Atlântico": [
+      "Aeroporto",
+      "Copacabana",
+      "Itapoã",
+      "Lagoa da Pampulha",
+      "Santa Amélia",
+      "Santa Branca",
+      "São Tomáz"
+    ],
+    "Vila Formosa": [
+      "Castanheira",
+      "Distrito Industrial do Jatobá",
+      "Santa Cecília",
+      "Vila Pinho"
+    ],
+    "Santa Helena": [
+      "Araguaia",
+      "Bairro das Indústrias I",
+      "Barreiro",
+      "Milionários",
+      "Miramar",
+      "Teixeira Dias"
+    ],
+    "Vila COPASA": [
+      "Bairro das Indústrias I",
+      "Milionários"
+    ],
+    "Corumbiara": [
+      "Novo Santa Cecília",
+      "Solar do Barreiro"
+    ],
+    "Esperança": [
+      "Alto das Antenas",
+      "Bonsucesso",
+      "Flávio Marques Lisboa",
+      "Vila CEMIG"
+    ],
+    "Marilândia": [
+      "CDI Jatobá",
+      "Itaipu",
+      "Jatobá",
+      "Tirol"
+    ],
+    "Pongelupe": [
+      "Cardoso",
+      "Serra do Curral",
+      "Solar do Barreiro"
+    ],
+    "Marieta I": [
+      "Olaria",
+      "Tirol"
+    ],
+    "Santa Rita": [
+      "Distrito Industrial do Jatobá",
+      "Ernesto do Nascimento",
+      "Jardim do Vale",
+      "Petrópolis",
+      "Santa Cecília"
+    ],
+    "Santa Cecília": [
+      "CDI Jatobá",
+      "Castanheira",
+      "Distrito Industrial do Jatobá",
+      "Ernesto do Nascimento",
+      "Jardim do Vale",
+      "Santa Rita",
+      "Vale do Jatobá",
+      "Vila Formosa"
+    ],
+    "Novo Santa Cecília": [
+      "Brasil Industrial",
+      "Cardoso",
+      "Corumbiara",
+      "Diamante",
+      "Solar do Barreiro",
+      "Vila Pinho"
+    ],
+    "Castanheira": [
+      "CDI Jatobá",
+      "Diamante",
+      "Distrito Industrial do Jatobá",
+      "Olaria",
+      "Santa Cecília",
+      "Vila Formosa",
+      "Vila Pinho"
+    ],
+    "Diamante": [
+      "Ademar Maldonado",
+      "Barreiro",
+      "Brasil Industrial",
+      "Castanheira",
+      "João Paulo II",
+      "Miramar",
+      "Novo Santa Cecília",
+      "Olaria",
+      "Teixeira Dias",
+      "Tirol",
+      "Vila Pinho"
+    ],
+    "Brasil Industrial": [
+      "Cardoso",
+      "Diamante",
+      "Miramar",
+      "Novo Santa Cecília"
+    ],
+    "Vila Independência II": [
+      "Independência",
+      "Serra do Curral",
+      "Vila Ecológica",
+      "Vila Independência I"
+    ],
+    "Túnel de Ibirité": [
+      "Itaipu",
+      "Lindéia",
+      "Tirol"
+    ],
+    "Petrópolis": [
+      "Distrito Industrial do Jatobá",
+      "Ernesto do Nascimento",
+      "Independência",
+      "Mangueiras",
+      "Santa Rita",
+      "Vila Petrópolis",
+      "Vitória da Conquista",
+      "Águas Claras"
+    ],
+    "Vila Ecológica": [
+      "Distrito Industrial do Jatobá",
+      "Serra do Curral",
+      "Solar do Barreiro",
+      "Vila Independência I",
+      "Vila Independência II",
+      "Vila Pinho",
+      "Águas Claras"
+    ],
+    "Barreiro": [
+      "Ademar Maldonado",
+      "Bairro das Indústrias I",
+      "Diamante",
+      "Santa Helena",
+      "Santa Margarida",
+      "Teixeira Dias",
+      "Vila Átila de Paiva",
+      "Átila de Paiva"
+    ],
+    "Vila Mangueiras": [
+      "Independência",
+      "Mangueiras",
+      "Vila Independência IV"
+    ],
+    "Alta Tensão I": [
+      "Bairro Novo das Indústrias",
+      "Bairro das Indústrias I",
+      "Bonsucesso"
+    ],
+    "Tirol": [
+      "CDI Jatobá",
+      "Diamante",
+      "Itaipu",
+      "João Paulo II",
+      "Lindéia",
+      "Marieta 3ª Seção",
+      "Marieta I",
+      "Marieta II",
+      "Marilândia",
+      "Olaria",
+      "Túnel de Ibirité",
+      "Vila Tirol"
+    ],
+    "Olaria": [
+      "CDI Jatobá",
+      "Castanheira",
+      "Diamante",
+      "Marieta I",
+      "Tirol"
+    ],
+    "Cardoso": [
+      "Brasil Industrial",
+      "Flávio Marques Lisboa",
+      "Flávio de Oliveira",
+      "Miramar",
+      "Novo Santa Cecília",
+      "Pongelupe",
+      "Serra do Curral",
+      "Solar do Barreiro"
+    ],
+    "Conjunto Jatobá": [
+      "CDI Jatobá",
+      "Vale do Jatobá",
+      "Vila Batik"
+    ],
+    "Solar do Barreiro": [
+      "Cardoso",
+      "Corumbiara",
+      "Novo Santa Cecília",
+      "Pongelupe",
+      "Serra do Curral",
+      "Vila Ecológica",
+      "Vila Pinho"
+    ],
+    "Bairro das Indústrias I": [
+      "Alta Tensão",
+      "Alta Tensão I",
+      "Bairro Novo das Indústrias",
+      "Bairro das Indústrias II",
+      "Barreiro",
+      "Betânia",
+      "Madre Gertrudes",
+      "Milionários",
+      "Santa Helena",
+      "Santa Margarida",
+      "Vila COPASA",
+      "Vista Alegre"
+    ],
+    "Itaipu": [
+      "Jatobá",
+      "Lindéia",
+      "Marilândia",
+      "Tirol",
+      "Túnel de Ibirité",
+      "Vila Piratininga"
+    ],
+    "Mineirão": [
+      "Independência",
+      "Serra do Curral"
+    ],
+    "Flávio Marques Lisboa": [
+      "Alto das Antenas",
+      "Araguaia",
+      "Bonsucesso",
+      "Cardoso",
+      "Esperança",
+      "Flávio de Oliveira",
+      "Miramar",
+      "Serra do Curral",
+      "Vila CEMIG"
+    ],
+    "Ernesto do Nascimento": [
+      "Jardim do Vale",
+      "Mangueiras",
+      "Petrópolis",
+      "Santa Cecília",
+      "Santa Rita",
+      "Vale do Jatobá"
+    ],
+    "Miramar": [
+      "Araguaia",
+      "Brasil Industrial",
+      "Cardoso",
+      "Diamante",
+      "Flávio Marques Lisboa",
+      "Santa Helena",
+      "Teixeira Dias"
+    ],
+    "Vila Madre Gertrudes V": [
+      "Madre Gertrudes",
+      "Vista Alegre"
+    ],
+    "Conjunto Bonsucesso": [
+      "Bairro Novo das Indústrias",
+      "Bonsucesso",
+      "Milionários"
+    ],
+    "Vila CEMIG": [
+      "Alto das Antenas",
+      "Esperança",
+      "Flávio Marques Lisboa"
+    ],
+    "Serra do Curral": [
+      "Belvedere",
+      "Bonsucesso",
+      "Cardoso",
+      "Flávio Marques Lisboa",
+      "Flávio de Oliveira",
+      "Independência",
+      "Mineirão",
+      "Pilar",
+      "Pongelupe",
+      "Solar do Barreiro",
+      "Vila Ecológica",
+      "Vila Independência II"
+    ],
+    "Independência": [
+      "Mangueiras",
+      "Mineirão",
+      "Petrópolis",
+      "Serra do Curral",
+      "Vila Independência I",
+      "Vila Independência II",
+      "Vila Independência IV",
+      "Vila Mangueiras",
+      "Vitória da Conquista"
+    ],
+    "Vila Madre Gertrudes III": [
+      "Camargos",
+      "Madre Gertrudes"
+    ],
+    "Milionários": [
+      "Araguaia",
+      "Bairro Novo das Indústrias",
+      "Bairro das Indústrias I",
+      "Bonsucesso",
+      "Conjunto Bonsucesso",
+      "Santa Helena",
+      "Vila COPASA",
+      "Vila Nova dos Milionários"
+    ],
+    "Jardim do Vale": [
+      "Ernesto do Nascimento",
+      "Santa Cecília",
+      "Santa Rita"
+    ],
+    "Vila Nova dos Milionários": [
+      "Milionários"
+    ],
+    "Águas Claras": [
+      "Distrito Industrial do Jatobá",
+      "Petrópolis",
+      "Vila Ecológica",
+      "Vila Independência I",
+      "Vitória da Conquista"
+    ],
+    "Vila Independência IV": [
+      "Independência",
+      "Vila Independência I",
+      "Vila Mangueiras"
+    ],
+    "Marieta 3ª Seção": [
+      "Tirol"
+    ],
+    "Ademar Maldonado": [
+      "Barreiro",
+      "Diamante",
+      "João Paulo II",
+      "Átila de Paiva"
+    ],
+    "Alta Tensão": [
+      "Bairro das Indústrias I"
+    ],
+    "João Paulo II": [
+      "Ademar Maldonado",
+      "Diamante",
+      "Tirol",
+      "Vila Tirol",
+      "Vila Átila de Paiva",
+      "Átila de Paiva"
+    ],
+    "Araguaia": [
+      "Bonsucesso",
+      "Flávio Marques Lisboa",
+      "Milionários",
+      "Miramar",
+      "Santa Helena"
+    ],
+    "Marieta II": [
+      "Tirol"
+    ],
+    "Mangueiras": [
+      "Ernesto do Nascimento",
+      "Independência",
+      "Petrópolis",
+      "Vale do Jatobá",
+      "Vila Mangueiras"
+    ],
+    "Vila Piratininga": [
+      "Itaipu",
+      "Jatobá"
+    ],
+    "Vila Tirol": [
+      "João Paulo II",
+      "Tirol"
+    ],
+    "Bonsucesso": [
+      "Alta Tensão I",
+      "Alto das Antenas",
+      "Araguaia",
+      "Bairro Novo das Indústrias",
+      "Bernadete",
+      "Buritis",
+      "Conjunto Bonsucesso",
+      "Esperança",
+      "Estrela do Oriente",
+      "Flávio Marques Lisboa",
+      "Milionários",
+      "Olhos d'Água",
+      "Palmeiras",
+      "Pilar",
+      "Serra do Curral",
+      "São João",
+      "Vila Nova Paraíso"
+    ],
+    "Lindéia": [
+      "Itaipu",
+      "Jatobá",
+      "Tirol",
+      "Túnel de Ibirité"
+    ],
+    "Pilar": [
+      "Belvedere",
+      "Bonsucesso",
+      "Olhos d'Água",
+      "Serra do Curral",
+      "São João"
+    ],
+    "Jatobá": [
+      "Itaipu",
+      "Lindéia",
+      "Marilândia",
+      "Vila Piratininga"
+    ],
+    "CDI Jatobá": [
+      "Castanheira",
+      "Conjunto Jatobá",
+      "Marilândia",
+      "Olaria",
+      "Santa Cecília",
+      "Tirol",
+      "Vale do Jatobá",
+      "Vila Batik"
+    ],
+    "Santa Margarida": [
+      "Bairro das Indústrias I",
+      "Barreiro"
+    ],
+    "Átila de Paiva": [
+      "Ademar Maldonado",
+      "Barreiro",
+      "João Paulo II",
+      "Vila Átila de Paiva"
+    ],
+    "Flávio de Oliveira": [
+      "Cardoso",
+      "Flávio Marques Lisboa",
+      "Serra do Curral"
+    ],
+    "Bairro Novo das Indústrias": [
+      "Alta Tensão I",
+      "Bairro das Indústrias I",
+      "Betânia",
+      "Bonsucesso",
+      "Conjunto Bonsucesso",
+      "Estrela do Oriente",
+      "Milionários"
+    ],
+    "Vila Batik": [
+      "CDI Jatobá",
+      "Conjunto Jatobá"
+    ],
+    "Vitória da Conquista": [
+      "Independência",
+      "Petrópolis",
+      "Vila Independência I",
+      "Águas Claras"
+    ],
+    "Vila Independência I": [
+      "Independência",
+      "Vila Ecológica",
+      "Vila Independência II",
+      "Vila Independência IV",
+      "Vitória da Conquista",
+      "Águas Claras"
+    ],
+    "Alto das Antenas": [
+      "Bonsucesso",
+      "Esperança",
+      "Flávio Marques Lisboa",
+      "Vila CEMIG"
+    ],
+    "Vila Petrópolis": [
+      "Petrópolis"
+    ],
+    "Vila Pinho": [
+      "Castanheira",
+      "Diamante",
+      "Distrito Industrial do Jatobá",
+      "Novo Santa Cecília",
+      "Solar do Barreiro",
+      "Vila Ecológica",
+      "Vila Formosa"
+    ],
+    "Teixeira Dias": [
+      "Barreiro",
+      "Diamante",
+      "Miramar",
+      "Santa Helena"
+    ],
+    "São João": [
+      "Bonsucesso",
+      "Pilar"
+    ],
+    "Distrito Industrial do Jatobá": [
+      "Castanheira",
+      "Petrópolis",
+      "Santa Cecília",
+      "Santa Rita",
+      "Vila Ecológica",
+      "Vila Formosa",
+      "Vila Pinho",
+      "Águas Claras"
+    ],
+    "Vale do Jatobá": [
+      "CDI Jatobá",
+      "Conjunto Jatobá",
+      "Ernesto do Nascimento",
+      "Mangueiras",
+      "Santa Cecília"
+    ],
+    "Vila Átila de Paiva": [
+      "Barreiro",
+      "João Paulo II",
+      "Átila de Paiva"
+    ],
+    "Bernadete": [
+      "Bonsucesso",
+      "Buritis",
+      "Palmeiras"
+    ],
+    "Beija Flor": [
+      "Capitão Eduardo",
+      "Conjunto Capitão Eduardo",
+      "Jardim Vitória"
+    ],
+    "Boa Esperança": [
+      "Dom Silvério"
+    ],
+    "Vista do Sol": [
+      "Acaiaca",
+      "Grotinha",
+      "Jardim Vitória",
+      "Nazaré",
+      "Paulo VI"
+    ],
+    "Jardim Europa": [
+      "Candelária",
+      "Cenáculo",
+      "Conjunto Minascaixa",
+      "Jardim dos Comerciários",
+      "Letícia",
+      "Serra Verde"
+    ],
+    "Mantiqueira": [
+      "Jardim dos Comerciários",
+      "Letícia",
+      "Maria Helena",
+      "Nova América",
+      "Piratininga",
+      "Vila Mantiqueira",
+      "Vila SESC"
+    ],
+    "Bela Vitória": [
+      "Goiânia",
+      "Jardim Vitória",
+      "Pousada Santo Antônio"
+    ],
+    "Pousada Santo Antônio": [
+      "Bela Vitória",
+      "Goiânia",
+      "Jardim Vitória",
+      "Vitória"
+    ],
+    "Vila Clóris": [
+      "Bacurau",
+      "Campo Alegre",
+      "Jardim Guanabara",
+      "Juliana",
+      "Parque São Pedro",
+      "Planalto",
+      "Satélite",
+      "Venda Nova",
+      "Xodó-Marize"
+    ],
+    "Madri": [
+      "Etelvina Carneiro",
+      "Granja Werneck",
+      "Juliana",
+      "Mariquinhas"
+    ],
+    "Satélite": [
+      "Jaqueline",
+      "Juliana",
+      "Minascaixa",
+      "Parque São Pedro",
+      "Vila Clóris"
+    ],
+    "Nova América": [
+      "Mantiqueira"
+    ],
+    "Granja Werneck": [
+      "Etelvina Carneiro",
+      "Jaqueline",
+      "Jardim Felicidade",
+      "Juliana",
+      "Lajedo",
+      "Madri",
+      "Maria Teresa",
+      "Monte Azul",
+      "Novo Tupi",
+      "Ribeiro de Abreu",
+      "Solimões",
+      "Tupi A",
+      "Tupi B",
+      "Xodó-Marize",
+      "Zilah Spósito"
+    ],
+    "Dom Silvério": [
+      "Belmonte",
+      "Boa Esperança",
+      "Goiânia",
+      "Maria Goretti",
+      "Nazaré",
+      "Ouro Minas",
+      "São Gabriel",
+      "Três Marias"
+    ],
+    "Vila Jardim Leblon": [
+      "Jardim Leblon",
+      "Rio Branco",
+      "Santa Mônica"
+    ],
+    "Biquinhas": [
+      "Floramar",
+      "Heliópolis",
+      "Planalto"
+    ],
+    "São Dimas": [
+      "Eymard",
+      "São Gabriel"
+    ],
+    "Boa União I": [
+      "Primeiro de Maio",
+      "Providência"
+    ],
+    "Minaslândia": [
+      "Aarão Reis",
+      "Guarani",
+      "Heliópolis",
+      "Primeiro de Maio",
+      "Providência",
+      "São Bernardo",
+      "São Gonçalo"
+    ],
+    "Novo Aarão Reis": [
+      "Antônio Ribeiro de Abreu 1ª Seção",
+      "Belmonte",
+      "Guarani",
+      "Novo Tupi",
+      "Ouro Minas",
+      "Ribeiro de Abreu",
+      "Tupi B"
+    ],
+    "Minascaixa": [
+      "Cenáculo",
+      "Conjunto Minascaixa",
+      "Jaqueline",
+      "Parque São Pedro",
+      "Satélite",
+      "Serra Verde",
+      "Venda Nova"
+    ],
+    "Boa União II": [
+      "Providência",
+      "Vila Minaslândia"
+    ],
+    "Lagoinha Leblon": [
+      "Flamengo",
+      "Lagoa",
+      "Maria Helena",
+      "Piratininga"
+    ],
+    "Jardim Felicidade": [
+      "Conjunto Floramar",
+      "Floramar",
+      "Granja Werneck",
+      "Jardim Guanabara",
+      "Solimões",
+      "Tupi A",
+      "Xodó-Marize"
+    ],
+    "São Gonçalo": [
+      "Aarão Reis",
+      "Minaslândia",
+      "Providência"
+    ],
+    "Conjunto Serra Verde": [
+      "Serra Verde"
+    ],
+    "Pirajá": [
+      "Eymard",
+      "Fernão Dias",
+      "Maria Goretti",
+      "São Marcos",
+      "São Paulo"
+    ],
+    "Mirante": [
+      "Tupi B"
+    ],
+    "Solimões": [
+      "Granja Werneck",
+      "Jardim Felicidade"
+    ],
+    "Primeiro de Maio": [
+      "Boa União I",
+      "Dona Clara",
+      "Minaslândia",
+      "Providência",
+      "São Bernardo",
+      "São Gabriel",
+      "Vila Minaslândia",
+      "Vila Primeiro de Maio",
+      "Vila Suzana I"
+    ],
+    "Conjunto Paulo VI": [
+      "Beira-Linha",
+      "Capitão Eduardo"
+    ],
+    "Providência": [
+      "Aarão Reis",
+      "Boa União I",
+      "Boa União II",
+      "Conjunto Providência",
+      "Minaslândia",
+      "Primeiro de Maio",
+      "São Gabriel",
+      "São Gonçalo",
+      "Vila Minaslândia",
+      "Vila Primeiro de Maio"
+    ],
+    "Ribeiro de Abreu": [
+      "Antônio Ribeiro de Abreu 1ª Seção",
+      "Beira-Linha",
+      "Belmonte",
+      "Capitão Eduardo",
+      "Granja Werneck",
+      "Maria Teresa",
+      "Novo Aarão Reis",
+      "Novo Tupi"
+    ],
+    "Beira-Linha": [
+      "Acaiaca",
+      "Belmonte",
+      "Capitão Eduardo",
+      "Conjunto Paulo VI",
+      "Nazaré",
+      "Paulo VI",
+      "Ribeiro de Abreu"
+    ],
+    "Maria Teresa": [
+      "Capitão Eduardo",
+      "Granja Werneck",
+      "Monte Azul",
+      "Ribeiro de Abreu"
+    ],
+    "Apolônia": [
+      "Jardim Leblon"
+    ],
+    "Várzea da Palma": [
+      "Jardim Leblon",
+      "Santa Mônica"
+    ],
+    "Etelvina Carneiro": [
+      "Frei Leopoldo",
+      "Granja Werneck",
+      "Jaqueline",
+      "Juliana",
+      "Madri",
+      "Mariquinhas"
+    ],
+    "Lagoa": [
+      "Céu Azul",
+      "Lagoinha Leblon",
+      "Piratininga",
+      "Vila Santa Monica 1ª Seção",
+      "Vila Santa Monica 2ª Seção"
+    ],
+    "Jaqueline": [
+      "Canaã",
+      "Etelvina Carneiro",
+      "Frei Leopoldo",
+      "Granja Werneck",
+      "Juliana",
+      "Minascaixa",
+      "Satélite",
+      "Serra Verde",
+      "Vila Nova",
+      "Zilah Spósito"
+    ],
+    "Paulo VI": [
+      "Acaiaca",
+      "Beira-Linha",
+      "Capitão Eduardo",
+      "Jardim Vitória",
+      "Vista do Sol"
+    ],
+    "Vila Nossa Senhora Aparecida": [
+      "Santa Mônica",
+      "São João Batista"
+    ],
+    "Vila Ouro Minas": [
+      "Ouro Minas",
+      "Vila São Gabriel"
+    ],
+    "Conjunto Providência": [
+      "Providência"
+    ],
+    "Conjunto Minascaixa": [
+      "Cenáculo",
+      "Jardim Europa",
+      "Minascaixa",
+      "Serra Verde"
+    ],
+    "Heliópolis": [
+      "Biquinhas",
+      "Floramar",
+      "Guarani",
+      "Minaslândia",
+      "Planalto",
+      "São Bernardo"
+    ],
+    "Vila Maria": [
+      "Jardim Vitória"
+    ],
+    "Canaã": [
+      "Jaqueline",
+      "Serra Verde",
+      "São Damião"
+    ],
+    "São Gabriel": [
+      "Aarão Reis",
+      "Belmonte",
+      "Dom Silvério",
+      "Eymard",
+      "Guarani",
+      "Maria Goretti",
+      "Maria Virgínia",
+      "Ouro Minas",
+      "Primeiro de Maio",
+      "Providência",
+      "Suzana",
+      "São Dimas",
+      "São Paulo",
+      "Vila Esplanada",
+      "Vila Primeiro de Maio",
+      "Vila São Gabriel",
+      "Vila São Paulo"
+    ],
+    "Parque São Pedro": [
+      "Juliana",
+      "Minascaixa",
+      "Satélite",
+      "Venda Nova",
+      "Vila Clóris",
+      "Vila Satélite"
+    ],
+    "Nazaré": [
+      "Acaiaca",
+      "Beira-Linha",
+      "Belmonte",
+      "Dom Silvério",
+      "Goiânia",
+      "Grotinha",
+      "Jardim Vitória",
+      "Três Marias",
+      "Vila da Luz",
+      "Vista do Sol"
+    ],
+    "Conjunto Capitão Eduardo": [
+      "Beija Flor",
+      "Capitão Eduardo"
+    ],
+    "Vila SESC": [
+      "Jardim dos Comerciários",
+      "Letícia",
+      "Mantiqueira"
+    ],
+    "Acaiaca": [
+      "Beira-Linha",
+      "Nazaré",
+      "Paulo VI",
+      "Vista do Sol"
+    ],
+    "Ouro Minas": [
+      "Belmonte",
+      "Dom Silvério",
+      "Guarani",
+      "Novo Aarão Reis",
+      "São Gabriel",
+      "Vila Ouro Minas",
+      "Vila São Gabriel"
+    ],
+    "Mirtes": [
+      "Jardim Vitória"
+    ],
+    "Conjunto Floramar": [
+      "Jardim Felicidade",
+      "Jardim Guanabara"
+    ],
+    "Serra Verde": [
+      "Canaã",
+      "Conjunto Minascaixa",
+      "Conjunto Serra Verde",
+      "Jaqueline",
+      "Jardim Europa",
+      "Jardim dos Comerciários",
+      "Minascaixa",
+      "São Damião"
+    ],
+    "Vila da Luz": [
+      "Goiânia",
+      "Nazaré"
+    ],
+    "Planalto": [
+      "Biquinhas",
+      "Campo Alegre",
+      "Floramar",
+      "Heliópolis",
+      "Itapoã",
+      "Jardim Guanabara",
+      "São Bernardo",
+      "São João Batista",
+      "São Tomáz",
+      "Venda Nova",
+      "Vila Clóris"
+    ],
+    "Capitão Eduardo": [
+      "Beija Flor",
+      "Beira-Linha",
+      "Conjunto Capitão Eduardo",
+      "Conjunto Paulo VI",
+      "Jardim Vitória",
+      "Maria Teresa",
+      "Paulo VI",
+      "Ribeiro de Abreu"
+    ],
+    "Jardim dos Comerciários": [
+      "Jardim Europa",
+      "Letícia",
+      "Mantiqueira",
+      "Serra Verde",
+      "Vila Mantiqueira",
+      "Vila SESC"
+    ],
+    "Frei Leopoldo": [
+      "Etelvina Carneiro",
+      "Jaqueline",
+      "Juliana"
+    ],
+    "Monte Azul": [
+      "Granja Werneck",
+      "Maria Teresa"
+    ],
+    "Jardim Guanabara": [
+      "Conjunto Floramar",
+      "Floramar",
+      "Jardim Felicidade",
+      "Planalto",
+      "Vila Clóris",
+      "Xodó-Marize"
+    ],
+    "São João Batista": [
+      "Candelária",
+      "Canto do Sabiá",
+      "Itapoã",
+      "Planalto",
+      "Santa Branca",
+      "Santa Mônica",
+      "Venda Nova",
+      "Vila Nossa Senhora Aparecida",
+      "Vila São João Batista"
+    ],
+    "Rio Branco": [
+      "Candelária",
+      "Jardim Leblon",
+      "Letícia",
+      "Piratininga",
+      "Santa Mônica",
+      "Vila Jardim Leblon"
+    ],
+    "Xodó-Marize": [
+      "Granja Werneck",
+      "Jardim Felicidade",
+      "Jardim Guanabara",
+      "Juliana",
+      "Vila Clóris"
+    ],
+    "Santa Branca": [
+      "Itapoã",
+      "Jardim Atlântico",
+      "Santa Amélia",
+      "Santa Mônica",
+      "São João Batista"
+    ],
+    "São Damião": [
+      "Canaã",
+      "Serra Verde"
+    ],
+    "Universo": [
+      "Copacabana",
+      "Jardim Leblon",
+      "Santa Mônica"
+    ],
+    "Jardim Vitória": [
+      "Beija Flor",
+      "Bela Vitória",
+      "Capitão Eduardo",
+      "Goiânia",
+      "Mirtes",
+      "Nazaré",
+      "Paulo VI",
+      "Pousada Santo Antônio",
+      "Vila Maria",
+      "Vista do Sol",
+      "Vitória"
+    ],
+    "Grotinha": [
+      "Nazaré",
+      "Vista do Sol"
+    ],
+    "Ipê": [
+      "Goiânia",
+      "Maria Goretti",
+      "Morro dos Macacos",
+      "São Marcos"
+    ],
+    "Vila Santa Monica 1ª Seção": [
+      "Céu Azul",
+      "Lagoa",
+      "Piratininga"
+    ],
+    "Floramar": [
+      "Biquinhas",
+      "Guarani",
+      "Heliópolis",
+      "Jardim Felicidade",
+      "Jardim Guanabara",
+      "Planalto",
+      "Tupi A"
+    ],
+    "Tupi B": [
+      "Granja Werneck",
+      "Guarani",
+      "Lajedo",
+      "Mirante",
+      "Novo Aarão Reis",
+      "Novo Tupi",
+      "Tupi A"
+    ],
+    "Belmonte": [
+      "Beira-Linha",
+      "Dom Silvério",
+      "Nazaré",
+      "Novo Aarão Reis",
+      "Ouro Minas",
+      "Ribeiro de Abreu",
+      "São Gabriel"
+    ],
+    "Goiânia": [
+      "Bela Vitória",
+      "Dom Silvério",
+      "Guanabara",
+      "Ipê",
+      "Jardim Vitória",
+      "Maria Goretti",
+      "Morro dos Macacos",
+      "Nazaré",
+      "Pousada Santo Antônio",
+      "São Benedito",
+      "Vila da Luz",
+      "Vitória"
+    ],
+    "Lajedo": [
+      "Granja Werneck",
+      "Novo Tupi",
+      "Tupi B"
+    ],
+    "Vila Satélite": [
+      "Parque São Pedro"
+    ],
+    "Campo Alegre": [
+      "Planalto",
+      "Vila Clóris"
+    ],
+    "Bacurau": [
+      "Vila Clóris"
+    ],
+    "Cenáculo": [
+      "Candelária",
+      "Conjunto Minascaixa",
+      "Jardim Europa",
+      "Minascaixa",
+      "Venda Nova"
+    ],
+    "Vila dos Anjos": [
+      "Céu Azul",
+      "Jardim Leblon"
+    ],
+    "Santa Mônica": [
+      "Candelária",
+      "Copacabana",
+      "Jardim Leblon",
+      "Rio Branco",
+      "Santa Amélia",
+      "Santa Branca",
+      "São João Batista",
+      "Universo",
+      "Vila Jardim Leblon",
+      "Vila Nossa Senhora Aparecida",
+      "Várzea da Palma"
+    ],
+    "Guanabara": [
+      "Goiânia"
+    ],
+    "São Bernardo": [
+      "Aeroporto",
+      "Dona Clara",
+      "Guarani",
+      "Heliópolis",
+      "Minaslândia",
+      "Planalto",
+      "Primeiro de Maio",
+      "São Tomáz",
+      "Vila Aeroporto"
+    ],
+    "Morro dos Macacos": [
+      "Goiânia",
+      "Ipê"
+    ],
+    "Vila Nova": [
+      "Jaqueline"
+    ],
+    "Guarani": [
+      "Aarão Reis",
+      "Floramar",
+      "Heliópolis",
+      "Minaslândia",
+      "Novo Aarão Reis",
+      "Ouro Minas",
+      "São Bernardo",
+      "São Gabriel",
+      "Tupi A",
+      "Tupi B",
+      "Vila São Gabriel"
+    ],
+    "Maria Helena": [
+      "Flamengo",
+      "Lagoinha Leblon",
+      "Mantiqueira",
+      "Piratininga"
+    ],
+    "Novo Tupi": [
+      "Antônio Ribeiro de Abreu 1ª Seção",
+      "Granja Werneck",
+      "Lajedo",
+      "Novo Aarão Reis",
+      "Ribeiro de Abreu",
+      "Tupi B"
+    ],
+    "São Benedito": [
+      "Goiânia"
+    ],
+    "Venda Nova": [
+      "Candelária",
+      "Cenáculo",
+      "Minascaixa",
+      "Parque São Pedro",
+      "Planalto",
+      "São João Batista",
+      "Vila Clóris"
+    ],
+    "Vila Mantiqueira": [
+      "Jardim dos Comerciários",
+      "Mantiqueira"
+    ],
+    "Três Marias": [
+      "Dom Silvério",
+      "Nazaré"
+    ],
+    "Vila Primeiro de Maio": [
+      "Primeiro de Maio",
+      "Providência",
+      "Suzana",
+      "São Gabriel",
+      "Vila Suzana I"
+    ],
+    "Zilah Spósito": [
+      "Granja Werneck",
+      "Jaqueline"
+    ],
+    "Vila Santa Monica 2ª Seção": [
+      "Lagoa",
+      "Piratininga"
+    ],
+    "Vitória": [
+      "Goiânia",
+      "Jardim Vitória",
+      "Pousada Santo Antônio"
+    ],
+    "São Marcos": [
+      "Fernão Dias",
+      "Ipê",
+      "Maria Goretti",
+      "Penha",
+      "Pirajá",
+      "Santa Inês"
+    ],
+    "Itapoã": [
+      "Jardim Atlântico",
+      "Planalto",
+      "Santa Branca",
+      "São João Batista",
+      "São Tomáz"
+    ],
+    "Vila Esplanada": [
+      "São Gabriel"
+    ],
+    "Maria Goretti": [
+      "Dom Silvério",
+      "Eymard",
+      "Goiânia",
+      "Ipê",
+      "Pirajá",
+      "São Gabriel",
+      "São Marcos"
+    ],
+    "Flamengo": [
+      "Lagoinha Leblon",
+      "Maria Helena",
+      "Piratininga"
+    ],
+    "Piratininga": [
+      "Céu Azul",
+      "Flamengo",
+      "Jardim Leblon",
+      "Lagoa",
+      "Lagoinha Leblon",
+      "Letícia",
+      "Mantiqueira",
+      "Maria Helena",
+      "Rio Branco",
+      "Vila Piratininga A",
+      "Vila Santa Monica 1ª Seção",
+      "Vila Santa Monica 2ª Seção"
+    ],
+    "Vila São João Batista": [
+      "São João Batista"
+    ],
+    "Vila Piratininga A": [
+      "Piratininga"
+    ],
+    "Juliana": [
+      "Etelvina Carneiro",
+      "Frei Leopoldo",
+      "Granja Werneck",
+      "Jaqueline",
+      "Madri",
+      "Mariquinhas",
+      "Parque São Pedro",
+      "Satélite",
+      "Vila Clóris",
+      "Xodó-Marize"
+    ],
+    "Jardim Leblon": [
+      "Apolônia",
+      "Copacabana",
+      "Céu Azul",
+      "Piratininga",
+      "Rio Branco",
+      "Santa Mônica",
+      "Universo",
+      "Vila Jardim Leblon",
+      "Vila dos Anjos",
+      "Várzea da Palma"
+    ],
+    "Aarão Reis": [
+      "Guarani",
+      "Minaslândia",
+      "Providência",
+      "São Gabriel",
+      "São Gonçalo"
+    ],
+    "Candelária": [
+      "Cenáculo",
+      "Jardim Europa",
+      "Letícia",
+      "Rio Branco",
+      "Santa Mônica",
+      "São João Batista",
+      "Venda Nova"
+    ],
+    "Antônio Ribeiro de Abreu 1ª Seção": [
+      "Novo Aarão Reis",
+      "Novo Tupi",
+      "Ribeiro de Abreu"
+    ],
+    "Letícia": [
+      "Candelária",
+      "Jardim Europa",
+      "Jardim dos Comerciários",
+      "Mantiqueira",
+      "Piratininga",
+      "Rio Branco",
+      "Vila SESC"
+    ],
+    "Mariquinhas": [
+      "Etelvina Carneiro",
+      "Juliana",
+      "Madri"
+    ],
+    "Vila São Gabriel": [
+      "Guarani",
+      "Ouro Minas",
+      "São Gabriel",
+      "Vila Ouro Minas"
+    ],
+    "Vila Copacabana": [
+      "Copacabana"
+    ],
+    "Tupi A": [
+      "Floramar",
+      "Granja Werneck",
+      "Guarani",
+      "Jardim Felicidade",
+      "Tupi B"
+    ],
+    "Santa Amélia": [
+      "Copacabana",
+      "Jardim Atlântico",
+      "Santa Branca",
+      "Santa Mônica"
+    ],
+    "Canto do Sabiá": [
+      "São João Batista"
+    ],
+    "Vila Minaslândia": [
+      "Boa União II",
+      "Primeiro de Maio",
+      "Providência"
+    ]
+  },
+  "stats": {
+    "shapefile": "Belo Horizonte.zip",
+    "name_column": "NM_BAIRRO",
+    "total_regions": 476,
+    "total_neighbor_pairs": 1211,
+    "avg_neighbors": 5.0882,
+    "max_neighbors": 17,
+    "min_neighbors": 1,
+    "isolated_regions": 0,
+    "region_most_neighbors": "Bonsucesso",
+    "region_least_neighbors": "João Alfredo"
+  }
+}

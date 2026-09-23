@@ -134,7 +134,7 @@ iconv -f latin1 -t utf8 source_file.txt > target_file.txt
 
 Exportar dados do banco PostgreSQL:
 
-pg_dump -Fc --no-acl --no-owner -h localhost -U <usuario> -d <nome_do_banco> -f mydb220126.dump
+pg_dump -Fc --no-acl --no-owner -h localhost -U cartpol_prod -d cartpol_db_name -f mydb040626.dump
 
 heroku pg:backups:restore '{url}' DATABASE_URL --app cartpol-api --confirm cartpol-api
 

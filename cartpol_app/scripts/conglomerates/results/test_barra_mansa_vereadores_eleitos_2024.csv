@@ -1,0 +1,20 @@
+﻿municipio,qe,political_id,candidato,full_name,partido,genero,total_votes,concentracao_final,interpretation,total_conglomerates,municipios_map_file,unmatched_in_csv
+BARRA MANSA,5028.0,643902,RAYANE BRAGA,RAYANE BRAGA DA SILVA,PL,feminino,2588,0.4373,media_baixa,8,neighbors_barra_mansa_bairros.json,False
+BARRA MANSA,5028.0,643994,JEFFERSON MAMEDE,JEFFERSON ALESSANDRO GALDINO MAMEDE,PL,masculino,2366,0.556,media,5,neighbors_barra_mansa_bairros.json,False
+BARRA MANSA,5028.0,634083,EVERTON PÉSÃO,EVERTON CESAR FERREIRA,SOLIDARIEDADE,masculino,2264,0.4735,media_baixa,7,neighbors_barra_mansa_bairros.json,False
+BARRA MANSA,5028.0,640891,BRUNO OLIVEIRA,BRUNO MOREIRA DE OLIVEIRA,REPUBLICANOS,masculino,2161,0.414,media_baixa,5,neighbors_barra_mansa_bairros.json,False
+BARRA MANSA,5028.0,641093,DECO,DEMERSON SERGIO PRADO NOVAIS,REPUBLICANOS,masculino,2070,0.4012,media_baixa,8,neighbors_barra_mansa_bairros.json,False
+BARRA MANSA,5028.0,643107,PISSULA,VICENTE DE PAULA FERREIRA JUNIOR,PV,masculino,2040,0.5251,media,3,neighbors_barra_mansa_bairros.json,False
+BARRA MANSA,5028.0,643443,PAULO CHUCHU,PAULO AFONSO SALES MOREIRA DA SILVA,UNIÃO,masculino,2002,0.4942,media_baixa,7,neighbors_barra_mansa_bairros.json,False
+BARRA MANSA,5028.0,641973,MARCELL CASTRO,MARCELL PEREIRA NUNES CASTRO DE SOUZA,PDT,masculino,1934,0.4425,media_baixa,6,neighbors_barra_mansa_bairros.json,False
+BARRA MANSA,5028.0,643990,MARQUINHO PITOMBEIRA,MARCOS ANDRE GONÇALVES PITOMBEIRA,PL,masculino,1810,0.4254,media_baixa,7,neighbors_barra_mansa_bairros.json,False
+BARRA MANSA,5028.0,642993,JUNIOR DA VAN,RICARDO BRAGANÇA LAISE JUNIOR,DC,masculino,1744,0.3869,media_baixa,7,neighbors_barra_mansa_bairros.json,False
+BARRA MANSA,5028.0,643378,CASE,CARLOS JOSÉ RODRIGUES FIGUEIRA,UNIÃO,masculino,1634,0.4541,media_baixa,5,neighbors_barra_mansa_bairros.json,False
+BARRA MANSA,5028.0,643989,CRISTINA MAGNO,CRISTINA DE FATIMA CARDOSO DOS SANTOS LOURES,PL,feminino,1629,0.4244,media_baixa,6,neighbors_barra_mansa_bairros.json,False
+BARRA MANSA,5028.0,643110,DR EDUARDO PIMENTEL,EDUARDO GONÇALVES PIMENTEL,PV,masculino,1595,0.4941,media_baixa,5,neighbors_barra_mansa_bairros.json,False
+BARRA MANSA,5028.0,630600,GUSTAVO GOMES,GUSTAVO DE ALMEIDA GOMES,MDB,masculino,1570,0.4573,media_baixa,6,neighbors_barra_mansa_bairros.json,False
+BARRA MANSA,5028.0,641102,KLÉVIS FARMACÊUTICO,JOSÉ KLEVIS DA SILVA,REPUBLICANOS,masculino,1509,0.6171,media,2,neighbors_barra_mansa_bairros.json,False
+BARRA MANSA,5028.0,634091,PAULO SANDRO,PAULO SANDRO SOARES,SOLIDARIEDADE,masculino,1508,0.4943,media_baixa,5,neighbors_barra_mansa_bairros.json,False
+BARRA MANSA,5028.0,629699,DANIEL MACIEL,DANIEL VOLPE MACIEL,AGIR,masculino,1498,0.4425,media_baixa,6,neighbors_barra_mansa_bairros.json,False
+BARRA MANSA,5028.0,642997,PASTOR VALTER DA RADIO,VALTER FERNANDES DA SILVA,DC,masculino,1288,0.4657,media_baixa,5,neighbors_barra_mansa_bairros.json,False
+BARRA MANSA,5028.0,629708,ELIAS DA CORBAMA,ELIAS BARBOSA ROMEIRO,AGIR,masculino,1129,0.4879,media_baixa,5,neighbors_barra_mansa_bairros.json,False

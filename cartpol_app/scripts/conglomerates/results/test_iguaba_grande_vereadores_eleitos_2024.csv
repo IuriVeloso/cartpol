@@ -1,0 +1,12 @@
+﻿municipio,qe,political_id,candidato,full_name,partido,genero,total_votes,concentracao_final,interpretation,total_conglomerates,municipios_map_file,unmatched_in_csv
+IGUABA GRANDE,2074.0,633461,BALLIESTER,BALLIESTER WERNECK DE PRAGUER,UNIÃO,masculino,1410,0.7338,media_alta,2,neighbors_iguaba_grande_bairros.json,False
+IGUABA GRANDE,2074.0,634570,ALAN RODRIGUES,ALAN RODRIGUES PEREIRA,MDB,masculino,1187,0.7338,media_alta,2,neighbors_iguaba_grande_bairros.json,False
+IGUABA GRANDE,2074.0,643172,MARCELO DURÃO,MARCELO FREIRE PEREIRA,CIDADANIA,masculino,987,0.7944,alta,1,neighbors_iguaba_grande_bairros.json,False
+IGUABA GRANDE,2074.0,643167,ALLEFE MARTINS,ALLEFE PRACA MARTINS,CIDADANIA,masculino,959,0.7338,media_alta,2,neighbors_iguaba_grande_bairros.json,False
+IGUABA GRANDE,2074.0,631881,RENATINHO DA SAUDE,CARLOS RENATO RODRIGUES DOS SANTOS,SOLIDARIEDADE,masculino,946,0.6882,media_alta,2,neighbors_iguaba_grande_bairros.json,False
+IGUABA GRANDE,2074.0,643166,ROBERTO ANTUNES,ROBERTO CARLOS ANTUNES DOS SANTOS,CIDADANIA,masculino,914,0.7338,media_alta,2,neighbors_iguaba_grande_bairros.json,False
+IGUABA GRANDE,2074.0,634572,FABRICIO TORQUATO,FABRICIO CHAGAS TORQUATO,MDB,masculino,829,0.7338,media_alta,2,neighbors_iguaba_grande_bairros.json,False
+IGUABA GRANDE,2074.0,632463,TIKINHO,ADRIANO BATISTA MAIRINK,PSD,masculino,796,0.7338,media_alta,2,neighbors_iguaba_grande_bairros.json,False
+IGUABA GRANDE,2074.0,633467,LUCIANO SILVA,LUCIANO MATTOS DA SILVA,UNIÃO,masculino,782,0.8501,alta,2,neighbors_iguaba_grande_bairros.json,False
+IGUABA GRANDE,2074.0,631882,SUELY DO GALPÃO DAMA DE FERRO,SUELEIDE SILVA BARROS,SOLIDARIEDADE,feminino,689,0.7338,media_alta,2,neighbors_iguaba_grande_bairros.json,False
+IGUABA GRANDE,2074.0,638828,DUDU DE NATALINO,EDUARDO DE OLIVEIRA TEIXEIRA,REPUBLICANOS,masculino,1190,0.8024,alta,1,neighbors_iguaba_grande_bairros.json,False

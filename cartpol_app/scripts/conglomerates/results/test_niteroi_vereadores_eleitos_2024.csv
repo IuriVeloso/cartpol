@@ -1,0 +1,22 @@
+﻿municipio,qe,political_id,candidato,full_name,partido,genero,total_votes,concentracao_final,interpretation,total_conglomerates,municipios_map_file,unmatched_in_csv
+NITERÓI,13449.0,631021,DOUGLAS GOMES,DOUGLAS DE SOUZA GOMES,PL,masculino,16369,0.5151,media,2,neighbors_niteroi_bairros.json,False
+NITERÓI,13449.0,631077,PROFESSOR TULIO,TULIO RABELO DE ALBUQUERQUE MOTA,PSOL,masculino,6789,0.5326,media,3,neighbors_niteroi_bairros.json,False
+NITERÓI,13449.0,630945,DANIEL MARQUES,DANIEL MARQUES FREDERICO,PL,masculino,6750,0.5215,media,2,neighbors_niteroi_bairros.json,False
+NITERÓI,13449.0,630549,BINHO GUIMARÃES,ROBSON GUIMARÃES JOSÉ FILHO,PDT,masculino,5884,0.6114,media,2,neighbors_niteroi_bairros.json,False
+NITERÓI,13449.0,640413,CAL,MILTON CARLOS DA SILVA LOPES,UNIÃO,masculino,5861,0.6159,media,3,neighbors_niteroi_bairros.json,False
+NITERÓI,13449.0,630551,ANDRIGO,JORGE ANDRIGO DIAS DE CARVALHO,PDT,masculino,5546,0.4888,media_baixa,3,neighbors_niteroi_bairros.json,False
+NITERÓI,13449.0,631928,ANDERSON PIPICO,ANDERSON JOSÉ RODRIGUES,PT,masculino,5488,0.5993,media,3,neighbors_niteroi_bairros.json,False
+NITERÓI,13449.0,630554,RENATO CARIELLO,RENATO FERREIRA DE OLIVEIRA CARIELLO,PDT,masculino,5444,0.4478,media_baixa,4,neighbors_niteroi_bairros.json,False
+NITERÓI,13449.0,630913,BENNY BRIOLLY,BENNY BRIOLLY,PSOL,feminino,4801,0.5185,media,3,neighbors_niteroi_bairros.json,False
+NITERÓI,13449.0,638273,RODRIGO FARAH,RODRIGO FLACH FARAH,CIDADANIA,masculino,9364,0.5939,media,2,neighbors_niteroi_bairros.json,False
+NITERÓI,13449.0,638160,GALLO,LUIZ CARLOS GALLO DE FREITAS,CIDADANIA,masculino,9224,0.5021,media,2,neighbors_niteroi_bairros.json,False
+NITERÓI,13449.0,639666,LEANDRO PORTUGAL,LEANDRO PORTUGAL FRANZEN DE LIMA,MDB,masculino,4516,0.7255,media_alta,2,neighbors_niteroi_bairros.json,False
+NITERÓI,13449.0,631015,ALLAN LYRA,ALLAN PINHO LYRA,PL,masculino,4413,0.5326,media,3,neighbors_niteroi_bairros.json,False
+NITERÓI,13449.0,631923,LEONARDO GIORDANO,LEONARDO SOARES GIORDANO,PC do B,masculino,4395,0.538,media,2,neighbors_niteroi_bairros.json,False
+NITERÓI,13449.0,634014,GABRIEL VELASCO,GABRIEL AMOÊDO GUIMARÃES VELASCO,PSD,masculino,4258,0.6042,media,2,neighbors_niteroi_bairros.json,False
+NITERÓI,13449.0,632081,SYLVIO,SYLVIO MAURÍCIO DE FREITAS,PT,masculino,4045,0.6254,media_alta,2,neighbors_niteroi_bairros.json,False
+NITERÓI,13449.0,640333,ZAF,JOSÉ ANTONIO TORO FERNANDEZ,UNIÃO,masculino,3910,0.4827,media_baixa,3,neighbors_niteroi_bairros.json,False
+NITERÓI,13449.0,639537,BETO DA PIPA,ROBERTO FERNANDES JALES,MDB,masculino,7656,0.526,media,2,neighbors_niteroi_bairros.json,False
+NITERÓI,13449.0,631016,FERNANDA LOUBACK,FERNANDA ANCHIETA LOUBACK,PL,feminino,3503,0.5468,media,4,neighbors_niteroi_bairros.json,False
+NITERÓI,13449.0,636215,FABIANO GONÇALVES,FABIANO GONÇALVES,REPUBLICANOS,masculino,6956,0.6681,media_alta,1,neighbors_niteroi_bairros.json,False
+NITERÓI,13449.0,630479,MICHEL SAAD NETO,MICHEL SALIM SAAD NETO,PODE,masculino,2772,0.5094,media,5,neighbors_niteroi_bairros.json,False

@@ -1,0 +1,12 @@
+﻿municipio,qe,political_id,candidato,full_name,partido,genero,total_votes,concentracao_final,interpretation,total_conglomerates,municipios_map_file,unmatched_in_csv
+IGUABA GRANDE,1526.0,301542,BALLIESTER,BALLIESTER WERNECK DE PRAGUER,CIDADANIA,masculino,1336,0.7338,media_alta,2,neighbors_iguaba_grande_bairros.json,False
+IGUABA GRANDE,1526.0,305708,MARCELO DURÃO,MARCELO FREIRE PEREIRA,PL,masculino,908,0.5867,media,2,neighbors_iguaba_grande_bairros.json,False
+IGUABA GRANDE,1526.0,293237,PAULO RITO,PAULO CESAR RITO NUNES,CIDADANIA,masculino,804,0.6727,media_alta,2,neighbors_iguaba_grande_bairros.json,False
+IGUABA GRANDE,1526.0,306657,ALAN RODRIGUES,ALAN RODRIGUES PEREIRA,MDB,masculino,656,0.7338,media_alta,2,neighbors_iguaba_grande_bairros.json,False
+IGUABA GRANDE,1526.0,305565,LUCIANO SILVA,LUCIANO MATTOS DA SILVA,CIDADANIA,masculino,642,0.8501,alta,2,neighbors_iguaba_grande_bairros.json,False
+IGUABA GRANDE,1526.0,306322,MARCILEY LESSA,MARCILEY LESSA CHAVES,PL,feminino,640,0.8501,alta,2,neighbors_iguaba_grande_bairros.json,False
+IGUABA GRANDE,1526.0,307685,ROBERTO ANTUNES,ROBERTO CARLOS ANTUNES DOS SANTOS,MDB,masculino,632,0.6834,media_alta,2,neighbors_iguaba_grande_bairros.json,False
+IGUABA GRANDE,1526.0,296609,JUNIOR BOMBEIRO DA SAÚDE,ADELSON BAPTISTA BEZERRA JUNIOR,MDB,masculino,628,0.6374,media_alta,2,neighbors_iguaba_grande_bairros.json,False
+IGUABA GRANDE,1526.0,307984,TIKINHO,ADRIANO BATISTA MAIRINK,DEM,masculino,627,0.7338,media_alta,2,neighbors_iguaba_grande_bairros.json,False
+IGUABA GRANDE,1526.0,289041,FABRICIO TORQUATO,FABRICIO CHAGAS TORQUATO,REPUBLICANOS,masculino,406,0.7224,media_alta,2,neighbors_iguaba_grande_bairros.json,False
+IGUABA GRANDE,1526.0,304559,JUNIOR NEGÃO,SIDNEY DE SOUZA NOGUEIRA JUNIOR,PATRIOTA,masculino,222,0.5922,media,2,neighbors_iguaba_grande_bairros.json,False

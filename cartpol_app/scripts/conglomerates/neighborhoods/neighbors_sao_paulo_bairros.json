@@ -1,0 +1,694 @@
+{
+  "neighbors": {
+    "Aricanduva": [
+      "Carrão",
+      "Cidade Lider",
+      "Sapopemba",
+      "São Mateus",
+      "Vila Formosa",
+      "Vila Matilde"
+    ],
+    "Brasilândia": [
+      "Cachoeirinha",
+      "Freguesia Do Ó",
+      "Jaraguá",
+      "Pirituba"
+    ],
+    "Água Rasa": [
+      "Belém",
+      "Mooca",
+      "São Lucas",
+      "Tatuapé",
+      "Vila Formosa",
+      "Vila Prudente"
+    ],
+    "Alto De Pinheiros": [
+      "Butantã",
+      "Jaguaré",
+      "Lapa",
+      "Perdizes",
+      "Pinheiros",
+      "Vila Leopoldina"
+    ],
+    "Anhanguera": [
+      "Jaraguá",
+      "Perus"
+    ],
+    "Artur Alvim": [
+      "Cidade Lider",
+      "Itaquera",
+      "Penha",
+      "Ponte Rasa",
+      "Vila Matilde"
+    ],
+    "Barra Funda": [
+      "Bom Retiro",
+      "Casa Verde",
+      "Consolação",
+      "Lapa",
+      "Limão",
+      "Perdizes",
+      "Santa Cecília",
+      "Santana"
+    ],
+    "Bela Vista": [
+      "Consolação",
+      "Jardim Paulista",
+      "Liberdade",
+      "República",
+      "Sé",
+      "Vila Mariana"
+    ],
+    "Belém": [
+      "Brás",
+      "Mooca",
+      "Pari",
+      "Tatuapé",
+      "Vila Guilherme",
+      "Vila Maria",
+      "Água Rasa"
+    ],
+    "Bom Retiro": [
+      "Barra Funda",
+      "Brás",
+      "Casa Verde",
+      "Pari",
+      "República",
+      "Santa Cecília",
+      "Santana",
+      "Sé"
+    ],
+    "Brás": [
+      "Belém",
+      "Bom Retiro",
+      "Cambuci",
+      "Mooca",
+      "Pari",
+      "Sé"
+    ],
+    "Butantã": [
+      "Alto De Pinheiros",
+      "Jaguaré",
+      "Morumbi",
+      "Pinheiros",
+      "Raposo Tavares",
+      "Rio Pequeno",
+      "Vila Sônia"
+    ],
+    "Cachoeirinha": [
+      "Brasilândia",
+      "Casa Verde",
+      "Freguesia Do Ó",
+      "Limão",
+      "Mandaqui"
+    ],
+    "Cambuci": [
+      "Brás",
+      "Ipiranga",
+      "Liberdade",
+      "Mooca",
+      "Sé",
+      "Vila Mariana"
+    ],
+    "Campo Belo": [
+      "Cidade Ademar",
+      "Itaim Bibi",
+      "Jabaquara",
+      "Moema",
+      "Santo Amaro",
+      "Saúde"
+    ],
+    "Campo Grande": [
+      "Cidade Ademar",
+      "Cidade Dutra",
+      "Pedreira",
+      "Santo Amaro",
+      "Socorro"
+    ],
+    "Campo Limpo": [
+      "Capão Redondo",
+      "Jardim São Luís",
+      "Vila Andrade",
+      "Vila Sônia"
+    ],
+    "Cangaiba": [
+      "Ermelino Matarazzo",
+      "Penha",
+      "Ponte Rasa"
+    ],
+    "Capão Redondo": [
+      "Campo Limpo",
+      "Jardim São Luís",
+      "Jardim Ângela"
+    ],
+    "Cidade Ademar": [
+      "Campo Belo",
+      "Campo Grande",
+      "Jabaquara",
+      "Pedreira",
+      "Santo Amaro"
+    ],
+    "Cidade Tiradentes": [
+      "Guaianases",
+      "Iguatemi",
+      "José Bonifácio"
+    ],
+    "Carrão": [
+      "Aricanduva",
+      "Cidade Lider",
+      "Tatuapé",
+      "Vila Formosa",
+      "Vila Matilde"
+    ],
+    "Casa Verde": [
+      "Barra Funda",
+      "Bom Retiro",
+      "Cachoeirinha",
+      "Limão",
+      "Mandaqui",
+      "Santana"
+    ],
+    "Cidade Dutra": [
+      "Campo Grande",
+      "Grajaú",
+      "Jardim São Luís",
+      "Jardim Ângela",
+      "Parelheiros",
+      "Pedreira",
+      "Socorro"
+    ],
+    "Cidade Lider": [
+      "Aricanduva",
+      "Artur Alvim",
+      "Carrão",
+      "Itaquera",
+      "Parque Do Carmo",
+      "São Mateus",
+      "Vila Matilde"
+    ],
+    "Consolação": [
+      "Barra Funda",
+      "Bela Vista",
+      "Jardim Paulista",
+      "Perdizes",
+      "República",
+      "Santa Cecília"
+    ],
+    "Cursino": [
+      "Ipiranga",
+      "Jabaquara",
+      "Sacomã",
+      "Saúde",
+      "Vila Mariana"
+    ],
+    "Grajaú": [
+      "Cidade Dutra",
+      "Parelheiros",
+      "Pedreira"
+    ],
+    "Moema": [
+      "Campo Belo",
+      "Itaim Bibi",
+      "Jardim Paulista",
+      "Saúde",
+      "Vila Mariana"
+    ],
+    "Iguatemi": [
+      "Cidade Tiradentes",
+      "José Bonifácio",
+      "Parque Do Carmo",
+      "São Mateus",
+      "São Rafael"
+    ],
+    "Itaim Paulista": [
+      "Jardim Helena",
+      "Lajeado",
+      "Vila Curuçá"
+    ],
+    "Ermelino Matarazzo": [
+      "Cangaiba",
+      "Ponte Rasa",
+      "Vila Jacuí"
+    ],
+    "Freguesia Do Ó": [
+      "Brasilândia",
+      "Cachoeirinha",
+      "Lapa",
+      "Limão",
+      "Pirituba"
+    ],
+    "Guaianases": [
+      "Cidade Tiradentes",
+      "José Bonifácio",
+      "Lajeado"
+    ],
+    "Ipiranga": [
+      "Cambuci",
+      "Cursino",
+      "Mooca",
+      "Sacomã",
+      "Vila Mariana",
+      "Vila Prudente"
+    ],
+    "Itaim Bibi": [
+      "Campo Belo",
+      "Jardim Paulista",
+      "Moema",
+      "Morumbi",
+      "Pinheiros",
+      "Santo Amaro",
+      "Vila Andrade"
+    ],
+    "Jabaquara": [
+      "Campo Belo",
+      "Cidade Ademar",
+      "Cursino",
+      "Saúde"
+    ],
+    "Jaguaré": [
+      "Alto De Pinheiros",
+      "Butantã",
+      "Rio Pequeno",
+      "Vila Leopoldina"
+    ],
+    "Jaraguá": [
+      "Anhanguera",
+      "Brasilândia",
+      "Perus",
+      "Pirituba",
+      "São Domingos"
+    ],
+    "Jardim Ângela": [
+      "Capão Redondo",
+      "Cidade Dutra",
+      "Jardim São Luís",
+      "Parelheiros"
+    ],
+    "Itaquera": [
+      "Artur Alvim",
+      "Cidade Lider",
+      "José Bonifácio",
+      "Lajeado",
+      "Parque Do Carmo",
+      "Ponte Rasa",
+      "São Miguel",
+      "Vila Jacuí"
+    ],
+    "Jaçanã": [
+      "Tremembé",
+      "Tucuruvi",
+      "Vila Medeiros"
+    ],
+    "Jaguara": [
+      "Lapa",
+      "São Domingos",
+      "Vila Leopoldina"
+    ],
+    "Jardim Helena": [
+      "Itaim Paulista",
+      "São Miguel",
+      "Vila Curuçá"
+    ],
+    "Jardim Paulista": [
+      "Bela Vista",
+      "Consolação",
+      "Itaim Bibi",
+      "Moema",
+      "Perdizes",
+      "Pinheiros",
+      "Vila Mariana"
+    ],
+    "Jardim São Luís": [
+      "Campo Limpo",
+      "Capão Redondo",
+      "Cidade Dutra",
+      "Jardim Ângela",
+      "Santo Amaro",
+      "Socorro",
+      "Vila Andrade"
+    ],
+    "Morumbi": [
+      "Butantã",
+      "Itaim Bibi",
+      "Pinheiros",
+      "Santo Amaro",
+      "Vila Andrade",
+      "Vila Sônia"
+    ],
+    "Penha": [
+      "Artur Alvim",
+      "Cangaiba",
+      "Ponte Rasa",
+      "Tatuapé",
+      "Vila Maria",
+      "Vila Matilde"
+    ],
+    "Perdizes": [
+      "Alto De Pinheiros",
+      "Barra Funda",
+      "Consolação",
+      "Jardim Paulista",
+      "Lapa",
+      "Pinheiros",
+      "Santa Cecília"
+    ],
+    "Raposo Tavares": [
+      "Butantã",
+      "Rio Pequeno",
+      "Vila Sônia"
+    ],
+    "Rio Pequeno": [
+      "Butantã",
+      "Jaguaré",
+      "Raposo Tavares"
+    ],
+    "José Bonifácio": [
+      "Cidade Tiradentes",
+      "Guaianases",
+      "Iguatemi",
+      "Itaquera",
+      "Lajeado",
+      "Parque Do Carmo"
+    ],
+    "Lapa": [
+      "Alto De Pinheiros",
+      "Barra Funda",
+      "Freguesia Do Ó",
+      "Jaguara",
+      "Perdizes",
+      "Pirituba",
+      "São Domingos",
+      "Vila Leopoldina"
+    ],
+    "Liberdade": [
+      "Bela Vista",
+      "Cambuci",
+      "República",
+      "Sé",
+      "Vila Mariana"
+    ],
+    "Limão": [
+      "Barra Funda",
+      "Cachoeirinha",
+      "Casa Verde",
+      "Freguesia Do Ó"
+    ],
+    "Mandaqui": [
+      "Cachoeirinha",
+      "Casa Verde",
+      "Santana",
+      "Tremembé",
+      "Tucuruvi"
+    ],
+    "Marsilac": [
+      "Parelheiros"
+    ],
+    "Mooca": [
+      "Belém",
+      "Brás",
+      "Cambuci",
+      "Ipiranga",
+      "Vila Prudente",
+      "Água Rasa"
+    ],
+    "Parelheiros": [
+      "Cidade Dutra",
+      "Grajaú",
+      "Jardim Ângela",
+      "Marsilac"
+    ],
+    "Pari": [
+      "Belém",
+      "Bom Retiro",
+      "Brás",
+      "Santana",
+      "Vila Guilherme"
+    ],
+    "Parque Do Carmo": [
+      "Cidade Lider",
+      "Iguatemi",
+      "Itaquera",
+      "José Bonifácio",
+      "São Mateus"
+    ],
+    "Pedreira": [
+      "Campo Grande",
+      "Cidade Ademar",
+      "Cidade Dutra",
+      "Grajaú"
+    ],
+    "Perus": [
+      "Anhanguera",
+      "Jaraguá"
+    ],
+    "Pinheiros": [
+      "Alto De Pinheiros",
+      "Butantã",
+      "Itaim Bibi",
+      "Jardim Paulista",
+      "Morumbi",
+      "Perdizes"
+    ],
+    "Pirituba": [
+      "Brasilândia",
+      "Freguesia Do Ó",
+      "Jaraguá",
+      "Lapa",
+      "São Domingos"
+    ],
+    "Ponte Rasa": [
+      "Artur Alvim",
+      "Cangaiba",
+      "Ermelino Matarazzo",
+      "Itaquera",
+      "Penha",
+      "Vila Jacuí"
+    ],
+    "República": [
+      "Bela Vista",
+      "Bom Retiro",
+      "Consolação",
+      "Liberdade",
+      "Santa Cecília",
+      "Sé"
+    ],
+    "Sacomã": [
+      "Cursino",
+      "Ipiranga"
+    ],
+    "Santana": [
+      "Barra Funda",
+      "Bom Retiro",
+      "Casa Verde",
+      "Mandaqui",
+      "Pari",
+      "Tucuruvi",
+      "Vila Guilherme"
+    ],
+    "São Miguel": [
+      "Itaquera",
+      "Jardim Helena",
+      "Lajeado",
+      "Vila Curuçá",
+      "Vila Jacuí"
+    ],
+    "Sapopemba": [
+      "Aricanduva",
+      "São Lucas",
+      "São Mateus",
+      "Vila Formosa"
+    ],
+    "Tucuruvi": [
+      "Jaçanã",
+      "Mandaqui",
+      "Santana",
+      "Tremembé",
+      "Vila Guilherme",
+      "Vila Medeiros"
+    ],
+    "Vila Andrade": [
+      "Campo Limpo",
+      "Itaim Bibi",
+      "Jardim São Luís",
+      "Morumbi",
+      "Santo Amaro",
+      "Vila Sônia"
+    ],
+    "Vila Formosa": [
+      "Aricanduva",
+      "Carrão",
+      "Sapopemba",
+      "São Lucas",
+      "Tatuapé",
+      "Água Rasa"
+    ],
+    "Santa Cecília": [
+      "Barra Funda",
+      "Bom Retiro",
+      "Consolação",
+      "Perdizes",
+      "República"
+    ],
+    "Santo Amaro": [
+      "Campo Belo",
+      "Campo Grande",
+      "Cidade Ademar",
+      "Itaim Bibi",
+      "Jardim São Luís",
+      "Morumbi",
+      "Socorro",
+      "Vila Andrade"
+    ],
+    "São Lucas": [
+      "Sapopemba",
+      "Vila Formosa",
+      "Vila Prudente",
+      "Água Rasa"
+    ],
+    "São Mateus": [
+      "Aricanduva",
+      "Cidade Lider",
+      "Iguatemi",
+      "Parque Do Carmo",
+      "Sapopemba",
+      "São Rafael"
+    ],
+    "São Rafael": [
+      "Iguatemi",
+      "São Mateus"
+    ],
+    "Saúde": [
+      "Campo Belo",
+      "Cursino",
+      "Jabaquara",
+      "Moema",
+      "Vila Mariana"
+    ],
+    "Sé": [
+      "Bela Vista",
+      "Bom Retiro",
+      "Brás",
+      "Cambuci",
+      "Liberdade",
+      "República"
+    ],
+    "Socorro": [
+      "Campo Grande",
+      "Cidade Dutra",
+      "Jardim São Luís",
+      "Santo Amaro"
+    ],
+    "Tatuapé": [
+      "Belém",
+      "Carrão",
+      "Penha",
+      "Vila Formosa",
+      "Vila Maria",
+      "Vila Matilde",
+      "Água Rasa"
+    ],
+    "Tremembé": [
+      "Jaçanã",
+      "Mandaqui",
+      "Tucuruvi"
+    ],
+    "Vila Curuçá": [
+      "Itaim Paulista",
+      "Jardim Helena",
+      "Lajeado",
+      "São Miguel"
+    ],
+    "Vila Guilherme": [
+      "Belém",
+      "Pari",
+      "Santana",
+      "Tucuruvi",
+      "Vila Maria",
+      "Vila Medeiros"
+    ],
+    "Vila Jacuí": [
+      "Ermelino Matarazzo",
+      "Itaquera",
+      "Ponte Rasa",
+      "São Miguel"
+    ],
+    "Vila Leopoldina": [
+      "Alto De Pinheiros",
+      "Jaguara",
+      "Jaguaré",
+      "Lapa",
+      "São Domingos"
+    ],
+    "Vila Maria": [
+      "Belém",
+      "Penha",
+      "Tatuapé",
+      "Vila Guilherme",
+      "Vila Medeiros"
+    ],
+    "Vila Mariana": [
+      "Bela Vista",
+      "Cambuci",
+      "Cursino",
+      "Ipiranga",
+      "Jardim Paulista",
+      "Liberdade",
+      "Moema",
+      "Saúde"
+    ],
+    "Vila Matilde": [
+      "Aricanduva",
+      "Artur Alvim",
+      "Carrão",
+      "Cidade Lider",
+      "Penha",
+      "Tatuapé"
+    ],
+    "Vila Medeiros": [
+      "Jaçanã",
+      "Tucuruvi",
+      "Vila Guilherme",
+      "Vila Maria"
+    ],
+    "Vila Prudente": [
+      "Ipiranga",
+      "Mooca",
+      "São Lucas",
+      "Água Rasa"
+    ],
+    "Vila Sônia": [
+      "Butantã",
+      "Campo Limpo",
+      "Morumbi",
+      "Raposo Tavares",
+      "Vila Andrade"
+    ],
+    "Lajeado": [
+      "Guaianases",
+      "Itaim Paulista",
+      "Itaquera",
+      "José Bonifácio",
+      "São Miguel",
+      "Vila Curuçá"
+    ],
+    "São Domingos": [
+      "Jaguara",
+      "Jaraguá",
+      "Lapa",
+      "Pirituba",
+      "Vila Leopoldina"
+    ]
+  },
+  "stats": {
+    "shapefile": "sao_paulo.zip",
+    "name_column": "name_distr",
+    "total_regions": 96,
+    "total_neighbor_pairs": 243,
+    "avg_neighbors": 5.0625,
+    "max_neighbors": 8,
+    "min_neighbors": 1,
+    "isolated_regions": 0,
+    "region_most_neighbors": "Barra Funda",
+    "region_least_neighbors": "Marsilac"
+  }
+}

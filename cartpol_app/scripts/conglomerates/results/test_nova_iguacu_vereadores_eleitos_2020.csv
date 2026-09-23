@@ -1,0 +1,12 @@
+﻿municipio,qe,political_id,candidato,full_name,partido,genero,total_votes,concentracao_final,interpretation,total_conglomerates,municipios_map_file,unmatched_in_csv
+NOVA IGUAÇU,33465.0,292025,FELIPINHO RAVIS,FELIPE RANGEL GARCIA,SOLIDARIEDADE,masculino,10962,0.6552,media_alta,1,neighbors_nova_iguacu_bairros.json,False
+NOVA IGUAÇU,33465.0,296625,VAGUINHO NEGUINHO,VAGNER MATEUS DOS SANTOS,PATRIOTA,masculino,8372,0.4337,media_baixa,4,neighbors_nova_iguacu_bairros.json,False
+NOVA IGUAÇU,33465.0,291070,DUDU REINA,EDUARDO REINA GOMES DE OLIVEIRA,PDT,masculino,8167,0.5151,media,2,neighbors_nova_iguacu_bairros.json,False
+NOVA IGUAÇU,33465.0,292450,CLAUDIO HAJA LUZ,CLAUDIO VALDEMIR DE OLIVEIRA MARQUES,REPUBLICANOS,masculino,7654,0.5879,media,2,neighbors_nova_iguacu_bairros.json,False
+NOVA IGUAÇU,33465.0,298390,CARLINHOS BNH,CARLOS ALBERTO RIBEIRO DA SILVA,PP,masculino,7640,0.4819,media_baixa,3,neighbors_nova_iguacu_bairros.json,False
+NOVA IGUAÇU,33465.0,288747,JEFERSON RAMOS,JEFERSON RAMOS DE OLIVEIRA,MDB,masculino,7577,0.3981,media_baixa,6,neighbors_nova_iguacu_bairros.json,False
+NOVA IGUAÇU,33465.0,294183,MAURICIO MORAIS,MAURICIO MORAIS LOPES,AVANTE,masculino,6902,0.4375,media_baixa,2,neighbors_nova_iguacu_bairros.json,False
+NOVA IGUAÇU,33465.0,295679,ALEXANDRE DA PADARIA,ALEXANDRE ROCHA DE AZEREDO,PSD,masculino,6631,0.5776,media,2,neighbors_nova_iguacu_bairros.json,False
+NOVA IGUAÇU,33465.0,297808,MANINHO DE CABUÇU,GERMANO SILVA DE OLIVEIRA,CIDADANIA,masculino,6073,0.5073,media,2,neighbors_nova_iguacu_bairros.json,False
+NOVA IGUAÇU,33465.0,289189,ALCEMIR GOMES,ALCEMIR GOMES MOREIRA,PROS,masculino,4199,0.4371,media_baixa,5,neighbors_nova_iguacu_bairros.json,False
+NOVA IGUAÇU,33465.0,293958,DR MARCIO GUERREIRO,MARCIO LUIS MARQUES GUIMARAES,PP,masculino,4133,0.5019,media,2,neighbors_nova_iguacu_bairros.json,False

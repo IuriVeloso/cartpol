@@ -1,0 +1,1348 @@
+{
+  "shapefile": "Rio de Janeiro.zip",
+  "method": "touches",
+  "statistics": {
+    "total_regions": 160,
+    "total_neighbors": 423,
+    "avg_neighbors": 5.2875,
+    "max_neighbors": 18,
+    "min_neighbors": 1,
+    "isolated_regions": 0,
+    "region_most_neighbors": "Jacarepaguá",
+    "region_least_neighbors": "Pedra de Guaratiba"
+  },
+  "neighbors": {
+    "Vaz Lobo": [
+      "Cavalcanti",
+      "Irajá",
+      "Madureira",
+      "Rocha Miranda",
+      "Turiaçu",
+      "Vicente de Carvalho"
+    ],
+    "Pedra de Guaratiba": [
+      "Guaratiba"
+    ],
+    "Joá": [
+      "Barra da Tijuca",
+      "São Conrado"
+    ],
+    "Grajaú": [
+      "Alto da Boa Vista",
+      "Andaraí",
+      "Engenho Novo",
+      "Jacarepaguá",
+      "Lins de Vasconcelos",
+      "Tijuca",
+      "Vila Isabel"
+    ],
+    "Méier": [
+      "Cachambi",
+      "Engenho Novo",
+      "Engenho de Dentro",
+      "Lins de Vasconcelos",
+      "Todos os Santos"
+    ],
+    "Ribeira": [
+      "Zumbi"
+    ],
+    "Tauá": [
+      "Bancários",
+      "Cocotá",
+      "Jardim Carioca",
+      "Moneró"
+    ],
+    "Catete": [
+      "Flamengo",
+      "Glória",
+      "Laranjeiras",
+      "Santa Teresa"
+    ],
+    "Vila Militar": [
+      "Campo dos Afonsos",
+      "Deodoro",
+      "Jardim Sulacap",
+      "Magalhães Bastos",
+      "Parque Anchieta",
+      "Realengo",
+      "Ricardo de Albuquerque"
+    ],
+    "Cidade de Deus": [
+      "Freguesia (Jacarepaguá)",
+      "Gardênia Azul",
+      "Jacarepaguá",
+      "Pechincha",
+      "Taquara"
+    ],
+    "Vila Valqueire": [
+      "Bento Ribeiro",
+      "Campinho",
+      "Campo dos Afonsos",
+      "Jardim Sulacap",
+      "Marechal Hermes",
+      "Praça Seca",
+      "Tanque"
+    ],
+    "Vargem Grande": [
+      "Barra de Guaratiba",
+      "Camorim",
+      "Campo Grande",
+      "Guaratiba",
+      "Jacarepaguá",
+      "Recreio dos Bandeirantes",
+      "Senador Camará",
+      "Vargem Pequena"
+    ],
+    "Ramos": [
+      "Bonsucesso",
+      "Complexo do Alemão",
+      "Maré",
+      "Olaria"
+    ],
+    "Padre Miguel": [
+      "Bangu",
+      "Realengo"
+    ],
+    "Rocha": [
+      "Benfica",
+      "Jacaré",
+      "Riachuelo",
+      "São Francisco Xavier",
+      "Vila Isabel"
+    ],
+    "Freguesia (Ilha do Governador)": [
+      "Bancários"
+    ],
+    "Tanque": [
+      "Freguesia (Jacarepaguá)",
+      "Jardim Sulacap",
+      "Pechincha",
+      "Praça Seca",
+      "Quintino Bocaiúva",
+      "Taquara",
+      "Vila Valqueire"
+    ],
+    "Grumari": [
+      "Barra de Guaratiba",
+      "Recreio dos Bandeirantes"
+    ],
+    "Cosme Velho": [
+      "Botafogo",
+      "Laranjeiras",
+      "Santa Teresa"
+    ],
+    "São Cristóvão": [
+      "Benfica",
+      "Caju",
+      "Mangueira",
+      "Maracanã",
+      "Praça da Bandeira",
+      "Santo Cristo",
+      "Vasco da Gama"
+    ],
+    "Maré": [
+      "Bonsucesso",
+      "Caju",
+      "Manguinhos",
+      "Olaria",
+      "Penha",
+      "Ramos"
+    ],
+    "Jardim Carioca": [
+      "Cacuia",
+      "Cocotá",
+      "Jardim Guanabara",
+      "Moneró",
+      "Portuguesa",
+      "Tauá"
+    ],
+    "Santo Cristo": [
+      "Caju",
+      "Centro",
+      "Cidade Nova",
+      "Gamboa",
+      "Praça da Bandeira",
+      "São Cristóvão"
+    ],
+    "Inhoaíba": [
+      "Campo Grande",
+      "Cosmos",
+      "Guaratiba"
+    ],
+    "Alto da Boa Vista": [
+      "Grajaú",
+      "Gávea",
+      "Humaitá",
+      "Itanhangá",
+      "Jacarepaguá",
+      "Jardim Botânico",
+      "Rio Comprido",
+      "Santa Teresa",
+      "São Conrado",
+      "Tijuca"
+    ],
+    "Lins de Vasconcelos": [
+      "Engenho Novo",
+      "Engenho de Dentro",
+      "Grajaú",
+      "Jacarepaguá",
+      "Méier"
+    ],
+    "Jacarepaguá": [
+      "Alto da Boa Vista",
+      "Anil",
+      "Barra da Tijuca",
+      "Camorim",
+      "Campo Grande",
+      "Cidade de Deus",
+      "Curicica",
+      "Engenho de Dentro",
+      "Freguesia (Jacarepaguá)",
+      "Gardênia Azul",
+      "Grajaú",
+      "Itanhangá",
+      "Lins de Vasconcelos",
+      "Realengo",
+      "Senador Camará",
+      "Taquara",
+      "Vargem Grande",
+      "Água Santa"
+    ],
+    "Jacaré": [
+      "Benfica",
+      "Cachambi",
+      "Engenho Novo",
+      "Jacarezinho",
+      "Riachuelo",
+      "Rocha",
+      "Sampaio"
+    ],
+    "Realengo": [
+      "Bangu",
+      "Jacarepaguá",
+      "Jardim Sulacap",
+      "Magalhães Bastos",
+      "Padre Miguel",
+      "Parque Anchieta",
+      "Senador Camará",
+      "Taquara",
+      "Vila Militar"
+    ],
+    "Inhaúma": [
+      "Cachambi",
+      "Complexo do Alemão",
+      "Del Castilho",
+      "Engenho da Rainha",
+      "Engenho de Dentro",
+      "Higienópolis",
+      "Pilares"
+    ],
+    "Cosmos": [
+      "Campo Grande",
+      "Guaratiba",
+      "Inhoaíba",
+      "Paciência",
+      "Santa Cruz"
+    ],
+    "Parada de Lucas": [
+      "Cordovil",
+      "Irajá",
+      "Vigário Geral",
+      "Vista Alegre"
+    ],
+    "Praça Seca": [
+      "Campinho",
+      "Cascadura",
+      "Quintino Bocaiúva",
+      "Tanque",
+      "Vila Valqueire"
+    ],
+    "Guaratiba": [
+      "Barra de Guaratiba",
+      "Campo Grande",
+      "Cosmos",
+      "Inhoaíba",
+      "Pedra de Guaratiba",
+      "Recreio dos Bandeirantes",
+      "Santa Cruz",
+      "Sepetiba",
+      "Vargem Grande"
+    ],
+    "Gericinó": [
+      "Bangu"
+    ],
+    "Cordovil": [
+      "Brás de Pina",
+      "Parada de Lucas",
+      "Penha Circular",
+      "Vista Alegre"
+    ],
+    "Piedade": [
+      "Abolição",
+      "Cavalcanti",
+      "Encantado",
+      "Freguesia (Jacarepaguá)",
+      "Pilares",
+      "Quintino Bocaiúva",
+      "Tomás Coelho",
+      "Água Santa"
+    ],
+    "Bangu": [
+      "Campo Grande",
+      "Gericinó",
+      "Padre Miguel",
+      "Realengo",
+      "Santíssimo",
+      "Senador Camará",
+      "Vila Kennedy"
+    ],
+    "Abolição": [
+      "Encantado",
+      "Engenho de Dentro",
+      "Piedade",
+      "Pilares"
+    ],
+    "Portuguesa": [
+      "Galeão",
+      "Jardim Carioca",
+      "Jardim Guanabara",
+      "Moneró"
+    ],
+    "Santa Cruz": [
+      "Cosmos",
+      "Guaratiba",
+      "Paciência",
+      "Sepetiba"
+    ],
+    "Itanhangá": [
+      "Alto da Boa Vista",
+      "Barra da Tijuca",
+      "Jacarepaguá",
+      "São Conrado"
+    ],
+    "Quintino Bocaiúva": [
+      "Cascadura",
+      "Cavalcanti",
+      "Freguesia (Jacarepaguá)",
+      "Piedade",
+      "Praça Seca",
+      "Tanque",
+      "Água Santa"
+    ],
+    "Vila da Penha": [
+      "Brás de Pina",
+      "Irajá",
+      "Penha Circular",
+      "Vicente de Carvalho",
+      "Vila Kosmos"
+    ],
+    "Humaitá": [
+      "Alto da Boa Vista",
+      "Botafogo",
+      "Copacabana",
+      "Jardim Botânico",
+      "Lagoa",
+      "Santa Teresa"
+    ],
+    "Lapa": [
+      "Centro",
+      "Glória",
+      "Santa Teresa"
+    ],
+    "Cachambi": [
+      "Del Castilho",
+      "Engenho Novo",
+      "Engenho de Dentro",
+      "Inhaúma",
+      "Jacarezinho",
+      "Jacaré",
+      "Maria da Graça",
+      "Méier",
+      "Todos os Santos"
+    ],
+    "Encantado": [
+      "Abolição",
+      "Engenho de Dentro",
+      "Piedade",
+      "Água Santa"
+    ],
+    "Glória": [
+      "Catete",
+      "Centro",
+      "Flamengo",
+      "Lapa",
+      "Santa Teresa"
+    ],
+    "Benfica": [
+      "Caju",
+      "Jacarezinho",
+      "Jacaré",
+      "Mangueira",
+      "Manguinhos",
+      "Rocha",
+      "São Cristóvão",
+      "São Francisco Xavier",
+      "Vasco da Gama"
+    ],
+    "Rio Comprido": [
+      "Alto da Boa Vista",
+      "Catumbi",
+      "Estácio",
+      "Praça da Bandeira",
+      "Santa Teresa",
+      "Tijuca"
+    ],
+    "Gamboa": [
+      "Centro",
+      "Santo Cristo",
+      "Saúde"
+    ],
+    "Galeão": [
+      "Jardim Guanabara",
+      "Portuguesa"
+    ],
+    "Pechincha": [
+      "Cidade de Deus",
+      "Freguesia (Jacarepaguá)",
+      "Tanque",
+      "Taquara"
+    ],
+    "Riachuelo": [
+      "Jacaré",
+      "Rocha",
+      "Sampaio",
+      "Vila Isabel"
+    ],
+    "Cacuia": [
+      "Cocotá",
+      "Jardim Carioca",
+      "Jardim Guanabara",
+      "Pitangueiras",
+      "Praia da Bandeira",
+      "Zumbi"
+    ],
+    "Senador Camará": [
+      "Bangu",
+      "Campo Grande",
+      "Jacarepaguá",
+      "Realengo",
+      "Santíssimo",
+      "Senador Vasconcelos",
+      "Vargem Grande"
+    ],
+    "Madureira": [
+      "Campinho",
+      "Cascadura",
+      "Cavalcanti",
+      "Engenheiro Leal",
+      "Oswaldo Cruz",
+      "Turiaçu",
+      "Vaz Lobo"
+    ],
+    "Tomás Coelho": [
+      "Cavalcanti",
+      "Engenho da Rainha",
+      "Piedade",
+      "Pilares",
+      "Vicente de Carvalho",
+      "Vila Kosmos"
+    ],
+    "Engenho da Rainha": [
+      "Complexo do Alemão",
+      "Inhaúma",
+      "Olaria",
+      "Penha",
+      "Penha Circular",
+      "Pilares",
+      "Tomás Coelho",
+      "Vila Kosmos"
+    ],
+    "Pavuna": [
+      "Acari",
+      "Anchieta",
+      "Barros Filho",
+      "Coelho Neto",
+      "Costa Barros",
+      "Irajá",
+      "Jardim América",
+      "Parque Colúmbia"
+    ],
+    "Saúde": [
+      "Centro",
+      "Gamboa"
+    ],
+    "Ricardo de Albuquerque": [
+      "Anchieta",
+      "Deodoro",
+      "Guadalupe",
+      "Parque Anchieta",
+      "Vila Militar"
+    ],
+    "Praia da Bandeira": [
+      "Cacuia",
+      "Cocotá",
+      "Pitangueiras"
+    ],
+    "Oswaldo Cruz": [
+      "Bento Ribeiro",
+      "Campinho",
+      "Madureira",
+      "Rocha Miranda",
+      "Turiaçu"
+    ],
+    "Camorim": [
+      "Barra da Tijuca",
+      "Jacarepaguá",
+      "Recreio dos Bandeirantes",
+      "Vargem Grande",
+      "Vargem Pequena"
+    ],
+    "Mangueira": [
+      "Benfica",
+      "Maracanã",
+      "São Cristóvão",
+      "São Francisco Xavier"
+    ],
+    "Barros Filho": [
+      "Coelho Neto",
+      "Costa Barros",
+      "Guadalupe",
+      "Honório Gurgel",
+      "Marechal Hermes",
+      "Pavuna"
+    ],
+    "Sampaio": [
+      "Engenho Novo",
+      "Jacaré",
+      "Riachuelo",
+      "Vila Isabel"
+    ],
+    "Cidade Nova": [
+      "Catumbi",
+      "Centro",
+      "Estácio",
+      "Praça da Bandeira",
+      "Santa Teresa",
+      "Santo Cristo"
+    ],
+    "Vista Alegre": [
+      "Brás de Pina",
+      "Cordovil",
+      "Irajá",
+      "Parada de Lucas"
+    ],
+    "Guadalupe": [
+      "Anchieta",
+      "Barros Filho",
+      "Costa Barros",
+      "Deodoro",
+      "Honório Gurgel",
+      "Marechal Hermes",
+      "Ricardo de Albuquerque"
+    ],
+    "Penha Circular": [
+      "Brás de Pina",
+      "Cordovil",
+      "Engenho da Rainha",
+      "Olaria",
+      "Penha",
+      "Vila Kosmos",
+      "Vila da Penha"
+    ],
+    "Vargem Pequena": [
+      "Camorim",
+      "Recreio dos Bandeirantes",
+      "Vargem Grande"
+    ],
+    "Campo dos Afonsos": [
+      "Deodoro",
+      "Jardim Sulacap",
+      "Marechal Hermes",
+      "Vila Militar",
+      "Vila Valqueire"
+    ],
+    "Parque Anchieta": [
+      "Anchieta",
+      "Realengo",
+      "Ricardo de Albuquerque",
+      "Vila Militar"
+    ],
+    "Rocinha": [
+      "Gávea",
+      "São Conrado",
+      "Vidigal"
+    ],
+    "Paciência": [
+      "Campo Grande",
+      "Cosmos",
+      "Santa Cruz"
+    ],
+    "São Conrado": [
+      "Alto da Boa Vista",
+      "Barra da Tijuca",
+      "Gávea",
+      "Itanhangá",
+      "Joá",
+      "Rocinha",
+      "Vidigal"
+    ],
+    "Jardim América": [
+      "Irajá",
+      "Parque Colúmbia",
+      "Pavuna",
+      "Vigário Geral"
+    ],
+    "Pilares": [
+      "Abolição",
+      "Engenho da Rainha",
+      "Engenho de Dentro",
+      "Inhaúma",
+      "Piedade",
+      "Tomás Coelho"
+    ],
+    "Bancários": [
+      "Cocotá",
+      "Freguesia (Ilha do Governador)",
+      "Tauá"
+    ],
+    "Magalhães Bastos": [
+      "Realengo",
+      "Vila Militar"
+    ],
+    "Catumbi": [
+      "Cidade Nova",
+      "Estácio",
+      "Rio Comprido",
+      "Santa Teresa"
+    ],
+    "Praça da Bandeira": [
+      "Cidade Nova",
+      "Estácio",
+      "Maracanã",
+      "Rio Comprido",
+      "Santo Cristo",
+      "São Cristóvão",
+      "Tijuca"
+    ],
+    "Costa Barros": [
+      "Anchieta",
+      "Barros Filho",
+      "Guadalupe",
+      "Pavuna"
+    ],
+    "Campinho": [
+      "Bento Ribeiro",
+      "Cascadura",
+      "Madureira",
+      "Oswaldo Cruz",
+      "Praça Seca",
+      "Vila Valqueire"
+    ],
+    "Cavalcanti": [
+      "Cascadura",
+      "Engenheiro Leal",
+      "Madureira",
+      "Piedade",
+      "Quintino Bocaiúva",
+      "Tomás Coelho",
+      "Vaz Lobo",
+      "Vicente de Carvalho"
+    ],
+    "Sepetiba": [
+      "Guaratiba",
+      "Santa Cruz"
+    ],
+    "Honório Gurgel": [
+      "Barros Filho",
+      "Bento Ribeiro",
+      "Coelho Neto",
+      "Guadalupe",
+      "Marechal Hermes",
+      "Rocha Miranda"
+    ],
+    "Curicica": [
+      "Jacarepaguá",
+      "Taquara"
+    ],
+    "Irajá": [
+      "Acari",
+      "Brás de Pina",
+      "Coelho Neto",
+      "Colégio",
+      "Jardim América",
+      "Parada de Lucas",
+      "Parque Colúmbia",
+      "Pavuna",
+      "Rocha Miranda",
+      "Turiaçu",
+      "Vaz Lobo",
+      "Vicente de Carvalho",
+      "Vigário Geral",
+      "Vila da Penha",
+      "Vista Alegre"
+    ],
+    "Tijuca": [
+      "Alto da Boa Vista",
+      "Andaraí",
+      "Grajaú",
+      "Maracanã",
+      "Praça da Bandeira",
+      "Rio Comprido",
+      "Vila Isabel"
+    ],
+    "Vicente de Carvalho": [
+      "Cavalcanti",
+      "Irajá",
+      "Tomás Coelho",
+      "Vaz Lobo",
+      "Vila Kosmos",
+      "Vila da Penha"
+    ],
+    "Estácio": [
+      "Catumbi",
+      "Cidade Nova",
+      "Praça da Bandeira",
+      "Rio Comprido"
+    ],
+    "Del Castilho": [
+      "Cachambi",
+      "Higienópolis",
+      "Inhaúma",
+      "Maria da Graça"
+    ],
+    "Complexo do Alemão": [
+      "Bonsucesso",
+      "Engenho da Rainha",
+      "Higienópolis",
+      "Inhaúma",
+      "Olaria",
+      "Ramos"
+    ],
+    "Coelho Neto": [
+      "Acari",
+      "Barros Filho",
+      "Colégio",
+      "Honório Gurgel",
+      "Irajá",
+      "Parque Colúmbia",
+      "Pavuna",
+      "Rocha Miranda"
+    ],
+    "Andaraí": [
+      "Grajaú",
+      "Tijuca",
+      "Vila Isabel"
+    ],
+    "Recreio dos Bandeirantes": [
+      "Barra da Tijuca",
+      "Barra de Guaratiba",
+      "Camorim",
+      "Grumari",
+      "Guaratiba",
+      "Vargem Grande",
+      "Vargem Pequena"
+    ],
+    "Anchieta": [
+      "Costa Barros",
+      "Guadalupe",
+      "Parque Anchieta",
+      "Pavuna",
+      "Ricardo de Albuquerque"
+    ],
+    "Engenho Novo": [
+      "Cachambi",
+      "Grajaú",
+      "Jacaré",
+      "Lins de Vasconcelos",
+      "Méier",
+      "Sampaio",
+      "Vila Isabel"
+    ],
+    "Lagoa": [
+      "Botafogo",
+      "Copacabana",
+      "Gávea",
+      "Humaitá",
+      "Ipanema",
+      "Jardim Botânico",
+      "Leblon"
+    ],
+    "Botafogo": [
+      "Copacabana",
+      "Cosme Velho",
+      "Flamengo",
+      "Humaitá",
+      "Lagoa",
+      "Laranjeiras",
+      "Santa Teresa",
+      "Urca"
+    ],
+    "Vasco da Gama": [
+      "Benfica",
+      "Caju",
+      "São Cristóvão"
+    ],
+    "Zumbi": [
+      "Cacuia",
+      "Pitangueiras",
+      "Ribeira"
+    ],
+    "Barra da Tijuca": [
+      "Camorim",
+      "Itanhangá",
+      "Jacarepaguá",
+      "Joá",
+      "Recreio dos Bandeirantes",
+      "São Conrado"
+    ],
+    "Caju": [
+      "Benfica",
+      "Manguinhos",
+      "Maré",
+      "Santo Cristo",
+      "São Cristóvão",
+      "Vasco da Gama"
+    ],
+    "Centro": [
+      "Cidade Nova",
+      "Gamboa",
+      "Glória",
+      "Lapa",
+      "Santa Teresa",
+      "Santo Cristo",
+      "Saúde"
+    ],
+    "Bonsucesso": [
+      "Complexo do Alemão",
+      "Higienópolis",
+      "Manguinhos",
+      "Maré",
+      "Ramos"
+    ],
+    "Laranjeiras": [
+      "Botafogo",
+      "Catete",
+      "Cosme Velho",
+      "Flamengo",
+      "Santa Teresa"
+    ],
+    "Higienópolis": [
+      "Bonsucesso",
+      "Complexo do Alemão",
+      "Del Castilho",
+      "Inhaúma",
+      "Manguinhos",
+      "Maria da Graça"
+    ],
+    "Flamengo": [
+      "Botafogo",
+      "Catete",
+      "Glória",
+      "Laranjeiras"
+    ],
+    "Rocha Miranda": [
+      "Bento Ribeiro",
+      "Coelho Neto",
+      "Colégio",
+      "Honório Gurgel",
+      "Irajá",
+      "Marechal Hermes",
+      "Oswaldo Cruz",
+      "Turiaçu",
+      "Vaz Lobo"
+    ],
+    "Jacarezinho": [
+      "Benfica",
+      "Cachambi",
+      "Jacaré",
+      "Manguinhos",
+      "Maria da Graça"
+    ],
+    "Gávea": [
+      "Alto da Boa Vista",
+      "Jardim Botânico",
+      "Lagoa",
+      "Leblon",
+      "Rocinha",
+      "São Conrado",
+      "Vidigal"
+    ],
+    "Brás de Pina": [
+      "Cordovil",
+      "Irajá",
+      "Penha Circular",
+      "Vila da Penha",
+      "Vista Alegre"
+    ],
+    "Santa Teresa": [
+      "Alto da Boa Vista",
+      "Botafogo",
+      "Catete",
+      "Catumbi",
+      "Centro",
+      "Cidade Nova",
+      "Cosme Velho",
+      "Glória",
+      "Humaitá",
+      "Lapa",
+      "Laranjeiras",
+      "Rio Comprido"
+    ],
+    "Manguinhos": [
+      "Benfica",
+      "Bonsucesso",
+      "Caju",
+      "Higienópolis",
+      "Jacarezinho",
+      "Maria da Graça",
+      "Maré"
+    ],
+    "Santíssimo": [
+      "Bangu",
+      "Campo Grande",
+      "Senador Camará",
+      "Senador Vasconcelos"
+    ],
+    "Cascadura": [
+      "Campinho",
+      "Cavalcanti",
+      "Engenheiro Leal",
+      "Madureira",
+      "Praça Seca",
+      "Quintino Bocaiúva"
+    ],
+    "Vila Isabel": [
+      "Andaraí",
+      "Engenho Novo",
+      "Grajaú",
+      "Maracanã",
+      "Riachuelo",
+      "Rocha",
+      "Sampaio",
+      "São Francisco Xavier",
+      "Tijuca"
+    ],
+    "Acari": [
+      "Coelho Neto",
+      "Irajá",
+      "Parque Colúmbia",
+      "Pavuna"
+    ],
+    "Parque Colúmbia": [
+      "Acari",
+      "Coelho Neto",
+      "Irajá",
+      "Jardim América",
+      "Pavuna"
+    ],
+    "Copacabana": [
+      "Botafogo",
+      "Humaitá",
+      "Ipanema",
+      "Lagoa",
+      "Leme",
+      "Urca"
+    ],
+    "Engenheiro Leal": [
+      "Cascadura",
+      "Cavalcanti",
+      "Madureira"
+    ],
+    "Colégio": [
+      "Coelho Neto",
+      "Irajá",
+      "Rocha Miranda"
+    ],
+    "Vidigal": [
+      "Gávea",
+      "Leblon",
+      "Rocinha",
+      "São Conrado"
+    ],
+    "Barra de Guaratiba": [
+      "Grumari",
+      "Guaratiba",
+      "Recreio dos Bandeirantes",
+      "Vargem Grande"
+    ],
+    "Freguesia (Jacarepaguá)": [
+      "Anil",
+      "Cidade de Deus",
+      "Gardênia Azul",
+      "Jacarepaguá",
+      "Pechincha",
+      "Piedade",
+      "Quintino Bocaiúva",
+      "Tanque",
+      "Água Santa"
+    ],
+    "Senador Vasconcelos": [
+      "Campo Grande",
+      "Santíssimo",
+      "Senador Camará"
+    ],
+    "Urca": [
+      "Botafogo",
+      "Copacabana",
+      "Leme"
+    ],
+    "Vila Kennedy": [
+      "Bangu"
+    ],
+    "Gardênia Azul": [
+      "Anil",
+      "Cidade de Deus",
+      "Freguesia (Jacarepaguá)",
+      "Jacarepaguá"
+    ],
+    "Todos os Santos": [
+      "Cachambi",
+      "Engenho de Dentro",
+      "Méier"
+    ],
+    "São Francisco Xavier": [
+      "Benfica",
+      "Mangueira",
+      "Maracanã",
+      "Rocha",
+      "Vila Isabel"
+    ],
+    "Cocotá": [
+      "Bancários",
+      "Cacuia",
+      "Jardim Carioca",
+      "Praia da Bandeira",
+      "Tauá"
+    ],
+    "Água Santa": [
+      "Encantado",
+      "Engenho de Dentro",
+      "Freguesia (Jacarepaguá)",
+      "Jacarepaguá",
+      "Piedade",
+      "Quintino Bocaiúva"
+    ],
+    "Vigário Geral": [
+      "Irajá",
+      "Jardim América",
+      "Parada de Lucas"
+    ],
+    "Engenho de Dentro": [
+      "Abolição",
+      "Cachambi",
+      "Encantado",
+      "Inhaúma",
+      "Jacarepaguá",
+      "Lins de Vasconcelos",
+      "Méier",
+      "Pilares",
+      "Todos os Santos",
+      "Água Santa"
+    ],
+    "Olaria": [
+      "Complexo do Alemão",
+      "Engenho da Rainha",
+      "Maré",
+      "Penha",
+      "Penha Circular",
+      "Ramos"
+    ],
+    "Penha": [
+      "Engenho da Rainha",
+      "Maré",
+      "Olaria",
+      "Penha Circular"
+    ],
+    "Leme": [
+      "Copacabana",
+      "Urca"
+    ],
+    "Maracanã": [
+      "Mangueira",
+      "Praça da Bandeira",
+      "São Cristóvão",
+      "São Francisco Xavier",
+      "Tijuca",
+      "Vila Isabel"
+    ],
+    "Moneró": [
+      "Jardim Carioca",
+      "Portuguesa",
+      "Tauá"
+    ],
+    "Marechal Hermes": [
+      "Barros Filho",
+      "Bento Ribeiro",
+      "Campo dos Afonsos",
+      "Deodoro",
+      "Guadalupe",
+      "Honório Gurgel",
+      "Rocha Miranda",
+      "Vila Valqueire"
+    ],
+    "Jardim Botânico": [
+      "Alto da Boa Vista",
+      "Gávea",
+      "Humaitá",
+      "Lagoa"
+    ],
+    "Turiaçu": [
+      "Irajá",
+      "Madureira",
+      "Oswaldo Cruz",
+      "Rocha Miranda",
+      "Vaz Lobo"
+    ],
+    "Leblon": [
+      "Gávea",
+      "Ipanema",
+      "Lagoa",
+      "Vidigal"
+    ],
+    "Pitangueiras": [
+      "Cacuia",
+      "Praia da Bandeira",
+      "Zumbi"
+    ],
+    "Anil": [
+      "Freguesia (Jacarepaguá)",
+      "Gardênia Azul",
+      "Jacarepaguá"
+    ],
+    "Vila Kosmos": [
+      "Engenho da Rainha",
+      "Penha Circular",
+      "Tomás Coelho",
+      "Vicente de Carvalho",
+      "Vila da Penha"
+    ],
+    "Ipanema": [
+      "Copacabana",
+      "Lagoa",
+      "Leblon"
+    ],
+    "Jardim Sulacap": [
+      "Campo dos Afonsos",
+      "Realengo",
+      "Tanque",
+      "Taquara",
+      "Vila Militar",
+      "Vila Valqueire"
+    ],
+    "Maria da Graça": [
+      "Cachambi",
+      "Del Castilho",
+      "Higienópolis",
+      "Jacarezinho",
+      "Manguinhos"
+    ],
+    "Campo Grande": [
+      "Bangu",
+      "Cosmos",
+      "Guaratiba",
+      "Inhoaíba",
+      "Jacarepaguá",
+      "Paciência",
+      "Santíssimo",
+      "Senador Camará",
+      "Senador Vasconcelos",
+      "Vargem Grande"
+    ],
+    "Taquara": [
+      "Cidade de Deus",
+      "Curicica",
+      "Jacarepaguá",
+      "Jardim Sulacap",
+      "Pechincha",
+      "Realengo",
+      "Tanque"
+    ],
+    "Deodoro": [
+      "Campo dos Afonsos",
+      "Guadalupe",
+      "Marechal Hermes",
+      "Ricardo de Albuquerque",
+      "Vila Militar"
+    ],
+    "Jardim Guanabara": [
+      "Cacuia",
+      "Galeão",
+      "Jardim Carioca",
+      "Portuguesa"
+    ],
+    "Bento Ribeiro": [
+      "Campinho",
+      "Honório Gurgel",
+      "Marechal Hermes",
+      "Oswaldo Cruz",
+      "Rocha Miranda",
+      "Vila Valqueire"
+    ]
+  },
+  "conglomerates": [
+    [
+      "Santa Cruz",
+      "Engenho da Rainha",
+      "Vigário Geral",
+      "Bonsucesso",
+      "Higienópolis",
+      "Inhaúma",
+      "Cosmos",
+      "Campo dos Afonsos",
+      "Senador Vasconcelos",
+      "Vidigal",
+      "Coelho Neto",
+      "Cavalcanti",
+      "Grumari",
+      "Pavuna",
+      "Tanque",
+      "Maria da Graça",
+      "Ramos",
+      "Joá",
+      "Gamboa",
+      "Jardim Botânico",
+      "Santo Cristo",
+      "Paciência",
+      "Anil",
+      "Deodoro",
+      "Guadalupe",
+      "Engenheiro Leal",
+      "São Francisco Xavier",
+      "Botafogo",
+      "Barra de Guaratiba",
+      "Vicente de Carvalho",
+      "Colégio",
+      "Rocha Miranda",
+      "Penha",
+      "Glória",
+      "Recreio dos Bandeirantes",
+      "Vargem Pequena",
+      "Catumbi",
+      "Caju",
+      "Costa Barros",
+      "Bangu",
+      "Del Castilho",
+      "Santa Teresa",
+      "Parque Colúmbia",
+      "Flamengo",
+      "Campo Grande",
+      "Cordovil",
+      "Itanhangá",
+      "Leblon",
+      "Maracanã",
+      "Mangueira",
+      "Rio Comprido",
+      "Méier",
+      "Leme",
+      "Jacarepaguá",
+      "Barros Filho",
+      "Brás de Pina",
+      "Praça Seca",
+      "Vargem Grande",
+      "Jardim América",
+      "Piedade",
+      "Honório Gurgel",
+      "Cascadura",
+      "Senador Camará",
+      "Parada de Lucas",
+      "Campinho",
+      "Realengo",
+      "Abolição",
+      "Maré",
+      "Camorim",
+      "Pedra de Guaratiba",
+      "Taquara",
+      "Urca",
+      "Lapa",
+      "Sampaio",
+      "Vaz Lobo",
+      "Encantado",
+      "Grajaú",
+      "Vista Alegre",
+      "Padre Miguel",
+      "São Conrado",
+      "Vasco da Gama",
+      "Estácio",
+      "Andaraí",
+      "Vila Kosmos",
+      "Lagoa",
+      "Pechincha",
+      "Riachuelo",
+      "Bento Ribeiro",
+      "Vila Militar",
+      "Manguinhos",
+      "Gericinó",
+      "Pilares",
+      "Barra da Tijuca",
+      "Jacarezinho",
+      "Turiaçu",
+      "Rocha",
+      "Gávea",
+      "Rocinha",
+      "Água Santa",
+      "Gardênia Azul",
+      "Humaitá",
+      "Vila Kennedy",
+      "Penha Circular",
+      "Tomás Coelho",
+      "Vila Valqueire",
+      "Guaratiba",
+      "Marechal Hermes",
+      "Anchieta",
+      "Ricardo de Albuquerque",
+      "Praça da Bandeira",
+      "Olaria",
+      "Irajá",
+      "Jacaré",
+      "Parque Anchieta",
+      "Cidade de Deus",
+      "Vila Isabel",
+      "Madureira",
+      "Centro",
+      "Complexo do Alemão",
+      "Oswaldo Cruz",
+      "Saúde",
+      "Quintino Bocaiúva",
+      "Curicica",
+      "Catete",
+      "Engenho de Dentro",
+      "Cosme Velho",
+      "Todos os Santos",
+      "São Cristóvão",
+      "Inhoaíba",
+      "Copacabana",
+      "Alto da Boa Vista",
+      "Laranjeiras",
+      "Cidade Nova",
+      "Jardim Sulacap",
+      "Freguesia (Jacarepaguá)",
+      "Magalhães Bastos",
+      "Santíssimo",
+      "Vila da Penha",
+      "Lins de Vasconcelos",
+      "Engenho Novo",
+      "Ipanema",
+      "Benfica",
+      "Sepetiba",
+      "Acari",
+      "Tijuca",
+      "Cachambi"
+    ],
+    [
+      "Galeão",
+      "Zumbi",
+      "Ribeira",
+      "Freguesia (Ilha do Governador)",
+      "Bancários",
+      "Jardim Carioca",
+      "Praia da Bandeira",
+      "Cacuia",
+      "Jardim Guanabara",
+      "Moneró",
+      "Tauá",
+      "Cocotá",
+      "Portuguesa",
+      "Pitangueiras"
+    ]
+  ]
+}

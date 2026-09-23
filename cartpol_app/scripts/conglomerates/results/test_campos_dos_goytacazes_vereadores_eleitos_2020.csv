@@ -1,0 +1,26 @@
+﻿municipio,qe,political_id,candidato,full_name,partido,genero,total_votes,concentracao_final,interpretation,total_conglomerates,municipios_map_file,unmatched_in_csv
+CAMPOS DOS GOYTACAZES,8240.0,295382,DR ABDU NEME,ABDU NEME JORGE MAKHLUF NETO,AVANTE,masculino,5574,0.4316,media_baixa,16,neighbors_campos_dos_goytacazes_bairros.json,False
+CAMPOS DOS GOYTACAZES,8240.0,299553,ANDERSON DE MATOS,ANDERSON DE MATOS RIBEIRO,REPUBLICANOS,masculino,4905,0.447,media_baixa,12,neighbors_campos_dos_goytacazes_bairros.json,False
+CAMPOS DOS GOYTACAZES,8240.0,306849,MARQUINHO BACELLAR,MARCOS DA SILVA BACELLAR,SOLIDARIEDADE,masculino,4836,0.4407,media_baixa,15,neighbors_campos_dos_goytacazes_bairros.json,False
+CAMPOS DOS GOYTACAZES,8240.0,294847,IGOR PEREIRA,IGOR GOMES DE AZEVEDO,SOLIDARIEDADE,masculino,3271,0.434,media_baixa,12,neighbors_campos_dos_goytacazes_bairros.json,False
+CAMPOS DOS GOYTACAZES,8240.0,301892,THIAGO RANGEL,THIAGO RANGEL LIMA,PROS,masculino,2755,0.4554,media_baixa,14,neighbors_campos_dos_goytacazes_bairros.json,False
+CAMPOS DOS GOYTACAZES,8240.0,290822,FABIO RIBEIRO,FABIO AUGUSTO VIANA RIBEIRO,PSD,masculino,2537,0.4387,media_baixa,16,neighbors_campos_dos_goytacazes_bairros.json,False
+CAMPOS DOS GOYTACAZES,8240.0,290955,CABO ALONSIMAR,ALONSIMAR DE OLIVEIRA PESSANHA,PODE,masculino,2459,0.4491,media_baixa,14,neighbors_campos_dos_goytacazes_bairros.json,False
+CAMPOS DOS GOYTACAZES,8240.0,289795,FRED RANGEL,FREDERICO DE MATTOS RANGEL,PSD,masculino,2345,0.4631,media_baixa,16,neighbors_campos_dos_goytacazes_bairros.json,False
+CAMPOS DOS GOYTACAZES,8240.0,293482,SILVINHO MARTINS,SILVIO ROBERTO DE OLIVEIRA MARTINS,MDB,masculino,2194,0.5153,media,14,neighbors_campos_dos_goytacazes_bairros.json,False
+CAMPOS DOS GOYTACAZES,8240.0,291718,HELINHO NAHIM,HELIO MONTEZANO DE OLIVEIRA NETO,PTC,masculino,2171,0.4419,media_baixa,16,neighbors_campos_dos_goytacazes_bairros.json,False
+CAMPOS DOS GOYTACAZES,8240.0,292302,BRUNO PEZÃO,BRUNO FERNANDO SANTOS DE AZEVEDO,PL,masculino,2140,0.4284,media_baixa,15,neighbors_campos_dos_goytacazes_bairros.json,False
+CAMPOS DOS GOYTACAZES,8240.0,295379,ANDRÉ OLIVEIRA,ANDRÉ LUIZ GOMES DE OLIVEIRA,AVANTE,masculino,1938,0.4644,media_baixa,15,neighbors_campos_dos_goytacazes_bairros.json,False
+CAMPOS DOS GOYTACAZES,8240.0,299755,FRED MACHADO,CARLOS FREDERICO MACHADO DOS SANTOS,CIDADANIA,masculino,1927,0.474,media_baixa,13,neighbors_campos_dos_goytacazes_bairros.json,False
+CAMPOS DOS GOYTACAZES,8240.0,300636,MARQUINHO DO TRANSPORTE,MARCOS ALCIDES SOUZA DA SILVA,PDT,masculino,1866,0.4454,media_baixa,14,neighbors_campos_dos_goytacazes_bairros.json,False
+CAMPOS DOS GOYTACAZES,8240.0,294848,BETO ABENÇOADO,CARLOS ALBERTO GUIMARÃES,SOLIDARIEDADE,masculino,1805,0.4543,media_baixa,13,neighbors_campos_dos_goytacazes_bairros.json,False
+CAMPOS DOS GOYTACAZES,8240.0,304308,FABINHO ALMEIDA,FÁBIO DE AZEVEDO ALMEIDA,PSB,masculino,1801,0.427,media_baixa,17,neighbors_campos_dos_goytacazes_bairros.json,False
+CAMPOS DOS GOYTACAZES,8240.0,295067,ALVARO CESAR,ÁLVARO CÉSAR GOMES FARIA,PRTB,masculino,1787,0.4692,media_baixa,14,neighbors_campos_dos_goytacazes_bairros.json,False
+CAMPOS DOS GOYTACAZES,8240.0,298781,THUIN,RAPHAEL ELBAS NERI DE THUIN,PTB,masculino,1738,0.4101,media_baixa,15,neighbors_campos_dos_goytacazes_bairros.json,False
+CAMPOS DOS GOYTACAZES,8240.0,290824,DANDINHO DE ALCIONES RIO PRETO,ANDERSON RANGEL BORGES,PSD,masculino,1724,0.4375,media_baixa,13,neighbors_campos_dos_goytacazes_bairros.json,False
+CAMPOS DOS GOYTACAZES,8240.0,301002,JORGINHO VIRGILIO,JORGE WILLIAM MANHAES VIRGILIO,DC,masculino,1592,0.4594,media_baixa,14,neighbors_campos_dos_goytacazes_bairros.json,False
+CAMPOS DOS GOYTACAZES,8240.0,294380,KASSIANO TAVARES,KASSIANO JOSE TAVARES DE SOUZA,PSD,masculino,1546,0.4398,media_baixa,12,neighbors_campos_dos_goytacazes_bairros.json,False
+CAMPOS DOS GOYTACAZES,8240.0,305154,TONY SIQUEIRA,ANTÔNIO FRANCISCO SOARES DE SIQUEIRA FILHO,CIDADANIA,masculino,1539,0.4892,media_baixa,15,neighbors_campos_dos_goytacazes_bairros.json,False
+CAMPOS DOS GOYTACAZES,8240.0,298119,LUCIANO RIO LU,LUCIANO TAVARES DO ESPIRITO SANTO,PDT,masculino,1382,0.4569,media_baixa,11,neighbors_campos_dos_goytacazes_bairros.json,False
+CAMPOS DOS GOYTACAZES,8240.0,301900,JUNINHO VIRGILIO,NEILTON VIRGILIO DE SOUZA JUNIOR,PROS,masculino,1329,0.4298,media_baixa,13,neighbors_campos_dos_goytacazes_bairros.json,False
+CAMPOS DOS GOYTACAZES,8240.0,301342,LEON GOMES,WOLUSTON GOMES CELESTINO,PDT,masculino,1063,0.4855,media_baixa,13,neighbors_campos_dos_goytacazes_bairros.json,False

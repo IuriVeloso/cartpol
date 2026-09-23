@@ -1,0 +1,438 @@
+{
+  "county": "Resende",
+  "source_zip": "/home/iuri/TCC/cartpol-pwa/src/assets/maps/county/Resende.zip",
+  "stats": {
+    "total_regions": 65,
+    "total_neighbors": 146,
+    "avg_neighbors": 4.492307692307692,
+    "max_neighbors": 12,
+    "min_neighbors": 1,
+    "isolated_regions": 0,
+    "region_most_neighbors": "Centro",
+    "region_least_neighbors": "Vila Verde"
+  },
+  "neighbors": {
+    "Vila Nova Liberdade": [
+      "Campos Elíseos",
+      "Parque Jalisco",
+      "Vila Liberdade",
+      "Vila Santa Cecília"
+    ],
+    "Vila Liberdade": [
+      "Indústria IQR",
+      "Vila Huda Rocha",
+      "Vila Julieta",
+      "Vila Nova Liberdade",
+      "Vila Santa Cecília"
+    ],
+    "Parque Exapicor": [
+      "Aeroporto",
+      "Morada da Colina"
+    ],
+    "Boa Vista": [
+      "Alegria II",
+      "Boa Vista II",
+      "Casa da Lua",
+      "Cidade da Alegria",
+      "Condomínio Morada das Agulhas",
+      "Mirante das Agulhas"
+    ],
+    "Jardim Beira Rio": [
+      "Jardim Alegria",
+      "Nova Alegria",
+      "Toyota",
+      "Vila Isabel"
+    ],
+    "Morada da Felicidade": [
+      "Bairro Elite",
+      "Indústria IQR",
+      "Vila Itapuca"
+    ],
+    "Baixada da Itapuca": [
+      "Alegria",
+      "Vila Itapuca"
+    ],
+    "Primavera": [
+      "Toyota",
+      "Vila Isabel"
+    ],
+    "Centro": [
+      "Alto dos Passos",
+      "Barbosa Lima",
+      "Campos Elíseos",
+      "Comercial",
+      "Jardim Brasília",
+      "Manejo",
+      "Montese",
+      "Morro do Batista",
+      "Morro do Machado",
+      "Novo Surubi",
+      "Parque Jalisco",
+      "Vila Elizabeth"
+    ],
+    "Vila Itapuca": [
+      "Aeroporto",
+      "Alegria",
+      "Bairro Elite",
+      "Baixada da Itapuca",
+      "Cidade da Alegria",
+      "Morada da Felicidade"
+    ],
+    "Toyota": [
+      "Jardim Beira Rio",
+      "Nova Alegria",
+      "Primavera",
+      "Vila Isabel"
+    ],
+    "Jardim Brasília II": [
+      "Eucaliptal",
+      "Jardim Brasília",
+      "Parque Ipiranga I",
+      "Vila Santo Amaro"
+    ],
+    "Vila Santa Cecília": [
+      "Jorge Vas Curvo",
+      "Manejo",
+      "Parque Jalisco",
+      "Vila Julieta",
+      "Vila Liberdade",
+      "Vila Nova Liberdade"
+    ],
+    "Bairro Elite": [
+      "Aeroporto",
+      "Indústria IQR",
+      "Morada da Felicidade",
+      "Retiro do Paraíso",
+      "Vila Itapuca",
+      "Vila Santa Isabel"
+    ],
+    "Parque Jalisco": [
+      "Barbosa Lima",
+      "Campos Elíseos",
+      "Centro",
+      "Jorge Vas Curvo",
+      "Manejo",
+      "Vila Nova Liberdade",
+      "Vila Santa Cecília"
+    ],
+    "Morro do Batista": [
+      "Alto dos Passos",
+      "Centro",
+      "Morro do Machado",
+      "Vicentina",
+      "Vila Moderna"
+    ],
+    "Morada do Bosque": [
+      "Condomínio Morada das Agulhas",
+      "Mirante das Agulhas"
+    ],
+    "Alegria": [
+      "Baixada da Itapuca",
+      "Cidade da Alegria",
+      "Vila Itapuca"
+    ],
+    "Boa Vista II": [
+      "Alegria II",
+      "Boa Vista",
+      "Casa da Lua",
+      "Cidade da Alegria",
+      "Mirante da Serra"
+    ],
+    "Barbosa Lima": [
+      "Centro",
+      "Parque Jalisco"
+    ],
+    "Mirante das Agulhas": [
+      "Boa Vista",
+      "Cidade da Alegria",
+      "Condomínio Morada das Agulhas",
+      "Morada da Colina",
+      "Morada do Bosque"
+    ],
+    "Morada da Colina": [
+      "Aeroporto",
+      "Cidade da Alegria",
+      "Mirante das Agulhas",
+      "Parque Exapicor",
+      "Parque Ipiranga I",
+      "Vila Julieta"
+    ],
+    "Parque Ipiranga II": [
+      "Parque Ipiranga I",
+      "Vila Santo Amaro"
+    ],
+    "Vila Elizabeth": [
+      "Alto dos Passos",
+      "Centro",
+      "Jardim Brasília",
+      "Vila Adelaide",
+      "Vila Central"
+    ],
+    "Jorge Vas Curvo": [
+      "Parque Jalisco",
+      "Vila Santa Cecília"
+    ],
+    "Vicentina": [
+      "Alto dos Passos",
+      "Morro do Batista",
+      "Morro do Machado",
+      "Vila Moderna",
+      "Vila Santo Amaro"
+    ],
+    "Parque Ipiranga I": [
+      "Jardim Brasília",
+      "Jardim Brasília II",
+      "Morada da Colina",
+      "Parque Ipiranga II",
+      "Vila Julieta",
+      "Vila Santo Amaro"
+    ],
+    "Aeroporto": [
+      "Bairro Elite",
+      "Cidade da Alegria",
+      "Morada da Colina",
+      "Parque Exapicor",
+      "Retiro do Paraíso",
+      "Vila Itapuca",
+      "Vila Julieta"
+    ],
+    "Alto do Surubi": [
+      "Novo Surubi",
+      "Surubi"
+    ],
+    "Vila Santa Isabel": [
+      "Bairro Elite",
+      "Indústria IQR",
+      "Retiro do Paraíso",
+      "Vila Huda Rocha",
+      "Vila Julieta"
+    ],
+    "Retiro do Paraíso": [
+      "Aeroporto",
+      "Bairro Elite",
+      "Vila Julieta",
+      "Vila Santa Isabel"
+    ],
+    "Mirante da Serra": [
+      "Boa Vista II",
+      "Cidade da Alegria"
+    ],
+    "Vila Isabel": [
+      "Jardim Beira Rio",
+      "Primavera",
+      "Toyota"
+    ],
+    "Surubi": [
+      "Alto do Surubi",
+      "Montese",
+      "Montese II",
+      "Morada do Castelo",
+      "Novo Surubi"
+    ],
+    "Eucaliptal": [
+      "Jardim Brasília",
+      "Jardim Brasília II",
+      "Vila Moderna",
+      "Vila Santo Amaro"
+    ],
+    "Nova Alegria": [
+      "Cidade da Alegria",
+      "Jardim Alegria",
+      "Jardim Beira Rio",
+      "Toyota"
+    ],
+    "Vila Verde": [
+      "Novo Surubi"
+    ],
+    "Vila Julieta": [
+      "Aeroporto",
+      "Jardim Brasília",
+      "Manejo",
+      "Morada da Colina",
+      "Parque Ipiranga I",
+      "Retiro do Paraíso",
+      "Vila Huda Rocha",
+      "Vila Liberdade",
+      "Vila Santa Cecília",
+      "Vila Santa Isabel"
+    ],
+    "Morro do Machado": [
+      "Centro",
+      "Morro do Batista",
+      "Novo Surubi",
+      "Vicentina"
+    ],
+    "Manejo": [
+      "Centro",
+      "Condomínio Horizontal Tácito",
+      "Jardim Brasília",
+      "Parque Jalisco",
+      "Vila Julieta",
+      "Vila Santa Cecília"
+    ],
+    "Condomínio Morada das Agulhas": [
+      "Boa Vista",
+      "Casa da Lua",
+      "Mirante das Agulhas",
+      "Morada do Bosque"
+    ],
+    "Alegria II": [
+      "Boa Vista",
+      "Boa Vista II",
+      "Cidade da Alegria"
+    ],
+    "Vila Santo Amaro": [
+      "Eucaliptal",
+      "Jardim Brasília",
+      "Jardim Brasília II",
+      "Parque Ipiranga I",
+      "Parque Ipiranga II",
+      "Vicentina",
+      "Vila Moderna"
+    ],
+    "Casa da Lua": [
+      "Boa Vista",
+      "Boa Vista II",
+      "Condomínio Morada das Agulhas"
+    ],
+    "Novo Surubi": [
+      "Alto do Surubi",
+      "Centro",
+      "Montese",
+      "Morro do Machado",
+      "Surubi",
+      "Vila Verde"
+    ],
+    "Jardim Alegria": [
+      "Jardim Beira Rio",
+      "Nova Alegria"
+    ],
+    "Vila Adelaide": [
+      "Jardim Brasília",
+      "Vila Central",
+      "Vila Elizabeth",
+      "Vila Moderna"
+    ],
+    "Vila Huda Rocha": [
+      "Indústria IQR",
+      "Vila Julieta",
+      "Vila Liberdade",
+      "Vila Santa Isabel"
+    ],
+    "Indústria IQR": [
+      "Bairro Elite",
+      "Morada da Felicidade",
+      "Vila Huda Rocha",
+      "Vila Liberdade",
+      "Vila Santa Isabel"
+    ],
+    "Condomínio Horizontal Tácito": [
+      "Jardim Brasília",
+      "Manejo"
+    ],
+    "Jardim Brasília": [
+      "Centro",
+      "Condomínio Horizontal Tácito",
+      "Eucaliptal",
+      "Jardim Brasília II",
+      "Manejo",
+      "Parque Ipiranga I",
+      "Vila Adelaide",
+      "Vila Elizabeth",
+      "Vila Julieta",
+      "Vila Moderna",
+      "Vila Santo Amaro"
+    ],
+    "Cidade da Alegria": [
+      "Aeroporto",
+      "Alegria",
+      "Alegria II",
+      "Boa Vista",
+      "Boa Vista II",
+      "Mirante da Serra",
+      "Mirante das Agulhas",
+      "Morada da Colina",
+      "Nova Alegria",
+      "Vila Itapuca"
+    ],
+    "Vila Moderna": [
+      "Alto dos Passos",
+      "Eucaliptal",
+      "Jardim Brasília",
+      "Morro do Batista",
+      "Vicentina",
+      "Vila Adelaide",
+      "Vila Central",
+      "Vila Santo Amaro"
+    ],
+    "Alto dos Passos": [
+      "Centro",
+      "Morro do Batista",
+      "Vicentina",
+      "Vila Central",
+      "Vila Elizabeth",
+      "Vila Moderna"
+    ],
+    "Vila Central": [
+      "Alto dos Passos",
+      "Vila Adelaide",
+      "Vila Elizabeth",
+      "Vila Moderna"
+    ],
+    "Campos Elíseos": [
+      "Alambari",
+      "Centro",
+      "Comercial",
+      "Jardim Tropical",
+      "Parque Jalisco",
+      "Vila Nova Liberdade"
+    ],
+    "Montese II": [
+      "Montese",
+      "Morada do Castelo",
+      "Surubi"
+    ],
+    "Castelo Branco": [
+      "Paraíso"
+    ],
+    "Paraíso": [
+      "Cabral",
+      "Castelo Branco"
+    ],
+    "Montese": [
+      "Centro",
+      "Comercial",
+      "Jardim Tropical",
+      "Montese II",
+      "Morada do Castelo",
+      "Novo Surubi",
+      "Surubi"
+    ],
+    "Alambari": [
+      "Cabral",
+      "Campos Elíseos",
+      "Jardim Tropical"
+    ],
+    "Jardim Tropical": [
+      "Alambari",
+      "Campos Elíseos",
+      "Comercial",
+      "Montese"
+    ],
+    "Comercial": [
+      "Campos Elíseos",
+      "Centro",
+      "Jardim Tropical",
+      "Montese"
+    ],
+    "Morada do Castelo": [
+      "Montese",
+      "Montese II",
+      "Surubi"
+    ],
+    "Cabral": [
+      "Alambari",
+      "Paraíso"
+    ]
+  }
+}

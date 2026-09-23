@@ -1,0 +1,1280 @@
+{
+  "regras": [
+    {
+      "id": 1,
+      "antecedente": [
+        {
+          "variavel": "ruesp_can",
+          "conjunto": "pequena"
+        },
+        {
+          "variavel": "tam_conglomerado",
+          "conjunto": "pequeno"
+        },
+        {
+          "variavel": "qtd_bairros",
+          "conjunto": "pequena"
+        }
+      ],
+      "consequente": {
+        "variavel": "concentracao",
+        "conjunto": "media_baixa"
+      },
+      "certeza": 1.0
+    },
+    {
+      "id": 2,
+      "antecedente": [
+        {
+          "variavel": "ruesp_can",
+          "conjunto": "pequena"
+        },
+        {
+          "variavel": "tam_conglomerado",
+          "conjunto": "medio"
+        },
+        {
+          "variavel": "qtd_bairros",
+          "conjunto": "pequena"
+        }
+      ],
+      "consequente": {
+        "variavel": "concentracao",
+        "conjunto": "baixa"
+      },
+      "certeza": 1.0
+    },
+    {
+      "id": 3,
+      "antecedente": [
+        {
+          "variavel": "ruesp_can",
+          "conjunto": "pequena"
+        },
+        {
+          "variavel": "tam_conglomerado",
+          "conjunto": "grande"
+        },
+        {
+          "variavel": "qtd_bairros",
+          "conjunto": "pequena"
+        }
+      ],
+      "consequente": {
+        "variavel": "concentracao",
+        "conjunto": "baixa"
+      },
+      "certeza": 0.6
+    },
+    {
+      "id": 4,
+      "antecedente": [
+        {
+          "variavel": "ruesp_can",
+          "conjunto": "pequena"
+        },
+        {
+          "variavel": "tam_conglomerado",
+          "conjunto": "grande"
+        },
+        {
+          "variavel": "qtd_bairros",
+          "conjunto": "pequena"
+        }
+      ],
+      "consequente": {
+        "variavel": "concentracao",
+        "conjunto": "muito_baixa"
+      },
+      "certeza": 0.4
+    },
+    {
+      "id": 5,
+      "antecedente": [
+        {
+          "variavel": "ruesp_can",
+          "conjunto": "pequena"
+        },
+        {
+          "variavel": "tam_conglomerado",
+          "conjunto": "muito_grande"
+        },
+        {
+          "variavel": "qtd_bairros",
+          "conjunto": "pequena"
+        }
+      ],
+      "consequente": {
+        "variavel": "concentracao",
+        "conjunto": "muito_baixa"
+      },
+      "certeza": 0.6
+    },
+    {
+      "id": 6,
+      "antecedente": [
+        {
+          "variavel": "ruesp_can",
+          "conjunto": "pequena"
+        },
+        {
+          "variavel": "tam_conglomerado",
+          "conjunto": "muito_grande"
+        },
+        {
+          "variavel": "qtd_bairros",
+          "conjunto": "pequena"
+        }
+      ],
+      "consequente": {
+        "variavel": "concentracao",
+        "conjunto": "baixa"
+      },
+      "certeza": 0.4
+    },
+    {
+      "id": 7,
+      "antecedente": [
+        {
+          "variavel": "ruesp_can",
+          "conjunto": "media"
+        },
+        {
+          "variavel": "tam_conglomerado",
+          "conjunto": "pequeno"
+        },
+        {
+          "variavel": "qtd_bairros",
+          "conjunto": "pequena"
+        }
+      ],
+      "consequente": {
+        "variavel": "concentracao",
+        "conjunto": "alta"
+      },
+      "certeza": 0.6
+    },
+    {
+      "id": 8,
+      "antecedente": [
+        {
+          "variavel": "ruesp_can",
+          "conjunto": "media"
+        },
+        {
+          "variavel": "tam_conglomerado",
+          "conjunto": "pequeno"
+        },
+        {
+          "variavel": "qtd_bairros",
+          "conjunto": "pequena"
+        }
+      ],
+      "consequente": {
+        "variavel": "concentracao",
+        "conjunto": "media_alta"
+      },
+      "certeza": 0.4
+    },
+    {
+      "id": 9,
+      "antecedente": [
+        {
+          "variavel": "ruesp_can",
+          "conjunto": "media"
+        },
+        {
+          "variavel": "tam_conglomerado",
+          "conjunto": "medio"
+        },
+        {
+          "variavel": "qtd_bairros",
+          "conjunto": "pequena"
+        }
+      ],
+      "consequente": {
+        "variavel": "concentracao",
+        "conjunto": "media_alta"
+      },
+      "certeza": 0.8
+    },
+    {
+      "id": 10,
+      "antecedente": [
+        {
+          "variavel": "ruesp_can",
+          "conjunto": "media"
+        },
+        {
+          "variavel": "tam_conglomerado",
+          "conjunto": "medio"
+        },
+        {
+          "variavel": "qtd_bairros",
+          "conjunto": "pequena"
+        }
+      ],
+      "consequente": {
+        "variavel": "concentracao",
+        "conjunto": "alta"
+      },
+      "certeza": 0.2
+    },
+    {
+      "id": 11,
+      "antecedente": [
+        {
+          "variavel": "ruesp_can",
+          "conjunto": "media"
+        },
+        {
+          "variavel": "tam_conglomerado",
+          "conjunto": "grande"
+        },
+        {
+          "variavel": "qtd_bairros",
+          "conjunto": "pequena"
+        }
+      ],
+      "consequente": {
+        "variavel": "concentracao",
+        "conjunto": "media_alta"
+      },
+      "certeza": 0.8
+    },
+    {
+      "id": 12,
+      "antecedente": [
+        {
+          "variavel": "ruesp_can",
+          "conjunto": "media"
+        },
+        {
+          "variavel": "tam_conglomerado",
+          "conjunto": "grande"
+        },
+        {
+          "variavel": "qtd_bairros",
+          "conjunto": "pequena"
+        }
+      ],
+      "consequente": {
+        "variavel": "concentracao",
+        "conjunto": "media"
+      },
+      "certeza": 0.2
+    },
+    {
+      "id": 13,
+      "antecedente": [
+        {
+          "variavel": "ruesp_can",
+          "conjunto": "media"
+        },
+        {
+          "variavel": "tam_conglomerado",
+          "conjunto": "muito_grande"
+        },
+        {
+          "variavel": "qtd_bairros",
+          "conjunto": "pequena"
+        }
+      ],
+      "consequente": {
+        "variavel": "concentracao",
+        "conjunto": "media"
+      },
+      "certeza": 1.0
+    },
+    {
+      "id": 14,
+      "antecedente": [
+        {
+          "variavel": "ruesp_can",
+          "conjunto": "grande"
+        },
+        {
+          "variavel": "tam_conglomerado",
+          "conjunto": "pequeno"
+        },
+        {
+          "variavel": "qtd_bairros",
+          "conjunto": "pequena"
+        }
+      ],
+      "consequente": {
+        "variavel": "concentracao",
+        "conjunto": "altissima"
+      },
+      "certeza": 1.0
+    },
+    {
+      "id": 15,
+      "antecedente": [
+        {
+          "variavel": "ruesp_can",
+          "conjunto": "grande"
+        },
+        {
+          "variavel": "tam_conglomerado",
+          "conjunto": "medio"
+        },
+        {
+          "variavel": "qtd_bairros",
+          "conjunto": "pequena"
+        }
+      ],
+      "consequente": {
+        "variavel": "concentracao",
+        "conjunto": "altissima"
+      },
+      "certeza": 0.6
+    },
+    {
+      "id": 16,
+      "antecedente": [
+        {
+          "variavel": "ruesp_can",
+          "conjunto": "grande"
+        },
+        {
+          "variavel": "tam_conglomerado",
+          "conjunto": "medio"
+        },
+        {
+          "variavel": "qtd_bairros",
+          "conjunto": "pequena"
+        }
+      ],
+      "consequente": {
+        "variavel": "concentracao",
+        "conjunto": "muito_alta"
+      },
+      "certeza": 0.4
+    },
+    {
+      "id": 17,
+      "antecedente": [
+        {
+          "variavel": "ruesp_can",
+          "conjunto": "grande"
+        },
+        {
+          "variavel": "tam_conglomerado",
+          "conjunto": "grande"
+        },
+        {
+          "variavel": "qtd_bairros",
+          "conjunto": "pequena"
+        }
+      ],
+      "consequente": {
+        "variavel": "concentracao",
+        "conjunto": "muito_alta"
+      },
+      "certeza": 0.8
+    },
+    {
+      "id": 18,
+      "antecedente": [
+        {
+          "variavel": "ruesp_can",
+          "conjunto": "grande"
+        },
+        {
+          "variavel": "tam_conglomerado",
+          "conjunto": "grande"
+        },
+        {
+          "variavel": "qtd_bairros",
+          "conjunto": "pequena"
+        }
+      ],
+      "consequente": {
+        "variavel": "concentracao",
+        "conjunto": "altissima"
+      },
+      "certeza": 0.2
+    },
+    {
+      "id": 19,
+      "antecedente": [
+        {
+          "variavel": "ruesp_can",
+          "conjunto": "grande"
+        },
+        {
+          "variavel": "tam_conglomerado",
+          "conjunto": "muito_grande"
+        },
+        {
+          "variavel": "qtd_bairros",
+          "conjunto": "pequena"
+        }
+      ],
+      "consequente": {
+        "variavel": "concentracao",
+        "conjunto": "alta"
+      },
+      "certeza": 0.6
+    },
+    {
+      "id": 20,
+      "antecedente": [
+        {
+          "variavel": "ruesp_can",
+          "conjunto": "grande"
+        },
+        {
+          "variavel": "tam_conglomerado",
+          "conjunto": "muito_grande"
+        },
+        {
+          "variavel": "qtd_bairros",
+          "conjunto": "pequena"
+        }
+      ],
+      "consequente": {
+        "variavel": "concentracao",
+        "conjunto": "muito_alta"
+      },
+      "certeza": 0.4
+    },
+    {
+      "id": 21,
+      "antecedente": [
+        {
+          "variavel": "ruesp_can",
+          "conjunto": "pequena"
+        },
+        {
+          "variavel": "tam_conglomerado",
+          "conjunto": "pequeno"
+        },
+        {
+          "variavel": "qtd_bairros",
+          "conjunto": "media"
+        }
+      ],
+      "consequente": {
+        "variavel": "concentracao",
+        "conjunto": "media_baixa"
+      },
+      "certeza": 1.0
+    },
+    {
+      "id": 22,
+      "antecedente": [
+        {
+          "variavel": "ruesp_can",
+          "conjunto": "pequena"
+        },
+        {
+          "variavel": "tam_conglomerado",
+          "conjunto": "medio"
+        },
+        {
+          "variavel": "qtd_bairros",
+          "conjunto": "media"
+        }
+      ],
+      "consequente": {
+        "variavel": "concentracao",
+        "conjunto": "baixa"
+      },
+      "certeza": 0.6
+    },
+    {
+      "id": 23,
+      "antecedente": [
+        {
+          "variavel": "ruesp_can",
+          "conjunto": "pequena"
+        },
+        {
+          "variavel": "tam_conglomerado",
+          "conjunto": "medio"
+        },
+        {
+          "variavel": "qtd_bairros",
+          "conjunto": "media"
+        }
+      ],
+      "consequente": {
+        "variavel": "concentracao",
+        "conjunto": "media_baixa"
+      },
+      "certeza": 0.4
+    },
+    {
+      "id": 24,
+      "antecedente": [
+        {
+          "variavel": "ruesp_can",
+          "conjunto": "pequena"
+        },
+        {
+          "variavel": "tam_conglomerado",
+          "conjunto": "grande"
+        },
+        {
+          "variavel": "qtd_bairros",
+          "conjunto": "media"
+        }
+      ],
+      "consequente": {
+        "variavel": "concentracao",
+        "conjunto": "baixa"
+      },
+      "certeza": 0.8
+    },
+    {
+      "id": 25,
+      "antecedente": [
+        {
+          "variavel": "ruesp_can",
+          "conjunto": "pequena"
+        },
+        {
+          "variavel": "tam_conglomerado",
+          "conjunto": "grande"
+        },
+        {
+          "variavel": "qtd_bairros",
+          "conjunto": "media"
+        }
+      ],
+      "consequente": {
+        "variavel": "concentracao",
+        "conjunto": "muito_baixa"
+      },
+      "certeza": 0.2
+    },
+    {
+      "id": 26,
+      "antecedente": [
+        {
+          "variavel": "ruesp_can",
+          "conjunto": "pequena"
+        },
+        {
+          "variavel": "tam_conglomerado",
+          "conjunto": "muito_grande"
+        },
+        {
+          "variavel": "qtd_bairros",
+          "conjunto": "media"
+        }
+      ],
+      "consequente": {
+        "variavel": "concentracao",
+        "conjunto": "muito_baixa"
+      },
+      "certeza": 0.8
+    },
+    {
+      "id": 27,
+      "antecedente": [
+        {
+          "variavel": "ruesp_can",
+          "conjunto": "pequena"
+        },
+        {
+          "variavel": "tam_conglomerado",
+          "conjunto": "muito_grande"
+        },
+        {
+          "variavel": "qtd_bairros",
+          "conjunto": "media"
+        }
+      ],
+      "consequente": {
+        "variavel": "concentracao",
+        "conjunto": "baixa"
+      },
+      "certeza": 0.2
+    },
+    {
+      "id": 28,
+      "antecedente": [
+        {
+          "variavel": "ruesp_can",
+          "conjunto": "media"
+        },
+        {
+          "variavel": "tam_conglomerado",
+          "conjunto": "pequeno"
+        },
+        {
+          "variavel": "qtd_bairros",
+          "conjunto": "media"
+        }
+      ],
+      "consequente": {
+        "variavel": "concentracao",
+        "conjunto": "alta"
+      },
+      "certeza": 1.0
+    },
+    {
+      "id": 29,
+      "antecedente": [
+        {
+          "variavel": "ruesp_can",
+          "conjunto": "media"
+        },
+        {
+          "variavel": "tam_conglomerado",
+          "conjunto": "medio"
+        },
+        {
+          "variavel": "qtd_bairros",
+          "conjunto": "media"
+        }
+      ],
+      "consequente": {
+        "variavel": "concentracao",
+        "conjunto": "media_alta"
+      },
+      "certeza": 1.0
+    },
+    {
+      "id": 30,
+      "antecedente": [
+        {
+          "variavel": "ruesp_can",
+          "conjunto": "media"
+        },
+        {
+          "variavel": "tam_conglomerado",
+          "conjunto": "grande"
+        },
+        {
+          "variavel": "qtd_bairros",
+          "conjunto": "media"
+        }
+      ],
+      "consequente": {
+        "variavel": "concentracao",
+        "conjunto": "media"
+      },
+      "certeza": 1.0
+    },
+    {
+      "id": 31,
+      "antecedente": [
+        {
+          "variavel": "ruesp_can",
+          "conjunto": "media"
+        },
+        {
+          "variavel": "tam_conglomerado",
+          "conjunto": "muito_grande"
+        },
+        {
+          "variavel": "qtd_bairros",
+          "conjunto": "media"
+        }
+      ],
+      "consequente": {
+        "variavel": "concentracao",
+        "conjunto": "media"
+      },
+      "certeza": 0.6
+    },
+    {
+      "id": 32,
+      "antecedente": [
+        {
+          "variavel": "ruesp_can",
+          "conjunto": "media"
+        },
+        {
+          "variavel": "tam_conglomerado",
+          "conjunto": "muito_grande"
+        },
+        {
+          "variavel": "qtd_bairros",
+          "conjunto": "media"
+        }
+      ],
+      "consequente": {
+        "variavel": "concentracao",
+        "conjunto": "media_baixa"
+      },
+      "certeza": 0.4
+    },
+    {
+      "id": 33,
+      "antecedente": [
+        {
+          "variavel": "ruesp_can",
+          "conjunto": "grande"
+        },
+        {
+          "variavel": "tam_conglomerado",
+          "conjunto": "pequeno"
+        },
+        {
+          "variavel": "qtd_bairros",
+          "conjunto": "media"
+        }
+      ],
+      "consequente": {
+        "variavel": "concentracao",
+        "conjunto": "muito_alta"
+      },
+      "certeza": 1.0
+    },
+    {
+      "id": 34,
+      "antecedente": [
+        {
+          "variavel": "ruesp_can",
+          "conjunto": "grande"
+        },
+        {
+          "variavel": "tam_conglomerado",
+          "conjunto": "medio"
+        },
+        {
+          "variavel": "qtd_bairros",
+          "conjunto": "media"
+        }
+      ],
+      "consequente": {
+        "variavel": "concentracao",
+        "conjunto": "alta"
+      },
+      "certeza": 0.6
+    },
+    {
+      "id": 35,
+      "antecedente": [
+        {
+          "variavel": "ruesp_can",
+          "conjunto": "grande"
+        },
+        {
+          "variavel": "tam_conglomerado",
+          "conjunto": "medio"
+        },
+        {
+          "variavel": "qtd_bairros",
+          "conjunto": "media"
+        }
+      ],
+      "consequente": {
+        "variavel": "concentracao",
+        "conjunto": "muito_alta"
+      },
+      "certeza": 0.4
+    },
+    {
+      "id": 36,
+      "antecedente": [
+        {
+          "variavel": "ruesp_can",
+          "conjunto": "grande"
+        },
+        {
+          "variavel": "tam_conglomerado",
+          "conjunto": "grande"
+        },
+        {
+          "variavel": "qtd_bairros",
+          "conjunto": "media"
+        }
+      ],
+      "consequente": {
+        "variavel": "concentracao",
+        "conjunto": "alta"
+      },
+      "certeza": 0.8
+    },
+    {
+      "id": 37,
+      "antecedente": [
+        {
+          "variavel": "ruesp_can",
+          "conjunto": "grande"
+        },
+        {
+          "variavel": "tam_conglomerado",
+          "conjunto": "grande"
+        },
+        {
+          "variavel": "qtd_bairros",
+          "conjunto": "media"
+        }
+      ],
+      "consequente": {
+        "variavel": "concentracao",
+        "conjunto": "media_alta"
+      },
+      "certeza": 0.2
+    },
+    {
+      "id": 38,
+      "antecedente": [
+        {
+          "variavel": "ruesp_can",
+          "conjunto": "grande"
+        },
+        {
+          "variavel": "tam_conglomerado",
+          "conjunto": "muito_grande"
+        },
+        {
+          "variavel": "qtd_bairros",
+          "conjunto": "media"
+        }
+      ],
+      "consequente": {
+        "variavel": "concentracao",
+        "conjunto": "media_alta"
+      },
+      "certeza": 0.8
+    },
+    {
+      "id": 39,
+      "antecedente": [
+        {
+          "variavel": "ruesp_can",
+          "conjunto": "grande"
+        },
+        {
+          "variavel": "tam_conglomerado",
+          "conjunto": "muito_grande"
+        },
+        {
+          "variavel": "qtd_bairros",
+          "conjunto": "media"
+        }
+      ],
+      "consequente": {
+        "variavel": "concentracao",
+        "conjunto": "alta"
+      },
+      "certeza": 0.2
+    },
+    {
+      "id": 40,
+      "antecedente": [
+        {
+          "variavel": "ruesp_can",
+          "conjunto": "pequena"
+        },
+        {
+          "variavel": "tam_conglomerado",
+          "conjunto": "pequeno"
+        },
+        {
+          "variavel": "qtd_bairros",
+          "conjunto": "grande"
+        }
+      ],
+      "consequente": {
+        "variavel": "concentracao",
+        "conjunto": "baixa"
+      },
+      "certeza": 1.0
+    },
+    {
+      "id": 41,
+      "antecedente": [
+        {
+          "variavel": "ruesp_can",
+          "conjunto": "pequena"
+        },
+        {
+          "variavel": "tam_conglomerado",
+          "conjunto": "medio"
+        },
+        {
+          "variavel": "qtd_bairros",
+          "conjunto": "grande"
+        }
+      ],
+      "consequente": {
+        "variavel": "concentracao",
+        "conjunto": "muito_baixa"
+      },
+      "certeza": 1.0
+    },
+    {
+      "id": 42,
+      "antecedente": [
+        {
+          "variavel": "ruesp_can",
+          "conjunto": "pequena"
+        },
+        {
+          "variavel": "tam_conglomerado",
+          "conjunto": "grande"
+        },
+        {
+          "variavel": "qtd_bairros",
+          "conjunto": "grande"
+        }
+      ],
+      "consequente": {
+        "variavel": "concentracao",
+        "conjunto": "muito_baixa"
+      },
+      "certeza": 0.8
+    },
+    {
+      "id": 43,
+      "antecedente": [
+        {
+          "variavel": "ruesp_can",
+          "conjunto": "pequena"
+        },
+        {
+          "variavel": "tam_conglomerado",
+          "conjunto": "grande"
+        },
+        {
+          "variavel": "qtd_bairros",
+          "conjunto": "grande"
+        }
+      ],
+      "consequente": {
+        "variavel": "concentracao",
+        "conjunto": "irrisoria"
+      },
+      "certeza": 0.2
+    },
+    {
+      "id": 44,
+      "antecedente": [
+        {
+          "variavel": "ruesp_can",
+          "conjunto": "pequena"
+        },
+        {
+          "variavel": "tam_conglomerado",
+          "conjunto": "muito_grande"
+        },
+        {
+          "variavel": "qtd_bairros",
+          "conjunto": "grande"
+        }
+      ],
+      "consequente": {
+        "variavel": "concentracao",
+        "conjunto": "irrisoria"
+      },
+      "certeza": 1.0
+    },
+    {
+      "id": 45,
+      "antecedente": [
+        {
+          "variavel": "ruesp_can",
+          "conjunto": "media"
+        },
+        {
+          "variavel": "tam_conglomerado",
+          "conjunto": "pequeno"
+        },
+        {
+          "variavel": "qtd_bairros",
+          "conjunto": "grande"
+        }
+      ],
+      "consequente": {
+        "variavel": "concentracao",
+        "conjunto": "media"
+      },
+      "certeza": 1.0
+    },
+    {
+      "id": 46,
+      "antecedente": [
+        {
+          "variavel": "ruesp_can",
+          "conjunto": "media"
+        },
+        {
+          "variavel": "tam_conglomerado",
+          "conjunto": "medio"
+        },
+        {
+          "variavel": "qtd_bairros",
+          "conjunto": "grande"
+        }
+      ],
+      "consequente": {
+        "variavel": "concentracao",
+        "conjunto": "media_baixa"
+      },
+      "certeza": 0.6
+    },
+    {
+      "id": 47,
+      "antecedente": [
+        {
+          "variavel": "ruesp_can",
+          "conjunto": "media"
+        },
+        {
+          "variavel": "tam_conglomerado",
+          "conjunto": "medio"
+        },
+        {
+          "variavel": "qtd_bairros",
+          "conjunto": "grande"
+        }
+      ],
+      "consequente": {
+        "variavel": "concentracao",
+        "conjunto": "media"
+      },
+      "certeza": 0.4
+    },
+    {
+      "id": 48,
+      "antecedente": [
+        {
+          "variavel": "ruesp_can",
+          "conjunto": "media"
+        },
+        {
+          "variavel": "tam_conglomerado",
+          "conjunto": "grande"
+        },
+        {
+          "variavel": "qtd_bairros",
+          "conjunto": "grande"
+        }
+      ],
+      "consequente": {
+        "variavel": "concentracao",
+        "conjunto": "media_baixa"
+      },
+      "certeza": 0.8
+    },
+    {
+      "id": 49,
+      "antecedente": [
+        {
+          "variavel": "ruesp_can",
+          "conjunto": "media"
+        },
+        {
+          "variavel": "tam_conglomerado",
+          "conjunto": "grande"
+        },
+        {
+          "variavel": "qtd_bairros",
+          "conjunto": "grande"
+        }
+      ],
+      "consequente": {
+        "variavel": "concentracao",
+        "conjunto": "baixa"
+      },
+      "certeza": 0.2
+    },
+    {
+      "id": 50,
+      "antecedente": [
+        {
+          "variavel": "ruesp_can",
+          "conjunto": "media"
+        },
+        {
+          "variavel": "tam_conglomerado",
+          "conjunto": "muito_grande"
+        },
+        {
+          "variavel": "qtd_bairros",
+          "conjunto": "grande"
+        }
+      ],
+      "consequente": {
+        "variavel": "concentracao",
+        "conjunto": "baixa"
+      },
+      "certeza": 0.6
+    },
+    {
+      "id": 51,
+      "antecedente": [
+        {
+          "variavel": "ruesp_can",
+          "conjunto": "media"
+        },
+        {
+          "variavel": "tam_conglomerado",
+          "conjunto": "muito_grande"
+        },
+        {
+          "variavel": "qtd_bairros",
+          "conjunto": "grande"
+        }
+      ],
+      "consequente": {
+        "variavel": "concentracao",
+        "conjunto": "media_baixa"
+      },
+      "certeza": 0.4
+    },
+    {
+      "id": 52,
+      "antecedente": [
+        {
+          "variavel": "ruesp_can",
+          "conjunto": "grande"
+        },
+        {
+          "variavel": "tam_conglomerado",
+          "conjunto": "pequeno"
+        },
+        {
+          "variavel": "qtd_bairros",
+          "conjunto": "grande"
+        }
+      ],
+      "consequente": {
+        "variavel": "concentracao",
+        "conjunto": "alta"
+      },
+      "certeza": 1.0
+    },
+    {
+      "id": 53,
+      "antecedente": [
+        {
+          "variavel": "ruesp_can",
+          "conjunto": "grande"
+        },
+        {
+          "variavel": "tam_conglomerado",
+          "conjunto": "medio"
+        },
+        {
+          "variavel": "qtd_bairros",
+          "conjunto": "grande"
+        }
+      ],
+      "consequente": {
+        "variavel": "concentracao",
+        "conjunto": "alta"
+      },
+      "certeza": 0.8
+    },
+    {
+      "id": 54,
+      "antecedente": [
+        {
+          "variavel": "ruesp_can",
+          "conjunto": "grande"
+        },
+        {
+          "variavel": "tam_conglomerado",
+          "conjunto": "medio"
+        },
+        {
+          "variavel": "qtd_bairros",
+          "conjunto": "grande"
+        }
+      ],
+      "consequente": {
+        "variavel": "concentracao",
+        "conjunto": "media_alta"
+      },
+      "certeza": 0.2
+    },
+    {
+      "id": 55,
+      "antecedente": [
+        {
+          "variavel": "ruesp_can",
+          "conjunto": "grande"
+        },
+        {
+          "variavel": "tam_conglomerado",
+          "conjunto": "grande"
+        },
+        {
+          "variavel": "qtd_bairros",
+          "conjunto": "grande"
+        }
+      ],
+      "consequente": {
+        "variavel": "concentracao",
+        "conjunto": "media_alta"
+      },
+      "certeza": 0.6
+    },
+    {
+      "id": 56,
+      "antecedente": [
+        {
+          "variavel": "ruesp_can",
+          "conjunto": "grande"
+        },
+        {
+          "variavel": "tam_conglomerado",
+          "conjunto": "grande"
+        },
+        {
+          "variavel": "qtd_bairros",
+          "conjunto": "grande"
+        }
+      ],
+      "consequente": {
+        "variavel": "concentracao",
+        "conjunto": "alta"
+      },
+      "certeza": 0.4
+    },
+    {
+      "id": 57,
+      "antecedente": [
+        {
+          "variavel": "ruesp_can",
+          "conjunto": "grande"
+        },
+        {
+          "variavel": "tam_conglomerado",
+          "conjunto": "muito_grande"
+        },
+        {
+          "variavel": "qtd_bairros",
+          "conjunto": "grande"
+        }
+      ],
+      "consequente": {
+        "variavel": "concentracao",
+        "conjunto": "media_alta"
+      },
+      "certeza": 0.8
+    },
+    {
+      "id": 58,
+      "antecedente": [
+        {
+          "variavel": "ruesp_can",
+          "conjunto": "grande"
+        },
+        {
+          "variavel": "tam_conglomerado",
+          "conjunto": "muito_grande"
+        },
+        {
+          "variavel": "qtd_bairros",
+          "conjunto": "grande"
+        }
+      ],
+      "consequente": {
+        "variavel": "concentracao",
+        "conjunto": "alta"
+      },
+      "certeza": 0.2
+    }
+  ]
+}

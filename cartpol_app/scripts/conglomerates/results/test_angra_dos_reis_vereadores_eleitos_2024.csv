@@ -1,0 +1,16 @@
+﻿municipio,qe,political_id,candidato,full_name,partido,genero,total_votes,concentracao_final,interpretation,total_conglomerates,municipios_map_file,unmatched_in_csv
+ANGRA DOS REIS,6403.0,638142,KELVEN DA SAUDE,KELVEN CHARLES GUEDES DA SILVA,PP,masculino,7458,0.464,media_baixa,17,neighbors_angra_dos_reis_bairros.json,False
+ANGRA DOS REIS,6403.0,638136,DUDU DO TURISMO,CARLOS EDUARDO DOS SANTOS MILER,PP,masculino,7334,0.4649,media_baixa,17,neighbors_angra_dos_reis_bairros.json,False
+ANGRA DOS REIS,6403.0,632076,MARQUINHO COELHO,MARCOS AURELIO COELHO,SOLIDARIEDADE,masculino,3579,0.4198,media_baixa,14,neighbors_angra_dos_reis_bairros.json,False
+ANGRA DOS REIS,6403.0,639164,JORGINHO BRUM,JORGE BRUM CRISPIM DE CARVALHO,MDB,masculino,6038,0.4992,media_baixa,16,neighbors_angra_dos_reis_bairros.json,False
+ANGRA DOS REIS,6403.0,638148,CHARLES NEVES,CHARLES LINDBERGH NEVES,PP,masculino,5296,0.4836,media_baixa,17,neighbors_angra_dos_reis_bairros.json,False
+ANGRA DOS REIS,6403.0,635032,GREG DUARTE,GREGUY SOARES DUARTE,PL,masculino,2606,0.4551,media_baixa,16,neighbors_angra_dos_reis_bairros.json,False
+ANGRA DOS REIS,6403.0,639161,JANE VEIGA,JANE ROSELI VEIGA,MDB,feminino,4552,0.4742,media_baixa,15,neighbors_angra_dos_reis_bairros.json,False
+ANGRA DOS REIS,6403.0,643527,CHAPINHA,CLEBER ANTONIO DA SILVA,PRD,masculino,2265,0.513,media,13,neighbors_angra_dos_reis_bairros.json,False
+ANGRA DOS REIS,6403.0,639170,NILSINHO BATALHADOR,NILSON DA CONCEIÇÃO,MDB,masculino,4180,0.4663,media_baixa,10,neighbors_angra_dos_reis_bairros.json,False
+ANGRA DOS REIS,6403.0,632517,HELINHO DO SINDICATO,HELIO SEVERINO DE AZEVEDO,AGIR,masculino,2016,0.499,media_baixa,17,neighbors_angra_dos_reis_bairros.json,False
+ANGRA DOS REIS,6403.0,639168,TITI BRASIL,CRISTIANE BRASIL DA SILVA,MDB,masculino,3994,0.4774,media_baixa,15,neighbors_angra_dos_reis_bairros.json,False
+ANGRA DOS REIS,6403.0,639504,SARGENTO THIMOTEO,THIMOTEO CAVALCANTI ALBUQUERQUE DE SÁ,REPUBLICANOS,masculino,3444,0.4243,media_baixa,13,neighbors_angra_dos_reis_bairros.json,False
+ANGRA DOS REIS,6403.0,632525,LEO MARMORARIA,LEANDRO DA SILVA OLIVEIRA,AGIR,masculino,1564,0.4883,media_baixa,13,neighbors_angra_dos_reis_bairros.json,False
+ANGRA DOS REIS,6403.0,638152,EDINHO RODRIGUES,EDSON CARLOS RODRIGUES,AVANTE,masculino,3100,0.4986,media_baixa,15,neighbors_angra_dos_reis_bairros.json,False
+ANGRA DOS REIS,6403.0,635027,MARCELINHO BOB,MARCELO DE ALENCAR FERREIRA,PL,masculino,1546,0.4466,media_baixa,11,neighbors_angra_dos_reis_bairros.json,False

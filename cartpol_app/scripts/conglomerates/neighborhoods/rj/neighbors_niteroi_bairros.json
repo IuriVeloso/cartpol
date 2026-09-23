@@ -1,0 +1,368 @@
+{
+  "county": "Niterói",
+  "source_zip": "/home/iuri/TCC/cartpol-pwa/src/assets/maps/county/Niterói.zip",
+  "stats": {
+    "total_regions": 52,
+    "total_neighbors": 124,
+    "avg_neighbors": 4.769230769230769,
+    "max_neighbors": 10,
+    "min_neighbors": 1,
+    "isolated_regions": 0,
+    "region_most_neighbors": "Santa Rosa",
+    "region_least_neighbors": "Jurujuba"
+  },
+  "neighbors": {
+    "Santa Rosa": [
+      "Cachoeira",
+      "Cubango",
+      "Icaraí",
+      "Ititioca",
+      "Largo da Batalha",
+      "Pé Pequeno",
+      "São Francisco",
+      "Viradouro",
+      "Vital Brasil",
+      "Viçoso Jardim"
+    ],
+    "Caramujo": [
+      "Baldeador",
+      "Fonseca",
+      "Ititioca",
+      "Santa Bárbara",
+      "Sapê",
+      "Viçoso Jardim"
+    ],
+    "Camboinhas": [
+      "Itaipu",
+      "Piratininga",
+      "Santo Antônio"
+    ],
+    "Matapaca": [
+      "Badu",
+      "Maria Paula",
+      "Sapê",
+      "Vila Progresso"
+    ],
+    "Boa Viagem": [
+      "Gragoatá",
+      "Ingá",
+      "São Domingos"
+    ],
+    "Santana": [
+      "Barreto",
+      "Engenhoca",
+      "Fonseca",
+      "Ilha da Conceição",
+      "Ponta D'Areia",
+      "São Lourenço"
+    ],
+    "Fonseca": [
+      "Baldeador",
+      "Caramujo",
+      "Cubango",
+      "Engenhoca",
+      "Santana",
+      "São Lourenço",
+      "Tenente Jardim",
+      "Viçoso Jardim"
+    ],
+    "Charitas": [
+      "Jardim Imbuí",
+      "Jurujuba",
+      "Piratininga",
+      "São Francisco"
+    ],
+    "Vila Progresso": [
+      "Badu",
+      "Cantagalo",
+      "Jacaré",
+      "Maria Paula",
+      "Matapaca",
+      "Muriqui"
+    ],
+    "Icaraí": [
+      "Centro",
+      "Fátima",
+      "Ingá",
+      "Pé Pequeno",
+      "Santa Rosa",
+      "São Francisco",
+      "Vital Brasil"
+    ],
+    "Ponta D'Areia": [
+      "Centro",
+      "Santana",
+      "São Lourenço"
+    ],
+    "Engenho do Mato": [
+      "Itaipu",
+      "Maravista",
+      "Rio do Ouro",
+      "Serra Grande",
+      "Várzea das Moças"
+    ],
+    "Maravista": [
+      "Engenho do Mato",
+      "Itaipu",
+      "Jacaré",
+      "Santo Antônio",
+      "Serra Grande"
+    ],
+    "Sapê": [
+      "Badu",
+      "Caramujo",
+      "Ititioca",
+      "Largo da Batalha",
+      "Maria Paula",
+      "Matapaca",
+      "Santa Bárbara"
+    ],
+    "Ingá": [
+      "Boa Viagem",
+      "Centro",
+      "Icaraí",
+      "Morro do Estado",
+      "São Domingos"
+    ],
+    "Fátima": [
+      "Centro",
+      "Cubango",
+      "Icaraí",
+      "Pé Pequeno",
+      "São Lourenço"
+    ],
+    "São Domingos": [
+      "Boa Viagem",
+      "Centro",
+      "Gragoatá",
+      "Ingá"
+    ],
+    "Rio do Ouro": [
+      "Engenho do Mato",
+      "Jacaré",
+      "Muriqui",
+      "Serra Grande",
+      "Várzea das Moças"
+    ],
+    "Muriqui": [
+      "Jacaré",
+      "Maria Paula",
+      "Rio do Ouro",
+      "Vila Progresso"
+    ],
+    "Cubango": [
+      "Fonseca",
+      "Fátima",
+      "Pé Pequeno",
+      "Santa Rosa",
+      "São Lourenço",
+      "Viçoso Jardim"
+    ],
+    "Baldeador": [
+      "Caramujo",
+      "Fonseca",
+      "Santa Bárbara"
+    ],
+    "Maceió": [
+      "Cachoeira",
+      "Cafubá",
+      "Cantagalo",
+      "Largo da Batalha",
+      "São Francisco"
+    ],
+    "Viradouro": [
+      "Cachoeira",
+      "Largo da Batalha",
+      "Santa Rosa"
+    ],
+    "Santa Bárbara": [
+      "Baldeador",
+      "Caramujo",
+      "Maria Paula",
+      "Sapê"
+    ],
+    "Centro": [
+      "Fátima",
+      "Icaraí",
+      "Ingá",
+      "Morro do Estado",
+      "Ponta D'Areia",
+      "São Domingos",
+      "São Lourenço"
+    ],
+    "Vital Brasil": [
+      "Icaraí",
+      "Santa Rosa",
+      "São Francisco"
+    ],
+    "Largo da Batalha": [
+      "Badu",
+      "Cachoeira",
+      "Cantagalo",
+      "Ititioca",
+      "Maceió",
+      "Santa Rosa",
+      "Sapê",
+      "Viradouro"
+    ],
+    "Cafubá": [
+      "Cantagalo",
+      "Maceió",
+      "Piratininga",
+      "São Francisco"
+    ],
+    "Jurujuba": [
+      "Charitas"
+    ],
+    "Maria Paula": [
+      "Matapaca",
+      "Muriqui",
+      "Santa Bárbara",
+      "Sapê",
+      "Vila Progresso"
+    ],
+    "São Lourenço": [
+      "Centro",
+      "Cubango",
+      "Fonseca",
+      "Fátima",
+      "Ponta D'Areia",
+      "Santana"
+    ],
+    "Jardim Imbuí": [
+      "Charitas",
+      "Piratininga"
+    ],
+    "Pé Pequeno": [
+      "Cubango",
+      "Fátima",
+      "Icaraí",
+      "Santa Rosa"
+    ],
+    "Várzea das Moças": [
+      "Engenho do Mato",
+      "Rio do Ouro",
+      "Serra Grande"
+    ],
+    "Ilha da Conceição": [
+      "Santana"
+    ],
+    "Viçoso Jardim": [
+      "Caramujo",
+      "Cubango",
+      "Fonseca",
+      "Ititioca",
+      "Santa Rosa"
+    ],
+    "Cachoeira": [
+      "Largo da Batalha",
+      "Maceió",
+      "Santa Rosa",
+      "São Francisco",
+      "Viradouro"
+    ],
+    "Itacoatiara": [
+      "Itaipu"
+    ],
+    "Ititioca": [
+      "Caramujo",
+      "Largo da Batalha",
+      "Santa Rosa",
+      "Sapê",
+      "Viçoso Jardim"
+    ],
+    "São Francisco": [
+      "Cachoeira",
+      "Cafubá",
+      "Charitas",
+      "Icaraí",
+      "Maceió",
+      "Piratininga",
+      "Santa Rosa",
+      "Vital Brasil"
+    ],
+    "Tenente Jardim": [
+      "Barreto",
+      "Engenhoca",
+      "Fonseca"
+    ],
+    "Engenhoca": [
+      "Barreto",
+      "Fonseca",
+      "Santana",
+      "Tenente Jardim"
+    ],
+    "Piratininga": [
+      "Cafubá",
+      "Camboinhas",
+      "Cantagalo",
+      "Charitas",
+      "Jacaré",
+      "Jardim Imbuí",
+      "Santo Antônio",
+      "São Francisco"
+    ],
+    "Santo Antônio": [
+      "Camboinhas",
+      "Itaipu",
+      "Jacaré",
+      "Maravista",
+      "Piratininga",
+      "Serra Grande"
+    ],
+    "Badu": [
+      "Cantagalo",
+      "Largo da Batalha",
+      "Matapaca",
+      "Sapê",
+      "Vila Progresso"
+    ],
+    "Jacaré": [
+      "Cantagalo",
+      "Maravista",
+      "Muriqui",
+      "Piratininga",
+      "Rio do Ouro",
+      "Santo Antônio",
+      "Serra Grande",
+      "Vila Progresso"
+    ],
+    "Gragoatá": [
+      "Boa Viagem",
+      "São Domingos"
+    ],
+    "Cantagalo": [
+      "Badu",
+      "Cafubá",
+      "Jacaré",
+      "Largo da Batalha",
+      "Maceió",
+      "Piratininga",
+      "Vila Progresso"
+    ],
+    "Itaipu": [
+      "Camboinhas",
+      "Engenho do Mato",
+      "Itacoatiara",
+      "Maravista",
+      "Santo Antônio"
+    ],
+    "Morro do Estado": [
+      "Centro",
+      "Ingá"
+    ],
+    "Barreto": [
+      "Engenhoca",
+      "Santana",
+      "Tenente Jardim"
+    ],
+    "Serra Grande": [
+      "Engenho do Mato",
+      "Jacaré",
+      "Maravista",
+      "Rio do Ouro",
+      "Santo Antônio",
+      "Várzea das Moças"
+    ]
+  }
+}

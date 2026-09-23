@@ -1,0 +1,3 @@
+﻿candidato,nr,votos,fuzzy,interpretacao,n_conglomerados,bairro_reduto,votos_reduto,LQ_max,bairro_LQ_max,votos_no_bairro_LQ_max,n_LQ_acima_1,HC_total_positivo,moran_global,moran_global_p,n_HH_sig,reduto_quad_LISA,reduto_p_LISA
+CARLO FERREIRA DE CAIADO CASTRO,55622,47423,0.348,baixa,2,Barra da Tijuca,5183,18.8734,Pedra de Guaratiba,3897,27,22057.46,0.4199,0.001,12,HH,0.012
+MARCIO CESAR GOMES RIBEIRO JUNIOR,55005,56754,0.4788,media_baixa,2,Tijuca,5634,10.1121,Riachuelo,844,67,27163.44,0.4026,0.001,12,HH,0.002

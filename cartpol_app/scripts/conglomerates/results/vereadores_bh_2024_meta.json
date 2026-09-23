@@ -1,0 +1,13 @@
+{
+  "filtro": {
+    "cargo": "Vereador",
+    "cidade": "BELO HORIZONTE",
+    "county_id": 1,
+    "ano": 2024,
+    "top_n": 80
+  },
+  "qe": 29451.0,
+  "threshold_percent": 0.05,
+  "neighbors_json": "/home/iuri/TCC/cartpol/cartpol_app/scripts/conglomerates/neighborhoods/neighbors_belo_horizonte_bairros.json",
+  "csv": "/home/iuri/TCC/cartpol/cartpol_app/scripts/conglomerates/results/vereadores_bh_2024.csv"
+}

@@ -1,0 +1,28 @@
+﻿municipio,qe,political_id,candidato,full_name,partido,genero,total_votes,concentracao_final,interpretation,total_conglomerates,municipios_map_file,unmatched_in_csv
+SÃO GONÇALO,13151.0,291120,CLAUDINEI SIQUEIRA,CLAUDINEI PEÇANHA SIQUEIRA,REPUBLICANOS,masculino,6432,0.4464,media_baixa,2,neighbors_sao_goncalo_bairros.json,False
+SÃO GONÇALO,13151.0,297302,PROF JOSEMAR,JOSEMAR PINHEIRO DE CARVALHO,PSOL,masculino,4995,0.4045,media_baixa,4,neighbors_sao_goncalo_bairros.json,False
+SÃO GONÇALO,13151.0,293836,DINEY MARINS,VALDINEI RENATO MARINS,CIDADANIA,masculino,4387,0.5022,media,2,neighbors_sao_goncalo_bairros.json,False
+SÃO GONÇALO,13151.0,293832,BRUNO PORTO,BRUNO PORTO DE ALMEIDA,CIDADANIA,masculino,4255,0.4297,media_baixa,5,neighbors_sao_goncalo_bairros.json,False
+SÃO GONÇALO,13151.0,288835,GLAUBER POUBEL,GLAUBER MEDEIROS POUBEL,PSD,masculino,3499,0.4575,media_baixa,2,neighbors_sao_goncalo_bairros.json,False
+SÃO GONÇALO,13151.0,291644,ROMARIO REGIS,ROMÁRIO REGIS FRANCISCO,PC do B,masculino,3344,0.4086,media_baixa,4,neighbors_sao_goncalo_bairros.json,False
+SÃO GONÇALO,13151.0,294226,CACAU,CLÁUDIO LUIS ABREU DA SILVA,CIDADANIA,masculino,3332,0.4177,media_baixa,5,neighbors_sao_goncalo_bairros.json,False
+SÃO GONÇALO,13151.0,296280,NELSINHO,NELSON RUAS DOS SANTOS FILHO,AVANTE,masculino,3140,0.3946,media_baixa,6,neighbors_sao_goncalo_bairros.json,False
+SÃO GONÇALO,13151.0,294502,ALEXANDRE GOMES,ALEXANDRE DA SILVA GOMES,PV,masculino,3112,0.41,media_baixa,7,neighbors_sao_goncalo_bairros.json,False
+SÃO GONÇALO,13151.0,301454,JALMIR JUNIOR,JALMIR CABRAL JUNIOR,PRTB,masculino,2652,0.4462,media_baixa,3,neighbors_sao_goncalo_bairros.json,False
+SÃO GONÇALO,13151.0,297185,PRISCILLA CANEDO,PRISCILLA CANEDO LOUREIRO,PT,feminino,2644,0.5305,media,6,neighbors_sao_goncalo_bairros.json,False
+SÃO GONÇALO,13151.0,289033,TIÃO NANCI,SEBASTIÃO VICTOR GONÇALVES PEREIRA,PV,masculino,2638,0.4432,media_baixa,3,neighbors_sao_goncalo_bairros.json,False
+SÃO GONÇALO,13151.0,295432,EDUARDO GORDO,ARISTEO EDUARDO TEIXEIRA DA SILVEIRA,DEM,masculino,2578,0.4715,media_baixa,6,neighbors_sao_goncalo_bairros.json,False
+SÃO GONÇALO,13151.0,288697,PEDRO PERICAR,PEDRO RICARDO DE SOUZA CAMPOS,PSL,masculino,2448,0.5151,media,2,neighbors_sao_goncalo_bairros.json,False
+SÃO GONÇALO,13151.0,291045,CICI MALDONADO,ALDECYR MALDONADO,PL,feminino,2425,0.4462,media_baixa,3,neighbors_sao_goncalo_bairros.json,False
+SÃO GONÇALO,13151.0,297403,VINICIUS,MARCUS VINICIUS ALVES DE MOURA,SOLIDARIEDADE,masculino,2405,0.4391,media_baixa,7,neighbors_sao_goncalo_bairros.json,False
+SÃO GONÇALO,13151.0,291100,NATAN,NATAN DA SILVA FERREIRA,REPUBLICANOS,masculino,2289,0.4281,media_baixa,8,neighbors_sao_goncalo_bairros.json,False
+SÃO GONÇALO,13151.0,296263,MAGÚ DOS BRINQUEDOS,MAGNO JOSE DA SILVA,AVANTE,masculino,2073,0.4328,media_baixa,6,neighbors_sao_goncalo_bairros.json,False
+SÃO GONÇALO,13151.0,297446,MARIOLA,JORGE LUIS GASCO,PODE,feminino,2027,0.4938,media_baixa,6,neighbors_sao_goncalo_bairros.json,False
+SÃO GONÇALO,13151.0,298774,LUCAS MUNIZ,LUCAS MUNIZ DE ALMEIDA,PP,masculino,2010,0.4608,media_baixa,4,neighbors_sao_goncalo_bairros.json,False
+SÃO GONÇALO,13151.0,295526,PROFESSOR FELIPE GUARANY,FELIPE TAVARES RODRIGUES GUARANY DA SILVA,PRTB,masculino,1982,0.4044,media_baixa,5,neighbors_sao_goncalo_bairros.json,False
+SÃO GONÇALO,13151.0,296268,BETO DA SERRARIA,ROBERTO NORIVAL FRANCISCO DE CAMPOS,AVANTE,masculino,1941,0.5419,media,7,neighbors_sao_goncalo_bairros.json,False
+SÃO GONÇALO,13151.0,288621,JUAN OLIVEIRA,JUAN PATRICK PINHEIRO DE OLIVEIRA,PL,masculino,1902,0.4074,media_baixa,6,neighbors_sao_goncalo_bairros.json,False
+SÃO GONÇALO,13151.0,304153,PIERO CABRAL,PIERO DE MATOS CABRAL,PMB,masculino,1847,0.5193,media,2,neighbors_sao_goncalo_bairros.json,False
+SÃO GONÇALO,13151.0,291486,PABLO DA AGUA,PABLO HENRIQUE BARRETO DE SOUZA,PT,masculino,1696,0.439,media_baixa,10,neighbors_sao_goncalo_bairros.json,False
+SÃO GONÇALO,13151.0,288036,NEM DA PANK MOTOS,VALMIR SANTOS FILHO,PSL,masculino,1513,0.4701,media_baixa,4,neighbors_sao_goncalo_bairros.json,False
+SÃO GONÇALO,13151.0,288435,ALEX DA AGÊNCIA,ALEX ROCHA BRITO,PATRIOTA,masculino,1366,0.4557,media_baixa,6,neighbors_sao_goncalo_bairros.json,False

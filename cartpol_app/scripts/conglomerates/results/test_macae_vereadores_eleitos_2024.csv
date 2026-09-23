@@ -1,0 +1,18 @@
+﻿municipio,qe,political_id,candidato,full_name,partido,genero,total_votes,concentracao_final,interpretation,total_conglomerates,municipios_map_file,unmatched_in_csv
+MACAÉ,7888.0,633146,CESINHA COM TODO GAS,NILTON CESAR PEREIRA MOREIRA,CIDADANIA,masculino,5476,0.6777,media_alta,3,neighbors_macae_bairros.json,False
+MACAÉ,7888.0,633066,TICO JARDIM,JOSE GERALDO JARDIM FILHO,CIDADANIA,masculino,4467,0.636,media_alta,3,neighbors_macae_bairros.json,False
+MACAÉ,7888.0,633145,ALAN MANSUR,ALAN MANSUR PEREIRA,CIDADANIA,masculino,3733,0.5574,media,3,neighbors_macae_bairros.json,False
+MACAÉ,7888.0,634690,MANU REZENDE,EMANUELLY ALMEIDA REZENDE,MDB,masculino,3206,0.5226,media,3,neighbors_macae_bairros.json,False
+MACAÉ,7888.0,633068,FILIPE MACHADO,FILIPE DA SILVA MACHADO,CIDADANIA,masculino,3198,0.5841,media,3,neighbors_macae_bairros.json,False
+MACAÉ,7888.0,633139,EDSON CHIQUINI,EDSON CHIQUINI DA SILVA,CIDADANIA,masculino,3084,0.5841,media,3,neighbors_macae_bairros.json,False
+MACAÉ,7888.0,633147,PROFESSOR MICHEL,MICHEL ARTHUR FARIA VICENTE,CIDADANIA,masculino,3046,0.5841,media,3,neighbors_macae_bairros.json,False
+MACAÉ,7888.0,630753,DENIS MADUREIRA,DENIS MARQUES RIBEIRO MADUREIRA SABINO,REPUBLICANOS,masculino,3045,0.5841,media,3,neighbors_macae_bairros.json,False
+MACAÉ,7888.0,633143,ROND MACAÉ,RUDNELI DAS NEVES COUTINHO,PSDB,masculino,3038,0.5876,media,3,neighbors_macae_bairros.json,False
+MACAÉ,7888.0,633140,LUCIANO DINIZ,LUCIANO ANTONIO DINIZ CALDAS,CIDADANIA,masculino,2956,0.514,media,3,neighbors_macae_bairros.json,False
+MACAÉ,7888.0,642787,LEANDRA LOPES,LEANDRA LOPES VIEIRA,PT,feminino,2773,0.5572,media,3,neighbors_macae_bairros.json,False
+MACAÉ,7888.0,630738,PAULISTA,ELIAS JORGE DE SOUZA,SOLIDARIEDADE,masculino,2572,0.5816,media,3,neighbors_macae_bairros.json,False
+MACAÉ,7888.0,642792,AMARO LUIZ,AMARO LUIZ ALVES DA SILVA,PV,masculino,1831,0.6505,media_alta,3,neighbors_macae_bairros.json,False
+MACAÉ,7888.0,630750,DRA. MAYARA REZENDE,MAYARA DE SOUZA MACHADO REZENDE TEBALDI,REPUBLICANOS,feminino,1827,0.4596,media_baixa,3,neighbors_macae_bairros.json,False
+MACAÉ,7888.0,634623,RICARDO SALGADO,RICARDO MUYLAERT SALGADO NETO,MDB,masculino,1820,0.6136,media,2,neighbors_macae_bairros.json,False
+MACAÉ,7888.0,642690,MARVEL,MARVEL PAOLINO MAILLET,PV,masculino,1743,0.4848,media_baixa,3,neighbors_macae_bairros.json,False
+MACAÉ,7888.0,631816,LIOMAR QUEIROZ,LIOMAR QUEIROZ DOS SANTOS,AGIR,masculino,1612,0.711,media_alta,2,neighbors_macae_bairros.json,False

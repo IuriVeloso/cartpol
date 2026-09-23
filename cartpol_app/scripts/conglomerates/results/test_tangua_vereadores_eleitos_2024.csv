@@ -1,0 +1,10 @@
+﻿municipio,qe,political_id,candidato,full_name,partido,genero,total_votes,concentracao_final,interpretation,total_conglomerates,municipios_map_file,unmatched_in_csv
+TANGUÁ,2375.0,637097,SERGINHO DO PINHÃO,SÉRGIO DE AGUIAR GONÇALVES,PL,masculino,2220,0.5425,media,3,neighbors_tangua_bairros.json,False
+TANGUÁ,2375.0,631474,SANDRINHO OFICINA DO SOM,ALEXSANDRO GUSMÃO DUARTE,PP,masculino,710,0.7161,media_alta,2,neighbors_tangua_bairros.json,False
+TANGUÁ,2375.0,631470,DELSON FRANCO,DELSON MENEZES FRANCO,PP,masculino,594,0.7876,alta,2,neighbors_tangua_bairros.json,False
+TANGUÁ,2375.0,637133,RAFAEL MAÇULO,RAFAEL MENDONÇA MAÇULO,PSDB,masculino,1094,0.6386,media_alta,2,neighbors_tangua_bairros.json,False
+TANGUÁ,2375.0,629858,RAFAEL MANHÃES,RAFAEL DE CÁSSIO ANTUNES MANHÃES,UNIÃO,masculino,545,0.9184,muito_alta,2,neighbors_tangua_bairros.json,False
+TANGUÁ,2375.0,637706,MULLER SOUZA,MILER SOUZA DE ABREU,MDB,masculino,1036,0.6591,media_alta,2,neighbors_tangua_bairros.json,False
+TANGUÁ,2375.0,637131,LÉO DO JIPE,LEONARDO DOS SANTOS OLIVEIRA,PSDB,masculino,950,0.6674,media_alta,2,neighbors_tangua_bairros.json,False
+TANGUÁ,2375.0,631057,GILMAR DA VAN,GILMAR DE OLIVEIRA CORDEIRO,REPUBLICANOS,masculino,461,0.7876,alta,2,neighbors_tangua_bairros.json,False
+TANGUÁ,2375.0,630875,UÁLLAFE DE OLIVEIRA,UÁLLAFE DE OLIVEIRA SILVA,SOLIDARIEDADE,masculino,440,0.7876,alta,2,neighbors_tangua_bairros.json,False

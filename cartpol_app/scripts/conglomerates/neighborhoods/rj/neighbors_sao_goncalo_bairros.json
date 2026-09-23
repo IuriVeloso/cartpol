@@ -1,0 +1,830 @@
+{
+  "county": "São Gonçalo",
+  "source_zip": "/home/iuri/TCC/cartpol-pwa/src/assets/maps/county/São Gonçalo.zip",
+  "stats": {
+    "total_regions": 110,
+    "total_neighbors": 297,
+    "avg_neighbors": 5.4,
+    "max_neighbors": 11,
+    "min_neighbors": 1,
+    "isolated_regions": 0,
+    "region_most_neighbors": "Colubandê",
+    "region_least_neighbors": "Largo da Ideia"
+  },
+  "neighbors": {
+    "Salgueiro": [
+      "Fazenda dos Mineiros",
+      "Itaúna",
+      "Jardim Catarina",
+      "Palmeiras",
+      "Recanto das Acácias"
+    ],
+    "Galo Branco": [
+      "Centro",
+      "Colubandê",
+      "Estrela do Norte",
+      "Mutondo",
+      "Rocha",
+      "São Miguel"
+    ],
+    "Mutuapira": [
+      "Cruzeiro do Sul",
+      "Itaúna",
+      "Mutuaguaçu",
+      "Mutuá",
+      "Nova Cidade",
+      "Porto da Rosa"
+    ],
+    "Brasilândia": [
+      "Brasilândia II",
+      "Centro",
+      "Porto da Pedra",
+      "Vila Yara",
+      "Zé Garoto II"
+    ],
+    "Itaóca": [
+      "Boa Vista",
+      "Boaçu",
+      "Fazenda dos Mineiros",
+      "Palmeiras",
+      "Porto da Rosa"
+    ],
+    "Mutondo": [
+      "Antonina",
+      "Colubandê",
+      "Galo Branco",
+      "Nova Cidade",
+      "Pedro Alcântara",
+      "São Miguel",
+      "Trindade"
+    ],
+    "Mutuá": [
+      "Antonina",
+      "Boaçu",
+      "Centro",
+      "Cruzeiro do Sul",
+      "Estrela do Norte",
+      "Mutuaguaçu",
+      "Mutuapira",
+      "São Miguel"
+    ],
+    "Itaúna": [
+      "Fazenda dos Mineiros",
+      "Luiz Caçador",
+      "Mutuapira",
+      "Nova Cidade",
+      "Porto da Rosa",
+      "Recanto das Acácias",
+      "Salgueiro"
+    ],
+    "Jardim Alcântara": [
+      "Almerinda",
+      "Coelho",
+      "Colubandê",
+      "Pedro Alcântara",
+      "Raul Veiga"
+    ],
+    "Pedro Alcântara": [
+      "Colubandê",
+      "Jardim Alcântara",
+      "Jardim Catarina",
+      "Mutondo",
+      "Raul Veiga",
+      "Trindade",
+      "Vila Três"
+    ],
+    "Nova Cidade": [
+      "Antonina",
+      "Cruzeiro do Sul",
+      "Itaúna",
+      "Luiz Caçador",
+      "Mutondo",
+      "Mutuapira",
+      "Trindade"
+    ],
+    "São Miguel": [
+      "Antonina",
+      "Estrela do Norte",
+      "Galo Branco",
+      "Mutondo",
+      "Mutuá"
+    ],
+    "Recanto das Acácias": [
+      "Itaúna",
+      "Jardim Catarina",
+      "Luiz Caçador",
+      "Salgueiro"
+    ],
+    "Zé Garoto": [
+      "Centro",
+      "Lindo Parque",
+      "Rocha",
+      "Santa Catarina",
+      "Zé Garoto II"
+    ],
+    "Trindade": [
+      "Jardim Catarina",
+      "Luiz Caçador",
+      "Mutondo",
+      "Nova Cidade",
+      "Pedro Alcântara"
+    ],
+    "Lindo Parque": [
+      "Lindo Parque II",
+      "Rocha",
+      "Santa Catarina",
+      "Santa Catarina II",
+      "Zé Garoto"
+    ],
+    "Porto da Rosa": [
+      "Boaçu",
+      "Fazenda dos Mineiros",
+      "Itaóca",
+      "Itaúna",
+      "Mutuaguaçu",
+      "Mutuapira"
+    ],
+    "Fazenda dos Mineiros": [
+      "Itaóca",
+      "Itaúna",
+      "Palmeiras",
+      "Porto da Rosa",
+      "Salgueiro"
+    ],
+    "Antonina": [
+      "Cruzeiro do Sul",
+      "Mutondo",
+      "Mutuá",
+      "Nova Cidade",
+      "São Miguel"
+    ],
+    "Palmeiras": [
+      "Fazenda dos Mineiros",
+      "Guaxindiba",
+      "Itaóca",
+      "Jardim Catarina",
+      "Salgueiro"
+    ],
+    "Tribobó": [
+      "Colubandê",
+      "Engenho Pequeno",
+      "Engenho Pequeno II",
+      "Tribobó II",
+      "Tribobó III"
+    ],
+    "Engenho Pequeno": [
+      "Colubandê",
+      "Engenho Pequeno II",
+      "Rocha",
+      "Tribobó"
+    ],
+    "Colubandê": [
+      "Almerinda",
+      "Arsenal",
+      "Engenho Pequeno",
+      "Galo Branco",
+      "Jardim Alcântara",
+      "Jardim Nova República",
+      "Mutondo",
+      "Pedro Alcântara",
+      "Rocha",
+      "Tribobó",
+      "Tribobó II"
+    ],
+    "Vila Yara": [
+      "Boaçu",
+      "Brasilândia",
+      "Brasilândia II",
+      "Centro",
+      "Rosane"
+    ],
+    "Centro": [
+      "Boaçu",
+      "Brasilândia",
+      "Estrela do Norte",
+      "Galo Branco",
+      "Mutuá",
+      "Porto da Pedra",
+      "Rocha",
+      "Vila Yara",
+      "Zé Garoto",
+      "Zé Garoto II"
+    ],
+    "Estrela do Norte": [
+      "Centro",
+      "Galo Branco",
+      "Mutuá",
+      "São Miguel"
+    ],
+    "Cruzeiro do Sul": [
+      "Antonina",
+      "Mutuapira",
+      "Mutuá",
+      "Nova Cidade"
+    ],
+    "Rocha": [
+      "Centro",
+      "Colubandê",
+      "Engenho Pequeno",
+      "Engenho Pequeno II",
+      "Galo Branco",
+      "Lindo Parque",
+      "Lindo Parque II",
+      "Zé Garoto"
+    ],
+    "Mutuaguaçu": [
+      "Boaçu",
+      "Mutuapira",
+      "Mutuá",
+      "Porto da Rosa"
+    ],
+    "Boaçu": [
+      "Boa Vista",
+      "Centro",
+      "Itaóca",
+      "Mutuaguaçu",
+      "Mutuá",
+      "Porto da Rosa",
+      "Rosane",
+      "Vila Yara"
+    ],
+    "Luiz Caçador": [
+      "Itaúna",
+      "Jardim Catarina",
+      "Nova Cidade",
+      "Recanto das Acácias",
+      "Trindade"
+    ],
+    "Engenho do Roçado": [
+      "Ipiíba",
+      "Rio do Ouro"
+    ],
+    "Vila Candosa": [
+      "Anaia Grande",
+      "Coelho",
+      "Jardim Amendoeira",
+      "Pacheco"
+    ],
+    "Tribobó II": [
+      "Arsenal",
+      "Colubandê",
+      "Maria Paula",
+      "Maria Paula II",
+      "Tribobó",
+      "Tribobó III"
+    ],
+    "Eliane": [
+      "Anaia Grande",
+      "Ieda",
+      "Sacramento",
+      "Santa Isabel"
+    ],
+    "Raul Veiga": [
+      "Amendoeira",
+      "Coelho",
+      "Jardim Alcântara",
+      "Miriambi",
+      "Pedro Alcântara",
+      "Raul Veiga II",
+      "Vila Três"
+    ],
+    "Ieda": [
+      "Eliane",
+      "Sacramento",
+      "Santa Isabel"
+    ],
+    "Santa Isabel": [
+      "Eliane",
+      "Ieda",
+      "Largo da Idéia II",
+      "Sacramento"
+    ],
+    "Maria Paula": [
+      "Arrastão",
+      "Arsenal",
+      "Maria Paula II",
+      "Tribobó II"
+    ],
+    "Tiradentes": [
+      "Amendoeira",
+      "Lagoinha",
+      "Pacheco"
+    ],
+    "Largo da Ideia": [
+      "Largo da Idéia II"
+    ],
+    "Coelho": [
+      "Almerinda",
+      "Amendoeira",
+      "Jardim Alcântara",
+      "Jardim Amendoeira",
+      "Jockey",
+      "Raul Veiga",
+      "Vila Candosa"
+    ],
+    "Várzea das Moças": [
+      "Rio do Ouro"
+    ],
+    "Jardim Amendoeira": [
+      "Amendoeira",
+      "Coelho",
+      "Pacheco",
+      "Vila Candosa"
+    ],
+    "Sacramento": [
+      "Anaia Grande",
+      "Barracão",
+      "Eliane",
+      "Ieda",
+      "Largo da Idéia II",
+      "Pacheco",
+      "Sacramento II",
+      "Santa Isabel"
+    ],
+    "Arrastão": [
+      "Anaia Pequeno",
+      "Arsenal",
+      "Maria Paula",
+      "Rio do Ouro"
+    ],
+    "Almerinda": [
+      "Coelho",
+      "Colubandê",
+      "Jardim Alcântara",
+      "Jardim Nova República",
+      "Jockey"
+    ],
+    "Lagoinha": [
+      "Amendoeira",
+      "Lagoinha II",
+      "Pacheco",
+      "Tiradentes"
+    ],
+    "Anaia Pequeno": [
+      "Arrastão",
+      "Arsenal",
+      "Ipiíba",
+      "Jardim Nova República",
+      "Jockey",
+      "Rio do Ouro"
+    ],
+    "Anaia Grande": [
+      "Eliane",
+      "Pacheco",
+      "Sacramento",
+      "Vila Candosa"
+    ],
+    "Jardim Nova República": [
+      "Almerinda",
+      "Anaia Pequeno",
+      "Arsenal",
+      "Colubandê",
+      "Jockey"
+    ],
+    "Rio do Ouro": [
+      "Anaia Pequeno",
+      "Arrastão",
+      "Engenho do Roçado",
+      "Ipiíba",
+      "Várzea das Moças"
+    ],
+    "Amendoeira": [
+      "Coelho",
+      "Jardim Amendoeira",
+      "Lagoinha",
+      "Lagoinha II",
+      "Miriambi",
+      "Pacheco",
+      "Raul Veiga",
+      "Tiradentes"
+    ],
+    "Jockey": [
+      "Almerinda",
+      "Anaia Pequeno",
+      "Coelho",
+      "Jardim Nova República"
+    ],
+    "Arsenal": [
+      "Anaia Pequeno",
+      "Arrastão",
+      "Colubandê",
+      "Jardim Nova República",
+      "Maria Paula",
+      "Tribobó II"
+    ],
+    "Ipiíba": [
+      "Anaia Pequeno",
+      "Engenho do Roçado",
+      "Rio do Ouro"
+    ],
+    "Pacheco": [
+      "Amendoeira",
+      "Anaia Grande",
+      "Barracão",
+      "Jardim Amendoeira",
+      "Lagoinha",
+      "Lagoinha II",
+      "Pacheco II",
+      "Sacramento",
+      "Tiradentes",
+      "Vila Candosa"
+    ],
+    "Vila Três": [
+      "Jardim Catarina",
+      "Laranjal",
+      "Miriambi",
+      "Pedro Alcântara",
+      "Raul Veiga",
+      "Raul Veiga II"
+    ],
+    "Laranjal": [
+      "Jardim Catarina",
+      "Lagoinha II",
+      "Miriambi",
+      "Santa Luzia",
+      "Vila Três",
+      "Vista Alegre"
+    ],
+    "Guaxindiba": [
+      "Apolo III",
+      "Bom Retiro",
+      "Gebara",
+      "Jardim Catarina",
+      "Palmeiras",
+      "Santa Luzia"
+    ],
+    "Miriambi": [
+      "Amendoeira",
+      "Lagoinha II",
+      "Laranjal",
+      "Raul Veiga",
+      "Raul Veiga II",
+      "Vila Três"
+    ],
+    "Raul Veiga II": [
+      "Miriambi",
+      "Raul Veiga",
+      "Vila Três"
+    ],
+    "Largo da Idéia II": [
+      "Largo da Ideia",
+      "Monjolo",
+      "Sacramento",
+      "Sacramento II",
+      "Santa Isabel"
+    ],
+    "Bom Retiro": [
+      "Apolo III",
+      "Gebara",
+      "Guaxindiba",
+      "Marambaia",
+      "Santa Luzia",
+      "Vista Alegre"
+    ],
+    "Marambaia": [
+      "Apolo III",
+      "Bom Retiro",
+      "Monjolo",
+      "Vista Alegre"
+    ],
+    "Barracão": [
+      "Guarani",
+      "Monjolo",
+      "Pacheco",
+      "Pacheco II",
+      "Sacramento",
+      "Sacramento II"
+    ],
+    "Gebara": [
+      "Apolo III",
+      "Bom Retiro",
+      "Guaxindiba"
+    ],
+    "Guarani": [
+      "Barracão",
+      "Monjolo",
+      "Pacheco II",
+      "Vista Alegre"
+    ],
+    "Vista Alegre": [
+      "Bom Retiro",
+      "Guarani",
+      "Lagoinha II",
+      "Laranjal",
+      "Marambaia",
+      "Monjolo",
+      "Pacheco II",
+      "Santa Luzia"
+    ],
+    "Lagoinha II": [
+      "Amendoeira",
+      "Lagoinha",
+      "Laranjal",
+      "Miriambi",
+      "Pacheco",
+      "Pacheco II",
+      "Vista Alegre"
+    ],
+    "Jardim Catarina": [
+      "Guaxindiba",
+      "Laranjal",
+      "Luiz Caçador",
+      "Palmeiras",
+      "Pedro Alcântara",
+      "Recanto das Acácias",
+      "Salgueiro",
+      "Santa Luzia",
+      "Trindade",
+      "Vila Três"
+    ],
+    "Sacramento II": [
+      "Barracão",
+      "Largo da Idéia II",
+      "Monjolo",
+      "Sacramento"
+    ],
+    "Monjolo": [
+      "Barracão",
+      "Guarani",
+      "Largo da Idéia II",
+      "Marambaia",
+      "Sacramento II",
+      "Vista Alegre"
+    ],
+    "Apolo III": [
+      "Bom Retiro",
+      "Gebara",
+      "Guaxindiba",
+      "Marambaia"
+    ],
+    "Pacheco II": [
+      "Barracão",
+      "Guarani",
+      "Lagoinha II",
+      "Pacheco",
+      "Vista Alegre"
+    ],
+    "Santa Luzia": [
+      "Bom Retiro",
+      "Guaxindiba",
+      "Jardim Catarina",
+      "Laranjal",
+      "Vista Alegre"
+    ],
+    "Neves": [
+      "Covanca",
+      "Covanca II",
+      "Neves II",
+      "Porto Velho",
+      "Vila Lage"
+    ],
+    "Camarão": [
+      "Parada Quarenta",
+      "Porto Novo",
+      "Porto da Pedra",
+      "Zé Garoto II"
+    ],
+    "Porto da Pedra": [
+      "Boa Vista",
+      "Brasilândia",
+      "Brasilândia II",
+      "Camarão",
+      "Centro",
+      "Porto Novo",
+      "Rosane",
+      "Zé Garoto II"
+    ],
+    "Vila Lage": [
+      "Barro Vermelho",
+      "Covanca",
+      "Neves",
+      "Pita",
+      "Porto Velho"
+    ],
+    "Mangueira": [
+      "Parada Quarenta",
+      "Patronato",
+      "Porto Novo",
+      "Santa Catarina"
+    ],
+    "Brasilândia II": [
+      "Brasilândia",
+      "Porto da Pedra",
+      "Rosane",
+      "Vila Yara"
+    ],
+    "Porto Novo": [
+      "Camarão",
+      "Gradim",
+      "Mangueira",
+      "Parada Quarenta",
+      "Patronato",
+      "Porto da Pedra"
+    ],
+    "Parada Quarenta": [
+      "Camarão",
+      "Mangueira",
+      "Porto Novo",
+      "Santa Catarina",
+      "Zé Garoto II"
+    ],
+    "Covanca": [
+      "Covanca II",
+      "Neves",
+      "Neves II",
+      "Pita",
+      "Vila Lage"
+    ],
+    "Rosane": [
+      "Boa Vista",
+      "Boaçu",
+      "Brasilândia II",
+      "Porto da Pedra",
+      "Vila Yara"
+    ],
+    "Zé Garoto II": [
+      "Brasilândia",
+      "Camarão",
+      "Centro",
+      "Parada Quarenta",
+      "Porto da Pedra",
+      "Santa Catarina",
+      "Zé Garoto"
+    ],
+    "Santa Catarina": [
+      "Barro Vermelho",
+      "Barro Vermelho II",
+      "Lindo Parque",
+      "Mangueira",
+      "Parada Quarenta",
+      "Paraíso",
+      "Patronato",
+      "Santa Catarina II",
+      "Zé Garoto",
+      "Zé Garoto II"
+    ],
+    "Paraíso": [
+      "Barro Vermelho",
+      "Gradim",
+      "Patronato",
+      "Porto da Madame",
+      "Santa Catarina"
+    ],
+    "Porto da Madame": [
+      "Barro Vermelho",
+      "Gradim",
+      "Paraíso",
+      "Porto Velho"
+    ],
+    "Pita": [
+      "Barro Vermelho",
+      "Covanca",
+      "Covanca II",
+      "Pita II",
+      "Vila Lage"
+    ],
+    "Boa Vista": [
+      "Boaçu",
+      "Itaóca",
+      "Porto da Pedra",
+      "Rosane"
+    ],
+    "Barro Vermelho": [
+      "Barro Vermelho II",
+      "Paraíso",
+      "Pita",
+      "Pita II",
+      "Porto Velho",
+      "Porto da Madame",
+      "Santa Catarina",
+      "Vila Lage"
+    ],
+    "Porto Velho": [
+      "Barro Vermelho",
+      "Gradim",
+      "Neves",
+      "Porto da Madame",
+      "Vila Lage"
+    ],
+    "Gradim": [
+      "Paraíso",
+      "Patronato",
+      "Porto Novo",
+      "Porto Velho",
+      "Porto da Madame"
+    ],
+    "Patronato": [
+      "Gradim",
+      "Mangueira",
+      "Paraíso",
+      "Porto Novo",
+      "Santa Catarina"
+    ],
+    "Lindo Parque II": [
+      "Engenho Pequeno II",
+      "Lindo Parque",
+      "Rocha",
+      "Santa Catarina II"
+    ],
+    "Maria Paula II": [
+      "Maria Paula",
+      "Novo México",
+      "Tribobó II",
+      "Tribobó III"
+    ],
+    "Santa Catarina II": [
+      "Barro Vermelho II",
+      "Engenho Pequeno II",
+      "Lindo Parque",
+      "Lindo Parque II",
+      "Santa Catarina"
+    ],
+    "Neves II": [
+      "Covanca",
+      "Covanca II",
+      "Neves",
+      "Tribobó III",
+      "Venda da Cruz"
+    ],
+    "Engenho Pequeno II": [
+      "Barro Vermelho II",
+      "Engenho Pequeno",
+      "Lindo Parque II",
+      "Morro do Castro",
+      "Novo México",
+      "Pita II",
+      "Rocha",
+      "Santa Catarina II",
+      "Tribobó",
+      "Tribobó III",
+      "Zumbi"
+    ],
+    "Morro do Castro": [
+      "Engenho Pequeno II",
+      "Novo México",
+      "Tenente Jardim",
+      "Zumbi"
+    ],
+    "Pita II": [
+      "Barro Vermelho",
+      "Barro Vermelho II",
+      "Covanca II",
+      "Engenho Pequeno II",
+      "Pita",
+      "Zumbi"
+    ],
+    "Zumbi": [
+      "Covanca II",
+      "Engenho Pequeno II",
+      "Morro do Castro",
+      "Pita II",
+      "Tenente Jardim"
+    ],
+    "Tribobó III": [
+      "Covanca II",
+      "Engenho Pequeno II",
+      "Maria Paula II",
+      "Neves II",
+      "Novo México",
+      "Tribobó",
+      "Tribobó II",
+      "Venda da Cruz"
+    ],
+    "Venda da Cruz": [
+      "Covanca II",
+      "Neves II",
+      "Tenente Jardim",
+      "Tribobó III"
+    ],
+    "Novo México": [
+      "Engenho Pequeno II",
+      "Maria Paula II",
+      "Morro do Castro",
+      "Tribobó III"
+    ],
+    "Covanca II": [
+      "Covanca",
+      "Neves",
+      "Neves II",
+      "Pita",
+      "Pita II",
+      "Tenente Jardim",
+      "Tribobó III",
+      "Venda da Cruz",
+      "Zumbi"
+    ],
+    "Tenente Jardim": [
+      "Covanca II",
+      "Morro do Castro",
+      "Venda da Cruz",
+      "Zumbi"
+    ],
+    "Barro Vermelho II": [
+      "Barro Vermelho",
+      "Engenho Pequeno II",
+      "Pita II",
+      "Santa Catarina",
+      "Santa Catarina II"
+    ]
+  }
+}

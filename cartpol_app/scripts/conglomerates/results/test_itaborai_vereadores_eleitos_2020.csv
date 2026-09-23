@@ -1,0 +1,12 @@
+﻿municipio,qe,political_id,candidato,full_name,partido,genero,total_votes,concentracao_final,interpretation,total_conglomerates,municipios_map_file,unmatched_in_csv
+ITABORAÍ,10169.0,290086,ELBER CORREA,ELBER CORREA DA SILVA,REPUBLICANOS,masculino,4424,0.4299,media_baixa,8,neighbors_itaborai_bairros.json,False
+ITABORAÍ,10169.0,297739,PAULO NEY,PAULO NEY GUIMARAES PINA,PATRIOTA,masculino,3860,0.4411,media_baixa,6,neighbors_itaborai_bairros.json,False
+ITABORAÍ,10169.0,299066,ROGERIO FILGUEIRAS,ROGERIO FILGUEIRAS ELEUTERIO,PP,masculino,3166,0.3643,baixa,7,neighbors_itaborai_bairros.json,False
+ITABORAÍ,10169.0,289731,ORLANDO PIT,ANTONIO ORLANDO BRITO DE LIMA,PSD,masculino,2854,0.4789,media_baixa,6,neighbors_itaborai_bairros.json,False
+ITABORAÍ,10169.0,300028,CESAR MOREIRA,PAULO CESAR MOREIRA,PSC,masculino,2369,0.4527,media_baixa,4,neighbors_itaborai_bairros.json,False
+ITABORAÍ,10169.0,297742,ALEXANDRE FONSECA DO COQUEIRO,ALEXANDRE DA FONSECA SANT ANA,PATRIOTA,masculino,2263,0.4949,media_baixa,9,neighbors_itaborai_bairros.json,False
+ITABORAÍ,10169.0,306217,RAMON VIEIRA,RAMON VIEIRA FAUSTO SANTOS,PP,masculino,2262,0.588,media,5,neighbors_itaborai_bairros.json,False
+ITABORAÍ,10169.0,293963,MARQUINHO ORELHA,MARCO AURELIO AZEREDO DE CARVALHO,PL,masculino,2194,0.4045,media_baixa,8,neighbors_itaborai_bairros.json,False
+ITABORAÍ,10169.0,300086,MARCOS ALVES,MARCOS ALVES DE AZEVEDO,PL,masculino,1950,0.3653,baixa,10,neighbors_itaborai_bairros.json,False
+ITABORAÍ,10169.0,288627,MARCÃO DA SAÚDE,MARCO AURELIO FARIAS MOREIRA,PROS,masculino,1234,0.443,media_baixa,7,neighbors_itaborai_bairros.json,False
+ITABORAÍ,10169.0,306534,NINO DA AUTO ESCOLA,EDIO ANTONIO ROGRIGUES NETO,PSL,masculino,1168,0.4039,media_baixa,8,neighbors_itaborai_bairros.json,False

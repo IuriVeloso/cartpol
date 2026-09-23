@@ -1,0 +1,74 @@
+{
+  "county": "Bom Jesus do Itabapoana",
+  "source_zip": "/home/iuri/TCC/cartpol-pwa/src/assets/maps/county/Bom Jesus do Itabapoana.zip",
+  "stats": {
+    "total_regions": 11,
+    "total_neighbors": 18,
+    "avg_neighbors": 3.272727272727273,
+    "max_neighbors": 7,
+    "min_neighbors": 1,
+    "isolated_regions": 0,
+    "region_most_neighbors": "Centro",
+    "region_least_neighbors": "Santa Terezinha"
+  },
+  "neighbors": {
+    "Centro": [
+      "Bairro Novo",
+      "Bela Vista",
+      "Jardim Valéria",
+      "José Lima",
+      "Oscar Campos",
+      "Pimentel Marques",
+      "Santa Rosa"
+    ],
+    "Jorge Assis de Oliveira (Asa Branca)": [
+      "Bairro Novo",
+      "Lia Márcia",
+      "Oscar Campos"
+    ],
+    "Santa Terezinha": [
+      "Jardim Valéria"
+    ],
+    "Jardim Valéria": [
+      "Centro",
+      "Oscar Campos",
+      "Santa Terezinha"
+    ],
+    "Pimentel Marques": [
+      "Bela Vista",
+      "Centro"
+    ],
+    "José Lima": [
+      "Bairro Novo",
+      "Centro",
+      "Lia Márcia"
+    ],
+    "Lia Márcia": [
+      "Bairro Novo",
+      "Jorge Assis de Oliveira (Asa Branca)",
+      "José Lima"
+    ],
+    "Bairro Novo": [
+      "Centro",
+      "Jorge Assis de Oliveira (Asa Branca)",
+      "José Lima",
+      "Lia Márcia",
+      "Oscar Campos"
+    ],
+    "Oscar Campos": [
+      "Bairro Novo",
+      "Centro",
+      "Jardim Valéria",
+      "Jorge Assis de Oliveira (Asa Branca)"
+    ],
+    "Bela Vista": [
+      "Centro",
+      "Pimentel Marques",
+      "Santa Rosa"
+    ],
+    "Santa Rosa": [
+      "Bela Vista",
+      "Centro"
+    ]
+  }
+}

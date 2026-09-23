@@ -1,0 +1,120 @@
+{
+  "county": "São João de Meriti",
+  "source_zip": "/home/iuri/TCC/cartpol-pwa/src/assets/maps/county/São João de Meriti.zip",
+  "stats": {
+    "total_regions": 16,
+    "total_neighbors": 36,
+    "avg_neighbors": 4.5,
+    "max_neighbors": 7,
+    "min_neighbors": 2,
+    "isolated_regions": 0,
+    "region_most_neighbors": "Jardim Meriti",
+    "region_least_neighbors": "Jardim Metrópole"
+  },
+  "neighbors": {
+    "Jardim Sumaré": [
+      "Jardim Metrópole",
+      "Jardim Paraíso",
+      "Parque Araruama",
+      "Venda Velha",
+      "Vilar dos Teles"
+    ],
+    "Centro": [
+      "Engenheiro Belford",
+      "Jardim Meriti",
+      "Parque Araruama",
+      "Venda Velha",
+      "Vila Rosali",
+      "Vila Tiradentes"
+    ],
+    "Vila Rosali": [
+      "Agostinho Porto",
+      "Centro",
+      "Coelho da Rocha",
+      "Jardim Meriti",
+      "Vila Tiradentes"
+    ],
+    "Jardim Metrópole": [
+      "Jardim Paraíso",
+      "Jardim Sumaré"
+    ],
+    "Jardim Meriti": [
+      "Agostinho Porto",
+      "Centro",
+      "Coelho da Rocha",
+      "Venda Velha",
+      "Vila Rosali",
+      "Vilar dos Teles",
+      "Éden"
+    ],
+    "Venda Velha": [
+      "Centro",
+      "Jardim Meriti",
+      "Jardim Sumaré",
+      "Parque Araruama",
+      "Vilar dos Teles"
+    ],
+    "Vilar dos Teles": [
+      "Coelho da Rocha",
+      "Jardim Meriti",
+      "Jardim Paraíso",
+      "Jardim Sumaré",
+      "Venda Velha"
+    ],
+    "Parque Araruama": [
+      "Centro",
+      "Jardim Sumaré",
+      "Venda Velha"
+    ],
+    "Jardim Paraíso": [
+      "Jardim Metrópole",
+      "Jardim Sumaré",
+      "Vilar dos Teles"
+    ],
+    "Engenheiro Belford": [
+      "Centro",
+      "São Matheus",
+      "Vila Tiradentes"
+    ],
+    "Agostinho Porto": [
+      "Coelho da Rocha",
+      "Jardim Meriti",
+      "Vila Rosali",
+      "Vila Tiradentes",
+      "Éden"
+    ],
+    "Coelho da Rocha": [
+      "Agostinho Porto",
+      "Jardim Meriti",
+      "Vila Rosali",
+      "Vilar dos Teles",
+      "Éden"
+    ],
+    "Éden": [
+      "Agostinho Porto",
+      "Coelho da Rocha",
+      "Jardim Meriti",
+      "Tomazinho",
+      "Vila Tiradentes"
+    ],
+    "Vila Tiradentes": [
+      "Agostinho Porto",
+      "Centro",
+      "Engenheiro Belford",
+      "São Matheus",
+      "Tomazinho",
+      "Vila Rosali",
+      "Éden"
+    ],
+    "São Matheus": [
+      "Engenheiro Belford",
+      "Tomazinho",
+      "Vila Tiradentes"
+    ],
+    "Tomazinho": [
+      "São Matheus",
+      "Vila Tiradentes",
+      "Éden"
+    ]
+  }
+}

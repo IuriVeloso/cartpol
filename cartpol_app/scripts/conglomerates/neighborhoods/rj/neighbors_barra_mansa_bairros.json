@@ -1,0 +1,566 @@
+{
+  "county": "Barra Mansa",
+  "source_zip": "/home/iuri/TCC/cartpol-pwa/src/assets/maps/county/Barra Mansa.zip",
+  "stats": {
+    "total_regions": 83,
+    "total_neighbors": 192,
+    "avg_neighbors": 4.626506024096385,
+    "max_neighbors": 12,
+    "min_neighbors": 1,
+    "isolated_regions": 0,
+    "region_most_neighbors": "Santa Clara",
+    "region_least_neighbors": "Moinho de Vento"
+  },
+  "neighbors": {
+    "Nove de Abril": [
+      "Assunção",
+      "Boa Vista II",
+      "Malvinas",
+      "Metalúrgico",
+      "São Carlos",
+      "São Sebastião"
+    ],
+    "Colônia Santo Antônio": [
+      "Bocaininha",
+      "Cantagalo",
+      "Esperança",
+      "Santa Maria II",
+      "Vila Maria",
+      "Vila Ursulino"
+    ],
+    "Mangueira": [
+      "Boa Vista II",
+      "Cajueiro",
+      "Minerlândia",
+      "Paraíso",
+      "Residencial Ponte Alta",
+      "São Sebastião"
+    ],
+    "Boa Vista II": [
+      "Boa Vista I",
+      "Malvinas",
+      "Mangueira",
+      "Nove de Abril",
+      "Paraíso",
+      "São Carlos",
+      "São Sebastião"
+    ],
+    "São Francisco de Assis": [
+      "Getúlio Vargas",
+      "Residencial Cristo Redentor",
+      "Santa Izabel",
+      "Santa Rosa",
+      "Vila Coringa",
+      "Vila Orlandélia"
+    ],
+    "Santa Rosa": [
+      "Ano Bom",
+      "Residencial Cristo Redentor",
+      "São Francisco de Assis",
+      "Vila Coringa"
+    ],
+    "Verbo Divino": [
+      "Abelhas",
+      "Centro",
+      "Cotiara"
+    ],
+    "Morada da Granja II": [
+      "Minerlândia",
+      "Morada da Granja I",
+      "São Sebastião"
+    ],
+    "Santa Rita": [
+      "Boa Vista I",
+      "Jardim Guanabara",
+      "Jardim Redentor",
+      "Malvinas"
+    ],
+    "Santa Lúcia": [
+      "Goiabal",
+      "Jardim Marilú",
+      "Santa Clara",
+      "São Genaro"
+    ],
+    "Jardim Alice": [
+      "Barbará",
+      "Boa Vista I",
+      "Piteiras",
+      "São Judas Tadeu",
+      "Vila Principal"
+    ],
+    "Presidente Dutra": [
+      "Jardim Primavera",
+      "Nova Esperança",
+      "Rozelândia II",
+      "Santa Clara"
+    ],
+    "Vista Bela": [
+      "Jardim américa",
+      "Santa Clara",
+      "Vila Independência"
+    ],
+    "Jardim Guanabara": [
+      "Assunção",
+      "Malvinas",
+      "Santa Rita"
+    ],
+    "Vila Principal": [
+      "Boa Vista I",
+      "Jardim Alice",
+      "Piteiras"
+    ],
+    "Paraíso": [
+      "Boa Vista I",
+      "Boa Vista II",
+      "Cajueiro",
+      "Mangueira",
+      "Ponte Alta",
+      "São Judas Tadeu"
+    ],
+    "Vila Ursulino": [
+      "Colônia Santo Antônio",
+      "Esperança",
+      "Santa Maria II"
+    ],
+    "Santa Inês": [
+      "Metalúrgico",
+      "Morada da Granja I",
+      "São Sebastião"
+    ],
+    "Santa Maria II": [
+      "Bocaininha",
+      "Colônia Santo Antônio",
+      "Esperança",
+      "Vila Maria",
+      "Vila Ursulino"
+    ],
+    "Aiuruoca": [
+      "Belo Horizonte",
+      "Jardim Vista Alegre",
+      "Vista Alegre"
+    ],
+    "Jardim Vista Alegre": [
+      "Aiuruoca",
+      "Belo Horizonte",
+      "Vila Nova",
+      "Vista Alegre"
+    ],
+    "Apóstolo Paulo": [
+      "Boa Sorte",
+      "Centro",
+      "Estamparia",
+      "Monte Cristo"
+    ],
+    "Barbará": [
+      "Boa Sorte",
+      "Estamparia",
+      "Jardim Alice",
+      "Piteiras",
+      "São Judas Tadeu",
+      "Vila Elmira"
+    ],
+    "Santa Clara": [
+      "Bela Vista",
+      "Goiabal",
+      "Jardim Marilú",
+      "Jardim Primavera",
+      "Jardim américa",
+      "Nova Esperança",
+      "Presidente Dutra",
+      "Santa Lúcia",
+      "São Luiz",
+      "São Pedro",
+      "Vila Independência",
+      "Vista Bela"
+    ],
+    "Moinho de Vento": [
+      "Boa Vista I"
+    ],
+    "Vila Coringa": [
+      "Ano Bom",
+      "Jardim Central",
+      "Santa Izabel",
+      "Santa Rosa",
+      "São Francisco de Assis",
+      "Vila Brígida",
+      "Vila Nova"
+    ],
+    "Vila Independência": [
+      "Abelhas",
+      "Cotiara",
+      "Jardim américa",
+      "Macuco",
+      "Monte Cristo",
+      "Quilômetro Quatro",
+      "Santa Clara",
+      "São Pedro",
+      "Vista Bela"
+    ],
+    "Jardim Marilú": [
+      "Goiabal",
+      "Quilômetro Quatro",
+      "Santa Clara",
+      "Santa Lúcia",
+      "São Genaro",
+      "São Pedro"
+    ],
+    "São Genaro": [
+      "Jardim Marilú",
+      "Quilômetro Quatro",
+      "Santa Lúcia"
+    ],
+    "Quilômetro Quatro": [
+      "Jardim Marilú",
+      "Macuco",
+      "São Domingos",
+      "São Genaro",
+      "São Pedro",
+      "Vila Independência"
+    ],
+    "São Sebastião": [
+      "Boa Vista II",
+      "Mangueira",
+      "Metalúrgico",
+      "Minerlândia",
+      "Morada da Granja I",
+      "Morada da Granja II",
+      "Nove de Abril",
+      "Santa Inês"
+    ],
+    "Morada da Granja I": [
+      "Morada da Granja II",
+      "Santa Inês",
+      "São Sebastião"
+    ],
+    "Jardim américa": [
+      "Monte Cristo",
+      "Santa Clara",
+      "São Luiz",
+      "Vila Independência",
+      "Vista Bela"
+    ],
+    "Goiabal": [
+      "Jardim Marilú",
+      "Santa Clara",
+      "Santa Lúcia"
+    ],
+    "Cantagalo": [
+      "Bocaininha",
+      "Colônia Santo Antônio",
+      "Macuco",
+      "Siderlândia",
+      "São Domingos",
+      "São Silvestre",
+      "São Vicente"
+    ],
+    "Monte Cristo": [
+      "Abelhas",
+      "Apóstolo Paulo",
+      "Boa Sorte",
+      "Centro",
+      "Jardim américa",
+      "São Luiz",
+      "Vila Independência"
+    ],
+    "Belo Horizonte": [
+      "Aiuruoca",
+      "Jardim Vista Alegre"
+    ],
+    "Vila Elmira": [
+      "Barbará",
+      "Ponte Alta",
+      "São Judas Tadeu"
+    ],
+    "Governador Roberto Silveira": [
+      "Centro",
+      "Jardim Boa Vista",
+      "Saudade"
+    ],
+    "Piteiras": [
+      "Barbará",
+      "Boa Sorte",
+      "Jardim Alice",
+      "Vila Principal"
+    ],
+    "Malvinas": [
+      "Assunção",
+      "Boa Vista I",
+      "Boa Vista II",
+      "Jardim Guanabara",
+      "Nove de Abril",
+      "Santa Rita",
+      "São Carlos"
+    ],
+    "Vila Nova": [
+      "Jardim Central",
+      "Jardim Vista Alegre",
+      "Vila Brígida",
+      "Vila Coringa",
+      "Vista Alegre"
+    ],
+    "São Silvestre": [
+      "Cantagalo",
+      "Cotiara",
+      "Jardim Boa Vista",
+      "Macuco",
+      "São Vicente"
+    ],
+    "Cajueiro": [
+      "Mangueira",
+      "Paraíso",
+      "Ponte Alta",
+      "Residencial Ponte Alta"
+    ],
+    "Boa Sorte": [
+      "Apóstolo Paulo",
+      "Barbará",
+      "Estamparia",
+      "Monte Cristo",
+      "Nova Esperança",
+      "Piteiras",
+      "São Luiz"
+    ],
+    "Macuco": [
+      "Cantagalo",
+      "Cotiara",
+      "Quilômetro Quatro",
+      "São Domingos",
+      "São Silvestre",
+      "Vila Independência"
+    ],
+    "Estamparia": [
+      "Apóstolo Paulo",
+      "Barbará",
+      "Boa Sorte",
+      "Centro"
+    ],
+    "Centro": [
+      "Abelhas",
+      "Apóstolo Paulo",
+      "Cotiara",
+      "Estamparia",
+      "Governador Roberto Silveira",
+      "Jardim Boa Vista",
+      "Monte Cristo",
+      "Verbo Divino"
+    ],
+    "Bocaininha": [
+      "Cantagalo",
+      "Colônia Santo Antônio",
+      "Jardim Boa Vista",
+      "Santa Maria II",
+      "Saudade",
+      "São Vicente",
+      "Vila Maria"
+    ],
+    "São Vicente": [
+      "Bocaininha",
+      "Cantagalo",
+      "Jardim Boa Vista",
+      "São Silvestre"
+    ],
+    "Getúlio Vargas": [
+      "Ano Bom",
+      "São Francisco de Assis",
+      "Vale do Paraíba",
+      "Vila Orlandélia"
+    ],
+    "São Luiz": [
+      "Boa Sorte",
+      "Jardim américa",
+      "Monte Cristo",
+      "Nova Esperança",
+      "Santa Clara"
+    ],
+    "Nova Esperança": [
+      "Boa Sorte",
+      "Presidente Dutra",
+      "Rozelândia",
+      "Rozelândia II",
+      "Santa Clara",
+      "São Luiz"
+    ],
+    "Vila Orlandélia": [
+      "Ano Bom",
+      "Getúlio Vargas",
+      "Residencial Cristo Redentor",
+      "São Francisco de Assis"
+    ],
+    "Assunção": [
+      "Jardim Guanabara",
+      "Malvinas",
+      "Metalúrgico",
+      "Nove de Abril"
+    ],
+    "Metalúrgico": [
+      "Assunção",
+      "Nove de Abril",
+      "Santa Inês",
+      "São Sebastião"
+    ],
+    "Minerlândia": [
+      "Mangueira",
+      "Morada da Granja II",
+      "São Sebastião"
+    ],
+    "Jardim Boa Vista": [
+      "Bocaininha",
+      "Centro",
+      "Cotiara",
+      "Governador Roberto Silveira",
+      "Saudade",
+      "São Silvestre",
+      "São Vicente"
+    ],
+    "Jardim Primavera": [
+      "Bela Vista",
+      "Presidente Dutra",
+      "Rozelândia",
+      "Rozelândia II",
+      "Santa Clara"
+    ],
+    "Vila Brígida": [
+      "Jardim Central",
+      "Vila Coringa",
+      "Vila Nova"
+    ],
+    "Siderlândia": [
+      "Cantagalo",
+      "São Domingos"
+    ],
+    "Cotiara": [
+      "Abelhas",
+      "Centro",
+      "Jardim Boa Vista",
+      "Macuco",
+      "São Silvestre",
+      "Verbo Divino",
+      "Vila Independência"
+    ],
+    "Ano Bom": [
+      "Getúlio Vargas",
+      "Residencial Cristo Redentor",
+      "Santa Rosa",
+      "Vale do Paraíba",
+      "Vila Coringa",
+      "Vila Orlandélia"
+    ],
+    "Jardim Central": [
+      "Vila Brígida",
+      "Vila Coringa",
+      "Vila Nova"
+    ],
+    "São Domingos": [
+      "Cantagalo",
+      "Macuco",
+      "Quilômetro Quatro",
+      "Siderlândia"
+    ],
+    "São Carlos": [
+      "Boa Vista II",
+      "Malvinas",
+      "Nove de Abril"
+    ],
+    "Santa Izabel": [
+      "São Francisco de Assis",
+      "Vila Coringa"
+    ],
+    "Vista Alegre": [
+      "Aiuruoca",
+      "Jardim Vista Alegre",
+      "Vila Nova"
+    ],
+    "Rozelândia": [
+      "Bela Vista",
+      "Jardim Primavera",
+      "Nova Esperança",
+      "Rozelândia II"
+    ],
+    "São Judas Tadeu": [
+      "Barbará",
+      "Boa Vista I",
+      "Jardim Alice",
+      "Paraíso",
+      "Ponte Alta",
+      "Vila Elmira"
+    ],
+    "Bela Vista": [
+      "Jardim Primavera",
+      "Rozelândia",
+      "Santa Clara"
+    ],
+    "Residencial Ponte Alta": [
+      "Cajueiro",
+      "Mangueira"
+    ],
+    "Vila Maria": [
+      "Bocaininha",
+      "Colônia Santo Antônio",
+      "Esperança",
+      "Santa Maria II",
+      "Saudade"
+    ],
+    "Saudade": [
+      "Bocaininha",
+      "Governador Roberto Silveira",
+      "Jardim Boa Vista",
+      "Vila Maria"
+    ],
+    "Jardim Redentor": [
+      "Boa Vista I",
+      "Santa Rita"
+    ],
+    "Ponte Alta": [
+      "Cajueiro",
+      "Paraíso",
+      "São Judas Tadeu",
+      "Vila Elmira"
+    ],
+    "Rozelândia II": [
+      "Jardim Primavera",
+      "Nova Esperança",
+      "Presidente Dutra",
+      "Rozelândia"
+    ],
+    "Boa Vista I": [
+      "Boa Vista II",
+      "Jardim Alice",
+      "Jardim Redentor",
+      "Malvinas",
+      "Moinho de Vento",
+      "Paraíso",
+      "Santa Rita",
+      "São Judas Tadeu",
+      "Vila Principal"
+    ],
+    "Abelhas": [
+      "Centro",
+      "Cotiara",
+      "Monte Cristo",
+      "Verbo Divino",
+      "Vila Independência"
+    ],
+    "Residencial Cristo Redentor": [
+      "Ano Bom",
+      "Santa Rosa",
+      "São Francisco de Assis",
+      "Vila Orlandélia"
+    ],
+    "Esperança": [
+      "Colônia Santo Antônio",
+      "Santa Maria II",
+      "Vila Maria",
+      "Vila Ursulino"
+    ],
+    "Vale do Paraíba": [
+      "Ano Bom",
+      "Getúlio Vargas"
+    ],
+    "São Pedro": [
+      "Jardim Marilú",
+      "Quilômetro Quatro",
+      "Santa Clara",
+      "Vila Independência"
+    ]
+  }
+}

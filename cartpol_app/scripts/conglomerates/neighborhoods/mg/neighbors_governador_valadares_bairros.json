@@ -1,0 +1,586 @@
+{
+  "county": "Governador Valadares",
+  "source_zip": "/home/iuri/TCC/cartpol-pwa/src/assets/maps/county/Governador Valadares.zip",
+  "stats": {
+    "total_regions": 83,
+    "total_neighbors": 202,
+    "avg_neighbors": 4.867469879518072,
+    "max_neighbors": 13,
+    "min_neighbors": 1,
+    "isolated_regions": 0,
+    "region_most_neighbors": "Centro",
+    "region_least_neighbors": "Cidade Jardim"
+  },
+  "neighbors": {
+    "Santa Rita": [
+      "Castanheiras",
+      "Distrito Industrial",
+      "São Cristóvão",
+      "Vale Pastoril",
+      "Vila dos Montes"
+    ],
+    "Esperança": [
+      "Maria Eugênia",
+      "Nossa Senhora das Graças",
+      "Santa Helena",
+      "Vale Verde"
+    ],
+    "Residencial Figueiras": [
+      "Novo Horizonte",
+      "Penha",
+      "Tiradentes"
+    ],
+    "São Cristóvão": [
+      "Castanheiras",
+      "Distrito Industrial",
+      "Fraternidade",
+      "Jardim Alice",
+      "Sagrada Família",
+      "Santa Rita",
+      "Vale Pastoril",
+      "Vila Rica"
+    ],
+    "Morada do Acampamento": [
+      "Centro",
+      "Vila Mariana"
+    ],
+    "Esplanada": [
+      "Alto Esplanada",
+      "Carapina",
+      "Centro",
+      "Esplanadinha",
+      "São Pedro"
+    ],
+    "Tiradentes": [
+      "Distrito Industrial",
+      "Novo Horizonte",
+      "Penha",
+      "Residencial Figueiras"
+    ],
+    "Universitário": [
+      "Chácaras Braúnas",
+      "Santos Dumont",
+      "São Pedro",
+      "Vila Mariquita"
+    ],
+    "Centro": [
+      "Altinópolis",
+      "Carapina",
+      "Esplanada",
+      "Esplanadinha",
+      "Grã-Duquesa",
+      "Ilha dos Araújos",
+      "Lourdes",
+      "Morada do Acampamento",
+      "Nossa Senhora das Graças",
+      "Santa Terezinha",
+      "São Geraldo",
+      "São Tarcísio",
+      "Vila Mariana"
+    ],
+    "Maria Eugênia": [
+      "Esperança",
+      "Grã-Duquesa",
+      "Morada do Vale",
+      "Nossa Senhora das Graças",
+      "Vale Verde"
+    ],
+    "Cidade Jardim": [
+      "Vila dos Montes"
+    ],
+    "Sagrada Família": [
+      "Fraternidade",
+      "Jardim Pérola",
+      "São Cristóvão",
+      "Vila Rica"
+    ],
+    "São Raimundo": [
+      "Jardim Alice",
+      "Jardim Ipê",
+      "Jardim Vera Cruz",
+      "Vila Isa"
+    ],
+    "Conquista": [
+      "Vale do Sol",
+      "Vila do Sol",
+      "Vila dos Montes"
+    ],
+    "Castanheiras": [
+      "Distrito Industrial",
+      "Fraternidade",
+      "Kennedy",
+      "Novo Horizonte",
+      "Santa Rita",
+      "São Cristóvão"
+    ],
+    "Chácaras Canaã": [
+      "Capim",
+      "Chácara Boa Sorte",
+      "Recanto das Garças"
+    ],
+    "Santa Terezinha": [
+      "Centro",
+      "Ilha dos Araújos",
+      "Lourdes",
+      "São Paulo",
+      "Vila Bretas"
+    ],
+    "Elvamar": [
+      "Chácaras Encosta do Sol",
+      "Ilha dos Araújos",
+      "Parque das Aroeiras",
+      "Vila Isa",
+      "Vila Parque Ibituruna",
+      "Village da Serra"
+    ],
+    "Lourdes": [
+      "Altinópolis",
+      "Centro",
+      "Nova Vila Bretas",
+      "Santa Terezinha",
+      "Santo Antônio",
+      "São Geraldo",
+      "Vila Bretas",
+      "Vila Mariana"
+    ],
+    "São Geraldo": [
+      "Centro",
+      "Lourdes",
+      "Vila Mariana"
+    ],
+    "Palmeiras": [
+      "Altinópolis",
+      "Jardim Pérola",
+      "Kennedy",
+      "Mãe de Deus",
+      "Nova Vila Bretas",
+      "Novo Horizonte",
+      "Turmalina"
+    ],
+    "Azteca": [
+      "Jardim Atalaia",
+      "Jardim Ipê",
+      "Jardim Primavera"
+    ],
+    "Carapina": [
+      "Alto Esplanada",
+      "Centro",
+      "Esplanada",
+      "Morro do Querosene",
+      "Nossa Senhora das Graças",
+      "Santa Helena"
+    ],
+    "Jardim Ipê": [
+      "Azteca",
+      "Jardim Atalaia",
+      "Jardim Primavera",
+      "Jardim Vera Cruz",
+      "São Raimundo",
+      "Vila Isa"
+    ],
+    "Cardo": [
+      "Chácaras Braúnas",
+      "Floresta",
+      "Santos Dumont",
+      "Sir",
+      "Vila Mariquita"
+    ],
+    "Kennedy": [
+      "Castanheiras",
+      "Fraternidade",
+      "Jardim Pérola",
+      "Novo Horizonte",
+      "Palmeiras"
+    ],
+    "Santo Antônio": [
+      "Altinópolis",
+      "Lourdes",
+      "Mãe de Deus",
+      "Nova Vila Bretas"
+    ],
+    "Jardim Alvorada": [
+      "Jardim Atalaia",
+      "Jardim Vera Cruz",
+      "Vila do Sol"
+    ],
+    "Cidade Nova": [
+      "Lagoa Santa",
+      "Morada do Vale"
+    ],
+    "Jardim Pérola": [
+      "Fraternidade",
+      "Kennedy",
+      "Nova Vila Bretas",
+      "Palmeiras",
+      "Sagrada Família",
+      "Vila Bretas",
+      "Vila Rica"
+    ],
+    "Fraternidade": [
+      "Castanheiras",
+      "Jardim Pérola",
+      "Kennedy",
+      "Sagrada Família",
+      "São Cristóvão"
+    ],
+    "São Paulo": [
+      "Ilha dos Araújos",
+      "Jardim Alice",
+      "Santa Terezinha",
+      "Vila Bretas",
+      "Vila Isa",
+      "Vila Rica"
+    ],
+    "Village da Serra": [
+      "Elvamar"
+    ],
+    "Floresta": [
+      "Cardo",
+      "Santos Dumont",
+      "Santos Dumont II",
+      "Sir"
+    ],
+    "Jardim Alice": [
+      "Jardim Vera Cruz",
+      "São Cristóvão",
+      "São Paulo",
+      "São Raimundo",
+      "Vale Pastoril",
+      "Vila Isa",
+      "Vila Rica",
+      "Vila dos Montes"
+    ],
+    "Chácaras Braúnas": [
+      "Cardo",
+      "Santos Dumont",
+      "Universitário",
+      "Vila Mariquita"
+    ],
+    "Alto Esplanada": [
+      "Belvedere",
+      "Carapina",
+      "Esplanada",
+      "Morro do Querosene",
+      "Santa Helena",
+      "São Pedro",
+      "Vila Mariquita"
+    ],
+    "Vila Mariana": [
+      "Altinópolis",
+      "Centro",
+      "Grã-Duquesa",
+      "Lourdes",
+      "Morada do Acampamento",
+      "São Geraldo"
+    ],
+    "Santa Paula": [
+      "Jardim do Trevo",
+      "Lagoa Santa"
+    ],
+    "Chácaras Encosta do Sol": [
+      "Elvamar",
+      "Ilha dos Araújos",
+      "São Tarcísio"
+    ],
+    "Parque das Aroeiras": [
+      "Elvamar",
+      "Vila Parque Ibituruna"
+    ],
+    "Vila Isa": [
+      "Chácaras Recanto da Cachoeira",
+      "Elvamar",
+      "Ilha dos Araújos",
+      "Jardim Alice",
+      "Jardim Ipê",
+      "Jardim Primavera",
+      "São Paulo",
+      "São Raimundo",
+      "Vila Parque Ibituruna"
+    ],
+    "Vale Pastoril": [
+      "Jardim Alice",
+      "Santa Rita",
+      "São Cristóvão",
+      "Vila dos Montes"
+    ],
+    "Penha": [
+      "Novo Horizonte",
+      "Residencial Figueiras",
+      "Tiradentes"
+    ],
+    "São Tarcísio": [
+      "Centro",
+      "Chácaras Encosta do Sol",
+      "Ilha dos Araújos"
+    ],
+    "Sir": [
+      "Capim",
+      "Cardo",
+      "Chácara Boa Sorte",
+      "Floresta",
+      "Santos Dumont II"
+    ],
+    "Vila Mariquita": [
+      "Alto Esplanada",
+      "Belvedere",
+      "Cardo",
+      "Chácaras Braúnas",
+      "Santa Helena",
+      "São Pedro",
+      "Universitário",
+      "Vale Verde"
+    ],
+    "Morada do Vale": [
+      "Cidade Nova",
+      "Grã-Duquesa",
+      "Lagoa Santa",
+      "Maria Eugênia",
+      "Vale Verde"
+    ],
+    "Nossa Senhora das Graças": [
+      "Carapina",
+      "Centro",
+      "Esperança",
+      "Grã-Duquesa",
+      "Maria Eugênia",
+      "Santa Helena"
+    ],
+    "São Pedro": [
+      "Alto Esplanada",
+      "Belvedere",
+      "Esplanada",
+      "Esplanadinha",
+      "Universitário",
+      "Vila Mariquita"
+    ],
+    "Santo Agostinho": [
+      "Altinópolis",
+      "Grã-Duquesa",
+      "Lagoa Santa",
+      "Planalto"
+    ],
+    "Lagoa Santa": [
+      "Altinópolis",
+      "Cidade Nova",
+      "Grã-Duquesa",
+      "Jardim do Trevo",
+      "Morada do Vale",
+      "Planalto",
+      "Santa Paula",
+      "Santo Agostinho",
+      "Turmalina"
+    ],
+    "Morro do Querosene": [
+      "Alto Esplanada",
+      "Carapina",
+      "Santa Helena"
+    ],
+    "Altinópolis": [
+      "Centro",
+      "Grã-Duquesa",
+      "Lagoa Santa",
+      "Lourdes",
+      "Mãe de Deus",
+      "Palmeiras",
+      "Planalto",
+      "Santo Agostinho",
+      "Santo Antônio",
+      "Turmalina",
+      "Vila Mariana"
+    ],
+    "Planalto": [
+      "Altinópolis",
+      "Lagoa Santa",
+      "Santo Agostinho",
+      "Turmalina"
+    ],
+    "Vila dos Montes": [
+      "Cidade Jardim",
+      "Conquista",
+      "Jardim Alice",
+      "Jardim Vera Cruz",
+      "Santa Rita",
+      "Vale Pastoril",
+      "Vila do Sol"
+    ],
+    "Jardim Atalaia": [
+      "Azteca",
+      "Jardim Alvorada",
+      "Jardim Ipê",
+      "Jardim Vera Cruz",
+      "Vale do Sol",
+      "Vila do Sol"
+    ],
+    "Vila Rica": [
+      "Jardim Alice",
+      "Jardim Pérola",
+      "Nova Vila Bretas",
+      "Sagrada Família",
+      "São Cristóvão",
+      "São Paulo",
+      "Vila Bretas"
+    ],
+    "Chácaras Recanto da Cachoeira": [
+      "Jardim Primavera",
+      "Vila Isa"
+    ],
+    "Belvedere": [
+      "Alto Esplanada",
+      "Santa Helena",
+      "São Pedro",
+      "Vila Mariquita"
+    ],
+    "Esplanadinha": [
+      "Centro",
+      "Esplanada",
+      "São Pedro"
+    ],
+    "Santos Dumont": [
+      "Cardo",
+      "Chácaras Braúnas",
+      "Floresta",
+      "Universitário"
+    ],
+    "Retiro dos Lagos": [
+      "Turmalina"
+    ],
+    "Jardim do Trevo": [
+      "Lagoa Santa",
+      "Santa Paula"
+    ],
+    "Ilha dos Araújos": [
+      "Centro",
+      "Chácaras Encosta do Sol",
+      "Elvamar",
+      "Santa Terezinha",
+      "São Paulo",
+      "São Tarcísio",
+      "Vila Isa"
+    ],
+    "Vila Bretas": [
+      "Jardim Pérola",
+      "Lourdes",
+      "Nova Vila Bretas",
+      "Santa Terezinha",
+      "São Paulo",
+      "Vila Rica"
+    ],
+    "Santos Dumont II": [
+      "Chácara Boa Sorte",
+      "Floresta",
+      "Sir"
+    ],
+    "Vale do Sol": [
+      "Conquista",
+      "Jardim Atalaia",
+      "Vila do Sol"
+    ],
+    "Novo Horizonte": [
+      "Castanheiras",
+      "Kennedy",
+      "Palmeiras",
+      "Penha",
+      "Residencial Figueiras",
+      "Tiradentes"
+    ],
+    "Vila do Sol": [
+      "Conquista",
+      "Jardim Alvorada",
+      "Jardim Atalaia",
+      "Jardim Vera Cruz",
+      "Vale do Sol",
+      "Vila dos Montes"
+    ],
+    "Vale Verde": [
+      "Esperança",
+      "Maria Eugênia",
+      "Morada do Vale",
+      "Santa Helena",
+      "Vila Mariquita"
+    ],
+    "Jardim Primavera": [
+      "Azteca",
+      "Chácaras Recanto da Cachoeira",
+      "Jardim Ipê",
+      "Vila Isa"
+    ],
+    "Jardim Vera Cruz": [
+      "Jardim Alice",
+      "Jardim Alvorada",
+      "Jardim Atalaia",
+      "Jardim Ipê",
+      "São Raimundo",
+      "Vila do Sol",
+      "Vila dos Montes"
+    ],
+    "Santa Helena": [
+      "Alto Esplanada",
+      "Belvedere",
+      "Carapina",
+      "Esperança",
+      "Morro do Querosene",
+      "Nossa Senhora das Graças",
+      "Vale Verde",
+      "Vila Mariquita"
+    ],
+    "Chácara Boa Sorte": [
+      "Capim",
+      "Chácaras Canaã",
+      "Santos Dumont II",
+      "Sir"
+    ],
+    "Vila Parque Ibituruna": [
+      "Elvamar",
+      "Parque das Aroeiras",
+      "Vila Isa"
+    ],
+    "Distrito Industrial": [
+      "Castanheiras",
+      "Santa Rita",
+      "São Cristóvão",
+      "Tiradentes"
+    ],
+    "Nova Vila Bretas": [
+      "Jardim Pérola",
+      "Lourdes",
+      "Mãe de Deus",
+      "Palmeiras",
+      "Santo Antônio",
+      "Vila Bretas",
+      "Vila Rica"
+    ],
+    "Capim": [
+      "Chácara Boa Sorte",
+      "Chácaras Canaã",
+      "Recanto das Garças",
+      "Sir"
+    ],
+    "Grã-Duquesa": [
+      "Altinópolis",
+      "Centro",
+      "Lagoa Santa",
+      "Maria Eugênia",
+      "Morada do Vale",
+      "Nossa Senhora das Graças",
+      "Santo Agostinho",
+      "Vila Mariana"
+    ],
+    "Mãe de Deus": [
+      "Altinópolis",
+      "Nova Vila Bretas",
+      "Palmeiras",
+      "Santo Antônio"
+    ],
+    "Recanto das Garças": [
+      "Capim",
+      "Chácaras Canaã"
+    ],
+    "Turmalina": [
+      "Altinópolis",
+      "Lagoa Santa",
+      "Palmeiras",
+      "Planalto",
+      "Retiro dos Lagos"
+    ]
+  }
+}

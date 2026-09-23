@@ -1,0 +1,18 @@
+﻿municipio,qe,political_id,candidato,full_name,partido,genero,total_votes,concentracao_final,interpretation,total_conglomerates,municipios_map_file,unmatched_in_csv
+MACAÉ,6549.0,292148,CESINHA COM TODO GAS,NILTON CESAR PEREIRA MOREIRA,PROS,masculino,2856,0.6478,media_alta,3,neighbors_macae_bairros.json,False
+MACAÉ,6549.0,293472,EDSON CHIQUINI,EDSON CHIQUINI DA SILVA,PSD,masculino,2830,0.6695,media_alta,3,neighbors_macae_bairros.json,False
+MACAÉ,6549.0,292594,ALAN MANSUR,ALAN MANSUR PEREIRA,CIDADANIA,masculino,2474,0.5234,media,3,neighbors_macae_bairros.json,False
+MACAÉ,6549.0,295390,PAULO PAES,PAULO ROBERTO PAES DE OLIVEIRA,DEM,masculino,1898,0.6666,media_alta,3,neighbors_macae_bairros.json,False
+MACAÉ,6549.0,301043,IZA VICENTE,IZABELLA VICENTE DE CARVALHO CAMARGO,REDE,feminino,1877,0.4633,media_baixa,3,neighbors_macae_bairros.json,False
+MACAÉ,6549.0,296676,LUIZ MATOS,LUIZ CARLOS MATOS FRANÇA,REPUBLICANOS,masculino,1873,0.5912,media,3,neighbors_macae_bairros.json,False
+MACAÉ,6549.0,301469,THALES COUTINHO,THALES COUTINHO GONÇALVES DA SILVA,PODE,masculino,1822,0.531,media,3,neighbors_macae_bairros.json,False
+MACAÉ,6549.0,289969,TICO JARDIM,JOSE GERALDO JARDIM FILHO,PROS,masculino,1817,0.6666,media_alta,3,neighbors_macae_bairros.json,False
+MACAÉ,6549.0,301336,RAFAEL AMORIM,RAFAEL DE OLIVEIRA BICHARA AMORIM,PDT,masculino,1795,0.6063,media,2,neighbors_macae_bairros.json,False
+MACAÉ,6549.0,290672,PROFESSOR GUTO GARCIA,CARLOS AUGUSTO GARCIA ASSIS,PDT,masculino,1625,0.5209,media,3,neighbors_macae_bairros.json,False
+MACAÉ,6549.0,290356,GEORGE JARDIM,GEORGE COUTINHO JARDIM,PSDB,masculino,1471,0.6387,media_alta,3,neighbors_macae_bairros.json,False
+MACAÉ,6549.0,294943,ROND MACAÉ,RUDNELI DAS NEVES COUTINHO,PATRIOTA,masculino,1457,0.5691,media,4,neighbors_macae_bairros.json,False
+MACAÉ,6549.0,301682,LUCIANO DINIZ,LUCIANO ANTONIO DINIZ CALDAS,CIDADANIA,masculino,1426,0.5192,media,4,neighbors_macae_bairros.json,False
+MACAÉ,6549.0,304864,REGINALDO DO HOSPITAL,REGINALDO OLIVEIRA DE SOUZA,PODE,masculino,1389,0.553,media,2,neighbors_macae_bairros.json,False
+MACAÉ,6549.0,294693,JOSÉ PRESTES,JOSÉ FRANCO DE MUROS,PTB,masculino,1347,0.5611,media,3,neighbors_macae_bairros.json,False
+MACAÉ,6549.0,300903,PROFESSOR MICHEL,MICHEL ARTHUR FARIA VICENTE,PATRIOTA,masculino,1039,0.7099,media_alta,3,neighbors_macae_bairros.json,False
+MACAÉ,6549.0,303353,AMARO LUIZ,AMARO LUIZ ALVES DA SILVA,PRTB,masculino,972,0.737,media_alta,3,neighbors_macae_bairros.json,False

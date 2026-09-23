@@ -1,0 +1,16 @@
+﻿municipio,qe,political_id,candidato,full_name,partido,genero,total_votes,concentracao_final,interpretation,total_conglomerates,municipios_map_file,unmatched_in_csv
+SÃO JOÃO DE MERITI,16840.0,633178,MARQUINHO AQUINO,MARCOS HENRIQUE MATOS DE AQUINO,REPUBLICANOS,masculino,7975,0.5847,media,2,neighbors_sao_joao_de_meriti_bairros.json,False
+SÃO JOÃO DE MERITI,16840.0,631215,ROGERIO PAES,ROGERIO MENDES PAES,PL,masculino,7178,0.8024,alta,1,neighbors_sao_joao_de_meriti_bairros.json,False
+SÃO JOÃO DE MERITI,16840.0,631222,ERNANE ALEIXO,ERNANE ALEIXO,PL,masculino,6720,0.8024,alta,1,neighbors_sao_joao_de_meriti_bairros.json,False
+SÃO JOÃO DE MERITI,16840.0,635050,OTOJANES FILHO,OTO JANES LEITE DE OLIVEIRA,SOLIDARIEDADE,masculino,5969,0.7944,alta,1,neighbors_sao_joao_de_meriti_bairros.json,False
+SÃO JOÃO DE MERITI,16840.0,636823,MILTINHO,AMILTON MACHADO DOMINGUES,PP,masculino,11846,0.7865,alta,1,neighbors_sao_joao_de_meriti_bairros.json,False
+SÃO JOÃO DE MERITI,16840.0,637554,CARLOS HENRIQUE QUEIROZ,CARLOS HENRIQUE MEIRELLES DE QUEIROZ,MDB,masculino,10954,0.8024,alta,1,neighbors_sao_joao_de_meriti_bairros.json,False
+SÃO JOÃO DE MERITI,16840.0,636802,JOÃO NUNES,JOAO CARLOS DE MORAES ROCHA,PP,masculino,10428,0.8024,alta,1,neighbors_sao_joao_de_meriti_bairros.json,False
+SÃO JOÃO DE MERITI,16840.0,637704,DOCA BRAZÃO,JOÃO DANTAS DE MELLO,MDB,masculino,10410,0.7865,alta,1,neighbors_sao_joao_de_meriti_bairros.json,False
+SÃO JOÃO DE MERITI,16840.0,637044,MAGRÃO NOBRE,JULIO RICARDO DOS SANTOS HENRIQUES,UNIÃO,masculino,9762,0.5847,media,2,neighbors_sao_joao_de_meriti_bairros.json,False
+SÃO JOÃO DE MERITI,16840.0,635055,GIOVANI RATINHO JR,GIOVANI LEITE DE ABREU JUNIOR,SOLIDARIEDADE,masculino,4858,0.7786,alta,1,neighbors_sao_joao_de_meriti_bairros.json,False
+SÃO JOÃO DE MERITI,16840.0,631655,JUNINHO VIEIRA,ACYR ALVES DE ARAÚJO JUNIOR,PSD,masculino,4606,0.5847,media,2,neighbors_sao_joao_de_meriti_bairros.json,False
+SÃO JOÃO DE MERITI,16840.0,633181,ELIÁS QUEIROZ,ELIÁS NUNES DE QUEIROZ,REPUBLICANOS,masculino,4545,0.8024,alta,1,neighbors_sao_joao_de_meriti_bairros.json,False
+SÃO JOÃO DE MERITI,16840.0,632350,RODRIGO PIT,RODRIGO RODRIGUES DA SILVA,AGIR,masculino,4437,0.7944,alta,1,neighbors_sao_joao_de_meriti_bairros.json,False
+SÃO JOÃO DE MERITI,16840.0,636981,CARLINHO MOUTINHO,CARLOS AUGUSTO BEÇA MOUTINHO,PSDB,masculino,8812,0.7865,alta,1,neighbors_sao_joao_de_meriti_bairros.json,False
+SÃO JOÃO DE MERITI,16840.0,638650,JEFFERSON MARTIN,JEFFERSON COSTA MARTIN,PRD,masculino,8314,0.5887,media,2,neighbors_sao_joao_de_meriti_bairros.json,False

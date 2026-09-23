@@ -1,0 +1,336 @@
+{
+  "maps_dir": "/home/iuri/TCC/cartpol-pwa/src/assets/maps/county",
+  "output_dir": "/home/iuri/TCC/cartpol/cartpol_app/scripts/conglomerates/neighborhoods/rj",
+  "counties": [
+    {
+      "county": "Angra dos Reis",
+      "zip": "/home/iuri/TCC/cartpol-pwa/src/assets/maps/county/Angra dos Reis.zip",
+      "output": "/home/iuri/TCC/cartpol/cartpol_app/scripts/conglomerates/neighborhoods/rj/neighbors_angra_dos_reis_bairros.json",
+      "stats": {
+        "total_regions": 112,
+        "total_neighbors": 198,
+        "avg_neighbors": 3.5357142857142856,
+        "max_neighbors": 13,
+        "min_neighbors": 1,
+        "isolated_regions": 0,
+        "region_most_neighbors": "Morro do Bulé",
+        "region_least_neighbors": "Caputera II"
+      }
+    },
+    {
+      "county": "Barra do Piraí",
+      "zip": "/home/iuri/TCC/cartpol-pwa/src/assets/maps/county/Barra do Piraí.zip",
+      "output": "/home/iuri/TCC/cartpol/cartpol_app/scripts/conglomerates/neighborhoods/rj/neighbors_barra_do_pirai_bairros.json",
+      "stats": {
+        "total_regions": 47,
+        "total_neighbors": 111,
+        "avg_neighbors": 4.723404255319149,
+        "max_neighbors": 12,
+        "min_neighbors": 2,
+        "isolated_regions": 0,
+        "region_most_neighbors": "Centro",
+        "region_least_neighbors": "Chaminé"
+      }
+    },
+    {
+      "county": "Barra Mansa",
+      "zip": "/home/iuri/TCC/cartpol-pwa/src/assets/maps/county/Barra Mansa.zip",
+      "output": "/home/iuri/TCC/cartpol/cartpol_app/scripts/conglomerates/neighborhoods/rj/neighbors_barra_mansa_bairros.json",
+      "stats": {
+        "total_regions": 83,
+        "total_neighbors": 192,
+        "avg_neighbors": 4.626506024096385,
+        "max_neighbors": 12,
+        "min_neighbors": 1,
+        "isolated_regions": 0,
+        "region_most_neighbors": "Santa Clara",
+        "region_least_neighbors": "Moinho de Vento"
+      }
+    },
+    {
+      "county": "Belford Roxo",
+      "zip": "/home/iuri/TCC/cartpol-pwa/src/assets/maps/county/Belford Roxo.zip",
+      "output": "/home/iuri/TCC/cartpol/cartpol_app/scripts/conglomerates/neighborhoods/rj/neighbors_belford_roxo_bairros.json",
+      "stats": {
+        "total_regions": 30,
+        "total_neighbors": 73,
+        "avg_neighbors": 4.866666666666666,
+        "max_neighbors": 9,
+        "min_neighbors": 2,
+        "isolated_regions": 0,
+        "region_most_neighbors": "Pauline",
+        "region_least_neighbors": "Santo Antônio da Prata"
+      }
+    },
+    {
+      "county": "Bom Jesus do Itabapoana",
+      "zip": "/home/iuri/TCC/cartpol-pwa/src/assets/maps/county/Bom Jesus do Itabapoana.zip",
+      "output": "/home/iuri/TCC/cartpol/cartpol_app/scripts/conglomerates/neighborhoods/rj/neighbors_bom_jesus_do_itabapoana_bairros.json",
+      "stats": {
+        "total_regions": 11,
+        "total_neighbors": 18,
+        "avg_neighbors": 3.272727272727273,
+        "max_neighbors": 7,
+        "min_neighbors": 1,
+        "isolated_regions": 0,
+        "region_most_neighbors": "Centro",
+        "region_least_neighbors": "Santa Terezinha"
+      }
+    },
+    {
+      "county": "Campos dos Goytacazes",
+      "zip": "/home/iuri/TCC/cartpol-pwa/src/assets/maps/county/Campos dos Goytacazes.zip",
+      "output": "/home/iuri/TCC/cartpol/cartpol_app/scripts/conglomerates/neighborhoods/rj/neighbors_campos_dos_goytacazes_bairros.json",
+      "stats": {
+        "total_regions": 78,
+        "total_neighbors": 180,
+        "avg_neighbors": 4.615384615384615,
+        "max_neighbors": 10,
+        "min_neighbors": 1,
+        "isolated_regions": 0,
+        "region_most_neighbors": "Parque Leopoldina",
+        "region_least_neighbors": "Parque Prazeres"
+      }
+    },
+    {
+      "county": "Duque de Caxias",
+      "zip": "/home/iuri/TCC/cartpol-pwa/src/assets/maps/county/Duque de Caxias.zip",
+      "output": "/home/iuri/TCC/cartpol/cartpol_app/scripts/conglomerates/neighborhoods/rj/neighbors_duque_de_caxias_bairros.json",
+      "stats": {
+        "total_regions": 41,
+        "total_neighbors": 91,
+        "avg_neighbors": 4.439024390243903,
+        "max_neighbors": 8,
+        "min_neighbors": 1,
+        "isolated_regions": 0,
+        "region_most_neighbors": "Gramacho",
+        "region_least_neighbors": "Amapá"
+      }
+    },
+    {
+      "county": "Iguaba Grande",
+      "zip": "/home/iuri/TCC/cartpol-pwa/src/assets/maps/county/Iguaba Grande.zip",
+      "output": "/home/iuri/TCC/cartpol/cartpol_app/scripts/conglomerates/neighborhoods/rj/neighbors_iguaba_grande_bairros.json",
+      "stats": {
+        "total_regions": 22,
+        "total_neighbors": 50,
+        "avg_neighbors": 4.545454545454546,
+        "max_neighbors": 8,
+        "min_neighbors": 2,
+        "isolated_regions": 0,
+        "region_most_neighbors": "Vila Nova",
+        "region_least_neighbors": "Ubás"
+      }
+    },
+    {
+      "county": "Itaboraí",
+      "zip": "/home/iuri/TCC/cartpol-pwa/src/assets/maps/county/Itaboraí.zip",
+      "output": "/home/iuri/TCC/cartpol/cartpol_app/scripts/conglomerates/neighborhoods/rj/neighbors_itaborai_bairros.json",
+      "stats": {
+        "total_regions": 71,
+        "total_neighbors": 179,
+        "avg_neighbors": 5.042253521126761,
+        "max_neighbors": 10,
+        "min_neighbors": 1,
+        "isolated_regions": 0,
+        "region_most_neighbors": "Manilha",
+        "region_least_neighbors": "São José"
+      }
+    },
+    {
+      "county": "Japeri",
+      "zip": "/home/iuri/TCC/cartpol-pwa/src/assets/maps/county/Japeri.zip",
+      "output": "/home/iuri/TCC/cartpol/cartpol_app/scripts/conglomerates/neighborhoods/rj/neighbors_japeri_bairros.json",
+      "stats": {
+        "total_regions": 30,
+        "total_neighbors": 64,
+        "avg_neighbors": 4.266666666666667,
+        "max_neighbors": 7,
+        "min_neighbors": 1,
+        "isolated_regions": 0,
+        "region_most_neighbors": "Centro de Engenheiro Pedreira",
+        "region_least_neighbors": "Beira-Rio"
+      }
+    },
+    {
+      "county": "Macaé",
+      "zip": "/home/iuri/TCC/cartpol-pwa/src/assets/maps/county/Macaé.zip",
+      "output": "/home/iuri/TCC/cartpol/cartpol_app/scripts/conglomerates/neighborhoods/rj/neighbors_macae_bairros.json",
+      "stats": {
+        "total_regions": 43,
+        "total_neighbors": 110,
+        "avg_neighbors": 5.116279069767442,
+        "max_neighbors": 9,
+        "min_neighbors": 2,
+        "isolated_regions": 0,
+        "region_most_neighbors": "Barra de Macaé",
+        "region_least_neighbors": "Fronteira"
+      }
+    },
+    {
+      "county": "Nilópolis",
+      "zip": "/home/iuri/TCC/cartpol-pwa/src/assets/maps/county/Nilópolis.zip",
+      "output": "/home/iuri/TCC/cartpol/cartpol_app/scripts/conglomerates/neighborhoods/rj/neighbors_nilopolis_bairros.json",
+      "stats": {
+        "total_regions": 15,
+        "total_neighbors": 31,
+        "avg_neighbors": 4.133333333333334,
+        "max_neighbors": 8,
+        "min_neighbors": 2,
+        "isolated_regions": 0,
+        "region_most_neighbors": "Centro",
+        "region_least_neighbors": "Nossa Senhora de Fátima"
+      }
+    },
+    {
+      "county": "Niterói",
+      "zip": "/home/iuri/TCC/cartpol-pwa/src/assets/maps/county/Niterói.zip",
+      "output": "/home/iuri/TCC/cartpol/cartpol_app/scripts/conglomerates/neighborhoods/rj/neighbors_niteroi_bairros.json",
+      "stats": {
+        "total_regions": 52,
+        "total_neighbors": 124,
+        "avg_neighbors": 4.769230769230769,
+        "max_neighbors": 10,
+        "min_neighbors": 1,
+        "isolated_regions": 0,
+        "region_most_neighbors": "Santa Rosa",
+        "region_least_neighbors": "Jurujuba"
+      }
+    },
+    {
+      "county": "Nova Iguaçu",
+      "zip": "/home/iuri/TCC/cartpol-pwa/src/assets/maps/county/Nova Iguaçu.zip",
+      "output": "/home/iuri/TCC/cartpol/cartpol_app/scripts/conglomerates/neighborhoods/rj/neighbors_nova_iguacu_bairros.json",
+      "stats": {
+        "total_regions": 67,
+        "total_neighbors": 173,
+        "avg_neighbors": 5.164179104477612,
+        "max_neighbors": 10,
+        "min_neighbors": 2,
+        "isolated_regions": 0,
+        "region_most_neighbors": "Centro",
+        "region_least_neighbors": "Boa Esperança"
+      }
+    },
+    {
+      "county": "Quatis",
+      "zip": "/home/iuri/TCC/cartpol-pwa/src/assets/maps/county/Quatis.zip",
+      "output": "/home/iuri/TCC/cartpol/cartpol_app/scripts/conglomerates/neighborhoods/rj/neighbors_quatis_bairros.json",
+      "stats": {
+        "total_regions": 16,
+        "total_neighbors": 25,
+        "avg_neighbors": 3.125,
+        "max_neighbors": 6,
+        "min_neighbors": 1,
+        "isolated_regions": 0,
+        "region_most_neighbors": "Jardim Independência",
+        "region_least_neighbors": "Água Espalhada"
+      }
+    },
+    {
+      "county": "Resende",
+      "zip": "/home/iuri/TCC/cartpol-pwa/src/assets/maps/county/Resende.zip",
+      "output": "/home/iuri/TCC/cartpol/cartpol_app/scripts/conglomerates/neighborhoods/rj/neighbors_resende_bairros.json",
+      "stats": {
+        "total_regions": 65,
+        "total_neighbors": 146,
+        "avg_neighbors": 4.492307692307692,
+        "max_neighbors": 12,
+        "min_neighbors": 1,
+        "isolated_regions": 0,
+        "region_most_neighbors": "Centro",
+        "region_least_neighbors": "Vila Verde"
+      }
+    },
+    {
+      "county": "São Gonçalo",
+      "zip": "/home/iuri/TCC/cartpol-pwa/src/assets/maps/county/São Gonçalo.zip",
+      "output": "/home/iuri/TCC/cartpol/cartpol_app/scripts/conglomerates/neighborhoods/rj/neighbors_sao_goncalo_bairros.json",
+      "stats": {
+        "total_regions": 110,
+        "total_neighbors": 297,
+        "avg_neighbors": 5.4,
+        "max_neighbors": 11,
+        "min_neighbors": 1,
+        "isolated_regions": 0,
+        "region_most_neighbors": "Colubandê",
+        "region_least_neighbors": "Largo da Ideia"
+      }
+    },
+    {
+      "county": "São João de Meriti",
+      "zip": "/home/iuri/TCC/cartpol-pwa/src/assets/maps/county/São João de Meriti.zip",
+      "output": "/home/iuri/TCC/cartpol/cartpol_app/scripts/conglomerates/neighborhoods/rj/neighbors_sao_joao_de_meriti_bairros.json",
+      "stats": {
+        "total_regions": 16,
+        "total_neighbors": 36,
+        "avg_neighbors": 4.5,
+        "max_neighbors": 7,
+        "min_neighbors": 2,
+        "isolated_regions": 0,
+        "region_most_neighbors": "Jardim Meriti",
+        "region_least_neighbors": "Jardim Metrópole"
+      }
+    },
+    {
+      "county": "São Pedro da Aldeia",
+      "zip": "/home/iuri/TCC/cartpol-pwa/src/assets/maps/county/São Pedro da Aldeia.zip",
+      "output": "/home/iuri/TCC/cartpol/cartpol_app/scripts/conglomerates/neighborhoods/rj/neighbors_sao_pedro_da_aldeia_bairros.json",
+      "stats": {
+        "total_regions": 40,
+        "total_neighbors": 85,
+        "avg_neighbors": 4.25,
+        "max_neighbors": 10,
+        "min_neighbors": 1,
+        "isolated_regions": 0,
+        "region_most_neighbors": "Flexeiras",
+        "region_least_neighbors": "Parque Arruda"
+      }
+    },
+    {
+      "county": "Saquarema",
+      "zip": "/home/iuri/TCC/cartpol-pwa/src/assets/maps/county/Saquarema.zip",
+      "output": "/home/iuri/TCC/cartpol/cartpol_app/scripts/conglomerates/neighborhoods/rj/neighbors_saquarema_bairros.json",
+      "stats": {
+        "total_regions": 43,
+        "total_neighbors": 93,
+        "avg_neighbors": 4.325581395348837,
+        "max_neighbors": 11,
+        "min_neighbors": 1,
+        "isolated_regions": 0,
+        "region_most_neighbors": "Vilatur",
+        "region_least_neighbors": "Tingui"
+      }
+    },
+    {
+      "county": "Tanguá",
+      "zip": "/home/iuri/TCC/cartpol-pwa/src/assets/maps/county/Tanguá.zip",
+      "output": "/home/iuri/TCC/cartpol/cartpol_app/scripts/conglomerates/neighborhoods/rj/neighbors_tangua_bairros.json",
+      "stats": {
+        "total_regions": 9,
+        "total_neighbors": 16,
+        "avg_neighbors": 3.5555555555555554,
+        "max_neighbors": 6,
+        "min_neighbors": 1,
+        "isolated_regions": 0,
+        "region_most_neighbors": "Centro",
+        "region_least_neighbors": "Duques"
+      }
+    },
+    {
+      "county": "Teresópolis",
+      "zip": "/home/iuri/TCC/cartpol-pwa/src/assets/maps/county/Teresópolis.zip",
+      "output": "/home/iuri/TCC/cartpol/cartpol_app/scripts/conglomerates/neighborhoods/rj/neighbors_teresopolis_bairros.json",
+      "stats": {
+        "total_regions": 49,
+        "total_neighbors": 133,
+        "avg_neighbors": 5.428571428571429,
+        "max_neighbors": 16,
+        "min_neighbors": 1,
+        "isolated_regions": 0,
+        "region_most_neighbors": "Várzea",
+        "region_least_neighbors": "Caleme"
+      }
+    }
+  ]
+}

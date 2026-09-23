@@ -1,0 +1,14 @@
+﻿municipio,qe,political_id,candidato,full_name,partido,genero,total_votes,concentracao_final,interpretation,total_conglomerates,municipios_map_file,unmatched_in_csv
+SAQUAREMA,5111.0,638500,WELINGTON DE PERES,WELINGTON ESTEVÃO DA SILVA,PL,masculino,5454,0.645,media_alta,3,neighbors_saquarema_bairros.json,False
+SAQUAREMA,5111.0,636459,HEBER KILINHO,UEVERTON SIQUEIRA DA SILVA,PSDB,masculino,4806,0.5318,media,4,neighbors_saquarema_bairros.json,False
+SAQUAREMA,5111.0,631626,ABRAÃO DA MELGIL,ABRAÃO RIBEIRO DO NASCIMENTO,UNIÃO,masculino,2271,0.5304,media,3,neighbors_saquarema_bairros.json,False
+SAQUAREMA,5111.0,632201,RAFAEL BADÁ,RAFAEL DA COSTA CASTRO,SOLIDARIEDADE,masculino,2242,0.6932,media_alta,3,neighbors_saquarema_bairros.json,False
+SAQUAREMA,5111.0,636470,DRA RENATA,RENATA DE CARVALHO OLIVEIRA MELO,PP,feminino,4370,0.6198,media,4,neighbors_saquarema_bairros.json,False
+SAQUAREMA,5111.0,631623,PITIQUINHO,GUILHERME FERREIRA OLIVEIRA,UNIÃO,masculino,1930,0.6921,media_alta,4,neighbors_saquarema_bairros.json,False
+SAQUAREMA,5111.0,632195,ADRIANA DE VANDER,ADRIANA MARIA DA CONCEIÇÃO PEREIRA,SOLIDARIEDADE,feminino,1900,0.5947,media,5,neighbors_saquarema_bairros.json,False
+SAQUAREMA,5111.0,638497,PEDRO IVO,PEDRO IVO ECCARD IVO,PL,masculino,3710,0.5311,media,4,neighbors_saquarema_bairros.json,False
+SAQUAREMA,5111.0,629571,DINEI DO RAIO X,ODINEI GARCIA RAMOS,PSD,masculino,1789,0.645,media_alta,3,neighbors_saquarema_bairros.json,False
+SAQUAREMA,5111.0,638496,ROBERTO RAMALHO,ROBERTO COTTA RAMALHO DOS SANTOS,PL,masculino,3516,0.6662,media_alta,3,neighbors_saquarema_bairros.json,False
+SAQUAREMA,5111.0,629569,ELISIA RANGEL,ELISIA RANGEL DE FREITAS,PSD,feminino,1501,0.668,media_alta,3,neighbors_saquarema_bairros.json,False
+SAQUAREMA,5111.0,636453,LEANDRO FRANCO,LEANDRO FRANCO DA CONCEIÇÃO,PSDB,masculino,2934,0.4649,media_baixa,6,neighbors_saquarema_bairros.json,False
+SAQUAREMA,5111.0,636463,VANILDO,EVANILDO FERREIRA DA SILVA,PP,masculino,2870,0.606,media,4,neighbors_saquarema_bairros.json,False

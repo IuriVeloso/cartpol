@@ -1,0 +1,195 @@
+{
+  "candidato": {
+    "nr": "10050",
+    "nome": "RAFAEL SOARES DOS SANTOS"
+  },
+  "qe": 59154.0,
+  "total_votes": 708,
+  "neighborhoods_with_votes": 31,
+  "neighborhoods_after_filter": 2,
+  "classification": "P",
+  "conglomerates": [
+    {
+      "neighborhoods": [
+        "Santa Cruz",
+        "Sepetiba"
+      ],
+      "size": 2,
+      "total_votes": 632,
+      "ruesp": 0.04507,
+      "ruesp_can": 0.892655,
+      "rcan_uesp": 0.004917,
+      "importance": "G",
+      "fuzzy_concentration": 0.8977,
+      "id": 1
+    }
+  ],
+  "lq_hc": {
+    "Santa Cruz": {
+      "lq": 23.377,
+      "hc": 569.55,
+      "ci": 0.03021198
+    },
+    "Penha": {
+      "lq": 0.3131,
+      "hc": -6.58,
+      "ci": 5.735e-05
+    },
+    "Guaratiba": {
+      "lq": 0.612,
+      "hc": -4.44,
+      "ci": 0.00015973
+    },
+    "Inhoaíba": {
+      "lq": 0.5586,
+      "hc": -3.16,
+      "ci": 5.714e-05
+    },
+    "Cosmos": {
+      "lq": 0.7151,
+      "hc": -2.39,
+      "ci": 0.00010043
+    },
+    "Sepetiba": {
+      "lq": 5.7298,
+      "hc": 30.54,
+      "ci": 0.00047665
+    },
+    "Campo Grande": {
+      "lq": 0.3494,
+      "hc": -27.93,
+      "ci": 0.00128472
+    },
+    "Gávea": {
+      "lq": 0.264,
+      "hc": -2.79,
+      "ci": 7.56e-06
+    },
+    "Praça Seca": {
+      "lq": 0.1288,
+      "hc": -6.77,
+      "ci": 1.549e-05
+    },
+    "Honório Gurgel": {
+      "lq": 0.3324,
+      "hc": -2.01,
+      "ci": 6e-06
+    },
+    "Tijuca": {
+      "lq": 0.0482,
+      "hc": -19.73,
+      "ci": 4.135e-05
+    },
+    "Andaraí": {
+      "lq": 0.7348,
+      "hc": -1.08,
+      "ci": 2.443e-05
+    },
+    "Jacarepaguá": {
+      "lq": 0.2414,
+      "hc": -9.43,
+      "ci": 7.436e-05
+    },
+    "Centro": {
+      "lq": 0.2929,
+      "hc": -2.41,
+      "ci": 6.81e-06
+    },
+    "Paciência": {
+      "lq": 0.8809,
+      "hc": -1.35,
+      "ci": 0.00022647
+    },
+    "Pavuna": {
+      "lq": 0.2176,
+      "hc": -7.19,
+      "ci": 3.667e-05
+    },
+    "Méier": {
+      "lq": 0.1108,
+      "hc": -8.03,
+      "ci": 1.801e-05
+    },
+    "Cavalcanti": {
+      "lq": 0.4411,
+      "hc": -1.27,
+      "ci": 4.52e-06
+    },
+    "Vargem Grande": {
+      "lq": 0.5914,
+      "hc": -0.69,
+      "ci": 3.37e-06
+    },
+    "Piedade": {
+      "lq": 0.1934,
+      "hc": -4.17,
+      "ci": 1.032e-05
+    },
+    "Pedra de Guaratiba": {
+      "lq": 0.3244,
+      "hc": -2.08,
+      "ci": 6.15e-06
+    },
+    "Irajá": {
+      "lq": 0.1305,
+      "hc": -13.32,
+      "ci": 6.113e-05
+    },
+    "Bangu": {
+      "lq": 0.0367,
+      "hc": -26.22,
+      "ci": 5.431e-05
+    },
+    "Recreio dos Bandeirantes": {
+      "lq": 0.1058,
+      "hc": -8.46,
+      "ci": 1.886e-05
+    },
+    "Santíssimo": {
+      "lq": 0.3002,
+      "hc": -2.33,
+      "ci": 6.65e-06
+    },
+    "Copacabana": {
+      "lq": 0.065,
+      "hc": -14.4,
+      "ci": 3.071e-05
+    },
+    "Jardim Botânico": {
+      "lq": 0.4605,
+      "hc": -1.17,
+      "ci": 4.33e-06
+    },
+    "Riachuelo": {
+      "lq": 0.9604,
+      "hc": -0.04,
+      "ci": 2.08e-06
+    },
+    "Vicente de Carvalho": {
+      "lq": 0.8336,
+      "hc": -0.2,
+      "ci": 2.39e-06
+    },
+    "Freguesia (Jacarepaguá)": {
+      "lq": 0.3839,
+      "hc": -4.81,
+      "ci": 4.677e-05
+    },
+    "Marechal Hermes": {
+      "lq": 0.1756,
+      "hc": -4.69,
+      "ci": 1.136e-05
+    }
+  },
+  "lq_hc_summary": {
+    "lq_max": 23.377,
+    "bairro_lq_max": "Santa Cruz",
+    "hc_total_positivo": 600.09,
+    "bairros_lq_acima_1": 2,
+    "ci_max": 0.03021198,
+    "bairro_ci_max": "Santa Cruz"
+  },
+  "concentracao_final": 0.8977,
+  "interpretation": "muito_alta",
+  "total_conglomerates": 1
+}

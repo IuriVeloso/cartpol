@@ -1,0 +1,30 @@
+﻿municipio,qe,political_id,candidato,full_name,partido,genero,total_votes,concentracao_final,interpretation,total_conglomerates,municipios_map_file,unmatched_in_csv
+DUQUE DE CAXIAS,16167.0,2006068,SERGINHO,SERGIO ALBERTO CORREA DA ROCHA,MDB,masculino,24734,0.6552,media_alta,1,neighbors_duque_de_caxias_bairros.json,False
+DUQUE DE CAXIAS,16167.0,2006066,SANDRO LELIS,SANDRO RIBEIRO PEDROSA,MDB,masculino,12094,0.6552,media_alta,1,neighbors_duque_de_caxias_bairros.json,False
+DUQUE DE CAXIAS,16167.0,2006063,JUNIOR REIS,DIVAIR ALVES DE OLIVEIRA JUNIOR,MDB,masculino,11091,0.6552,media_alta,1,neighbors_duque_de_caxias_bairros.json,False
+DUQUE DE CAXIAS,16167.0,2007466,CLAUDIO THOMAZ,CLAUDIO DE OLIVEIRA THOMAZ,PRD,masculino,11010,0.6681,media_alta,1,neighbors_duque_de_caxias_bairros.json,False
+DUQUE DE CAXIAS,16167.0,2006067,VALDECY NUNES,VALDECY NUNES DA ROSA FILHO,MDB,masculino,9703,0.4661,media_baixa,4,neighbors_duque_de_caxias_bairros.json,False
+DUQUE DE CAXIAS,16167.0,2006062,EDUARDO MOREIRA,EDUARDO MOREIRA DA SILVA,MDB,masculino,8644,0.4399,media_baixa,2,neighbors_duque_de_caxias_bairros.json,False
+DUQUE DE CAXIAS,16167.0,2006064,DELZA DE OLIVEIRA,DELZA OLIVEIRA SANT ANNA DE ALMEIDA,MDB,feminino,7887,0.5263,media,2,neighbors_duque_de_caxias_bairros.json,False
+DUQUE DE CAXIAS,16167.0,2004201,CLOVINHO SEMPRE JUNTO,CLOVIS MORORO MAGALHAES,PDT,masculino,7564,0.5445,media,2,neighbors_duque_de_caxias_bairros.json,False
+DUQUE DE CAXIAS,16167.0,2005085,MARQUINHO DENTISTA,MARCOS OLIVEIRA PEREIRA,REPUBLICANOS,masculino,7503,0.5115,media,2,neighbors_duque_de_caxias_bairros.json,False
+DUQUE DE CAXIAS,16167.0,2006069,FERNANDA COSTA,FERNANDA IZABEL DA COSTA,MDB,feminino,7355,0.4906,media_baixa,3,neighbors_duque_de_caxias_bairros.json,False
+DUQUE DE CAXIAS,16167.0,2007223,JUNIOR UIOS,CARLOS ALBERTO DE PAULA DIAS JUNIOR,MDB,masculino,7324,0.5095,media,3,neighbors_duque_de_caxias_bairros.json,False
+DUQUE DE CAXIAS,16167.0,2007467,DR MAURÍCIO,MAURICIO GUIMARÃES NASCIMENTO,PRD,masculino,7074,0.6552,media_alta,1,neighbors_duque_de_caxias_bairros.json,False
+DUQUE DE CAXIAS,16167.0,2007222,LEANDRO GUIMARÃES,LEANDRO TEIXEIRA GUIMARÃES,MDB,masculino,6391,0.5151,media,2,neighbors_duque_de_caxias_bairros.json,False
+DUQUE DE CAXIAS,16167.0,2007752,JULIANA DO TÁXI,JULIANA FANT ALVES MACHADO MIRANDA,PL,feminino,6231,0.4127,media_baixa,4,neighbors_duque_de_caxias_bairros.json,False
+DUQUE DE CAXIAS,16167.0,2004204,CATITI,MARCELO CARDOSO RODRIGUES,PDT,masculino,6221,0.5206,media,2,neighbors_duque_de_caxias_bairros.json,False
+DUQUE DE CAXIAS,16167.0,2005347,ALEX FREITAS,ALEX FREITAS MARQUES,REPUBLICANOS,masculino,6094,0.5172,media,2,neighbors_duque_de_caxias_bairros.json,False
+DUQUE DE CAXIAS,16167.0,2011475,GIORGIO MONTEIRO,GIORGIO CARVALHO MONTEIRO,PP,masculino,5968,0.5115,media,2,neighbors_duque_de_caxias_bairros.json,False
+DUQUE DE CAXIAS,16167.0,2007753,VITINHO GRANDÃO,VICTOR HUGO LEONEL DA SILVA,PL,masculino,5917,0.5303,media,2,neighbors_duque_de_caxias_bairros.json,False
+DUQUE DE CAXIAS,16167.0,2007207,MICHELE TAVARES,MICHELE BARBOSA PERISSE TAVARES,PDT,feminino,5826,0.4633,media_baixa,3,neighbors_duque_de_caxias_bairros.json,False
+DUQUE DE CAXIAS,16167.0,2009212,BETO GABRIEL,ROBERTO GABRIEL DE SOUZA,SOLIDARIEDADE,masculino,5619,0.6552,media_alta,1,neighbors_duque_de_caxias_bairros.json,False
+DUQUE DE CAXIAS,16167.0,2006306,NANÁ,NADJA RISSI DOS SANTOS,PL,feminino,5382,0.4517,media_baixa,3,neighbors_duque_de_caxias_bairros.json,False
+DUQUE DE CAXIAS,16167.0,2006631,CARLINHOS DA BARREIRA,CARLOS AUGUSTO PEREIRA SODRE,UNIÃO,masculino,5165,0.5364,media,3,neighbors_duque_de_caxias_bairros.json,False
+DUQUE DE CAXIAS,16167.0,2009213,CHIQUINHO CAIPIRA,AILTON ABREU NASCIMENTO,SOLIDARIEDADE,masculino,4748,0.509,media,2,neighbors_duque_de_caxias_bairros.json,False
+DUQUE DE CAXIAS,16167.0,2009214,MICHEL REIS,MICHEL REIS DA SILVA,SOLIDARIEDADE,masculino,4525,0.4849,media_baixa,2,neighbors_duque_de_caxias_bairros.json,False
+DUQUE DE CAXIAS,16167.0,2007465,ENFERMEIRO LEANDRO,LEANDRO DA SILVA LOURENCO,PRD,masculino,4214,0.4487,media_baixa,3,neighbors_duque_de_caxias_bairros.json,False
+DUQUE DE CAXIAS,16167.0,2005940,WENDELL,WENDELL OLIVEIRA DO NASCIMENTO,SOLIDARIEDADE,masculino,3947,0.4764,media_baixa,3,neighbors_duque_de_caxias_bairros.json,False
+DUQUE DE CAXIAS,16167.0,2008123,MARQUINHO OI,MARCOS FERNANDES DE ARAUJO,UNIÃO,masculino,3916,0.7786,alta,1,neighbors_duque_de_caxias_bairros.json,False
+DUQUE DE CAXIAS,16167.0,2007771,MOISES NEGUINHO,MOISES LUIZ GOMES,PP,masculino,3773,0.6868,media_alta,1,neighbors_duque_de_caxias_bairros.json,False
+DUQUE DE CAXIAS,16167.0,2011141,ANDREIA ZITO,ANDREIA ALMEIDA ZITO DOS SANTOS,PV,feminino,3624,0.5239,media,2,neighbors_duque_de_caxias_bairros.json,False

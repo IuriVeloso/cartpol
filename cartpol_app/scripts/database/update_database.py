@@ -16,6 +16,7 @@ timeTotalPostVotes = None
 # Valores padrão
 shouldRun = 'c'
 year = 2016
+state = 'RJ'
 
 # Obtém opção e ano de variáveis globais, ambiente ou argumentos
 # Uso 1: python3 manage.py shell -c \
@@ -33,6 +34,8 @@ if 'ANO' in globals():
         year = int(globals()['ANO'])
     except (ValueError, TypeError):
         pass
+if 'ESTADO' in globals():
+    state = globals()['ESTADO']
 
 # Tenta obter de variáveis de ambiente
 if 'MODO' in os.environ:
@@ -42,6 +45,8 @@ if 'ANO' in os.environ:
         year = int(os.environ['ANO'])
     except ValueError:
         pass
+if 'ESTADO' in os.environ:
+    state = os.environ['ESTADO']
 
 # Tenta obter de sys.argv no formato modo=c ano=2016
 for arg in sys.argv[1:]:
@@ -106,7 +111,7 @@ if shouldRunVotes:
 
     print("\nStarted post_votes()\n")
 
-    post_votes(url=URL, year=year)
+    post_votes(url=URL, year=year, state=state)
 
     timeTotalPostVotes = datetime.datetime.now() - timeStartedPostVotes
     print(

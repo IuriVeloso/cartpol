@@ -1,0 +1,10 @@
+﻿municipio,qe,political_id,candidato,full_name,partido,genero,total_votes,concentracao_final,interpretation,total_conglomerates,municipios_map_file,unmatched_in_csv
+QUATIS,909.0,309553,WILLIAN CARVALHO,WILLIAN DE CARVALHO ROSÁRIO,DEM,masculino,509,0.9284,muito_alta,2,neighbors_quatis_bairros.json,False
+QUATIS,909.0,292929,CHICÃO,FRANCISCO ANTÔNIO DE PAULA FRANCO,MDB,masculino,358,0.7869,alta,3,neighbors_quatis_bairros.json,False
+QUATIS,909.0,296580,ALEX D ELIAS,ALEX MILLER ALVES D ELIAS,PATRIOTA,masculino,357,0.6853,media_alta,3,neighbors_quatis_bairros.json,False
+QUATIS,909.0,307694,FERNANDO MANINHO,LUIZ FERNANDO DO NASCIMENTO FARIA,PSD,masculino,290,0.9592,muito_alta,2,neighbors_quatis_bairros.json,False
+QUATIS,909.0,309243,ANDRÉ JABUTI,ANDRÉ GOMES MARTINS,DEM,masculino,287,0.9592,muito_alta,2,neighbors_quatis_bairros.json,False
+QUATIS,909.0,296581,CASOBA DA ACADEMIA,CARLOS ALBERTO LOPEZ REYGIO,PATRIOTA,masculino,281,0.8284,alta,2,neighbors_quatis_bairros.json,False
+QUATIS,909.0,306094,DJ DENILSON,JOSÉ JADENILSO DA SILVA,PSC,masculino,270,0.9284,muito_alta,2,neighbors_quatis_bairros.json,False
+QUATIS,909.0,306096,NILDINHO,NILDE HIPOLITO FILHO,PSC,masculino,232,0.9592,muito_alta,2,neighbors_quatis_bairros.json,False
+QUATIS,909.0,308794,MARIA ROSA,MARIA ROSA DOS SANTOS ELIAS,PSL,feminino,122,0.8745,alta,2,neighbors_quatis_bairros.json,False

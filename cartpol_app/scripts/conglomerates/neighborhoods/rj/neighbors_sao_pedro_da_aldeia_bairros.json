@@ -1,0 +1,266 @@
+{
+  "county": "São Pedro da Aldeia",
+  "source_zip": "/home/iuri/TCC/cartpol-pwa/src/assets/maps/county/São Pedro da Aldeia.zip",
+  "stats": {
+    "total_regions": 40,
+    "total_neighbors": 85,
+    "avg_neighbors": 4.25,
+    "max_neighbors": 10,
+    "min_neighbors": 1,
+    "isolated_regions": 0,
+    "region_most_neighbors": "Flexeiras",
+    "region_least_neighbors": "Parque Arruda"
+  },
+  "neighbors": {
+    "Base AeroNaval": [
+      "Bela Vista",
+      "Boa Vista",
+      "Estação",
+      "Flexeiras",
+      "Jardim Morada da Aldeia",
+      "Jardim Soledade",
+      "Morro do Milagre",
+      "Recanto do Sol"
+    ],
+    "Balneário São Pedro 2": [
+      "Balneário São Pedro",
+      "Balneário das Conchas",
+      "Flexeiras",
+      "Parque dos Meninos"
+    ],
+    "Campo Redondo": [
+      "Alecrim",
+      "Boa Vista",
+      "Colina",
+      "Morro do Milagre",
+      "Nova São Pedro",
+      "Porto do Carro",
+      "São João"
+    ],
+    "Fluminense": [
+      "Bela Vista",
+      "Jardim Soledade",
+      "Morro do Milagre",
+      "Nova São Pedro",
+      "São José"
+    ],
+    "Colina": [
+      "Campo Redondo",
+      "Jardim Primavera",
+      "Porto do Carro",
+      "São João"
+    ],
+    "Rua do Fogo": [
+      "Flexeiras",
+      "Jardim das Acácias",
+      "Pinheiros",
+      "Santo Antônio"
+    ],
+    "Jardim Primavera": [
+      "Colina",
+      "Porto do Carro",
+      "São João",
+      "Vinhateiro"
+    ],
+    "Santo Antônio": [
+      "Flexeiras",
+      "Jardim das Acácias",
+      "Pinheiros",
+      "Rua do Fogo"
+    ],
+    "Parque Estoril": [
+      "Baixo Grande",
+      "São João",
+      "Vinhateiro"
+    ],
+    "Nova São Pedro": [
+      "Campo Redondo",
+      "Centro",
+      "Estação",
+      "Fluminense",
+      "Morro do Milagre",
+      "Porto da Aldeia",
+      "São José"
+    ],
+    "Boqueirão": [
+      "Baleia",
+      "Poço Fundo",
+      "Praia do Sudoeste"
+    ],
+    "Pinheiros": [
+      "Flexeiras",
+      "Rua do Fogo",
+      "Santo Antônio"
+    ],
+    "Centro": [
+      "Estação",
+      "Nova São Pedro",
+      "Porto da Aldeia"
+    ],
+    "Estação": [
+      "Base AeroNaval",
+      "Bela Vista",
+      "Centro",
+      "Nova São Pedro",
+      "São José"
+    ],
+    "Balneário das Conchas": [
+      "Balneário São Pedro",
+      "Balneário São Pedro 2",
+      "Flexeiras",
+      "Jardim Arco-Íris",
+      "Parque dos Meninos",
+      "Praia Linda"
+    ],
+    "Praia do Sudoeste": [
+      "Baleia",
+      "Boqueirão"
+    ],
+    "Baixo Grande": [
+      "Parque Estoril",
+      "Ponta do Ambrósio",
+      "São João",
+      "Vinhateiro"
+    ],
+    "Alecrim": [
+      "Campo Redondo",
+      "Porto do Carro",
+      "Recanto das Orquídeas"
+    ],
+    "Balneário São Pedro": [
+      "Balneário São Pedro 2",
+      "Balneário das Conchas",
+      "Flexeiras",
+      "Jardim Arco-Íris"
+    ],
+    "Bela Vista": [
+      "Base AeroNaval",
+      "Estação",
+      "Fluminense",
+      "Jardim Soledade",
+      "São José"
+    ],
+    "Recanto do Sol": [
+      "Base AeroNaval",
+      "Jardim Morada da Aldeia",
+      "Jardim das Acácias"
+    ],
+    "Jardim Soledade": [
+      "Base AeroNaval",
+      "Bela Vista",
+      "Boa Vista",
+      "Fluminense",
+      "Morro do Milagre"
+    ],
+    "Baleia": [
+      "Boqueirão",
+      "Praia do Sudoeste"
+    ],
+    "Porto do Carro": [
+      "Alecrim",
+      "Campo Redondo",
+      "Colina",
+      "Jardim Primavera",
+      "Recanto das Orquídeas",
+      "São João",
+      "Vinhateiro"
+    ],
+    "São João": [
+      "Baixo Grande",
+      "Campo Redondo",
+      "Colina",
+      "Jardim Primavera",
+      "Parque Estoril",
+      "Porto do Carro",
+      "Vinhateiro"
+    ],
+    "Parque dos Meninos": [
+      "Balneário São Pedro 2",
+      "Balneário das Conchas",
+      "Flexeiras"
+    ],
+    "Vinhateiro": [
+      "Baixo Grande",
+      "Jardim Primavera",
+      "Parque Estoril",
+      "Ponta do Ambrósio",
+      "Porto do Carro",
+      "São João"
+    ],
+    "Jardim Arco-Íris": [
+      "Balneário São Pedro",
+      "Balneário das Conchas",
+      "Praia Linda"
+    ],
+    "São José": [
+      "Bela Vista",
+      "Estação",
+      "Fluminense",
+      "Nova São Pedro"
+    ],
+    "Praia Linda": [
+      "Balneário das Conchas",
+      "Jardim Arco-Íris"
+    ],
+    "Morro do Milagre": [
+      "Base AeroNaval",
+      "Boa Vista",
+      "Campo Redondo",
+      "Fluminense",
+      "Jardim Soledade",
+      "Nova São Pedro"
+    ],
+    "Boa Vista": [
+      "Base AeroNaval",
+      "Campo Redondo",
+      "Jardim Soledade",
+      "Morro do Milagre"
+    ],
+    "Jardim das Acácias": [
+      "Flexeiras",
+      "Jardim Morada da Aldeia",
+      "Recanto do Sol",
+      "Rua do Fogo",
+      "Santo Antônio"
+    ],
+    "Poço Fundo": [
+      "Boqueirão",
+      "Porto da Aldeia"
+    ],
+    "Jardim Morada da Aldeia": [
+      "Base AeroNaval",
+      "Flexeiras",
+      "Jardim das Acácias",
+      "Recanto do Sol"
+    ],
+    "Porto da Aldeia": [
+      "Centro",
+      "Nova São Pedro",
+      "Poço Fundo"
+    ],
+    "Flexeiras": [
+      "Balneário São Pedro",
+      "Balneário São Pedro 2",
+      "Balneário das Conchas",
+      "Base AeroNaval",
+      "Jardim Morada da Aldeia",
+      "Jardim das Acácias",
+      "Parque dos Meninos",
+      "Pinheiros",
+      "Rua do Fogo",
+      "Santo Antônio"
+    ],
+    "Ponta do Ambrósio": [
+      "Baixo Grande",
+      "Vinhateiro"
+    ],
+    "Recanto das Orquídeas": [
+      "Alecrim",
+      "Parque Arruda",
+      "Porto do Carro"
+    ],
+    "Parque Arruda": [
+      "Recanto das Orquídeas"
+    ]
+  }
+}

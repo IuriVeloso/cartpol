@@ -18,7 +18,14 @@ from cartpol_app.scripts.report.template_generate import report_template
 # c.save()
 
 
-def run_report(data, path, politician_name, political_code, has_markdown=True):
+def run_report(
+    data,
+    path,
+    politician_name,
+    political_code,
+    has_markdown=True,
+    total_political_votes=None,
+):
     sample_style_sheet = getSampleStyleSheet()
 
     if politician_name == None:
@@ -77,5 +84,13 @@ def run_report(data, path, politician_name, political_code, has_markdown=True):
     elements = [espaco_g, espaco_g, espaco_g, text_top15RCAN, espaco_s, t2, espaco_m, text_top15RUESP_CAN, espaco_s,
                 t3,  espaco_m, text_todosOsBairros, espaco_s, t]
 
-    my_doc.build(elements, onFirstPage=partial(report_template,
-                                               politician_name=politician_name, political_code=political_code, has_markdown=has_markdown))
+    my_doc.build(
+        elements,
+        onFirstPage=partial(
+            report_template,
+            politician_name=politician_name,
+            political_code=political_code,
+            has_markdown=has_markdown,
+            total_political_votes=total_political_votes,
+        ),
+    )

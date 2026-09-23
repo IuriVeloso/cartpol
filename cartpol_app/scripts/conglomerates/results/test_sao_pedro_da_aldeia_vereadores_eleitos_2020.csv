@@ -1,0 +1,11 @@
+﻿municipio,qe,political_id,candidato,full_name,partido,genero,total_votes,concentracao_final,interpretation,total_conglomerates,municipios_map_file,unmatched_in_csv
+SÃO PEDRO DA ALDEIA,4441.0,307620,MISLENE DE ANDRÉ,MISLENE CONCEIÇÃO DOS SANTOS,SOLIDARIEDADE,feminino,1394,0.5263,media,2,neighbors_sao_pedro_da_aldeia_bairros.json,False
+SÃO PEDRO DA ALDEIA,4441.0,305528,CHIQUINHO DE DONA CHICA,FRANCISCO DE ASSIS SOUZA LESSA,PP,masculino,1062,0.4358,media_baixa,5,neighbors_sao_pedro_da_aldeia_bairros.json,False
+SÃO PEDRO DA ALDEIA,4441.0,309225,MARCIO SOARES,MARCIO SOARES DE SOUZA,PDT,masculino,1038,0.4965,media_baixa,3,neighbors_sao_pedro_da_aldeia_bairros.json,False
+SÃO PEDRO DA ALDEIA,4441.0,306021,FERNANDO MISTURA,FERNANDO DE SOUZA SANTOS,REPUBLICANOS,masculino,931,0.7133,media_alta,1,neighbors_sao_pedro_da_aldeia_bairros.json,False
+SÃO PEDRO DA ALDEIA,4441.0,309537,CHIMBIU,CRISTIANEY DE SOUZA,SOLIDARIEDADE,masculino,901,0.5245,media,3,neighbors_sao_pedro_da_aldeia_bairros.json,False
+SÃO PEDRO DA ALDEIA,4441.0,293312,DENILSON,DENILSON DE SOUZA GUIMARÃES,SOLIDARIEDADE,masculino,884,0.4661,media_baixa,4,neighbors_sao_pedro_da_aldeia_bairros.json,False
+SÃO PEDRO DA ALDEIA,4441.0,305043,VITINHO DE ZÉ MAIA,JOSE VICTOR COUTINHO DA COSTA,PL,masculino,858,0.722,media_alta,1,neighbors_sao_pedro_da_aldeia_bairros.json,False
+SÃO PEDRO DA ALDEIA,4441.0,296238,FRANKLIN DA ESCOLINHA,FRANKLIN RIBEIRO CHAVES DE MORAES,CIDADANIA,masculino,611,0.5776,media,2,neighbors_sao_pedro_da_aldeia_bairros.json,False
+SÃO PEDRO DA ALDEIA,4441.0,306545,MICA,IVANIR PEREIRA LEITE,PROS,feminino,607,0.5517,media,3,neighbors_sao_pedro_da_aldeia_bairros.json,False
+SÃO PEDRO DA ALDEIA,4441.0,301126,PROFESSOR JEAN PIERRE,JEAN PIERRE BORGES DE SOUZA,PODE,masculino,461,0.4673,media_baixa,5,neighbors_sao_pedro_da_aldeia_bairros.json,False

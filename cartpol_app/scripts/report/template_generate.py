@@ -3,7 +3,14 @@ from reportlab.lib.units import mm
 path = '/Users/iuri.felix/TCC/cartpol/myfile.pdf'
 
 
-def report_template(c, _doc, politician_name='Politico Z', political_code=0, has_markdown=True):
+def report_template(
+    c,
+    _doc,
+    politician_name='Politico Z',
+    political_code=0,
+    has_markdown=True,
+    total_political_votes=None,
+):
     c.saveState()
 
     c.translate(mm, mm)
@@ -31,6 +38,17 @@ def report_template(c, _doc, politician_name='Politico Z', political_code=0, has
     c.setFont('Helvetica-Bold', 20)
     c.drawString(180*mm, 255*mm, political_code)
 
+    votes_display = (
+        str(int(total_political_votes))
+        if total_political_votes is not None
+        else '0'
+    )
+    c.setFont('Helvetica', 12)
+    c.drawString(10*mm, 238*mm, 'Total de votos do candidato:')
+    c.setFont('Helvetica-Bold', 14)
+    c.drawString(75*mm, 238*mm, votes_display)
+
+    c.setFont('Helvetica', 12)
     c.drawString(10*mm, -20*mm, 'Todos os bairros')
 
     # Creating a rectangle

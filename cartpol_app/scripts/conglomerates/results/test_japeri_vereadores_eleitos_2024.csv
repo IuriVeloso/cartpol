@@ -1,0 +1,12 @@
+﻿municipio,qe,political_id,candidato,full_name,partido,genero,total_votes,concentracao_final,interpretation,total_conglomerates,municipios_map_file,unmatched_in_csv
+JAPERI,5309.0,632472,ROGERINHO DA RR,ROGERIO GOMES CASTRO,PSD,masculino,1525,0.5483,media,2,neighbors_japeri_bairros.json,False
+JAPERI,5309.0,630014,CRISTIANO PINGIN,CRISTIANO DO NASCIMENTO ALVES,AVANTE,masculino,1534,0.5523,media,2,neighbors_japeri_bairros.json,False
+JAPERI,5309.0,632816,MATEUS FERRAZ,MATEUS COUTINHO FERRAZ,PT,masculino,1239,0.5887,media,2,neighbors_japeri_bairros.json,False
+JAPERI,5309.0,631891,DR MARLON,MARLON DOS REIS SANTOS,SOLIDARIEDADE,masculino,1225,0.5624,media,2,neighbors_japeri_bairros.json,False
+JAPERI,5309.0,630017,LÉO MOURA,LEANDRO DOS SANTOS MOURA,PSDB,masculino,1213,0.5887,media,2,neighbors_japeri_bairros.json,False
+JAPERI,5309.0,634899,YGOR BRAZ,YGOR PEREIRA BRAZ,PL,masculino,1124,0.6223,media,2,neighbors_japeri_bairros.json,False
+JAPERI,5309.0,632468,WALLACE DO SALAO,WALLACE GOMES DOS SANTOS,PSD,masculino,1113,0.8024,alta,1,neighbors_japeri_bairros.json,False
+JAPERI,5309.0,634584,ABNER MADEIRA,ABNER SAMPAIO FERREIRA MADEIRA,MDB,masculino,1086,0.7526,alta,3,neighbors_japeri_bairros.json,False
+JAPERI,5309.0,632809,WALTER TRAJANO,WALTER TRAJANO ALVES,PV,masculino,1009,0.615,media,2,neighbors_japeri_bairros.json,False
+JAPERI,5309.0,634902,JC DE SOUZA,JOSÉ CARLOS DE SOUZA,PL,masculino,1064,0.84,alta,2,neighbors_japeri_bairros.json,False
+JAPERI,5309.0,630147,CHARLES GONÇALVES,CHARLES GONÇALVES SOARES,PP,masculino,543,0.5887,media,2,neighbors_japeri_bairros.json,False

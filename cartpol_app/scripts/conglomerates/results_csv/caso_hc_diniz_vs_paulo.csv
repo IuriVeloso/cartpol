@@ -1,0 +1,3 @@
+﻿candidato,nr,votos,fuzzy,interpretacao,n_conglomerados,bairro_reduto,votos_reduto,LQ_max,bairro_LQ_max,votos_no_bairro_LQ_max,n_LQ_acima_1,HC_total_positivo,moran_global,moran_global_p,n_HH_sig,reduto_quad_LISA,reduto_p_LISA
+MARCELO DINIZ ANASTACIO DA SILVA,55888,39963,0.2489,muito_baixa,4,Jacarepaguá,14118,46.8679,Itanhangá,10985,14,31297.02,0.2427,0.003,9,HH,0.008
+PAULO ROBERTO FERREIRA DE SOUZA,20623,2876,0.8776,muito_alta,1,Santa Cruz,2658,25.7081,Santa Cruz,2658,1,2554.61,0.0078,0.272,1,HH,1.0

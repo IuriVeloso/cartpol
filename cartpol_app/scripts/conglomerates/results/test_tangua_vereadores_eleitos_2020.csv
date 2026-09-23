@@ -1,0 +1,14 @@
+﻿municipio,qe,political_id,candidato,full_name,partido,genero,total_votes,concentracao_final,interpretation,total_conglomerates,municipios_map_file,unmatched_in_csv
+TANGUÁ,1475.0,308633,ALINE PEREIRA,ALINE DE SÁ PEREIRA,PP,feminino,557,0.7144,media_alta,2,neighbors_tangua_bairros.json,False
+TANGUÁ,1475.0,290314,ALFREDO DA CLÍNICA,ALFREDO MARINS,PDT,masculino,553,0.6263,media_alta,2,neighbors_tangua_bairros.json,False
+TANGUÁ,1475.0,303573,MARCIA MATOS,MARCILEA BRAGA MATOS,PSL,feminino,494,0.6263,media_alta,2,neighbors_tangua_bairros.json,False
+TANGUÁ,1475.0,290316,SERGINHO DO PINHÃO,SERGIO DE AGUIAR GONÇALVES,PDT,masculino,427,0.6263,media_alta,2,neighbors_tangua_bairros.json,False
+TANGUÁ,1475.0,289669,DERLAN RODRIGUES,HILDERLAN MIRANDA RODRIGUES,PL,masculino,395,0.7373,media_alta,3,neighbors_tangua_bairros.json,False
+TANGUÁ,1475.0,290882,GILMAR DA VAN,GILMAR DE OLIVEIRA CORDEIRO,PP,masculino,367,0.7876,alta,2,neighbors_tangua_bairros.json,False
+TANGUÁ,1475.0,309622,WALDEMIR GOMES,WALDEMIR DA CONCEIÇÃO GOMES,REPUBLICANOS,masculino,357,0.7781,alta,2,neighbors_tangua_bairros.json,False
+TANGUÁ,1475.0,307348,ADALTON PANDA,ADALTON JESUS SOUZA,PSL,masculino,337,0.8776,muito_alta,1,neighbors_tangua_bairros.json,False
+TANGUÁ,1475.0,307706,FELIPE CARVALHO,FELIPE DE OLIVEIRA SILVA CARVALHO,MDB,masculino,312,0.8776,muito_alta,1,neighbors_tangua_bairros.json,False
+TANGUÁ,1475.0,288637,DELSON FRANCO,DELSON MENEZES FRANCO,MDB,masculino,300,0.739,media_alta,2,neighbors_tangua_bairros.json,False
+TANGUÁ,1475.0,288347,LEANDRO BARBEIRO,LEANDRO MACHADO FERREIRA,DEM,masculino,295,0.8776,muito_alta,1,neighbors_tangua_bairros.json,False
+TANGUÁ,1475.0,300160,LÉO DO JIPE,LEONARDO DOS SANTOS OLIVEIRA,PSC,masculino,253,0.8776,muito_alta,1,neighbors_tangua_bairros.json,False
+TANGUÁ,1475.0,299717,MÜLLER SOUZA,MILER SOUZA DE ABREU,AVANTE,masculino,208,0.8776,muito_alta,1,neighbors_tangua_bairros.json,False

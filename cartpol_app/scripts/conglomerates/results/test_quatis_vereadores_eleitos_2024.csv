@@ -1,0 +1,10 @@
+﻿municipio,qe,political_id,candidato,full_name,partido,genero,total_votes,concentracao_final,interpretation,total_conglomerates,municipios_map_file,unmatched_in_csv
+QUATIS,970.0,638855,ALEX D ELIAS,ALEX MILLER ALVES D ELIAS,REPUBLICANOS,masculino,1064,0.9284,muito_alta,2,neighbors_quatis_bairros.json,False
+QUATIS,970.0,640906,LEANDRO SANT ANNA,LEANDRO CARVALHO DE SANT  ANNA,PP,masculino,528,0.9284,muito_alta,2,neighbors_quatis_bairros.json,False
+QUATIS,970.0,641920,UDSON BOMBOM,UDSON MENDES DE FREITAS,SOLIDARIEDADE,masculino,415,0.8755,muito_alta,2,neighbors_quatis_bairros.json,False
+QUATIS,970.0,638615,WILLIAM CARVALHO,WILLIAN DE CARVALHO  ROSARIO,PSB,masculino,770,0.9284,muito_alta,2,neighbors_quatis_bairros.json,False
+QUATIS,970.0,640904,CABELUDO,EMERSON OLIVEIRA DE ALMEIDA,PP,masculino,344,0.9592,muito_alta,2,neighbors_quatis_bairros.json,False
+QUATIS,970.0,643930,NILDINHO,NILDE HIPOLITO FILHO,MDB,masculino,314,0.9592,muito_alta,2,neighbors_quatis_bairros.json,False
+QUATIS,970.0,643927,DJ DENILSO,JOSÉ JADENILSO DA SILVA,MDB,masculino,304,0.9592,muito_alta,2,neighbors_quatis_bairros.json,False
+QUATIS,970.0,638850,MARCELA,MARCELA DA SILVA FONSECA MEYER,REPUBLICANOS,feminino,558,0.8284,alta,2,neighbors_quatis_bairros.json,False
+QUATIS,970.0,642843,ROGERIO ELETRICISTA,ROGERIO DE SOUZA OLIVEIRA,UNIÃO,masculino,270,0.8687,alta,2,neighbors_quatis_bairros.json,False

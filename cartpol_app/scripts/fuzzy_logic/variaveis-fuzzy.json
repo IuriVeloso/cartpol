@@ -1,0 +1,51 @@
+{
+  "variaveis": [
+    {
+      "nome": "ruesp_can",
+      "tipo": "entrada",
+      "dominio": [0, 40],
+      "conjuntos": [
+        {"nome": "pequena", "tipo": "trapezoidal_esq", "parametros": [4, 8]},
+        {"nome": "media", "tipo": "trapezoidal", "parametros": [4, 8, 16, 20]},
+        {"nome": "grande",  "tipo": "trapezoidal_dir", "parametros": [16, 20]}
+      ]
+    },
+    {
+      "nome": "tam_conglomerado",
+      "tipo": "entrada",
+      "dominio": [1, 10],
+      "conjuntos": [
+        {"nome": "pequeno", "tipo": "triangular_esq", "parametros": [1, 3]},
+        {"nome": "medio", "tipo": "triangular", "parametros": [1, 2, 3]},
+        {"nome": "grande",  "tipo": "trapezoidal", "parametros": [2, 3, 4, 5]},
+        {"nome": "muito_grande",  "tipo": "trapezoidal_dir", "parametros": [4, 5]}
+      ]
+    },
+    {
+      "nome": "qtd_bairros",
+      "tipo": "entrada",
+      "dominio": [0, 100],
+      "conjuntos": [
+        {"nome": "pequena", "tipo": "trapezoidal_esq", "parametros": [10, 30]},
+        {"nome": "media", "tipo": "trapezoidal", "parametros": [10, 30, 40, 60]},
+        {"nome": "grande",  "tipo": "trapezoidal_dir", "parametros": [40, 60]}
+      ]
+    },
+    {
+      "nome": "concentracao",
+      "tipo": "saida",
+      "dominio": [0, 1],
+      "conjuntos": [
+        {"nome": "irrisoria", "tipo": "triangular_esq", "parametros": [0, 0.125]},
+        {"nome": "muito_baixa", "tipo": "triangular", "parametros": [0, 0.125, 0.25]},
+        {"nome": "baixa", "tipo": "triangular", "parametros": [0.125, 0.25, 0.375]},
+        {"nome": "media_baixa", "tipo": "triangular", "parametros": [0.25, 0.375, 0.5]},
+        {"nome": "media", "tipo": "triangular", "parametros": [0.375, 0.5, 0.625]},
+        {"nome": "media_alta", "tipo": "triangular", "parametros": [0.5, 0.625, 0.75]},
+        {"nome": "alta", "tipo": "triangular", "parametros": [0.625, 0.75, 0.875]},
+        {"nome": "muito_alta", "tipo": "triangular", "parametros": [0.75, 0.875, 1]},
+        {"nome": "altissima", "tipo": "triangular_dir", "parametros": [0.875, 1]}
+     ]
+    }
+  ]
+}

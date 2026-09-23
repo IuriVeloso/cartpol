@@ -1,0 +1,332 @@
+{
+  "county": "Barra do Piraí",
+  "source_zip": "/home/iuri/TCC/cartpol-pwa/src/assets/maps/county/Barra do Piraí.zip",
+  "stats": {
+    "total_regions": 47,
+    "total_neighbors": 111,
+    "avg_neighbors": 4.723404255319149,
+    "max_neighbors": 12,
+    "min_neighbors": 2,
+    "isolated_regions": 0,
+    "region_most_neighbors": "Centro",
+    "region_least_neighbors": "Chaminé"
+  },
+  "neighbors": {
+    "Ponte Vermelha": [
+      "Carbocálcio",
+      "Parque Santana",
+      "Ponte Andrade",
+      "Roseira"
+    ],
+    "Metalúrgica": [
+      "Doutor Mesquita",
+      "Nossa Senhora de Santana",
+      "Oficinas Velhas"
+    ],
+    "Nossa Senhora de Santana": [
+      "Belvedere",
+      "Centro",
+      "Chácara Farani",
+      "Doutor Mesquita",
+      "Matadouro",
+      "Metalúrgica",
+      "Oficinas Velhas"
+    ],
+    "Carbocálcio": [
+      "Parque Santana",
+      "Ponte Andrade",
+      "Ponte Vermelha",
+      "Santana de Barra"
+    ],
+    "Vila Suíça": [
+      "Caieira",
+      "Chácara Farani",
+      "Matadouro",
+      "Química",
+      "Vila Helena"
+    ],
+    "Asa Branca": [
+      "Campo Bom",
+      "Doutor Mesquita",
+      "Oficinas Velhas",
+      "Santa Cecília"
+    ],
+    "Chácara Farani": [
+      "Caieira",
+      "Centro",
+      "Matadouro",
+      "Nossa Senhora de Santana",
+      "Vila Suíça"
+    ],
+    "Chaminé": [
+      "Matadouro",
+      "Santo Antônio"
+    ],
+    "Belvedere": [
+      "Doutor Mesquita",
+      "Lago Azul",
+      "Matadouro",
+      "Nossa Senhora de Santana",
+      "Santo Antônio",
+      "São José"
+    ],
+    "Carvão": [
+      "Boa Sorte",
+      "Centro",
+      "Morro do Gama",
+      "Muqueca",
+      "Santo Cristo",
+      "Vargem Grande"
+    ],
+    "Vargem Grande": [
+      "Areal",
+      "Boa Sorte",
+      "Carvão",
+      "Maracanã",
+      "Muqueca",
+      "Roseira"
+    ],
+    "Matadouro": [
+      "Belvedere",
+      "Chaminé",
+      "Chácara Farani",
+      "Nossa Senhora de Santana",
+      "Santo Antônio",
+      "Vila Helena",
+      "Vila Suíça"
+    ],
+    "Carlos de Queiroz": [
+      "Muqueca",
+      "São João"
+    ],
+    "Oficinas Velhas": [
+      "Asa Branca",
+      "Campo Bom",
+      "Centro",
+      "Doutor Mesquita",
+      "Metalúrgica",
+      "Nossa Senhora de Santana",
+      "Santa Cecília"
+    ],
+    "Ponte Andrade": [
+      "Carbocálcio",
+      "Maracanã",
+      "Ponte Vermelha",
+      "Roseira"
+    ],
+    "Caieira": [
+      "Caixa D'Água",
+      "Centro",
+      "Chácara Farani",
+      "Química",
+      "Represa",
+      "Vila Suíça"
+    ],
+    "Química": [
+      "Caieira",
+      "Novo México",
+      "Parque São Joaquim",
+      "Represa",
+      "Vila Helena",
+      "Vila Suíça"
+    ],
+    "Areal": [
+      "Boa Sorte",
+      "Roseira",
+      "Santa Cecília",
+      "Vargem Grande"
+    ],
+    "Represa": [
+      "Caieira",
+      "Caixa D'Água",
+      "Muqueca",
+      "Novo México",
+      "Química"
+    ],
+    "Lago Azul": [
+      "Belvedere",
+      "Campo Bom",
+      "Doutor Mesquita",
+      "Ponte Preta",
+      "São José"
+    ],
+    "Roseira": [
+      "Areal",
+      "Maracanã",
+      "Ponte Andrade",
+      "Ponte Vermelha",
+      "Vargem Grande"
+    ],
+    "Ponte Preta": [
+      "Campo Bom",
+      "Lago Azul",
+      "São José"
+    ],
+    "São João": [
+      "Carlos de Queiroz",
+      "Maracanã",
+      "Muqueca"
+    ],
+    "Vale do Ipiranga": [
+      "Arthur Cataldi",
+      "Grota Funda",
+      "Vila Helena"
+    ],
+    "Parque Santana": [
+      "Carbocálcio",
+      "Ponte Vermelha",
+      "Santana de Barra"
+    ],
+    "Chalet": [
+      "Boca do Mato",
+      "Santana de Barra"
+    ],
+    "Novo México": [
+      "Química",
+      "Represa"
+    ],
+    "Caixa D'Água": [
+      "Caieira",
+      "Centro",
+      "Muqueca",
+      "Represa"
+    ],
+    "Arthur Cataldi": [
+      "Santo Antônio",
+      "Vale do Ipiranga",
+      "Vila Helena"
+    ],
+    "Vila Helena": [
+      "Arthur Cataldi",
+      "Grota Funda",
+      "Matadouro",
+      "Parque São Joaquim",
+      "Química",
+      "Santo Antônio",
+      "São Luiz",
+      "Vale do Ipiranga",
+      "Vila Suíça"
+    ],
+    "Morro do Gama": [
+      "Boa Sorte",
+      "Carvão",
+      "Centro",
+      "Morro do Paraíso",
+      "Santo Cristo"
+    ],
+    "Boa Sorte": [
+      "Areal",
+      "Carvão",
+      "Centro",
+      "Morro do Gama",
+      "Santa Cecília",
+      "Vargem Grande"
+    ],
+    "Boca do Mato": [
+      "Chalet",
+      "Santana de Barra"
+    ],
+    "Maracanã": [
+      "Muqueca",
+      "Ponte Andrade",
+      "Roseira",
+      "São João",
+      "Vargem Grande"
+    ],
+    "Muqueca": [
+      "Caixa D'Água",
+      "Carlos de Queiroz",
+      "Carvão",
+      "Centro",
+      "Maracanã",
+      "Represa",
+      "São João",
+      "Vargem Grande"
+    ],
+    "Santana de Barra": [
+      "Boca do Mato",
+      "Carbocálcio",
+      "Chalet",
+      "Parque Santana"
+    ],
+    "Doutor Mesquita": [
+      "Asa Branca",
+      "Belvedere",
+      "Campo Bom",
+      "Lago Azul",
+      "Metalúrgica",
+      "Nossa Senhora de Santana",
+      "Oficinas Velhas"
+    ],
+    "Grota Funda": [
+      "São Luiz",
+      "Vale do Ipiranga",
+      "Vila Helena"
+    ],
+    "Santo Antônio": [
+      "Arthur Cataldi",
+      "Belvedere",
+      "Chaminé",
+      "Matadouro",
+      "Vila Helena"
+    ],
+    "Santa Cecília": [
+      "Areal",
+      "Asa Branca",
+      "Boa Sorte",
+      "Campo Bom",
+      "Centro",
+      "Oficinas Velhas"
+    ],
+    "Campo Bom": [
+      "Asa Branca",
+      "Doutor Mesquita",
+      "Lago Azul",
+      "Oficinas Velhas",
+      "Ponte Preta",
+      "Santa Cecília",
+      "São José"
+    ],
+    "São Luiz": [
+      "Grota Funda",
+      "Parque São Joaquim",
+      "Vila Helena"
+    ],
+    "São José": [
+      "Belvedere",
+      "Campo Bom",
+      "Lago Azul",
+      "Ponte Preta"
+    ],
+    "Morro do Paraíso": [
+      "Centro",
+      "Morro do Gama",
+      "Santo Cristo"
+    ],
+    "Centro": [
+      "Boa Sorte",
+      "Caieira",
+      "Caixa D'Água",
+      "Carvão",
+      "Chácara Farani",
+      "Morro do Gama",
+      "Morro do Paraíso",
+      "Muqueca",
+      "Nossa Senhora de Santana",
+      "Oficinas Velhas",
+      "Santa Cecília",
+      "Santo Cristo"
+    ],
+    "Parque São Joaquim": [
+      "Química",
+      "São Luiz",
+      "Vila Helena"
+    ],
+    "Santo Cristo": [
+      "Carvão",
+      "Centro",
+      "Morro do Gama",
+      "Morro do Paraíso"
+    ]
+  }
+}

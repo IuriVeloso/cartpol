@@ -1,0 +1,160 @@
+{
+  "county": "Iguaba Grande",
+  "source_zip": "/home/iuri/TCC/cartpol-pwa/src/assets/maps/county/Iguaba Grande.zip",
+  "stats": {
+    "total_regions": 22,
+    "total_neighbors": 50,
+    "avg_neighbors": 4.545454545454546,
+    "max_neighbors": 8,
+    "min_neighbors": 2,
+    "isolated_regions": 0,
+    "region_most_neighbors": "Vila Nova",
+    "region_least_neighbors": "Ubás"
+  },
+  "neighbors": {
+    "Arrastão das Pedras": [
+      "Igarapiapunha",
+      "Sapeatiba Mirim",
+      "Vila Nova"
+    ],
+    "Sopotó": [
+      "Centro",
+      "Estação",
+      "Jardim Solares",
+      "Parque Tamariz",
+      "Pedreira"
+    ],
+    "Parque Tamariz": [
+      "Canellas City",
+      "Centro",
+      "Pedreira",
+      "Sopotó"
+    ],
+    "Pedreira": [
+      "Canellas City",
+      "Iguaba Pequena",
+      "Jardim Solares",
+      "Parque Tamariz",
+      "Sopotó"
+    ],
+    "Laguna Azul": [
+      "Andorinhas",
+      "Canellas City",
+      "Iguaba Pequena"
+    ],
+    "Sapeatiba Mirim": [
+      "Arrastão das Pedras",
+      "Capivara",
+      "Coqueiros",
+      "Nova Iguaba",
+      "Vila Nova"
+    ],
+    "Cidade Nova": [
+      "Capivara",
+      "Centro",
+      "Estação",
+      "Nova Iguaba",
+      "São Miguel",
+      "Ubás"
+    ],
+    "Iguaba Pequena": [
+      "Andorinhas",
+      "Canellas City",
+      "Laguna Azul",
+      "Pedreira"
+    ],
+    "Canellas City": [
+      "Andorinhas",
+      "Iguaba Pequena",
+      "Laguna Azul",
+      "Parque Tamariz",
+      "Pedreira"
+    ],
+    "Vila Nova": [
+      "Arrastão das Pedras",
+      "Boa Vista",
+      "Coqueiros",
+      "Igarapiapunha",
+      "Jardim Solares",
+      "Nova Iguaba",
+      "Sapeatiba Mirim",
+      "União"
+    ],
+    "Andorinhas": [
+      "Canellas City",
+      "Iguaba Pequena",
+      "Laguna Azul"
+    ],
+    "Estação": [
+      "Boa Vista",
+      "Centro",
+      "Cidade Nova",
+      "Jardim Solares",
+      "Sopotó",
+      "São Miguel"
+    ],
+    "Ubás": [
+      "Capivara",
+      "Cidade Nova"
+    ],
+    "Boa Vista": [
+      "Estação",
+      "Jardim Solares",
+      "São Miguel",
+      "União",
+      "Vila Nova"
+    ],
+    "Centro": [
+      "Cidade Nova",
+      "Estação",
+      "Parque Tamariz",
+      "Sopotó"
+    ],
+    "Jardim Solares": [
+      "Boa Vista",
+      "Estação",
+      "Pedreira",
+      "Sopotó",
+      "Vila Nova"
+    ],
+    "Capivara": [
+      "Cidade Nova",
+      "Coqueiros",
+      "Nova Iguaba",
+      "Sapeatiba Mirim",
+      "Ubás"
+    ],
+    "Igarapiapunha": [
+      "Arrastão das Pedras",
+      "Vila Nova"
+    ],
+    "Nova Iguaba": [
+      "Capivara",
+      "Cidade Nova",
+      "Coqueiros",
+      "Sapeatiba Mirim",
+      "São Miguel",
+      "União",
+      "Vila Nova"
+    ],
+    "Coqueiros": [
+      "Capivara",
+      "Nova Iguaba",
+      "Sapeatiba Mirim",
+      "Vila Nova"
+    ],
+    "São Miguel": [
+      "Boa Vista",
+      "Cidade Nova",
+      "Estação",
+      "Nova Iguaba",
+      "União"
+    ],
+    "União": [
+      "Boa Vista",
+      "Nova Iguaba",
+      "São Miguel",
+      "Vila Nova"
+    ]
+  }
+}

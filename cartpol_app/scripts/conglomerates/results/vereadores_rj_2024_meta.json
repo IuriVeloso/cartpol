@@ -1,0 +1,13 @@
+{
+  "filtro": {
+    "cargo": "Vereador",
+    "cidade": "RIO DE JANEIRO",
+    "county_id": 2,
+    "ano": 2024,
+    "top_n": 80
+  },
+  "qe": 59154.0,
+  "threshold_percent": 0.05,
+  "neighbors_json": "/home/iuri/TCC/cartpol/cartpol_app/scripts/conglomerates/neighborhoods/neighbors_rio_de_janeiro_bairros.json",
+  "csv": "/home/iuri/TCC/cartpol/cartpol_app/scripts/conglomerates/results/vereadores_rj_2024.csv"
+}

@@ -1,0 +1,20 @@
+﻿municipio,qe,political_id,candidato,full_name,partido,genero,total_votes,concentracao_final,interpretation,total_conglomerates,municipios_map_file,unmatched_in_csv
+TERESÓPOLIS,4375.0,290379,FABINHO FILÉ,FABIO BRANCO DA CRUZ,PODE,masculino,1935,0.6548,media_alta,5,neighbors_teresopolis_bairros.json,False
+TERESÓPOLIS,4375.0,304498,PAULINHO NOGUEIRA,PAULO HENRIQUE TEIXEIRA NOGUEIRA,PSC,masculino,1694,0.5591,media,2,neighbors_teresopolis_bairros.json,False
+TERESÓPOLIS,4375.0,299220,DUDU DO RESGATE,CARLOS EDUARDO PIMENTEL BARBOSA,SOLIDARIEDADE,masculino,1380,0.5833,media,6,neighbors_teresopolis_bairros.json,False
+TERESÓPOLIS,4375.0,299090,ERIKA MARRA,ERIKA MARIA REBELLO MARRA,PSD,feminino,1221,0.5562,media,4,neighbors_teresopolis_bairros.json,False
+TERESÓPOLIS,4375.0,294330,DIEGO BARBOSA,DIEGO BARBOSA ARAÚJO,CIDADANIA,masculino,1112,0.683,media_alta,4,neighbors_teresopolis_bairros.json,False
+TERESÓPOLIS,4375.0,305992,LEONARDO VASCONCELLOS,JOSÉ LEONARDO VASCONCELLOS DE ANDRADE,DC,masculino,1101,0.6284,media_alta,5,neighbors_teresopolis_bairros.json,False
+TERESÓPOLIS,4375.0,300787,JOSE CARLOS DA ESTUFA,JOSÉ CARLOS FITA NOGUEIRA,PSC,masculino,1100,0.6307,media_alta,4,neighbors_teresopolis_bairros.json,False
+TERESÓPOLIS,4375.0,294657,RANGEL,MARCOS RANGEL SCHWENCK DE MOURA,PP,masculino,1054,0.5511,media,6,neighbors_teresopolis_bairros.json,False
+TERESÓPOLIS,4375.0,294963,LUCIANO SANTOS,LUCIANO DOS SANTOS CANDIDO,REPUBLICANOS,masculino,972,0.5247,media,5,neighbors_teresopolis_bairros.json,False
+TERESÓPOLIS,4375.0,288597,DR RAIMUNDO AMORIM,RAIMUNDO MARTINS AMORIM,PATRIOTA,masculino,902,0.6918,media_alta,4,neighbors_teresopolis_bairros.json,False
+TERESÓPOLIS,4375.0,306013,AMÓS LAURINDO,AMÓS DA SILVA LAURINDO,DEM,masculino,888,0.5441,media,6,neighbors_teresopolis_bairros.json,False
+TERESÓPOLIS,4375.0,300440,FIDEL FARIA,FIDEL MENDES FARIA,PV,masculino,818,0.6464,media_alta,4,neighbors_teresopolis_bairros.json,False
+TERESÓPOLIS,4375.0,298634,TECO DESPACHANTE,PAULO SÉRGIO DA SILVA,CIDADANIA,masculino,791,0.6057,media,4,neighbors_teresopolis_bairros.json,False
+TERESÓPOLIS,4375.0,297561,MAURICIO LOPES,MAURICIO LOPES DOS SANTOS,DEM,masculino,786,0.5071,media,4,neighbors_teresopolis_bairros.json,False
+TERESÓPOLIS,4375.0,289282,BRUNINHO ALMEIDA,BRUNO ALMEIDA PEREIRA,PSDB,masculino,782,0.5238,media,4,neighbors_teresopolis_bairros.json,False
+TERESÓPOLIS,4375.0,289283,JOÃO MIGUEL,JOÃO MIGUEL DE ALMEIDA CRUZ,PSDB,masculino,736,0.6926,media_alta,4,neighbors_teresopolis_bairros.json,False
+TERESÓPOLIS,4375.0,307681,ADEMIR ENFERMEIRO,GERALDO ADEMIR DOS SANTOS,PMB,masculino,708,0.5662,media,5,neighbors_teresopolis_bairros.json,False
+TERESÓPOLIS,4375.0,288425,ELIAS MAIA,ELIAS MAIA DA SILVA,PMB,masculino,620,0.6057,media,4,neighbors_teresopolis_bairros.json,False
+TERESÓPOLIS,4375.0,303233,ANDRE DO GAS,ANDRE LEITE DE CARVALHO,PP,masculino,579,0.5632,media,4,neighbors_teresopolis_bairros.json,False

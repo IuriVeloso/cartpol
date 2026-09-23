@@ -1,0 +1,28 @@
+﻿municipio,qe,political_id,candidato,full_name,partido,genero,total_votes,concentracao_final,interpretation,total_conglomerates,municipios_map_file,unmatched_in_csv
+SÃO GONÇALO,16524.0,637345,NELSINHO RUAS,NELSON RUAS DOS SANTOS FILHO,PL,masculino,22158,0.4126,media_baixa,2,neighbors_sao_goncalo_bairros.json,False
+SÃO GONÇALO,16524.0,637249,BRUNO PORTO,BRUNO PORTO DE ALMEIDA,PL,masculino,13820,0.4432,media_baixa,2,neighbors_sao_goncalo_bairros.json,False
+SÃO GONÇALO,16524.0,637286,JUAN OLIVEIRA,JUAN PATRICK PINHEIRO DE OLIVEIRA,PL,masculino,13782,0.4432,media_baixa,3,neighbors_sao_goncalo_bairros.json,False
+SÃO GONÇALO,16524.0,631147,FELIPE BRITO,FELIPE BRITO SOARES,SOLIDARIEDADE,masculino,6786,0.481,media_baixa,2,neighbors_sao_goncalo_bairros.json,False
+SÃO GONÇALO,16524.0,637825,LECINHO,ALECIO BREDA DIAS,REPUBLICANOS,masculino,12866,0.44,media_baixa,2,neighbors_sao_goncalo_bairros.json,False
+SÃO GONÇALO,16524.0,633444,ALCEMIR MACIEL,ALCEMIR DE OLIVEIRA MACIEL,AVANTE,masculino,6287,0.4923,media_baixa,2,neighbors_sao_goncalo_bairros.json,False
+SÃO GONÇALO,16524.0,637285,PATRÍCIA SILVA,PATRÍCIA HELENA DA SILVA RODRIGUES,PL,feminino,12096,0.3967,media_baixa,4,neighbors_sao_goncalo_bairros.json,False
+SÃO GONÇALO,16524.0,637283,PEDRO PERICAR,PEDRO RICARDO DE SOUZA CAMPOS,PL,masculino,11052,0.4954,media_baixa,2,neighbors_sao_goncalo_bairros.json,False
+SÃO GONÇALO,16524.0,630563,VINÍCIUS,MARCUS VINICIUS ALVES DE MOURA,UNIÃO,masculino,5478,0.4623,media_baixa,3,neighbors_sao_goncalo_bairros.json,False
+SÃO GONÇALO,16524.0,637342,ALINE CICI MALDONADO,ALINE VASQUES MALDONADO,PL,feminino,10378,0.481,media_baixa,2,neighbors_sao_goncalo_bairros.json,False
+SÃO GONÇALO,16524.0,642951,CLAUDINEI SIQUEIRA,CLAUDINEI PEÇANHA SIQUEIRA,PRD,masculino,5175,0.4142,media_baixa,3,neighbors_sao_goncalo_bairros.json,False
+SÃO GONÇALO,16524.0,630511,NEM DA PANK MOTOS,VALMIR SANTOS FILHO,UNIÃO,masculino,5006,0.4077,media_baixa,3,neighbors_sao_goncalo_bairros.json,False
+SÃO GONÇALO,16524.0,637979,PIERO CABRAL,PIERO DE MATOS CABRAL,REPUBLICANOS,masculino,9910,0.4045,media_baixa,4,neighbors_sao_goncalo_bairros.json,False
+SÃO GONÇALO,16524.0,637450,BETO DA SERRARIA,ROBERTO NORIVAL FRANCISCO DE CAMPOS,PL,masculino,9792,0.6376,media_alta,5,neighbors_sao_goncalo_bairros.json,False
+SÃO GONÇALO,16524.0,633442,MAGÚ DOS BRINQUEDOS,MAGNO JOSÉ DA SILVA,AVANTE,masculino,4785,0.3792,media_baixa,9,neighbors_sao_goncalo_bairros.json,False
+SÃO GONÇALO,16524.0,643934,ARTUR RODRIGUES,ARTUR DA CONCEIÇÃO RODRIGUES,PODE,masculino,4603,0.3805,media_baixa,5,neighbors_sao_goncalo_bairros.json,False
+SÃO GONÇALO,16524.0,631495,POUBEL,GLAUBER MEDEIROS POUBEL,SOLIDARIEDADE,masculino,4563,0.4865,media_baixa,2,neighbors_sao_goncalo_bairros.json,False
+SÃO GONÇALO,16524.0,629607,JULIANO FREITAS,JULIANO DE FREITAS COSTA,PT,masculino,4414,0.4789,media_baixa,4,neighbors_sao_goncalo_bairros.json,False
+SÃO GONÇALO,16524.0,630293,CACAU,CLÁUDIO LUÍS ABREU DA SILVA,MDB,masculino,4256,0.3867,media_baixa,5,neighbors_sao_goncalo_bairros.json,False
+SÃO GONÇALO,16524.0,633922,ALEX LORETI,ALEX DE SOUZA LORETI,CIDADANIA,masculino,4122,0.4539,media_baixa,9,neighbors_sao_goncalo_bairros.json,False
+SÃO GONÇALO,16524.0,629740,PROFESSOR FELIPE GUARANY,FELIPE TAVARES RODRIGUES GUARANY DA SILVA,MDB,masculino,4119,0.4127,media_baixa,4,neighbors_sao_goncalo_bairros.json,False
+SÃO GONÇALO,16524.0,629606,ISAAC,ISAAC SOUZA DA SILVA,PC do B,masculino,4073,0.4171,media_baixa,4,neighbors_sao_goncalo_bairros.json,False
+SÃO GONÇALO,16524.0,633677,NATAN,NATAM DA SILVA FERREIRA,PP,masculino,4051,0.3815,media_baixa,9,neighbors_sao_goncalo_bairros.json,False
+SÃO GONÇALO,16524.0,643632,DINEY MARINS,VALDINEI RENATO MARINS,PODE,masculino,3800,0.3987,media_baixa,5,neighbors_sao_goncalo_bairros.json,False
+SÃO GONÇALO,16524.0,633729,ALAN RODRIGUES,ALAN JORGE GONÇALVES RODRIGUES FIGUEIREDO,PP,masculino,3791,0.4684,media_baixa,3,neighbors_sao_goncalo_bairros.json,False
+SÃO GONÇALO,16524.0,633883,TIÃO NANCI,SEBASTIÃO VICTOR GONÇALVES PEREIRA,PSDB,masculino,3583,0.445,media_baixa,4,neighbors_sao_goncalo_bairros.json,False
+SÃO GONÇALO,16524.0,642164,DEJORGE PATRICIO,DEJORGE PATRICIO DA SILVA,PDT,masculino,3351,0.4218,media_baixa,4,neighbors_sao_goncalo_bairros.json,False

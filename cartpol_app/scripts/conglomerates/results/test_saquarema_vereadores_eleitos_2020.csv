@@ -1,0 +1,14 @@
+﻿municipio,qe,political_id,candidato,full_name,partido,genero,total_votes,concentracao_final,interpretation,total_conglomerates,municipios_map_file,unmatched_in_csv
+SAQUAREMA,3554.0,291934,ABRAÃO DA MELGIL,ABRAÃO RIBEIRO DO NASCIMENTO,DEM,masculino,1825,0.6776,media_alta,4,neighbors_saquarema_bairros.json,False
+SAQUAREMA,3554.0,288214,IVAN MELO,IVAN DA SILVA MELO,PSDB,masculino,1629,0.645,media_alta,3,neighbors_saquarema_bairros.json,False
+SAQUAREMA,3554.0,305447,VANILDO,EVANILDO FERREIRA DA SILVA,PP,masculino,1249,0.5561,media,5,neighbors_saquarema_bairros.json,False
+SAQUAREMA,3554.0,301182,DRA RAQUEL,RAQUEL DE CARVALHO OLIVEIRA SANT ANA,PROS,feminino,1247,0.6212,media,7,neighbors_saquarema_bairros.json,False
+SAQUAREMA,3554.0,294640,ROGER GOMES,ROGER CARVALHO DE ALMEIDA,PSL,masculino,1224,0.6457,media_alta,4,neighbors_saquarema_bairros.json,False
+SAQUAREMA,3554.0,293718,BEBETO DO RIO SECO,ROBERTO CARLOS REIS MELO,PROS,masculino,1202,0.6435,media_alta,5,neighbors_saquarema_bairros.json,False
+SAQUAREMA,3554.0,307334,ELISIA RANGEL,ELISIA RANGEL DE FREITAS,PDT,feminino,1174,0.6826,media_alta,4,neighbors_saquarema_bairros.json,False
+SAQUAREMA,3554.0,304330,AMARILDO ORELHA,AMARILDO CARVALHO DE OLIVEIRA,REPUBLICANOS,masculino,1171,0.6282,media_alta,4,neighbors_saquarema_bairros.json,False
+SAQUAREMA,3554.0,303293,HEBER KILINHO,UEVERTON SIQUEIRA DA SILVA,PSDB,masculino,1146,0.5726,media,4,neighbors_saquarema_bairros.json,False
+SAQUAREMA,3554.0,291933,ADRIANA DE VANDER,ADRIANA MARIA DA CONCEIÇÃO PEREIRA,DEM,feminino,1125,0.6053,media,5,neighbors_saquarema_bairros.json,False
+SAQUAREMA,3554.0,299622,DINEI DO RAIO X,ODINEI GARCIA RAMOS,PDT,masculino,1088,0.6484,media_alta,4,neighbors_saquarema_bairros.json,False
+SAQUAREMA,3554.0,305263,VAGUINHO DA MARMORARIA,WAGNER MATOS DE SOUSA SILVA,PSL,masculino,1079,0.6895,media_alta,5,neighbors_saquarema_bairros.json,False
+SAQUAREMA,3554.0,305403,BRUNO PINHEIRO,BRUNO ENRICO DE OLIVEIRA PINHEIRO,PDT,masculino,1028,0.6823,media_alta,4,neighbors_saquarema_bairros.json,False

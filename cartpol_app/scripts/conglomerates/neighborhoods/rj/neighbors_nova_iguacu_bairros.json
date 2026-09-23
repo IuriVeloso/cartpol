@@ -1,0 +1,496 @@
+{
+  "county": "Nova Iguaçu",
+  "source_zip": "/home/iuri/TCC/cartpol-pwa/src/assets/maps/county/Nova Iguaçu.zip",
+  "stats": {
+    "total_regions": 67,
+    "total_neighbors": 173,
+    "avg_neighbors": 5.164179104477612,
+    "max_neighbors": 10,
+    "min_neighbors": 2,
+    "isolated_regions": 0,
+    "region_most_neighbors": "Centro",
+    "region_least_neighbors": "Boa Esperança"
+  },
+  "neighbors": {
+    "Santa Rita": [
+      "Adrianópolis",
+      "Corumbá",
+      "Rancho Fundo",
+      "Tinguazinho",
+      "Vila de Cava"
+    ],
+    "Inconfidência": [
+      "Austin",
+      "Riachão",
+      "Rodilândia",
+      "Vila Guimarães"
+    ],
+    "Rancho Fundo": [
+      "Botafogo",
+      "Corumbá",
+      "Figueiras",
+      "Iguaçu Velho",
+      "Parque Ambaí",
+      "Parque Flora",
+      "Ponto Chic",
+      "Santa Rita",
+      "Vila de Cava"
+    ],
+    "Rodilândia": [
+      "Austin",
+      "Cacuia",
+      "Comendador Soares",
+      "Inconfidência",
+      "Riachão",
+      "Rosa dos Ventos"
+    ],
+    "Jardim Iguaçu": [
+      "Comendador Soares",
+      "Moquetá",
+      "Santa Eugênia",
+      "da Cerâmica",
+      "da Posse"
+    ],
+    "Vila Guimarães": [
+      "Austin",
+      "Carlos Sampaio",
+      "Inconfidência"
+    ],
+    "Paraíso": [
+      "Jardim Guandu",
+      "Km - 32",
+      "Lagoinha",
+      "Marapicu",
+      "Prados Verdes",
+      "Valverde"
+    ],
+    "Ponto Chic": [
+      "Botafogo",
+      "Carmary",
+      "Corumbá",
+      "Rancho Fundo",
+      "Tinguazinho",
+      "Três Corações",
+      "da Cerâmica",
+      "da Posse"
+    ],
+    "Grama": [
+      "Figueiras",
+      "Geneciano",
+      "Iguaçu Velho",
+      "Parque Ambaí"
+    ],
+    "Miguel Couto": [
+      "Adrianópolis",
+      "Boa Esperança",
+      "Nova América",
+      "Parque Ambaí"
+    ],
+    "Cacuia": [
+      "Austin",
+      "Comendador Soares",
+      "Rodilândia",
+      "Tinguazinho",
+      "da Cerâmica"
+    ],
+    "Botafogo": [
+      "Corumbá",
+      "Parque Flora",
+      "Ponto Chic",
+      "Rancho Fundo",
+      "Três Corações"
+    ],
+    "Califórnia": [
+      "Centro",
+      "Jardim Tropical",
+      "Vila Nova"
+    ],
+    "Ipiranga": [
+      "Cabuçu",
+      "Campo Alegre",
+      "Lagoinha",
+      "Marapicu"
+    ],
+    "Ouro Verde": [
+      "Comendador Soares",
+      "Jardim Alvorada",
+      "Jardim Pernambuco",
+      "Rosa dos Ventos",
+      "da Luz"
+    ],
+    "Danon": [
+      "Jardim Alvorada",
+      "Jardim Nova Era",
+      "Jardim Palmares",
+      "Valverde",
+      "da Palhada"
+    ],
+    "Jardim Nova Era": [
+      "Danon",
+      "Jardim Alvorada",
+      "Jardim Palmares",
+      "Jardim Pernambuco",
+      "Rosa dos Ventos"
+    ],
+    "da Viga": [
+      "Kennedy",
+      "Nova América",
+      "Rancho Novo",
+      "Vila Operária"
+    ],
+    "da Cerâmica": [
+      "Cacuia",
+      "Comendador Soares",
+      "Jardim Iguaçu",
+      "Ponto Chic",
+      "Tinguazinho",
+      "da Posse"
+    ],
+    "Lagoinha": [
+      "Campo Alegre",
+      "Ipiranga",
+      "Jardim Guandu",
+      "Marapicu",
+      "Paraíso",
+      "Prados Verdes"
+    ],
+    "Figueiras": [
+      "Grama",
+      "Iguaçu Velho",
+      "Parque Ambaí",
+      "Rancho Fundo"
+    ],
+    "Jardim Palmares": [
+      "Danon",
+      "Jardim Nova Era",
+      "Jardim Pernambuco",
+      "Riachão",
+      "Rosa dos Ventos",
+      "da Palhada"
+    ],
+    "Engenho Pequeno": [
+      "Jardim Tropical",
+      "Rancho Novo",
+      "Vila Operária",
+      "da Prata"
+    ],
+    "Parque Flora": [
+      "Ambaí",
+      "Botafogo",
+      "Parque Ambaí",
+      "Rancho Fundo",
+      "Três Corações"
+    ],
+    "Vila de Cava": [
+      "Adrianópolis",
+      "Iguaçu Velho",
+      "Rancho Fundo",
+      "Santa Rita",
+      "Tinguá"
+    ],
+    "Nova América": [
+      "Ambaí",
+      "Boa Esperança",
+      "Carmary",
+      "Kennedy",
+      "Miguel Couto",
+      "Parque Ambaí",
+      "Vila Operária",
+      "da Viga"
+    ],
+    "Boa Esperança": [
+      "Miguel Couto",
+      "Nova América"
+    ],
+    "Rosa dos Ventos": [
+      "Comendador Soares",
+      "Jardim Nova Era",
+      "Jardim Palmares",
+      "Jardim Pernambuco",
+      "Ouro Verde",
+      "Riachão",
+      "Rodilândia"
+    ],
+    "Valverde": [
+      "Cabuçu",
+      "Danon",
+      "Marapicu",
+      "Paraíso",
+      "da Palhada"
+    ],
+    "Carmary": [
+      "Ambaí",
+      "Kennedy",
+      "Nova América",
+      "Ponto Chic",
+      "Três Corações",
+      "da Posse"
+    ],
+    "Jardim Guandu": [
+      "Km - 32",
+      "Lagoinha",
+      "Paraíso",
+      "Prados Verdes"
+    ],
+    "da Luz": [
+      "Centro",
+      "Chacrinha",
+      "Comendador Soares",
+      "Jardim Alvorada",
+      "Ouro Verde",
+      "Santa Eugênia"
+    ],
+    "da Posse": [
+      "Carmary",
+      "Jardim Iguaçu",
+      "Kennedy",
+      "Moquetá",
+      "Ponto Chic",
+      "da Cerâmica"
+    ],
+    "Tinguá": [
+      "Adrianópolis",
+      "Iguaçu Velho",
+      "Montevidéu",
+      "Vila de Cava"
+    ],
+    "Geneciano": [
+      "Grama",
+      "Iguaçu Velho"
+    ],
+    "Cabuçu": [
+      "Campo Alegre",
+      "Ipiranga",
+      "Marapicu",
+      "Valverde",
+      "da Palhada"
+    ],
+    "Caonze": [
+      "Centro",
+      "Juscelino"
+    ],
+    "Kennedy": [
+      "Carmary",
+      "Moquetá",
+      "Nova América",
+      "Rancho Novo",
+      "da Posse",
+      "da Viga"
+    ],
+    "da Palhada": [
+      "Cabuçu",
+      "Campo Alegre",
+      "Danon",
+      "Jardim Palmares",
+      "Riachão",
+      "Valverde"
+    ],
+    "Chacrinha": [
+      "Centro",
+      "Moquetá",
+      "Santa Eugênia",
+      "da Luz"
+    ],
+    "Jardim Tropical": [
+      "Califórnia",
+      "Centro",
+      "Engenho Pequeno",
+      "Rancho Novo",
+      "Vila Nova",
+      "da Prata"
+    ],
+    "Vila Nova": [
+      "Califórnia",
+      "Centro",
+      "Jardim Tropical",
+      "Juscelino",
+      "da Prata"
+    ],
+    "Ambaí": [
+      "Carmary",
+      "Nova América",
+      "Parque Ambaí",
+      "Parque Flora",
+      "Três Corações"
+    ],
+    "Austin": [
+      "Cacuia",
+      "Carlos Sampaio",
+      "Inconfidência",
+      "Rodilândia",
+      "Tinguazinho",
+      "Vila Guimarães"
+    ],
+    "Juscelino": [
+      "Caonze",
+      "Centro",
+      "Vila Nova"
+    ],
+    "Montevidéu": [
+      "Iguaçu Velho",
+      "Tinguá"
+    ],
+    "Adrianópolis": [
+      "Carlos Sampaio",
+      "Miguel Couto",
+      "Santa Rita",
+      "Tinguazinho",
+      "Tinguá",
+      "Vila de Cava"
+    ],
+    "Riachão": [
+      "Inconfidência",
+      "Jardim Palmares",
+      "Rodilândia",
+      "Rosa dos Ventos",
+      "da Palhada"
+    ],
+    "Km - 32": [
+      "Jardim Guandu",
+      "Paraíso",
+      "Prados Verdes"
+    ],
+    "Jardim Pernambuco": [
+      "Comendador Soares",
+      "Jardim Alvorada",
+      "Jardim Nova Era",
+      "Jardim Palmares",
+      "Ouro Verde",
+      "Rosa dos Ventos"
+    ],
+    "da Prata": [
+      "Engenho Pequeno",
+      "Jardim Tropical",
+      "Vila Nova"
+    ],
+    "Tinguazinho": [
+      "Adrianópolis",
+      "Austin",
+      "Cacuia",
+      "Carlos Sampaio",
+      "Corumbá",
+      "Ponto Chic",
+      "Santa Rita",
+      "da Cerâmica"
+    ],
+    "Rancho Novo": [
+      "Centro",
+      "Engenho Pequeno",
+      "Jardim Tropical",
+      "Kennedy",
+      "Moquetá",
+      "Vila Operária",
+      "da Viga"
+    ],
+    "Centro": [
+      "Califórnia",
+      "Caonze",
+      "Chacrinha",
+      "Jardim Tropical",
+      "Juscelino",
+      "Moquetá",
+      "Rancho Novo",
+      "Santa Eugênia",
+      "Vila Nova",
+      "da Luz"
+    ],
+    "Marapicu": [
+      "Cabuçu",
+      "Ipiranga",
+      "Lagoinha",
+      "Paraíso",
+      "Valverde"
+    ],
+    "Campo Alegre": [
+      "Cabuçu",
+      "Ipiranga",
+      "Lagoinha",
+      "da Palhada"
+    ],
+    "Moquetá": [
+      "Centro",
+      "Chacrinha",
+      "Jardim Iguaçu",
+      "Kennedy",
+      "Rancho Novo",
+      "Santa Eugênia",
+      "da Posse"
+    ],
+    "Comendador Soares": [
+      "Cacuia",
+      "Jardim Iguaçu",
+      "Jardim Pernambuco",
+      "Ouro Verde",
+      "Rodilândia",
+      "Rosa dos Ventos",
+      "Santa Eugênia",
+      "da Cerâmica",
+      "da Luz"
+    ],
+    "Corumbá": [
+      "Botafogo",
+      "Ponto Chic",
+      "Rancho Fundo",
+      "Santa Rita",
+      "Tinguazinho"
+    ],
+    "Prados Verdes": [
+      "Jardim Guandu",
+      "Km - 32",
+      "Lagoinha",
+      "Paraíso"
+    ],
+    "Jardim Alvorada": [
+      "Danon",
+      "Jardim Nova Era",
+      "Jardim Pernambuco",
+      "Ouro Verde",
+      "da Luz"
+    ],
+    "Santa Eugênia": [
+      "Centro",
+      "Chacrinha",
+      "Comendador Soares",
+      "Jardim Iguaçu",
+      "Moquetá",
+      "da Luz"
+    ],
+    "Vila Operária": [
+      "Engenho Pequeno",
+      "Nova América",
+      "Rancho Novo",
+      "da Viga"
+    ],
+    "Iguaçu Velho": [
+      "Figueiras",
+      "Geneciano",
+      "Grama",
+      "Montevidéu",
+      "Rancho Fundo",
+      "Tinguá",
+      "Vila de Cava"
+    ],
+    "Carlos Sampaio": [
+      "Adrianópolis",
+      "Austin",
+      "Tinguazinho",
+      "Vila Guimarães"
+    ],
+    "Três Corações": [
+      "Ambaí",
+      "Botafogo",
+      "Carmary",
+      "Parque Flora",
+      "Ponto Chic"
+    ],
+    "Parque Ambaí": [
+      "Ambaí",
+      "Figueiras",
+      "Grama",
+      "Miguel Couto",
+      "Nova América",
+      "Parque Flora",
+      "Rancho Fundo"
+    ]
+  }
+}

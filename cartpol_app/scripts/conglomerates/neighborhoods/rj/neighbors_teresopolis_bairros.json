@@ -1,0 +1,380 @@
+{
+  "county": "Teresópolis",
+  "source_zip": "/home/iuri/TCC/cartpol-pwa/src/assets/maps/county/Teresópolis.zip",
+  "stats": {
+    "total_regions": 49,
+    "total_neighbors": 133,
+    "avg_neighbors": 5.428571428571429,
+    "max_neighbors": 16,
+    "min_neighbors": 1,
+    "isolated_regions": 0,
+    "region_most_neighbors": "Várzea",
+    "region_least_neighbors": "Caleme"
+  },
+  "neighbors": {
+    "Agriões": [
+      "Alto",
+      "Corta Vento",
+      "Iucas",
+      "Jardim Europa",
+      "Panorama",
+      "Pimenteiras",
+      "Várzea"
+    ],
+    "Quebra Frascos": [
+      "Barra do Imbuí",
+      "Cascata dos Amores",
+      "Golfe",
+      "Iucas",
+      "Parque do Imbuí",
+      "Pimenteiras"
+    ],
+    "Taumaturgo": [
+      "Alto",
+      "Cascata dos Amores",
+      "Iucas",
+      "Jardim Cascata",
+      "Nossa Senhora de Fátima",
+      "Várzea"
+    ],
+    "Várzea": [
+      "Agriões",
+      "Alto",
+      "Artistas",
+      "Bom Retiro",
+      "Cascata Guarani",
+      "Ermitage",
+      "Fazendinha",
+      "Iucas",
+      "Jardim Europa",
+      "Morro dos Pinheiros",
+      "Parque São Luiz",
+      "São Pedro",
+      "Taumaturgo",
+      "Tijuca",
+      "Vale do Paraíso",
+      "Vila Muqui"
+    ],
+    "Morro dos Pinheiros": [
+      "Bom Retiro",
+      "Tijuca",
+      "Várzea"
+    ],
+    "Corta Vento": [
+      "Agriões",
+      "Iucas",
+      "Pimenteiras"
+    ],
+    "Granja Guarani": [
+      "Alto",
+      "Carlos Guinle",
+      "Parque do Ingá",
+      "Soberbo"
+    ],
+    "Pimenteiras": [
+      "Agriões",
+      "Barra do Imbuí",
+      "Corta Vento",
+      "Iucas",
+      "Jardim Europa",
+      "Panorama",
+      "Quebra Frascos",
+      "Vila Muqui"
+    ],
+    "Caxangá": [
+      "Alto",
+      "Barroso",
+      "Carlos Guinle",
+      "Meudon",
+      "Santa Cecília"
+    ],
+    "Jardim Cascata": [
+      "Alto",
+      "Cascata Guarani",
+      "Nossa Senhora de Fátima",
+      "Taumaturgo"
+    ],
+    "Bom Retiro": [
+      "Ermitage",
+      "Jardim Meudon",
+      "Meudon",
+      "Morro dos Pinheiros",
+      "São Pedro",
+      "Tijuca",
+      "Várzea"
+    ],
+    "Posse": [
+      "Cascata do Imbuí",
+      "Fischer",
+      "Golfe",
+      "Granja Florestal",
+      "Parque do Imbuí"
+    ],
+    "São Pedro": [
+      "Araras",
+      "Barroso",
+      "Bom Retiro",
+      "Fazendinha",
+      "Jardim Meudon",
+      "Meudon",
+      "Várzea"
+    ],
+    "Quinta Lebrão": [
+      "Albuquerque",
+      "Artistas",
+      "Ermitage",
+      "Fonte Santa"
+    ],
+    "Santa Cecília": [
+      "Alto",
+      "Araras",
+      "Barroso",
+      "Caxangá"
+    ],
+    "Meudon": [
+      "Barroso",
+      "Bom Retiro",
+      "Carlos Guinle",
+      "Caxangá",
+      "Ermitage",
+      "Jardim Meudon",
+      "São Pedro"
+    ],
+    "Fazendinha": [
+      "Araras",
+      "Cascata Guarani",
+      "Nossa Senhora de Fátima",
+      "São Pedro",
+      "Várzea"
+    ],
+    "Granja Florestal": [
+      "Cascata do Imbuí",
+      "Fischer",
+      "Golfe",
+      "Jardim Salaco",
+      "Posse",
+      "Prata"
+    ],
+    "Vale do Paraíso": [
+      "Artistas",
+      "Fonte Santa",
+      "Paineiras",
+      "Prata",
+      "Quinta da Barra",
+      "Vila Muqui",
+      "Várzea"
+    ],
+    "Tijuca": [
+      "Bom Retiro",
+      "Ermitage",
+      "Morro dos Pinheiros",
+      "Parque São Luiz",
+      "Várzea"
+    ],
+    "Barroso": [
+      "Araras",
+      "Caxangá",
+      "Meudon",
+      "Santa Cecília",
+      "São Pedro"
+    ],
+    "Golfe": [
+      "Barra do Imbuí",
+      "Cascata do Imbuí",
+      "Granja Florestal",
+      "Parque do Imbuí",
+      "Posse",
+      "Prata",
+      "Quebra Frascos",
+      "Quinta da Barra"
+    ],
+    "Fischer": [
+      "Albuquerque",
+      "Granja Florestal",
+      "Jardim Salaco",
+      "Posse",
+      "Prata"
+    ],
+    "Iucas": [
+      "Agriões",
+      "Cascata dos Amores",
+      "Corta Vento",
+      "Pimenteiras",
+      "Quebra Frascos",
+      "Taumaturgo",
+      "Várzea"
+    ],
+    "Jardim Salaco": [
+      "Fischer",
+      "Granja Florestal",
+      "Prata"
+    ],
+    "Ermitage": [
+      "Artistas",
+      "Bom Retiro",
+      "Meudon",
+      "Parque São Luiz",
+      "Quinta Lebrão",
+      "Tijuca",
+      "Várzea"
+    ],
+    "Vila Muqui": [
+      "Barra do Imbuí",
+      "Jardim Europa",
+      "Paineiras",
+      "Pimenteiras",
+      "Vale do Paraíso",
+      "Várzea"
+    ],
+    "Parque do Imbuí": [
+      "Caleme",
+      "Golfe",
+      "Posse",
+      "Quebra Frascos"
+    ],
+    "Araras": [
+      "Alto",
+      "Barroso",
+      "Fazendinha",
+      "Nossa Senhora de Fátima",
+      "Santa Cecília",
+      "São Pedro"
+    ],
+    "Jardim Europa": [
+      "Agriões",
+      "Panorama",
+      "Pimenteiras",
+      "Vila Muqui",
+      "Várzea"
+    ],
+    "Panorama": [
+      "Agriões",
+      "Jardim Europa",
+      "Pimenteiras"
+    ],
+    "Cascata Guarani": [
+      "Alto",
+      "Fazendinha",
+      "Jardim Cascata",
+      "Nossa Senhora de Fátima",
+      "Várzea"
+    ],
+    "Prata": [
+      "Albuquerque",
+      "Artistas",
+      "Fischer",
+      "Fonte Santa",
+      "Golfe",
+      "Granja Florestal",
+      "Jardim Salaco",
+      "Quinta da Barra",
+      "Vale do Paraíso"
+    ],
+    "Albuquerque": [
+      "Fischer",
+      "Fonte Santa",
+      "Prata",
+      "Quinta Lebrão"
+    ],
+    "Alto": [
+      "Agriões",
+      "Araras",
+      "Carlos Guinle",
+      "Cascata Guarani",
+      "Cascata dos Amores",
+      "Caxangá",
+      "Granja Guarani",
+      "Jardim Cascata",
+      "Nossa Senhora de Fátima",
+      "Parque do Ingá",
+      "Santa Cecília",
+      "Taumaturgo",
+      "Várzea"
+    ],
+    "Cascata dos Amores": [
+      "Alto",
+      "Iucas",
+      "Parque do Ingá",
+      "Quebra Frascos",
+      "Taumaturgo"
+    ],
+    "Quinta da Barra": [
+      "Barra do Imbuí",
+      "Golfe",
+      "Paineiras",
+      "Prata",
+      "Vale do Paraíso"
+    ],
+    "Carlos Guinle": [
+      "Alto",
+      "Caxangá",
+      "Granja Guarani",
+      "Meudon",
+      "Soberbo"
+    ],
+    "Jardim Meudon": [
+      "Bom Retiro",
+      "Meudon",
+      "São Pedro"
+    ],
+    "Nossa Senhora de Fátima": [
+      "Alto",
+      "Araras",
+      "Cascata Guarani",
+      "Fazendinha",
+      "Jardim Cascata",
+      "Taumaturgo"
+    ],
+    "Paineiras": [
+      "Barra do Imbuí",
+      "Quinta da Barra",
+      "Vale do Paraíso",
+      "Vila Muqui"
+    ],
+    "Parque São Luiz": [
+      "Ermitage",
+      "Tijuca",
+      "Várzea"
+    ],
+    "Parque do Ingá": [
+      "Alto",
+      "Cascata dos Amores",
+      "Granja Guarani"
+    ],
+    "Soberbo": [
+      "Carlos Guinle",
+      "Granja Guarani"
+    ],
+    "Artistas": [
+      "Ermitage",
+      "Fonte Santa",
+      "Prata",
+      "Quinta Lebrão",
+      "Vale do Paraíso",
+      "Várzea"
+    ],
+    "Cascata do Imbuí": [
+      "Golfe",
+      "Granja Florestal",
+      "Posse"
+    ],
+    "Caleme": [
+      "Parque do Imbuí"
+    ],
+    "Fonte Santa": [
+      "Albuquerque",
+      "Artistas",
+      "Prata",
+      "Quinta Lebrão",
+      "Vale do Paraíso"
+    ],
+    "Barra do Imbuí": [
+      "Golfe",
+      "Paineiras",
+      "Pimenteiras",
+      "Quebra Frascos",
+      "Quinta da Barra",
+      "Vila Muqui"
+    ]
+  }
+}

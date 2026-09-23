@@ -1,0 +1,48 @@
+{
+  "county": "Santa Luzia",
+  "source_zip": "/home/iuri/TCC/cartpol-pwa/src/assets/maps/county/Santa_Luzia.zip",
+  "stats": {
+    "total_regions": 6,
+    "total_neighbors": 10,
+    "avg_neighbors": 3.3333333333333335,
+    "max_neighbors": 5,
+    "min_neighbors": 2,
+    "isolated_regions": 0,
+    "region_most_neighbors": "São Sebastião",
+    "region_least_neighbors": "Frei Damião"
+  },
+  "neighbors": {
+    "Antônio Bento": [
+      "Centro",
+      "São José",
+      "São Sebastião"
+    ],
+    "Centro": [
+      "Antônio Bento",
+      "Nossa Senhora de Fátima",
+      "São José",
+      "São Sebastião"
+    ],
+    "Frei Damião": [
+      "São José",
+      "São Sebastião"
+    ],
+    "Nossa Senhora de Fátima": [
+      "Centro",
+      "São Sebastião"
+    ],
+    "São José": [
+      "Antônio Bento",
+      "Centro",
+      "Frei Damião",
+      "São Sebastião"
+    ],
+    "São Sebastião": [
+      "Antônio Bento",
+      "Centro",
+      "Frei Damião",
+      "Nossa Senhora de Fátima",
+      "São José"
+    ]
+  }
+}

@@ -1,0 +1,13 @@
+﻿municipio,qe,political_id,candidato,full_name,partido,genero,total_votes,concentracao_final,interpretation,total_conglomerates,municipios_map_file,unmatched_in_csv
+NILÓPOLIS,7239.0,295625,RAFAEL NOBRE,RAFAEL PEREIRA NOBRE,PTB,masculino,4020,0.7274,media_alta,3,neighbors_nilopolis_bairros.json,False
+NILÓPOLIS,7239.0,300839,RUSSÃO GOMES,EDVAN GOMES DA SILVA,PL,masculino,3235,0.5425,media,3,neighbors_nilopolis_bairros.json,False
+NILÓPOLIS,7239.0,308376,FARRUSQUINHA,WAGNER PEREIRA DE ALMEIDA,AVANTE,masculino,2645,0.8776,muito_alta,1,neighbors_nilopolis_bairros.json,False
+NILÓPOLIS,7239.0,300838,ZÉ RIBEIRO,JOSÉ DIAMANTINO DUARTE RIBEIRO,PL,masculino,2607,0.8776,muito_alta,1,neighbors_nilopolis_bairros.json,False
+NILÓPOLIS,7239.0,293850,JORGINHO SCALISE,JORGE LUIZ SCALISE XAVIER,PTB,masculino,2448,0.6023,media,4,neighbors_nilopolis_bairros.json,False
+NILÓPOLIS,7239.0,302813,MAURINHO DO PAIOL,MAURO ROGERIO NASCIMENTO DE JESUS,PSD,masculino,2323,0.8105,alta,3,neighbors_nilopolis_bairros.json,False
+NILÓPOLIS,7239.0,293849,FAROL DO PAIOL,LUIZ CARLOS DE SOUZA,PTB,masculino,2200,0.7605,alta,3,neighbors_nilopolis_bairros.json,False
+NILÓPOLIS,7239.0,307787,LEANDRO HUNGRIA,LEANDRO CARDOSO HUNGRIA,SOLIDARIEDADE,masculino,2036,0.5952,media,4,neighbors_nilopolis_bairros.json,False
+NILÓPOLIS,7239.0,288857,RAFAEL REGIS,RAFAEL SANTOS DE OLIVEIRA,SOLIDARIEDADE,masculino,1950,0.5425,media,3,neighbors_nilopolis_bairros.json,False
+NILÓPOLIS,7239.0,295218,MARQUINHO TREMBÃO,MARCOS CEZAR BARROS DE CASTRO JUNIOR,PSB,masculino,1839,0.6347,media_alta,4,neighbors_nilopolis_bairros.json,False
+NILÓPOLIS,7239.0,290502,ALVINHO,ALVARO CUNHA RAMOS,AVANTE,masculino,1653,0.6263,media_alta,2,neighbors_nilopolis_bairros.json,False
+NILÓPOLIS,7239.0,289699,ANDERSON CAMPOS,ANDERSON DA SILVA DE CAMPOS,REPUBLICANOS,masculino,1486,0.8776,muito_alta,1,neighbors_nilopolis_bairros.json,False

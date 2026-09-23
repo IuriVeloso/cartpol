@@ -1,0 +1,280 @@
+{
+  "county": "Duque de Caxias",
+  "source_zip": "/home/iuri/TCC/cartpol-pwa/src/assets/maps/county/Duque de Caxias.zip",
+  "stats": {
+    "total_regions": 41,
+    "total_neighbors": 91,
+    "avg_neighbors": 4.439024390243903,
+    "max_neighbors": 8,
+    "min_neighbors": 1,
+    "isolated_regions": 0,
+    "region_most_neighbors": "Gramacho",
+    "region_least_neighbors": "Amapá"
+  },
+  "neighbors": {
+    "Vila São Luís": [
+      "Centenário",
+      "Centro",
+      "Doutor Laureano",
+      "Gramacho",
+      "Parque Duque",
+      "Parque Sarapuí",
+      "Vinte e Cinco de Agosto"
+    ],
+    "Parque Sarapuí": [
+      "Doutor Laureano",
+      "Gramacho",
+      "Parque Duque",
+      "Vila São Luís"
+    ],
+    "Gramacho": [
+      "Campos Elíseos",
+      "Centenário",
+      "Doutor Laureano",
+      "Olavo Bilac",
+      "Parque Sarapuí",
+      "São Bento",
+      "Vila São José",
+      "Vila São Luís"
+    ],
+    "Olavo Bilac": [
+      "Centenário",
+      "Gramacho",
+      "Periquito",
+      "Vila São José"
+    ],
+    "Centro": [
+      "Bar dos Cavalheiros",
+      "Centenário",
+      "Periquito",
+      "Vila São Luís",
+      "Vinte e Cinco de Agosto"
+    ],
+    "Vinte e Cinco de Agosto": [
+      "Centro",
+      "Parque Duque",
+      "Vila São Luís"
+    ],
+    "Periquito": [
+      "Bar dos Cavalheiros",
+      "Centenário",
+      "Centro",
+      "Olavo Bilac"
+    ],
+    "Doutor Laureano": [
+      "Centenário",
+      "Gramacho",
+      "Parque Sarapuí",
+      "Vila São Luís"
+    ],
+    "Parque Duque": [
+      "Parque Sarapuí",
+      "Vila São Luís",
+      "Vinte e Cinco de Agosto"
+    ],
+    "Bar dos Cavalheiros": [
+      "Centro",
+      "Periquito"
+    ],
+    "Centenário": [
+      "Centro",
+      "Doutor Laureano",
+      "Gramacho",
+      "Olavo Bilac",
+      "Periquito",
+      "Vila São Luís"
+    ],
+    "Pilar": [
+      "Campos Elíseos",
+      "Cidade dos Meninos",
+      "Figueira",
+      "São Bento"
+    ],
+    "Cangulo": [
+      "Campos Elíseos",
+      "Jardim Primavera",
+      "Parada Morabi",
+      "Saracuruna"
+    ],
+    "Santa Cruz da Serra": [
+      "Chácaras Arcampo",
+      "Chácaras Rio-Petrópolis",
+      "Cidade Parque Paulista",
+      "Parque Eldorado",
+      "Parque Fluminense",
+      "Santo Antônio"
+    ],
+    "São Bento": [
+      "Campos Elíseos",
+      "Cidade dos Meninos",
+      "Gramacho",
+      "Parque Fluminense",
+      "Pilar",
+      "Vila São José"
+    ],
+    "Saracuruna": [
+      "Cangulo",
+      "Chácaras Arcampo",
+      "Cidade Parque Paulista",
+      "Jardim Anhangá",
+      "Jardim Primavera",
+      "Parada Morabi"
+    ],
+    "Campos Elíseos": [
+      "Cangulo",
+      "Figueira",
+      "Gramacho",
+      "Jardim Primavera",
+      "Pilar",
+      "São Bento"
+    ],
+    "Parque Fluminense": [
+      "Santa Cruz da Serra",
+      "São Bento",
+      "Vila São José"
+    ],
+    "Vila São José": [
+      "Gramacho",
+      "Olavo Bilac",
+      "Parque Fluminense",
+      "São Bento"
+    ],
+    "Chácaras Arcampo": [
+      "Chácaras Rio-Petrópolis",
+      "Cidade Parque Paulista",
+      "Figueira",
+      "Jardim Anhangá",
+      "Jardim Primavera",
+      "Santa Cruz da Serra",
+      "Saracuruna"
+    ],
+    "Jardim Primavera": [
+      "Campos Elíseos",
+      "Cangulo",
+      "Chácaras Arcampo",
+      "Figueira",
+      "Saracuruna"
+    ],
+    "Figueira": [
+      "Campos Elíseos",
+      "Chácaras Arcampo",
+      "Chácaras Rio-Petrópolis",
+      "Cidade dos Meninos",
+      "Jardim Primavera",
+      "Pilar"
+    ],
+    "Alto da Serra": [
+      "Meio da Serra",
+      "Santo Antônio"
+    ],
+    "Santa Lúcia": [
+      "Imbariê",
+      "Parada Angélica",
+      "Taquara"
+    ],
+    "Parada Morabi": [
+      "Cangulo",
+      "Imbariê",
+      "Jardim Anhangá",
+      "Saracuruna"
+    ],
+    "Cidade Parque Paulista": [
+      "Barro Branco",
+      "Chácaras Arcampo",
+      "Jardim Anhangá",
+      "Santa Cruz da Serra",
+      "Saracuruna"
+    ],
+    "Parada Angélica": [
+      "Santa Lúcia",
+      "Taquara"
+    ],
+    "Jardim Anhangá": [
+      "Barro Branco",
+      "Chácaras Arcampo",
+      "Cidade Parque Paulista",
+      "Imbariê",
+      "Parada Morabi",
+      "Saracuruna"
+    ],
+    "Santo Antônio": [
+      "Alto da Serra",
+      "Mantiquira",
+      "Meio da Serra",
+      "Parque Eldorado",
+      "Santa Cruz da Serra"
+    ],
+    "Barro Branco": [
+      "Cidade Parque Paulista",
+      "Imbariê",
+      "Jardim Anhangá",
+      "Taquara"
+    ],
+    "Imbariê": [
+      "Barro Branco",
+      "Jardim Anhangá",
+      "Parada Morabi",
+      "Santa Lúcia",
+      "Taquara"
+    ],
+    "Taquara": [
+      "Barro Branco",
+      "Imbariê",
+      "Parada Angélica",
+      "Santa Lúcia"
+    ],
+    "Meio da Serra": [
+      "Alto da Serra",
+      "Mantiquira",
+      "Santo Antônio"
+    ],
+    "Cidade dos Meninos": [
+      "Amapá",
+      "Capivari",
+      "Chácaras Rio-Petrópolis",
+      "Figueira",
+      "Pilar",
+      "São Bento"
+    ],
+    "Chácaras Rio-Petrópolis": [
+      "Capivari",
+      "Chácaras Arcampo",
+      "Cidade dos Meninos",
+      "Figueira",
+      "Lamarão",
+      "Mantiquira",
+      "Parque Eldorado",
+      "Santa Cruz da Serra"
+    ],
+    "Amapá": [
+      "Cidade dos Meninos"
+    ],
+    "Xerém": [
+      "Mantiquira"
+    ],
+    "Lamarão": [
+      "Capivari",
+      "Chácaras Rio-Petrópolis",
+      "Mantiquira"
+    ],
+    "Capivari": [
+      "Chácaras Rio-Petrópolis",
+      "Cidade dos Meninos",
+      "Lamarão"
+    ],
+    "Mantiquira": [
+      "Chácaras Rio-Petrópolis",
+      "Lamarão",
+      "Meio da Serra",
+      "Parque Eldorado",
+      "Santo Antônio",
+      "Xerém"
+    ],
+    "Parque Eldorado": [
+      "Chácaras Rio-Petrópolis",
+      "Mantiquira",
+      "Santa Cruz da Serra",
+      "Santo Antônio"
+    ]
+  }
+}

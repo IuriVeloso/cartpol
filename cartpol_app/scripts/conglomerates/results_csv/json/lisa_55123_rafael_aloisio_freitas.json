@@ -1,0 +1,1149 @@
+{
+  "moran_global": 0.4292,
+  "moran_global_p": 0.001,
+  "n_sig": 14,
+  "n_HH_sig": 12,
+  "n_HL_sig": 0,
+  "n_LH_sig": 2,
+  "n_LL_sig": 0,
+  "reduto": "Méier",
+  "reduto_quad": "HH",
+  "reduto_p": 0.001,
+  "reduto_sig": true,
+  "maior_cluster_HH": [
+    "Andaraí",
+    "Cachambi",
+    "Encantado",
+    "Engenho de Dentro",
+    "Engenho Novo",
+    "Grajaú",
+    "Inhaúma",
+    "Lins de Vasconcelos",
+    "Méier",
+    "Pilares",
+    "Todos os Santos",
+    "Vila Isabel"
+  ],
+  "by_bairro": {
+    "Abolição": {
+      "I": -0.9998,
+      "quad": "LH",
+      "p": 0.003,
+      "sig": true,
+      "votos": 0
+    },
+    "Acari": {
+      "I": 0.0993,
+      "quad": "LL",
+      "p": 0.538,
+      "sig": false,
+      "votos": 1
+    },
+    "Água Santa": {
+      "I": -0.0379,
+      "quad": "LH",
+      "p": 0.013,
+      "sig": true,
+      "votos": 240
+    },
+    "Alto da Boa Vista": {
+      "I": -0.0959,
+      "quad": "LH",
+      "p": 0.158,
+      "sig": false,
+      "votos": 54
+    },
+    "Anchieta": {
+      "I": 0.1185,
+      "quad": "LL",
+      "p": 0.255,
+      "sig": false,
+      "votos": 13
+    },
+    "Andaraí": {
+      "I": 1.1784,
+      "quad": "HH",
+      "p": 0.023,
+      "sig": true,
+      "votos": 705
+    },
+    "Anil": {
+      "I": 0.072,
+      "quad": "LL",
+      "p": 0.602,
+      "sig": false,
+      "votos": 63
+    },
+    "Bancários": {
+      "I": 0.123,
+      "quad": "LL",
+      "p": 0.218,
+      "sig": false,
+      "votos": 25
+    },
+    "Bangu": {
+      "I": 0.0448,
+      "quad": "LL",
+      "p": 0.267,
+      "sig": false,
+      "votos": 156
+    },
+    "Barra da Tijuca": {
+      "I": -0.1006,
+      "quad": "HL",
+      "p": 0.285,
+      "sig": false,
+      "votos": 475
+    },
+    "Barra de Guaratiba": {
+      "I": 0.1202,
+      "quad": "LL",
+      "p": 0.339,
+      "sig": false,
+      "votos": 2
+    },
+    "Barros Filho": {
+      "I": 0.1182,
+      "quad": "LL",
+      "p": 0.262,
+      "sig": false,
+      "votos": 1
+    },
+    "Benfica": {
+      "I": 0.0307,
+      "quad": "LL",
+      "p": 0.551,
+      "sig": false,
+      "votos": 147
+    },
+    "Bento Ribeiro": {
+      "I": 0.0602,
+      "quad": "LL",
+      "p": 0.34,
+      "sig": false,
+      "votos": 115
+    },
+    "Bonsucesso": {
+      "I": 0.0699,
+      "quad": "LL",
+      "p": 0.458,
+      "sig": false,
+      "votos": 84
+    },
+    "Botafogo": {
+      "I": 0.0027,
+      "quad": "HH",
+      "p": 0.988,
+      "sig": false,
+      "votos": 585
+    },
+    "Brás de Pina": {
+      "I": 0.083,
+      "quad": "LL",
+      "p": 0.444,
+      "sig": false,
+      "votos": 49
+    },
+    "Cachambi": {
+      "I": 5.6858,
+      "quad": "HH",
+      "p": 0.001,
+      "sig": true,
+      "votos": 2231
+    },
+    "Cacuia": {
+      "I": 0.1342,
+      "quad": "LL",
+      "p": 0.147,
+      "sig": false,
+      "votos": 4
+    },
+    "Caju": {
+      "I": 0.0981,
+      "quad": "LL",
+      "p": 0.335,
+      "sig": false,
+      "votos": 29
+    },
+    "Camorim": {
+      "I": 0.0592,
+      "quad": "LL",
+      "p": 0.744,
+      "sig": false,
+      "votos": 0
+    },
+    "Campinho": {
+      "I": 0.0729,
+      "quad": "LL",
+      "p": 0.592,
+      "sig": false,
+      "votos": 14
+    },
+    "Campo dos Afonsos": {
+      "I": 0.1209,
+      "quad": "LL",
+      "p": 0.244,
+      "sig": false,
+      "votos": 8
+    },
+    "Campo Grande": {
+      "I": 0.0502,
+      "quad": "LL",
+      "p": 0.175,
+      "sig": false,
+      "votos": 150
+    },
+    "Cascadura": {
+      "I": 0.0062,
+      "quad": "LL",
+      "p": 0.865,
+      "sig": false,
+      "votos": 207
+    },
+    "Catete": {
+      "I": 0.0266,
+      "quad": "HH",
+      "p": 0.954,
+      "sig": false,
+      "votos": 755
+    },
+    "Catumbi": {
+      "I": -0.0435,
+      "quad": "LH",
+      "p": 0.824,
+      "sig": false,
+      "votos": 0
+    },
+    "Cavalcanti": {
+      "I": -0.0428,
+      "quad": "LH",
+      "p": 0.34,
+      "sig": false,
+      "votos": 147
+    },
+    "Centro": {
+      "I": 0.0094,
+      "quad": "LL",
+      "p": 0.724,
+      "sig": false,
+      "votos": 207
+    },
+    "Cidade de Deus": {
+      "I": 0.0873,
+      "quad": "LL",
+      "p": 0.529,
+      "sig": false,
+      "votos": 14
+    },
+    "Cidade Nova": {
+      "I": -0.029,
+      "quad": "HL",
+      "p": 0.598,
+      "sig": false,
+      "votos": 348
+    },
+    "Cocotá": {
+      "I": 0.1274,
+      "quad": "LL",
+      "p": 0.156,
+      "sig": false,
+      "votos": 27
+    },
+    "Coelho Neto": {
+      "I": 0.107,
+      "quad": "LL",
+      "p": 0.21,
+      "sig": false,
+      "votos": 24
+    },
+    "Colégio": {
+      "I": 0.0861,
+      "quad": "LL",
+      "p": 0.631,
+      "sig": false,
+      "votos": 16
+    },
+    "Complexo do Alemão": {
+      "I": 0.0508,
+      "quad": "LL",
+      "p": 0.741,
+      "sig": false,
+      "votos": 13
+    },
+    "Copacabana": {
+      "I": -0.0613,
+      "quad": "HL",
+      "p": 0.907,
+      "sig": false,
+      "votos": 933
+    },
+    "Cordovil": {
+      "I": 0.1025,
+      "quad": "LL",
+      "p": 0.242,
+      "sig": false,
+      "votos": 56
+    },
+    "Cosme Velho": {
+      "I": -0.0595,
+      "quad": "LH",
+      "p": 0.742,
+      "sig": false,
+      "votos": 53
+    },
+    "Cosmos": {
+      "I": 0.093,
+      "quad": "LL",
+      "p": 0.376,
+      "sig": false,
+      "votos": 34
+    },
+    "Costa Barros": {
+      "I": 0.1211,
+      "quad": "LL",
+      "p": 0.283,
+      "sig": false,
+      "votos": 9
+    },
+    "Curicica": {
+      "I": 0.0631,
+      "quad": "LL",
+      "p": 0.833,
+      "sig": false,
+      "votos": 23
+    },
+    "Del Castilho": {
+      "I": -0.0305,
+      "quad": "LH",
+      "p": 0.065,
+      "sig": false,
+      "votos": 229
+    },
+    "Deodoro": {
+      "I": 0.119,
+      "quad": "LL",
+      "p": 0.24,
+      "sig": false,
+      "votos": 17
+    },
+    "Encantado": {
+      "I": 2.8618,
+      "quad": "HH",
+      "p": 0.029,
+      "sig": true,
+      "votos": 1285
+    },
+    "Engenheiro Leal": {
+      "I": 0.0468,
+      "quad": "LL",
+      "p": 0.843,
+      "sig": false,
+      "votos": 33
+    },
+    "Engenho da Rainha": {
+      "I": 0.0172,
+      "quad": "LL",
+      "p": 0.867,
+      "sig": false,
+      "votos": 86
+    },
+    "Engenho de Dentro": {
+      "I": 7.8231,
+      "quad": "HH",
+      "p": 0.001,
+      "sig": true,
+      "votos": 3446
+    },
+    "Engenho Novo": {
+      "I": 5.8116,
+      "quad": "HH",
+      "p": 0.001,
+      "sig": true,
+      "votos": 1943
+    },
+    "Estácio": {
+      "I": -0.0048,
+      "quad": "LH",
+      "p": 0.974,
+      "sig": false,
+      "votos": 63
+    },
+    "Flamengo": {
+      "I": -0.0261,
+      "quad": "LH",
+      "p": 0.206,
+      "sig": false,
+      "votos": 206
+    },
+    "Freguesia (Ilha do Governador)": {
+      "I": 0.1197,
+      "quad": "LL",
+      "p": 0.437,
+      "sig": false,
+      "votos": 28
+    },
+    "Freguesia (Jacarepaguá)": {
+      "I": -0.0325,
+      "quad": "LH",
+      "p": 0.492,
+      "sig": false,
+      "votos": 152
+    },
+    "Galeão": {
+      "I": 0.091,
+      "quad": "LL",
+      "p": 0.565,
+      "sig": false,
+      "votos": 51
+    },
+    "Gamboa": {
+      "I": 0.0852,
+      "quad": "LL",
+      "p": 0.602,
+      "sig": false,
+      "votos": 34
+    },
+    "Gardênia Azul": {
+      "I": 0.097,
+      "quad": "LL",
+      "p": 0.536,
+      "sig": false,
+      "votos": 3
+    },
+    "Gávea": {
+      "I": 0.0566,
+      "quad": "LL",
+      "p": 0.496,
+      "sig": false,
+      "votos": 86
+    },
+    "Gericinó": {
+      "I": 0.058,
+      "quad": "LL",
+      "p": 0.872,
+      "sig": false,
+      "votos": 0
+    },
+    "Glória": {
+      "I": 0.0121,
+      "quad": "HH",
+      "p": 0.854,
+      "sig": false,
+      "votos": 342
+    },
+    "Grajaú": {
+      "I": 2.0748,
+      "quad": "HH",
+      "p": 0.045,
+      "sig": true,
+      "votos": 1614
+    },
+    "Grumari": {
+      "I": 0.1032,
+      "quad": "LL",
+      "p": 0.654,
+      "sig": false,
+      "votos": 0
+    },
+    "Guadalupe": {
+      "I": 0.1037,
+      "quad": "LL",
+      "p": 0.15,
+      "sig": false,
+      "votos": 57
+    },
+    "Guaratiba": {
+      "I": 0.1026,
+      "quad": "LL",
+      "p": 0.214,
+      "sig": false,
+      "votos": 28
+    },
+    "Higienópolis": {
+      "I": 0.0093,
+      "quad": "LL",
+      "p": 0.708,
+      "sig": false,
+      "votos": 215
+    },
+    "Honório Gurgel": {
+      "I": 0.1,
+      "quad": "LL",
+      "p": 0.304,
+      "sig": false,
+      "votos": 32
+    },
+    "Humaitá": {
+      "I": -0.0203,
+      "quad": "LH",
+      "p": 0.773,
+      "sig": false,
+      "votos": 149
+    },
+    "Inhaúma": {
+      "I": 0.0923,
+      "quad": "HH",
+      "p": 0.02,
+      "sig": true,
+      "votos": 308
+    },
+    "Inhoaíba": {
+      "I": 0.0943,
+      "quad": "LL",
+      "p": 0.503,
+      "sig": false,
+      "votos": 32
+    },
+    "Ipanema": {
+      "I": -0.0197,
+      "quad": "LH",
+      "p": 0.723,
+      "sig": false,
+      "votos": 190
+    },
+    "Irajá": {
+      "I": 0.0235,
+      "quad": "LL",
+      "p": 0.127,
+      "sig": false,
+      "votos": 210
+    },
+    "Itanhangá": {
+      "I": 0.0461,
+      "quad": "LL",
+      "p": 0.82,
+      "sig": false,
+      "votos": 10
+    },
+    "Jacaré": {
+      "I": 0.0593,
+      "quad": "HH",
+      "p": 0.072,
+      "sig": false,
+      "votos": 308
+    },
+    "Jacarepaguá": {
+      "I": -0.0525,
+      "quad": "LH",
+      "p": 0.233,
+      "sig": false,
+      "votos": 120
+    },
+    "Jacarezinho": {
+      "I": -0.1986,
+      "quad": "LH",
+      "p": 0.08,
+      "sig": false,
+      "votos": 0
+    },
+    "Jardim América": {
+      "I": 0.0914,
+      "quad": "LL",
+      "p": 0.534,
+      "sig": false,
+      "votos": 26
+    },
+    "Jardim Botânico": {
+      "I": 0.0738,
+      "quad": "LL",
+      "p": 0.614,
+      "sig": false,
+      "votos": 48
+    },
+    "Jardim Carioca": {
+      "I": 0.1243,
+      "quad": "LL",
+      "p": 0.164,
+      "sig": false,
+      "votos": 12
+    },
+    "Jardim Guanabara": {
+      "I": 0.0973,
+      "quad": "LL",
+      "p": 0.238,
+      "sig": false,
+      "votos": 66
+    },
+    "Jardim Sulacap": {
+      "I": 0.0944,
+      "quad": "LL",
+      "p": 0.351,
+      "sig": false,
+      "votos": 30
+    },
+    "Joá": {
+      "I": -0.0024,
+      "quad": "LH",
+      "p": 0.994,
+      "sig": false,
+      "votos": 0
+    },
+    "Lagoa": {
+      "I": -0.0152,
+      "quad": "LH",
+      "p": 0.879,
+      "sig": false,
+      "votos": 110
+    },
+    "Lapa": {
+      "I": -0.0095,
+      "quad": "LH",
+      "p": 0.951,
+      "sig": false,
+      "votos": 112
+    },
+    "Laranjeiras": {
+      "I": 0.0022,
+      "quad": "HH",
+      "p": 0.69,
+      "sig": false,
+      "votos": 263
+    },
+    "Leblon": {
+      "I": 0.0216,
+      "quad": "LL",
+      "p": 0.854,
+      "sig": false,
+      "votos": 118
+    },
+    "Leme": {
+      "I": -0.0263,
+      "quad": "LH",
+      "p": 0.257,
+      "sig": false,
+      "votos": 207
+    },
+    "Lins de Vasconcelos": {
+      "I": 4.3792,
+      "quad": "HH",
+      "p": 0.002,
+      "sig": true,
+      "votos": 1051
+    },
+    "Madureira": {
+      "I": 0.0458,
+      "quad": "LL",
+      "p": 0.422,
+      "sig": false,
+      "votos": 136
+    },
+    "Magalhães Bastos": {
+      "I": 0.0901,
+      "quad": "LL",
+      "p": 0.643,
+      "sig": false,
+      "votos": 26
+    },
+    "Mangueira": {
+      "I": 0.052,
+      "quad": "LL",
+      "p": 0.801,
+      "sig": false,
+      "votos": 0
+    },
+    "Manguinhos": {
+      "I": 0.0817,
+      "quad": "LL",
+      "p": 0.538,
+      "sig": false,
+      "votos": 0
+    },
+    "Maracanã": {
+      "I": 0.0526,
+      "quad": "HH",
+      "p": 0.186,
+      "sig": false,
+      "votos": 359
+    },
+    "Maré": {
+      "I": 0.0828,
+      "quad": "LL",
+      "p": 0.43,
+      "sig": false,
+      "votos": 40
+    },
+    "Marechal Hermes": {
+      "I": 0.0753,
+      "quad": "LL",
+      "p": 0.189,
+      "sig": false,
+      "votos": 100
+    },
+    "Maria da Graça": {
+      "I": 0.024,
+      "quad": "HH",
+      "p": 0.112,
+      "sig": false,
+      "votos": 293
+    },
+    "Méier": {
+      "I": 22.5534,
+      "quad": "HH",
+      "p": 0.001,
+      "sig": true,
+      "votos": 6200
+    },
+    "Moneró": {
+      "I": 0.1188,
+      "quad": "LL",
+      "p": 0.234,
+      "sig": false,
+      "votos": 29
+    },
+    "Olaria": {
+      "I": 0.0344,
+      "quad": "LL",
+      "p": 0.396,
+      "sig": false,
+      "votos": 172
+    },
+    "Oswaldo Cruz": {
+      "I": 0.0455,
+      "quad": "LL",
+      "p": 0.452,
+      "sig": false,
+      "votos": 145
+    },
+    "Paciência": {
+      "I": 0.0774,
+      "quad": "LL",
+      "p": 0.652,
+      "sig": false,
+      "votos": 42
+    },
+    "Padre Miguel": {
+      "I": 0.0477,
+      "quad": "LL",
+      "p": 0.856,
+      "sig": false,
+      "votos": 39
+    },
+    "Parada de Lucas": {
+      "I": 0.1079,
+      "quad": "LL",
+      "p": 0.457,
+      "sig": false,
+      "votos": 2
+    },
+    "Parque Anchieta": {
+      "I": 0.1036,
+      "quad": "LL",
+      "p": 0.328,
+      "sig": false,
+      "votos": 36
+    },
+    "Parque Colúmbia": {
+      "I": 0.1021,
+      "quad": "LL",
+      "p": 0.397,
+      "sig": false,
+      "votos": 14
+    },
+    "Pavuna": {
+      "I": 0.0824,
+      "quad": "LL",
+      "p": 0.169,
+      "sig": false,
+      "votos": 90
+    },
+    "Pechincha": {
+      "I": 0.0737,
+      "quad": "LL",
+      "p": 0.581,
+      "sig": false,
+      "votos": 58
+    },
+    "Pedra de Guaratiba": {
+      "I": 0.1249,
+      "quad": "LL",
+      "p": 0.481,
+      "sig": false,
+      "votos": 15
+    },
+    "Penha": {
+      "I": 0.0501,
+      "quad": "LL",
+      "p": 0.59,
+      "sig": false,
+      "votos": 121
+    },
+    "Penha Circular": {
+      "I": 0.0734,
+      "quad": "LL",
+      "p": 0.39,
+      "sig": false,
+      "votos": 71
+    },
+    "Piedade": {
+      "I": 0.8599,
+      "quad": "HH",
+      "p": 0.251,
+      "sig": false,
+      "votos": 2202
+    },
+    "Pilares": {
+      "I": 1.1884,
+      "quad": "HH",
+      "p": 0.044,
+      "sig": true,
+      "votos": 942
+    },
+    "Pitangueiras": {
+      "I": 0.1421,
+      "quad": "LL",
+      "p": 0.177,
+      "sig": false,
+      "votos": 3
+    },
+    "Portuguesa": {
+      "I": 0.0989,
+      "quad": "LL",
+      "p": 0.268,
+      "sig": false,
+      "votos": 55
+    },
+    "Praça da Bandeira": {
+      "I": -0.0637,
+      "quad": "LH",
+      "p": 0.26,
+      "sig": false,
+      "votos": 112
+    },
+    "Praça Seca": {
+      "I": 0.0131,
+      "quad": "LL",
+      "p": 0.917,
+      "sig": false,
+      "votos": 80
+    },
+    "Praia da Bandeira": {
+      "I": 0.1396,
+      "quad": "LL",
+      "p": 0.164,
+      "sig": false,
+      "votos": 5
+    },
+    "Quintino Bocaiúva": {
+      "I": 0.2241,
+      "quad": "HH",
+      "p": 0.312,
+      "sig": false,
+      "votos": 788
+    },
+    "Ramos": {
+      "I": 0.0563,
+      "quad": "LL",
+      "p": 0.494,
+      "sig": false,
+      "votos": 117
+    },
+    "Realengo": {
+      "I": 0.0403,
+      "quad": "LL",
+      "p": 0.253,
+      "sig": false,
+      "votos": 162
+    },
+    "Recreio dos Bandeirantes": {
+      "I": 0.0414,
+      "quad": "LL",
+      "p": 0.363,
+      "sig": false,
+      "votos": 155
+    },
+    "Riachuelo": {
+      "I": 0.0329,
+      "quad": "HH",
+      "p": 0.351,
+      "sig": false,
+      "votos": 326
+    },
+    "Ribeira": {
+      "I": 0.1337,
+      "quad": "LL",
+      "p": 0.417,
+      "sig": false,
+      "votos": 9
+    },
+    "Ricardo de Albuquerque": {
+      "I": 0.1262,
+      "quad": "LL",
+      "p": 0.162,
+      "sig": false,
+      "votos": 15
+    },
+    "Rio Comprido": {
+      "I": 0.0878,
+      "quad": "HH",
+      "p": 0.672,
+      "sig": false,
+      "votos": 605
+    },
+    "Rocha": {
+      "I": 0.0788,
+      "quad": "HH",
+      "p": 0.761,
+      "sig": false,
+      "votos": 595
+    },
+    "Rocha Miranda": {
+      "I": 0.0789,
+      "quad": "LL",
+      "p": 0.315,
+      "sig": false,
+      "votos": 60
+    },
+    "Rocinha": {
+      "I": 0.0475,
+      "quad": "LL",
+      "p": 0.818,
+      "sig": false,
+      "votos": 29
+    },
+    "Sampaio": {
+      "I": -0.3633,
+      "quad": "LH",
+      "p": 0.062,
+      "sig": false,
+      "votos": 0
+    },
+    "Santa Cruz": {
+      "I": 0.0766,
+      "quad": "LL",
+      "p": 0.24,
+      "sig": false,
+      "votos": 106
+    },
+    "Santa Teresa": {
+      "I": 0.0038,
+      "quad": "HH",
+      "p": 0.856,
+      "sig": false,
+      "votos": 304
+    },
+    "Santíssimo": {
+      "I": 0.0953,
+      "quad": "LL",
+      "p": 0.548,
+      "sig": false,
+      "votos": 8
+    },
+    "Santo Cristo": {
+      "I": 0.0625,
+      "quad": "LL",
+      "p": 0.648,
+      "sig": false,
+      "votos": 25
+    },
+    "São Conrado": {
+      "I": 0.0533,
+      "quad": "LL",
+      "p": 0.656,
+      "sig": false,
+      "votos": 44
+    },
+    "São Cristóvão": {
+      "I": 0.0552,
+      "quad": "LL",
+      "p": 0.53,
+      "sig": false,
+      "votos": 90
+    },
+    "São Francisco Xavier": {
+      "I": -0.0646,
+      "quad": "LH",
+      "p": 0.575,
+      "sig": false,
+      "votos": 69
+    },
+    "Saúde": {
+      "I": 0.0698,
+      "quad": "LL",
+      "p": 0.791,
+      "sig": false,
+      "votos": 29
+    },
+    "Senador Camará": {
+      "I": 0.0857,
+      "quad": "LL",
+      "p": 0.421,
+      "sig": false,
+      "votos": 32
+    },
+    "Senador Vasconcelos": {
+      "I": 0.1081,
+      "quad": "LL",
+      "p": 0.456,
+      "sig": false,
+      "votos": 9
+    },
+    "Sepetiba": {
+      "I": 0.1013,
+      "quad": "LL",
+      "p": 0.559,
+      "sig": false,
+      "votos": 20
+    },
+    "Tanque": {
+      "I": 0.0317,
+      "quad": "LL",
+      "p": 0.811,
+      "sig": false,
+      "votos": 49
+    },
+    "Taquara": {
+      "I": 0.0445,
+      "quad": "LL",
+      "p": 0.3,
+      "sig": false,
+      "votos": 153
+    },
+    "Tauá": {
+      "I": 0.1302,
+      "quad": "LL",
+      "p": 0.193,
+      "sig": false,
+      "votos": 10
+    },
+    "Tijuca": {
+      "I": 1.1893,
+      "quad": "HH",
+      "p": 0.058,
+      "sig": false,
+      "votos": 1659
+    },
+    "Todos os Santos": {
+      "I": 5.5304,
+      "quad": "HH",
+      "p": 0.001,
+      "sig": true,
+      "votos": 909
+    },
+    "Tomás Coelho": {
+      "I": -0.1568,
+      "quad": "LH",
+      "p": 0.102,
+      "sig": false,
+      "votos": 36
+    },
+    "Turiaçu": {
+      "I": 0.0665,
+      "quad": "LL",
+      "p": 0.635,
+      "sig": false,
+      "votos": 50
+    },
+    "Urca": {
+      "I": -0.1471,
+      "quad": "LH",
+      "p": 0.127,
+      "sig": false,
+      "votos": 54
+    },
+    "Vargem Grande": {
+      "I": 0.1091,
+      "quad": "LL",
+      "p": 0.251,
+      "sig": false,
+      "votos": 8
+    },
+    "Vargem Pequena": {
+      "I": 0.1118,
+      "quad": "LL",
+      "p": 0.409,
+      "sig": false,
+      "votos": 12
+    },
+    "Vasco da Gama": {
+      "I": 0.0619,
+      "quad": "LL",
+      "p": 0.585,
+      "sig": false,
+      "votos": 93
+    },
+    "Vaz Lobo": {
+      "I": 0.0836,
+      "quad": "LL",
+      "p": 0.499,
+      "sig": false,
+      "votos": 17
+    },
+    "Vicente de Carvalho": {
+      "I": 0.0978,
+      "quad": "LL",
+      "p": 0.376,
+      "sig": false,
+      "votos": 8
+    },
+    "Vidigal": {
+      "I": -0.0449,
+      "quad": "HL",
+      "p": 0.471,
+      "sig": false,
+      "votos": 361
+    },
+    "Vigário Geral": {
+      "I": 0.0987,
+      "quad": "LL",
+      "p": 0.555,
+      "sig": false,
+      "votos": 10
+    },
+    "Vila da Penha": {
+      "I": 0.0817,
+      "quad": "LL",
+      "p": 0.432,
+      "sig": false,
+      "votos": 60
+    },
+    "Vila Isabel": {
+      "I": 0.8576,
+      "quad": "HH",
+      "p": 0.04,
+      "sig": true,
+      "votos": 935
+    },
+    "Vila Kennedy": {
+      "I": 0.0541,
+      "quad": "LL",
+      "p": 0.881,
+      "sig": false,
+      "votos": 17
+    },
+    "Vila Kosmos": {
+      "I": 0.1074,
+      "quad": "LL",
+      "p": 0.295,
+      "sig": false,
+      "votos": 24
+    },
+    "Vila Militar": {
+      "I": 0.1221,
+      "quad": "LL",
+      "p": 0.201,
+      "sig": false,
+      "votos": 5
+    },
+    "Vila Valqueire": {
+      "I": 0.0906,
+      "quad": "LL",
+      "p": 0.258,
+      "sig": false,
+      "votos": 56
+    },
+    "Vista Alegre": {
+      "I": 0.1028,
+      "quad": "LL",
+      "p": 0.479,
+      "sig": false,
+      "votos": 0
+    },
+    "Zumbi": {
+      "I": 0.1356,
+      "quad": "LL",
+      "p": 0.14,
+      "sig": false,
+      "votos": 18
+    }
+  }
+}

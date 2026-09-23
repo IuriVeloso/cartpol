@@ -1,0 +1,210 @@
+{
+  "candidato": {
+    "nr": "33001",
+    "nome": "ROGÉRIO DOS REIS MONTEIRO"
+  },
+  "qe": 59154.0,
+  "total_votes": 726,
+  "neighborhoods_with_votes": 34,
+  "neighborhoods_after_filter": 2,
+  "classification": "P",
+  "conglomerates": [
+    {
+      "neighborhoods": [
+        "Campo Grande",
+        "Cosmos"
+      ],
+      "size": 2,
+      "total_votes": 628,
+      "ruesp": 0.07249,
+      "ruesp_can": 0.865014,
+      "rcan_uesp": 0.003038,
+      "importance": "G",
+      "fuzzy_concentration": 0.8977,
+      "id": 1
+    }
+  ],
+  "lq_hc": {
+    "Campo Grande": {
+      "lq": 13.8107,
+      "hc": 563.98,
+      "ci": 0.05078308
+    },
+    "Paciência": {
+      "lq": 0.945,
+      "hc": -0.64,
+      "ci": 0.00024294
+    },
+    "Cosmos": {
+      "lq": 2.3245,
+      "hc": 11.4,
+      "ci": 0.00032648
+    },
+    "Tanque": {
+      "lq": 0.2099,
+      "hc": -3.76,
+      "ci": 9.04e-06
+    },
+    "Inhoaíba": {
+      "lq": 2.3152,
+      "hc": 9.66,
+      "ci": 0.00023683
+    },
+    "Bangu": {
+      "lq": 0.3224,
+      "hc": -18.92,
+      "ci": 0.00047666
+    },
+    "Marechal Hermes": {
+      "lq": 0.3426,
+      "hc": -3.84,
+      "ci": 2.215e-05
+    },
+    "Tijuca": {
+      "lq": 0.0471,
+      "hc": -20.25,
+      "ci": 4.032e-05
+    },
+    "Piedade": {
+      "lq": 0.1886,
+      "hc": -4.3,
+      "ci": 1.006e-05
+    },
+    "Vila Kosmos": {
+      "lq": 1.3873,
+      "hc": 0.56,
+      "ci": 5.47e-06
+    },
+    "Santa Cruz": {
+      "lq": 0.4981,
+      "hc": -13.1,
+      "ci": 0.00064373
+    },
+    "Senador Vasconcelos": {
+      "lq": 1.5567,
+      "hc": 1.79,
+      "ci": 3.047e-05
+    },
+    "Pavuna": {
+      "lq": 0.1061,
+      "hc": -8.42,
+      "ci": 1.788e-05
+    },
+    "Realengo": {
+      "lq": 0.2398,
+      "hc": -15.85,
+      "ci": 0.0001978
+    },
+    "Guaratiba": {
+      "lq": 0.1705,
+      "hc": -9.73,
+      "ci": 4.45e-05
+    },
+    "Irajá": {
+      "lq": 0.0637,
+      "hc": -14.71,
+      "ci": 2.98e-05
+    },
+    "Olaria": {
+      "lq": 0.1431,
+      "hc": -5.99,
+      "ci": 1.325e-05
+    },
+    "Senador Camará": {
+      "lq": 0.2031,
+      "hc": -7.85,
+      "ci": 3.737e-05
+    },
+    "Colégio": {
+      "lq": 0.4016,
+      "hc": -1.49,
+      "ci": 4.72e-06
+    },
+    "Gamboa": {
+      "lq": 1.7146,
+      "hc": 0.83,
+      "ci": 4.43e-06
+    },
+    "Penha": {
+      "lq": 0.2035,
+      "hc": -7.83,
+      "ci": 3.729e-05
+    },
+    "Higienópolis": {
+      "lq": 0.488,
+      "hc": -2.1,
+      "ci": 1.555e-05
+    },
+    "Jardim América": {
+      "lq": 0.2164,
+      "hc": -3.62,
+      "ci": 8.77e-06
+    },
+    "Penha Circular": {
+      "lq": 0.1374,
+      "hc": -6.28,
+      "ci": 1.381e-05
+    },
+    "Vila Kennedy": {
+      "lq": 0.3737,
+      "hc": -3.35,
+      "ci": 2.031e-05
+    },
+    "Vila Valqueire": {
+      "lq": 0.2891,
+      "hc": -2.46,
+      "ci": 6.56e-06
+    },
+    "Santíssimo": {
+      "lq": 0.8782,
+      "hc": -0.42,
+      "ci": 1.944e-05
+    },
+    "Oswaldo Cruz": {
+      "lq": 0.4773,
+      "hc": -2.19,
+      "ci": 1.59e-05
+    },
+    "Ramos": {
+      "lq": 0.2221,
+      "hc": -7.01,
+      "ci": 3.418e-05
+    },
+    "Cidade de Deus": {
+      "lq": 0.2479,
+      "hc": -3.03,
+      "ci": 7.65e-06
+    },
+    "Andaraí": {
+      "lq": 0.2389,
+      "hc": -3.19,
+      "ci": 7.94e-06
+    },
+    "Engenho de Dentro": {
+      "lq": 0.1588,
+      "hc": -5.3,
+      "ci": 1.195e-05
+    },
+    "Parada de Lucas": {
+      "lq": 0.9447,
+      "hc": -0.06,
+      "ci": 2.01e-06
+    },
+    "Taquara": {
+      "lq": 0.0661,
+      "hc": -14.13,
+      "ci": 2.871e-05
+    }
+  },
+  "lq_hc_summary": {
+    "lq_max": 13.8107,
+    "bairro_lq_max": "Campo Grande",
+    "hc_total_positivo": 588.22,
+    "bairros_lq_acima_1": 6,
+    "ci_max": 0.05078308,
+    "bairro_ci_max": "Campo Grande"
+  },
+  "concentracao_final": 0.8977,
+  "interpretation": "muito_alta",
+  "total_conglomerates": 1
+}

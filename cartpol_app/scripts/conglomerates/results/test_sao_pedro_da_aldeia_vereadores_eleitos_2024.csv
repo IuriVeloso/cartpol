@@ -1,0 +1,11 @@
+﻿municipio,qe,political_id,candidato,full_name,partido,genero,total_votes,concentracao_final,interpretation,total_conglomerates,municipios_map_file,unmatched_in_csv
+SÃO PEDRO DA ALDEIA,5316.0,632241,MISLENE DE ANDRÉ,MISLENE CONCEIÇÃO DOS SANTOS,PL,feminino,2081,0.6957,media_alta,1,neighbors_sao_pedro_da_aldeia_bairros.json,False
+SÃO PEDRO DA ALDEIA,5316.0,643880,PEDRO ABREU,PEDRO HENRIQUE OLIVEIRA DE ABREU,REPUBLICANOS,masculino,1866,0.5263,media,2,neighbors_sao_pedro_da_aldeia_bairros.json,False
+SÃO PEDRO DA ALDEIA,5316.0,640738,VITINHO DE ZÉ MAIA,JOSÉ VICTOR COUTINHO DA COSTA,MDB,masculino,1752,0.5353,media,2,neighbors_sao_pedro_da_aldeia_bairros.json,False
+SÃO PEDRO DA ALDEIA,5316.0,644151,PROFESSOR JEAN PIERRE,JEAN PIERRE BORGES DE SOUZA,PP,masculino,1724,0.464,media_baixa,4,neighbors_sao_pedro_da_aldeia_bairros.json,False
+SÃO PEDRO DA ALDEIA,5316.0,634867,MOISÉS BATISTA,MOISÉS DE OLIVEIRA BATISTA,SOLIDARIEDADE,masculino,1708,0.6957,media_alta,1,neighbors_sao_pedro_da_aldeia_bairros.json,False
+SÃO PEDRO DA ALDEIA,5316.0,643874,ZEZINHO MARTINS,JOSÉ ANTONIO MARTINS FILHO,REPUBLICANOS,masculino,1550,0.5353,media,2,neighbors_sao_pedro_da_aldeia_bairros.json,False
+SÃO PEDRO DA ALDEIA,5316.0,632242,MARCIO SOARES,MARCIO SOARES DE SOUZA,PL,masculino,1384,0.722,media_alta,1,neighbors_sao_pedro_da_aldeia_bairros.json,False
+SÃO PEDRO DA ALDEIA,5316.0,644152,PAULO SANTANA,PAULO RODRIGUES DE SANTANA,PP,masculino,1382,0.6039,media,2,neighbors_sao_pedro_da_aldeia_bairros.json,False
+SÃO PEDRO DA ALDEIA,5316.0,634866,FERNANDO MISTURA,FERNANDO DE SOUZA SANTOS,SOLIDARIEDADE,masculino,1365,0.5353,media,2,neighbors_sao_pedro_da_aldeia_bairros.json,False
+SÃO PEDRO DA ALDEIA,5316.0,632112,JACKSON SOUZA,JACKSON DE SOUZA ALMEIDA,PODE,masculino,1213,0.5309,media,2,neighbors_sao_pedro_da_aldeia_bairros.json,False

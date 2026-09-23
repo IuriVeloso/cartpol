@@ -1,0 +1,240 @@
+{
+  "county": "Ipatinga",
+  "source_zip": "/home/iuri/TCC/cartpol-pwa/src/assets/maps/county/Ipatinga.zip",
+  "stats": {
+    "total_regions": 34,
+    "total_neighbors": 78,
+    "avg_neighbors": 4.588235294117647,
+    "max_neighbors": 14,
+    "min_neighbors": 1,
+    "isolated_regions": 0,
+    "region_most_neighbors": "Usiminas",
+    "region_least_neighbors": "Granjas Vaga-Lume"
+  },
+  "neighbors": {
+    "Bom Jardim": [
+      "Córrego Novo",
+      "Esperança",
+      "Ferroviários",
+      "Horto",
+      "Ideal",
+      "Industrial",
+      "Usipa"
+    ],
+    "Caravelas": [
+      "Canaã",
+      "Jardim Panorama",
+      "Veneza"
+    ],
+    "Novo Cruzeiro": [
+      "Centro",
+      "Parque Ipanema",
+      "Usiminas"
+    ],
+    "Granjas Vaga-Lume": [
+      "Bethânia"
+    ],
+    "Usipa": [
+      "Bom Jardim",
+      "Horto"
+    ],
+    "Horto": [
+      "Bom Jardim",
+      "Industrial",
+      "Usiminas",
+      "Usipa"
+    ],
+    "Parque Ipanema": [
+      "Centro",
+      "Iguaçu",
+      "Jardim Panorama",
+      "Novo Cruzeiro",
+      "Usiminas",
+      "Veneza"
+    ],
+    "Bela Vista": [
+      "Bom Retiro",
+      "Usiminas"
+    ],
+    "Cariru": [
+      "Castelo",
+      "Usiminas",
+      "das Águas"
+    ],
+    "das Águas": [
+      "Cariru",
+      "Usiminas"
+    ],
+    "Jardim Panorama": [
+      "Canaã",
+      "Caravelas",
+      "Cidade Nobre",
+      "Iguaçu",
+      "Parque Ipanema",
+      "Veneza"
+    ],
+    "Castelo": [
+      "Cariru",
+      "Usiminas",
+      "Veneza",
+      "Vila Ipanema"
+    ],
+    "Imbaúbas": [
+      "Bom Retiro",
+      "Usiminas"
+    ],
+    "Vila Ipanema": [
+      "Castelo",
+      "Centro",
+      "Usiminas",
+      "Veneza"
+    ],
+    "Centro": [
+      "Novo Cruzeiro",
+      "Parque Ipanema",
+      "Usiminas",
+      "Veneza",
+      "Vila Ipanema"
+    ],
+    "Usiminas": [
+      "Bela Vista",
+      "Bom Retiro",
+      "Cariru",
+      "Castelo",
+      "Centro",
+      "Ferroviários",
+      "Horto",
+      "Iguaçu",
+      "Imbaúbas",
+      "Industrial",
+      "Novo Cruzeiro",
+      "Parque Ipanema",
+      "Vila Ipanema",
+      "das Águas"
+    ],
+    "Bom Retiro": [
+      "Bela Vista",
+      "Imbaúbas",
+      "Usiminas"
+    ],
+    "Iguaçu": [
+      "Cidade Nobre",
+      "Ferroviários",
+      "Ideal",
+      "Jardim Panorama",
+      "Parque Ipanema",
+      "Usiminas"
+    ],
+    "Ferroviários": [
+      "Bom Jardim",
+      "Ideal",
+      "Iguaçu",
+      "Industrial",
+      "Usiminas"
+    ],
+    "Industrial": [
+      "Bom Jardim",
+      "Ferroviários",
+      "Horto",
+      "Usiminas"
+    ],
+    "Ideal": [
+      "Bom Jardim",
+      "Cidade Nobre",
+      "Esperança",
+      "Ferroviários",
+      "Iguaçu"
+    ],
+    "Veneza": [
+      "Caravelas",
+      "Castelo",
+      "Centro",
+      "Jardim Panorama",
+      "Parque Ipanema",
+      "Vila Ipanema"
+    ],
+    "Canaã": [
+      "Bethânia",
+      "Caravelas",
+      "Cidade Nobre",
+      "Jardim Panorama",
+      "Vila Celeste"
+    ],
+    "Limoeiro": [
+      "Barra Alegre",
+      "Chácaras Madalena",
+      "Córrego Novo"
+    ],
+    "Chácaras Oliveira": [
+      "Barra Alegre",
+      "Bethânia",
+      "Chácaras Madalena",
+      "Pedra Branca",
+      "Taúbas",
+      "Vila Celeste"
+    ],
+    "Córrego Novo": [
+      "Bom Jardim",
+      "Chácaras Madalena",
+      "Cidade Nobre",
+      "Esperança",
+      "Limoeiro",
+      "Vila Celeste"
+    ],
+    "Vila Celeste": [
+      "Bethânia",
+      "Canaã",
+      "Chácaras Madalena",
+      "Chácaras Oliveira",
+      "Cidade Nobre",
+      "Córrego Novo"
+    ],
+    "Cidade Nobre": [
+      "Canaã",
+      "Chácaras Madalena",
+      "Córrego Novo",
+      "Esperança",
+      "Ideal",
+      "Iguaçu",
+      "Jardim Panorama",
+      "Vila Celeste"
+    ],
+    "Esperança": [
+      "Bom Jardim",
+      "Cidade Nobre",
+      "Córrego Novo",
+      "Ideal"
+    ],
+    "Pedra Branca": [
+      "Barra Alegre",
+      "Chácaras Oliveira",
+      "Taúbas"
+    ],
+    "Chácaras Madalena": [
+      "Barra Alegre",
+      "Chácaras Oliveira",
+      "Cidade Nobre",
+      "Córrego Novo",
+      "Limoeiro",
+      "Vila Celeste"
+    ],
+    "Bethânia": [
+      "Canaã",
+      "Chácaras Oliveira",
+      "Granjas Vaga-Lume",
+      "Taúbas",
+      "Vila Celeste"
+    ],
+    "Taúbas": [
+      "Bethânia",
+      "Chácaras Oliveira",
+      "Pedra Branca"
+    ],
+    "Barra Alegre": [
+      "Chácaras Madalena",
+      "Chácaras Oliveira",
+      "Limoeiro",
+      "Pedra Branca"
+    ]
+  }
+}

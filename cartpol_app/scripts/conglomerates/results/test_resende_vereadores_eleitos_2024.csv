@@ -1,0 +1,18 @@
+﻿municipio,qe,political_id,candidato,full_name,partido,genero,total_votes,concentracao_final,interpretation,total_conglomerates,municipios_map_file,unmatched_in_csv
+RESENDE,4100.0,630342,REGINALDO ENGENHEIRO PASSOS,REGINALDO PAULO DA SILVA,PODE,masculino,1675,0.4378,media_baixa,4,neighbors_resende_bairros.json,False
+RESENDE,4100.0,629801,NELSINHO DINIZ,NELSON DA SILVEIRA DINIZ,UNIÃO,masculino,1564,0.534,media,6,neighbors_resende_bairros.json,False
+RESENDE,4100.0,636501,NOEL DE CARVALHO,NOEL DE CARVALHO NETO,PSDB,masculino,2640,0.5368,media,5,neighbors_resende_bairros.json,False
+RESENDE,4100.0,636512,FÁBIO LUCAS,FÁBIO LUCAS SOUZA DE ALMEIDA,AVANTE,masculino,2518,0.5292,media,5,neighbors_resende_bairros.json,False
+RESENDE,4100.0,636636,SANDRO RITTON,ALESSANDRO SOARES RITTON,PP,masculino,2502,0.4468,media_baixa,6,neighbors_resende_bairros.json,False
+RESENDE,4100.0,631299,PROFESSOR WILSON,WILSON NUNES DUARTE JUNIOR,PL,masculino,1173,0.5297,media,5,neighbors_resende_bairros.json,False
+RESENDE,4100.0,630091,GU SALIM,MARCO ANTÔNIO MATOS ALVES,SOLIDARIEDADE,masculino,1147,0.5094,media,5,neighbors_resende_bairros.json,False
+RESENDE,4100.0,630346,SORAIA BALIEIRO,SORAIA BALIEIRO NUNES,PODE,feminino,1128,0.5436,media,6,neighbors_resende_bairros.json,False
+RESENDE,4100.0,629802,MATHEUS OLIVEIRA,MATHEUS DE OLIVEIRA,UNIÃO,masculino,1114,0.521,media,6,neighbors_resende_bairros.json,False
+RESENDE,4100.0,630369,FELIPE QUINANE VETERINÁRIO,FELIPE DA SILVEIRA QUINANE,MDB,masculino,1104,0.4671,media_baixa,6,neighbors_resende_bairros.json,False
+RESENDE,4100.0,630377,ROQUE CERQUEIRA,ROQUE CERQUEIRA DA SILVA,MDB,masculino,1046,0.5853,media,7,neighbors_resende_bairros.json,False
+RESENDE,4100.0,631292,ZÉ ANTÔNIO ZÉ GALINHA,JOSE ANTONIO NOGUEIRA,PL,masculino,996,0.5552,media,5,neighbors_resende_bairros.json,False
+RESENDE,4100.0,636238,RONI DA KOMBI,RONIVALDO ARANTES DINIZ,REPUBLICANOS,masculino,1968,0.5278,media,5,neighbors_resende_bairros.json,False
+RESENDE,4100.0,630374,THIAGUINHO,THIAGO GOMES FERREIRA GARCIA DE SOUZA,MDB,masculino,953,0.5558,media,7,neighbors_resende_bairros.json,False
+RESENDE,4100.0,636502,TIAGO FORASTIERI,TIAGO FORASTIERI DE ALMEIDA,CIDADANIA,masculino,1822,0.5008,media,5,neighbors_resende_bairros.json,False
+RESENDE,4100.0,636567,ROMAR FLORENZANO,ROMAR FLORENZANO BORGES,PP,masculino,1704,0.5442,media,5,neighbors_resende_bairros.json,False
+RESENDE,4100.0,639981,JAMES DO CHURRASQUINHO,JAMES MOREIRA,AGIR,masculino,754,0.5345,media,6,neighbors_resende_bairros.json,False

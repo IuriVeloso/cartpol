@@ -1,0 +1,12 @@
+﻿municipio,qe,political_id,candidato,full_name,partido,genero,total_votes,concentracao_final,interpretation,total_conglomerates,municipios_map_file,unmatched_in_csv
+JAPERI,4865.0,308840,CRISTIANO PINGIN,CRISTIANO DO NASCIMENTO ALVES,AVANTE,masculino,1182,0.5887,media,2,neighbors_japeri_bairros.json,False
+JAPERI,4865.0,307996,ROGERINHO DA RR,ROGERIO GOMES CASTRO,PDT,masculino,1166,0.7944,alta,1,neighbors_japeri_bairros.json,False
+JAPERI,4865.0,296876,WALTER TRAJANO,WALTER TRAJANO ALVES,PSC,masculino,1113,0.8024,alta,1,neighbors_japeri_bairros.json,False
+JAPERI,4865.0,298416,RENAN SCHIAVO,RENAN SCHIAVO ANTUNES,CIDADANIA,masculino,1018,0.7101,media_alta,3,neighbors_japeri_bairros.json,False
+JAPERI,4865.0,294729,TIAGO CARECA,TIAGO DA SILVA SOUZA,PSC,masculino,998,0.6501,media_alta,3,neighbors_japeri_bairros.json,False
+JAPERI,4865.0,308671,PROFESSOR JOSIMAR,JOSIMAR DE SOUZA MOTA,AVANTE,masculino,954,0.8024,alta,1,neighbors_japeri_bairros.json,False
+JAPERI,4865.0,309296,MIGA,WESLEY GEORGE DE OLIVEIRA,DEM,masculino,875,0.8024,alta,1,neighbors_japeri_bairros.json,False
+JAPERI,4865.0,299616,JOSE CARLOS DE SOUZA   JC,JOSE CARLOS DE SOUZA,PDT,masculino,828,0.6422,media_alta,3,neighbors_japeri_bairros.json,False
+JAPERI,4865.0,293943,JUNIOR MARTINS,ADEOCLEMES DE SOUSA MARTINS JUNIOR,PT,masculino,809,0.7944,alta,1,neighbors_japeri_bairros.json,False
+JAPERI,4865.0,293431,ZIEL PAVANI,ZIEL PAVANI DE MESQUITA,PT,masculino,615,0.5887,media,2,neighbors_japeri_bairros.json,False
+JAPERI,4865.0,303246,MARCIO BIBI,MARCIO RODRIGUES ROSA,PSDB,masculino,572,0.8776,muito_alta,2,neighbors_japeri_bairros.json,False

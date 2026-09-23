@@ -1,0 +1,98 @@
+{
+  "county": "Quatis",
+  "source_zip": "/home/iuri/TCC/cartpol-pwa/src/assets/maps/county/Quatis.zip",
+  "stats": {
+    "total_regions": 16,
+    "total_neighbors": 25,
+    "avg_neighbors": 3.125,
+    "max_neighbors": 6,
+    "min_neighbors": 1,
+    "isolated_regions": 0,
+    "region_most_neighbors": "Jardim Independência",
+    "region_least_neighbors": "Água Espalhada"
+  },
+  "neighbors": {
+    "Barrinha": [
+      "Industrial",
+      "Mirandópolis",
+      "Pilotos"
+    ],
+    "Água Espalhada": [
+      "Boa Vista"
+    ],
+    "Pilotos": [
+      "Barrinha",
+      "Centro",
+      "Mirandópolis",
+      "São Benedito"
+    ],
+    "Mirandópolis": [
+      "Barrinha",
+      "Centro",
+      "Jardim Polastri",
+      "Pilotos"
+    ],
+    "Jardim Independência": [
+      "Boa Vista",
+      "Centro",
+      "Nossa Senhora do Rosário",
+      "Santa Bárbara",
+      "Santo Antônio",
+      "São Benedito"
+    ],
+    "Industrial": [
+      "Barrinha"
+    ],
+    "Bela Vista": [
+      "Bondarovsky"
+    ],
+    "Centro": [
+      "Bondarovsky",
+      "Jardim Independência",
+      "Jardim Polastri",
+      "Mirandópolis",
+      "Pilotos",
+      "São Benedito"
+    ],
+    "Santa Bárbara": [
+      "Jardim Independência"
+    ],
+    "Nossa Senhora do Rosário": [
+      "Alto Paraíso",
+      "Boa Vista",
+      "Jardim Independência",
+      "Santo Antônio",
+      "São Benedito"
+    ],
+    "São Benedito": [
+      "Centro",
+      "Jardim Independência",
+      "Nossa Senhora do Rosário",
+      "Pilotos",
+      "Santo Antônio"
+    ],
+    "Jardim Polastri": [
+      "Bondarovsky",
+      "Centro",
+      "Mirandópolis"
+    ],
+    "Santo Antônio": [
+      "Jardim Independência",
+      "Nossa Senhora do Rosário",
+      "São Benedito"
+    ],
+    "Boa Vista": [
+      "Jardim Independência",
+      "Nossa Senhora do Rosário",
+      "Água Espalhada"
+    ],
+    "Alto Paraíso": [
+      "Nossa Senhora do Rosário"
+    ],
+    "Bondarovsky": [
+      "Bela Vista",
+      "Centro",
+      "Jardim Polastri"
+    ]
+  }
+}

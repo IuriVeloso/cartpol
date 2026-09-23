@@ -1,0 +1,18 @@
+﻿municipio,qe,political_id,candidato,full_name,partido,genero,total_votes,concentracao_final,interpretation,total_conglomerates,municipios_map_file,unmatched_in_csv
+RESENDE,3749.0,296665,REGINALDO ENGENHEIRO PASSOS,REGINALDO PAULO DA SILVA,PODE,masculino,1808,0.4204,media_baixa,7,neighbors_resende_bairros.json,False
+RESENDE,3749.0,301151,RENAN MARASSI,RENAN MARASSI MAGALHÃES,PL,masculino,1721,0.5023,media,6,neighbors_resende_bairros.json,False
+RESENDE,3749.0,303196,DAVI DO ESPORTE AGORA É,DAVID MANUEL DE JESUS SILVA,DEM,masculino,1542,0.554,media,5,neighbors_resende_bairros.json,False
+RESENDE,3749.0,295976,SANDRO RITTON,ALESSANDRO SOARES RITTON,DEM,masculino,1079,0.4938,media_baixa,7,neighbors_resende_bairros.json,False
+RESENDE,3749.0,293634,SORAIA BALIEIRO,SORAIA BALIEIRO NUNES,PSD,feminino,970,0.4944,media_baixa,7,neighbors_resende_bairros.json,False
+RESENDE,3749.0,303193,HICK SENE,LUIZ HENRIQUE SENE DE BRITO GUIMARAES,DEM,masculino,963,0.5272,media,7,neighbors_resende_bairros.json,False
+RESENDE,3749.0,297762,KAEL,RAPHAEL MARIANO FERNANDES,PSD,masculino,897,0.5861,media,5,neighbors_resende_bairros.json,False
+RESENDE,3749.0,306321,NELSINHO DINIZ,NELSON DA SILVEIRA DINIZ,DEM,masculino,876,0.5152,media,7,neighbors_resende_bairros.json,False
+RESENDE,3749.0,305548,MATHEUS OLIVEIRA,MATHEUS DE OLIVEIRA,PODE,masculino,871,0.4755,media_baixa,7,neighbors_resende_bairros.json,False
+RESENDE,3749.0,290029,TIAGO FORASTIERI,TIAGO FORASTIERI DE ALMEIDA,PP,masculino,844,0.5061,media,7,neighbors_resende_bairros.json,False
+RESENDE,3749.0,299301,ROQUE CERQUEIRA,ROQUE CERQUEIRA DA SILVA,PL,masculino,796,0.5673,media,7,neighbors_resende_bairros.json,False
+RESENDE,3749.0,288788,PROFESSOR WILSON,WILSON NUNES DUARTE JUNIOR,PL,masculino,730,0.5429,media,4,neighbors_resende_bairros.json,False
+RESENDE,3749.0,307525,EDSON PEROBA,EDSON VIEIRA MIRANDA,CIDADANIA,masculino,650,0.6357,media_alta,6,neighbors_resende_bairros.json,False
+RESENDE,3749.0,292622,FÁBIO LUCAS,FÁBIO LUCAS SOUZA DE ALMEIDA,AVANTE,masculino,635,0.4959,media_baixa,6,neighbors_resende_bairros.json,False
+RESENDE,3749.0,308420,PAULINHO DO FUTSAL,PEDRO PAULO NARCISO,CIDADANIA,masculino,616,0.5609,media,6,neighbors_resende_bairros.json,False
+RESENDE,3749.0,290802,MARCIA LIMA,MARCIA MARIA DE OLIVEIRA LIMA,REPUBLICANOS,feminino,569,0.5594,media,7,neighbors_resende_bairros.json,False
+RESENDE,3749.0,293280,ZÉ ANTÔNIO PHV,JOSE ANTONIO NOGUEIRA,PATRIOTA,masculino,412,0.5739,media,5,neighbors_resende_bairros.json,False

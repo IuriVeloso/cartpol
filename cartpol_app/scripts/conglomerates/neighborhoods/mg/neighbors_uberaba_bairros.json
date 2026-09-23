@@ -1,0 +1,328 @@
+{
+  "county": "Uberaba",
+  "source_zip": "/home/iuri/TCC/cartpol-pwa/src/assets/maps/county/Uberaba.zip",
+  "stats": {
+    "total_regions": 44,
+    "total_neighbors": 112,
+    "avg_neighbors": 5.090909090909091,
+    "max_neighbors": 8,
+    "min_neighbors": 2,
+    "isolated_regions": 0,
+    "region_most_neighbors": "Costa Teles",
+    "region_least_neighbors": "Vila Real"
+  },
+  "neighbors": {
+    "Recreio dos Bandeirantes": [
+      "Maracanã",
+      "Santa Cecília",
+      "São Cristóvão",
+      "São Geraldo"
+    ],
+    "Paraíso": [
+      "Amoroso Costa",
+      "Boa Vista",
+      "Costa Teles",
+      "Estados Unidos",
+      "Lourdes",
+      "Portal",
+      "Três Córregos"
+    ],
+    "Residencial 2000": [
+      "Conquistinha",
+      "Lourdes",
+      "Parque do Café",
+      "Santa Clara",
+      "Três Córregos"
+    ],
+    "Santa Maria": [
+      "Aeroporto",
+      "Mercês",
+      "Parque das Américas",
+      "São Benedito"
+    ],
+    "Estados Unidos": [
+      "Abadia",
+      "Boa Esperança",
+      "Boa Vista",
+      "Centro",
+      "Costa Teles",
+      "Lourdes",
+      "Paraíso"
+    ],
+    "Vila Real": [
+      "Buriti",
+      "Jockey Park"
+    ],
+    "Parque das Américas": [
+      "Aeroporto",
+      "Jockey Park",
+      "Morumbi",
+      "Santa Maria",
+      "São Benedito",
+      "São Cristóvão",
+      "São Geraldo"
+    ],
+    "Conquistinha": [
+      "Parque do Café",
+      "Residencial 2000",
+      "Santa Clara",
+      "São Francisco"
+    ],
+    "Mercês": [
+      "Aeroporto",
+      "Centro",
+      "Fabrício",
+      "Grande Horizonte",
+      "Parque Tecnológico",
+      "Santa Maria",
+      "São Benedito"
+    ],
+    "Jockey Park": [
+      "Aeroporto",
+      "Buriti",
+      "Marajó",
+      "Morumbi",
+      "Parque das Américas",
+      "São Geraldo",
+      "Vila Real"
+    ],
+    "Centro": [
+      "Abadia",
+      "Boa Esperança",
+      "Estados Unidos",
+      "Fabrício",
+      "Mercês",
+      "São Benedito"
+    ],
+    "Costa Teles": [
+      "Abadia",
+      "Estados Unidos",
+      "Leblon",
+      "Lourdes",
+      "Paraíso",
+      "Santa Clara",
+      "São Cristóvão",
+      "Vallim"
+    ],
+    "Bouganville": [
+      "Distrito Empresarial",
+      "Parque Tecnológico"
+    ],
+    "São Cristóvão": [
+      "Costa Teles",
+      "Leblon",
+      "Maracanã",
+      "Parque das Américas",
+      "Recreio dos Bandeirantes",
+      "São Benedito",
+      "São Geraldo",
+      "Vallim"
+    ],
+    "Parque Empresarial": [
+      "Alfredo Freire",
+      "Campo Verde",
+      "Caçu",
+      "Distrito Industrial I",
+      "Grande Horizonte",
+      "Parque Tecnológico"
+    ],
+    "Abadia": [
+      "Centro",
+      "Costa Teles",
+      "Estados Unidos",
+      "Leblon",
+      "São Benedito"
+    ],
+    "Caçu": [
+      "Alfredo Freire",
+      "Campo Verde",
+      "Distrito Empresarial",
+      "Distrito Industrial I",
+      "Marajó",
+      "Parque Empresarial"
+    ],
+    "São Francisco": [
+      "Conquistinha",
+      "Maracanã",
+      "Santa Cecília",
+      "Santa Clara"
+    ],
+    "Lourdes": [
+      "Costa Teles",
+      "Estados Unidos",
+      "Paraíso",
+      "Residencial 2000",
+      "Santa Clara",
+      "Três Córregos",
+      "Vallim"
+    ],
+    "Distrito Industrial I": [
+      "Aeroporto",
+      "Alfredo Freire",
+      "Caçu",
+      "Grande Horizonte",
+      "Morumbi",
+      "Parque Empresarial"
+    ],
+    "Vallim": [
+      "Costa Teles",
+      "Lourdes",
+      "Maracanã",
+      "Santa Clara",
+      "São Cristóvão"
+    ],
+    "Parque do Café": [
+      "Conquistinha",
+      "Residencial 2000",
+      "Três Córregos"
+    ],
+    "Grande Horizonte": [
+      "Aeroporto",
+      "Distrito Industrial I",
+      "Mercês",
+      "Parque Empresarial",
+      "Parque Tecnológico"
+    ],
+    "Boa Vista": [
+      "Amoroso Costa",
+      "Boa Esperança",
+      "Estados Unidos",
+      "Fabrício",
+      "Lageado",
+      "Paraíso"
+    ],
+    "Amoroso Costa": [
+      "Boa Vista",
+      "Lageado",
+      "Paraíso"
+    ],
+    "Santa Cecília": [
+      "Maracanã",
+      "Recreio dos Bandeirantes",
+      "Santa Clara",
+      "São Francisco"
+    ],
+    "Buriti": [
+      "Jockey Park",
+      "Vila Real"
+    ],
+    "Fabrício": [
+      "Boa Esperança",
+      "Boa Vista",
+      "Centro",
+      "Mercês",
+      "Parque Tecnológico"
+    ],
+    "Leblon": [
+      "Abadia",
+      "Costa Teles",
+      "São Benedito",
+      "São Cristóvão"
+    ],
+    "Portal": [
+      "Paraíso",
+      "Três Córregos"
+    ],
+    "Três Córregos": [
+      "Lourdes",
+      "Paraíso",
+      "Parque do Café",
+      "Portal",
+      "Residencial 2000"
+    ],
+    "Alfredo Freire": [
+      "Caçu",
+      "Distrito Industrial I",
+      "Marajó",
+      "Morumbi",
+      "Parque Empresarial"
+    ],
+    "Boa Esperança": [
+      "Boa Vista",
+      "Centro",
+      "Estados Unidos",
+      "Fabrício"
+    ],
+    "Morumbi": [
+      "Aeroporto",
+      "Alfredo Freire",
+      "Distrito Industrial I",
+      "Jockey Park",
+      "Marajó",
+      "Parque das Américas"
+    ],
+    "Lageado": [
+      "Amoroso Costa",
+      "Boa Vista"
+    ],
+    "Aeroporto": [
+      "Distrito Industrial I",
+      "Grande Horizonte",
+      "Jockey Park",
+      "Mercês",
+      "Morumbi",
+      "Parque das Américas",
+      "Santa Maria"
+    ],
+    "Distrito Empresarial": [
+      "Bouganville",
+      "Campo Verde",
+      "Caçu",
+      "Parque Tecnológico"
+    ],
+    "Marajó": [
+      "Alfredo Freire",
+      "Caçu",
+      "Jockey Park",
+      "Morumbi"
+    ],
+    "São Benedito": [
+      "Abadia",
+      "Centro",
+      "Leblon",
+      "Mercês",
+      "Parque das Américas",
+      "Santa Maria",
+      "São Cristóvão"
+    ],
+    "Santa Clara": [
+      "Conquistinha",
+      "Costa Teles",
+      "Lourdes",
+      "Maracanã",
+      "Residencial 2000",
+      "Santa Cecília",
+      "São Francisco",
+      "Vallim"
+    ],
+    "Parque Tecnológico": [
+      "Bouganville",
+      "Campo Verde",
+      "Distrito Empresarial",
+      "Fabrício",
+      "Grande Horizonte",
+      "Mercês",
+      "Parque Empresarial"
+    ],
+    "Campo Verde": [
+      "Caçu",
+      "Distrito Empresarial",
+      "Parque Empresarial",
+      "Parque Tecnológico"
+    ],
+    "São Geraldo": [
+      "Jockey Park",
+      "Parque das Américas",
+      "Recreio dos Bandeirantes",
+      "São Cristóvão"
+    ],
+    "Maracanã": [
+      "Recreio dos Bandeirantes",
+      "Santa Cecília",
+      "Santa Clara",
+      "São Cristóvão",
+      "São Francisco",
+      "Vallim"
+    ]
+  }
+}
